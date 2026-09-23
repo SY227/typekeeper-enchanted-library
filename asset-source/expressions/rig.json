@@ -1,0 +1,28 @@
+{
+  "masterSize": [
+    438,
+    420
+  ],
+  "pivot": [
+    219,
+    420
+  ],
+  "upperBodyCut": 264,
+  "thresholds": {
+    "calm": 0,
+    "focused": 25,
+    "worried": 50,
+    "alarmed": 75,
+    "critical": 90
+  },
+  "states": [
+    "calm",
+    "focused",
+    "worried",
+    "alarmed",
+    "critical",
+    "defeated",
+    "celebrate"
+  ],
+  "production": "Local deterministic facial displacement + hand-authored mouth paintovers; no Blender render claimed."
+}

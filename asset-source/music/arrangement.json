@@ -1,0 +1,7170 @@
+[
+  {
+    "note": 50,
+    "beat": 0.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 0.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 0.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 0.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 0,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 0,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 0,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 38,
+    "beat": 0,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 2.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 0.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 1.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 1.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 2.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 2.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 3.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 0,
+    "duration": 1.75,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 1,
+    "duration": 1.45,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 83,
+    "beat": 1.5,
+    "duration": 1.45,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 2,
+    "duration": 1.85,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 3.25,
+    "duration": 1.5,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 0.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 1.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 2.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 3.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 4.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 4.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 4.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 4.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 4,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 4,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 4,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 42,
+    "beat": 4,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 6.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 4.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 5.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 5.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 6.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 6.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 7.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 4.25,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 5.25,
+    "duration": 2.35,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 7,
+    "duration": 1.6,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 4.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 5.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 6.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 7.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 8.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 8.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 8.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 8.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 8,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 8,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 8,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 35,
+    "beat": 8,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 10.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 8.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 9.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 9.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 10.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 10.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 11.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 8,
+    "duration": 1.8,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 9.25,
+    "duration": 1.45,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 10,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 11,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 8.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 9.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 10.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 11.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 45,
+    "beat": 12.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 12.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 12.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 12.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 12,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 12,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 12,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 12,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 14.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 12.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 13.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 13.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 14.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 14.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 15.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 12.5,
+    "duration": 2.35,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 14.5,
+    "duration": 1.8,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 12.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 13.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 14.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 15.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 78,
+    "beat": 14.75,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 15.125,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 15.5,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 16.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 16.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 16.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 16.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 16,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 16,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 16,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 31,
+    "beat": 16,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 43,
+    "beat": 18.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 16.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 17.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 17.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 18.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 18.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 19.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 16,
+    "duration": 1.8,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 17.25,
+    "duration": 1.65,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 18.25,
+    "duration": 2.1,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 16.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 17.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 18.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 19.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 20.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 20.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 20.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 20.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 20,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 20,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 20,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 20,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 22.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 20.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 21.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 21.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 71,
+    "beat": 22.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 22.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 23.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 83,
+    "beat": 20.25,
+    "duration": 1.65,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 21.25,
+    "duration": 1.65,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 22.25,
+    "duration": 2.05,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 20.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 21.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 22.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 23.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 50,
+    "beat": 24.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 24.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 24.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 24.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 24,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 24,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 24,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 42,
+    "beat": 24,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 26.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 24.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 25.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 25.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 26.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 26.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 27.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 24,
+    "duration": 1.8,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 25.25,
+    "duration": 1.65,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 26.25,
+    "duration": 2.3,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 24.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 25.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 26.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 27.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 28.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 28.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 28.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 28.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 28,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 28,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 28,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 28,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 30.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 28.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 29.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 29.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 30.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 30.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 31.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 28.25,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 29.5,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 31,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 28.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 29.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 30.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 31.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 78,
+    "beat": 30.75,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 76,
+    "beat": 31.125,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 31.5,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 50,
+    "beat": 32.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 32.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 32.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 32.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 32,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 32,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 32,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 38,
+    "beat": 32,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 34.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 32.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 33.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 33.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 34.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 34.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 35.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 32,
+    "duration": 1.75,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 33,
+    "duration": 1.45,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 83,
+    "beat": 33.5,
+    "duration": 1.45,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 34,
+    "duration": 1.85,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 35.25,
+    "duration": 1.5,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 32.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 33.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 34.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 35.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 36.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 36.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 36.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 36.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 36,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 36,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 36,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 42,
+    "beat": 36,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 38.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 36.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 37.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 37.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 38.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 38.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 39.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 36.25,
+    "duration": 1.7,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 37.25,
+    "duration": 2.35,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 39,
+    "duration": 1.6,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 36.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 37.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 38.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 39.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 40.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 40.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 40.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 40.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 40,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 40,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 40,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 35,
+    "beat": 40,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 42.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 40.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 41.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 41.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 42.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 42.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 43.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 40,
+    "duration": 1.8,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 41.25,
+    "duration": 1.45,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 42,
+    "duration": 1.7,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 43,
+    "duration": 1.7,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 40.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 41.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 42.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 43.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 45,
+    "beat": 44.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 44.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 44.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 44.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 44,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 44,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 44,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 44,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 46.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 44.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 45.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 45.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 46.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 46.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 47.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 44.5,
+    "duration": 2.35,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 46.5,
+    "duration": 1.8,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 44.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 45.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 46.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 47.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 78,
+    "beat": 46.75,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 47.125,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 47.5,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 48.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 48.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 48.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 48.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 48,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 48,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 48,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 31,
+    "beat": 48,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 43,
+    "beat": 50.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 48.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 49.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 49.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 50.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 50.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 51.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 48,
+    "duration": 1.8,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 49.25,
+    "duration": 1.65,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 50.25,
+    "duration": 2.1,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 48.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 49.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 50.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 51.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 52.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 52.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 52.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 52.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 52,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 52,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 52,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 52,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 54.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 52.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 53.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 53.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 71,
+    "beat": 54.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 54.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 55.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 83,
+    "beat": 52.25,
+    "duration": 1.65,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 53.25,
+    "duration": 1.65,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 54.25,
+    "duration": 2.05,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 52.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 53.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 54.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 55.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 50,
+    "beat": 56.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 56.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 56.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 56.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 56,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 56,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 56,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 42,
+    "beat": 56,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 58.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 56.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 57.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 57.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 58.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 58.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 59.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 56,
+    "duration": 1.8,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 57.25,
+    "duration": 1.65,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 58.25,
+    "duration": 2.3,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 56.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 57.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 58.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 59.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 60.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 60.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 60.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 60.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 60,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 60,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 60,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 60,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 62.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 60.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 61.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 61.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 62.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 62.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 63.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 60.25,
+    "duration": 1.7,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 61.5,
+    "duration": 1.7,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 63,
+    "duration": 1.7,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 60.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 61.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 62.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 63.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 78,
+    "beat": 62.75,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 76,
+    "beat": 63.125,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 63.5,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 64.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 64.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 64.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 64.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 64,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 64,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 64,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 40,
+    "beat": 64,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 66.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 64.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 65.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 65.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 71,
+    "beat": 66.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 66.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 67.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 64,
+    "duration": 2.2,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 65.5,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 66.75,
+    "duration": 1.8,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 64.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 65.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 66.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 67.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 68.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 68.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 68.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 68.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 68,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 68,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 68,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 68,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 70.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 68.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 69.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 69.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 70.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 70.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 71.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 68.25,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 69.5,
+    "duration": 2.5,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 68.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 69.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 70.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 71.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 50,
+    "beat": 72.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 72.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 72.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 72.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 72,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 72,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 72,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 38,
+    "beat": 72,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 74.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 72.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 73.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 73.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 74.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 74.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 75.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 72,
+    "duration": 1.6,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 73,
+    "duration": 1.75,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 85,
+    "beat": 74.25,
+    "duration": 2.25,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 72.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 73.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 74.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 75.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 76.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 76.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 76.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 76.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 76,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 76,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 76,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 35,
+    "beat": 76,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 78.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 76.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 77.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 77.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 78.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 78.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 79.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 83,
+    "beat": 76.5,
+    "duration": 2.0,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 78,
+    "duration": 1.75,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 79.25,
+    "duration": 1.5,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 76.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 77.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 78.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 79.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 78,
+    "beat": 78.75,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 79.125,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 79.5,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 80.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 80.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 55,
+    "beat": 80.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 80.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 80,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 80,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 55,
+    "beat": 80,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 31,
+    "beat": 80,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 43,
+    "beat": 82.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 80.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 67,
+    "beat": 81.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 81.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 82.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 67,
+    "beat": 82.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 83.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 79,
+    "beat": 80,
+    "duration": 1.8,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 81.25,
+    "duration": 1.65,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 82.25,
+    "duration": 2.25,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 80.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 67,
+    "beat": 81.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 82.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 67,
+    "beat": 83.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 45,
+    "beat": 84.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 84.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 84.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 84.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 84,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 84,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 84,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 42,
+    "beat": 84,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 86.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 84.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 85.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 85.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 86.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 86.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 87.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 84.25,
+    "duration": 1.85,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 85.5,
+    "duration": 2.3,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 84.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 85.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 86.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 87.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 88.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 88.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 88.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 88.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 88,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 88,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 88,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 40,
+    "beat": 88,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 90.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 88.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 89.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 89.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 71,
+    "beat": 90.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 90.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 91.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 88,
+    "duration": 1.75,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 89.25,
+    "duration": 1.75,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 90.5,
+    "duration": 1.95,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 88.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 89.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 90.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 91.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 92.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 92.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 55,
+    "beat": 92.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 92.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 92,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 92,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 55,
+    "beat": 92,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 92,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 94.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 92.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 67,
+    "beat": 93.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 93.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 71,
+    "beat": 94.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 67,
+    "beat": 94.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 95.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 92.5,
+    "duration": 2.2,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 94.5,
+    "duration": 2.0,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 92.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 67,
+    "beat": 93.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 94.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 67,
+    "beat": 95.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 79,
+    "beat": 94.75,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 76,
+    "beat": 95.125,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 95.5,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 96.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 96.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 96.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 96.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 96,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 96,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 96,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 40,
+    "beat": 96,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 98.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 96.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 97.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 71,
+    "beat": 98.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 99.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 96,
+    "duration": 2.2,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 97.5,
+    "duration": 1.7,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 98.75,
+    "duration": 1.8,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 96.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 97.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 98.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 99.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 100.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 100.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 100.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 100.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 100,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 100,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 100,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 100,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 102.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 100.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 101.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 102.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 103.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 100.25,
+    "duration": 1.7,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 101.5,
+    "duration": 2.5,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 100.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 101.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 102.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 103.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 50,
+    "beat": 104.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 104.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 104.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 104.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 104,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 104,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 104,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 38,
+    "beat": 104,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 106.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 104.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 105.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 106.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 107.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 104,
+    "duration": 1.6,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 105,
+    "duration": 1.75,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 106.25,
+    "duration": 2.25,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 104.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 105.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 106.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 107.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 108.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 108.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 108.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 108.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 108,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 108,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 108,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 35,
+    "beat": 108,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 110.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 108.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 109.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 110.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 111.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 71,
+    "beat": 108.5,
+    "duration": 2.0,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 110,
+    "duration": 1.75,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 111.25,
+    "duration": 1.5,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 108.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 109.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 110.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 111.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 78,
+    "beat": 110.75,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 111.125,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 111.5,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 112.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 112.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 55,
+    "beat": 112.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 112.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 112,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 112,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 55,
+    "beat": 112,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 31,
+    "beat": 112,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 43,
+    "beat": 114.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 112.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 67,
+    "beat": 113.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 114.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 115.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 67,
+    "beat": 112,
+    "duration": 1.8,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 113.25,
+    "duration": 1.65,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 114.25,
+    "duration": 2.25,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 112.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 67,
+    "beat": 113.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 114.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 67,
+    "beat": 115.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 45,
+    "beat": 116.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 116.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 116.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 116.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 116,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 116,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 116,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 42,
+    "beat": 116,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 118.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 116.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 117.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 118.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 119.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 116.25,
+    "duration": 1.85,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 117.5,
+    "duration": 2.3,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 116.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 117.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 118.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 119.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 120.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 120.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 120.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 120.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 120,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 120,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 120,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 40,
+    "beat": 120,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 122.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 120.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 121.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 71,
+    "beat": 122.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 123.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 120,
+    "duration": 1.75,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 121.25,
+    "duration": 1.75,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 122.5,
+    "duration": 1.95,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 120.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 121.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 122.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 123.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 124.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 124.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 55,
+    "beat": 124.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 124.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 124,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 124,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 55,
+    "beat": 124,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 124,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 126.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 124.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 67,
+    "beat": 125.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 71,
+    "beat": 126.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 127.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 124.5,
+    "duration": 2.2,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 126.5,
+    "duration": 2.0,
+    "voice": "bell",
+    "gain": 0.155,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 124.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 67,
+    "beat": 125.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 126.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 67,
+    "beat": 127.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.056,
+    "stem": "motion"
+  },
+  {
+    "note": 79,
+    "beat": 126.75,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 76,
+    "beat": 127.125,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 127.5,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 50,
+    "beat": 128.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 128.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 128.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 128.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 128,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 128,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 128,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 38,
+    "beat": 128,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 130.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 128.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 129.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 129.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 130.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 130.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 131.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 128,
+    "duration": 1.75,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 129,
+    "duration": 1.45,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 83,
+    "beat": 129.5,
+    "duration": 1.45,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 130,
+    "duration": 1.85,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 131.25,
+    "duration": 1.5,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 128.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 129.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 130.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 131.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 132.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 132.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 132.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 132.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 132,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 132,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 132,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 42,
+    "beat": 132,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 134.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 132.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 133.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 133.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 134.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 134.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 135.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 132.25,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 133.25,
+    "duration": 2.35,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 135,
+    "duration": 1.6,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 132.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 133.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 134.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 135.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 136.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 136.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 136.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 136.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 136,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 136,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 136,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 35,
+    "beat": 136,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 138.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 136.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 137.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 137.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 138.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 138.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 139.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 136,
+    "duration": 1.8,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 136,
+    "duration": 1.8,
+    "voice": "bell",
+    "gain": 0.05,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 137.25,
+    "duration": 1.45,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 138,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 139,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 136.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 137.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 138.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 139.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 45,
+    "beat": 140.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 140.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 140.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 140.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 140,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 140,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 140,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 140,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 142.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 140.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 141.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 141.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 142.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 142.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 143.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 140.5,
+    "duration": 2.35,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 142.5,
+    "duration": 1.8,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 140.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 141.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 142.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 143.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 78,
+    "beat": 142.75,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 143.125,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 143.5,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 47,
+    "beat": 144.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 144.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 144.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 144.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 47,
+    "beat": 144,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 144,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 144,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 31,
+    "beat": 144,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 43,
+    "beat": 146.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 144.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 145.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 145.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 146.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 146.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 147.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 144,
+    "duration": 1.8,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 145.25,
+    "duration": 1.65,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 146.25,
+    "duration": 2.1,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 144.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 145.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 146.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 147.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 148.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 148.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 148.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 59,
+    "beat": 148.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 148,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 148,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 148,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 148,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 150.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 148.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 149.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 149.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 71,
+    "beat": 150.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 150.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 151.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 83,
+    "beat": 148.25,
+    "duration": 1.65,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 81,
+    "beat": 149.25,
+    "duration": 1.65,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 150.25,
+    "duration": 2.05,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 148.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 149.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 71,
+    "beat": 150.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 151.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 50,
+    "beat": 152.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 152.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 152.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 152.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 50,
+    "beat": 152,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 152,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 152,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 42,
+    "beat": 152,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 154.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 62,
+    "beat": 152.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 153.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 153.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 154.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 154.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 155.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 78,
+    "beat": 152,
+    "duration": 1.8,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 152,
+    "duration": 1.8,
+    "voice": "bell",
+    "gain": 0.05,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 153.25,
+    "duration": 1.65,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 74,
+    "beat": 154.25,
+    "duration": 2.3,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 152.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 153.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 74,
+    "beat": 154.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 155.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 49,
+    "beat": 156.0,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.125,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 156.032,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 156.064,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 57,
+    "beat": 156.096,
+    "duration": 3.9,
+    "voice": "piano",
+    "gain": 0.105,
+    "stem": "hearth"
+  },
+  {
+    "note": 49,
+    "beat": 156,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 52,
+    "beat": 156,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 54,
+    "beat": 156,
+    "duration": 5.2,
+    "voice": "pad",
+    "gain": 0.024,
+    "stem": "hearth"
+  },
+  {
+    "note": 33,
+    "beat": 156,
+    "duration": 1.6,
+    "voice": "bass",
+    "gain": 0.15,
+    "stem": "hearth"
+  },
+  {
+    "note": 45,
+    "beat": 158.4,
+    "duration": 1.25,
+    "voice": "bass",
+    "gain": 0.075,
+    "stem": "hearth"
+  },
+  {
+    "note": 61,
+    "beat": 156.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 157.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 157.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 158.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 66,
+    "beat": 158.5,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.085,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 159.0,
+    "duration": 1.25,
+    "voice": "pluck",
+    "gain": 0.068,
+    "stem": "hearth"
+  },
+  {
+    "note": 73,
+    "beat": 156.25,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 76,
+    "beat": 157.5,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 69,
+    "beat": 159,
+    "duration": 1.7,
+    "voice": "piano",
+    "gain": 0.17,
+    "stem": "hearth"
+  },
+  {
+    "note": 64,
+    "beat": 156.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 157.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 69,
+    "beat": 158.75,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 66,
+    "beat": 159.5,
+    "duration": 0.7,
+    "voice": "bell",
+    "gain": 0.072,
+    "stem": "motion"
+  },
+  {
+    "note": 78,
+    "beat": 158.75,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 76,
+    "beat": 159.125,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  },
+  {
+    "note": 73,
+    "beat": 159.5,
+    "duration": 1.3,
+    "voice": "pluck",
+    "gain": 0.048,
+    "stem": "motion"
+  }
+]

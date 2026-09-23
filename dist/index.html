@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102b2b">
+  <meta name="description" content="A little focus. A little magic. Save falling words, master four spells, and discover the Enchanted Library.">
+  <title>Typekeeper: Enchanted Library</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" as="image" href="assets/library.webp">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <main id="viewport" aria-label="Typekeeper: Enchanted Library">
+    <div id="stage" tabindex="-1">
+      <img id="library-background" class="library-background" src="assets/library.webp" alt="" aria-hidden="true">
+      <div class="scene-shade" aria-hidden="true"></div><div class="wing-atmosphere" aria-hidden="true"></div><div class="pressure-vignette" aria-hidden="true"></div>
+      <canvas id="game-canvas" width="1200" height="900" aria-hidden="true"></canvas>
+      <div class="frame-border" aria-hidden="true"></div>
+      <nav class="utility-controls" aria-label="Game controls">
+        <button id="pause-button" class="icon-button" title="Pause (Escape)" aria-label="Pause game" hidden></button>
+        <button id="sound-button" class="icon-button" title="Toggle sound" aria-label="Mute sound"></button>
+        <button id="fullscreen-button" class="icon-button" title="Fullscreen" aria-label="Enter fullscreen"></button>
+      </nav>
+      <section id="play-hud" hidden aria-label="Run status">
+        <div class="score-panel engraved-panel"><div class="eyebrow">SCORE</div><div class="score-number" id="score-value">0</div><div class="personal-best">PERSONAL BEST <span id="best-value">0</span></div></div>
+        <div class="chapter-panel engraved-panel"><div class="eyebrow" id="chapter-label">CHAPTER 01</div><div class="chapter-name" id="chapter-name">A new beginning</div><div class="chapter-track"><i id="chapter-fill"></i></div><div class="chapter-progress"><span id="progress-value">0 / 12</span> WORDS SAVED</div></div>
+        <div class="wing-label" id="wing-name" hidden></div><div class="rank-badge" hidden><span>YOUR RANK</span><strong id="rank-value">Apprentice</strong></div><div class="trial-indicator" id="trial-indicator" hidden></div><div class="side-stats"><div class="stat-block"><span>WPM</span><strong id="wpm-value">0</strong></div><div class="stat-block"><span>ACCURACY</span><strong id="accuracy-value">100<small>%</small></strong></div><div class="stat-block streak-stat"><span>STREAK</span><strong id="streak-value">0</strong><em id="multiplier-value">×1</em></div></div>
+        <div class="limit-instrument" id="limit-instrument"><div class="meter-cap">LIMIT</div><div class="meter-body"><div class="meter-scale"><span>100</span><span>75</span><span>50</span><span>25</span><span>0</span></div><div class="meter-tube"><div class="meter-fill" id="limit-fill"></div><div class="meter-glass"></div><div class="meter-ticks"></div></div></div><div class="limit-number" id="limit-value">0<small>%</small></div><div class="meter-caption">PAPER PILE</div></div>
+        <div class="character-status" id="character-status" hidden><span>TYPEKEEPER</span><strong id="character-mood">COMPOSED</strong><i></i></div><div class="rescue-hint" id="rescue-hint" hidden>WIND READY · PRESS 4</div><div class="effect-status" id="effect-status" aria-label="Active powers"></div>
+        <div class="spell-inventory" id="spell-inventory" aria-label="Spell book inventory"></div>
+        <div class="typing-dock" id="typing-dock">
+          <div class="typing-label" id="typing-label" hidden></div>
+          <div class="input-frame"><span class="input-flourish" aria-hidden="true">❧</span><input id="typing-input" aria-label="Type a falling word or a stored spell, then press Enter" type="text" inputmode="text" enterkeyhint="go" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" maxlength="24" placeholder="" disabled><span class="enter-key" aria-hidden="true">↵</span></div>
+        </div>
+      </section>
+      <div id="screen-layer"></div>
+      <div id="chapter-reveal" aria-hidden="true"></div>
+      <div id="onboarding-hint" hidden>Type a word <span>·</span> Enter</div>
+      <div id="toast" role="status" aria-live="polite"></div>
+      <div id="loading" role="status"><div class="loading-ornament">T</div><div class="eyebrow">OPENING THE LIBRARY</div><div class="loading-track"><i></i></div></div>
+    </div>
+  </main>
+  <div class="sr-only" id="announcer" aria-live="polite" aria-atomic="true"></div>
+  <noscript><div class="no-script">This game needs JavaScript. Enable it and reload this page.</div></noscript>
+  <script>if(location.protocol==='file:'){document.getElementById('loading').innerHTML='<div class="load-error"><h2>Open the library with the launcher.</h2><p>Web games need a local HTTP server. Double-click START_MAC.command or START_WINDOWS.bat, or run this command in the extracted folder:</p><code>python3 scripts/server.py --open</code><p>The launcher opens the game in your browser.</p></div>';}</script>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

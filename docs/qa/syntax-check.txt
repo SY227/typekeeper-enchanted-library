@@ -1,0 +1,5 @@
+
+> typekeeper-enchanted-library@3.1.0 check
+> node scripts/check.mjs
+
+All application and build modules pass JavaScript syntax checks.

@@ -1,0 +1,190 @@
+{
+  "version": "3.1.0",
+  "files": [
+    {
+      "path": "assets/book-fire.svg",
+      "bytes": 2212,
+      "sha256": "0c97294d5e86e12a23bd46735611f22b65157619a560508ba4157ad9dc1ed8eb"
+    },
+    {
+      "path": "assets/book-ice.svg",
+      "bytes": 2235,
+      "sha256": "7c7d467873d7507ac6e90abace8978256e90b87e964b555ef9b9a56f86739d7e"
+    },
+    {
+      "path": "assets/book-slow.svg",
+      "bytes": 2268,
+      "sha256": "b27099e0969dc4c30d22e7684c2e760c090ac74c2164d92fc32886770d63a9c9"
+    },
+    {
+      "path": "assets/book-wind.svg",
+      "bytes": 2158,
+      "sha256": "33df77ffd6ba655f1d35e67347098b193d0cbcbce4c0dc051e8335bd920c7a93"
+    },
+    {
+      "path": "assets/favicon.svg",
+      "bytes": 383,
+      "sha256": "c24b83a7529ab508ae820b011abddd755b93f3c2adedc85cf376a686a57bf82c"
+    },
+    {
+      "path": "assets/icon-fire.svg",
+      "bytes": 437,
+      "sha256": "1b23c2fb4ef68826eb167fa6656d14aa74a5f3a9e10671ff9925dc37b8fe00f0"
+    },
+    {
+      "path": "assets/icon-ice.svg",
+      "bytes": 460,
+      "sha256": "302ffc348d0f1bcd9bd5fe8c7513773447a49986492824817cdce0f75454ce61"
+    },
+    {
+      "path": "assets/icon-slow.svg",
+      "bytes": 493,
+      "sha256": "ae6f133c77a056102bfb877dcf6be107c9c9f4ea7017aa8099901defe564ad41"
+    },
+    {
+      "path": "assets/icon-wind.svg",
+      "bytes": 383,
+      "sha256": "9eb8b512aac17d52260c7e6d2c04bb73e0fb79e53df878f9030c77ff65a53f10"
+    },
+    {
+      "path": "assets/lanterns-hearth.mp3",
+      "bytes": 2134977,
+      "sha256": "8b5c0cffbedf6113e546a4b461a7879e62d525e37d534bb39878d9a9a978818b"
+    },
+    {
+      "path": "assets/lanterns-motion.mp3",
+      "bytes": 2134977,
+      "sha256": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f"
+    },
+    {
+      "path": "assets/library.webp",
+      "bytes": 234232,
+      "sha256": "6f573f74db90b50c047c735031be0e1117018c00a770d73472b29292841eb8a6"
+    },
+    {
+      "path": "assets/manifest.json",
+      "bytes": 6614,
+      "sha256": "3237ca64a14453e6388490b672bf3f972f9785a735b4ad9a9bca484951ee7956"
+    },
+    {
+      "path": "assets/paper.webp",
+      "bytes": 318,
+      "sha256": "c530c88c2eabf3c81fd158a3dcd523d19c5e19206abefc12d56bbbc917807141"
+    },
+    {
+      "path": "assets/typist-alarmed.webp",
+      "bytes": 141988,
+      "sha256": "7a9b226b7c7954f09b75b554dda314d1878a4815359a69f9a733447bba308282"
+    },
+    {
+      "path": "assets/typist-calm.webp",
+      "bytes": 138148,
+      "sha256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c"
+    },
+    {
+      "path": "assets/typist-celebrate.webp",
+      "bytes": 138156,
+      "sha256": "22ee4e8a0288619142bfcb9f1653de6f3575a0351376dfca55f706c39b3a2a6a"
+    },
+    {
+      "path": "assets/typist-critical.webp",
+      "bytes": 141844,
+      "sha256": "39668ececfaf1c567c4524fc17b0fee1672cde1c88802dcb3be4324b906bc590"
+    },
+    {
+      "path": "assets/typist-defeated.webp",
+      "bytes": 137466,
+      "sha256": "42d7f0b5363501c5f6dc465755bbadbd5efeb8c5ca3dd3cbc15c2474a5d9c95c"
+    },
+    {
+      "path": "assets/typist-focused.webp",
+      "bytes": 138160,
+      "sha256": "5646f03b81c6f4df19e3acefa24a7560ae3822cd1935afeff4e3de7f82593003"
+    },
+    {
+      "path": "assets/typist-worried.webp",
+      "bytes": 137786,
+      "sha256": "0d884fbe5b9bcea214209772b945cd77a05ce76f62886878d08cb2ebb424b380"
+    },
+    {
+      "path": "assets/typist.webp",
+      "bytes": 138148,
+      "sha256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c"
+    },
+    {
+      "path": "index.html",
+      "bytes": 5258,
+      "sha256": "e282a6ad01dbda84109292c2dec2892f53b32dc4a00b46f560527be17fda0987"
+    },
+    {
+      "path": "src/audio/audio.js",
+      "bytes": 8907,
+      "sha256": "b97c7615d625c5f9b50a577b748b3056fc915792f2519e54cc217c5468a812a4"
+    },
+    {
+      "path": "src/data/campaign.js",
+      "bytes": 3330,
+      "sha256": "ede9d388f656f5ebf1132fd7ed9c4bfeb202634482a53844a4e90a85d275aef2"
+    },
+    {
+      "path": "src/data/words.js",
+      "bytes": 7517,
+      "sha256": "e0d35181804d7694f5a7f3b784e65a991dcf6f6443882b7c794c9d0394f2095b"
+    },
+    {
+      "path": "src/game/assets.js",
+      "bytes": 185,
+      "sha256": "b1babdb341f3ad9b7474cc9a4522cc3df440e1b407d2f83c85ae922c8f712336"
+    },
+    {
+      "path": "src/game/clock.js",
+      "bytes": 629,
+      "sha256": "5ce1c5ec16361d8b44fb75170b944ff94444f253650efd40f88d547d976bdb60"
+    },
+    {
+      "path": "src/game/controls.js",
+      "bytes": 500,
+      "sha256": "b6a1d53f7abc6fe50144b64bfcb312cdb43c46ffc17eb8bfafed6055fe66589d"
+    },
+    {
+      "path": "src/game/model.js",
+      "bytes": 16880,
+      "sha256": "e1aa5a4ed20a61fd9afbc56c340efe758b7420e37ec1db255b779c834e2ae60f"
+    },
+    {
+      "path": "src/game/pressure.js",
+      "bytes": 1068,
+      "sha256": "ed17bd358f79f211319b4b023061ef05ed96d5cd0d8e872594ce529ede252c0b"
+    },
+    {
+      "path": "src/game/rules.js",
+      "bytes": 3851,
+      "sha256": "bbb0cc9af9b67d324e0ded6bbd00373ca063e4b4068af1e0c715f234e6e5afea"
+    },
+    {
+      "path": "src/game/storage.js",
+      "bytes": 10315,
+      "sha256": "97dc6952204c526ef2ae59000afce8c53e949c1609705116c4ba6cde386eca95"
+    },
+    {
+      "path": "src/main.js",
+      "bytes": 43481,
+      "sha256": "ee83f249cf3d5326a13afc06c3311a93625dc0732241531229334a8078e69bdc"
+    },
+    {
+      "path": "src/render/renderer.js",
+      "bytes": 19902,
+      "sha256": "4ce5983f5f0204ae9d3178d313616ca90020524eb34d273e1383e5d36851c7d0"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 46061,
+      "sha256": "9130272661646169ecd06bdb5a29722f976da4e9b66f2d4c7688bba4eada5d03"
+    },
+    {
+      "path": "src/ui/icons.js",
+      "bytes": 1228,
+      "sha256": "7a391885b01a520eb95ab03540d645f13fdf1798a8a79795b0427fc1d1c5576a"
+    }
+  ]
+}

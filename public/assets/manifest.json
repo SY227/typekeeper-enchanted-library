@@ -1,0 +1,173 @@
+{
+  "version": "3.0.0",
+  "assets": [
+    {
+      "id": "book-fire",
+      "path": "assets/book-fire.svg",
+      "bytes": 2212,
+      "sha256": "0c97294d5e86e12a23bd46735611f22b65157619a560508ba4157ad9dc1ed8eb",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "book-ice",
+      "path": "assets/book-ice.svg",
+      "bytes": 2235,
+      "sha256": "7c7d467873d7507ac6e90abace8978256e90b87e964b555ef9b9a56f86739d7e",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "book-slow",
+      "path": "assets/book-slow.svg",
+      "bytes": 2268,
+      "sha256": "b27099e0969dc4c30d22e7684c2e760c090ac74c2164d92fc32886770d63a9c9",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "book-wind",
+      "path": "assets/book-wind.svg",
+      "bytes": 2158,
+      "sha256": "33df77ffd6ba655f1d35e67347098b193d0cbcbce4c0dc051e8335bd920c7a93",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "favicon",
+      "path": "assets/favicon.svg",
+      "bytes": 383,
+      "sha256": "c24b83a7529ab508ae820b011abddd755b93f3c2adedc85cf376a686a57bf82c",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "icon-fire",
+      "path": "assets/icon-fire.svg",
+      "bytes": 437,
+      "sha256": "1b23c2fb4ef68826eb167fa6656d14aa74a5f3a9e10671ff9925dc37b8fe00f0",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "icon-ice",
+      "path": "assets/icon-ice.svg",
+      "bytes": 460,
+      "sha256": "302ffc348d0f1bcd9bd5fe8c7513773447a49986492824817cdce0f75454ce61",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "icon-slow",
+      "path": "assets/icon-slow.svg",
+      "bytes": 493,
+      "sha256": "ae6f133c77a056102bfb877dcf6be107c9c9f4ea7017aa8099901defe564ad41",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "icon-wind",
+      "path": "assets/icon-wind.svg",
+      "bytes": 383,
+      "sha256": "9eb8b512aac17d52260c7e6d2c04bb73e0fb79e53df878f9030c77ff65a53f10",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "lanterns-hearth",
+      "path": "assets/lanterns-hearth.mp3",
+      "bytes": 2134977,
+      "sha256": "8b5c0cffbedf6113e546a4b461a7879e62d525e37d534bb39878d9a9a978818b",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "lanterns-motion",
+      "path": "assets/lanterns-motion.mp3",
+      "bytes": 2134977,
+      "sha256": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "library",
+      "path": "assets/library.webp",
+      "bytes": 234232,
+      "sha256": "6f573f74db90b50c047c735031be0e1117018c00a770d73472b29292841eb8a6",
+      "provenance": "V1 generated illustration / manual cutout master retained",
+      "status": "shipped"
+    },
+    {
+      "id": "paper",
+      "path": "assets/paper.webp",
+      "bytes": 318,
+      "sha256": "c530c88c2eabf3c81fd158a3dcd523d19c5e19206abefc12d56bbbc917807141",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "typist-alarmed",
+      "path": "assets/typist-alarmed.webp",
+      "bytes": 141988,
+      "sha256": "7a9b226b7c7954f09b75b554dda314d1878a4815359a69f9a733447bba308282",
+      "provenance": "Registered expression derivative of the supplied v1 typist master; deterministic Python/OpenCV paintover",
+      "status": "shipped"
+    },
+    {
+      "id": "typist-calm",
+      "path": "assets/typist-calm.webp",
+      "bytes": 138148,
+      "sha256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c",
+      "provenance": "Registered expression derivative of the supplied v1 typist master; deterministic Python/OpenCV paintover",
+      "status": "shipped"
+    },
+    {
+      "id": "typist-celebrate",
+      "path": "assets/typist-celebrate.webp",
+      "bytes": 138156,
+      "sha256": "22ee4e8a0288619142bfcb9f1653de6f3575a0351376dfca55f706c39b3a2a6a",
+      "provenance": "Registered expression derivative of the supplied v1 typist master; deterministic Python/OpenCV paintover",
+      "status": "shipped"
+    },
+    {
+      "id": "typist-critical",
+      "path": "assets/typist-critical.webp",
+      "bytes": 141844,
+      "sha256": "39668ececfaf1c567c4524fc17b0fee1672cde1c88802dcb3be4324b906bc590",
+      "provenance": "Registered expression derivative of the supplied v1 typist master; deterministic Python/OpenCV paintover",
+      "status": "shipped"
+    },
+    {
+      "id": "typist-defeated",
+      "path": "assets/typist-defeated.webp",
+      "bytes": 137466,
+      "sha256": "42d7f0b5363501c5f6dc465755bbadbd5efeb8c5ca3dd3cbc15c2474a5d9c95c",
+      "provenance": "Registered expression derivative of the supplied v1 typist master; deterministic Python/OpenCV paintover",
+      "status": "shipped"
+    },
+    {
+      "id": "typist-focused",
+      "path": "assets/typist-focused.webp",
+      "bytes": 138160,
+      "sha256": "5646f03b81c6f4df19e3acefa24a7560ae3822cd1935afeff4e3de7f82593003",
+      "provenance": "Registered expression derivative of the supplied v1 typist master; deterministic Python/OpenCV paintover",
+      "status": "shipped"
+    },
+    {
+      "id": "typist-worried",
+      "path": "assets/typist-worried.webp",
+      "bytes": 137786,
+      "sha256": "0d884fbe5b9bcea214209772b945cd77a05ce76f62886878d08cb2ebb424b380",
+      "provenance": "Registered expression derivative of the supplied v1 typist master; deterministic Python/OpenCV paintover",
+      "status": "shipped"
+    },
+    {
+      "id": "typist",
+      "path": "assets/typist.webp",
+      "bytes": 138148,
+      "sha256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c",
+      "provenance": "V1 generated illustration / manual cutout master retained",
+      "status": "shipped"
+    }
+  ]
+}

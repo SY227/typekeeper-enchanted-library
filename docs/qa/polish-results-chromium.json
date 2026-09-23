@@ -1,0 +1,149 @@
+{
+  "shippingSHA256": "0942687689893ed4d7500ca09ae32ccb737b6ef6cc4ad634e723c0098ad702ce",
+  "scope": "Embedded shipping PLAY.html, diagnostics enabled only in memory. Fault-injection tests identified explicitly. No HTTP/file navigation or real Safari/device certification.",
+  "browser": "144.0.7559.96",
+  "passed": 24,
+  "failed": 0,
+  "audioSample": {
+    "state": "running",
+    "sfx": true,
+    "music": true,
+    "muted": false,
+    "musicStatus": "ready",
+    "scene": "menu",
+    "background": false,
+    "sources": 2,
+    "output": 0.800000011920929,
+    "musicGain": 0.3060031831264496,
+    "fxGain": 0.12349999696016312,
+    "stemGains": [
+      1,
+      0.156602680683136
+    ],
+    "loopDuration": 106.6666439909297,
+    "decodedBytes": 75263984
+  },
+  "unhandledErrors": [],
+  "tests": [
+    {
+      "name": "Branding: no prototype masthead, footers, edition labels or shortcut banner",
+      "status": "PASS",
+      "seconds": 0.069
+    },
+    {
+      "name": "Real first click unlocks original music without autoplay overrides",
+      "status": "PASS",
+      "seconds": 0.88
+    },
+    {
+      "name": "Both stereo stems decode, contain signal and share the authored loop duration",
+      "status": "PASS",
+      "seconds": 0.005
+    },
+    {
+      "name": "Menu, gameplay and trial mixes change without restarting synchronized stems",
+      "status": "PASS",
+      "seconds": 4.295
+    },
+    {
+      "name": "Single mute button silences both music and effects and restores output",
+      "status": "PASS",
+      "seconds": 1.171
+    },
+    {
+      "name": "Independent master, music and effects sliders reach separate buses with a quiet probe tone",
+      "status": "PASS",
+      "seconds": 2.543
+    },
+    {
+      "name": "Disabling typewriter effects leaves the music playing",
+      "status": "PASS",
+      "seconds": 0.791
+    },
+    {
+      "name": "Music toggle fades rather than resetting playback or disabling effects",
+      "status": "PASS",
+      "seconds": 4.637
+    },
+    {
+      "name": "Repeated modal transitions do not duplicate music sources",
+      "status": "PASS",
+      "seconds": 3.29
+    },
+    {
+      "name": "Pause and nested Settings freeze play, soften music, and make obscured controls inert",
+      "status": "PASS",
+      "seconds": 2.375
+    },
+    {
+      "name": "Resume countdown holds the simulation still before returning control",
+      "status": "PASS",
+      "seconds": 1.797
+    },
+    {
+      "name": "Escape cancels a pending countdown without accidental resume",
+      "status": "PASS",
+      "seconds": 2.202
+    },
+    {
+      "name": "Focus loss cancels countdown, suspends audio and requires deliberate gameplay resume",
+      "status": "PASS",
+      "seconds": 2.116
+    },
+    {
+      "name": "Countdown restores the exact word, cursor and selected range",
+      "status": "PASS",
+      "seconds": 1.735
+    },
+    {
+      "name": "Countdown preference provides immediate resume when disabled",
+      "status": "PASS",
+      "seconds": 0.471
+    },
+    {
+      "name": "First-use typing hint retires on success and respects its preference",
+      "status": "PASS",
+      "seconds": 0.047
+    },
+    {
+      "name": "Focused HUD removes secondary numbers; detailed HUD can restore them",
+      "status": "PASS",
+      "seconds": 0.293
+    },
+    {
+      "name": "Reduced motion removes decorative animation without hiding ready states",
+      "status": "PASS",
+      "seconds": 0.184
+    },
+    {
+      "name": "Burst effects respect voice limits and disconnect after playback",
+      "status": "PASS",
+      "seconds": 0.616
+    },
+    {
+      "name": "Injected missing music failure reports honestly while typing remains playable",
+      "status": "PASS",
+      "seconds": 2.448
+    },
+    {
+      "name": "AudioContext-unavailable environment still starts gameplay",
+      "status": "PASS",
+      "seconds": 1.242
+    },
+    {
+      "name": "Final title, gameplay, Audio settings and chapter atlas render into captures",
+      "status": "PASS",
+      "seconds": 10.427
+    },
+    {
+      "name": "Unmodified production PLAY.html exposes no controlled test seam",
+      "status": "PASS",
+      "seconds": 0.851
+    },
+    {
+      "name": "No unhandled application errors during polish audit",
+      "status": "PASS",
+      "seconds": 0.0
+    }
+  ]
+}

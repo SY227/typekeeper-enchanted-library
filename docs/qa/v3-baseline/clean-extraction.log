@@ -1,0 +1,697 @@
+$ npm ci --offline --ignore-scripts --no-audit --no-fund
+
+up to date in 205ms
+
+$ npm test
+
+> typekeeper-enchanted-library@3.0.0 test
+> node --test
+
+TAP version 13
+# Subtest: normalization accepts English letters, uppercases and bounds the buffer
+ok 1 - normalization accepts English letters, uppercases and bounds the buffer
+  ---
+  duration_ms: 1.186726
+  type: 'test'
+  ...
+# Subtest: dictionary is substantial, uppercase, unique within tiers, and all words fit the buffer
+ok 2 - dictionary is substantial, uppercase, unique within tiers, and all words fit the buffer
+  ---
+  duration_ms: 0.516608
+  type: 'test'
+  ...
+# Subtest: seeded random generator repeats exactly
+ok 3 - seeded random generator repeats exactly
+  ---
+  duration_ms: 4.89641
+  type: 'test'
+  ...
+# Subtest: fresh game is in menu, with no starting power stock
+ok 4 - fresh game is in menu, with no starting power stock
+  ---
+  duration_ms: 0.260091
+  type: 'test'
+  ...
+# Subtest: start resets all run state
+ok 5 - start resets all run state
+  ---
+  duration_ms: 0.283246
+  type: 'test'
+  ...
+# Subtest: complete exact word once, update points/progress/characters
+ok 6 - complete exact word once, update points/progress/characters
+  ---
+  duration_ms: 0.906203
+  type: 'test'
+  ...
+# Subtest: partial input never auto-clears or penalizes
+ok 7 - partial input never auto-clears or penalizes
+  ---
+  duration_ms: 0.229415
+  type: 'test'
+  ...
+# Subtest: empty Enter is a true no-op
+ok 8 - empty Enter is a true no-op
+  ---
+  duration_ms: 0.161643
+  type: 'test'
+  ...
+# Subtest: invalid submission penalizes once and clears the buffer
+ok 9 - invalid submission penalizes once and clears the buffer
+  ---
+  duration_ms: 0.41229
+  type: 'test'
+  ...
+# Subtest: editing a prefix is non-destructive
+ok 10 - editing a prefix is non-destructive
+  ---
+  duration_ms: 0.363888
+  type: 'test'
+  ...
+# Subtest: duplicate words resolve the lowest exact match
+ok 11 - duplicate words resolve the lowest exact match
+  ---
+  duration_ms: 0.233501
+  type: 'test'
+  ...
+# Subtest: ties are stable by ID
+ok 12 - ties are stable by ID
+  ---
+  duration_ms: 0.114893
+  type: 'test'
+  ...
+# Subtest: shared prefix does not lock onto a target
+ok 13 - shared prefix does not lock onto a target
+  ---
+  duration_ms: 0.224778
+  type: 'test'
+  ...
+# Subtest: falling FIRE word takes priority over available command
+ok 14 - falling FIRE word takes priority over available command
+  ---
+  duration_ms: 0.111448
+  type: 'test'
+  ...
+# Subtest: power collection is immediate and capped at three
+ok 15 - power collection is immediate and capped at three
+  ---
+  duration_ms: 0.236566
+  type: 'test'
+  ...
+# Subtest: all four power-card families grant the corresponding book
+ok 16 - all four power-card families grant the corresponding book
+  ---
+  duration_ms: 0.157117
+  type: 'test'
+  ...
+# Subtest: unavailable spell costs no points or danger and grants no stock
+ok 17 - unavailable spell costs no points or danger and grants no stock
+  ---
+  duration_ms: 0.156536
+  type: 'test'
+  ...
+# Subtest: FIRE clears active cards without scoring, progress, or harvesting books
+ok 18 - FIRE clears active cards without scoring, progress, or harvesting books
+  ---
+  duration_ms: 0.320593
+  type: 'test'
+  ...
+# Subtest: FIRE consumes exactly one charge per nonempty cast
+ok 19 - FIRE consumes exactly one charge per nonempty cast
+  ---
+  duration_ms: 0.178659
+  type: 'test'
+  ...
+# Subtest: ICE stops words and spawn timer for its duration
+ok 20 - ICE stops words and spawn timer for its duration
+  ---
+  duration_ms: 0.632653
+  type: 'test'
+  ...
+# Subtest: ICE active recast is rejected and preserves the next book
+ok 21 - ICE active recast is rejected and preserves the next book
+  ---
+  duration_ms: 0.18568
+  type: 'test'
+  ...
+# Subtest: SLOW scales motion by exactly 0.42
+ok 22 - SLOW scales motion by exactly 0.42
+  ---
+  duration_ms: 0.187643
+  type: 'test'
+  ...
+# Subtest: ICE and SLOW coexist; timers advance independently in simulation time
+ok 23 - ICE and SLOW coexist; timers advance independently in simulation time
+  ---
+  duration_ms: 0.236095
+  type: 'test'
+  ...
+# Subtest: WIND fully clears danger and paper without clearing active words
+ok 24 - WIND fully clears danger and paper without clearing active words
+  ---
+  duration_ms: 0.157597
+  type: 'test'
+  ...
+# Subtest: pause freezes timers, positions, game time, and spawn countdown
+ok 25 - pause freezes timers, positions, game time, and spawn countdown
+  ---
+  duration_ms: 0.348204
+  type: 'test'
+  ...
+# Subtest: paused input cannot change buffer or score
+ok 26 - paused input cannot change buffer or score
+  ---
+  duration_ms: 0.121814
+  type: 'test'
+  ...
+# Subtest: miss adds the configured danger once and clears streak
+ok 27 - miss adds the configured danger once and clears streak
+  ---
+  duration_ms: 0.166811
+  type: 'test'
+  ...
+# Subtest: dark miss penalty is larger; dark completion earns double
+ok 28 - dark miss penalty is larger; dark completion earns double
+  ---
+  duration_ms: 0.196736
+  type: 'test'
+  ...
+# Subtest: game over is terminal and emits only once
+ok 29 - game over is terminal and emits only once
+  ---
+  duration_ms: 0.157958
+  type: 'test'
+  ...
+# Subtest: an invalid submission can end a run at the limit
+ok 30 - an invalid submission can end a run at the limit
+  ---
+  duration_ms: 0.157057
+  type: 'test'
+  ...
+# Subtest: word submitted just before impact cannot subsequently land
+ok 31 - word submitted just before impact cannot subsequently land
+  ---
+  duration_ms: 0.097968
+  type: 'test'
+  ...
+# Subtest: perfect chapter awards 100 x level plus 250, then clears field
+ok 32 - perfect chapter awards 100 x level plus 250, then clears field
+  ---
+  duration_ms: 0.269466
+  type: 'test'
+  ...
+# Subtest: imperfect chapter excludes perfect bonus
+ok 33 - imperfect chapter excludes perfect bonus
+  ---
+  duration_ms: 0.143075
+  type: 'test'
+  ...
+# Subtest: next chapter resets quota and timed effects but retains danger and stock
+ok 34 - next chapter resets quota and timed effects but retains danger and stock
+  ---
+  duration_ms: 0.174072
+  type: 'test'
+  ...
+# Subtest: streak multiplier grows at eight and caps at three
+ok 35 - streak multiplier grows at eight and caps at three
+  ---
+  duration_ms: 0.063806
+  type: 'test'
+  ...
+# Subtest: word accuracy is submission accuracy, not a keystroke claim
+ok 36 - word accuracy is submission accuracy, not a keystroke claim
+  ---
+  duration_ms: 0.081022
+  type: 'test'
+  ...
+# Subtest: WPM uses correctly completed characters and active time
+ok 37 - WPM uses correctly completed characters and active time
+  ---
+  duration_ms: 0.068824
+  type: 'test'
+  ...
+# Subtest: same seed and input sequence yield the same simulation
+ok 38 - same seed and input sequence yield the same simulation
+  ---
+  duration_ms: 3.000346
+  type: 'test'
+  ...
+# Subtest: spawn bounds keep whole cards on the playfield
+ok 39 - spawn bounds keep whole cards on the playfield
+  ---
+  duration_ms: 1.717726
+  type: 'test'
+  ...
+# Subtest: spawn is bounded at 12 simultaneous cards
+ok 40 - spawn is bounded at 12 simultaneous cards
+  ---
+  duration_ms: 0.108593
+  type: 'test'
+  ...
+# Subtest: special cards include explicit glyph padding
+ok 41 - special cards include explicit glyph padding
+  ---
+  duration_ms: 0.092399
+  type: 'test'
+  ...
+# Subtest: level speed and quotas increase but remain bounded
+ok 42 - level speed and quotas increase but remain bounded
+  ---
+  duration_ms: 0.075814
+  type: 'test'
+  ...
+# Subtest: pace choice changes speed without changing correctness rules
+ok 43 - pace choice changes speed without changing correctness rules
+  ---
+  duration_ms: 0.090606
+  type: 'test'
+  ...
+# Subtest: fixed clock creates 60 bounded simulation steps over one second
+ok 44 - fixed clock creates 60 bounded simulation steps over one second
+  ---
+  duration_ms: 0.437568
+  type: 'test'
+  ...
+# Subtest: clock does not simulate a hidden-tab catch-up burst
+ok 45 - clock does not simulate a hidden-tab catch-up burst
+  ---
+  duration_ms: 0.095043
+  type: 'test'
+  ...
+# Subtest: settings and local records round-trip with schema validation
+ok 46 - settings and local records round-trip with schema validation
+  ---
+  duration_ms: 0.721466
+  type: 'test'
+  ...
+# Subtest: malformed local data recovers safely
+ok 47 - malformed local data recovers safely
+  ---
+  duration_ms: 0.17924
+  type: 'test'
+  ...
+# Subtest: unavailable storage is explicitly session-only
+ok 48 - unavailable storage is explicitly session-only
+  ---
+  duration_ms: 0.249515
+  type: 'test'
+  ...
+# Subtest: blocked storage never crashes game state
+ok 49 - blocked storage never crashes game state
+  ---
+  duration_ms: 0.150146
+  type: 'test'
+  ...
+# Subtest: records filter malformed entries and maintain independent pace bests
+ok 50 - records filter malformed entries and maintain independent pace bests
+  ---
+  duration_ms: 0.178198
+  type: 'test'
+  ...
+# Subtest: clearing records retains settings
+ok 51 - clearing records retains settings
+  ---
+  duration_ms: 0.114993
+  type: 'test'
+  ...
+# Subtest: new players get the original score without a separate setup screen
+ok 52 - new players get the original score without a separate setup screen
+  ---
+  duration_ms: 0.870731
+  type: 'test'
+  ...
+# Subtest: music, effects, and master volume have independent bounded defaults
+ok 53 - music, effects, and master volume have independent bounded defaults
+  ---
+  duration_ms: 0.141763
+  type: 'test'
+  ...
+# Subtest: default gameplay HUD is focused, not a metrics dashboard
+ok 54 - default gameplay HUD is focused, not a metrics dashboard
+  ---
+  duration_ms: 0.112479
+  type: 'test'
+  ...
+# Subtest: returning players have a configurable resume safety countdown
+ok 55 - returning players have a configurable resume safety countdown
+  ---
+  duration_ms: 0.08011
+  type: 'test'
+  ...
+# Subtest: v2 settings and records migrate non-destructively into Typekeeper
+ok 56 - v2 settings and records migrate non-destructively into Typekeeper
+  ---
+  duration_ms: 0.670359
+  type: 'test'
+  ...
+# Subtest: current Typekeeper preferences take priority over old defaults
+ok 57 - current Typekeeper preferences take priority over old defaults
+  ---
+  duration_ms: 0.142425
+  type: 'test'
+  ...
+# Subtest: new audio preferences persist through actual serialization
+ok 58 - new audio preferences persist through actual serialization
+  ---
+  duration_ms: 0.450418
+  type: 'test'
+  ...
+# Subtest: invalid imported audio gains do not reach the mixer
+ok 59 - invalid imported audio gains do not reach the mixer
+  ---
+  duration_ms: 0.146931
+  type: 'test'
+  ...
+# Subtest: new presentation toggles serialize without changing active game rules
+ok 60 - new presentation toggles serialize without changing active game rules
+  ---
+  duration_ms: 0.290918
+  type: 'test'
+  ...
+# Subtest: Typekeeper save exports identify the product and preserve schema compatibility
+ok 61 - Typekeeper save exports identify the product and preserve schema compatibility
+  ---
+  duration_ms: 0.643238
+  type: 'test'
+  ...
+# Subtest: migrated saves retain all earned mastery and chapter bookmarks
+ok 62 - migrated saves retain all earned mastery and chapter bookmarks
+  ---
+  duration_ms: 0.759494
+  type: 'test'
+  ...
+# Subtest: pile restoration agrees with the danger meter after a bookmark
+ok 63 - pile restoration agrees with the danger meter after a bookmark
+  ---
+  duration_ms: 0.301253
+  type: 'test'
+  ...
+# Subtest: restored pile does not retain references to imported data
+ok 64 - restored pile does not retain references to imported data
+  ---
+  duration_ms: 0.150586
+  type: 'test'
+  ...
+# Subtest: older checkpoints reconstruct visual papers for existing danger
+ok 65 - older checkpoints reconstruct visual papers for existing danger
+  ---
+  duration_ms: 0.221403
+  type: 'test'
+  ...
+# Subtest: malformed pile objects are rejected before save import
+ok 66 - malformed pile objects are rejected before save import
+  ---
+  duration_ms: 0.14638
+  type: 'test'
+  ...
+# Subtest: oversized or out-of-field imported piles are rejected
+ok 67 - oversized or out-of-field imported piles are rejected
+  ---
+  duration_ms: 0.208474
+  type: 'test'
+  ...
+# Subtest: campaign finale now uses the Typekeeper identity
+ok 68 - campaign finale now uses the Typekeeper identity
+  ---
+  duration_ms: 0.06658
+  type: 'test'
+  ...
+# Subtest: HTML contains no website header, footer, or edition labeling
+ok 69 - HTML contains no website header, footer, or edition labeling
+  ---
+  duration_ms: 0.357658
+  type: 'test'
+  ...
+# Subtest: live menu source removes prototype and defensive copy
+ok 70 - live menu source removes prototype and defensive copy
+  ---
+  duration_ms: 0.370457
+  type: 'test'
+  ...
+# Subtest: original score has two equal-length, original phase-aligned stems
+ok 71 - original score has two equal-length, original phase-aligned stems
+  ---
+  duration_ms: 0.852333
+  type: 'test'
+  ...
+# Subtest: both music exports are included locally and stay under 3 MiB each
+ok 72 - both music exports are included locally and stay under 3 MiB each
+  ---
+  duration_ms: 0.174162
+  type: 'test'
+  ...
+# Subtest: source soundtrack includes editable MIDI and lossless masters
+ok 73 - source soundtrack includes editable MIDI and lossless masters
+  ---
+  duration_ms: 0.130897
+  type: 'test'
+  ...
+# Subtest: old placeholder nocturne is not shipped as a runtime asset
+ok 74 - old placeholder nocturne is not shipped as a runtime asset
+  ---
+  duration_ms: 0.08612
+  type: 'test'
+  ...
+# Subtest: no font binaries or remote font dependencies are required
+ok 75 - no font binaries or remote font dependencies are required
+  ---
+  duration_ms: 0.230817
+  type: 'test'
+  ...
+# Subtest: campaign has 48 unique named stages across eight six-stage wings
+ok 76 - campaign has 48 unique named stages across eight six-stage wings
+  ---
+  duration_ms: 1.021708
+  type: 'test'
+  ...
+# Subtest: eight trials occur at the end of each wing
+ok 77 - eight trials occur at the end of each wing
+  ---
+  duration_ms: 0.714075
+  type: 'test'
+  ...
+# Subtest: all 48 stages have smooth rising speed and falling arrival interval
+ok 78 - all 48 stages have smooth rising speed and falling arrival interval
+  ---
+  duration_ms: 0.576287
+  type: 'test'
+  ...
+# Subtest: endless mode is named and has bounded speed and spawn intervals
+ok 79 - endless mode is named and has bounded speed and spawn intervals
+  ---
+  duration_ms: 0.155083
+  type: 'test'
+  ...
+# Subtest: every numbered hotkey and numpad key maps to its spell
+ok 80 - every numbered hotkey and numpad key maps to its spell
+  ---
+  duration_ms: 0.145739
+  type: 'test'
+  ...
+# Subtest: hotkeys ignore modifiers, key repeat, IME and ordinary typing
+ok 81 - hotkeys ignore modifiers, key repeat, IME and ordinary typing
+  ---
+  duration_ms: 0.133561
+  type: 'test'
+  ...
+# Subtest: quick cast preserves the typed buffer and records input provenance
+ok 82 - quick cast preserves the typed buffer and records input provenance
+  ---
+  duration_ms: 0.641465
+  type: 'test'
+  ...
+# Subtest: quick FIRE is unambiguous even with a falling FIRE word
+ok 83 - quick FIRE is unambiguous even with a falling FIRE word
+  ---
+  duration_ms: 0.320743
+  type: 'test'
+  ...
+# Subtest: empty FIRE does not waste inventory
+ok 84 - empty FIRE does not waste inventory
+  ---
+  duration_ms: 0.416978
+  type: 'test'
+  ...
+# Subtest: empty WIND does not waste inventory
+ok 85 - empty WIND does not waste inventory
+  ---
+  duration_ms: 0.477349
+  type: 'test'
+  ...
+# Subtest: active SLOW cannot waste a second book
+ok 86 - active SLOW cannot waste a second book
+  ---
+  duration_ms: 0.871011
+  type: 'test'
+  ...
+# Subtest: SLOW creates breathing room in spawn countdown as well as motion
+ok 87 - SLOW creates breathing room in spawn countdown as well as motion
+  ---
+  duration_ms: 0.877521
+  type: 'test'
+  ...
+# Subtest: casting after ICE expires consumes the next book once
+ok 88 - casting after ICE expires consumes the next book once
+  ---
+  duration_ms: 0.671341
+  type: 'test'
+  ...
+# Subtest: anti-doublecast cooldown applies per power without blocking combinations
+ok 89 - anti-doublecast cooldown applies per power without blocking combinations
+  ---
+  duration_ms: 0.335666
+  type: 'test'
+  ...
+# Subtest: pressure state thresholds include every exact boundary
+ok 90 - pressure state thresholds include every exact boundary
+  ---
+  duration_ms: 0.150667
+  type: 'test'
+  ...
+# Subtest: defeat and celebration override the normal pressure expression
+ok 91 - defeat and celebration override the normal pressure expression
+  ---
+  duration_ms: 0.135434
+  type: 'test'
+  ...
+# Subtest: WIND immediately restores the calm gameplay state
+ok 92 - WIND immediately restores the calm gameplay state
+  ---
+  duration_ms: 0.145299
+  type: 'test'
+  ...
+# Subtest: pressure events fire on transitions rather than every frame
+ok 93 - pressure events fire on transitions rather than every frame
+  ---
+  duration_ms: 0.202184
+  type: 'test'
+  ...
+# Subtest: mastery stars use documented gold, silver and bronze thresholds
+ok 94 - mastery stars use documented gold, silver and bronze thresholds
+  ---
+  duration_ms: 0.115193
+  type: 'test'
+  ...
+# Subtest: stage summaries use stage-local WPM and accuracy
+ok 95 - stage summaries use stage-local WPM and accuracy
+  ---
+  duration_ms: 0.872323
+  type: 'test'
+  ...
+# Subtest: a full campaign advances through all 48 stages without stale phase or progress
+ok 96 - a full campaign advances through all 48 stages without stale phase or progress
+  ---
+  duration_ms: 8.645432
+  type: 'test'
+  ...
+# Subtest: checkpoint restores score, books, danger and completed stages at the next boundary
+ok 97 - checkpoint restores score, books, danger and completed stages at the next boundary
+  ---
+  duration_ms: 0.386181
+  type: 'test'
+  ...
+# Subtest: checkpoint is validated before being saved
+ok 98 - checkpoint is validated before being saved
+  ---
+  duration_ms: 0.546222
+  type: 'test'
+  ...
+# Subtest: checkpoint survives actual store serialization and clear is persistent
+ok 99 - checkpoint survives actual store serialization and clear is persistent
+  ---
+  duration_ms: 0.944671
+  type: 'test'
+  ...
+# Subtest: mastery keeps the best grade and paces stay independent
+ok 100 - mastery keeps the best grade and paces stay independent
+  ---
+  duration_ms: 0.31952
+  type: 'test'
+  ...
+# Subtest: practice can improve an earned grade but cannot create expedition progress
+ok 101 - practice can improve an earned grade but cannot create expedition progress
+  ---
+  duration_ms: 0.153862
+  type: 'test'
+  ...
+# Subtest: save export/import merges rather than duplicates records
+ok 102 - save export/import merges rather than duplicates records
+  ---
+  duration_ms: 1.602461
+  type: 'test'
+  ...
+# Subtest: current, practice and legacy records are not mixed in best score
+ok 103 - current, practice and legacy records are not mixed in best score
+  ---
+  duration_ms: 0.234352
+  type: 'test'
+  ...
+# Subtest: record time windows use date cutoffs and actual records
+ok 104 - record time windows use date cutoffs and actual records
+  ---
+  duration_ms: 0.134903
+  type: 'test'
+  ...
+# Subtest: legacy migration tolerates null and malformed rows and tags valid V1 scores
+ok 105 - legacy migration tolerates null and malformed rows and tags valid V1 scores
+  ---
+  duration_ms: 0.228113
+  type: 'test'
+  ...
+# Subtest: wide words allocate glyph-aware card widths
+ok 106 - wide words allocate glyph-aware card widths
+  ---
+  duration_ms: 0.083867
+  type: 'test'
+  ...
+# Subtest: spawned long cards remain wholly within the game field
+ok 107 - spawned long cards remain wholly within the game field
+  ---
+  duration_ms: 1.393838
+  type: 'test'
+  ...
+# Subtest: pause freezes cooldowns and resume does not erase partial input
+ok 108 - pause freezes cooldowns and resume does not erase partial input
+  ---
+  duration_ms: 0.301434
+  type: 'test'
+  ...
+# Subtest: checkpoint cannot be imported into a different pace slot
+ok 109 - checkpoint cannot be imported into a different pace slot
+  ---
+  duration_ms: 0.269355
+  type: 'test'
+  ...
+1..109
+# tests 109
+# suites 0
+# pass 109
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 141.923636
+
+$ npm run check
+
+> typekeeper-enchanted-library@3.0.0 check
+> node scripts/check.mjs
+
+All application and build modules pass JavaScript syntax checks.
+
+$ npm run build
+
+> typekeeper-enchanted-library@3.0.0 build
+> node scripts/build.mjs
+
+Manifest verified: 21 local assets.
+Built 37 local files; 5.52 MiB. No CDN or network build dependency.
+Standalone PLAY.html: 7.61 MiB. All art, music and code embedded.
+
+$ npm run assets
+
+> typekeeper-enchanted-library@3.0.0 assets
+> python3 scripts/create_assets.py && python3 scripts/create_expressions.py && node scripts/manifest.mjs
+
+Exported seven aligned expressions and contact sheet.
+Manifest verified: 21 local assets.

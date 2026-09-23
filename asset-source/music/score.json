@@ -1,0 +1,25 @@
+{
+  "title": "Lanterns & Letters",
+  "bpm": 90,
+  "meter": "4/4",
+  "key": "D major",
+  "bars": 40,
+  "durationSeconds": 106.66666666666666,
+  "sampleRate": 32000,
+  "channels": 2,
+  "composition": "Original authored melody, voicings and arrangement. Deterministic synthesized instruments.",
+  "sourceSamples": "None",
+  "loopStart": 0,
+  "loopEnd": 106.66666666666666,
+  "stems": [
+    "lanterns-hearth.mp3",
+    "lanterns-motion.mp3"
+  ],
+  "peakDBFS": -2.73,
+  "rmsDBFS": -16.92,
+  "notes": 896,
+  "sha256": {
+    "lanterns-motion.mp3": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f",
+    "lanterns-hearth.mp3": "8b5c0cffbedf6113e546a4b461a7879e62d525e37d534bb39878d9a9a978818b"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "shippingSHA256": "0942687689893ed4d7500ca09ae32ccb737b6ef6cc4ad634e723c0098ad702ce",
+  "version": "3.1.0",
+  "scope": "Shipping standalone HTML in Chromium memory. State/clock setup uses explicit diagnostics. Real input, view and rule code. No HTTP/file navigation or human participants.",
+  "browser": "144.0.7559.96",
+  "passed": 27,
+  "failed": 0,
+  "unhandledErrors": [],
+  "tests": [
+    {
+      "name": "Built browser contains the new versioned mechanics, not the v3 bundle",
+      "status": "PASS",
+      "seconds": 0.024
+    },
+    {
+      "name": "Book availability distinguishes STORED from actionable READY",
+      "status": "PASS",
+      "seconds": 0.26
+    },
+    {
+      "name": "ICE plus SLOW queues visibly, rejects recast, then starts the saved duration",
+      "status": "PASS",
+      "seconds": 0.112
+    },
+    {
+      "name": "Pause and resume preserve queued spells and their exact timers",
+      "status": "PASS",
+      "seconds": 0.598
+    },
+    {
+      "name": "Real Enter immediately after landing applies no second typo penalty",
+      "status": "PASS",
+      "seconds": 0.042
+    },
+    {
+      "name": "The late-entry guard does not turn into permanent forgiveness",
+      "status": "PASS",
+      "seconds": 0.04
+    },
+    {
+      "name": "FIRE preserves typing and its cleared target is not penalized on immediate Enter",
+      "status": "PASS",
+      "seconds": 0.045
+    },
+    {
+      "name": "Typing after Tab lands on a spell returns to the word without dropping a letter",
+      "status": "PASS",
+      "seconds": 0.031
+    },
+    {
+      "name": "Returning from a spell with selected text preserves replacement editing",
+      "status": "PASS",
+      "seconds": 0.062
+    },
+    {
+      "name": "An empty playfield refills promptly after a correct word",
+      "status": "PASS",
+      "seconds": 0.081
+    },
+    {
+      "name": "Archive trial rest is signposted in the existing wave indicator",
+      "status": "PASS",
+      "seconds": 0.072
+    },
+    {
+      "name": "Final-word quota drains cleanly without spawning disposable extra cards",
+      "status": "PASS",
+      "seconds": 0.083
+    },
+    {
+      "name": "Chapter-one failure offers Retry rather than forcing a fresh campaign",
+      "status": "PASS",
+      "seconds": 0.212
+    },
+    {
+      "name": "Retry restores chapter resources and the identical opening word, without score farming",
+      "status": "PASS",
+      "seconds": 0.37
+    },
+    {
+      "name": "Play from post-defeat Records cannot silently replace the retry bookmark",
+      "status": "PASS",
+      "seconds": 0.295
+    },
+    {
+      "name": "How to play respects an existing Continue bookmark",
+      "status": "PASS",
+      "seconds": 0.241
+    },
+    {
+      "name": "Finale rejects repeated next-chapter actions rather than leaking into chapter 49",
+      "status": "PASS",
+      "seconds": 0.034
+    },
+    {
+      "name": "Practice records compare only the selected chapter",
+      "status": "PASS",
+      "seconds": 0.062
+    },
+    {
+      "name": "Practice stars survive save import without unlocking an uncleared campaign chapter",
+      "status": "PASS",
+      "seconds": 0.117
+    },
+    {
+      "name": "Continued old-rule scores are clearly archived instead of claiming a new-rule best",
+      "status": "PASS",
+      "seconds": 0.166
+    },
+    {
+      "name": "Ending Endless voluntarily records the score exactly once as retired",
+      "status": "PASS",
+      "seconds": 0.266
+    },
+    {
+      "name": "A storage-blocked browser does not falsely claim chapter progress was persisted",
+      "status": "PASS",
+      "seconds": 0.023
+    },
+    {
+      "name": "Holding Enter across a chapter transition does not advance twice or add a typo",
+      "status": "PASS",
+      "seconds": 0.384
+    },
+    {
+      "name": "Changing next-run difficulty in a paused menu never changes the active board",
+      "status": "PASS",
+      "seconds": 0.502
+    },
+    {
+      "name": "Concurrent spells and streaks share one non-overlapping feedback banner",
+      "status": "PASS",
+      "seconds": 0.017
+    },
+    {
+      "name": "Unchanged playfield layout renders queued spell feedback without overflow",
+      "status": "PASS",
+      "seconds": 1.167
+    },
+    {
+      "name": "No unhandled JavaScript exceptions in the mechanics browser audit",
+      "status": "PASS",
+      "seconds": 0.0
+    }
+  ]
+}

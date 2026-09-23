@@ -1,0 +1,285 @@
+{
+  "date": "2026-09-23",
+  "candidateArchive": "Typekeeper_v3_1_candidate.zip",
+  "candidateSHA256": "82bf56be0d9a41de8adc5937fea45bae7b4abb3be8d464506b9a353f8b8522f9",
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--offline",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exitCode": 0,
+      "seconds": 0.303
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exitCode": 0,
+      "seconds": 0.784
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exitCode": 0,
+      "seconds": 0.587
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 0.265
+    }
+  ],
+  "logicTestsPassed": 174,
+  "generatedOutputs": 39,
+  "matchingGeneratedOutputs": 39,
+  "outputs": [
+    {
+      "path": "dist/assets/book-fire.svg",
+      "testedSHA256": "0c97294d5e86e12a23bd46735611f22b65157619a560508ba4157ad9dc1ed8eb",
+      "cleanRebuildSHA256": "0c97294d5e86e12a23bd46735611f22b65157619a560508ba4157ad9dc1ed8eb",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/book-ice.svg",
+      "testedSHA256": "7c7d467873d7507ac6e90abace8978256e90b87e964b555ef9b9a56f86739d7e",
+      "cleanRebuildSHA256": "7c7d467873d7507ac6e90abace8978256e90b87e964b555ef9b9a56f86739d7e",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/book-slow.svg",
+      "testedSHA256": "b27099e0969dc4c30d22e7684c2e760c090ac74c2164d92fc32886770d63a9c9",
+      "cleanRebuildSHA256": "b27099e0969dc4c30d22e7684c2e760c090ac74c2164d92fc32886770d63a9c9",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/book-wind.svg",
+      "testedSHA256": "33df77ffd6ba655f1d35e67347098b193d0cbcbce4c0dc051e8335bd920c7a93",
+      "cleanRebuildSHA256": "33df77ffd6ba655f1d35e67347098b193d0cbcbce4c0dc051e8335bd920c7a93",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/favicon.svg",
+      "testedSHA256": "c24b83a7529ab508ae820b011abddd755b93f3c2adedc85cf376a686a57bf82c",
+      "cleanRebuildSHA256": "c24b83a7529ab508ae820b011abddd755b93f3c2adedc85cf376a686a57bf82c",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/icon-fire.svg",
+      "testedSHA256": "1b23c2fb4ef68826eb167fa6656d14aa74a5f3a9e10671ff9925dc37b8fe00f0",
+      "cleanRebuildSHA256": "1b23c2fb4ef68826eb167fa6656d14aa74a5f3a9e10671ff9925dc37b8fe00f0",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/icon-ice.svg",
+      "testedSHA256": "302ffc348d0f1bcd9bd5fe8c7513773447a49986492824817cdce0f75454ce61",
+      "cleanRebuildSHA256": "302ffc348d0f1bcd9bd5fe8c7513773447a49986492824817cdce0f75454ce61",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/icon-slow.svg",
+      "testedSHA256": "ae6f133c77a056102bfb877dcf6be107c9c9f4ea7017aa8099901defe564ad41",
+      "cleanRebuildSHA256": "ae6f133c77a056102bfb877dcf6be107c9c9f4ea7017aa8099901defe564ad41",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/icon-wind.svg",
+      "testedSHA256": "9eb8b512aac17d52260c7e6d2c04bb73e0fb79e53df878f9030c77ff65a53f10",
+      "cleanRebuildSHA256": "9eb8b512aac17d52260c7e6d2c04bb73e0fb79e53df878f9030c77ff65a53f10",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/lanterns-hearth.mp3",
+      "testedSHA256": "8b5c0cffbedf6113e546a4b461a7879e62d525e37d534bb39878d9a9a978818b",
+      "cleanRebuildSHA256": "8b5c0cffbedf6113e546a4b461a7879e62d525e37d534bb39878d9a9a978818b",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/lanterns-motion.mp3",
+      "testedSHA256": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f",
+      "cleanRebuildSHA256": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/library.webp",
+      "testedSHA256": "6f573f74db90b50c047c735031be0e1117018c00a770d73472b29292841eb8a6",
+      "cleanRebuildSHA256": "6f573f74db90b50c047c735031be0e1117018c00a770d73472b29292841eb8a6",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/manifest.json",
+      "testedSHA256": "3237ca64a14453e6388490b672bf3f972f9785a735b4ad9a9bca484951ee7956",
+      "cleanRebuildSHA256": "3237ca64a14453e6388490b672bf3f972f9785a735b4ad9a9bca484951ee7956",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/paper.webp",
+      "testedSHA256": "c530c88c2eabf3c81fd158a3dcd523d19c5e19206abefc12d56bbbc917807141",
+      "cleanRebuildSHA256": "c530c88c2eabf3c81fd158a3dcd523d19c5e19206abefc12d56bbbc917807141",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/typist-alarmed.webp",
+      "testedSHA256": "7a9b226b7c7954f09b75b554dda314d1878a4815359a69f9a733447bba308282",
+      "cleanRebuildSHA256": "7a9b226b7c7954f09b75b554dda314d1878a4815359a69f9a733447bba308282",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/typist-calm.webp",
+      "testedSHA256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c",
+      "cleanRebuildSHA256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/typist-celebrate.webp",
+      "testedSHA256": "22ee4e8a0288619142bfcb9f1653de6f3575a0351376dfca55f706c39b3a2a6a",
+      "cleanRebuildSHA256": "22ee4e8a0288619142bfcb9f1653de6f3575a0351376dfca55f706c39b3a2a6a",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/typist-critical.webp",
+      "testedSHA256": "39668ececfaf1c567c4524fc17b0fee1672cde1c88802dcb3be4324b906bc590",
+      "cleanRebuildSHA256": "39668ececfaf1c567c4524fc17b0fee1672cde1c88802dcb3be4324b906bc590",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/typist-defeated.webp",
+      "testedSHA256": "42d7f0b5363501c5f6dc465755bbadbd5efeb8c5ca3dd3cbc15c2474a5d9c95c",
+      "cleanRebuildSHA256": "42d7f0b5363501c5f6dc465755bbadbd5efeb8c5ca3dd3cbc15c2474a5d9c95c",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/typist-focused.webp",
+      "testedSHA256": "5646f03b81c6f4df19e3acefa24a7560ae3822cd1935afeff4e3de7f82593003",
+      "cleanRebuildSHA256": "5646f03b81c6f4df19e3acefa24a7560ae3822cd1935afeff4e3de7f82593003",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/typist-worried.webp",
+      "testedSHA256": "0d884fbe5b9bcea214209772b945cd77a05ce76f62886878d08cb2ebb424b380",
+      "cleanRebuildSHA256": "0d884fbe5b9bcea214209772b945cd77a05ce76f62886878d08cb2ebb424b380",
+      "matches": true
+    },
+    {
+      "path": "dist/assets/typist.webp",
+      "testedSHA256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c",
+      "cleanRebuildSHA256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c",
+      "matches": true
+    },
+    {
+      "path": "dist/build-manifest.json",
+      "testedSHA256": "62ab1a64058783f966700eb3b023a429bf3985a833fe99393e03536fceececa8",
+      "cleanRebuildSHA256": "62ab1a64058783f966700eb3b023a429bf3985a833fe99393e03536fceececa8",
+      "matches": true
+    },
+    {
+      "path": "dist/index.html",
+      "testedSHA256": "e282a6ad01dbda84109292c2dec2892f53b32dc4a00b46f560527be17fda0987",
+      "cleanRebuildSHA256": "e282a6ad01dbda84109292c2dec2892f53b32dc4a00b46f560527be17fda0987",
+      "matches": true
+    },
+    {
+      "path": "dist/src/audio/audio.js",
+      "testedSHA256": "b97c7615d625c5f9b50a577b748b3056fc915792f2519e54cc217c5468a812a4",
+      "cleanRebuildSHA256": "b97c7615d625c5f9b50a577b748b3056fc915792f2519e54cc217c5468a812a4",
+      "matches": true
+    },
+    {
+      "path": "dist/src/data/campaign.js",
+      "testedSHA256": "ede9d388f656f5ebf1132fd7ed9c4bfeb202634482a53844a4e90a85d275aef2",
+      "cleanRebuildSHA256": "ede9d388f656f5ebf1132fd7ed9c4bfeb202634482a53844a4e90a85d275aef2",
+      "matches": true
+    },
+    {
+      "path": "dist/src/data/words.js",
+      "testedSHA256": "e0d35181804d7694f5a7f3b784e65a991dcf6f6443882b7c794c9d0394f2095b",
+      "cleanRebuildSHA256": "e0d35181804d7694f5a7f3b784e65a991dcf6f6443882b7c794c9d0394f2095b",
+      "matches": true
+    },
+    {
+      "path": "dist/src/game/assets.js",
+      "testedSHA256": "b1babdb341f3ad9b7474cc9a4522cc3df440e1b407d2f83c85ae922c8f712336",
+      "cleanRebuildSHA256": "b1babdb341f3ad9b7474cc9a4522cc3df440e1b407d2f83c85ae922c8f712336",
+      "matches": true
+    },
+    {
+      "path": "dist/src/game/clock.js",
+      "testedSHA256": "5ce1c5ec16361d8b44fb75170b944ff94444f253650efd40f88d547d976bdb60",
+      "cleanRebuildSHA256": "5ce1c5ec16361d8b44fb75170b944ff94444f253650efd40f88d547d976bdb60",
+      "matches": true
+    },
+    {
+      "path": "dist/src/game/controls.js",
+      "testedSHA256": "b6a1d53f7abc6fe50144b64bfcb312cdb43c46ffc17eb8bfafed6055fe66589d",
+      "cleanRebuildSHA256": "b6a1d53f7abc6fe50144b64bfcb312cdb43c46ffc17eb8bfafed6055fe66589d",
+      "matches": true
+    },
+    {
+      "path": "dist/src/game/model.js",
+      "testedSHA256": "e1aa5a4ed20a61fd9afbc56c340efe758b7420e37ec1db255b779c834e2ae60f",
+      "cleanRebuildSHA256": "e1aa5a4ed20a61fd9afbc56c340efe758b7420e37ec1db255b779c834e2ae60f",
+      "matches": true
+    },
+    {
+      "path": "dist/src/game/pressure.js",
+      "testedSHA256": "ed17bd358f79f211319b4b023061ef05ed96d5cd0d8e872594ce529ede252c0b",
+      "cleanRebuildSHA256": "ed17bd358f79f211319b4b023061ef05ed96d5cd0d8e872594ce529ede252c0b",
+      "matches": true
+    },
+    {
+      "path": "dist/src/game/rules.js",
+      "testedSHA256": "bbb0cc9af9b67d324e0ded6bbd00373ca063e4b4068af1e0c715f234e6e5afea",
+      "cleanRebuildSHA256": "bbb0cc9af9b67d324e0ded6bbd00373ca063e4b4068af1e0c715f234e6e5afea",
+      "matches": true
+    },
+    {
+      "path": "dist/src/game/storage.js",
+      "testedSHA256": "97dc6952204c526ef2ae59000afce8c53e949c1609705116c4ba6cde386eca95",
+      "cleanRebuildSHA256": "97dc6952204c526ef2ae59000afce8c53e949c1609705116c4ba6cde386eca95",
+      "matches": true
+    },
+    {
+      "path": "dist/src/main.js",
+      "testedSHA256": "ee83f249cf3d5326a13afc06c3311a93625dc0732241531229334a8078e69bdc",
+      "cleanRebuildSHA256": "ee83f249cf3d5326a13afc06c3311a93625dc0732241531229334a8078e69bdc",
+      "matches": true
+    },
+    {
+      "path": "dist/src/render/renderer.js",
+      "testedSHA256": "4ce5983f5f0204ae9d3178d313616ca90020524eb34d273e1383e5d36851c7d0",
+      "cleanRebuildSHA256": "4ce5983f5f0204ae9d3178d313616ca90020524eb34d273e1383e5d36851c7d0",
+      "matches": true
+    },
+    {
+      "path": "dist/src/styles.css",
+      "testedSHA256": "9130272661646169ecd06bdb5a29722f976da4e9b66f2d4c7688bba4eada5d03",
+      "cleanRebuildSHA256": "9130272661646169ecd06bdb5a29722f976da4e9b66f2d4c7688bba4eada5d03",
+      "matches": true
+    },
+    {
+      "path": "dist/src/ui/icons.js",
+      "testedSHA256": "7a391885b01a520eb95ab03540d645f13fdf1798a8a79795b0427fc1d1c5576a",
+      "cleanRebuildSHA256": "7a391885b01a520eb95ab03540d645f13fdf1798a8a79795b0427fc1d1c5576a",
+      "matches": true
+    },
+    {
+      "path": "PLAY.html",
+      "testedSHA256": "0942687689893ed4d7500ca09ae32ccb737b6ef6cc4ad634e723c0098ad702ce",
+      "cleanRebuildSHA256": "0942687689893ed4d7500ca09ae32ccb737b6ef6cc4ad634e723c0098ad702ce",
+      "matches": true
+    }
+  ],
+  "scope": "Fresh candidate ZIP extraction then offline install/tests/check/build. Final archive only refreshes reports, logs and checksums after this comparison. Runtime/source/assets stay identical. Final ZIP receives a separate CRC/checksum verification."
+}
