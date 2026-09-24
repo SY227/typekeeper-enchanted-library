@@ -2,6 +2,7 @@ import { FIELD, POWERS, RULES, RULESET_VERSION, levelRules, mulberry32, chapterS
 import { CAMPAIGN_LENGTH, stageInfo, medalForStage } from '../data/campaign.js';
 import { pressureState } from './pressure.js';
 import { dictionaryForLevel } from '../data/words.js';
+import { createEconomy, prepareEconomy, restoreEconomy, nextSpellGap } from './economy.js';
 
 /** Deterministic game simulation. No artwork, sound or UI callback owns game state.
  * Every word has exactly one outcome. All timers use active simulation seconds.
@@ -20,6 +21,7 @@ export class GameModel {
   this.streak=0;this.bestStreak=0;this.correct=0;this.wrong=0;this.missed=0;
   this.correctCharacters=0;this.keystrokes=0;this.burned=0;this.retries=0;
   this.stageHistory=[];this.powerBag=[];this.lastPressure='calm';
+  this.economy=createEconomy(this.level,this.mode);
   this.casts=Object.fromEntries(POWERS.map(p=>[p,0]));
   this.lastResult=null;this.lastClear=null;this.scoreRuleset=RULESET_VERSION;
   this.prepareStage();
@@ -27,7 +29,8 @@ export class GameModel {
  prepareStage() {
   this.random=mulberry32(chapterSeed(this.seed,this.level));
   this.recentWords=[];this.recentResolved=[];this.pendingSpawn=null;
-  this.spawnClock=.65;this.spawnedThisLevel=0;this.specialAt=2;this.trialRest=false;
+  this.spawnClock=.65;this.spawnedThisLevel=0;this.stageSpellOpportunities=0;this.trialRest=false;
+  prepareEconomy(this.economy,this.level);
   this.stageWrong=0;this.stageMissed=0;this.stageCorrect=0;this.stageBonus=0;
   this.stageTime=0;this.stageStartScore=this.score;this.stageCharacters=0;this.stageBurned=0;
   this.progress=0;this.buffer='';this.words=[];this.effects={ice:0,slow:0};
@@ -128,26 +131,32 @@ export class GameModel {
   const pool=available.length?available:bank.filter(w=>!active.has(w));
   return (pool.length?pool:bank)[Math.floor(this.random()*(pool.length||bank.length))];
  }
- takePower(){
+ takePower(preferred=null){
   if(!this.powerBag.length){
    this.powerBag=[...POWERS];
    for(let i=this.powerBag.length-1;i>0;i--){const j=Math.floor(this.random()*(i+1));[this.powerBag[i],this.powerBag[j]]=[this.powerBag[j],this.powerBag[i]];}
   }
   // Prefer a not-full shelf, but do not change drops in response to danger/score.
-  let index=this.powerBag.findIndex(p=>this.inventory[p]<RULES.inventoryCapacity);
+  let index=this.powerBag.findIndex(p=>p===preferred&&this.inventory[p]<RULES.inventoryCapacity);
+  if(index<0)index=this.powerBag.findIndex(p=>this.inventory[p]<RULES.inventoryCapacity);
   if(index<0)index=0;
   return this.powerBag.splice(index,1)[0];
  }
  spawn(){
   if(this.phase!=='playing'||this.words.length>=RULES.maxActive||this.words.length>=this.config.quota-this.progress)return false;
   if(!this.pendingSpawn){
-   const text=this.pickWord(),forced={2:'fire',5:'ice',8:'slow',10:'wind'};
-   let kind='normal';
-   if(this.level===1&&forced[this.spawnedThisLevel])kind=forced[this.spawnedThisLevel];
-   else if((this.level>1||this.spawnedThisLevel>10)&&this.spawnedThisLevel>=this.specialAt)kind=this.takePower();
-   else if(this.random()<this.config.darkChance)kind='bonus';
-   if(POWERS.includes(kind))this.specialAt=this.spawnedThisLevel+4+Math.floor(this.random()*3);
-   this.pendingSpawn={text,kind,width:wordCardWidth(text,kind),phase:this.random()*Math.PI*2,laneRoll:this.random()};
+   const text=this.pickWord();
+   let kind='normal',powerBagAfter=null;
+   if(this.economy.untilNext<=1){
+    // The first campaign spell teaches useful breathing room. Trial roles are
+    // preferred only within the remaining fair bag: no skipped or bonus drops.
+    const preferred=!this.economy.tutorialDone?'ice':this.config.trial?(this.stageSpellOpportunities===0?'ice':this.stageSpellOpportunities===1?'wind':null):null;
+    const bagBefore=[...this.powerBag];kind=this.takePower(preferred);
+    powerBagAfter=[...this.powerBag];this.powerBag=bagBefore;
+   }else if(this.random()<this.config.darkChance)kind='bonus';
+   // A blocked spawn reserves its candidate, not its reward. Do not consume a
+   // bag entry or countdown until the card really enters the playfield.
+   this.pendingSpawn={text,kind,width:wordCardWidth(text,kind),phase:this.random()*Math.PI*2,laneRoll:this.random(),powerBagAfter};
   }
   const pending=this.pendingSpawn,width=pending.width;
   // Compute actual free intervals; random retry failure cannot reroll a power/word.
@@ -161,6 +170,10 @@ export class GameModel {
   for(const [a,b] of spans){if(distance<=b-a){x=a+distance;break;}distance-=b-a;}
   const word={id:this.nextId++,text:pending.text,kind:pending.kind,x,y:FIELD.top,previousY:FIELD.top,speed:this.config.speed,width,phase:pending.phase};
   this.pendingSpawn=null;this.words.push(word);this.spawnedThisLevel++;
+  if(pending.powerBagAfter){
+   this.powerBag=pending.powerBagAfter;this.economy.opportunities++;this.economy.tutorialDone=true;
+   this.economy.untilNext=nextSpellGap(this.level,this.random);this.stageSpellOpportunities++;
+  }else this.economy.untilNext=Math.max(1,this.economy.untilNext-1);
   this.recentWords.push(word.text);if(this.recentWords.length>9)this.recentWords.shift();
   this.emit('spawn',{word:{...word}});return true;
  }
@@ -228,12 +241,14 @@ export class GameModel {
   const clear=this.phase==='level-clear';
   if(!clear&&(this.stageTime!==0||this.progress!==0||this.words.length))return null;
   if(this.mode!=='campaign'||(clear&&this.level>=48))return null;
-  return {version:3,ruleset:this.scoreRuleset,nextLevel:this.level+(clear?1:0),seed:this.seed,nextId:this.nextId,pace:this.pace,mode:this.mode,startLevel:this.startLevel,score:this.score,danger:this.danger,inventory:{...this.inventory},powerBag:[...this.powerBag],pile:this.pile.map(p=>({...p})),time:this.time,correct:this.correct,wrong:this.wrong,missed:this.missed,correctCharacters:this.correctCharacters,bestStreak:this.bestStreak,streak:this.streak,burned:this.burned,retries:this.retries,stageHistory:this.stageHistory.map(s=>({...s})),casts:{...this.casts}};
+  return {version:3,ruleset:this.scoreRuleset,nextLevel:this.level+(clear?1:0),seed:this.seed,nextId:this.nextId,pace:this.pace,mode:this.mode,startLevel:this.startLevel,score:this.score,danger:this.danger,inventory:{...this.inventory},powerBag:[...this.powerBag],economy:{...this.economy},pile:this.pile.map(p=>({...p})),time:this.time,correct:this.correct,wrong:this.wrong,missed:this.missed,correctCharacters:this.correctCharacters,bestStreak:this.bestStreak,streak:this.streak,burned:this.burned,retries:this.retries,stageHistory:this.stageHistory.map(s=>({...s})),casts:{...this.casts}};
  }
  restoreCheckpoint(c){
   this.start({seed:c.seed,pace:c.pace,level:c.nextLevel,mode:c.mode});
   for(const k of ['score','danger','time','correct','wrong','missed','correctCharacters','bestStreak','streak','startLevel','burned','retries','nextId'])if(Number.isFinite(c[k]))this[k]=c[k];
-  this.inventory={...this.inventory,...c.inventory};this.powerBag=(c.powerBag||[]).filter(p=>POWERS.includes(p));
+  this.inventory=Object.fromEntries(POWERS.map(p=>[p,Math.max(0,Math.min(RULES.inventoryCapacity,Math.floor(Number(c.inventory?.[p]))||0))]));
+  this.powerBag=(c.powerBag||[]).filter(p=>POWERS.includes(p));
+  this.economy=restoreEconomy(c.economy,this.level);
   this.pile=(Array.isArray(c.pile)?c.pile:[]).filter(p=>p&&Number.isFinite(p.x)&&Number.isFinite(p.angle)).slice(-45).map(p=>({...p}));
   if(!this.pile.length&&this.danger>0)for(let i=0;i<Math.ceil(this.danger/10);i++)this.pile.push({id:-i-1,x:270+(i%8)*86,kind:'normal',text:'',angle:(i%5-2)*.025});
   this.stageHistory=(c.stageHistory||[]).map(s=>({...s}));this.casts={...this.casts,...c.casts};this.stageStartScore=this.score;
@@ -242,5 +257,5 @@ export class GameModel {
  finishCampaign(){if(this.phase!=='level-clear'||this.mode!=='campaign'||this.level!==48)return null;this.lastResult=this.result({victory:true});return this.lastResult;}
  retire(){this.lastResult=this.result({victory:false,retired:true});return this.lastResult;}
  exportReplay(){return {ruleset:RULESET_VERSION,seed:this.seed,pace:this.pace,truncated:this.replayTruncated,events:this.replay.map(e=>({...e}))};}
- snapshot(){return {phase:this.phase,level:this.level,score:this.score,progress:this.progress,quota:this.config.quota,danger:this.danger,buffer:this.buffer,time:this.time,tick:this.tick,pace:this.pace,mode:this.mode,pressure:this.pressure.key,info:{...this.info},streak:this.streak,bestStreak:this.bestStreak,correct:this.correct,wrong:this.wrong,missed:this.missed,burned:this.burned,retries:this.retries,wpm:this.wpm,accuracy:this.accuracy,inventory:{...this.inventory},effects:{...this.effects},trialRest:this.trialRest,words:this.words.map(w=>({...w}))};}
+ snapshot(){return {phase:this.phase,level:this.level,score:this.score,progress:this.progress,quota:this.config.quota,danger:this.danger,buffer:this.buffer,time:this.time,tick:this.tick,pace:this.pace,mode:this.mode,pressure:this.pressure.key,info:{...this.info},streak:this.streak,bestStreak:this.bestStreak,correct:this.correct,wrong:this.wrong,missed:this.missed,burned:this.burned,retries:this.retries,wpm:this.wpm,accuracy:this.accuracy,inventory:{...this.inventory},economy:{...this.economy},effects:{...this.effects},trialRest:this.trialRest,words:this.words.map(w=>({...w}))};}
 }

@@ -1,6 +1,7 @@
-import { RULESET_VERSION, POWERS } from './rules.js';
-const KEY='typekeeper-enchanted-library-v3.2';
-const OLD_KEYS=['typekeeper-enchanted-library-v3.1','typekeeper-enchanted-library-v3','typing-maniac-library-v2','typing-maniac-library-v1'];
+import { RULESET_VERSION, POWERS, RULES } from './rules.js';
+import { validEconomy, restoreEconomy } from './economy.js';
+const KEY='typekeeper-enchanted-library-v3.2.1';
+const OLD_KEYS=['typekeeper-enchanted-library-v3.2','typekeeper-enchanted-library-v3.1','typekeeper-enchanted-library-v3','typing-maniac-library-v2','typing-maniac-library-v1'];
 const PACE_NAMES=['classic','relaxed','maniac'];
 export const DEFAULT_SETTINGS=Object.freeze({sfx:true,music:true,adaptiveMusic:true,typingShimmer:true,muted:false,motion:true,spellPulse:true,contrast:false,detailedHUD:false,hints:true,resumeCountdown:true,pace:'classic',volume:.8,musicVolume:.5,sfxVolume:.65});
 const saneNumber=(n,min=0,max=1e12)=>Number.isFinite(n)&&n>=min&&n<=max;
@@ -79,6 +80,8 @@ export class LocalStore {
   const c=structuredClone(cp);
   if(c.version===2){c.version=3;c.ruleset=c.ruleset||'library-edition-2.0.0';}
   c.powerBag=Array.isArray(c.powerBag)?c.powerBag:[];
+  c.inventory=Object.fromEntries(POWERS.map(p=>[p,Math.min(RULES.inventoryCapacity,c.inventory[p])]));
+  c.economy=restoreEconomy(c.economy,c.nextLevel);
   c.retries=saneNumber(c.retries)?c.retries:0;c.burned=saneNumber(c.burned)?c.burned:0;
   c.casts=Object.fromEntries(POWERS.map(p=>[p,saneNumber(c.casts?.[p])?c.casts[p]:0]));
   return c;
@@ -88,7 +91,8 @@ export class LocalStore {
    &&Number.isInteger(c.nextLevel)&&c.nextLevel>=(c.version===2?2:1)&&c.nextLevel<=48
    &&saneNumber(c.score)&&saneNumber(c.danger,0,99.999)&&saneNumber(c.seed,0,4294967295)
    &&(c.version===2||typeof c.ruleset==='string'&&c.ruleset.length<=64)
-   &&POWERS.every(p=>Number.isInteger(c.inventory?.[p])&&c.inventory[p]>=0&&c.inventory[p]<=3)
+   &&POWERS.every(p=>Number.isInteger(c.inventory?.[p])&&c.inventory[p]>=0&&c.inventory[p]<=(c.ruleset===RULESET_VERSION?RULES.inventoryCapacity:3))
+   &&(c.economy===undefined?c.ruleset!==RULESET_VERSION:validEconomy(c.economy))
    &&(c.powerBag===undefined||Array.isArray(c.powerBag)&&c.powerBag.length<=4&&new Set(c.powerBag).size===c.powerBag.length&&c.powerBag.every(p=>POWERS.includes(p)))
    &&Array.isArray(c.stageHistory)&&c.stageHistory.length<=48&&c.stageHistory.every(r=>r&&saneNumber(r.level,1,48)&&saneNumber(r.medal,1,3))
    &&['time','correct','wrong','missed','correctCharacters','bestStreak','streak','startLevel'].every(k=>saneNumber(c[k]))
@@ -139,6 +143,6 @@ export class LocalStore {
   const since=period==='today'?new Date(new Date(now).setHours(0,0,0,0)).getTime():period==='week'?now-7*86400000:0;
   return this.data.records.filter(r=>(pace==='all'||r.pace===pace)&&(mode==='all'||r.mode===mode)&&r.date>=since&&(mode!=='practice'||chapter===null||r.startLevel===chapter)).sort((a,b)=>b.score-a.score||(a.retries||0)-(b.retries||0)||b.date-a.date);
  }
- exportData(){return JSON.stringify({...this.data,game:'Typekeeper: Enchanted Library',appVersion:'3.2.0',exportedAt:new Date().toISOString()},null,2);}
+ exportData(){return JSON.stringify({...this.data,game:'Typekeeper: Enchanted Library',appVersion:'3.2.1',exportedAt:new Date().toISOString()},null,2);}
  clearRecords(){this.data.records=[];this.save();}
 }

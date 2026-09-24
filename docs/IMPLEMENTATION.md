@@ -1,26 +1,39 @@
-# v3.2 implementation map
+# v3.2.1 implementation map
 
-Native Canvas 2D / JavaScript ES modules with no npm runtime dependencies. The
-existing browser architecture was preserved; no Unreal/Blender port was executed.
+Native Canvas 2D / JavaScript ES modules; no npm runtime dependency or engine port.
+The uploaded v3.2 is the exact baseline. Changes are scoped to the approved scarcity /
+pace policy, its persistence and related inventory feedback. No new account, analytics,
+online leaderboard, monetization, art or soundtrack feature has been added.
 
-- `src/game/rules.js`: v3.2 knot-based pace plus retained item/input/scoring constants.
-- `src/data/words.js`: unchanged word-bank arrays; earlier continuous level mixtures.
-- `src/game/model.js`: authoritative simulation; enriched input/expiry events only.
-- `src/game/storage.js`: v3.2 key, backward reads and score provenance.
-- `src/audio/mix.js`: pure bounded scene/pressure direction, same loop clock.
-- `src/audio/audio.js`: four-stem gain automation, bounded foley and cancelable tally.
-- `src/ui/score-rollup.js`: display-only monotone count-up; no score authority.
-- `src/main.js`: events/controls, switches, result count and scene transitions.
-- `src/render/renderer.js`: capped local glints/sheens; large text avoids live cards.
-- `src/styles.css`: retained CSS plus local score/medal feedback rules.
-- `scripts/compose_pressure_score.py`: deterministic pressure/urgency synthesis.
-- `scripts/render_sfx_preview.py`: OfflineAudioContext reel of actual procedural cues.
-- `scripts/apply-update.sh`: backup-first local copy; preserves Git/Vercel/env configuration.
+| Module | Responsibility / change |
+|---|---|
+| `src/game/economy.js` | New pure policy: count actual arrivals, carry gaps, prepare trial opportunities, serialize/restore schedule. |
+| `src/game/rules.js` | Two-charge cap and revised falling-speed knots; all spell strengths and other rule constants retained. |
+| `src/game/model.js` | Commit bag/countdown only when candidate enters; earned rewards, checkpoint economy, clamped restore. |
+| `src/game/storage.js` | v3.2.1 key, old read-only migrations, current schedule validation, Legacy score provenance. |
+| `src/main.js` | Two capacity pips/help, new preference key, cancel stale acquisition effects on empty shelves/new runs. |
+| `src/audio/`, `src/render/`, `src/styles.css`, `index.html` | Preserved byte-for-byte; no redesign, recomposition or new effect. |
+| `src/data/` | All chapter names, quotas through rules, vocabulary and selection mixtures retained. |
+| `scripts/standalone.mjs` | New economy dependency included before model in the embedded export. |
+| `scripts/build.mjs` | New game build version; local assets and source generate `dist/` and `PLAY.html`. |
+| `scripts/apply-update.sh` | Same backup-first local workflow; preserves Git, Vercel and environment configuration. |
+| `scripts/economy-audit.mjs` | Supply-only seeded comparison; not a player difficulty model. |
+| `scripts/playtest-simulation.mjs` | Finite-speed agents with explicit error/acquisition assumptions and resource telemetry. |
+| `scripts/resource-strategy-audit.mjs` | Compare two WIND policies; same seeds/typing, no claim of optimal human strategy. |
+| `tests/economy.test.mjs`, `e2e/economy_tests.py` | New rule and real-UI integration coverage. |
 
-Build creates `dist` and fully embedded `PLAY.html`. UI words/scores remain live text,
-not baked images. Per-frame model data never depends on an animation ending. Every
-old spelling, score, item, retry and transition safeguard is regression tested.
+Per-frame scores and transitions remain independent of animation completion. A blocked
+spawn stages its proposed bag but cannot spend it until placement succeeds. Replacing a
+chapter discards a pending candidate without changing the carried bag. Reward frequency
+never reacts to WPM, score, or danger. Trial preparation is idempotent on Continue/Retry.
 
-Four decoded stems intentionally trade extra memory (~107.7 MiB at 44.1 kHz) for
-continuous phase-aligned layering. Profiling on mobile/actual target browsers remains
-open. Static file delivery is tested separately from inline Chromium interaction.
+The asset manifest remains **3.2.0** because the original assets are unchanged; game,
+package, build and current save metadata are **3.2.1**. `docs/qa/preservation-audit.json`
+is the exact 73-file checksum scope, including masters, exports, original audio/rendering,
+CSS, full page and campaign/word content. Only the slot count/help and related feedback
+lifecycle in `main.js` intentionally change visible UI behavior.
+
+Four decoded stems still use about 107.7 MiB at 44.1 kHz, as in the baseline. This update
+does not claim to optimize that unchanged audio architecture. Device memory/performance
+and long-session listening require owner/human tests. HTTP file checks are separate from
+in-memory Chromium interaction. See `QA_REPORT.md` for final evidence and limitations.

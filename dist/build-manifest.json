@@ -1,5 +1,5 @@
 {
-  "version": "3.2.0",
+  "version": "3.2.1",
   "files": [
     {
       "path": "assets/book-fire.svg",
@@ -162,9 +162,14 @@
       "sha256": "b6a1d53f7abc6fe50144b64bfcb312cdb43c46ffc17eb8bfafed6055fe66589d"
     },
     {
+      "path": "src/game/economy.js",
+      "bytes": 1875,
+      "sha256": "6db640431a9d26bc5b68120aa92b5ba04e5e702dc304a3c6e0cf01048721b718"
+    },
+    {
       "path": "src/game/model.js",
-      "bytes": 17394,
-      "sha256": "15c4c832730319b51acc4256aab758332621a4527bb58c079f3f17afff7425bb"
+      "bytes": 18537,
+      "sha256": "0dec023b3150f8c7c7f1010c6ba0bd8e51e12064fe4b211f087d37aefbc118ee"
     },
     {
       "path": "src/game/pressure.js",
@@ -173,18 +178,18 @@
     },
     {
       "path": "src/game/rules.js",
-      "bytes": 4303,
-      "sha256": "9d58f040728cac60bf1b6f7f0f4c997c244b265072cb4f290d5c10299a6da33f"
+      "bytes": 4362,
+      "sha256": "ea93f8264594d1ddbd9157b97106ff09f1a4ec6aa8b76b10933518b9b4a61d15"
     },
     {
       "path": "src/game/storage.js",
-      "bytes": 10389,
-      "sha256": "fd3be1a532637b2a939d405fd0e98041777ca8d6b2e20a50ce1be5c43f43777b"
+      "bytes": 10784,
+      "sha256": "3def0f83b2c09eebe20c10d73345cf16e296a89aab6214bfc9b43e6dd0c95d39"
     },
     {
       "path": "src/main.js",
-      "bytes": 46267,
-      "sha256": "141e95fe8e3e0737a141b11ca90bc9a9d3fde0fd7794bb8734c84fe91a2e0bac"
+      "bytes": 46842,
+      "sha256": "da965e8f6c6b7f7863450a393d982abe3d72801ebe7d12660d202cf7ba779ee0"
     },
     {
       "path": "src/render/renderer.js",

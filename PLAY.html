@@ -603,7 +603,7 @@ function powerForKey(event) {
 
 /** Versioned, authored rules. No claim of exact numerical parity with the reference videos. */
 
-const RULESET_VERSION = 'typekeeper-3.2.0';
+const RULESET_VERSION = 'typekeeper-3.2.1';
 const WIDTH=1200, HEIGHT=900;
 const FIELD=Object.freeze({left:226,right:978,top:172,bottom:648});
 const POWERS=Object.freeze(['fire','ice','slow','wind']);
@@ -613,27 +613,28 @@ const POWER_META=Object.freeze({
  slow:{name:'SLOW',key:'3',color:'#edd17b',description:'Create 8 seconds of breathing room.',detail:'Cards fall at 42% speed; arrivals slow to 70%. Waits safely while ICE is active; no duration is lost.'},
  wind:{name:'WIND',key:'4',color:'#bdacf2',description:'Sweep the paper pile back to zero.',detail:'Clears the LIMIT meter and restores the Typekeeper’s composure.'}
 });
-const RULES=Object.freeze({step:1/60,inventoryCapacity:3,iceDuration:6,slowDuration:8,slowFactor:.42,slowSpawnFactor:.7,maxActive:12,bufferLimit:24,missBase:8,missPerLetter:.8,invalidPenalty:2,darkMissFactor:1.5,fireAwardsScore:false,powerCollection:'immediate',commandPriority:'lowest-exact-word-first',transition:'clear-field-keep-danger-and-inventory-reset-timed-effects',spellCooldown:.22,lateSubmissionWindow:.35,emptyFieldDelay:.65,fireRecovery:.7,replayLimit:100000});
+const RULES=Object.freeze({step:1/60,inventoryCapacity:2,iceDuration:6,slowDuration:8,slowFactor:.42,slowSpawnFactor:.7,maxActive:12,bufferLimit:24,missBase:8,missPerLetter:.8,invalidPenalty:2,darkMissFactor:1.5,fireAwardsScore:false,powerCollection:'immediate',commandPriority:'lowest-exact-word-first',transition:'clear-field-keep-danger-and-inventory-reset-timed-effects',spellCooldown:.22,lateSubmissionWindow:.35,emptyFieldDelay:.65,fireRecovery:.7,replayLimit:100000});
 const PACES=Object.freeze({
  relaxed:{label:'Relaxed',speed:.68,interval:1.6,caption:'Room to find your rhythm.'},
- classic:{label:'Classic',speed:1,interval:1,caption:'A brisk opening, then a sustained challenge.'},
+ classic:{label:'Classic',speed:1,interval:1,caption:'Find your rhythm, then hold the line.'},
  maniac:{label:'Maniac',speed:1.22,interval:.78,caption:'For very quick fingers.'}
 });
 /** Author-controlled knots: an earlier challenge, not performance-based rubber banding.
  * A card's speed never changes mid-flight when a chapter advances or danger rises. */
 const PACE_CURVE=Object.freeze([
- Object.freeze([1,36,1.90]),Object.freeze([3,45,1.70]),Object.freeze([6,58,1.50]),
+ Object.freeze([1,30.6,1.90]),Object.freeze([3,40.5,1.70]),Object.freeze([6,55.1,1.50]),
  Object.freeze([12,76,1.30]),Object.freeze([24,99,1.12]),
- Object.freeze([36,116,1.02]),Object.freeze([48,132,.96])
+ Object.freeze([36,118.32,1.02]),Object.freeze([48,135.96,.96])
 ]);
 function levelRules(level,pace='classic') {
  const n=Math.max(1,Math.floor(Number(level)||1)), p=PACES[pace]||PACES.classic, info=stageInfo(n);
- let baseSpeed=132,interval=.96;
+ const finalSpeed=PACE_CURVE.at(-1)[1];
+ let baseSpeed=finalSpeed,interval=.96;
  for(let i=1;i<PACE_CURVE.length;i++)if(n<=PACE_CURVE[i][0]){
   const a=PACE_CURVE[i-1],b=PACE_CURVE[i],t=Math.max(0,(n-a[0])/(b[0]-a[0]));
   baseSpeed=a[1]+(b[1]-a[1])*t;interval=a[2]+(b[2]-a[2])*t;break;
  }
- if(n>48){baseSpeed=Math.min(170,132+(n-48)*.65);interval=Math.max(.78,.96-(n-48)*.003);}
+ if(n>48){baseSpeed=Math.min(170,finalSpeed+(n-48)*.65);interval=Math.max(.78,.96-(n-48)*.003);}
  return {quota:Math.min(42,12+Math.floor((n-1)/2)+(info.trial?4:0)),speed:baseSpeed*p.speed,interval:interval*p.interval,specialChance:.2,darkChance:n>=7?Math.min(.14,(n-6)*.0033):0,trial:info.trial};
 }
 function normalizeInput(value){return String(value).toUpperCase().replace(/[^A-Z]/g,'').slice(0,RULES.bufferLimit);}
@@ -692,6 +693,44 @@ function dictionaryForLevel(level,random) {
  return roll<mix.short?banks.short:roll<mix.short+mix.medium?banks.medium:banks.long;
 }
 
+/** Authored spell economy. Counts actual card arrivals, never elapsed time or skill.
+ * Carried between chapters and serialized at safe chapter boundaries.
+ * A scheduled card is an opportunity: the player must still type it to earn a book.
+ */
+const ECONOMY_VERSION=1;
+function economyRules(level){
+ const n=Math.max(1,Math.floor(Number(level)||1));
+ const [minGap,maxGap]=n<=6?[8,11]:n<=12?[8,10]:n<=24?[7,10]:[6,9];
+ return {minGap,maxGap,trial:n%6===0,trialFirstBy:4,trialGap:8};
+}
+function validEconomy(e){
+ return !!(e&&e.version===ECONOMY_VERSION&&Number.isInteger(e.untilNext)&&e.untilNext>=1&&e.untilNext<=11
+  &&Number.isSafeInteger(e.opportunities)&&e.opportunities>=0&&e.opportunities<=1e9&&typeof e.tutorialDone==='boolean');
+}
+function createEconomy(level=1,mode='campaign'){
+ const introductory=level===1&&mode==='campaign';
+ return {version:ECONOMY_VERSION,untilNext:introductory?6:economyRules(level).minGap,opportunities:0,tutorialDone:!introductory};
+}
+/** Trial opportunities replace the next ordinary drop; they never add free stock.
+ * Idempotent so normal progression and Continue/Retry share exactly the same opening.
+ */
+function prepareEconomy(e,level){
+ const cfg=economyRules(level);
+ if(cfg.trial)e.untilNext=Math.min(e.untilNext,cfg.trialFirstBy);
+ return e;
+}
+function restoreEconomy(e,level){
+ // Older saves did not record this schedule. Initialize conservatively once;
+ // subsequent saves preserve it. Never pretend to recover the original sequence.
+ const restored=validEconomy(e)?{...e}:{version:ECONOMY_VERSION,untilNext:economyRules(level).minGap,opportunities:0,tutorialDone:true};
+ return prepareEconomy(restored,level);
+}
+function nextSpellGap(level,random){
+ const cfg=economyRules(level);
+ return cfg.trial?cfg.trialGap:cfg.minGap+Math.floor(random()*(cfg.maxGap-cfg.minGap+1));
+}
+
+
 
 
 
@@ -713,6 +752,7 @@ class GameModel {
   this.streak=0;this.bestStreak=0;this.correct=0;this.wrong=0;this.missed=0;
   this.correctCharacters=0;this.keystrokes=0;this.burned=0;this.retries=0;
   this.stageHistory=[];this.powerBag=[];this.lastPressure='calm';
+  this.economy=createEconomy(this.level,this.mode);
   this.casts=Object.fromEntries(POWERS.map(p=>[p,0]));
   this.lastResult=null;this.lastClear=null;this.scoreRuleset=RULESET_VERSION;
   this.prepareStage();
@@ -720,7 +760,8 @@ class GameModel {
  prepareStage() {
   this.random=mulberry32(chapterSeed(this.seed,this.level));
   this.recentWords=[];this.recentResolved=[];this.pendingSpawn=null;
-  this.spawnClock=.65;this.spawnedThisLevel=0;this.specialAt=2;this.trialRest=false;
+  this.spawnClock=.65;this.spawnedThisLevel=0;this.stageSpellOpportunities=0;this.trialRest=false;
+  prepareEconomy(this.economy,this.level);
   this.stageWrong=0;this.stageMissed=0;this.stageCorrect=0;this.stageBonus=0;
   this.stageTime=0;this.stageStartScore=this.score;this.stageCharacters=0;this.stageBurned=0;
   this.progress=0;this.buffer='';this.words=[];this.effects={ice:0,slow:0};
@@ -821,26 +862,32 @@ class GameModel {
   const pool=available.length?available:bank.filter(w=>!active.has(w));
   return (pool.length?pool:bank)[Math.floor(this.random()*(pool.length||bank.length))];
  }
- takePower(){
+ takePower(preferred=null){
   if(!this.powerBag.length){
    this.powerBag=[...POWERS];
    for(let i=this.powerBag.length-1;i>0;i--){const j=Math.floor(this.random()*(i+1));[this.powerBag[i],this.powerBag[j]]=[this.powerBag[j],this.powerBag[i]];}
   }
   // Prefer a not-full shelf, but do not change drops in response to danger/score.
-  let index=this.powerBag.findIndex(p=>this.inventory[p]<RULES.inventoryCapacity);
+  let index=this.powerBag.findIndex(p=>p===preferred&&this.inventory[p]<RULES.inventoryCapacity);
+  if(index<0)index=this.powerBag.findIndex(p=>this.inventory[p]<RULES.inventoryCapacity);
   if(index<0)index=0;
   return this.powerBag.splice(index,1)[0];
  }
  spawn(){
   if(this.phase!=='playing'||this.words.length>=RULES.maxActive||this.words.length>=this.config.quota-this.progress)return false;
   if(!this.pendingSpawn){
-   const text=this.pickWord(),forced={2:'fire',5:'ice',8:'slow',10:'wind'};
-   let kind='normal';
-   if(this.level===1&&forced[this.spawnedThisLevel])kind=forced[this.spawnedThisLevel];
-   else if((this.level>1||this.spawnedThisLevel>10)&&this.spawnedThisLevel>=this.specialAt)kind=this.takePower();
-   else if(this.random()<this.config.darkChance)kind='bonus';
-   if(POWERS.includes(kind))this.specialAt=this.spawnedThisLevel+4+Math.floor(this.random()*3);
-   this.pendingSpawn={text,kind,width:wordCardWidth(text,kind),phase:this.random()*Math.PI*2,laneRoll:this.random()};
+   const text=this.pickWord();
+   let kind='normal',powerBagAfter=null;
+   if(this.economy.untilNext<=1){
+    // The first campaign spell teaches useful breathing room. Trial roles are
+    // preferred only within the remaining fair bag: no skipped or bonus drops.
+    const preferred=!this.economy.tutorialDone?'ice':this.config.trial?(this.stageSpellOpportunities===0?'ice':this.stageSpellOpportunities===1?'wind':null):null;
+    const bagBefore=[...this.powerBag];kind=this.takePower(preferred);
+    powerBagAfter=[...this.powerBag];this.powerBag=bagBefore;
+   }else if(this.random()<this.config.darkChance)kind='bonus';
+   // A blocked spawn reserves its candidate, not its reward. Do not consume a
+   // bag entry or countdown until the card really enters the playfield.
+   this.pendingSpawn={text,kind,width:wordCardWidth(text,kind),phase:this.random()*Math.PI*2,laneRoll:this.random(),powerBagAfter};
   }
   const pending=this.pendingSpawn,width=pending.width;
   // Compute actual free intervals; random retry failure cannot reroll a power/word.
@@ -854,6 +901,10 @@ class GameModel {
   for(const [a,b] of spans){if(distance<=b-a){x=a+distance;break;}distance-=b-a;}
   const word={id:this.nextId++,text:pending.text,kind:pending.kind,x,y:FIELD.top,previousY:FIELD.top,speed:this.config.speed,width,phase:pending.phase};
   this.pendingSpawn=null;this.words.push(word);this.spawnedThisLevel++;
+  if(pending.powerBagAfter){
+   this.powerBag=pending.powerBagAfter;this.economy.opportunities++;this.economy.tutorialDone=true;
+   this.economy.untilNext=nextSpellGap(this.level,this.random);this.stageSpellOpportunities++;
+  }else this.economy.untilNext=Math.max(1,this.economy.untilNext-1);
   this.recentWords.push(word.text);if(this.recentWords.length>9)this.recentWords.shift();
   this.emit('spawn',{word:{...word}});return true;
  }
@@ -921,12 +972,14 @@ class GameModel {
   const clear=this.phase==='level-clear';
   if(!clear&&(this.stageTime!==0||this.progress!==0||this.words.length))return null;
   if(this.mode!=='campaign'||(clear&&this.level>=48))return null;
-  return {version:3,ruleset:this.scoreRuleset,nextLevel:this.level+(clear?1:0),seed:this.seed,nextId:this.nextId,pace:this.pace,mode:this.mode,startLevel:this.startLevel,score:this.score,danger:this.danger,inventory:{...this.inventory},powerBag:[...this.powerBag],pile:this.pile.map(p=>({...p})),time:this.time,correct:this.correct,wrong:this.wrong,missed:this.missed,correctCharacters:this.correctCharacters,bestStreak:this.bestStreak,streak:this.streak,burned:this.burned,retries:this.retries,stageHistory:this.stageHistory.map(s=>({...s})),casts:{...this.casts}};
+  return {version:3,ruleset:this.scoreRuleset,nextLevel:this.level+(clear?1:0),seed:this.seed,nextId:this.nextId,pace:this.pace,mode:this.mode,startLevel:this.startLevel,score:this.score,danger:this.danger,inventory:{...this.inventory},powerBag:[...this.powerBag],economy:{...this.economy},pile:this.pile.map(p=>({...p})),time:this.time,correct:this.correct,wrong:this.wrong,missed:this.missed,correctCharacters:this.correctCharacters,bestStreak:this.bestStreak,streak:this.streak,burned:this.burned,retries:this.retries,stageHistory:this.stageHistory.map(s=>({...s})),casts:{...this.casts}};
  }
  restoreCheckpoint(c){
   this.start({seed:c.seed,pace:c.pace,level:c.nextLevel,mode:c.mode});
   for(const k of ['score','danger','time','correct','wrong','missed','correctCharacters','bestStreak','streak','startLevel','burned','retries','nextId'])if(Number.isFinite(c[k]))this[k]=c[k];
-  this.inventory={...this.inventory,...c.inventory};this.powerBag=(c.powerBag||[]).filter(p=>POWERS.includes(p));
+  this.inventory=Object.fromEntries(POWERS.map(p=>[p,Math.max(0,Math.min(RULES.inventoryCapacity,Math.floor(Number(c.inventory?.[p]))||0))]));
+  this.powerBag=(c.powerBag||[]).filter(p=>POWERS.includes(p));
+  this.economy=restoreEconomy(c.economy,this.level);
   this.pile=(Array.isArray(c.pile)?c.pile:[]).filter(p=>p&&Number.isFinite(p.x)&&Number.isFinite(p.angle)).slice(-45).map(p=>({...p}));
   if(!this.pile.length&&this.danger>0)for(let i=0;i<Math.ceil(this.danger/10);i++)this.pile.push({id:-i-1,x:270+(i%8)*86,kind:'normal',text:'',angle:(i%5-2)*.025});
   this.stageHistory=(c.stageHistory||[]).map(s=>({...s}));this.casts={...this.casts,...c.casts};this.stageStartScore=this.score;
@@ -935,7 +988,7 @@ class GameModel {
  finishCampaign(){if(this.phase!=='level-clear'||this.mode!=='campaign'||this.level!==48)return null;this.lastResult=this.result({victory:true});return this.lastResult;}
  retire(){this.lastResult=this.result({victory:false,retired:true});return this.lastResult;}
  exportReplay(){return {ruleset:RULESET_VERSION,seed:this.seed,pace:this.pace,truncated:this.replayTruncated,events:this.replay.map(e=>({...e}))};}
- snapshot(){return {phase:this.phase,level:this.level,score:this.score,progress:this.progress,quota:this.config.quota,danger:this.danger,buffer:this.buffer,time:this.time,tick:this.tick,pace:this.pace,mode:this.mode,pressure:this.pressure.key,info:{...this.info},streak:this.streak,bestStreak:this.bestStreak,correct:this.correct,wrong:this.wrong,missed:this.missed,burned:this.burned,retries:this.retries,wpm:this.wpm,accuracy:this.accuracy,inventory:{...this.inventory},effects:{...this.effects},trialRest:this.trialRest,words:this.words.map(w=>({...w}))};}
+ snapshot(){return {phase:this.phase,level:this.level,score:this.score,progress:this.progress,quota:this.config.quota,danger:this.danger,buffer:this.buffer,time:this.time,tick:this.tick,pace:this.pace,mode:this.mode,pressure:this.pressure.key,info:{...this.info},streak:this.streak,bestStreak:this.bestStreak,correct:this.correct,wrong:this.wrong,missed:this.missed,burned:this.burned,retries:this.retries,wpm:this.wpm,accuracy:this.accuracy,inventory:{...this.inventory},economy:{...this.economy},effects:{...this.effects},trialRest:this.trialRest,words:this.words.map(w=>({...w}))};}
 }
 
 /** Fixed simulation steps with bounded catch-up; presentation is interpolated independently. */
@@ -953,8 +1006,9 @@ class FixedClock {
 }
 
 
-const KEY='typekeeper-enchanted-library-v3.2';
-const OLD_KEYS=['typekeeper-enchanted-library-v3.1','typekeeper-enchanted-library-v3','typing-maniac-library-v2','typing-maniac-library-v1'];
+
+const KEY='typekeeper-enchanted-library-v3.2.1';
+const OLD_KEYS=['typekeeper-enchanted-library-v3.2','typekeeper-enchanted-library-v3.1','typekeeper-enchanted-library-v3','typing-maniac-library-v2','typing-maniac-library-v1'];
 const PACE_NAMES=['classic','relaxed','maniac'];
 const DEFAULT_SETTINGS=Object.freeze({sfx:true,music:true,adaptiveMusic:true,typingShimmer:true,muted:false,motion:true,spellPulse:true,contrast:false,detailedHUD:false,hints:true,resumeCountdown:true,pace:'classic',volume:.8,musicVolume:.5,sfxVolume:.65});
 const saneNumber=(n,min=0,max=1e12)=>Number.isFinite(n)&&n>=min&&n<=max;
@@ -1033,6 +1087,8 @@ class LocalStore {
   const c=structuredClone(cp);
   if(c.version===2){c.version=3;c.ruleset=c.ruleset||'library-edition-2.0.0';}
   c.powerBag=Array.isArray(c.powerBag)?c.powerBag:[];
+  c.inventory=Object.fromEntries(POWERS.map(p=>[p,Math.min(RULES.inventoryCapacity,c.inventory[p])]));
+  c.economy=restoreEconomy(c.economy,c.nextLevel);
   c.retries=saneNumber(c.retries)?c.retries:0;c.burned=saneNumber(c.burned)?c.burned:0;
   c.casts=Object.fromEntries(POWERS.map(p=>[p,saneNumber(c.casts?.[p])?c.casts[p]:0]));
   return c;
@@ -1042,7 +1098,8 @@ class LocalStore {
    &&Number.isInteger(c.nextLevel)&&c.nextLevel>=(c.version===2?2:1)&&c.nextLevel<=48
    &&saneNumber(c.score)&&saneNumber(c.danger,0,99.999)&&saneNumber(c.seed,0,4294967295)
    &&(c.version===2||typeof c.ruleset==='string'&&c.ruleset.length<=64)
-   &&POWERS.every(p=>Number.isInteger(c.inventory?.[p])&&c.inventory[p]>=0&&c.inventory[p]<=3)
+   &&POWERS.every(p=>Number.isInteger(c.inventory?.[p])&&c.inventory[p]>=0&&c.inventory[p]<=(c.ruleset===RULESET_VERSION?RULES.inventoryCapacity:3))
+   &&(c.economy===undefined?c.ruleset!==RULESET_VERSION:validEconomy(c.economy))
    &&(c.powerBag===undefined||Array.isArray(c.powerBag)&&c.powerBag.length<=4&&new Set(c.powerBag).size===c.powerBag.length&&c.powerBag.every(p=>POWERS.includes(p)))
    &&Array.isArray(c.stageHistory)&&c.stageHistory.length<=48&&c.stageHistory.every(r=>r&&saneNumber(r.level,1,48)&&saneNumber(r.medal,1,3))
    &&['time','correct','wrong','missed','correctCharacters','bestStreak','streak','startLevel'].every(k=>saneNumber(c[k]))
@@ -1093,7 +1150,7 @@ class LocalStore {
   const since=period==='today'?new Date(new Date(now).setHours(0,0,0,0)).getTime():period==='week'?now-7*86400000:0;
   return this.data.records.filter(r=>(pace==='all'||r.pace===pace)&&(mode==='all'||r.mode===mode)&&r.date>=since&&(mode!=='practice'||chapter===null||r.startLevel===chapter)).sort((a,b)=>b.score-a.score||(a.retries||0)-(b.retries||0)||b.date-a.date);
  }
- exportData(){return JSON.stringify({...this.data,game:'Typekeeper: Enchanted Library',appVersion:'3.2.0',exportedAt:new Date().toISOString()},null,2);}
+ exportData(){return JSON.stringify({...this.data,game:'Typekeeper: Enchanted Library',appVersion:'3.2.1',exportedAt:new Date().toISOString()},null,2);}
  clearRecords(){this.data.records=[];this.save();}
 }
 
@@ -1667,7 +1724,7 @@ const stage=$('stage'),viewport=$('viewport'),screen=$('screen-layer'),typing=$(
 let localStorageAccess;try{localStorageAccess=window.localStorage;}catch{}
 const store=new LocalStore(localStorageAccess),model=new GameModel(),clock=new FixedClock();
 let settings=store.settings;
-try{if(!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.2')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.1')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3')&&!localStorageAccess?.getItem('typing-maniac-library-v2')&&!localStorageAccess?.getItem('typing-maniac-library-v1')&&matchMedia('(prefers-reduced-motion: reduce)').matches)settings.motion=false;}catch{}
+try{if(!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.2.1')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.2')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.1')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3')&&!localStorageAccess?.getItem('typing-maniac-library-v2')&&!localStorageAccess?.getItem('typing-maniac-library-v1')&&matchMedia('(prefers-reduced-motion: reduce)').matches)settings.motion=false;}catch{}
 const renderer=new GameRenderer($('game-canvas'),model,settings),audio=new GameAudio(settings);
 const audioMessage=status=>status==='degraded'?'Adaptive layers unavailable. The main theme still plays.':status==='failed'?'Music unavailable. The game remains playable.':status==='unsupported'?"Audio isn't available in this browser.":'';
 audio.onStatus=status=>{const el=$('audio-status');if(el)el.textContent=audioMessage(status);};
@@ -1748,6 +1805,7 @@ function chapterReveal(){
  stage.classList.remove('chapter-enter');void stage.offsetWidth;stage.classList.add('chapter-enter');
 }
 function beginPresentation(){
+ resetSpellFeedback();
  lastTallyId='';runRecorded=false;lastBest=store.best(model.pace,model.mode,model.startLevel);clock.reset();typing.value=model.buffer;setScreen('playing');wingAtmosphere();renderHud();focusGame();audio.unlock();
  chapterReveal();
  $('onboarding-hint').hidden=!(settings.hints&&model.level===1&&model.correct===0);
@@ -1768,7 +1826,7 @@ function showHow(){
  setScreen('how',modal(`${closeButton()}<h2 id="modal-title">How to play</h2>
  <div class="tutorial-steps"><div class="tutorial-step"><span class="step-num">01</span><h3>Type</h3><p>Type a falling word. Press <kbd>ENTER</kbd> to save it. Backspace corrects a typo.</p></div><div class="tutorial-step"><span class="step-num">02</span><h3>Prioritize</h3><p>Save the lowest words first. Missed words fill the paper pile. At 100%, the run ends.</p></div><div class="tutorial-step"><span class="step-num">03</span><h3>Cast</h3><p>Colored words earn spells. Press <kbd>1</kbd>–<kbd>4</kbd> or click a glowing book. Your typed word stays intact.</p></div></div>
  <div class="power-guide">${POWERS.map(p=>`<div class="power-guide-item"><span class="guide-hotkey">${POWER_META[p].key}</span><img src="${asset(`assets/book-${p}.svg`)}" alt=""><h3>${POWER_META[p].name}</h3><p>${POWER_META[p].description}</p></div>`).join('')}</div>
- <details class="rules-details"><summary>Scoring & mastery</summary><p>Every 8 correct words raises your multiplier, up to ×3. Dark cards score double. A wrong submission adds 2% to the pile. FIRE clears words without score or chapter progress.</p><p>Three stars: no misses or wrong submissions. Two stars: no more than 2 misses and 3 wrong submissions. ICE pauses SLOW’s timer so both spells keep their full value. Store up to three of each spell. A spell that cannot help is not consumed. Missing a word still costs pile pressure, but submitting it within 0.35 seconds of landing does not add a second penalty.</p></details>
+ <details class="rules-details"><summary>Scoring & mastery</summary><p>Every 8 correct words raises your multiplier, up to ×3. Dark cards score double. A wrong submission adds 2% to the pile. FIRE clears words without score or chapter progress.</p><p>Three stars: no misses or wrong submissions. Two stars: no more than 2 misses and 3 wrong submissions. ICE pauses SLOW’s timer so both spells keep their full value. Store up to two of each spell. A spell that cannot help is not consumed. Missing a word still costs pile pressure, but submitting it within 0.35 seconds of landing does not add a second penalty.</p></details>
  <div class="modal-actions">${primary(model.phase==='menu'?(store.checkpoint(settings.pace)?'Continue':'Play'):'Back',model.phase==='menu'?(store.checkpoint(settings.pace)?'continue':'start'):'back','data-autofocus')}</div>`,'wide'));
 }
 function showPause(reason='manual'){
@@ -1951,10 +2009,14 @@ document.addEventListener('pointerdown',()=>audio.unlock(),{once:true});
 document.addEventListener('keydown',()=>audio.unlock(),{once:true});
 
 function buildInventory(){
- $('spell-inventory').innerHTML=POWERS.map(p=>`<button type="button" class="spell-slot" data-power="${p}" id="spell-${p}" aria-keyshortcuts="${POWER_META[p].key}" aria-describedby="tip-${p}" aria-label="${p}: no books yet" aria-disabled="true"><span class="spell-aura" aria-hidden="true"></span><span class="spell-keycap" aria-hidden="true">${POWER_META[p].key}</span><span class="spell-ready" id="ready-${p}">COLLECT</span><img class="spell-book" src="${asset(`assets/book-${p}.svg`)}" alt=""><span class="book-count" id="count-${p}">0</span><span class="spell-command">${POWER_META[p].name}</span><span class="spell-stock" id="stock-${p}" aria-hidden="true"><i></i><i></i><i></i></span><span class="spell-tip" id="tip-${p}" role="tooltip"><b>${POWER_META[p].name} · ${POWER_META[p].key}</b>${POWER_META[p].detail}</span><span class="spell-timer" id="timer-${p}" aria-hidden="true"></span></button>`).join('');
+ $('spell-inventory').innerHTML=POWERS.map(p=>`<button type="button" class="spell-slot" data-power="${p}" id="spell-${p}" aria-keyshortcuts="${POWER_META[p].key}" aria-describedby="tip-${p}" aria-label="${p}: no books yet" aria-disabled="true"><span class="spell-aura" aria-hidden="true"></span><span class="spell-keycap" aria-hidden="true">${POWER_META[p].key}</span><span class="spell-ready" id="ready-${p}">COLLECT</span><img class="spell-book" src="${asset(`assets/book-${p}.svg`)}" alt=""><span class="book-count" id="count-${p}">0</span><span class="spell-command">${POWER_META[p].name}</span><span class="spell-stock" id="stock-${p}" aria-hidden="true">${'<i></i>'.repeat(RULES.inventoryCapacity)}</span><span class="spell-tip" id="tip-${p}" role="tooltip"><b>${POWER_META[p].name} · ${POWER_META[p].key}</b>${POWER_META[p].detail}</span><span class="spell-timer" id="timer-${p}" aria-hidden="true"></span></button>`).join('');
  for(const p of POWERS){$(`spell-${p}`).addEventListener('pointerdown',e=>{if(model.phase==='playing')e.preventDefault();});$(`spell-${p}`).addEventListener('click',()=>quickCast(p,'button'));}
 }
 let previousStock={fire:0,ice:0,slow:0,wind:0},lastPressureKey='';
+const stockPulseTimers=Object.fromEntries(POWERS.map(p=>[p,null]));
+function resetSpellFeedback(){
+ for(const p of POWERS){clearTimeout(stockPulseTimers[p]);stockPulseTimers[p]=null;previousStock[p]=model.inventory[p];$(`spell-${p}`)?.classList.remove('just-ready');}
+}
 // Avoid reparsing unchanged HUD markup on every frame/key; keep live node identity.
 function setText(id,value){const el=$(id),text=String(value);if(el.textContent!==text)el.textContent=text;}
 function setHTML(id,value){const el=$(id);if(el.innerHTML!==value)el.innerHTML=value;}
@@ -1978,7 +2040,8 @@ function renderHud(){
   setText(`ready-${p}`,queued?'QUEUED':active?'ACTIVE':ready?'READY':count?'STORED':'COLLECT');setText(`timer-${p}`,active?`${model.effects[p].toFixed(1)}s`:'');
   slot.style.setProperty('--effect-progress',active?String(model.effects[p]/(p==='ice'?RULES.iceDuration:RULES.slowDuration)):0);
   [...$(`stock-${p}`).children].forEach((el,i)=>el.classList.toggle('filled',i<count));
-  if(count>previousStock[p]){slot.classList.remove('just-ready');void slot.offsetWidth;slot.classList.add('just-ready');setTimeout(()=>slot.classList.remove('just-ready'),1800);}previousStock[p]=count;
+  if(!count){clearTimeout(stockPulseTimers[p]);stockPulseTimers[p]=null;slot.classList.remove('just-ready');}
+  if(count>previousStock[p]){clearTimeout(stockPulseTimers[p]);slot.classList.remove('just-ready');void slot.offsetWidth;slot.classList.add('just-ready');stockPulseTimers[p]=setTimeout(()=>{slot.classList.remove('just-ready');stockPulseTimers[p]=null;},1800);}previousStock[p]=count;
  }
  setHTML('effect-status',['ice','slow'].filter(p=>model.effects[p]>0).map(p=>`<span class="effect-chip" style="color:${POWER_META[p].color}"><img src="${asset(`assets/icon-${p}.svg`)}" alt="">${p==='slow'&&model.effects.ice>0?'SLOW · QUEUED':p.toUpperCase()}<b>${model.effects[p].toFixed(1)}s</b></span>`).join(''));
  const power=model.buffer.toLowerCase();setText('typing-label',POWERS.includes(power)&&!model.words.some(w=>w.text===model.buffer)?`CAST ${power.toUpperCase()}`:'');$('typing-label').hidden=!$('typing-label').textContent;

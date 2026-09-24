@@ -1,6 +1,6 @@
 {
   "name": "typekeeper-enchanted-library",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "private": true,
   "description": "Typekeeper: Enchanted Library. Mechanics-polished 48-chapter typing game with preserved artwork and adaptive original music.",
   "type": "module",
@@ -26,7 +26,10 @@
     "audio:pressure": "python3 scripts/compose_pressure_score.py",
     "audio:sfx-preview": "python3 scripts/render_sfx_preview.py",
     "test:feedback-performance": "python3 e2e/feedback_performance.py",
-    "test:audio": "python3 scripts/pressure-audio-audit.py"
+    "test:audio": "python3 scripts/pressure-audio-audit.py",
+    "test:economy": "node scripts/economy-audit.mjs",
+    "test:economy:browser": "python3 e2e/economy_tests.py",
+    "test:update": "python3 scripts/test-update.py"
   },
   "license": "UNLICENSED"
 }

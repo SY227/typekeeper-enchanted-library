@@ -1,3 +1,16 @@
+# v3.2.1 balance-specific differences
+
+This update follows the user-approved authored economy, not measured original Typing
+Maniac numbers. It retains the existing assets and mechanics except for the explicit
+speed/drop/cap/migration changes in `ECONOMY.md`. The runtime is a browser game, not
+an executed Unreal/Blender port or a native Steam release. Human first-play and target
+platform approval are still open; all simulated losses remain in `docs/qa/`.
+
+The reference-video limitations and earlier implementation differences below remain
+applicable. The current rules and QA report supersede earlier version labels/counts.
+
+---
+
 # Scope and remaining gates — 3.2
 
 A complete browser build and editable source/assets. Not a native Steam binary,

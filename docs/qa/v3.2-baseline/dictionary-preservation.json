@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "words": 746,
+  "scope": "All three word-bank arrays deep-equal the uploaded v3.1; only their stage distribution changes."
+}

@@ -24,7 +24,7 @@ PASS Global mute also silences the new tally clicks and medal seal
 PASS Dense reward bursts stay within 32 tones/12 noise voices and fully disconnect 
 PASS Repeated completions and rescues keep the shimmer and particle pools bounded 
 PASS A large streak celebration never covers an active word underneath it 
-PASS Actual shipping model uses the earlier chapter 1/3/6/12 difficulty ramp 
+PASS Actual shipping model uses the balanced chapter 1/3/6/12 difficulty ramp 
 PASS Missing optional tension stems degrade gracefully to the original playable score 
 PASS Tab loss suspends the expanded audio graph and never resumes falling words automatically 
 PASS Production HTML still hides every audit/control hook 

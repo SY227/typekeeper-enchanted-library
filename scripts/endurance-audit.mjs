@@ -23,7 +23,7 @@ for(const pace of ['relaxed','classic','maniac']){
   m.step(RULES.step);steps++;
   peak=Math.max(peak,m.words.length);
   assert.ok(m.words.length<=12&&m.score>=0&&Number.isFinite(m.time));
-  assert.ok(POWERS.every(p=>m.inventory[p]>=0&&m.inventory[p]<=3));
+  assert.ok(POWERS.every(p=>m.inventory[p]>=0&&m.inventory[p]<=RULES.inventoryCapacity));
   assert.ok(m.effects.slow<=8&&m.effects.ice<=6&&m.danger<=100);
  }
  assert.equal(m.level,201);assert.ok(m.replay.length<=100000);

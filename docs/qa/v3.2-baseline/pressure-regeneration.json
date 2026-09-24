@@ -1,0 +1,51 @@
+{
+  "scope": "Deterministic regeneration using the included pressure-score recipe in the same installed Python/ffmpeg environment.",
+  "allIdentical": true,
+  "files": [
+    {
+      "path": "public/assets/lanterns-pressure.mp3",
+      "sha256": "62e2241e648651927eb6f0312f413697ed00d3b2ed42905443da319333834f56",
+      "byteIdentical": true
+    },
+    {
+      "path": "public/assets/lanterns-urgency.mp3",
+      "sha256": "081b7baf685f5fd2d1da6b7433e0ad2e556bc083f6ee405487d6bf56a366f84d",
+      "byteIdentical": true
+    },
+    {
+      "path": "asset-source/music/lanterns-pressure.flac",
+      "sha256": "04cdf962a13928fa938436e79bebd40f2fd3a511fb3ca051271b1aad0db67dfe",
+      "byteIdentical": true
+    },
+    {
+      "path": "asset-source/music/lanterns-urgency.flac",
+      "sha256": "5bfea6c6dccfd16e11a6d64cf6100f641bf26349e562ecd2582b558eeb3706c9",
+      "byteIdentical": true
+    },
+    {
+      "path": "asset-source/music/pressure-arrangement.json",
+      "sha256": "c69e746020d612b51b7ca198ce507f4ac6a59772c0ce1fd171d1e324c15ee9f8",
+      "byteIdentical": true
+    },
+    {
+      "path": "asset-source/music/pressure-arrangement.mid",
+      "sha256": "0622e22fbf5d103b33b8de613d869f21303f16ed28b09d29b3245689323aa5d2",
+      "byteIdentical": true
+    },
+    {
+      "path": "asset-source/music/pressure-score.json",
+      "sha256": "1a86e264041f5993963eb7e95e591cc30831441c036da8367490e2172c48c4c6",
+      "byteIdentical": true
+    },
+    {
+      "path": "asset-source/music/pressure-and-relief-preview.mp3",
+      "sha256": "71278399c404ef7eb20738bb93d057fb53f2b7e631a3cd4ec073e12eee325878",
+      "byteIdentical": true
+    },
+    {
+      "path": "asset-source/music/pressure-and-relief-preview.flac",
+      "sha256": "4c25281ba6346a44e18a11879bd6b85bbbb4be14f4c127d327ad8c47eb36118c",
+      "byteIdentical": true
+    }
+  ]
+}

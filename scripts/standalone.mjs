@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-const modules=['game/assets.js','data/campaign.js','game/pressure.js','game/controls.js','game/rules.js','data/words.js','game/model.js','game/clock.js','game/storage.js','audio/mix.js','audio/audio.js','ui/icons.js','ui/score-rollup.js','render/renderer.js','main.js'];
+const modules=['game/assets.js','data/campaign.js','game/pressure.js','game/controls.js','game/rules.js','data/words.js','game/economy.js','game/model.js','game/clock.js','game/storage.js','audio/mix.js','audio/audio.js','ui/icons.js','ui/score-rollup.js','render/renderer.js','main.js'];
 const mime={'.webp':'image/webp','.svg':'image/svg+xml','.wav':'audio/wav','.mp3':'audio/mpeg','.json':'application/json'};
 /** Creates a genuine, no-fetch, non-module, single-file playable build. No prototype shims. */
 export async function standalone(root){

@@ -1,0 +1,238 @@
+{
+  "shippingSHA256": "210747d8917a45334b7b20b36540e139bfcd0d1cf670fca7d2edadb106f423da",
+  "scope": "Embedded shipping PLAY.html, diagnostics enabled only in memory. Fault-injection tests identified explicitly. No HTTP/file navigation or real Safari/device certification.",
+  "browser": "144.0.7559.96",
+  "passed": 24,
+  "failed": 0,
+  "audioSample": {
+    "state": "running",
+    "sfx": true,
+    "music": true,
+    "adaptive": true,
+    "muted": false,
+    "musicStatus": "ready",
+    "scene": "menu",
+    "pressure": 0,
+    "tension": 0,
+    "urgency": 0,
+    "targets": [
+      1,
+      0.16,
+      0,
+      0
+    ],
+    "background": false,
+    "sources": 4,
+    "output": 0.800000011920929,
+    "musicGain": 0.3073647916316986,
+    "fxGain": 0.12349999696016312,
+    "stemGains": [
+      0.999819278717041,
+      0.15948064625263214,
+      0,
+      0
+    ],
+    "loopDuration": 106.6666439909297,
+    "decodedBytes": 112895976,
+    "voices": 0,
+    "noiseVoices": 0,
+    "noiseCache": 15,
+    "cues": [
+      {
+        "name": "page-turn",
+        "time": 3.7006802721088436
+      },
+      {
+        "name": "page-turn",
+        "time": 5.230294784580499
+      },
+      {
+        "name": "page-turn",
+        "time": 22.262131519274377
+      },
+      {
+        "name": "page-turn",
+        "time": 25.022403628117914
+      },
+      {
+        "name": "page-turn",
+        "time": 26.731972789115645
+      },
+      {
+        "name": "page-turn",
+        "time": 26.862585034013605
+      },
+      {
+        "name": "page-turn",
+        "time": 29.210702947845807
+      },
+      {
+        "name": "page-turn",
+        "time": 31.010249433106576
+      },
+      {
+        "name": "key",
+        "time": 31.0508843537415
+      },
+      {
+        "name": "page-turn",
+        "time": 32.69079365079365
+      },
+      {
+        "name": "page-turn",
+        "time": 32.75174603174603
+      },
+      {
+        "name": "page-turn",
+        "time": 33.37287981859411
+      },
+      {
+        "name": "matched-key",
+        "time": 33.40190476190476
+      },
+      {
+        "name": "word-saved",
+        "time": 33.40190476190476
+      },
+      {
+        "name": "page-turn",
+        "time": 33.41061224489796
+      },
+      {
+        "name": "page-turn",
+        "time": 33.78213151927438
+      },
+      {
+        "name": "page-turn",
+        "time": 34.02013605442177
+      },
+      {
+        "name": "page-turn",
+        "time": 46.42249433106576
+      }
+    ]
+  },
+  "unhandledErrors": [],
+  "tests": [
+    {
+      "name": "Branding: no prototype masthead, footers, edition labels or shortcut banner",
+      "status": "PASS",
+      "seconds": 0.169
+    },
+    {
+      "name": "Real first click unlocks original music without autoplay overrides",
+      "status": "PASS",
+      "seconds": 2.811
+    },
+    {
+      "name": "Four authored stems decode, contain signal and share the authored loop duration",
+      "status": "PASS",
+      "seconds": 0.068
+    },
+    {
+      "name": "Menu, gameplay and trial mixes change without restarting synchronized stems",
+      "status": "PASS",
+      "seconds": 4.626
+    },
+    {
+      "name": "Single mute button silences both music and effects and restores output",
+      "status": "PASS",
+      "seconds": 1.644
+    },
+    {
+      "name": "Independent master, music and effects sliders reach separate buses with a quiet probe tone",
+      "status": "PASS",
+      "seconds": 3.354
+    },
+    {
+      "name": "Disabling typewriter effects leaves the music playing",
+      "status": "PASS",
+      "seconds": 1.149
+    },
+    {
+      "name": "Music toggle fades rather than resetting playback or disabling effects",
+      "status": "PASS",
+      "seconds": 4.931
+    },
+    {
+      "name": "Repeated modal transitions do not duplicate music sources",
+      "status": "PASS",
+      "seconds": 5.068
+    },
+    {
+      "name": "Pause and nested Settings freeze play, soften music, and make obscured controls inert",
+      "status": "PASS",
+      "seconds": 2.764
+    },
+    {
+      "name": "Resume countdown holds the simulation still before returning control",
+      "status": "PASS",
+      "seconds": 1.906
+    },
+    {
+      "name": "Escape cancels a pending countdown without accidental resume",
+      "status": "PASS",
+      "seconds": 2.385
+    },
+    {
+      "name": "Focus loss cancels countdown, suspends audio and requires deliberate gameplay resume",
+      "status": "PASS",
+      "seconds": 2.171
+    },
+    {
+      "name": "Countdown restores the exact word, cursor and selected range",
+      "status": "PASS",
+      "seconds": 1.746
+    },
+    {
+      "name": "Countdown preference provides immediate resume when disabled",
+      "status": "PASS",
+      "seconds": 0.641
+    },
+    {
+      "name": "First-use typing hint retires on success and respects its preference",
+      "status": "PASS",
+      "seconds": 0.084
+    },
+    {
+      "name": "Focused HUD removes secondary numbers; detailed HUD can restore them",
+      "status": "PASS",
+      "seconds": 0.352
+    },
+    {
+      "name": "Reduced motion removes decorative animation without hiding ready states",
+      "status": "PASS",
+      "seconds": 0.251
+    },
+    {
+      "name": "Burst effects respect voice limits and disconnect after playback",
+      "status": "PASS",
+      "seconds": 0.654
+    },
+    {
+      "name": "Injected missing music failure reports honestly while typing remains playable",
+      "status": "PASS",
+      "seconds": 3.281
+    },
+    {
+      "name": "AudioContext-unavailable environment still starts gameplay",
+      "status": "PASS",
+      "seconds": 1.888
+    },
+    {
+      "name": "Final title, gameplay, Audio settings and chapter atlas render into captures",
+      "status": "PASS",
+      "seconds": 11.142
+    },
+    {
+      "name": "Unmodified production PLAY.html exposes no controlled test seam",
+      "status": "PASS",
+      "seconds": 1.525
+    },
+    {
+      "name": "No unhandled application errors during polish audit",
+      "status": "PASS",
+      "seconds": 0.0
+    }
+  ]
+}

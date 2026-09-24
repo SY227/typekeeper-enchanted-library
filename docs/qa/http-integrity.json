@@ -5,9 +5,9 @@
       "node",
       "scripts/serve.mjs",
       "--port",
-      "45929"
+      "44529"
     ],
-    "filesChecked": 41,
+    "filesChecked": 42,
     "allPayloadHashesMatch": true,
     "headOK": true,
     "missing404": true,
@@ -205,10 +205,16 @@
         "bytes": 500
       },
       {
+        "path": "src/game/economy.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 1875
+      },
+      {
         "path": "src/game/model.js",
         "passed": true,
         "mime": "text/javascript",
-        "bytes": 17394
+        "bytes": 18537
       },
       {
         "path": "src/game/pressure.js",
@@ -220,19 +226,19 @@
         "path": "src/game/rules.js",
         "passed": true,
         "mime": "text/javascript",
-        "bytes": 4303
+        "bytes": 4362
       },
       {
         "path": "src/game/storage.js",
         "passed": true,
         "mime": "text/javascript",
-        "bytes": 10389
+        "bytes": 10784
       },
       {
         "path": "src/main.js",
         "passed": true,
         "mime": "text/javascript",
-        "bytes": 46267
+        "bytes": 46842
       },
       {
         "path": "src/render/renderer.js",
@@ -265,9 +271,9 @@
       "/opt/pyvenv/bin/python",
       "scripts/server.py",
       "--port",
-      "39827"
+      "41783"
     ],
-    "filesChecked": 41,
+    "filesChecked": 42,
     "allPayloadHashesMatch": true,
     "headOK": true,
     "missing404": true,
@@ -465,10 +471,16 @@
         "bytes": 500
       },
       {
+        "path": "src/game/economy.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 1875
+      },
+      {
         "path": "src/game/model.js",
         "passed": true,
         "mime": "text/javascript",
-        "bytes": 17394
+        "bytes": 18537
       },
       {
         "path": "src/game/pressure.js",
@@ -480,19 +492,19 @@
         "path": "src/game/rules.js",
         "passed": true,
         "mime": "text/javascript",
-        "bytes": 4303
+        "bytes": 4362
       },
       {
         "path": "src/game/storage.js",
         "passed": true,
         "mime": "text/javascript",
-        "bytes": 10389
+        "bytes": 10784
       },
       {
         "path": "src/main.js",
         "passed": true,
         "mime": "text/javascript",
-        "bytes": 46267
+        "bytes": 46842
       },
       {
         "path": "src/render/renderer.js",

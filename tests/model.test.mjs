@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {GameModel} from '../src/game/model.js';
-import {RULES,FIELD,POWERS,normalizeInput,scoreForWord,mulberry32,levelRules} from '../src/game/rules.js';
+import {RULES,FIELD,POWERS,normalizeInput,scoreForWord,mulberry32,levelRules,wordCardWidth} from '../src/game/rules.js';
 import {WORD_BANK,WORD_COUNT} from '../src/data/words.js';
 import {FixedClock} from '../src/game/clock.js';
 import {LocalStore} from '../src/game/storage.js';
@@ -25,11 +25,11 @@ test('duplicate words resolve the lowest exact match',()=>{const m=run(),a=word(
 test('ties are stable by ID',()=>{const m=run(),a=word(m,'TALE'),b=word(m,'TALE');submit(m,'TALE');assert.equal(m.words[0].id,b.id);});
 test('shared prefix does not lock onto a target',()=>{const m=run();word(m,'STAR');word(m,'START');submit(m,'START');assert.equal(m.words[0].text,'STAR');});
 test('falling FIRE word takes priority over available command',()=>{const m=run();word(m,'FIRE');word(m,'KEEP');m.inventory.fire=1;submit(m,'FIRE');assert.equal(m.inventory.fire,1);assert.equal(m.words.length,1);assert.equal(m.correct,1);});
-test('power collection is immediate and capped at three',()=>{const m=run();m.inventory.ice=2;word(m,'SNOW','ice');submit(m,'SNOW');assert.equal(m.inventory.ice,3);word(m,'FROST','ice');submit(m,'FROST');assert.equal(m.inventory.ice,3);assert.equal(m.correct,2);});
+test('power collection is immediate and capped at two',()=>{const m=run();m.inventory.ice=1;word(m,'SNOW','ice');submit(m,'SNOW');assert.equal(m.inventory.ice,2);word(m,'FROST','ice');submit(m,'FROST');assert.equal(m.inventory.ice,2);assert.equal(m.correct,2);});
 test('all four power-card families grant the corresponding book',()=>{const m=run();for(const p of POWERS){word(m,'MAGIC',p);submit(m,'MAGIC');assert.equal(m.inventory[p],1);}});
 test('unavailable spell costs no points or danger and grants no stock',()=>{const m=run();assert.equal(submit(m,'FIRE'),'empty-power');assert.equal(m.inventory.fire,0);assert.equal(m.danger,0);assert.equal(m.wrong,0);});
 test('FIRE clears active cards without scoring, progress, or harvesting books',()=>{const m=run();const w=word(m,'FROST','ice',657);word(m,'GOLD','bonus');m.inventory.fire=1;submit(m,'FIRE');assert.equal(m.words.length,0);assert.equal(m.score,0);assert.equal(m.progress,0);assert.equal(m.inventory.ice,0);assert.equal(m.inventory.fire,0);m.complete(w);step(m,.05);assert.equal(m.missed,0);});
-test('FIRE consumes exactly one charge per nonempty cast',()=>{const m=run();word(m);m.inventory.fire=3;submit(m,'FIRE');m.submit();assert.equal(m.inventory.fire,2);assert.equal(m.casts.fire,1);});
+test('FIRE consumes exactly one charge per nonempty cast',()=>{const m=run();word(m);m.inventory.fire=2;submit(m,'FIRE');m.submit();assert.equal(m.inventory.fire,1);assert.equal(m.casts.fire,1);});
 test('ICE stops words and spawn timer for its duration',()=>{const m=run(),w=word(m);m.spawnClock=2;m.inventory.ice=1;submit(m,'ICE');step(m,2);assert.equal(w.y,300);assert.equal(m.spawnClock,2);assert.ok(Math.abs(m.effects.ice-4)<.00001);});
 test('ICE active recast is rejected and preserves the next book',()=>{const m=run();m.inventory.ice=2;submit(m,'ICE');step(m,2);const duration=m.effects.ice;submit(m,'ICE');assert.equal(m.effects.ice,duration);assert.equal(m.inventory.ice,1);});
 test('SLOW scales motion by exactly 0.42',()=>{const m=run(),w=word(m);m.spawnClock=90;m.inventory.slow=1;submit(m,'SLOW');step(m,1);assert.ok(Math.abs(w.y-(300+30*.42))<.001);});
@@ -51,7 +51,7 @@ test('WPM uses correctly completed characters and active time',()=>{const m=run(
 test('same seed and input sequence yield the same simulation',()=>{const a=run(2012),b=run(2012);for(let i=0;i<800;i++){a.step();b.step();if(i%90===0&&a.words[0]){submit(a,a.words[0].text);submit(b,b.words[0].text);}}assert.deepEqual(a.snapshot(),b.snapshot());assert.deepEqual(a.exportReplay(),b.exportReplay());});
 test('spawn bounds keep whole cards on the playfield',()=>{const m=run();for(let i=0;i<90;i++){m.level=1+Math.floor(i/5);m.words=[];assert.ok(m.spawn());const w=m.words[0];assert.ok(w.x-w.width/2>=FIELD.left);assert.ok(w.x+w.width/2<=FIELD.right);assert.equal(w.y,FIELD.top);}});
 test('spawn is bounded at 12 simultaneous cards',()=>{const m=run();for(let i=0;i<12;i++)word(m,'BOOK','normal',400);assert.equal(m.spawn(),false);assert.equal(m.words.length,12);});
-test('special cards include explicit glyph padding',()=>{const m=run();m.spawnedThisLevel=2;m.spawn();assert.equal(m.words[0].kind,'fire');assert.ok(m.words[0].width>=m.words[0].text.length*17+62);});
+test('special cards include explicit glyph padding',()=>{const m=run();m.economy.untilNext=1;m.spawn();const w=m.words[0];assert.equal(w.kind,'ice');assert.ok(w.width>=112);assert.ok(w.width>wordCardWidth(w.text,'normal'));});
 test('level speed and quotas increase but remain bounded',()=>{assert.ok(levelRules(5).speed>levelRules(1).speed);assert.equal(levelRules(100).quota,42);assert.ok(levelRules(100).interval>=.65);assert.ok(levelRules(100).speed<=170);});
 test('pace choice changes speed without changing correctness rules',()=>{assert.ok(levelRules(1,'relaxed').speed<levelRules(1).speed);assert.ok(levelRules(1,'maniac').speed>levelRules(1).speed);});
 test('fixed clock creates 60 bounded simulation steps over one second',()=>{const c=new FixedClock(),ticks=[];c.advance(0,dt=>ticks.push(dt));for(let i=1;i<=60;i++)c.advance(i*1000/60,dt=>ticks.push(dt));assert.ok(ticks.length>=59&&ticks.length<=60);assert.ok(ticks.every(x=>x===1/60));});

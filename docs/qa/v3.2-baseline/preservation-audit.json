@@ -1,0 +1,267 @@
+{
+  "scope": "All original asset-source files, all previous runtime art/audio except rebuilt manifest, plus chapter content, controls, pressure bands, clock, icons, HTML layout and Vercel configuration. New audio files are additions. CSS/renderer/audio/rules/input/storage code deliberately changed.",
+  "allUnchanged": true,
+  "count": 52,
+  "files": [
+    {
+      "path": "asset-source/README.md",
+      "unchanged": true,
+      "sha256": "4de6371057d7aa5d5b29640215a1d3c2aa854ef52c8525466f5b9b9772f71409"
+    },
+    {
+      "path": "asset-source/book-fire.svg",
+      "unchanged": true,
+      "sha256": "0c97294d5e86e12a23bd46735611f22b65157619a560508ba4157ad9dc1ed8eb"
+    },
+    {
+      "path": "asset-source/book-ice.svg",
+      "unchanged": true,
+      "sha256": "7c7d467873d7507ac6e90abace8978256e90b87e964b555ef9b9a56f86739d7e"
+    },
+    {
+      "path": "asset-source/book-slow.svg",
+      "unchanged": true,
+      "sha256": "b27099e0969dc4c30d22e7684c2e760c090ac74c2164d92fc32886770d63a9c9"
+    },
+    {
+      "path": "asset-source/book-wind.svg",
+      "unchanged": true,
+      "sha256": "33df77ffd6ba655f1d35e67347098b193d0cbcbce4c0dc051e8335bd920c7a93"
+    },
+    {
+      "path": "asset-source/expressions/alarmed.png",
+      "unchanged": true,
+      "sha256": "9da50650bb23f6003b5a4a17e297674d36b8055be8490463146cf9bceb24b0f8"
+    },
+    {
+      "path": "asset-source/expressions/calm.png",
+      "unchanged": true,
+      "sha256": "2fb7bfe592e1f52656f0b2116b028449b6f0629612949b2c8dc1b07781347ead"
+    },
+    {
+      "path": "asset-source/expressions/celebrate.png",
+      "unchanged": true,
+      "sha256": "8b92d60e6a5be477ad0d0497f9e21912c0d379f72cf599adbc71c573938e8d9b"
+    },
+    {
+      "path": "asset-source/expressions/critical.png",
+      "unchanged": true,
+      "sha256": "ee1fcd3f0afc966fc2bfc1e4090f0c4eb28d0047860e1e95bdc39cc7869171e7"
+    },
+    {
+      "path": "asset-source/expressions/defeated.png",
+      "unchanged": true,
+      "sha256": "86a39f90824e754be179782f6ca62ea4cb1b030ef7557fadb3d33a90bc76802a"
+    },
+    {
+      "path": "asset-source/expressions/expression-contact-sheet.jpg",
+      "unchanged": true,
+      "sha256": "969e0a83e11efe7d9fc8f92b202e71e44ede2453ea7f82c6ceeeb5879a77f2f9"
+    },
+    {
+      "path": "asset-source/expressions/focused.png",
+      "unchanged": true,
+      "sha256": "629d5528a063fa22c7c43759b24e2524d5693868163923c1ebac05779b3e1b33"
+    },
+    {
+      "path": "asset-source/expressions/rig.json",
+      "unchanged": true,
+      "sha256": "9d68d78804e55baa90a228ded88a89ade0a637e33ba88301c8605305adca9a50"
+    },
+    {
+      "path": "asset-source/expressions/worried.png",
+      "unchanged": true,
+      "sha256": "fe776933a0a0774999bdcb0997b58eebecc444e6c2ae7b2ca08e9b5bff5d2c8b"
+    },
+    {
+      "path": "asset-source/favicon.svg",
+      "unchanged": true,
+      "sha256": "c24b83a7529ab508ae820b011abddd755b93f3c2adedc85cf376a686a57bf82c"
+    },
+    {
+      "path": "asset-source/library-master.png",
+      "unchanged": true,
+      "sha256": "03583268432d3c3b67dd7a8054dce5e771a19bed90a75ac9fd8b4e00a8e4d573"
+    },
+    {
+      "path": "asset-source/music/arrangement.json",
+      "unchanged": true,
+      "sha256": "7eec1d0fe03ee2a1ad0ef4df86f48ed49df7f8adbe04e16f75d1404759c9f5c6"
+    },
+    {
+      "path": "asset-source/music/lanterns-and-letters.flac",
+      "unchanged": true,
+      "sha256": "bcaa777dfe482e248834a4eeab5afc8ee8eebbcc973898314696dd179e07b4ad"
+    },
+    {
+      "path": "asset-source/music/lanterns-and-letters.mid",
+      "unchanged": true,
+      "sha256": "cc270ecfa5c2df01d97bb1c6e13c7f4a83c80ade9bb14c16230b16d747154394"
+    },
+    {
+      "path": "asset-source/music/lanterns-and-letters.mp3",
+      "unchanged": true,
+      "sha256": "4a18246690607f3cf45d8749751fd23232207cd8c95f25db947c0e4543f9b0ab"
+    },
+    {
+      "path": "asset-source/music/lanterns-hearth.flac",
+      "unchanged": true,
+      "sha256": "2ecba7c86f5899566ac8599e534108723e6afe3aef126712f04c4d4e9c2b4282"
+    },
+    {
+      "path": "asset-source/music/lanterns-motion.flac",
+      "unchanged": true,
+      "sha256": "d9fc1520c354763779418c97a9f093a3b9a0a8ffe9bffcf59430d39f2a90930e"
+    },
+    {
+      "path": "asset-source/music/score.json",
+      "unchanged": true,
+      "sha256": "707d149d740773210691a87bd997f72103d44e870eba4978d6f6b935c6f5f5eb"
+    },
+    {
+      "path": "asset-source/typist-master.png",
+      "unchanged": true,
+      "sha256": "2fb7bfe592e1f52656f0b2116b028449b6f0629612949b2c8dc1b07781347ead"
+    },
+    {
+      "path": "public/assets/book-fire.svg",
+      "unchanged": true,
+      "sha256": "0c97294d5e86e12a23bd46735611f22b65157619a560508ba4157ad9dc1ed8eb"
+    },
+    {
+      "path": "public/assets/book-ice.svg",
+      "unchanged": true,
+      "sha256": "7c7d467873d7507ac6e90abace8978256e90b87e964b555ef9b9a56f86739d7e"
+    },
+    {
+      "path": "public/assets/book-slow.svg",
+      "unchanged": true,
+      "sha256": "b27099e0969dc4c30d22e7684c2e760c090ac74c2164d92fc32886770d63a9c9"
+    },
+    {
+      "path": "public/assets/book-wind.svg",
+      "unchanged": true,
+      "sha256": "33df77ffd6ba655f1d35e67347098b193d0cbcbce4c0dc051e8335bd920c7a93"
+    },
+    {
+      "path": "public/assets/favicon.svg",
+      "unchanged": true,
+      "sha256": "c24b83a7529ab508ae820b011abddd755b93f3c2adedc85cf376a686a57bf82c"
+    },
+    {
+      "path": "public/assets/icon-fire.svg",
+      "unchanged": true,
+      "sha256": "1b23c2fb4ef68826eb167fa6656d14aa74a5f3a9e10671ff9925dc37b8fe00f0"
+    },
+    {
+      "path": "public/assets/icon-ice.svg",
+      "unchanged": true,
+      "sha256": "302ffc348d0f1bcd9bd5fe8c7513773447a49986492824817cdce0f75454ce61"
+    },
+    {
+      "path": "public/assets/icon-slow.svg",
+      "unchanged": true,
+      "sha256": "ae6f133c77a056102bfb877dcf6be107c9c9f4ea7017aa8099901defe564ad41"
+    },
+    {
+      "path": "public/assets/icon-wind.svg",
+      "unchanged": true,
+      "sha256": "9eb8b512aac17d52260c7e6d2c04bb73e0fb79e53df878f9030c77ff65a53f10"
+    },
+    {
+      "path": "public/assets/lanterns-hearth.mp3",
+      "unchanged": true,
+      "sha256": "8b5c0cffbedf6113e546a4b461a7879e62d525e37d534bb39878d9a9a978818b"
+    },
+    {
+      "path": "public/assets/lanterns-motion.mp3",
+      "unchanged": true,
+      "sha256": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f"
+    },
+    {
+      "path": "public/assets/library.webp",
+      "unchanged": true,
+      "sha256": "6f573f74db90b50c047c735031be0e1117018c00a770d73472b29292841eb8a6"
+    },
+    {
+      "path": "public/assets/paper.webp",
+      "unchanged": true,
+      "sha256": "c530c88c2eabf3c81fd158a3dcd523d19c5e19206abefc12d56bbbc917807141"
+    },
+    {
+      "path": "public/assets/typist-alarmed.webp",
+      "unchanged": true,
+      "sha256": "7a9b226b7c7954f09b75b554dda314d1878a4815359a69f9a733447bba308282"
+    },
+    {
+      "path": "public/assets/typist-calm.webp",
+      "unchanged": true,
+      "sha256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c"
+    },
+    {
+      "path": "public/assets/typist-celebrate.webp",
+      "unchanged": true,
+      "sha256": "22ee4e8a0288619142bfcb9f1653de6f3575a0351376dfca55f706c39b3a2a6a"
+    },
+    {
+      "path": "public/assets/typist-critical.webp",
+      "unchanged": true,
+      "sha256": "39668ececfaf1c567c4524fc17b0fee1672cde1c88802dcb3be4324b906bc590"
+    },
+    {
+      "path": "public/assets/typist-defeated.webp",
+      "unchanged": true,
+      "sha256": "42d7f0b5363501c5f6dc465755bbadbd5efeb8c5ca3dd3cbc15c2474a5d9c95c"
+    },
+    {
+      "path": "public/assets/typist-focused.webp",
+      "unchanged": true,
+      "sha256": "5646f03b81c6f4df19e3acefa24a7560ae3822cd1935afeff4e3de7f82593003"
+    },
+    {
+      "path": "public/assets/typist-worried.webp",
+      "unchanged": true,
+      "sha256": "0d884fbe5b9bcea214209772b945cd77a05ce76f62886878d08cb2ebb424b380"
+    },
+    {
+      "path": "public/assets/typist.webp",
+      "unchanged": true,
+      "sha256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c"
+    },
+    {
+      "path": "src/data/campaign.js",
+      "unchanged": true,
+      "sha256": "ede9d388f656f5ebf1132fd7ed9c4bfeb202634482a53844a4e90a85d275aef2"
+    },
+    {
+      "path": "src/game/controls.js",
+      "unchanged": true,
+      "sha256": "b6a1d53f7abc6fe50144b64bfcb312cdb43c46ffc17eb8bfafed6055fe66589d"
+    },
+    {
+      "path": "src/game/pressure.js",
+      "unchanged": true,
+      "sha256": "ed17bd358f79f211319b4b023061ef05ed96d5cd0d8e872594ce529ede252c0b"
+    },
+    {
+      "path": "src/game/clock.js",
+      "unchanged": true,
+      "sha256": "5ce1c5ec16361d8b44fb75170b944ff94444f253650efd40f88d547d976bdb60"
+    },
+    {
+      "path": "src/ui/icons.js",
+      "unchanged": true,
+      "sha256": "7a391885b01a520eb95ab03540d645f13fdf1798a8a79795b0427fc1d1c5576a"
+    },
+    {
+      "path": "index.html",
+      "unchanged": true,
+      "sha256": "e282a6ad01dbda84109292c2dec2892f53b32dc4a00b46f560527be17fda0987"
+    },
+    {
+      "path": "vercel.json",
+      "unchanged": true,
+      "sha256": "f64f462307526ec68f5ea20ef61067f8cb3e52616028bfddfd6e1c85cf8754d9"
+    }
+  ]
+}

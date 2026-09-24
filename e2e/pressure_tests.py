@@ -188,8 +188,8 @@ def main():
   def ramp():
    speeds=[]
    for level in [1,3,6,12]:run(level);speeds.append(api('return t.model.config.speed;'))
-   assert speeds==[36,45,58,76];evidence['openingSpeeds']=speeds
-  check('Actual shipping model uses the earlier chapter 1/3/6/12 difficulty ramp',ramp)
+   assert speeds==[30.6,40.5,55.1,76];evidence['openingSpeeds']=speeds
+  check('Actual shipping model uses the balanced chapter 1/3/6/12 difficulty ramp',ramp)
   def degraded():
    other=ctx.new_page();other.on('pageerror',lambda e:errors.append(str(e)));other.set_content(inline_fixture(ROOT));other.wait_for_function('!!window.__TM_TEST__')
    other.evaluate("()=>{const a=__TM_TEST__.audio,read=a.readAsset.bind(a);a.readAsset=p=>/pressure|urgency/.test(p)?Promise.reject(new Error('QA optional layer missing')):read(p);}")
@@ -221,7 +221,7 @@ def main():
    api('t.show("settings");');page.wait_for_timeout(450);page.locator('#stage').screenshot(path=str(SHOTS/'23-v32-adaptive-audio.png'))
   check('Live pressure, WIND relief, score tally and audio controls render as captured screens',screenshots)
   check('No unhandled application JavaScript errors in the new integration audit',lambda: (_ for _ in ()).throw(AssertionError(errors)) if errors else None)
-  report={'version':'3.2.0','shippingSHA256':sha,'scope':__doc__,'browser':browser.version,'viewport':{'width':1440,'height':1040},'passed':sum(r['status']=='PASS' for r in rows),'failed':sum(r['status']=='FAIL' for r in rows),'tests':rows,'evidence':evidence,'unhandledErrors':errors}
+  report={'version':'3.2.1','shippingSHA256':sha,'scope':__doc__,'browser':browser.version,'viewport':{'width':1440,'height':1040},'passed':sum(r['status']=='PASS' for r in rows),'failed':sum(r['status']=='FAIL' for r in rows),'tests':rows,'evidence':evidence,'unhandledErrors':errors}
   (OUT/'pressure-browser-results.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:report[k] for k in ['browser','passed','failed']},indent=2),flush=True);browser.close()
   if report['failed']:raise SystemExit(1)
 if __name__=='__main__':main()

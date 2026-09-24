@@ -103,7 +103,7 @@ def main():
     run();word();api('t.model.inventory.ice=2;t.flush();');page.keyboard.type('BO');page.keyboard.press('Numpad2');assert snap()['effects']['ice']==6;assert snap()['buffer']=='BO'
    check('Numeric keypad uses the same quick-cast bindings',numpad)
    def repeated_digit():
-    run();word();api('t.model.inventory.ice=3;t.flush();');page.keyboard.down('2');page.keyboard.down('2');page.keyboard.up('2');assert snap()['inventory']['ice']==2
+    run();word();api('t.model.inventory.ice=2;t.flush();');page.keyboard.down('2');page.keyboard.down('2');page.keyboard.up('2');assert snap()['inventory']['ice']==1
    check('Held spell shortcut consumes only one book',repeated_digit)
    def modified_digit():
     run();word();api('t.model.inventory.ice=2;t.flush();');page.locator('#typing-input').dispatch_event('keydown',{'key':'2','code':'Digit2','ctrlKey':True});assert snap()['inventory']['ice']==2

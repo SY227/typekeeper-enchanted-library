@@ -38,7 +38,7 @@ def main():
     try:page.screenshot(path=str(OUT/f'mechanics-failure-{len(rows)+1}.png'),timeout=5000)
     except Exception:pass
    rows.append(r);print(r['status'],name,r.get('error',''),flush=True)
-  def ruleset():assert api('return t.info.ruleset;')=='typekeeper-3.2.0'
+  def ruleset():assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
   check('Built browser contains the new versioned mechanics, not the v3 bundle',ruleset)
   def stored():
    run();api('t.model.inventory.fire=2;t.model.inventory.wind=1;t.flush();')
@@ -152,7 +152,7 @@ def main():
    assert page.locator('#viewport').bounding_box()['width']<=1440
   check('Unchanged playfield layout renders queued spell feedback without overflow',typography_layout)
   check('No unhandled JavaScript exceptions in the mechanics browser audit',lambda: (_ for _ in ()).throw(AssertionError(errors)) if errors else None)
-  report={'shippingSHA256':shippingHash,'version':'3.2.0','scope':'Shipping standalone HTML in Chromium memory. State/clock setup uses explicit diagnostics. Real input, view and rule code. No HTTP/file navigation or human participants.','browser':browser.version,'passed':sum(r['status']=='PASS' for r in rows),'failed':sum(r['status']=='FAIL' for r in rows),'unhandledErrors':errors,'tests':rows}
+  report={'shippingSHA256':shippingHash,'version':'3.2.1','scope':'Shipping standalone HTML in Chromium memory. State/clock setup uses explicit diagnostics. Real input, view and rule code. No HTTP/file navigation or human participants.','browser':browser.version,'passed':sum(r['status']=='PASS' for r in rows),'failed':sum(r['status']=='FAIL' for r in rows),'unhandledErrors':errors,'tests':rows}
   (OUT/'mechanics-browser-results.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:report[k] for k in ['browser','passed','failed']},indent=2),flush=True);browser.close()
   if report['failed']:raise SystemExit(1)
 if __name__=='__main__':main()

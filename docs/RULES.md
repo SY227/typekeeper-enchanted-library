@@ -1,5 +1,5 @@
-# Typekeeper 3.2 — implemented rules
-Ruleset `typekeeper-3.2.0`. These are authored rules for this adaptation, not recovered
+# Typekeeper 3.2.1 — implemented rules
+Ruleset `typekeeper-3.2.1`. These are authored rules for this adaptation, not recovered
 constants from an inaccessible historical gameplay video.
 
 ## Input
@@ -28,7 +28,7 @@ separate. WPM means correct characters / 5 / active minutes. Stage results use
 stage-local counters. Neither is a standardized typing-test certification.
 
 ## Spells
-Maximum three stored books of each type. Collection is logically immediate; the book
+Maximum two stored books of each type. Collection is logically immediate; the book
 flight is feedback only. Inventory overflow still permits the ordinary completion score.
 
 | Key | Spell | Implemented effect |
@@ -51,15 +51,15 @@ min(42, 12 + floor((chapter−1)/2) + (trial ? 4 : 0)). Trial intervals follow f
 interval jitter in this ruleset.
 
 For chapters 1–48, interpolate these Classic [chapter, speed, ordinary interval]
-knots: [1,36,1.90], [3,45,1.70], [6,58,1.50], [12,76,1.30], [24,99,1.12],
-[36,116,1.02], [48,132,0.96]. Speed is logical pixels/second; interval is active
+knots: [1,30.6,1.90], [3,40.5,1.70], [6,55.1,1.50], [12,76,1.30], [24,99,1.12],
+[36,118.32,1.02], [48,135.96,0.96]. Speed is logical pixels/second; interval is active
 simulation seconds. Relaxed multiplies speed by 0.68 and interval by 1.60.
 Maniac multiplies speed by 1.22 and interval by 0.78. Falling distance is 476 pixels.
 After a full-board manual clear, ordinary empty-field wait is capped at 0.65 seconds.
 Existing cards never accelerate in response to skill or pile percentage. Trial rests
 are not shortened. Chapter start/finish is the only place the ordinary base changes.
 
-Endless speed rises from 132 by 0.65 per subsequent chapter, capped at 170 before
+Endless speed rises from 135.96 by 0.65 per subsequent chapter, capped at 170 before
 pace scaling. Base interval decreases by 0.003 per chapter, with a 0.78-second floor.
 The change from chapter 48 to 49 is continuous. Quotas cap at 42. At most twelve cards
 can be active.
@@ -74,12 +74,27 @@ Short/medium/long probabilities interpolate between chapter knots:
 36: 6/60/34; 48: 5/52/43 percent. Word length cap = min(16, 5 + floor(chapter/2)).
 The same 746-word vocabulary is retained.
 
-Chapter one's third, sixth, ninth and eleventh cards introduce FIRE, ICE, SLOW and WIND.
-Later chapters first schedule a special at the third card, then after gaps of 4–6
-successfully spawned cards. A shuffled bag covers all four powers before refill.
-The bag prefers a not-full shelf among its remaining entries, without changing drops
-in response to pile pressure or score. Dark chance starts at chapter 7 as
-min(0.14, (chapter−6) × 0.0033), applying when a scheduled special is not chosen.
+Chapter one's sixth card is one earned ICE opportunity; there is no four-spell giveaway.
+Ordinary spell gaps (counting successful arrivals, including the next spell) are 8–11
+in chapters 1–6, 8–10 in 7–12, 7–10 in 13–24, and 6–9 from 25 onward. Previously drawn
+gaps carry into ordinary next chapters. Pausing, empty-field waiting and failed spawn
+placement do not advance this counter. No automatic inventory refill occurs at a boundary.
+
+For every sixth chapter, including Endless trials, the remaining wait is shortened to
+at most four arrivals. Subsequent trial opportunities are eight arrivals apart. This
+replaces the ordinary schedule; it is not an additional stream. A sooner due drop is
+not postponed. Typing is required; missed/burned spell cards grant no replacement book.
+
+A shuffled bag covers all four powers before refill, preferring a not-full shelf among
+remaining entries. The campaign introduction prefers ICE; the first two trial opportunities
+prefer ICE and WIND respectively, only when the preferred type is still in the current
+bag and not full. Preferences never skip an outstanding type or grant extra charges.
+Stock and timing never depend on danger, score or measured typing skill.
+
+A blocked candidate retains its word, type and prospective bag, without committing the
+bag/countdown. Actual entry commits it once. If canceled at chapter clear, the reserved
+reward is not consumed. Dark chance remains min(0.14, (chapter−6) × 0.0033) from chapter
+7, on cards not designated as spells. See ECONOMY.md for migration and boundary cases.
 
 ## Completion, retries and modes
 Every clear grants chapter × 100 points, plus 250 for no misses/incorrect submissions.
@@ -88,7 +103,7 @@ and three incorrect submissions. Other successful clears receive one star.
 
 Campaign starts at one without books. Chapter starts/clears produce boundary checkpoints;
 mid-chapter positions are deliberately not serialized. Each chapter uses a hash of the
-campaign seed and chapter number for its random stream. Checkpoints keep the reward bag,
+campaign seed and chapter number for its random stream. Checkpoints keep the reward bag and the persistent economy countdown,
 next card ID, score, resources, pressure, drawn pile and accumulated statistics.
 Continue/retry reproduces a new-ruleset chapter's opening exactly rather than rerolling it.
 Death retains the opening bookmark, increments its retry count and records that failed
@@ -102,9 +117,12 @@ starts an independent run at 49 with one book of each type. Death or voluntary r
 records it once; retirement does not claim victory.
 
 ## Saves and records
-Schema 3; current storage key `typekeeper-enchanted-library-v3.2`. v3.1/v3/v2/v1 keys are
+Schema 3; current storage key `typekeeper-enchanted-library-v3.2.1`. v3.2/v3.1/v3/v2/v1 keys are
 read-only migration sources. Old scores are Legacy, not current competitive totals.
 An old checkpoint runs the new mechanics, but its carried old-rule score remains Legacy.
+Old stock of three is capped at two. A missing old reward schedule is initialized once
+to the stage minimum ordinary gap (at most four for a trial), with the tutorial marked
+complete. Current-version checkpoints must carry a valid schedule and legal two-charge stock.
 Mastery stars/unlocks and preferences are preserved. No online service or cross-origin
 sync is implied. Corrupt storage is quarantined before fallback; failed storage writes
 remain visible. Export/import is the backup route.
@@ -115,7 +133,7 @@ recorded retries, then recent date. Today means local midnight; Last 7 days is r
 The local records/save files remain editable, not anti-cheat-secured Steam rankings.
 
 
-## v3.2 vocabulary and presentation
+## Preserved v3.2 vocabulary and presentation
 The same 746 dictionary entries are used. Medium/long mixture knots are:
 [1,0,0], [3,0.15,0], [6,0.40,0], [12,0.63,0.06], [24,0.66,0.24],
 [36,0.60,0.34], [48,0.52,0.43]. Short weight is the remainder. The maximum

@@ -1,5 +1,5 @@
 {
-  "shippingSHA256": "210747d8917a45334b7b20b36540e139bfcd0d1cf670fca7d2edadb106f423da",
+  "shippingSHA256": "20fc008eb03457a471d8d327637897c629d9644331232a0242934cea854c9c4d",
   "scope": "Embedded shipping PLAY.html, diagnostics enabled only in memory. Fault-injection tests identified explicitly. No HTTP/file navigation or real Safari/device certification.",
   "browser": "144.0.7559.96",
   "passed": 24,
@@ -24,12 +24,12 @@
     "background": false,
     "sources": 4,
     "output": 0.800000011920929,
-    "musicGain": 0.3073647916316986,
+    "musicGain": 0.30696800351142883,
     "fxGain": 0.12349999696016312,
     "stemGains": [
       0.999819278717041,
-      0.15948064625263214,
-      0,
+      0.15866798162460327,
+      9.638885967433453e-05,
       0
     ],
     "loopDuration": 106.6666439909297,
@@ -40,75 +40,75 @@
     "cues": [
       {
         "name": "page-turn",
-        "time": 3.7006802721088436
+        "time": 1.991111111111111
       },
       {
         "name": "page-turn",
-        "time": 5.230294784580499
+        "time": 3.6019954648526076
       },
       {
         "name": "page-turn",
-        "time": 22.262131519274377
+        "time": 16.880907029478458
       },
       {
         "name": "page-turn",
-        "time": 25.022403628117914
+        "time": 19.382857142857144
       },
       {
         "name": "page-turn",
-        "time": 26.731972789115645
+        "time": 21.072108843537414
       },
       {
         "name": "page-turn",
-        "time": 26.862585034013605
+        "time": 21.191111111111113
       },
       {
         "name": "page-turn",
-        "time": 29.210702947845807
+        "time": 23.092244897959183
       },
       {
         "name": "page-turn",
-        "time": 31.010249433106576
+        "time": 24.88018140589569
       },
       {
         "name": "key",
-        "time": 31.0508843537415
+        "time": 24.912108843537414
       },
       {
         "name": "page-turn",
-        "time": 32.69079365079365
+        "time": 26.55201814058957
       },
       {
         "name": "page-turn",
-        "time": 32.75174603174603
+        "time": 26.581043083900227
       },
       {
         "name": "page-turn",
-        "time": 33.37287981859411
+        "time": 26.972879818594105
       },
       {
         "name": "matched-key",
-        "time": 33.40190476190476
+        "time": 26.9902947845805
       },
       {
         "name": "word-saved",
-        "time": 33.40190476190476
+        "time": 26.9902947845805
       },
       {
         "name": "page-turn",
-        "time": 33.41061224489796
+        "time": 27.00190476190476
       },
       {
         "name": "page-turn",
-        "time": 33.78213151927438
+        "time": 27.242811791383218
       },
       {
         "name": "page-turn",
-        "time": 34.02013605442177
+        "time": 27.370521541950115
       },
       {
         "name": "page-turn",
-        "time": 46.42249433106576
+        "time": 37.72081632653061
       }
     ]
   },
@@ -117,117 +117,117 @@
     {
       "name": "Branding: no prototype masthead, footers, edition labels or shortcut banner",
       "status": "PASS",
-      "seconds": 0.169
+      "seconds": 0.044
     },
     {
       "name": "Real first click unlocks original music without autoplay overrides",
       "status": "PASS",
-      "seconds": 2.811
+      "seconds": 1.006
     },
     {
       "name": "Four authored stems decode, contain signal and share the authored loop duration",
       "status": "PASS",
-      "seconds": 0.068
+      "seconds": 0.01
     },
     {
       "name": "Menu, gameplay and trial mixes change without restarting synchronized stems",
       "status": "PASS",
-      "seconds": 4.626
+      "seconds": 4.297
     },
     {
       "name": "Single mute button silences both music and effects and restores output",
       "status": "PASS",
-      "seconds": 1.644
+      "seconds": 1.102
     },
     {
       "name": "Independent master, music and effects sliders reach separate buses with a quiet probe tone",
       "status": "PASS",
-      "seconds": 3.354
+      "seconds": 2.522
     },
     {
       "name": "Disabling typewriter effects leaves the music playing",
       "status": "PASS",
-      "seconds": 1.149
+      "seconds": 0.794
     },
     {
       "name": "Music toggle fades rather than resetting playback or disabling effects",
       "status": "PASS",
-      "seconds": 4.931
+      "seconds": 4.567
     },
     {
       "name": "Repeated modal transitions do not duplicate music sources",
       "status": "PASS",
-      "seconds": 5.068
+      "seconds": 2.674
     },
     {
       "name": "Pause and nested Settings freeze play, soften music, and make obscured controls inert",
       "status": "PASS",
-      "seconds": 2.764
+      "seconds": 2.501
     },
     {
       "name": "Resume countdown holds the simulation still before returning control",
       "status": "PASS",
-      "seconds": 1.906
+      "seconds": 1.805
     },
     {
       "name": "Escape cancels a pending countdown without accidental resume",
       "status": "PASS",
-      "seconds": 2.385
+      "seconds": 1.9
     },
     {
       "name": "Focus loss cancels countdown, suspends audio and requires deliberate gameplay resume",
       "status": "PASS",
-      "seconds": 2.171
+      "seconds": 2.116
     },
     {
       "name": "Countdown restores the exact word, cursor and selected range",
       "status": "PASS",
-      "seconds": 1.746
+      "seconds": 1.697
     },
     {
       "name": "Countdown preference provides immediate resume when disabled",
       "status": "PASS",
-      "seconds": 0.641
+      "seconds": 0.396
     },
     {
       "name": "First-use typing hint retires on success and respects its preference",
       "status": "PASS",
-      "seconds": 0.084
+      "seconds": 0.027
     },
     {
       "name": "Focused HUD removes secondary numbers; detailed HUD can restore them",
       "status": "PASS",
-      "seconds": 0.352
+      "seconds": 0.237
     },
     {
       "name": "Reduced motion removes decorative animation without hiding ready states",
       "status": "PASS",
-      "seconds": 0.251
+      "seconds": 0.13
     },
     {
       "name": "Burst effects respect voice limits and disconnect after playback",
       "status": "PASS",
-      "seconds": 0.654
+      "seconds": 0.61
     },
     {
       "name": "Injected missing music failure reports honestly while typing remains playable",
       "status": "PASS",
-      "seconds": 3.281
+      "seconds": 1.935
     },
     {
       "name": "AudioContext-unavailable environment still starts gameplay",
       "status": "PASS",
-      "seconds": 1.888
+      "seconds": 1.227
     },
     {
       "name": "Final title, gameplay, Audio settings and chapter atlas render into captures",
       "status": "PASS",
-      "seconds": 11.142
+      "seconds": 10.526
     },
     {
       "name": "Unmodified production PLAY.html exposes no controlled test seam",
       "status": "PASS",
-      "seconds": 1.525
+      "seconds": 1.22
     },
     {
       "name": "No unhandled application errors during polish audit",

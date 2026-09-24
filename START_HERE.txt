@@ -1,23 +1,26 @@
-TYPEKEEPER: ENCHANTED LIBRARY — 3.2
+TYPEKEEPER: ENCHANTED LIBRARY — 3.2.1
 
-PLAY: Open PLAY.html, or run START_MAC.command / START_WINDOWS.bat.
-The launchers need existing Python 3 or Node. PLAY.html does not.
+PLAY: Open PLAY.html, or use START_MAC.command / START_WINDOWS.bat.
+The local-server launchers require Python 3.9+ or Node 20+. PLAY.html does not.
 
-UPDATE AN EXISTING REPO:
-Run UPDATE_EXISTING_MAC.command from the extracted v3.2 folder.
-By default it updates ~/Downloads/Typekeeper_Enchanted_Library_v3_1
-AFTER a backup. .git, .vercel, .env files and existing vercel.json are retained.
-This does not push or deploy. README.md has the subsequent Git commands.
+THIS UPDATE: A gentler opening and scarcer spells. Campaign starts empty; the
+sixth card offers one earned ICE book. Capacity is two per spell. Other art,
+music, effects, controls, scoring and the 48-chapter structure are retained.
 
-KEEP YOUR PROGRESS:
-Export a save from Records before changing versions/domains.
-Old settings, unlocks and valid bookmarks migrate at the same browser origin.
-Scores under earlier rules remain Legacy. Start a fresh run for current records.
-Returning users keep their existing mute/music preferences.
+UPDATE EXISTING PROJECT:
+Run UPDATE_EXISTING_MAC.command. The default target is
+~/Downloads/Typekeeper_Enchanted_Library_v3_1, even if it already contains v3.2.
+The helper makes a backup and preserves .git, .vercel, .env and vercel.json.
+It performs no remote push or deployment. README.md contains subsequent commands.
+
+SAVES:
+Export before updating. Preferences, stars, unlocks and valid bookmarks migrate
+at the same browser/domain. Old saved bytes remain untouched. Old totals stay
+in Legacy. Carried inventory above two per type is capped at two in this version.
+Start a new campaign to experience the new opening and earn current records.
 
 CONTROLS:
-Type a word + Enter. 1 Fire, 2 Ice, 3 Slow, 4 Wind. Escape pauses.
-The new pressure score and typing shimmer can be toggled in Settings.
+Type + Enter. 1 Fire, 2 Ice, 3 Slow, 4 Wind. Escape pauses.
+Practice/Endless keep their separately scored starter kits.
 
-This is a complete browser release candidate, not a native Steam executable.
-See docs/QA_REPORT.md for the executed tests and remaining human/device gates.
+See docs/QA_REPORT.md for executed tests and honest validation limits.

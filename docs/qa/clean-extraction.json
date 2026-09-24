@@ -1,229 +1,291 @@
 {
-  "scope": "Fresh extraction of the source-and-runtime archive, offline npm installation, all 210 logic tests, syntax checks and build. Actual final archive contents are rechecked separately.",
-  "allPassed": true,
-  "runtimeOutputsCompared": 43,
-  "allByteIdentical": true,
+  "scope": "Fresh ZIP extraction on Linux, offline npm install, 275 logic tests, syntax and build. Compare every dist output plus standalone HTML. Not a clean Windows/Mac installer or live Vercel deployment test.",
   "commands": [
-    "$ npm ci --offline --ignore-scripts --no-audit --no-fund",
-    "$ npm test",
-    "$ npm run check",
-    "$ npm run build"
+    {
+      "command": "npm ci --offline --ignore-scripts --no-audit --no-fund",
+      "exitCode": 0
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    }
   ],
+  "outputsCompared": 44,
+  "allByteIdentical": true,
+  "shippingSHA256": "20fc008eb03457a471d8d327637897c629d9644331232a0242934cea854c9c4d",
   "outputs": [
     {
+      "path": "PLAY.html",
+      "releaseSHA256": "20fc008eb03457a471d8d327637897c629d9644331232a0242934cea854c9c4d",
+      "rebuiltSHA256": "20fc008eb03457a471d8d327637897c629d9644331232a0242934cea854c9c4d",
+      "same": true
+    },
+    {
       "path": "dist/assets/book-fire.svg",
-      "byteIdentical": true,
-      "sha256": "0c97294d5e86e12a23bd46735611f22b65157619a560508ba4157ad9dc1ed8eb"
+      "releaseSHA256": "0c97294d5e86e12a23bd46735611f22b65157619a560508ba4157ad9dc1ed8eb",
+      "rebuiltSHA256": "0c97294d5e86e12a23bd46735611f22b65157619a560508ba4157ad9dc1ed8eb",
+      "same": true
     },
     {
       "path": "dist/assets/book-ice.svg",
-      "byteIdentical": true,
-      "sha256": "7c7d467873d7507ac6e90abace8978256e90b87e964b555ef9b9a56f86739d7e"
+      "releaseSHA256": "7c7d467873d7507ac6e90abace8978256e90b87e964b555ef9b9a56f86739d7e",
+      "rebuiltSHA256": "7c7d467873d7507ac6e90abace8978256e90b87e964b555ef9b9a56f86739d7e",
+      "same": true
     },
     {
       "path": "dist/assets/book-slow.svg",
-      "byteIdentical": true,
-      "sha256": "b27099e0969dc4c30d22e7684c2e760c090ac74c2164d92fc32886770d63a9c9"
+      "releaseSHA256": "b27099e0969dc4c30d22e7684c2e760c090ac74c2164d92fc32886770d63a9c9",
+      "rebuiltSHA256": "b27099e0969dc4c30d22e7684c2e760c090ac74c2164d92fc32886770d63a9c9",
+      "same": true
     },
     {
       "path": "dist/assets/book-wind.svg",
-      "byteIdentical": true,
-      "sha256": "33df77ffd6ba655f1d35e67347098b193d0cbcbce4c0dc051e8335bd920c7a93"
+      "releaseSHA256": "33df77ffd6ba655f1d35e67347098b193d0cbcbce4c0dc051e8335bd920c7a93",
+      "rebuiltSHA256": "33df77ffd6ba655f1d35e67347098b193d0cbcbce4c0dc051e8335bd920c7a93",
+      "same": true
     },
     {
       "path": "dist/assets/favicon.svg",
-      "byteIdentical": true,
-      "sha256": "c24b83a7529ab508ae820b011abddd755b93f3c2adedc85cf376a686a57bf82c"
+      "releaseSHA256": "c24b83a7529ab508ae820b011abddd755b93f3c2adedc85cf376a686a57bf82c",
+      "rebuiltSHA256": "c24b83a7529ab508ae820b011abddd755b93f3c2adedc85cf376a686a57bf82c",
+      "same": true
     },
     {
       "path": "dist/assets/icon-fire.svg",
-      "byteIdentical": true,
-      "sha256": "1b23c2fb4ef68826eb167fa6656d14aa74a5f3a9e10671ff9925dc37b8fe00f0"
+      "releaseSHA256": "1b23c2fb4ef68826eb167fa6656d14aa74a5f3a9e10671ff9925dc37b8fe00f0",
+      "rebuiltSHA256": "1b23c2fb4ef68826eb167fa6656d14aa74a5f3a9e10671ff9925dc37b8fe00f0",
+      "same": true
     },
     {
       "path": "dist/assets/icon-ice.svg",
-      "byteIdentical": true,
-      "sha256": "302ffc348d0f1bcd9bd5fe8c7513773447a49986492824817cdce0f75454ce61"
+      "releaseSHA256": "302ffc348d0f1bcd9bd5fe8c7513773447a49986492824817cdce0f75454ce61",
+      "rebuiltSHA256": "302ffc348d0f1bcd9bd5fe8c7513773447a49986492824817cdce0f75454ce61",
+      "same": true
     },
     {
       "path": "dist/assets/icon-slow.svg",
-      "byteIdentical": true,
-      "sha256": "ae6f133c77a056102bfb877dcf6be107c9c9f4ea7017aa8099901defe564ad41"
+      "releaseSHA256": "ae6f133c77a056102bfb877dcf6be107c9c9f4ea7017aa8099901defe564ad41",
+      "rebuiltSHA256": "ae6f133c77a056102bfb877dcf6be107c9c9f4ea7017aa8099901defe564ad41",
+      "same": true
     },
     {
       "path": "dist/assets/icon-wind.svg",
-      "byteIdentical": true,
-      "sha256": "9eb8b512aac17d52260c7e6d2c04bb73e0fb79e53df878f9030c77ff65a53f10"
+      "releaseSHA256": "9eb8b512aac17d52260c7e6d2c04bb73e0fb79e53df878f9030c77ff65a53f10",
+      "rebuiltSHA256": "9eb8b512aac17d52260c7e6d2c04bb73e0fb79e53df878f9030c77ff65a53f10",
+      "same": true
     },
     {
       "path": "dist/assets/lanterns-hearth.mp3",
-      "byteIdentical": true,
-      "sha256": "8b5c0cffbedf6113e546a4b461a7879e62d525e37d534bb39878d9a9a978818b"
+      "releaseSHA256": "8b5c0cffbedf6113e546a4b461a7879e62d525e37d534bb39878d9a9a978818b",
+      "rebuiltSHA256": "8b5c0cffbedf6113e546a4b461a7879e62d525e37d534bb39878d9a9a978818b",
+      "same": true
     },
     {
       "path": "dist/assets/lanterns-motion.mp3",
-      "byteIdentical": true,
-      "sha256": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f"
+      "releaseSHA256": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f",
+      "rebuiltSHA256": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f",
+      "same": true
     },
     {
       "path": "dist/assets/lanterns-pressure.mp3",
-      "byteIdentical": true,
-      "sha256": "62e2241e648651927eb6f0312f413697ed00d3b2ed42905443da319333834f56"
+      "releaseSHA256": "62e2241e648651927eb6f0312f413697ed00d3b2ed42905443da319333834f56",
+      "rebuiltSHA256": "62e2241e648651927eb6f0312f413697ed00d3b2ed42905443da319333834f56",
+      "same": true
     },
     {
       "path": "dist/assets/lanterns-urgency.mp3",
-      "byteIdentical": true,
-      "sha256": "081b7baf685f5fd2d1da6b7433e0ad2e556bc083f6ee405487d6bf56a366f84d"
+      "releaseSHA256": "081b7baf685f5fd2d1da6b7433e0ad2e556bc083f6ee405487d6bf56a366f84d",
+      "rebuiltSHA256": "081b7baf685f5fd2d1da6b7433e0ad2e556bc083f6ee405487d6bf56a366f84d",
+      "same": true
     },
     {
       "path": "dist/assets/library.webp",
-      "byteIdentical": true,
-      "sha256": "6f573f74db90b50c047c735031be0e1117018c00a770d73472b29292841eb8a6"
+      "releaseSHA256": "6f573f74db90b50c047c735031be0e1117018c00a770d73472b29292841eb8a6",
+      "rebuiltSHA256": "6f573f74db90b50c047c735031be0e1117018c00a770d73472b29292841eb8a6",
+      "same": true
     },
     {
       "path": "dist/assets/manifest.json",
-      "byteIdentical": true,
-      "sha256": "dee70dadaeb80e355328ded6e0d60f23e733a8987ef0093248e9843e2ca9118c"
+      "releaseSHA256": "dee70dadaeb80e355328ded6e0d60f23e733a8987ef0093248e9843e2ca9118c",
+      "rebuiltSHA256": "dee70dadaeb80e355328ded6e0d60f23e733a8987ef0093248e9843e2ca9118c",
+      "same": true
     },
     {
       "path": "dist/assets/paper.webp",
-      "byteIdentical": true,
-      "sha256": "c530c88c2eabf3c81fd158a3dcd523d19c5e19206abefc12d56bbbc917807141"
+      "releaseSHA256": "c530c88c2eabf3c81fd158a3dcd523d19c5e19206abefc12d56bbbc917807141",
+      "rebuiltSHA256": "c530c88c2eabf3c81fd158a3dcd523d19c5e19206abefc12d56bbbc917807141",
+      "same": true
     },
     {
       "path": "dist/assets/typist-alarmed.webp",
-      "byteIdentical": true,
-      "sha256": "7a9b226b7c7954f09b75b554dda314d1878a4815359a69f9a733447bba308282"
+      "releaseSHA256": "7a9b226b7c7954f09b75b554dda314d1878a4815359a69f9a733447bba308282",
+      "rebuiltSHA256": "7a9b226b7c7954f09b75b554dda314d1878a4815359a69f9a733447bba308282",
+      "same": true
     },
     {
       "path": "dist/assets/typist-calm.webp",
-      "byteIdentical": true,
-      "sha256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c"
+      "releaseSHA256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c",
+      "rebuiltSHA256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c",
+      "same": true
     },
     {
       "path": "dist/assets/typist-celebrate.webp",
-      "byteIdentical": true,
-      "sha256": "22ee4e8a0288619142bfcb9f1653de6f3575a0351376dfca55f706c39b3a2a6a"
+      "releaseSHA256": "22ee4e8a0288619142bfcb9f1653de6f3575a0351376dfca55f706c39b3a2a6a",
+      "rebuiltSHA256": "22ee4e8a0288619142bfcb9f1653de6f3575a0351376dfca55f706c39b3a2a6a",
+      "same": true
     },
     {
       "path": "dist/assets/typist-critical.webp",
-      "byteIdentical": true,
-      "sha256": "39668ececfaf1c567c4524fc17b0fee1672cde1c88802dcb3be4324b906bc590"
+      "releaseSHA256": "39668ececfaf1c567c4524fc17b0fee1672cde1c88802dcb3be4324b906bc590",
+      "rebuiltSHA256": "39668ececfaf1c567c4524fc17b0fee1672cde1c88802dcb3be4324b906bc590",
+      "same": true
     },
     {
       "path": "dist/assets/typist-defeated.webp",
-      "byteIdentical": true,
-      "sha256": "42d7f0b5363501c5f6dc465755bbadbd5efeb8c5ca3dd3cbc15c2474a5d9c95c"
+      "releaseSHA256": "42d7f0b5363501c5f6dc465755bbadbd5efeb8c5ca3dd3cbc15c2474a5d9c95c",
+      "rebuiltSHA256": "42d7f0b5363501c5f6dc465755bbadbd5efeb8c5ca3dd3cbc15c2474a5d9c95c",
+      "same": true
     },
     {
       "path": "dist/assets/typist-focused.webp",
-      "byteIdentical": true,
-      "sha256": "5646f03b81c6f4df19e3acefa24a7560ae3822cd1935afeff4e3de7f82593003"
+      "releaseSHA256": "5646f03b81c6f4df19e3acefa24a7560ae3822cd1935afeff4e3de7f82593003",
+      "rebuiltSHA256": "5646f03b81c6f4df19e3acefa24a7560ae3822cd1935afeff4e3de7f82593003",
+      "same": true
     },
     {
       "path": "dist/assets/typist-worried.webp",
-      "byteIdentical": true,
-      "sha256": "0d884fbe5b9bcea214209772b945cd77a05ce76f62886878d08cb2ebb424b380"
+      "releaseSHA256": "0d884fbe5b9bcea214209772b945cd77a05ce76f62886878d08cb2ebb424b380",
+      "rebuiltSHA256": "0d884fbe5b9bcea214209772b945cd77a05ce76f62886878d08cb2ebb424b380",
+      "same": true
     },
     {
       "path": "dist/assets/typist.webp",
-      "byteIdentical": true,
-      "sha256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c"
+      "releaseSHA256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c",
+      "rebuiltSHA256": "aad2601c3121bb04b06c78aad88dd20ee57fe5c1e376393c6bfabf8b1ed7723c",
+      "same": true
     },
     {
       "path": "dist/build-manifest.json",
-      "byteIdentical": true,
-      "sha256": "788cabe02a4daabeb2176f00321356548a4c89ca68c11704267fe6c265900f79"
+      "releaseSHA256": "e93badeefeaa6c7c4b43db8acb42672c3773b79c55acc901d0bc115d10528c3a",
+      "rebuiltSHA256": "e93badeefeaa6c7c4b43db8acb42672c3773b79c55acc901d0bc115d10528c3a",
+      "same": true
     },
     {
       "path": "dist/index.html",
-      "byteIdentical": true,
-      "sha256": "e282a6ad01dbda84109292c2dec2892f53b32dc4a00b46f560527be17fda0987"
+      "releaseSHA256": "e282a6ad01dbda84109292c2dec2892f53b32dc4a00b46f560527be17fda0987",
+      "rebuiltSHA256": "e282a6ad01dbda84109292c2dec2892f53b32dc4a00b46f560527be17fda0987",
+      "same": true
     },
     {
       "path": "dist/src/audio/audio.js",
-      "byteIdentical": true,
-      "sha256": "57ba85d6fa984b31d85ef520e6c1f650156f7e35ec59e843985055d5b6f31037"
+      "releaseSHA256": "57ba85d6fa984b31d85ef520e6c1f650156f7e35ec59e843985055d5b6f31037",
+      "rebuiltSHA256": "57ba85d6fa984b31d85ef520e6c1f650156f7e35ec59e843985055d5b6f31037",
+      "same": true
     },
     {
       "path": "dist/src/audio/mix.js",
-      "byteIdentical": true,
-      "sha256": "f75d4a251f892681fd0d1b87ddaf8104f61048d22f8ea4de9fb580cf10fab79d"
+      "releaseSHA256": "f75d4a251f892681fd0d1b87ddaf8104f61048d22f8ea4de9fb580cf10fab79d",
+      "rebuiltSHA256": "f75d4a251f892681fd0d1b87ddaf8104f61048d22f8ea4de9fb580cf10fab79d",
+      "same": true
     },
     {
       "path": "dist/src/data/campaign.js",
-      "byteIdentical": true,
-      "sha256": "ede9d388f656f5ebf1132fd7ed9c4bfeb202634482a53844a4e90a85d275aef2"
+      "releaseSHA256": "ede9d388f656f5ebf1132fd7ed9c4bfeb202634482a53844a4e90a85d275aef2",
+      "rebuiltSHA256": "ede9d388f656f5ebf1132fd7ed9c4bfeb202634482a53844a4e90a85d275aef2",
+      "same": true
     },
     {
       "path": "dist/src/data/words.js",
-      "byteIdentical": true,
-      "sha256": "0cce1326624cbadcf90f484379c385731f61240916ee0d7b686c4e62bfb3fcd9"
+      "releaseSHA256": "0cce1326624cbadcf90f484379c385731f61240916ee0d7b686c4e62bfb3fcd9",
+      "rebuiltSHA256": "0cce1326624cbadcf90f484379c385731f61240916ee0d7b686c4e62bfb3fcd9",
+      "same": true
     },
     {
       "path": "dist/src/game/assets.js",
-      "byteIdentical": true,
-      "sha256": "b1babdb341f3ad9b7474cc9a4522cc3df440e1b407d2f83c85ae922c8f712336"
+      "releaseSHA256": "b1babdb341f3ad9b7474cc9a4522cc3df440e1b407d2f83c85ae922c8f712336",
+      "rebuiltSHA256": "b1babdb341f3ad9b7474cc9a4522cc3df440e1b407d2f83c85ae922c8f712336",
+      "same": true
     },
     {
       "path": "dist/src/game/clock.js",
-      "byteIdentical": true,
-      "sha256": "5ce1c5ec16361d8b44fb75170b944ff94444f253650efd40f88d547d976bdb60"
+      "releaseSHA256": "5ce1c5ec16361d8b44fb75170b944ff94444f253650efd40f88d547d976bdb60",
+      "rebuiltSHA256": "5ce1c5ec16361d8b44fb75170b944ff94444f253650efd40f88d547d976bdb60",
+      "same": true
     },
     {
       "path": "dist/src/game/controls.js",
-      "byteIdentical": true,
-      "sha256": "b6a1d53f7abc6fe50144b64bfcb312cdb43c46ffc17eb8bfafed6055fe66589d"
+      "releaseSHA256": "b6a1d53f7abc6fe50144b64bfcb312cdb43c46ffc17eb8bfafed6055fe66589d",
+      "rebuiltSHA256": "b6a1d53f7abc6fe50144b64bfcb312cdb43c46ffc17eb8bfafed6055fe66589d",
+      "same": true
+    },
+    {
+      "path": "dist/src/game/economy.js",
+      "releaseSHA256": "6db640431a9d26bc5b68120aa92b5ba04e5e702dc304a3c6e0cf01048721b718",
+      "rebuiltSHA256": "6db640431a9d26bc5b68120aa92b5ba04e5e702dc304a3c6e0cf01048721b718",
+      "same": true
     },
     {
       "path": "dist/src/game/model.js",
-      "byteIdentical": true,
-      "sha256": "15c4c832730319b51acc4256aab758332621a4527bb58c079f3f17afff7425bb"
+      "releaseSHA256": "0dec023b3150f8c7c7f1010c6ba0bd8e51e12064fe4b211f087d37aefbc118ee",
+      "rebuiltSHA256": "0dec023b3150f8c7c7f1010c6ba0bd8e51e12064fe4b211f087d37aefbc118ee",
+      "same": true
     },
     {
       "path": "dist/src/game/pressure.js",
-      "byteIdentical": true,
-      "sha256": "ed17bd358f79f211319b4b023061ef05ed96d5cd0d8e872594ce529ede252c0b"
+      "releaseSHA256": "ed17bd358f79f211319b4b023061ef05ed96d5cd0d8e872594ce529ede252c0b",
+      "rebuiltSHA256": "ed17bd358f79f211319b4b023061ef05ed96d5cd0d8e872594ce529ede252c0b",
+      "same": true
     },
     {
       "path": "dist/src/game/rules.js",
-      "byteIdentical": true,
-      "sha256": "9d58f040728cac60bf1b6f7f0f4c997c244b265072cb4f290d5c10299a6da33f"
+      "releaseSHA256": "ea93f8264594d1ddbd9157b97106ff09f1a4ec6aa8b76b10933518b9b4a61d15",
+      "rebuiltSHA256": "ea93f8264594d1ddbd9157b97106ff09f1a4ec6aa8b76b10933518b9b4a61d15",
+      "same": true
     },
     {
       "path": "dist/src/game/storage.js",
-      "byteIdentical": true,
-      "sha256": "fd3be1a532637b2a939d405fd0e98041777ca8d6b2e20a50ce1be5c43f43777b"
+      "releaseSHA256": "3def0f83b2c09eebe20c10d73345cf16e296a89aab6214bfc9b43e6dd0c95d39",
+      "rebuiltSHA256": "3def0f83b2c09eebe20c10d73345cf16e296a89aab6214bfc9b43e6dd0c95d39",
+      "same": true
     },
     {
       "path": "dist/src/main.js",
-      "byteIdentical": true,
-      "sha256": "141e95fe8e3e0737a141b11ca90bc9a9d3fde0fd7794bb8734c84fe91a2e0bac"
+      "releaseSHA256": "da965e8f6c6b7f7863450a393d982abe3d72801ebe7d12660d202cf7ba779ee0",
+      "rebuiltSHA256": "da965e8f6c6b7f7863450a393d982abe3d72801ebe7d12660d202cf7ba779ee0",
+      "same": true
     },
     {
       "path": "dist/src/render/renderer.js",
-      "byteIdentical": true,
-      "sha256": "ce7a718089a8274d544b45d4abbbcacdb22a8bc8f10e84cfb4a479476c4a7c8d"
+      "releaseSHA256": "ce7a718089a8274d544b45d4abbbcacdb22a8bc8f10e84cfb4a479476c4a7c8d",
+      "rebuiltSHA256": "ce7a718089a8274d544b45d4abbbcacdb22a8bc8f10e84cfb4a479476c4a7c8d",
+      "same": true
     },
     {
       "path": "dist/src/styles.css",
-      "byteIdentical": true,
-      "sha256": "2173dca7ca53e0df0aab8e15159ab7c500fb3692a81ca7eceeb3f3c846315273"
+      "releaseSHA256": "2173dca7ca53e0df0aab8e15159ab7c500fb3692a81ca7eceeb3f3c846315273",
+      "rebuiltSHA256": "2173dca7ca53e0df0aab8e15159ab7c500fb3692a81ca7eceeb3f3c846315273",
+      "same": true
     },
     {
       "path": "dist/src/ui/icons.js",
-      "byteIdentical": true,
-      "sha256": "7a391885b01a520eb95ab03540d645f13fdf1798a8a79795b0427fc1d1c5576a"
+      "releaseSHA256": "7a391885b01a520eb95ab03540d645f13fdf1798a8a79795b0427fc1d1c5576a",
+      "rebuiltSHA256": "7a391885b01a520eb95ab03540d645f13fdf1798a8a79795b0427fc1d1c5576a",
+      "same": true
     },
     {
       "path": "dist/src/ui/score-rollup.js",
-      "byteIdentical": true,
-      "sha256": "39e943acbec7487a82498c805507d5efe1a3c22c0b74a58c7960eeb72676a669"
-    },
-    {
-      "path": "PLAY.html",
-      "byteIdentical": true,
-      "sha256": "210747d8917a45334b7b20b36540e139bfcd0d1cf670fca7d2edadb106f423da"
+      "releaseSHA256": "39e943acbec7487a82498c805507d5efe1a3c22c0b74a58c7960eeb72676a669",
+      "rebuiltSHA256": "39e943acbec7487a82498c805507d5efe1a3c22c0b74a58c7960eeb72676a669",
+      "same": true
     }
-  ]
+  ],
+  "seconds": 4.07
 }

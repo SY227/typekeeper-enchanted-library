@@ -21,9 +21,9 @@
     {
       "score": 5090,
       "level": 48,
-      "date": 1790208113166,
+      "date": 1790211842153,
       "pace": "classic",
-      "ruleset": "typekeeper-3.2.0",
+      "ruleset": "typekeeper-3.2.1",
       "mode": "campaign",
       "legacyMode": "campaign",
       "victory": true,
@@ -44,9 +44,9 @@
     {
       "score": 390,
       "level": 1,
-      "date": 1790208112036,
+      "date": 1790211841921,
       "pace": "classic",
-      "ruleset": "typekeeper-3.2.0",
+      "ruleset": "typekeeper-3.2.1",
       "mode": "practice",
       "legacyMode": "practice",
       "victory": false,
@@ -57,7 +57,7 @@
       "seconds": 0,
       "medals": 3,
       "cleared": 1,
-      "seed": 3363252431,
+      "seed": 2724210048,
       "burned": 0,
       "retries": 0,
       "startLevel": 1,
@@ -67,9 +67,9 @@
     {
       "score": 40,
       "level": 1,
-      "date": 1790208114043,
+      "date": 1790211842493,
       "pace": "classic",
-      "ruleset": "typekeeper-3.2.0",
+      "ruleset": "typekeeper-3.2.1",
       "mode": "campaign",
       "legacyMode": "campaign",
       "victory": false,
@@ -98,7 +98,7 @@
           "score": 840,
           "wpm": 3,
           "accuracy": 100,
-          "ruleset": "typekeeper-3.2.0"
+          "ruleset": "typekeeper-3.2.1"
         },
         "48": {
           "campaignClear": true,
@@ -106,7 +106,7 @@
           "score": 5090,
           "wpm": 0,
           "accuracy": 100,
-          "ruleset": "typekeeper-3.2.0"
+          "ruleset": "typekeeper-3.2.1"
         }
       }
     },
@@ -122,9 +122,9 @@
   "checkpoints": {
     "relaxed": {
       "version": 3,
-      "ruleset": "typekeeper-3.2.0",
+      "ruleset": "typekeeper-3.2.1",
       "nextLevel": 1,
-      "seed": 526195908,
+      "seed": 647625469,
       "nextId": 1,
       "pace": "relaxed",
       "mode": "campaign",
@@ -138,6 +138,12 @@
         "wind": 0
       },
       "powerBag": [],
+      "economy": {
+        "version": 1,
+        "untilNext": 6,
+        "opportunities": 0,
+        "tutorialDone": false
+      },
       "pile": [],
       "time": 0,
       "correct": 0,
@@ -158,7 +164,7 @@
     },
     "classic": {
       "version": 3,
-      "ruleset": "typekeeper-3.2.0",
+      "ruleset": "typekeeper-3.2.1",
       "nextLevel": 1,
       "seed": 123,
       "nextId": 1,
@@ -174,6 +180,12 @@
         "wind": 0
       },
       "powerBag": [],
+      "economy": {
+        "version": 1,
+        "untilNext": 6,
+        "opportunities": 0,
+        "tutorialDone": false
+      },
       "pile": [],
       "time": 0,
       "correct": 0,
@@ -194,6 +206,6 @@
     }
   },
   "game": "Typekeeper: Enchanted Library",
-  "appVersion": "3.2.0",
-  "exportedAt": "2026-09-24T00:01:58.052Z"
+  "appVersion": "3.2.1",
+  "exportedAt": "2026-09-24T01:04:04.974Z"
 }

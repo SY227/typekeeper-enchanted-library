@@ -1,17 +1,17 @@
-# v3.2 feature / evidence matrix
+# v3.2.1 feature / evidence matrix
 
-| Feature | Delivery | Evidence |
+| Area | Delivery | Evidence |
 |---|---|---|
-| 48 chapters / 3 paces / 8 wings | Preserved + earlier difficulty curve | 432 isolated chapter simulations; raw campaign matrix |
-| Four spells, quick keys, banked SLOW | Preserved | Logic + main/mechanics browser suites |
-| Matching-letter glint / completion sheen | Added | Pressure browser suite; controlled captures |
-| Full-word-ready sound | Added, not auto-submit | Logic and real Enter tests |
-| Pressure/urgency score layers | Added | Four decoded stems, gain/phase tests, signal audit |
-| WIND musical release | Added | Real quick-cast, pressure/state/buffer/gain test |
-| SFX score count / seal | Added | Browser monotonicity/interrupt tests; offline audio reel |
-| Reduced motion / mute / independent switches | Preserved + expanded | Browser regression and new suite |
-| Old save migration / Legacy totals | Expanded to v3.2 | LocalStore tests; mock storage, not physical persistence |
-| Git/Vercel update helper | Added | Four scratch-folder scenarios; no remote writes |
-| Original video fidelity | Unverified | Reference footage/audio inaccessible |
-| Human enjoyment / retention / listening | Not executed | Requires players and actual output devices |
-| Native Steam integration / device certification | Not included | Browser source and prebuilt handoff only |
+| Empty campaign / one introductory opportunity | Implemented | Seeded rule tests and browser keyboard flow |
+| Two-charge capacity and two pips | Implemented | Overflow, consumption, cue and DOM checks |
+| Persistent sparse schedule | Implemented | Chapter-boundary replay tests and 100-seed supply audit |
+| Trial opportunity pacing | Implemented | All campaign trials plus representative Endless trials |
+| Gentle opening / controlled ramp | Implemented | Pinned knots, 48-stage tables and paired simulations |
+| Spell strengths / input / score rules | Preserved | Existing regression suite rerun |
+| Art, audio, adaptive music and effects | Preserved | 73-file byte comparison and browser/audio regressions |
+| Saves / Legacy scores | Migrated | Old/new schema validation, actual file import/export |
+| Backup-first update | Preserved / versioned | Disposable-folder safety cases; no remote writes |
+| Browser/static source handoff | Complete | Clean extraction/test/check/rebuild and HTTP payload audits |
+| Original game exact parity | Not claimed | These are authored changes to the supplied v3.2 code |
+| Human game feel and listening | Not tested here | Requires people and output devices |
+| Native Steam / actual OS certification | Not included | Browser build; platform release gates remain open |

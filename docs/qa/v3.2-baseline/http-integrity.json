@@ -1,0 +1,523 @@
+{
+  "scope": "HTTP bytes, MIME, HEAD, 404 only. This is not browser HTTP execution.",
+  "node": {
+    "command": [
+      "node",
+      "scripts/serve.mjs",
+      "--port",
+      "45929"
+    ],
+    "filesChecked": 41,
+    "allPayloadHashesMatch": true,
+    "headOK": true,
+    "missing404": true,
+    "checks": [
+      {
+        "path": "assets/book-fire.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 2212
+      },
+      {
+        "path": "assets/book-ice.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 2235
+      },
+      {
+        "path": "assets/book-slow.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 2268
+      },
+      {
+        "path": "assets/book-wind.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 2158
+      },
+      {
+        "path": "assets/favicon.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 383
+      },
+      {
+        "path": "assets/icon-fire.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 437
+      },
+      {
+        "path": "assets/icon-ice.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 460
+      },
+      {
+        "path": "assets/icon-slow.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 493
+      },
+      {
+        "path": "assets/icon-wind.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 383
+      },
+      {
+        "path": "assets/lanterns-hearth.mp3",
+        "passed": true,
+        "mime": "audio/mpeg",
+        "bytes": 2134977
+      },
+      {
+        "path": "assets/lanterns-motion.mp3",
+        "passed": true,
+        "mime": "audio/mpeg",
+        "bytes": 2134977
+      },
+      {
+        "path": "assets/lanterns-pressure.mp3",
+        "passed": true,
+        "mime": "audio/mpeg",
+        "bytes": 1281072
+      },
+      {
+        "path": "assets/lanterns-urgency.mp3",
+        "passed": true,
+        "mime": "audio/mpeg",
+        "bytes": 1281071
+      },
+      {
+        "path": "assets/library.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 234232
+      },
+      {
+        "path": "assets/manifest.json",
+        "passed": true,
+        "mime": "application/json",
+        "bytes": 7242
+      },
+      {
+        "path": "assets/paper.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 318
+      },
+      {
+        "path": "assets/typist-alarmed.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 141988
+      },
+      {
+        "path": "assets/typist-calm.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 138148
+      },
+      {
+        "path": "assets/typist-celebrate.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 138156
+      },
+      {
+        "path": "assets/typist-critical.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 141844
+      },
+      {
+        "path": "assets/typist-defeated.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 137466
+      },
+      {
+        "path": "assets/typist-focused.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 138160
+      },
+      {
+        "path": "assets/typist-worried.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 137786
+      },
+      {
+        "path": "assets/typist.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 138148
+      },
+      {
+        "path": "index.html",
+        "passed": true,
+        "mime": "text/html",
+        "bytes": 5258
+      },
+      {
+        "path": "src/audio/audio.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 13965
+      },
+      {
+        "path": "src/audio/mix.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 858
+      },
+      {
+        "path": "src/data/campaign.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 3330
+      },
+      {
+        "path": "src/data/words.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 7527
+      },
+      {
+        "path": "src/game/assets.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 185
+      },
+      {
+        "path": "src/game/clock.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 629
+      },
+      {
+        "path": "src/game/controls.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 500
+      },
+      {
+        "path": "src/game/model.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 17394
+      },
+      {
+        "path": "src/game/pressure.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 1068
+      },
+      {
+        "path": "src/game/rules.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 4303
+      },
+      {
+        "path": "src/game/storage.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 10389
+      },
+      {
+        "path": "src/main.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 46267
+      },
+      {
+        "path": "src/render/renderer.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 23261
+      },
+      {
+        "path": "src/styles.css",
+        "passed": true,
+        "mime": "text/css",
+        "bytes": 47069
+      },
+      {
+        "path": "src/ui/icons.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 1228
+      },
+      {
+        "path": "src/ui/score-rollup.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 1175
+      }
+    ]
+  },
+  "python": {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "scripts/server.py",
+      "--port",
+      "39827"
+    ],
+    "filesChecked": 41,
+    "allPayloadHashesMatch": true,
+    "headOK": true,
+    "missing404": true,
+    "checks": [
+      {
+        "path": "assets/book-fire.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 2212
+      },
+      {
+        "path": "assets/book-ice.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 2235
+      },
+      {
+        "path": "assets/book-slow.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 2268
+      },
+      {
+        "path": "assets/book-wind.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 2158
+      },
+      {
+        "path": "assets/favicon.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 383
+      },
+      {
+        "path": "assets/icon-fire.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 437
+      },
+      {
+        "path": "assets/icon-ice.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 460
+      },
+      {
+        "path": "assets/icon-slow.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 493
+      },
+      {
+        "path": "assets/icon-wind.svg",
+        "passed": true,
+        "mime": "image/svg+xml",
+        "bytes": 383
+      },
+      {
+        "path": "assets/lanterns-hearth.mp3",
+        "passed": true,
+        "mime": "audio/mpeg",
+        "bytes": 2134977
+      },
+      {
+        "path": "assets/lanterns-motion.mp3",
+        "passed": true,
+        "mime": "audio/mpeg",
+        "bytes": 2134977
+      },
+      {
+        "path": "assets/lanterns-pressure.mp3",
+        "passed": true,
+        "mime": "audio/mpeg",
+        "bytes": 1281072
+      },
+      {
+        "path": "assets/lanterns-urgency.mp3",
+        "passed": true,
+        "mime": "audio/mpeg",
+        "bytes": 1281071
+      },
+      {
+        "path": "assets/library.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 234232
+      },
+      {
+        "path": "assets/manifest.json",
+        "passed": true,
+        "mime": "application/json",
+        "bytes": 7242
+      },
+      {
+        "path": "assets/paper.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 318
+      },
+      {
+        "path": "assets/typist-alarmed.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 141988
+      },
+      {
+        "path": "assets/typist-calm.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 138148
+      },
+      {
+        "path": "assets/typist-celebrate.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 138156
+      },
+      {
+        "path": "assets/typist-critical.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 141844
+      },
+      {
+        "path": "assets/typist-defeated.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 137466
+      },
+      {
+        "path": "assets/typist-focused.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 138160
+      },
+      {
+        "path": "assets/typist-worried.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 137786
+      },
+      {
+        "path": "assets/typist.webp",
+        "passed": true,
+        "mime": "image/webp",
+        "bytes": 138148
+      },
+      {
+        "path": "index.html",
+        "passed": true,
+        "mime": "text/html",
+        "bytes": 5258
+      },
+      {
+        "path": "src/audio/audio.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 13965
+      },
+      {
+        "path": "src/audio/mix.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 858
+      },
+      {
+        "path": "src/data/campaign.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 3330
+      },
+      {
+        "path": "src/data/words.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 7527
+      },
+      {
+        "path": "src/game/assets.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 185
+      },
+      {
+        "path": "src/game/clock.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 629
+      },
+      {
+        "path": "src/game/controls.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 500
+      },
+      {
+        "path": "src/game/model.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 17394
+      },
+      {
+        "path": "src/game/pressure.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 1068
+      },
+      {
+        "path": "src/game/rules.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 4303
+      },
+      {
+        "path": "src/game/storage.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 10389
+      },
+      {
+        "path": "src/main.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 46267
+      },
+      {
+        "path": "src/render/renderer.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 23261
+      },
+      {
+        "path": "src/styles.css",
+        "passed": true,
+        "mime": "text/css",
+        "bytes": 47069
+      },
+      {
+        "path": "src/ui/icons.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 1228
+      },
+      {
+        "path": "src/ui/score-rollup.js",
+        "passed": true,
+        "mime": "text/javascript",
+        "bytes": 1175
+      }
+    ]
+  }
+}

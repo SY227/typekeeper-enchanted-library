@@ -17,7 +17,7 @@ const stage=$('stage'),viewport=$('viewport'),screen=$('screen-layer'),typing=$(
 let localStorageAccess;try{localStorageAccess=window.localStorage;}catch{}
 const store=new LocalStore(localStorageAccess),model=new GameModel(),clock=new FixedClock();
 let settings=store.settings;
-try{if(!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.2')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.1')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3')&&!localStorageAccess?.getItem('typing-maniac-library-v2')&&!localStorageAccess?.getItem('typing-maniac-library-v1')&&matchMedia('(prefers-reduced-motion: reduce)').matches)settings.motion=false;}catch{}
+try{if(!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.2.1')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.2')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.1')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3')&&!localStorageAccess?.getItem('typing-maniac-library-v2')&&!localStorageAccess?.getItem('typing-maniac-library-v1')&&matchMedia('(prefers-reduced-motion: reduce)').matches)settings.motion=false;}catch{}
 const renderer=new GameRenderer($('game-canvas'),model,settings),audio=new GameAudio(settings);
 const audioMessage=status=>status==='degraded'?'Adaptive layers unavailable. The main theme still plays.':status==='failed'?'Music unavailable. The game remains playable.':status==='unsupported'?"Audio isn't available in this browser.":'';
 audio.onStatus=status=>{const el=$('audio-status');if(el)el.textContent=audioMessage(status);};
@@ -98,6 +98,7 @@ function chapterReveal(){
  stage.classList.remove('chapter-enter');void stage.offsetWidth;stage.classList.add('chapter-enter');
 }
 function beginPresentation(){
+ resetSpellFeedback();
  lastTallyId='';runRecorded=false;lastBest=store.best(model.pace,model.mode,model.startLevel);clock.reset();typing.value=model.buffer;setScreen('playing');wingAtmosphere();renderHud();focusGame();audio.unlock();
  chapterReveal();
  $('onboarding-hint').hidden=!(settings.hints&&model.level===1&&model.correct===0);
@@ -118,7 +119,7 @@ function showHow(){
  setScreen('how',modal(`${closeButton()}<h2 id="modal-title">How to play</h2>
  <div class="tutorial-steps"><div class="tutorial-step"><span class="step-num">01</span><h3>Type</h3><p>Type a falling word. Press <kbd>ENTER</kbd> to save it. Backspace corrects a typo.</p></div><div class="tutorial-step"><span class="step-num">02</span><h3>Prioritize</h3><p>Save the lowest words first. Missed words fill the paper pile. At 100%, the run ends.</p></div><div class="tutorial-step"><span class="step-num">03</span><h3>Cast</h3><p>Colored words earn spells. Press <kbd>1</kbd>–<kbd>4</kbd> or click a glowing book. Your typed word stays intact.</p></div></div>
  <div class="power-guide">${POWERS.map(p=>`<div class="power-guide-item"><span class="guide-hotkey">${POWER_META[p].key}</span><img src="${asset(`assets/book-${p}.svg`)}" alt=""><h3>${POWER_META[p].name}</h3><p>${POWER_META[p].description}</p></div>`).join('')}</div>
- <details class="rules-details"><summary>Scoring & mastery</summary><p>Every 8 correct words raises your multiplier, up to ×3. Dark cards score double. A wrong submission adds 2% to the pile. FIRE clears words without score or chapter progress.</p><p>Three stars: no misses or wrong submissions. Two stars: no more than 2 misses and 3 wrong submissions. ICE pauses SLOW’s timer so both spells keep their full value. Store up to three of each spell. A spell that cannot help is not consumed. Missing a word still costs pile pressure, but submitting it within 0.35 seconds of landing does not add a second penalty.</p></details>
+ <details class="rules-details"><summary>Scoring & mastery</summary><p>Every 8 correct words raises your multiplier, up to ×3. Dark cards score double. A wrong submission adds 2% to the pile. FIRE clears words without score or chapter progress.</p><p>Three stars: no misses or wrong submissions. Two stars: no more than 2 misses and 3 wrong submissions. ICE pauses SLOW’s timer so both spells keep their full value. Store up to two of each spell. A spell that cannot help is not consumed. Missing a word still costs pile pressure, but submitting it within 0.35 seconds of landing does not add a second penalty.</p></details>
  <div class="modal-actions">${primary(model.phase==='menu'?(store.checkpoint(settings.pace)?'Continue':'Play'):'Back',model.phase==='menu'?(store.checkpoint(settings.pace)?'continue':'start'):'back','data-autofocus')}</div>`,'wide'));
 }
 function showPause(reason='manual'){
@@ -301,10 +302,14 @@ document.addEventListener('pointerdown',()=>audio.unlock(),{once:true});
 document.addEventListener('keydown',()=>audio.unlock(),{once:true});
 
 function buildInventory(){
- $('spell-inventory').innerHTML=POWERS.map(p=>`<button type="button" class="spell-slot" data-power="${p}" id="spell-${p}" aria-keyshortcuts="${POWER_META[p].key}" aria-describedby="tip-${p}" aria-label="${p}: no books yet" aria-disabled="true"><span class="spell-aura" aria-hidden="true"></span><span class="spell-keycap" aria-hidden="true">${POWER_META[p].key}</span><span class="spell-ready" id="ready-${p}">COLLECT</span><img class="spell-book" src="${asset(`assets/book-${p}.svg`)}" alt=""><span class="book-count" id="count-${p}">0</span><span class="spell-command">${POWER_META[p].name}</span><span class="spell-stock" id="stock-${p}" aria-hidden="true"><i></i><i></i><i></i></span><span class="spell-tip" id="tip-${p}" role="tooltip"><b>${POWER_META[p].name} · ${POWER_META[p].key}</b>${POWER_META[p].detail}</span><span class="spell-timer" id="timer-${p}" aria-hidden="true"></span></button>`).join('');
+ $('spell-inventory').innerHTML=POWERS.map(p=>`<button type="button" class="spell-slot" data-power="${p}" id="spell-${p}" aria-keyshortcuts="${POWER_META[p].key}" aria-describedby="tip-${p}" aria-label="${p}: no books yet" aria-disabled="true"><span class="spell-aura" aria-hidden="true"></span><span class="spell-keycap" aria-hidden="true">${POWER_META[p].key}</span><span class="spell-ready" id="ready-${p}">COLLECT</span><img class="spell-book" src="${asset(`assets/book-${p}.svg`)}" alt=""><span class="book-count" id="count-${p}">0</span><span class="spell-command">${POWER_META[p].name}</span><span class="spell-stock" id="stock-${p}" aria-hidden="true">${'<i></i>'.repeat(RULES.inventoryCapacity)}</span><span class="spell-tip" id="tip-${p}" role="tooltip"><b>${POWER_META[p].name} · ${POWER_META[p].key}</b>${POWER_META[p].detail}</span><span class="spell-timer" id="timer-${p}" aria-hidden="true"></span></button>`).join('');
  for(const p of POWERS){$(`spell-${p}`).addEventListener('pointerdown',e=>{if(model.phase==='playing')e.preventDefault();});$(`spell-${p}`).addEventListener('click',()=>quickCast(p,'button'));}
 }
 let previousStock={fire:0,ice:0,slow:0,wind:0},lastPressureKey='';
+const stockPulseTimers=Object.fromEntries(POWERS.map(p=>[p,null]));
+function resetSpellFeedback(){
+ for(const p of POWERS){clearTimeout(stockPulseTimers[p]);stockPulseTimers[p]=null;previousStock[p]=model.inventory[p];$(`spell-${p}`)?.classList.remove('just-ready');}
+}
 // Avoid reparsing unchanged HUD markup on every frame/key; keep live node identity.
 function setText(id,value){const el=$(id),text=String(value);if(el.textContent!==text)el.textContent=text;}
 function setHTML(id,value){const el=$(id);if(el.innerHTML!==value)el.innerHTML=value;}
@@ -328,7 +333,8 @@ function renderHud(){
   setText(`ready-${p}`,queued?'QUEUED':active?'ACTIVE':ready?'READY':count?'STORED':'COLLECT');setText(`timer-${p}`,active?`${model.effects[p].toFixed(1)}s`:'');
   slot.style.setProperty('--effect-progress',active?String(model.effects[p]/(p==='ice'?RULES.iceDuration:RULES.slowDuration)):0);
   [...$(`stock-${p}`).children].forEach((el,i)=>el.classList.toggle('filled',i<count));
-  if(count>previousStock[p]){slot.classList.remove('just-ready');void slot.offsetWidth;slot.classList.add('just-ready');setTimeout(()=>slot.classList.remove('just-ready'),1800);}previousStock[p]=count;
+  if(!count){clearTimeout(stockPulseTimers[p]);stockPulseTimers[p]=null;slot.classList.remove('just-ready');}
+  if(count>previousStock[p]){clearTimeout(stockPulseTimers[p]);slot.classList.remove('just-ready');void slot.offsetWidth;slot.classList.add('just-ready');stockPulseTimers[p]=setTimeout(()=>{slot.classList.remove('just-ready');stockPulseTimers[p]=null;},1800);}previousStock[p]=count;
  }
  setHTML('effect-status',['ice','slow'].filter(p=>model.effects[p]>0).map(p=>`<span class="effect-chip" style="color:${POWER_META[p].color}"><img src="${asset(`assets/icon-${p}.svg`)}" alt="">${p==='slow'&&model.effects.ice>0?'SLOW · QUEUED':p.toUpperCase()}<b>${model.effects[p].toFixed(1)}s</b></span>`).join(''));
  const power=model.buffer.toLowerCase();setText('typing-label',POWERS.includes(power)&&!model.words.some(w=>w.text===model.buffer)?`CAST ${power.toUpperCase()}`:'');$('typing-label').hidden=!$('typing-label').textContent;
