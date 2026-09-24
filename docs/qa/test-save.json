@@ -3,6 +3,8 @@
   "settings": {
     "sfx": true,
     "music": true,
+    "adaptiveMusic": true,
+    "typingShimmer": true,
     "muted": false,
     "motion": true,
     "spellPulse": true,
@@ -19,9 +21,9 @@
     {
       "score": 5090,
       "level": 48,
-      "date": 1790202769228,
+      "date": 1790208113166,
       "pace": "classic",
-      "ruleset": "typekeeper-3.1.0",
+      "ruleset": "typekeeper-3.2.0",
       "mode": "campaign",
       "legacyMode": "campaign",
       "victory": true,
@@ -42,9 +44,9 @@
     {
       "score": 390,
       "level": 1,
-      "date": 1790202769029,
+      "date": 1790208112036,
       "pace": "classic",
-      "ruleset": "typekeeper-3.1.0",
+      "ruleset": "typekeeper-3.2.0",
       "mode": "practice",
       "legacyMode": "practice",
       "victory": false,
@@ -55,7 +57,7 @@
       "seconds": 0,
       "medals": 3,
       "cleared": 1,
-      "seed": 192580276,
+      "seed": 3363252431,
       "burned": 0,
       "retries": 0,
       "startLevel": 1,
@@ -65,9 +67,9 @@
     {
       "score": 40,
       "level": 1,
-      "date": 1790202769458,
+      "date": 1790208114043,
       "pace": "classic",
-      "ruleset": "typekeeper-3.1.0",
+      "ruleset": "typekeeper-3.2.0",
       "mode": "campaign",
       "legacyMode": "campaign",
       "victory": false,
@@ -96,7 +98,7 @@
           "score": 840,
           "wpm": 3,
           "accuracy": 100,
-          "ruleset": "typekeeper-3.1.0"
+          "ruleset": "typekeeper-3.2.0"
         },
         "48": {
           "campaignClear": true,
@@ -104,7 +106,7 @@
           "score": 5090,
           "wpm": 0,
           "accuracy": 100,
-          "ruleset": "typekeeper-3.1.0"
+          "ruleset": "typekeeper-3.2.0"
         }
       }
     },
@@ -120,9 +122,9 @@
   "checkpoints": {
     "relaxed": {
       "version": 3,
-      "ruleset": "typekeeper-3.1.0",
+      "ruleset": "typekeeper-3.2.0",
       "nextLevel": 1,
-      "seed": 4074670997,
+      "seed": 526195908,
       "nextId": 1,
       "pace": "relaxed",
       "mode": "campaign",
@@ -156,7 +158,7 @@
     },
     "classic": {
       "version": 3,
-      "ruleset": "typekeeper-3.1.0",
+      "ruleset": "typekeeper-3.2.0",
       "nextLevel": 1,
       "seed": 123,
       "nextId": 1,
@@ -192,6 +194,6 @@
     }
   },
   "game": "Typekeeper: Enchanted Library",
-  "appVersion": "3.1.0",
-  "exportedAt": "2026-09-23T22:32:51.667Z"
+  "appVersion": "3.2.0",
+  "exportedAt": "2026-09-24T00:01:58.052Z"
 }

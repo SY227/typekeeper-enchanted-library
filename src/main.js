@@ -10,21 +10,24 @@ import { WORD_COUNT } from './data/words.js';
 import { GameRenderer } from './render/renderer.js';
 import { GameAudio } from './audio/audio.js';
 import { icon, ornament } from './ui/icons.js';
+import { ScoreRollup } from './ui/score-rollup.js';
 
 const $=id=>document.getElementById(id);
 const stage=$('stage'),viewport=$('viewport'),screen=$('screen-layer'),typing=$('typing-input');
 let localStorageAccess;try{localStorageAccess=window.localStorage;}catch{}
 const store=new LocalStore(localStorageAccess),model=new GameModel(),clock=new FixedClock();
 let settings=store.settings;
-try{if(!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.1')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3')&&!localStorageAccess?.getItem('typing-maniac-library-v2')&&!localStorageAccess?.getItem('typing-maniac-library-v1')&&matchMedia('(prefers-reduced-motion: reduce)').matches)settings.motion=false;}catch{}
+try{if(!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.2')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3.1')&&!localStorageAccess?.getItem('typekeeper-enchanted-library-v3')&&!localStorageAccess?.getItem('typing-maniac-library-v2')&&!localStorageAccess?.getItem('typing-maniac-library-v1')&&matchMedia('(prefers-reduced-motion: reduce)').matches)settings.motion=false;}catch{}
 const renderer=new GameRenderer($('game-canvas'),model,settings),audio=new GameAudio(settings);
-const audioMessage=status=>status==='failed'?'Music unavailable. The game remains playable.':status==='unsupported'?"Audio isn't available in this browser.":'';
+const audioMessage=status=>status==='degraded'?'Adaptive layers unavailable. The main theme still plays.':status==='failed'?'Music unavailable. The game remains playable.':status==='unsupported'?"Audio isn't available in this browser.":'';
 audio.onStatus=status=>{const el=$('audio-status');if(el)el.textContent=audioMessage(status);};
 let loaded=false,view='loading',returnView='menu',composing=false,lastHud=0,toastTimer=0;
 let lastBest=0,quitReturn='pause',freezeSimulation=false,screenGeneration=0,runRecorded=false,mapWing=0;
 let recordFilter=settings.pace,recordPeriod='all',recordMode='campaign',recordChapter=1;
 let settingsTab='audio',resumeTimer=null,resumeGeneration=0,screenEntered=0,chapterTimer=null;
 const learnedSpells=new Set();
+const scoreRollup=new ScoreRollup();
+let tallyMedal=0,lastTallyId='',scoreEmphasis=null;
 let pauseSelection=[0,0];
 const format=n=>Math.max(0,Math.round(Number(n)||0)).toLocaleString('en-US');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -58,6 +61,7 @@ function announce(text){$('announcer').textContent=text;}
 function focusGame(){if(model.phase==='playing'){typing.disabled=false;typing.focus({preventScroll:true});}}
 function pulse(name){const dock=$('typing-dock');dock.classList.remove(name);void dock.offsetWidth;dock.classList.add(name);setTimeout(()=>dock.classList.remove(name),270);}
 function setScreen(name,html=''){
+ scoreRollup.cancel();audio.stopScore();
  view=name;screenEntered=performance.now();const generation=++screenGeneration;screen.dataset.screen=name;screen.innerHTML=html;
  $('play-hud').inert=Boolean(html);document.querySelector('.utility-controls').inert=Boolean(screen.querySelector('[role=dialog]'));
  stage.dataset.view=name;
@@ -76,7 +80,7 @@ function showMenu(){
  clearTimeout(resumeTimer);resumeGeneration++;clearTimeout(chapterTimer);
  $('chapter-reveal').className='';$('onboarding-hint').hidden=true;
  if(model.phase!=='menu'){model.reset();renderer.reset();clock.reset();}
- typing.value='';$('toast').className='';stage.dataset.pressure='calm';stage.dataset.wing='1';
+ typing.value='';audio.setPressure(0);$('toast').className='';stage.dataset.pressure='calm';stage.dataset.wing='1';
  const progress=store.progress(settings.pace),cp=store.checkpoint(settings.pace);
  const done=!!progress.stages[48]&&progress.stages[48].campaignClear!==false;
  setScreen('menu',`<section class="title-scene" aria-label="Main menu">
@@ -94,7 +98,7 @@ function chapterReveal(){
  stage.classList.remove('chapter-enter');void stage.offsetWidth;stage.classList.add('chapter-enter');
 }
 function beginPresentation(){
- runRecorded=false;lastBest=store.best(model.pace,model.mode,model.startLevel);clock.reset();typing.value=model.buffer;setScreen('playing');wingAtmosphere();renderHud();focusGame();audio.unlock();
+ lastTallyId='';runRecorded=false;lastBest=store.best(model.pace,model.mode,model.startLevel);clock.reset();typing.value=model.buffer;setScreen('playing');wingAtmosphere();renderHud();focusGame();audio.unlock();
  chapterReveal();
  $('onboarding-hint').hidden=!(settings.hints&&model.level===1&&model.correct===0);
  announce(`${model.mode==='practice'?'Practice. ':''}Chapter ${model.level}. ${model.info.title}. ${model.info.trial?'Archive trial. ':''}Magic shortcuts: 1 fire, 2 ice, 3 slow, 4 wind.`);
@@ -137,9 +141,9 @@ function showSettings(tab=settingsTab){
  const toggle=(key,title,desc='')=>`<div class="setting-row"><div><strong>${title}</strong>${desc?`<p>${desc}</p>`:''}</div><button class="toggle" role="switch" aria-label="${title}" aria-checked="${settings[key]}" data-toggle="${key}">${settings[key]?'ON':'OFF'}</button></div>`;
  const slider=(key,title)=>`<div class="setting-row"><strong>${title}</strong><div class="range-wrap"><input id="${key}-range" data-volume="${key}" aria-label="${title}" type="range" min="0" max="100" value="${Math.round(settings[key]*100)}"><output id="${key}-output">${Math.round(settings[key]*100)}%</output></div></div>`;
  let body='';
- if(settingsTab==='audio')body=`${slider('volume','Master volume')}${slider('musicVolume','Music volume')}${slider('sfxVolume','Effects volume')}${toggle('music','Music')}${toggle('sfx','Typewriter & spells')}<div class="now-playing"><span>ORIGINAL SCORE</span><strong>Lanterns & Letters</strong><small id="audio-status">${audioMessage(audio.status)}</small></div>`;
+ if(settingsTab==='audio')body=`${slider('volume','Master volume')}${slider('musicVolume','Music volume')}${slider('sfxVolume','Effects volume')}${toggle('music','Music')}${toggle('adaptiveMusic','Pressure-responsive music','The score grows more urgent as the paper pile rises.')}${toggle('sfx','Typewriter & spells')}<div class="now-playing"><span>ORIGINAL SCORE</span><strong>Lanterns & Letters</strong><small id="audio-status">${audioMessage(audio.status)}</small></div>`;
  if(settingsTab==='gameplay')body=`<div class="setting-row"><div><strong>Difficulty</strong><p>Applies to your next run.</p></div><select id="pace-select" aria-label="Difficulty">${Object.entries(PACES).map(([k,v])=>`<option value="${k}" ${k===settings.pace?'selected':''}>${v.label}</option>`).join('')}</select></div>${toggle('resumeCountdown','Resume countdown','A short countdown before words move again.')}${toggle('hints','First-use hints','A brief introduction to typing and newly collected spells.')}<p class="settings-note">Each difficulty has separate chapter progress and records.</p>`;
- if(settingsTab==='display')body=`${toggle('motion','Ambient animation')}${toggle('spellPulse','Spell-ready pulse')}${toggle('contrast','Higher contrast')}${toggle('detailedHUD','Detailed HUD','Show WPM, accuracy, and your personal best.')}`;
+ if(settingsTab==='display')body=`${toggle('motion','Ambient animation')}${toggle('typingShimmer','Typing shimmer','Small ink sparks and a gleam on completed words.')}${toggle('spellPulse','Spell-ready pulse')}${toggle('contrast','Higher contrast')}${toggle('detailedHUD','Detailed HUD','Show WPM, accuracy, and your personal best.')}`;
  setScreen('settings',modal(`${closeButton()}<h2 id="modal-title">Settings</h2><nav class="settings-tabs" aria-label="Settings sections">${[['audio','Audio'],['gameplay','Gameplay'],['display','Display']].map(([k,v])=>`<button data-settings-tab="${k}" aria-pressed="${settingsTab===k}" class="${settingsTab===k?'selected':''}">${v}</button>`).join('')}</nav><div class="settings-body">${body}</div><div class="modal-actions">${primary('Done','back','data-autofocus')}</div>`,'settings-modal'));
 }
 function showMap(wing=mapWing){
@@ -154,15 +158,40 @@ function showRecords(){
 function showClear(event=model.lastClear){
  if(!event)return;typing.value='';const info=model.info,next=stageInfo(model.level+1),isFinal=model.level===48&&model.mode==='campaign';
  const stageAcc=event.accuracy??model.stageAccuracy,stageWpm=event.wpm??model.stageWpm;
- setScreen('level-clear',modal(`<div class="chapter-medallion ${info.trial?'trial-medallion':''}"><span>${isFinal?'✦':info.seal}</span></div><div class="eyebrow">${isFinal?'THE EXPEDITION IS COMPLETE':`CHAPTER ${String(model.level).padStart(2,'0')}`}</div><h2 id="modal-title">${isFinal?'The library is yours.':event.perfect?'Perfect chapter':info.trial?'Trial complete':'Chapter complete'}</h2>${stars(event.medal||1)}<p>${isFinal?'All 48 chapters complete. The Infinite Archive awaits.':event.perfect?'No missed words. No incorrect submissions.':`${info.title}`}</p><div class="result-score">${format(model.score)}<small>${modeLabel(model.mode).toUpperCase()} SCORE</small></div><div class="bonus-tag">CHAPTER BONUS <strong>+${format(event.bonus)}</strong>${event.perfect?' · PERFECT':''}</div><div class="result-grid"><div><strong>${format(event.words??model.stageCorrect)}</strong><span>WORDS SAVED</span></div><div><strong>${stageWpm}</strong><span>WPM</span></div><div><strong>${stageAcc}%</strong><span>ACCURACY</span></div></div>${!isFinal&&model.mode!=='practice'?`<div class="next-preview"><span>NEXT ${String(model.level+1).padStart(2,'0')}</span><strong>${next.title}</strong><small>${next.trial?'ARCHIVE TRIAL':next.wingName}</small></div>`:''}<div class="modal-actions">${isFinal?primary('The Infinite Archive','endless','data-autofocus'):model.mode==='practice'?primary('Practice again','restart','data-autofocus'):primary('Next chapter','next','data-autofocus')}${secondary('Main menu','menu')}</div><p class="fine-print">${isFinal?(store.available?'Campaign complete. Progress saved.':'Campaign complete. Export your save to keep it.') :model.mode==='campaign'?(store.available?'Progress saved.':'Export your save to keep your progress.'):model.mode==='endless'?'Endless run in progress.':'Practice complete.'}</p>`));
+ setScreen('level-clear',modal(`<div class="chapter-medallion ${info.trial?'trial-medallion':''}"><span>${isFinal?'✦':info.seal}</span></div><div class="eyebrow">${isFinal?'THE EXPEDITION IS COMPLETE':`CHAPTER ${String(model.level).padStart(2,'0')}`}</div><h2 id="modal-title">${isFinal?'The library is yours.':event.perfect?'Perfect chapter':info.trial?'Trial complete':'Chapter complete'}</h2>${stars(event.medal||1)}<p>${isFinal?'All 48 chapters complete. The Infinite Archive awaits.':event.perfect?'No missed words. No incorrect submissions.':`${info.title}`}</p><div class="result-score" aria-label="${format(model.score)} points"><span id="result-score-value" aria-hidden="true">${format(model.score)}</span><small>${modeLabel(model.mode).toUpperCase()} SCORE</small></div><div class="bonus-tag">CHAPTER BONUS <strong>+${format(event.bonus)}</strong>${event.perfect?' · PERFECT':''}</div><div class="result-grid"><div><strong>${format(event.words??model.stageCorrect)}</strong><span>WORDS SAVED</span></div><div><strong>${stageWpm}</strong><span>WPM</span></div><div><strong>${stageAcc}%</strong><span>ACCURACY</span></div></div>${!isFinal&&model.mode!=='practice'?`<div class="next-preview"><span>NEXT ${String(model.level+1).padStart(2,'0')}</span><strong>${next.title}</strong><small>${next.trial?'ARCHIVE TRIAL':next.wingName}</small></div>`:''}<div class="modal-actions">${isFinal?primary('The Infinite Archive','endless','data-autofocus'):model.mode==='practice'?primary('Practice again','restart','data-autofocus'):primary('Next chapter','next','data-autofocus')}${secondary('Main menu','menu')}</div><p class="fine-print">${isFinal?(store.available?'Campaign complete. Progress saved.':'Campaign complete. Export your save to keep it.') :model.mode==='campaign'?(store.available?'Progress saved.':'Export your save to keep your progress.'):model.mode==='endless'?'Endless run in progress.':'Practice complete.'}</p>`));
+ beginScoreTally(`clear/${model.seed}/${model.level}/${model.score}`,model.score-(event.bonus||0),model.score,event.medal||1);
  announce(`Chapter ${model.level} saved. ${event.medal} stars. ${isFinal?'Expedition complete.':''}`);
 }
 function showOver(result=model.lastResult){
  if(!result)return;typing.value='';audio.suspendMusic();
  const best=result.ruleset===RULESET_VERSION&&result.score>lastBest;
- setScreen('game-over',modal(`<div class="modal-seal">${icon('quill')}</div><div class="eyebrow">${best?'A NEW PERSONAL BEST':'THE END OF THE RUN'}</div><h2 id="modal-title">Run complete</h2><p>The paper pile is full.</p><div class="result-score">${format(result.score)}<small>${modeLabel(result.mode).toUpperCase()} POINTS</small></div><div class="result-grid"><div><strong>${result.level}</strong><span>CHAPTER REACHED</span></div><div><strong>${result.wpm}</strong><span>WORDS / MIN</span></div><div><strong>${result.accuracy}%</strong><span>ACCURACY</span></div></div><div class="run-breakdown"><span>Words saved <b>${format(result.words)}</b></span><span>Best streak <b>${format(result.streak)}</b></span><span>Mastery stars <b>${format(result.medals)}</b></span></div><div class="modal-actions stacked">${primary(model.mode==='campaign'&&store.checkpoint(model.pace)?'Retry chapter':'Try again',model.mode==='campaign'&&store.checkpoint(model.pace)?'retry-chapter':'restart','data-autofocus')}${model.mode==='campaign'?secondary('New game','new-confirm'):''}${secondary('Records','records')}${secondary('Main menu','menu')}</div><p class="fine-print">${result.ruleset!==RULESET_VERSION?'This continued run is kept in Legacy records.':store.available?'Your chapter unlocks and stars are saved.':'Export your save from Records to keep your progress.'}</p>`));
+ setScreen('game-over',modal(`<div class="modal-seal">${icon('quill')}</div><div class="eyebrow">${best?'A NEW PERSONAL BEST':'THE END OF THE RUN'}</div><h2 id="modal-title">Run complete</h2><p>The paper pile is full.</p><div class="result-score" aria-label="${format(result.score)} points"><span id="result-score-value" aria-hidden="true">${format(result.score)}</span><small>${modeLabel(result.mode).toUpperCase()} POINTS</small></div><div class="result-grid"><div><strong>${result.level}</strong><span>CHAPTER REACHED</span></div><div><strong>${result.wpm}</strong><span>WORDS / MIN</span></div><div><strong>${result.accuracy}%</strong><span>ACCURACY</span></div></div><div class="run-breakdown"><span>Words saved <b>${format(result.words)}</b></span><span>Best streak <b>${format(result.streak)}</b></span><span>Mastery stars <b>${format(result.medals)}</b></span></div><div class="modal-actions stacked">${primary(model.mode==='campaign'&&store.checkpoint(model.pace)?'Retry chapter':'Try again',model.mode==='campaign'&&store.checkpoint(model.pace)?'retry-chapter':'restart','data-autofocus')}${model.mode==='campaign'?secondary('New game','new-confirm'):''}${secondary('Records','records')}${secondary('Main menu','menu')}</div><p class="fine-print">${result.ruleset!==RULESET_VERSION?'This continued run is kept in Legacy records.':store.available?'Your chapter unlocks and stars are saved.':'Export your save from Records to keep your progress.'}</p>`));
+ beginScoreTally(`over/${model.seed}/${model.level}/${result.score}`,0,result.score,0);
  announce(`Run over. ${result.score} points. Chapter ${result.level}.`);
 }
+function beginScoreTally(id,from,to,medal){
+ if(lastTallyId===id)return;
+ lastTallyId=id;tallyMedal=medal;
+ const el=$('result-score-value');if(!el)return;
+ el.textContent=format(scoreRollup.start(from,to,performance.now(),{duration:medal?1050:900,reduced:!settings.motion}));
+ el.classList.toggle('counting',scoreRollup.active);
+ // Scores and stars are saved already; this is a short, interruptible ceremony.
+ if(scoreRollup.active)screen.querySelector('.medal-stars')?.classList.add('awaiting-score');
+}
+function finishScoreTally(sound=true){
+ const el=$('result-score-value');if(!el)return;
+ const result=scoreRollup.finish();el.textContent=format(result.value);el.classList.remove('counting');el.classList.add('settled');
+ const starsEl=screen.querySelector('.medal-stars');starsEl?.classList.remove('awaiting-score');starsEl?.classList.add('score-awarded');
+ if(sound)audio.tallyComplete(tallyMedal);
+}
+function updateScoreTally(now){
+ if(!scoreRollup.active)return;
+ const el=$('result-score-value');if(!el){scoreRollup.cancel();return;}
+ const result=scoreRollup.step(now);el.textContent=format(result.value);
+ if(result.tick)audio.tallyTick(result.progress);
+ if(result.done)finishScoreTally();
+}
+screen.addEventListener('click',e=>{if(e.target.closest('#result-score-value')&&scoreRollup.active)finishScoreTally();});
 function showAbout(){
  rememberReturn();setScreen('about',modal(`${closeButton()}<div class="credits-crest">${icon('quill')}</div><h2 id="modal-title">Typekeeper</h2><p class="credits-subtitle">Enchanted Library</p><div class="credits-list"><span>CREATED BY</span><strong>FoxForge Studio</strong><span>ORIGINAL MUSIC</span><strong>Lanterns & Letters</strong><span>WITH THANKS</span><strong>To every keeper of stories.</strong></div><div class="modal-actions">${primary('Back','back','data-autofocus')}</div>`,'compact'));
 }
@@ -276,36 +305,42 @@ function buildInventory(){
  for(const p of POWERS){$(`spell-${p}`).addEventListener('pointerdown',e=>{if(model.phase==='playing')e.preventDefault();});$(`spell-${p}`).addEventListener('click',()=>quickCast(p,'button'));}
 }
 let previousStock={fire:0,ice:0,slow:0,wind:0},lastPressureKey='';
+// Avoid reparsing unchanged HUD markup on every frame/key; keep live node identity.
+function setText(id,value){const el=$(id),text=String(value);if(el.textContent!==text)el.textContent=text;}
+function setHTML(id,value){const el=$(id);if(el.innerHTML!==value)el.innerHTML=value;}
 function renderHud(){
+ audio.setPressure(model.danger);
  if(model.phase==='menu')return;
- $('score-value').textContent=format(model.score);$('best-value').textContent=format(store.best(model.pace,model.mode,model.startLevel));
- $('chapter-label').textContent=`${model.mode==='practice'?'PRACTICE · ':''}CHAPTER ${String(model.level).padStart(2,'0')}`;
- $('chapter-name').textContent=model.info.title;$('chapter-fill').style.width=`${Math.min(100,model.progress/model.config.quota*100)}%`;$('progress-value').textContent=`${model.progress} / ${model.config.quota}`;
- $('wing-name').textContent=model.info.wingName;$('rank-value').textContent=rankForStage(model.level);
- $('trial-indicator').hidden=!model.info.trial;$('trial-indicator').textContent=model.trialRest?'TRIAL · BREATHE':`TRIAL · WAVE ${Math.max(1,Math.ceil(model.spawnedThisLevel/5))}`;
- $('wpm-value').textContent=String(model.wpm);$('accuracy-value').innerHTML=`${model.accuracy}<small>%</small>`;$('streak-value').textContent=String(model.streak);$('multiplier-value').textContent=`×${model.multiplier}`;
+ setText('score-value',format(model.score));setText('best-value',format(store.best(model.pace,model.mode,model.startLevel)));
+ setText('chapter-label',`${model.mode==='practice'?'PRACTICE · ':''}CHAPTER ${String(model.level).padStart(2,'0')}`);
+ setText('chapter-name',model.info.title);$('chapter-fill').style.width=`${Math.min(100,model.progress/model.config.quota*100)}%`;setText('progress-value',`${model.progress} / ${model.config.quota}`);
+ setText('wing-name',model.info.wingName);setText('rank-value',rankForStage(model.level));
+ $('trial-indicator').hidden=!model.info.trial;setText('trial-indicator',model.trialRest?'TRIAL · BREATHE':`TRIAL · WAVE ${Math.max(1,Math.ceil(model.spawnedThisLevel/5))}`);
+ setText('wpm-value',String(model.wpm));setHTML('accuracy-value',`${model.accuracy}<small>%</small>`);setText('streak-value',String(model.streak));setText('multiplier-value',`×${model.multiplier}`);
  document.querySelector('.streak-stat').classList.toggle('charged',model.streak>=8);
- const meter=Math.round(model.danger);$('limit-fill').style.height=`${model.danger}%`;$('limit-value').innerHTML=`${meter}<small>%</small>`;$('limit-instrument').classList.toggle('danger',meter>=50);$('limit-instrument').classList.toggle('critical',meter>=90);$('limit-instrument').setAttribute('aria-label',`Paper pile limit ${meter} percent`);
- const pressure=model.pressure;stage.dataset.pressure=pressure.key;$('character-status').dataset.state=pressure.key;$('character-mood').textContent=pressure.label;$('character-status').style.setProperty('--pressure-color',pressure.color);
- const rescue=model.danger>=50&&model.inventory.wind>0&&model.phase==='playing';$('rescue-hint').hidden=!rescue;$('rescue-hint').textContent=model.danger>=90?'PRESS 4 · RESCUE':'PRESS 4 · CLEAR PILE';$(`spell-wind`).classList.toggle('rescue',rescue);
+ const meter=Math.round(model.danger);$('limit-fill').style.height=`${model.danger}%`;setHTML('limit-value',`${meter}<small>%</small>`);$('limit-instrument').classList.toggle('danger',meter>=50);$('limit-instrument').classList.toggle('critical',meter>=90);$('limit-instrument').setAttribute('aria-label',`Paper pile limit ${meter} percent`);
+ const pressure=model.pressure;stage.dataset.pressure=pressure.key;$('character-status').dataset.state=pressure.key;setText('character-mood',pressure.label);$('character-status').style.setProperty('--pressure-color',pressure.color);
+ const rescue=model.danger>=50&&model.inventory.wind>0&&model.phase==='playing';$('rescue-hint').hidden=!rescue;setText('rescue-hint',model.danger>=90?'PRESS 4 · RESCUE':'PRESS 4 · CLEAR PILE');$(`spell-wind`).classList.toggle('rescue',rescue);
  for(const p of POWERS){
   const status=model.spellStatus(p),count=status.count,active=status.remaining>0,queued=status.state==='queued',slot=$(`spell-${p}`),ready=status.ready;
-  $(`count-${p}`).textContent=String(count);slot.classList.toggle('available',count>0);slot.classList.toggle('cast-ready',ready);slot.classList.toggle('effect-active',active);slot.setAttribute('aria-disabled',String(!ready||model.phase!=='playing'));
+  setText(`count-${p}`,String(count));slot.classList.toggle('available',count>0);slot.classList.toggle('cast-ready',ready);slot.classList.toggle('effect-active',active);slot.setAttribute('aria-disabled',String(!ready||model.phase!=='playing'));
   slot.setAttribute('aria-label',`${POWER_META[p].name}, shortcut ${POWER_META[p].key}. ${queued?`Queued until ICE ends. ${Math.ceil(model.effects[p])} seconds saved.`:active?`Active, ${Math.ceil(model.effects[p])} seconds remaining.`:ready?`${count} books ready.`:count?`${count} books stored. ${status.reason==='empty-pile'?'The pile is empty.':status.reason==='empty-field'?'No falling words to clear.':'Available during play.'}`:'No books yet. Collect a colored word.'}`);
-  $(`ready-${p}`).textContent=queued?'QUEUED':active?'ACTIVE':ready?'READY':count?'STORED':'COLLECT';$(`timer-${p}`).textContent=active?`${model.effects[p].toFixed(1)}s`:'';
+  setText(`ready-${p}`,queued?'QUEUED':active?'ACTIVE':ready?'READY':count?'STORED':'COLLECT');setText(`timer-${p}`,active?`${model.effects[p].toFixed(1)}s`:'');
   slot.style.setProperty('--effect-progress',active?String(model.effects[p]/(p==='ice'?RULES.iceDuration:RULES.slowDuration)):0);
   [...$(`stock-${p}`).children].forEach((el,i)=>el.classList.toggle('filled',i<count));
   if(count>previousStock[p]){slot.classList.remove('just-ready');void slot.offsetWidth;slot.classList.add('just-ready');setTimeout(()=>slot.classList.remove('just-ready'),1800);}previousStock[p]=count;
  }
- $('effect-status').innerHTML=['ice','slow'].filter(p=>model.effects[p]>0).map(p=>`<span class="effect-chip" style="color:${POWER_META[p].color}"><img src="${asset(`assets/icon-${p}.svg`)}" alt="">${p==='slow'&&model.effects.ice>0?'SLOW · QUEUED':p.toUpperCase()}<b>${model.effects[p].toFixed(1)}s</b></span>`).join('');
- const power=model.buffer.toLowerCase();$('typing-label').textContent=POWERS.includes(power)&&!model.words.some(w=>w.text===model.buffer)?`CAST ${power.toUpperCase()}`:'';$('typing-label').hidden=!$('typing-label').textContent;
+ setHTML('effect-status',['ice','slow'].filter(p=>model.effects[p]>0).map(p=>`<span class="effect-chip" style="color:${POWER_META[p].color}"><img src="${asset(`assets/icon-${p}.svg`)}" alt="">${p==='slow'&&model.effects.ice>0?'SLOW · QUEUED':p.toUpperCase()}<b>${model.effects[p].toFixed(1)}s</b></span>`).join(''));
+ const power=model.buffer.toLowerCase();setText('typing-label',POWERS.includes(power)&&!model.words.some(w=>w.text===model.buffer)?`CAST ${power.toUpperCase()}`:'');$('typing-label').hidden=!$('typing-label').textContent;
  if(lastPressureKey!==pressure.key){lastPressureKey=pressure.key;announce(`Typekeeper ${pressure.label.toLowerCase()}. Paper pile ${meter} percent.`);}
 }
 function processEvents(){
  const events=model.drainEvents();renderer.handle(events);
  for(const e of events){
-  audio.play(e);
-  if(e.type==='correct'){pulse('success');$('onboarding-hint').hidden=true;if(e.collected&&settings.hints&&!learnedSpells.has(e.word.kind)){learnedSpells.add(e.word.kind);toast(`${POWER_META[e.word.kind].name} collected · shortcut ${POWER_META[e.word.kind].key}`,false,2000);}}
+  audio.setPressure(model.danger);audio.play(e);
+  if(e.type==='correct'){
+   if(settings.motion){scoreEmphasis?.cancel();scoreEmphasis=$('score-value').animate([{transform:'scale(1)'},{transform:'scale(1.045)',offset:.3},{transform:'scale(1)'}],{duration:190,easing:'ease-out'});}
+   pulse('success');$('onboarding-hint').hidden=true;if(e.collected&&settings.hints&&!learnedSpells.has(e.word.kind)){learnedSpells.add(e.word.kind);toast(`${POWER_META[e.word.kind].name} collected · shortcut ${POWER_META[e.word.kind].key}`,false,2000);}}
   if(e.type==='late'){toast(e.reason==='fire'?'Already cleared.':'Just missed.',false,1200);}
   if(e.type==='wrong'){pulse('invalid');toast(`No match · +2%`,true,1800);}
   if(e.type==='unavailable'){
@@ -321,7 +356,7 @@ function processEvents(){
   if(e.type==='game-over'){if(model.mode==='campaign')store.markFailure(model.pace,model.seed,model.level);if(!runRecorded){store.add(e.result);runRecorded=true;}showOver(e.result);}
  }
 }
-function animate(now){const alpha=clock.advance(now,dt=>{if(!freezeSimulation)model.step(dt);},model.phase==='playing');processEvents();renderer.frame(now,alpha);if(now-lastHud>80){renderHud();lastHud=now;}requestAnimationFrame(animate);}
+function animate(now){const alpha=clock.advance(now,dt=>{if(!freezeSimulation)model.step(dt);},model.phase==='playing');processEvents();renderer.frame(now,alpha);updateScoreTally(now);if(now-lastHud>80){renderHud();lastHud=now;}requestAnimationFrame(animate);}
 async function init(){
  buildInventory();applySettings();fit();
  try{await Promise.all([renderer.load(),$('library-background').decode()]);loaded=true;$('loading').hidden=true;showMenu();requestAnimationFrame(animate);installDiagnostics();if(!store.available)toast('Progress cannot be saved in this browser. Use Records → Export save.',true,5000);}
@@ -333,6 +368,6 @@ function installDiagnostics(){
  window.__TM_TEST__={model,renderer,store,clock,snapshot:()=>model.snapshot(),start:(seed=123,level=1,mode='campaign')=>start(seed,level,mode),freeze:(v=true)=>{freezeSimulation=v;},flush:()=>{processEvents();renderHud();},setSettings:s=>{settings={...settings,...s};applySettings();},cast:quickCast,
  word:(text,kind='normal',x=580,y=320)=>{const w={id:model.nextId++,text:normalizeInput(text),kind,x,y,previousY:y,speed:model.config.speed,width:wordCardWidth(text,kind),phase:1};model.words.push(w);return w.id;},
  advance:seconds=>{for(let i=0;i<Math.round(seconds/RULES.step);i++)model.step(RULES.step);processEvents();renderHud();},show:perform,
- performance:()=>({...renderer.stats,particles:renderer.particles.length,textureCache:renderer.textures.size,textureBytes:renderer.textureBytes,expression:renderer.expressionKey}),audioState:()=>audio.snapshot(),audio,settings:()=>({...settings}),info:{ruleset:RULESET_VERSION,dictionaryWords:WORD_COUNT,stages:48,renderer:'Canvas2D',offlineAssets:true}};
+ performance:()=>({...renderer.stats,particles:renderer.particles.length,textureCache:renderer.textures.size,textureBytes:renderer.textureBytes,expression:renderer.expressionKey}),audioState:()=>audio.snapshot(),audio,scoreRollup,settings:()=>({...settings}),info:{ruleset:RULESET_VERSION,dictionaryWords:WORD_COUNT,stages:48,renderer:'Canvas2D',offlineAssets:true}};
 }
 init();

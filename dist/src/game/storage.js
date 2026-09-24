@@ -1,8 +1,8 @@
 import { RULESET_VERSION, POWERS } from './rules.js';
-const KEY='typekeeper-enchanted-library-v3.1';
-const OLD_KEYS=['typekeeper-enchanted-library-v3','typing-maniac-library-v2','typing-maniac-library-v1'];
+const KEY='typekeeper-enchanted-library-v3.2';
+const OLD_KEYS=['typekeeper-enchanted-library-v3.1','typekeeper-enchanted-library-v3','typing-maniac-library-v2','typing-maniac-library-v1'];
 const PACE_NAMES=['classic','relaxed','maniac'];
-export const DEFAULT_SETTINGS=Object.freeze({sfx:true,music:true,muted:false,motion:true,spellPulse:true,contrast:false,detailedHUD:false,hints:true,resumeCountdown:true,pace:'classic',volume:.8,musicVolume:.5,sfxVolume:.65});
+export const DEFAULT_SETTINGS=Object.freeze({sfx:true,music:true,adaptiveMusic:true,typingShimmer:true,muted:false,motion:true,spellPulse:true,contrast:false,detailedHUD:false,hints:true,resumeCountdown:true,pace:'classic',volume:.8,musicVolume:.5,sfxVolume:.65});
 const saneNumber=(n,min=0,max=1e12)=>Number.isFinite(n)&&n>=min&&n<=max;
 function emptyProgress(){return Object.fromEntries(PACE_NAMES.map(p=>[p,{unlocked:1,stages:{}}]));}
 function sameRecord(r){return `${r.date}/${r.score}/${r.seed}/${r.ruleset}/${r.mode}/${r.startLevel}`;}
@@ -139,6 +139,6 @@ export class LocalStore {
   const since=period==='today'?new Date(new Date(now).setHours(0,0,0,0)).getTime():period==='week'?now-7*86400000:0;
   return this.data.records.filter(r=>(pace==='all'||r.pace===pace)&&(mode==='all'||r.mode===mode)&&r.date>=since&&(mode!=='practice'||chapter===null||r.startLevel===chapter)).sort((a,b)=>b.score-a.score||(a.retries||0)-(b.retries||0)||b.date-a.date);
  }
- exportData(){return JSON.stringify({...this.data,game:'Typekeeper: Enchanted Library',appVersion:'3.1.0',exportedAt:new Date().toISOString()},null,2);}
+ exportData(){return JSON.stringify({...this.data,game:'Typekeeper: Enchanted Library',appVersion:'3.2.0',exportedAt:new Date().toISOString()},null,2);}
  clearRecords(){this.data.records=[];this.save();}
 }

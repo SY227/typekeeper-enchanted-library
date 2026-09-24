@@ -1,179 +1,177 @@
-# Typekeeper: Enchanted Library — v3.1 mechanics and QA report
+# Typekeeper: Enchanted Library — v3.2 release and QA report
 
-**23 September 2026 · ruleset `typekeeper-3.1.0` · full browser build and editable source**
+**23 September 2026 · ruleset `typekeeper-3.2.0` · complete browser build + source**
 
-## Decision and scope
+## Scope and decision
 
-The mechanics iteration is implemented and passes the automated gates below. Artwork,
-character-expression assets, music, layout CSS, chapter names, and branding are preserved.
-This is a complete playable web release candidate, not a certified Steam executable, human
-playtest result, AAA certification, or prediction of commercial/viral success.
+Implemented directly from `Typekeeper_Enchanted_Library_v3.1_Full_App(1).zip`, using
+the user's actual playtest feedback: the difficulty grew too slowly, pressure should
+be audible, and typing/spell/score feedback should feel more satisfying.
 
-The uploaded v3.0 ZIP was the implementation baseline. Changes target rule fairness,
-difficulty continuity, useful spell feedback, safe retry/resume, and comparable local scores.
-They are deliberate new rules, not measurements of either historical YouTube recording.
-No new art, soundtrack, accounts, monetization, or unrelated features were added.
+This is a complete playable web release candidate. It is not a human-tested AAA
+certification, native Steam package, market forecast or claim of exact video parity.
+The new reference's moving frames/audio could not be accessed; additions interpret
+the user's descriptions and the actual supplied code, not invented observations.
 
-## Executed validation
+## Implemented changes
 
-| Gate | Observed result |
+| Area | v3.1 finding | v3.2 change |
+|---|---|---|
+| Opening pace | Classic started at 28 px/s with 2.35-second ordinary arrivals; only +1.28 px/s per chapter | Author-controlled knots start at 36 px/s / 1.90s, reaching 58 / 1.50s at chapter 6 and 76 / 1.30s at chapter 12 |
+| Vocabulary | First four chapters stayed in the shortest bank | Medium words begin entering chapter 2; continuous length/mix changes; same dictionary |
+| Pressure score | Two stems varied by screen/trial, not actual pile | Two added original layers follow smooth pile-dependent gain curves, phase-aligned with retained theme |
+| Recovery | WIND relieved the meter and character, not the musical tension | Faster musical release toward calm, without restarting/pitching the score or erasing typed input |
+| Typing feedback | Basic completion effects and generic key tones | Local matching ink glints, full-word-ready sound, paper sheen and small score sparks; Enter still mandatory |
+| Sound palette | Short generic synth cues | Mechanical variants, paper foley, separate book/bonus/streak, four spells, natural expiry and page transitions |
+| Scoring ceremony | Final total appeared immediately | Short bounded bonus count + ticks/seal, committed score unchanged; skip/Next never waits |
+| Clarity/performance | Large streaks could cross live cards; HUD rewrote unchanged text/markup repeatedly | Suppress overlapping banner; preserve unchanged HUD nodes, reducing avoidable update work |
+| Preferences | Existing audio/motion controls | Independent adaptive-score and typing-shimmer switches, retaining all prior mute/volume settings |
+| Migration/update | Prior save key and local deployment folder | New key/ruleset, read-only legacy migration, backup-first updater preserving Git/Vercel/env config |
+
+No original art or original musical master/runtime stem was replaced. Fifty-two
+specified assets/layout/content/config files are byte-identical, and all three
+word-bank arrays deep-equal the baseline (746 entries). The unchanged-file audit
+has an explicit scope; it does not claim unchanged rules, CSS or audio code.
+
+## Executed engineering checks
+
+| Gate | Result |
 |---|---|
-| Logic, storage, input policies, rules and property tests | **174 passed / 0 failed** |
-| Main browser interaction suite | **45 passed / 0 failed** |
-| Audio/editorial/resume regression suite | **24 passed / 0 failed** |
-| New mechanics browser suite | **27 passed / 0 failed** |
-| Unhandled application JavaScript errors in browser suites | **0** |
-| Isolated chapter calibration | **432 / 432 completed**: 48 chapters × 3 paces × 3 seeds, with declared calibration agents |
-| Campaign calibration | **60 v3.1 attempts**, including slower agents that correctly lose; all outcomes retained |
-| Baseline comparison | **60 attempts** on the unmodified uploaded v3.0 engine using the same agent assumptions |
-| High-pressure / no-starter-book scenarios | **42 terminated correctly**: 38 completions, 4 ordinary losses, no timeout |
-| Resource-assisted Endless reliability | **3 / 3 passed**; each completed chapters 49–200 and entered 201 |
-| Preserved content verification | **52 files byte-identical** in the declared art/audio/style/content scope |
-| HTTP integrity | Each Node/Python server returned all **37** manifest-listed payloads with matching hashes; MIME, HEAD and 404 passed |
-| Preserved audio integrity | Two runtime stems and full mix decoded; stereo/equal-duration checks passed, no clipped samples |
-| Clean ZIP extraction and rebuild | PASS: 39 / 39 generated outputs byte-identical; offline install, 174 tests, syntax and build passed |
+| Logic/rules/storage/presentation tests | **210 passed / 0 failed** |
+| Main browser regression | **45 passed / 0 failed** |
+| Previous audio/editorial regression | **24 passed / 0 failed** |
+| Previous mechanics regression | **27 passed / 0 failed** |
+| New pressure/audio/shine/tally integration | **33 passed / 0 failed** |
+| Total logic + browser cases | **339 passed**; software checks, not independent players |
+| Unhandled application JS exceptions in those audits | **0** |
+| Isolated stage simulations | **432/432 completed**, 48 stages × 3 paces × 3 seeds with declared profiles |
+| New full campaign simulations | **75**, all outcomes retained, including deliberate difficulty losses |
+| Uploaded v3.1 comparison | **75**, same synthetic agent definitions and seeds |
+| High-pressure / no-starter-book scenarios | **42 ended correctly**: 18 clears and 24 ordinary losses; no timeout |
+| Assisted Endless lifecycle soaks | **3 passed**, chapters 49–200 completed on each pace, entering 201 |
+| New music regeneration | **9 files byte-identical** using the included recipe/environment |
+| Music decode/mixes | **4 stems + 7 static pressure mixes**; aligned frames, finite signal, no clipped samples |
+| Actual synthesized SFX offline render | **20 seconds**, stereo, finite signal, zero clipped samples |
+| Node and Python HTTP servers | **41 payloads each** match hashes; MIME/HEAD/404 checks pass |
+| Backup-first updater | **4 scratch-folder scenarios passed**; protected files retained |
+| Clean archive extraction / offline npm install / tests / syntax / build | **Passed; all 43 generated outputs byte-identical** |
 
-The 270 logic/browser cases are automated test cases, not 270 independent players. The
-logic suite includes 250 seeded adversarial sessions within one property test, numerical
-bounds, repeated-input/terminal-state guards, and bounded replay storage. Counts are not
-inflated by treating every assertion or simulated frame as a separate test case.
+The 210-test count includes prior adversarial/property cases rather than expanding
+every assertion, frame or seeded inner run into a new named test. No human subjects
+participated in these automated audits. The user's prior first-hand pacing report
+is separate evidence and motivated the earlier difficulty curve.
 
-## Defects fixed and behavior deliberately changed
+## Balance: earlier pressure, not guaranteed completion
 
-| Area | v3.0 problem or risk | v3.1 outcome |
-|---|---|---|
-| Difficulty | Abrupt vocabulary-bank jumps compounded increasing arrival pressure | Continuous vocabulary mixture and length ceiling; stable per-chapter speed and separate pace calibration |
-| Spawn fairness | Candidate positioning/retries could create avoidable conflicts or redraw rewards | Free-span placement with separation; pending candidate retained; no active exact duplicate words |
-| Empty field | Clearing fast could leave an unnecessary ordinary wait | Ordinary next-arrival wait capped at 0.65 seconds after clearing; trial breathing interval preserved |
-| End of chapter | Cards could spawn beyond what the remaining quota needed | Stop extra arrivals while enough live cards can finish the quota; clear terminal transition once |
-| Item distribution | Pure rolls could make powers uneven across short samples | Shuffled four-spell cycles, short scheduled gaps, preference for remaining non-full types |
-| Spell combination | SLOW time expired while ICE made it ineffective | SLOW queues visibly during ICE and retains its full remaining duration |
-| Timer expiry | A whole frame could use the wrong modifier when an effect ended mid-tick | Integrate frozen, slowed and normal fractions inside the same tick |
-| Readiness | A stocked but unusable book could advertise an action | FIRE/WIND display STORED when they cannot affect anything; READY means actionable |
-| Rapid effects | Multiple spell/streak labels could overlap | Latest spell owns the central banner; queued SLOW is labeled; inactive SLOW orbit suppressed |
-| Near-miss input | A just-landed or just-burned word could immediately receive another typo penalty | 0.35-second acknowledgement guard; original miss still counts, no score/progress refund |
-| Retry | Bookmarks did not reproduce the same opening; failure could remove the only safe resume point | Deterministic chapter opening with seed/bag/score/books/pile, available from chapter 1; retry cannot farm failed-attempt points |
-| Practice | Stars and campaign advancement were conflated in some paths | Practice can award mastery on an unlocked chapter without unlocking the next campaign chapter |
-| Score comparison | Different practice chapters and rulesets could share a board | Chapter-specific practice records; old-rule totals stay in Legacy |
-| Endless exit | Voluntary exit could lose a legitimate partial result | Retired Endless result saved once, explicitly not a victory |
-| Focus and menus | Tab/selection or competing modal actions could lose an input or reset progress | Restore typing and replacement selection, guard existing bookmarks, keep covered controls inactive |
-| Save recovery | Invalid stored data or version mixing could silently lose provenance | Preserve corrupt bytes in bounded recovery storage; read old keys without overwriting them; legacy totals cannot claim a new-ruleset best |
+Campaign profiles: 25/40/60/90/120 WPM; reading/target-acquisition delays of
+0.32/0.26/0.20/0.15/0.12 seconds; wrong-submission probabilities of
+6%/4.5%/3%/2%/1.2% per word. Five seeds per profile and difficulty. Agents see the
+exact visible strings, target the nearest landing, type character-by-character,
+press Enter and use reactive spells. No campaign retries are used in this audit.
+They do not model comprehension, distraction, learning, fatigue or enjoyment.
 
-The artwork and layout have not been redesigned to solve these issues. Rule-dependent words
-such as QUEUED, STORED, Retry chapter and the trial breathing indicator appear in existing UI.
-The scoring formula, chapter quotas, miss/typo penalties, star thresholds, four powers, 48
-chapter names, eight wings and three pace choices remain; pace/spawn changes still make old
-scores non-comparable, which is why this release versions records.
+| Profile | v3.1 campaigns cleared | v3.2 campaigns cleared | v3.2 median chapter reached | Range |
+|---|---|---|---:|---|
+| Relaxed / 40 WPM agent | 5/5 | 0/5 | 25 | 23–26 |
+| Relaxed / 60 WPM agent | 5/5 | 5/5 | 48 | 48–48 |
+| Classic / 40 WPM agent | 0/5 | 0/5 | 15 | 14–16 |
+| Classic / 60 WPM agent | 5/5 | 0/5 | 28 | 24–29 |
+| Classic / 90 WPM agent | 5/5 | 5/5 | 48 | 48–48 |
+| Maniac / 90 WPM agent | 5/5 | 0/5 | 37 | 35–38 |
+| Maniac / 120 WPM agent | 5/5 | 5/5 | 48 | 48–48 |
 
-## Difficulty calibration: what the evidence does and does not mean
+**These WPM numbers describe synthetic agents, not recommended/required human typing
+speeds.** The new version deliberately challenges slower profiles earlier. It is
+not presented as a universally easier game. A retry, better power timing, choosing
+Relaxed or human learning changes outcomes, none of which these fixed agents predict.
 
-The audit executes the real game model at 60 Hz. Agents type one letter at a time, then
-press Enter; they include a reading/target-acquisition delay and a probability of a wrong
-submission. They select the visible card nearest to landing and may use reactive spells.
-They have perfect knowledge of visible strings, no future-spawn knowledge, and do not model
-human comprehension, attention, fatigue, learning, frustration, enjoyment or retention.
-A simulated WPM setting is **not** a recommended or required real-player typing speed.
+Isolated-stage calibration uses 60-WPM Relaxed, 90-WPM Classic and 120-WPM Maniac
+agents, three seeds per stage and the normal Practice starter kit. The complete
+campaign matrix still retains slower profiles and losses; no failed player outcome
+was deleted to produce a favorable completion claim. New campaign plus isolated
+runs represent about **25.91 hours of simulated game time**, accelerated in code.
+Assisted Endless soaks inject spells; they test reliability, not attainable player skill.
 
-Campaign profiles use 25/40/60/90 WPM, 0.32/0.26/0.20/0.15-second acquisition delay,
-and 6%/4.5%/3%/2% wrong-submission probability per word, respectively. Five seeds per
-profile/pace yield 60 attempts; campaign retries are disabled in this audit. Isolated
-chapter tests use the 40-WPM Relaxed, 60-WPM Classic and 90-WPM Maniac profiles, three
-seeds each, and the same one-book-per-type starter kit provided by actual Practice.
+## Audio and scoring correctness
 
-| Reference synthetic agent | Uploaded v3.0 campaigns completed | v3.1 campaigns completed |
-|---|---|---|
-| Relaxed / 40 WPM / 4.5% wrong words | 0 / 5 | 5 / 5 |
-| Classic / 60 WPM / 3% wrong words | 0 / 5 | 5 / 5 |
-| Maniac / 90 WPM / 2% wrong words | 4 / 5 | 5 / 5 |
+The original 90-BPM / 40-bar theme is retained. Four BufferSources start together
+and share the same loop; no pitch or transport reset is tied to danger. Pressure
+builds above 20%; urgency articulation enters above 65%. Targets are continuous
+smoothstep curves. WIND's fall uses a faster gain release; music direction never
+changes card speed or scoring. New layers can be disabled independently.
 
-The full matrix is retained, including losses. For example, the Classic 40-WPM profile
-still ends between chapters 28–34 and the Maniac 60-WPM profile between 43–47. The change
-removes measured cliffs; it does not make every difficulty completable by every agent.
-An intermediate Relaxed tuning failed an isolated late-stage case, so its arrival interval
-factor was eased from 1.50 to 1.60 and the complete sweep rerun. All final results use 1.60.
+The browser checks real quick-casts, gain targets, source identity, natural effect
+end cues, failure fallback, global mute and focus suspension. Missing optional stems
+fall back to the original two-source theme rather than blocking play. Actual browser
+decode used 112,895,976 bytes (~107.7 MiB); target-device memory profiling remains open.
 
-The final 60 campaign plus 432 isolated attempts represent approximately **35.44 hours
-of simulated game time**, accelerated in code—not that amount of human or wall-clock QA.
-The three Endless soaks inject extra spell inventory to reach late states. They are
-reliability exercises, not proof that players can or should reach chapter 201.
+SFX resources cap at 32 tones, 12 noise players and 24 cached noise buffers. Dense
+reward bursts are exercised and nodes disconnect. Score voices have a separate
+cancelable group. The test reads already-committed model totals while the visual
+counter rises, verifies monotonic/final values, one seal, early skip/Next, return to
+results, and reduced-motion/muted operation. The ceremony cannot grant extra points.
 
-See `DIFFICULTY_TABLE.md` for all 48 derived speed/arrival/quota/word-length rows and
-`qa/playtest-simulation.json`, `qa/baseline-simulation.json`, and `qa/endurance-audit.json`
-for every seed, outcome, assumption and scenario. `RULES.md` is the actual new ruleset.
+The SFX listening reel uses the shipping GameAudio class through OfflineAudioContext.
+Its measured peak is 0.066051; no clipped samples. The 40-second music preview
+is an authored pressure/release demonstration, **not captured gameplay or the original
+video's audio**. Signal measurements are not subjective listening approval.
 
-## Browser and performance evidence
+## Browser/performance evidence and limits
 
-Tested browser: Chromium **144.0.7559.96** on Linux, headless, viewport
-1440 × 1040. The gameplay sample contains 12 cards and active spell states. After two
-seconds of warmup, 180 animation-frame callbacks were sampled, excluding the initial
-offset from frame-interval statistics.
+Tested: Chromium 144.0.7559.96 on Linux, 1440 × 1040 viewport. The final dedicated
+stress profile holds 12 cards at 95% pile, keeps four score layers active, and exercises
+real input events, completion feedback and card replenishment through diagnostics.
+It is not a human run. After four seconds of warmup, 600 frame intervals:
 
-- Average frame rate: **59.34 FPS**.
-- 95th-percentile frame interval: **16.8 ms**.
-- Median Canvas draw time: **0.5 ms**.
+- Mean **57.97 FPS**.
+- 95th-percentile frame interval **16.8 ms**; worst **50.0 ms**.
+- Median CPU-side Canvas draw time **0.80 ms**.
+- Peak transient counts in that profile: 24 particles, 1 completion gleam,
+  13 tone voices and 1 noise voice; no unhandled errors.
 
-One frame in this short sample was 50 ms; the average is not a guarantee of perfectly
-uniform frames. Draw time is CPU-side Canvas work, not end-to-end keyboard latency.
-No actual Mac, Windows device, Steam Deck, Safari, Firefox or Edge performance is certified.
+Earlier v3.2 pre-HUD-optimization samples are preserved separately, including their
+lower frame rates; their shipping hashes differ from the final build. Main browser
+regression ran concurrently with other browsers and its embedded short timing sample
+is **not** the isolated performance claim above. Headless timing is not a guarantee
+of 60 FPS, equal latency or smoothness on the user's real machine.
 
-The managed environment blocks browser navigation to localhost/file URLs. Browser tests
-therefore run the **shipping standalone HTML in memory**. Only the existing diagnostic
-access guard is enabled in the fixture for controlled states. Actual model, render, DOM,
-keyboard, focus and audio code executes; no gameplay functions are replaced. A separate
-production-guard check verifies that the shipped export does not expose the test seam.
-Node/Python server payload checks are separate and do not prove browser HTTP execution.
+The environment blocks browser navigation to localhost/file URLs. Interaction tests
+run the actual shipping PLAY.html in memory; only the existing diagnostic access
+guard is enabled. No game functions are mocked. Node/Python HTTP byte tests are
+separate; they do not prove real browser ES-module loading. Physical Mac/Windows,
+Safari/Firefox/Edge, live Vercel deployment, audio hardware, alternate refresh rates
+and durable same-origin storage after close/reopen still need direct tests.
 
-Migration/import/export and hostile storage inputs are exercised. Real same-origin browser
-persistence across closing/reopening an installed page still requires target-device tests.
-The screenshots are controlled actual-app captures, not a human run or generated concept.
-Original audio passed the regression suite without being recomposed or remastered here.
+All four final interaction reports and the sound/performance audits identify:
+`210747d8917a45334b7b20b36540e139bfcd0d1cf670fca7d2edadb106f423da`
 
-All three browser reports identify the tested shipping PLAY.html hash:
-`0942687689893ed4d7500ca09ae32ccb737b6ef6cc4ad634e723c0098ad702ce`
+## Package, migration and reproduction
 
-## Preservation, packaging and reproduction
+Full source, prebuilt `dist`, embedded `PLAY.html`, old and new audio masters,
+illustration masters, tests, raw evidence and launchers are included. No accounts,
+API keys, external runtime downloads, sample libraries or font binaries are needed.
+SHA256SUMS.txt identifies delivered files; historical v3.1 reports are under
+`docs/qa/v3.1-baseline` and must not be mistaken for this release's results.
 
-The checksum preservation scope comprises all 24 `asset-source/` files, all 22
-`public/assets/` files, and six retained layout/audio/icon/campaign/pressure source files.
-`qa/preservation-audit.json` lists each path and SHA-256. The asset-manifest version remains
-3.0.0 intentionally: these are exactly the existing assets, not newly produced artwork.
-Game/build/save metadata is 3.1.0. Six runtime modules contain the mechanics changes.
+3.2 reads v3.1/v3/v2/v1 data without modifying those older keys. Unlocks, stars,
+preferences and valid bookmarks migrate. Older scores and continued mixed-rule
+totals remain Legacy; a fresh expedition earns current records. Continue uses the
+new rules, not a promise of identical old-version word placement. Export a save
+before changing versions/origins. Keeping the existing production domain is important.
 
-The package includes the full editable source, original art and music masters, tests,
-standalone PLAY.html, prebuilt dist/, local launchers, raw audit evidence and documentation.
-No runtime package download, account or API key is required. Fonts are not bundled.
+The updater backs up local game files before copying. It retains .git, .vercel,
+.env files and existing vercel.json, refuses bad/self targets, and makes no remote
+write. Its tests used synthetic folders, not the user's actual Mac/repository.
 
-Reproduce core gates with:
+Core commands: `npm ci --offline --ignore-scripts --no-audit --no-fund`, `npm test`,
+`npm run check`, `npm run build`, `npm run test:balance`, `npm run test:endurance`.
+Browser tests use the optional dependencies/commands in README.md. Audio regeneration
+has its own optional Python/ffmpeg requirements. Ordinary play does not require them.
 
-```bash
-npm ci --offline --ignore-scripts --no-audit --no-fund
-npm test
-npm run check
-npm run build
-npm run test:balance
-npm run test:endurance
-```
+## Remaining release gates
 
-Browser tests additionally need the declared Python/Playwright dependencies and a browser.
-See README.md for normal HTTP mode and the explicitly documented inline fixture used here.
-Old v3 reports are archived under `qa/v3-baseline/`; they are not the new release's results.
-Current test logs, tool versions, HTTP/audio audits and rebuild comparison live under `qa/`.
-Final file hashes are in `SHA256SUMS.txt` (that checksum file excludes itself).
-
-## Save continuity and remaining release gates
-
-v3.1 uses a new storage key and reads earlier keys without modifying them. Settings,
-mastery and valid campaign bookmarks migrate. An older bookmarked campaign can continue,
-but a carried old-rule score stays Legacy; start a fresh expedition for current records.
-Practice boards compare the same chapter. Retry restores the opening score rather than
-accumulating failed attempts. Export a save before changing folders/origins.
-
-Automated engineering gates pass. **Human first-time/intermediate/expert playtesting,
-long-session listening, actual target-device compatibility/save persistence, and Steam
-packaging/integration/review remain open.** No human participants took part in this audit.
-Those limits are explicit in `RELEASE_CHECKLIST.md` and `STEAM_READINESS.md`.
-
-Current official Steam sources and developer examples are separated from design inference
-in STEAM_READINESS.md. No sales, conversion, retention or viral-success result was measured.
-This build is not represented as having Steam achievements, Cloud, authenticated shared
-leaderboards, a tested native installer, Valve approval, or an executed Unreal/Blender port.
+Human pacing/fun and long-session music listening; actual target-device compatibility,
+resource/latency checks and durable saves; production-domain smoke testing after the
+owner deploys; and, for a commercial Steam launch, native packaging, rights/claims,
+platform integration and review. No human retention, sales, viral success or certification
+was measured. This archive completes the requested browser update, not those other gates.

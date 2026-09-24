@@ -1,3 +1,5 @@
+> Retained Steam planning research from the v3.1 handoff. No Steam integration, review or native-device testing was executed in v3.2.
+
 # Steam-oriented experience audit and remaining release gates
 Research access date: 23 September 2026. This document supports the mechanics iteration;
 it is not a launch forecast, sales estimate, a Steam submission or a full market study.

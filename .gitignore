@@ -4,3 +4,9 @@ __pycache__/
 .DS_Store
 playwright-report/
 test-results/
+
+.vercel/
+.env
+.env.*
+*.backup
+.typekeeper-update-*

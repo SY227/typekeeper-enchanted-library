@@ -57,9 +57,11 @@ export class GameModel {
  }
  setBuffer(raw,record=true){
   if(this.phase!=='playing')return;
-  const normalized=normalizeInput(raw),added=Math.max(0,normalized.length-this.buffer.length);
+  const previous=this.buffer,normalized=normalizeInput(raw),added=Math.max(0,normalized.length-previous.length);
   this.keystrokes+=added;this.buffer=normalized;
-  if(record)this.record('input',normalized);this.emit('input',{added});
+  if(record)this.record('input',normalized);
+  const target=normalized?this.words.filter(w=>w.text.startsWith(normalized)).sort((a,b)=>b.y-a.y||a.id-b.id)[0]:null;
+  this.emit('input',{added,changed:normalized!==previous,erased:normalized.length<previous.length,text:normalized,complete:!!target&&target.text===normalized,target:target?{...target}:null});
  }
  submit(record=true){
   if(this.phase!=='playing'||!this.buffer)return null;
@@ -168,10 +170,13 @@ export class GameModel {
   for(const p of POWERS)this.cooldowns[p]=Math.max(0,this.cooldowns[p]-dt);
   // Integrate expiry boundaries exactly. SLOW's remaining duration is banked
   // throughout ICE, including when ICE expires partway through this tick.
+  const hadIce=this.effects.ice>0,hadSlow=this.effects.slow>0;
   const frozenSeconds=Math.min(dt,this.effects.ice),unfrozen=dt-frozenSeconds;
   this.effects.ice=Math.max(0,this.effects.ice-dt);
   const slowedSeconds=Math.min(unfrozen,this.effects.slow),normalSeconds=unfrozen-slowedSeconds;
   this.effects.slow=Math.max(0,this.effects.slow-unfrozen);
+  if(hadIce&&this.effects.ice===0)this.emit('effect-end',{power:'ice'});
+  if(hadSlow&&this.effects.slow===0)this.emit('effect-end',{power:'slow'});
   const travel=slowedSeconds*RULES.slowFactor+normalSeconds;
   const spawnTime=slowedSeconds*RULES.slowSpawnFactor+normalSeconds;
   if(spawnTime>0){

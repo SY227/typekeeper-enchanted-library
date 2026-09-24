@@ -5,7 +5,7 @@ import { LocalStore, DEFAULT_SETTINGS } from '../src/game/storage.js';
 import { GameModel } from '../src/game/model.js';
 import { CAMPAIGN } from '../src/data/campaign.js';
 import { RULESET_VERSION } from '../src/game/rules.js';
-const KEY='typekeeper-enchanted-library-v3.1',OLD='typing-maniac-library-v2';
+const KEY='typekeeper-enchanted-library-v3.2',OLD='typing-maniac-library-v2';
 const memory=()=>{const data=new Map();return {data,getItem:k=>data.get(k)||null,setItem:(k,v)=>data.set(k,v)};};
 const checkpoint=()=>{const m=new GameModel();m.start();m.level=1;m.danger=40;m.pile=[{id:1,x:350,angle:.04,kind:'normal',text:'BOOK'}];return m.checkpoint();};
 
@@ -17,8 +17,8 @@ test('v2 settings and records migrate non-destructively into Typekeeper',()=>{co
 test('current Typekeeper preferences take priority over old defaults',()=>{const raw=memory();raw.setItem(KEY,JSON.stringify({version:2,settings:{music:true,muted:true}}));raw.setItem(OLD,JSON.stringify({version:2,settings:{music:false}}));const s=new LocalStore(raw);assert.equal(s.settings.music,true);assert.equal(s.settings.muted,true);});
 test('new audio preferences persist through actual serialization',()=>{const raw=memory(),s=new LocalStore(raw);s.update({...s.settings,musicVolume:.27,sfxVolume:.43,muted:true});const reload=new LocalStore(raw);assert.equal(reload.settings.musicVolume,.27);assert.equal(reload.settings.sfxVolume,.43);assert.equal(reload.settings.muted,true);});
 test('invalid imported audio gains do not reach the mixer',()=>{const s=new LocalStore(memory());s.importData({version:2,settings:{musicVolume:8,sfxVolume:-1,volume:'loud'}});assert.equal(s.settings.musicVolume,DEFAULT_SETTINGS.musicVolume);assert.equal(s.settings.sfxVolume,DEFAULT_SETTINGS.sfxVolume);assert.equal(s.settings.volume,DEFAULT_SETTINGS.volume);});
-test('new presentation toggles serialize without changing active game rules',()=>{const s=new LocalStore(memory());s.importData({version:2,settings:{detailedHUD:true,hints:false,resumeCountdown:false}});assert.equal(s.settings.detailedHUD,true);assert.equal(s.settings.hints,false);assert.equal(s.settings.resumeCountdown,false);assert.equal(RULESET_VERSION,'typekeeper-3.1.0');});
-test('Typekeeper save exports identify the product and preserve schema compatibility',()=>{const s=new LocalStore(memory()),data=JSON.parse(s.exportData());assert.equal(data.game,'Typekeeper: Enchanted Library');assert.equal(data.appVersion,'3.1.0');assert.equal(data.version,3);});
+test('new presentation toggles serialize without changing active game rules',()=>{const s=new LocalStore(memory());s.importData({version:2,settings:{detailedHUD:true,hints:false,resumeCountdown:false}});assert.equal(s.settings.detailedHUD,true);assert.equal(s.settings.hints,false);assert.equal(s.settings.resumeCountdown,false);assert.equal(RULESET_VERSION,'typekeeper-3.2.0');});
+test('Typekeeper save exports identify the product and preserve schema compatibility',()=>{const s=new LocalStore(memory()),data=JSON.parse(s.exportData());assert.equal(data.game,'Typekeeper: Enchanted Library');assert.equal(data.appVersion,'3.2.0');assert.equal(data.version,3);});
 test('migrated saves retain all earned mastery and chapter bookmarks',()=>{const raw=memory(),cp=checkpoint();raw.setItem(OLD,JSON.stringify({version:2,checkpoints:{classic:cp},progress:{classic:{stages:{1:{medal:3,score:100,wpm:40,accuracy:100}}}}}));const s=new LocalStore(raw);assert.equal(s.checkpoint().danger,40);assert.equal(s.progress().stages[1].medal,3);assert.equal(s.progress().unlocked,2);});
 test('pile restoration agrees with the danger meter after a bookmark',()=>{const c=checkpoint(),m=new GameModel();m.restoreCheckpoint(c);assert.equal(m.danger,40);assert.equal(m.pile.length,1);assert.equal(m.pile[0].x,350);});
 test('restored pile does not retain references to imported data',()=>{const c=checkpoint(),m=new GameModel();m.restoreCheckpoint(c);c.pile[0].x=1;assert.equal(m.pile[0].x,350);});

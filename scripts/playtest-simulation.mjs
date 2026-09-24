@@ -15,7 +15,8 @@ export const profiles=[
  {id:'developing',wpm:25,acquire:.32,error:.06},
  {id:'steady',wpm:40,acquire:.26,error:.045},
  {id:'fluent',wpm:60,acquire:.20,error:.03},
- {id:'expert',wpm:90,acquire:.15,error:.02}
+ {id:'expert',wpm:90,acquire:.15,error:.02},
+ {id:'virtuoso',wpm:120,acquire:.12,error:.012}
 ];
 export function simulate({ModelClass=GameModel,pace='classic',profile=profiles[2],seed=17,level=1,campaign=false,strategy='reactive',perfect=false,initialDanger=0,starterBooks=1}){
  const m=new ModelClass();m.start({seed,pace,level,mode:campaign?'campaign':'practice'});
@@ -69,7 +70,7 @@ for(const pace of ['relaxed','classic','maniac'])for(const profile of profiles){
 const sweeps=[];
 if(!baseline&&!quick){
  for(const pace of ['relaxed','classic','maniac'])for(let level=1;level<=48;level++)for(const seed of [11,997,4001]){
-  const profile=profiles[pace==='relaxed'?1:pace==='classic'?2:3];
+  const profile=profiles[pace==='relaxed'?2:pace==='classic'?3:4];
   sweeps.push(simulate({pace,level,seed,profile,campaign:false}));
  }
 }
@@ -79,7 +80,7 @@ const table=Array.from({length:48},(_,i)=>{
  return {level,wordMix:mix,meanLetters:Math.round(mean*100)/100,...Object.fromEntries(['relaxed','classic','maniac'].map(p=>{const c=levelRules(level,p);return [p,{speed:c.speed,interval:c.interval,quota:c.quota,trial:c.trial,secondsToFloor:476/c.speed,nominalKeystrokeWpm:(mean+1)*12/c.interval}];}))};
 });
 const output=baseline?'baseline-simulation':quick?'simulation-quick':'playtest-simulation';
-const report={kind:'Synthetic agents, not human subjects',date:new Date().toISOString().slice(0,10),model:baseline?'uploaded v3.0':'v3.1',assumptions:{tickHz:60,targetSelection:'earliest landing; perfect knowledge of visible word strings, imperfect timed input',errors:'Independent wrong submission probability per word, not per character',acquisitionDelay:'0.15–0.32 seconds per word',spells:'reactive rules, .26 second spacing, no future spawn knowledge',retries:'disabled for campaign audits; first full-pile loss ends run',limits:'Does not model reading comprehension, fatigue, hardware, enjoyment, learning, attention, or retention. Not a human WPM recommendation.'},summary,runs,chapterSweeps:sweeps,stageTable:baseline?null:table,wallSeconds:Math.round((performance.now()-started)/1000)};
+const report={kind:'Synthetic agents, not human subjects',date:new Date().toISOString().slice(0,10),model:baseline?'uploaded v3.1':'v3.2',assumptions:{tickHz:60,targetSelection:'earliest landing; perfect knowledge of visible word strings, imperfect timed input',errors:'Independent wrong submission probability per word, not per character',acquisitionDelay:'0.12–0.32 seconds per word',spells:'reactive rules, .26 second spacing, no future spawn knowledge',retries:'disabled for campaign audits; first full-pile loss ends run',limits:'Does not model reading comprehension, fatigue, hardware, enjoyment, learning, attention, or retention. Not a human WPM recommendation.'},summary,runs,chapterSweeps:sweeps,stageTable:baseline?null:table,wallSeconds:Math.round((performance.now()-started)/1000)};
 await fs.mkdir('docs/qa',{recursive:true});await fs.writeFile(`docs/qa/${output}.json`,JSON.stringify(report,null,2));console.table(summary);console.log('Runs',runs.length,'chapter sweeps',sweeps.length,'wall seconds',report.wallSeconds);
 
 }

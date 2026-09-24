@@ -492,3 +492,15 @@ body{justify-content:center;background:radial-gradient(ellipse at 50% 42%,#142d2
 
 /* The same brass language for keyboard focus, without a neon UI halo. */
 .icon-button:focus-visible,.spell-slot:focus-visible{outline-color:#f2d89c}
+
+/* v3.2: local score feedback; no new HUD chrome or permanent tutorial copy. */
+#result-score-value{display:inline-block;font-variant-numeric:tabular-nums;min-width:2ch}
+#result-score-value.counting{color:#3b654c;text-shadow:0 0 15px #d3ad6444}
+#result-score-value.settled{animation:scoreSeal .36s ease-out}
+@keyframes scoreSeal{0%{transform:scale(1.035);text-shadow:0 0 18px #c39c5180}100%{transform:scale(1);text-shadow:none}}
+.medal-stars.awaiting-score .earned{color:#ab97777a;text-shadow:none}
+.medal-stars.score-awarded .earned{animation:masteryGleam .48s ease-out both}
+.medal-stars.score-awarded .earned:nth-child(2){animation-delay:.12s}
+.medal-stars.score-awarded .earned:nth-child(3){animation-delay:.24s}
+@keyframes masteryGleam{0%{transform:scale(.82);text-shadow:none}45%{transform:scale(1.16);text-shadow:0 0 14px #e6b345}100%{transform:scale(1);text-shadow:0 1px #fff3b4,0 0 10px #e3b64e44}}
+.reduced-motion #result-score-value,.reduced-motion .medal-stars .earned{animation:none!important}

@@ -1,19 +1,17 @@
-# 3.1 delivered feature matrix
+# v3.2 feature / evidence matrix
 
-| System | Current state |
-|---|---|
-| Existing Typekeeper visual identity, imagery, layout and soundtrack | Preserved; SHA-256 compared against uploaded v3.0 |
-| 48 chapters / 8 wings / 8 trials | Preserved with revised smooth pacing and word mix |
-| Three difficulties | Separately tuned; same modes, no hidden skill scaling |
-| Four spells / quick keys / no-waste casts | Retained; queued SLOW, actionable readiness and clearer combined feedback |
-| Live typed target / Enter / editing | Retained; late duplicate-penalty guard and focus/selection repair |
-| Word placement | Stable pending spawns; no active duplicates or surplus quota cards |
-| Pressure faces / relief / defeat / celebration | Unchanged assets and thresholds |
-| Campaign continuation | Deterministic chapter boundaries; Retry chapter after defeat |
-| Practice / stars | Chapter-specific scores; practice mastery does not unlock campaign |
-| Endless | Retained; voluntary retirement now saves a distinct result |
-| Local saves | Schema 3, protected migration, legacy score separation, recovery backup |
-| Audio mixes / original score | Unchanged; regression checked |
-| Standalone HTML / static site / source / editable assets | Included |
-| Steam binary, Steamworks services or public launch approval | Not included or claimed |
-| Human playtesting / retention / commercial outcome | Not measured by automated tests |
+| Feature | Delivery | Evidence |
+|---|---|---|
+| 48 chapters / 3 paces / 8 wings | Preserved + earlier difficulty curve | 432 isolated chapter simulations; raw campaign matrix |
+| Four spells, quick keys, banked SLOW | Preserved | Logic + main/mechanics browser suites |
+| Matching-letter glint / completion sheen | Added | Pressure browser suite; controlled captures |
+| Full-word-ready sound | Added, not auto-submit | Logic and real Enter tests |
+| Pressure/urgency score layers | Added | Four decoded stems, gain/phase tests, signal audit |
+| WIND musical release | Added | Real quick-cast, pressure/state/buffer/gain test |
+| SFX score count / seal | Added | Browser monotonicity/interrupt tests; offline audio reel |
+| Reduced motion / mute / independent switches | Preserved + expanded | Browser regression and new suite |
+| Old save migration / Legacy totals | Expanded to v3.2 | LocalStore tests; mock storage, not physical persistence |
+| Git/Vercel update helper | Added | Four scratch-folder scenarios; no remote writes |
+| Original video fidelity | Unverified | Reference footage/audio inaccessible |
+| Human enjoyment / retention / listening | Not executed | Requires players and actual output devices |
+| Native Steam integration / device certification | Not included | Browser source and prebuilt handoff only |

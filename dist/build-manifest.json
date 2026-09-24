@@ -1,5 +1,5 @@
 {
-  "version": "3.1.0",
+  "version": "3.2.0",
   "files": [
     {
       "path": "assets/book-fire.svg",
@@ -57,14 +57,24 @@
       "sha256": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f"
     },
     {
+      "path": "assets/lanterns-pressure.mp3",
+      "bytes": 1281072,
+      "sha256": "62e2241e648651927eb6f0312f413697ed00d3b2ed42905443da319333834f56"
+    },
+    {
+      "path": "assets/lanterns-urgency.mp3",
+      "bytes": 1281071,
+      "sha256": "081b7baf685f5fd2d1da6b7433e0ad2e556bc083f6ee405487d6bf56a366f84d"
+    },
+    {
       "path": "assets/library.webp",
       "bytes": 234232,
       "sha256": "6f573f74db90b50c047c735031be0e1117018c00a770d73472b29292841eb8a6"
     },
     {
       "path": "assets/manifest.json",
-      "bytes": 6614,
-      "sha256": "3237ca64a14453e6388490b672bf3f972f9785a735b4ad9a9bca484951ee7956"
+      "bytes": 7242,
+      "sha256": "dee70dadaeb80e355328ded6e0d60f23e733a8987ef0093248e9843e2ca9118c"
     },
     {
       "path": "assets/paper.webp",
@@ -118,8 +128,13 @@
     },
     {
       "path": "src/audio/audio.js",
-      "bytes": 8907,
-      "sha256": "b97c7615d625c5f9b50a577b748b3056fc915792f2519e54cc217c5468a812a4"
+      "bytes": 13965,
+      "sha256": "57ba85d6fa984b31d85ef520e6c1f650156f7e35ec59e843985055d5b6f31037"
+    },
+    {
+      "path": "src/audio/mix.js",
+      "bytes": 858,
+      "sha256": "f75d4a251f892681fd0d1b87ddaf8104f61048d22f8ea4de9fb580cf10fab79d"
     },
     {
       "path": "src/data/campaign.js",
@@ -128,8 +143,8 @@
     },
     {
       "path": "src/data/words.js",
-      "bytes": 7517,
-      "sha256": "e0d35181804d7694f5a7f3b784e65a991dcf6f6443882b7c794c9d0394f2095b"
+      "bytes": 7527,
+      "sha256": "0cce1326624cbadcf90f484379c385731f61240916ee0d7b686c4e62bfb3fcd9"
     },
     {
       "path": "src/game/assets.js",
@@ -148,8 +163,8 @@
     },
     {
       "path": "src/game/model.js",
-      "bytes": 16880,
-      "sha256": "e1aa5a4ed20a61fd9afbc56c340efe758b7420e37ec1db255b779c834e2ae60f"
+      "bytes": 17394,
+      "sha256": "15c4c832730319b51acc4256aab758332621a4527bb58c079f3f17afff7425bb"
     },
     {
       "path": "src/game/pressure.js",
@@ -158,33 +173,38 @@
     },
     {
       "path": "src/game/rules.js",
-      "bytes": 3851,
-      "sha256": "bbb0cc9af9b67d324e0ded6bbd00373ca063e4b4068af1e0c715f234e6e5afea"
+      "bytes": 4303,
+      "sha256": "9d58f040728cac60bf1b6f7f0f4c997c244b265072cb4f290d5c10299a6da33f"
     },
     {
       "path": "src/game/storage.js",
-      "bytes": 10315,
-      "sha256": "97dc6952204c526ef2ae59000afce8c53e949c1609705116c4ba6cde386eca95"
+      "bytes": 10389,
+      "sha256": "fd3be1a532637b2a939d405fd0e98041777ca8d6b2e20a50ce1be5c43f43777b"
     },
     {
       "path": "src/main.js",
-      "bytes": 43481,
-      "sha256": "ee83f249cf3d5326a13afc06c3311a93625dc0732241531229334a8078e69bdc"
+      "bytes": 46267,
+      "sha256": "141e95fe8e3e0737a141b11ca90bc9a9d3fde0fd7794bb8734c84fe91a2e0bac"
     },
     {
       "path": "src/render/renderer.js",
-      "bytes": 19902,
-      "sha256": "4ce5983f5f0204ae9d3178d313616ca90020524eb34d273e1383e5d36851c7d0"
+      "bytes": 23261,
+      "sha256": "ce7a718089a8274d544b45d4abbbcacdb22a8bc8f10e84cfb4a479476c4a7c8d"
     },
     {
       "path": "src/styles.css",
-      "bytes": 46061,
-      "sha256": "9130272661646169ecd06bdb5a29722f976da4e9b66f2d4c7688bba4eada5d03"
+      "bytes": 47069,
+      "sha256": "2173dca7ca53e0df0aab8e15159ab7c500fb3692a81ca7eceeb3f3c846315273"
     },
     {
       "path": "src/ui/icons.js",
       "bytes": 1228,
       "sha256": "7a391885b01a520eb95ab03540d645f13fdf1798a8a79795b0427fc1d1c5576a"
+    },
+    {
+      "path": "src/ui/score-rollup.js",
+      "bytes": 1175,
+      "sha256": "39e943acbec7487a82498c805507d5efe1a3c22c0b74a58c7960eeb72676a669"
     }
   ]
 }

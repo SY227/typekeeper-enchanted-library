@@ -1,5 +1,5 @@
-# Typekeeper 3.1 — implemented rules
-Ruleset `typekeeper-3.1.0`. These are authored rules for this adaptation, not recovered
+# Typekeeper 3.2 — implemented rules
+Ruleset `typekeeper-3.2.0`. These are authored rules for this adaptation, not recovered
 constants from an inaccessible historical gameplay video.
 
 ## Input
@@ -50,15 +50,19 @@ min(42, 12 + floor((chapter−1)/2) + (trial ? 4 : 0)). Trial intervals follow f
 0.83× intervals then a 1.8× rest; the rest is visible as BREATHE. There is no random
 interval jitter in this ruleset.
 
-For chapters 1–48: Classic speed = 28 + 1.28 × (chapter−1); ordinary interval =
-2.35 − 0.018 × (chapter−1). Relaxed multiplies speed by 0.68 and interval by 1.60.
+For chapters 1–48, interpolate these Classic [chapter, speed, ordinary interval]
+knots: [1,36,1.90], [3,45,1.70], [6,58,1.50], [12,76,1.30], [24,99,1.12],
+[36,116,1.02], [48,132,0.96]. Speed is logical pixels/second; interval is active
+simulation seconds. Relaxed multiplies speed by 0.68 and interval by 1.60.
 Maniac multiplies speed by 1.22 and interval by 0.78. Falling distance is 476 pixels.
 After a full-board manual clear, ordinary empty-field wait is capped at 0.65 seconds.
-Existing cards never accelerate in response to typing skill. Trial rests are not shortened.
+Existing cards never accelerate in response to skill or pile percentage. Trial rests
+are not shortened. Chapter start/finish is the only place the ordinary base changes.
 
-Endless speed rises from the chapter-48 base by 1.05 per subsequent chapter, capped
-at 145 before pace scaling. Base interval decreases by 0.009 per Endless chapter,
-with a 0.85-second floor. Quotas cap at 42. Up to twelve cards can be active.
+Endless speed rises from 132 by 0.65 per subsequent chapter, capped at 170 before
+pace scaling. Base interval decreases by 0.003 per chapter, with a 0.78-second floor.
+The change from chapter 48 to 49 is continuous. Quotas cap at 42. At most twelve cards
+can be active.
 
 Placement uses free horizontal spans with a 10-pixel margin and a 76-pixel spawn-neighbor
 vertical band. A blocked card's chosen word/power is kept for a retry, not rerolled.
@@ -66,8 +70,8 @@ No more live cards spawn than the remaining quota. Recent words are de-prioritiz
 authored live duplicate text is excluded.
 
 Short/medium/long probabilities interpolate between chapter knots:
-1: 100/0/0; 4: 100/0/0; 12: 55/45/0; 24: 20/70/10;
-36: 10/65/25; 48: 8/60/32 percent. Word length cap = min(16, 5 + floor((chapter−1)/3)).
+1: 100/0/0; 3: 85/15/0; 6: 60/40/0; 12: 31/63/6; 24: 10/66/24;
+36: 6/60/34; 48: 5/52/43 percent. Word length cap = min(16, 5 + floor(chapter/2)).
 The same 746-word vocabulary is retained.
 
 Chapter one's third, sixth, ninth and eleventh cards introduce FIRE, ICE, SLOW and WIND.
@@ -98,7 +102,7 @@ starts an independent run at 49 with one book of each type. Death or voluntary r
 records it once; retirement does not claim victory.
 
 ## Saves and records
-Schema 3; current storage key `typekeeper-enchanted-library-v3.1`. v3/v2/v1 keys are
+Schema 3; current storage key `typekeeper-enchanted-library-v3.2`. v3.1/v3/v2/v1 keys are
 read-only migration sources. Old scores are Legacy, not current competitive totals.
 An old checkpoint runs the new mechanics, but its carried old-rule score remains Legacy.
 Mastery stars/unlocks and preferences are preserved. No online service or cross-origin
@@ -109,3 +113,25 @@ At most 100 current and 100 legacy records are kept; each view shows its top ten
 Pace, mode, period and (for practice) chapter filters remain separate. Ties prefer fewer
 recorded retries, then recent date. Today means local midnight; Last 7 days is rolling.
 The local records/save files remain editable, not anti-cheat-secured Steam rankings.
+
+
+## v3.2 vocabulary and presentation
+The same 746 dictionary entries are used. Medium/long mixture knots are:
+[1,0,0], [3,0.15,0], [6,0.40,0], [12,0.63,0.06], [24,0.66,0.24],
+[36,0.60,0.34], [48,0.52,0.43]. Short weight is the remainder. The maximum
+length is min(16, 5 + floor(chapter/2)); an empty filtered bank falls back to a
+shorter bank. Introductory INK/TALE/BOOK/PAGE behavior remains.
+
+Music pressure is separate from simulation. With smoothstep s(d,a,b), the new
+tension scalar is s(pile,20,90) and urgency is s(pile,65,100), during play/trials
+only. Targets: hearth=1−0.24t−0.06u; motion=min(1,sceneMotion+0.12t);
+pressure=0.84t; urgency=0.76u. No pitch/tempo change, damage, or score effect is
+caused by these gains. Lowering danger uses a faster 0.27-second exponential time
+constant; ordinary rises use 0.55 seconds. Turning adaptive music off removes
+only the new two layers and their balancing changes.
+
+Input effects never submit or score. Enter remains mandatory. A result tally runs
+for 1.05 seconds on chapter completion (0.90 seconds after defeat), is skippable,
+and never delays Next/retry. Scores and medals are committed before the first
+animation frame. Switching screens cancels tally sound nodes. Reduced motion
+shows the final value immediately. Particle, glint, texture and sound pools are bounded.

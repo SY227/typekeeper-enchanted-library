@@ -125,8 +125,8 @@ def main():
     api('t.advance(5.1);');assert page.locator('#ready-ice').inner_text()=='READY';assert 'cast-ready' in page.locator('#spell-ice').get_attribute('class')
    check('ICE freezes, shows countdown, rejects active recast, and returns to READY',ice)
    def slow():
-    run();word();api('t.model.inventory.slow=2;t.model.spawnClock=9;t.flush();');y=snap()['words'][0]['y'];page.keyboard.press('3');api('t.advance(1);')
-    assert abs(snap()['words'][0]['y']-y-28*.42)<.1;assert api('return t.model.spawnClock;')>8.2
+    run();word();api('t.model.inventory.slow=2;t.model.spawnClock=9;t.flush();');y=snap()['words'][0]['y'];speed=snap()['words'][0]['speed'];page.keyboard.press('3');api('t.advance(1);')
+    assert abs(snap()['words'][0]['y']-y-speed*.42)<.1;assert api('return t.model.spawnClock;')>8.2
     assert page.locator('#ready-slow').inner_text()=='ACTIVE';page.keyboard.press('3');assert snap()['inventory']['slow']==1
    check('SLOW reduces movement and arrivals while displaying active time',slow)
    def pressure():

@@ -1,18 +1,23 @@
-# Source and evidence boundary — 3.1
+# Source and evidence boundary — 3.2
 
-Primary task source is the user-uploaded Typekeeper_Enchanted_Library_v3.0_Full_App(1).zip.
-The code, bundled rules, test scripts and user request define the starting point.
-Source-derived findings (for example the old speed formula and simultaneous spell timers)
-are separated in the release notes from new authored choices (the new ramp and time bank).
+The primary source is the attached v3.1 ZIP, not an older working branch. The
+user's direct playtest feedback establishes that they experienced the difficulty
+ramp as too slow. Inspection established the old speed/arrival/word-mixture
+formulas and that the music mixed by scene, not current paper-pile percentage.
+Those findings are separate from our deliberately authored new numerical curve.
 
-The historical YouTube references remain:
-- https://www.youtube.com/watch?v=O1b81SRshpE
-- https://www.youtube.com/watch?v=2eRBN-hLKCY
-No moving frames/audio were newly inspected in this mechanics pass. No timings, scores or
-mechanics are attributed to those unseen recordings. The task is now the user's independent
-Typekeeper game, not a claim of exact historical parity.
+The latest requested reference is:
+https://www.youtube.com/watch?v=fWnkhDlnGE8&t=266s
 
-Current outside context was researched only because the user asked about today's Steam
-market. Official platform documents and developers' descriptions inform the release checklist
-and skill/onboarding priorities; they do not validate our game's fun or sales prospects.
-See STEAM_READINESS.md for source URLs, access date and the limits of that comparison.
+The described desired effects are tension as misses accumulate, shining typing,
+success/skill sounds and counting scores. Attempts to retrieve the watch/embed/
+metadata paths did not expose usable moving frames or audio here. The new
+thresholds, notes, effects and count timings are original interpretations; no
+specific timestamp, waveform, instrument or exact reference mechanic is claimed
+as observed. Earlier references remain in the historical documentation.
+
+The build was tested with code, synthetic agents, actual Chromium interaction,
+file/signal checks and controlled screenshots. No real friend-playtest telemetry,
+human listening panel, new market study or native Steam validation was supplied
+or executed in this iteration. Existing Steam planning notes are explicitly retained
+historical research, not proof that any integration or review was completed.

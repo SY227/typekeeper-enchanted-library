@@ -1,0 +1,31 @@
+{
+  "version": "3.2.0",
+  "title": "Lanterns & Letters \u2014 pressure arrangement",
+  "bpm": 90,
+  "bars": 40,
+  "meter": "4/4",
+  "harmony": "Same authored D major / B minor progression as the preserved theme",
+  "stems": {
+    "lanterns-pressure": {
+      "channels": 1,
+      "sampleRate": 32000,
+      "samples": 3413333,
+      "seconds": 106.66665625,
+      "peak": 0.3499999940395355,
+      "rms": 0.056301482021808624,
+      "sha256": "62e2241e648651927eb6f0312f413697ed00d3b2ed42905443da319333834f56"
+    },
+    "lanterns-urgency": {
+      "channels": 1,
+      "sampleRate": 32000,
+      "samples": 3413333,
+      "seconds": 106.66665625,
+      "peak": 0.28999999165534973,
+      "rms": 0.047301094979047775,
+      "sha256": "081b7baf685f5fd2d1da6b7433e0ad2e556bc083f6ee405487d6bf56a366f84d"
+    }
+  },
+  "sourceSamples": "None. Deterministic original synthesis.",
+  "preview": "40 seconds: calm \u2192 building \u2192 critical \u2192 WIND-like relief. Demonstration, not captured gameplay.",
+  "notes": 2080
+}

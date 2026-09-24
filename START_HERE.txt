@@ -1,26 +1,23 @@
-TYPEKEEPER: ENCHANTED LIBRARY — 3.1.0
+TYPEKEEPER: ENCHANTED LIBRARY — 3.2
 
-Extract this archive before playing.
+PLAY: Open PLAY.html, or run START_MAC.command / START_WINDOWS.bat.
+The launchers need existing Python 3 or Node. PLAY.html does not.
 
-Simplest: open PLAY.html in a desktop browser.
-Recommended for stable saves: run START_MAC.command, START_WINDOWS.bat,
-or bash START_LINUX.sh. These use an existing Python 3 or Node.js.
-The full game is also prebuilt in dist/.
+UPDATE AN EXISTING REPO:
+Run UPDATE_EXISTING_MAC.command from the extracted v3.2 folder.
+By default it updates ~/Downloads/Typekeeper_Enchanted_Library_v3_1
+AFTER a backup. .git, .vercel, .env files and existing vercel.json are retained.
+This does not push or deploy. README.md has the subsequent Git commands.
 
-UPGRADING: keep v3.0 and export its save before deleting anything.
-Stop its local server first (Control+C), then run this version at the same
-address, port and browser profile. Original save keys are never overwritten.
-Music, artwork and layout have not been redesigned.
+KEEP YOUR PROGRESS:
+Export a save from Records before changing versions/domains.
+Old settings, unlocks and valid bookmarks migrate at the same browser origin.
+Scores under earlier rules remain Legacy. Start a fresh run for current records.
+Returning users keep their existing mute/music preferences.
 
-3.1 focuses on fair pacing, spell combinations, word/readability fairness,
-chapter retries, consistent continuation, score categories and failure recovery.
-New-rule scores and old-rule scores are deliberately separated.
+CONTROLS:
+Type a word + Enter. 1 Fire, 2 Ice, 3 Slow, 4 Wind. Escape pauses.
+The new pressure score and typing shimmer can be toggled in Settings.
 
-README.md — setup, commands, upgrade behavior
-PLAY.html — embedded complete game
-src/ — complete editable source
-public/assets/ + asset-source/ — unchanged runtime art/music and masters
-docs/RELEASE_NOTES.md — what changed and why
-docs/QA_REPORT.md — measured checks and explicit testing limitations
-
-This is the browser game and full source, not a Steam-installed desktop binary.
+This is a complete browser release candidate, not a native Steam executable.
+See docs/QA_REPORT.md for the executed tests and remaining human/device gates.

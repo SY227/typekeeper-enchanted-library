@@ -1,37 +1,26 @@
-# v3.1 public release sign-off
+# v3.2 release gates
 
-**23 September 2026 — automated web-build gates passed; human/Steam sign-off remains open.**
+## Executed here
+- [x] Uploaded v3.1 source baseline inspected and copied; all original art/audio masters retained.
+- [x] Logic/regression suite; syntax and standalone/static builds.
+- [x] Main, previous polish, mechanics and new pressure browser suites.
+- [x] Separate HTTP file/MIME/hash delivery through both shipped local servers.
+- [x] 48-chapter difficulty sweep; comparative campaigns and extended lifecycle simulations.
+- [x] New four-stem decode/pressure-mix audit; procedural SFX offline render.
+- [x] Original-content preservation and dictionary equality audit.
+- [x] Backup-first updater on isolated synthetic repository folders.
 
-## Completed in this mechanics handoff
+- [x] Clean source-archive extraction, offline install/test/check/build; 43 runtime outputs identical.
 
-- [x] Uploaded v3.0 used as baseline; its original file remains untouched.
-- [x] 52 files in the declared art/music/style/content scope verified byte-identical.
-- [x] Continuous difficulty/vocabulary curves, fair spawn/item cycles, queued spell timers.
-- [x] Deterministic chapter retries, safe transition/input handling and versioned records.
-- [x] 174 logic/storage/property tests, zero failures.
-- [x] 96 browser checks, zero unhandled application JavaScript errors.
-- [x] 60 new and 60 baseline campaign simulations, complete outcomes retained.
-- [x] Every chapter/pace exercised at three seeds: 432 calibration completions.
-- [x] 42 high-pressure cases reached a valid terminal result; 3 assisted long-run soaks passed.
-- [x] Node/Python HTTP payload, MIME, HEAD and 404 checks.
-- [x] Preserved audio decoding and browser mixing/mute/focus regressions.
-- [x] Fresh archive extraction → offline install → 174 tests → syntax → build → 39 matching outputs.
-- [x] Actual-app QA screenshots and raw evidence supplied; no concept imagery presented as play.
+## Required outside this environment
+- [ ] First-time, intermediate and expert human playtests on the deliberately faster curve.
+- [ ] Long-session headphone/speaker listening: tension, fatigue, key/word audibility, loop seams.
+- [ ] Actual Windows/macOS and intended browsers; keyboard layouts, HiDPI, refresh rates.
+- [ ] Real persisted saves after close/reopen, update, browser restart and production-domain use.
+- [ ] Vercel production smoke test after owner deploys; actual same-domain save migration.
+- [ ] Test on lower-memory devices; four decoded music layers cost additional memory.
+- [ ] Commercial name/asset clearance, store claims/disclosures, support/release operations.
+- [ ] Native desktop packaging/Steamworks, review and advertised-platform testing for Steam.
 
-Final archive checksums, CRC integrity and forbidden-font/dependency-cache checks are
-verified by the delivery packaging step; SHA256SUMS.txt provides the reproducible file audit.
-
-## Still required before a commercial Steam launch
-
-- [ ] Actual hardware play sessions on every advertised OS/browser or packaged runtime.
-- [ ] Human first-use, intermediate and expert sessions, including late trials, mistakes,
-      spell comprehension, repeated retry, long-session fatigue and voluntary replay.
-- [ ] Actual save migration/export/import and persistence across quit/reopen on intended origins.
-- [ ] Full-screen, Alt-Tab, DPI/resolution changes, keyboard layouts, audio devices and interruptions.
-- [ ] Human music/effects listening approval using speakers and headphones over several loops.
-- [ ] Desktop packaging, Steam launch/depot configuration and any advertised Steam integration.
-- [ ] Genuine gameplay store material, commercial asset/name provenance review and Valve review.
-- [ ] A designed/tested controller or handheld path before claiming those input modes.
-
-These are not disguised completed tasks. See STEAM_READINESS.md for current official
-references and the proposed, not-yet-executed human test protocol. Virality is not certified.
+Automated passes do not turn the unchecked items into completed work. No certification,
+human listening, sales result or prediction of virality is represented by this checklist.

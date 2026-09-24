@@ -1,170 +1,158 @@
 # Typekeeper: Enchanted Library
 
-**Version 3.1.0 · 23 September 2026 — mechanics and player-experience pass**
+**Version 3.2.0 · 23 September 2026 · faster pacing and pressure-responsive feedback**
 
-A complete browser-native typing game: 48 chapters, eight library wings, four spells, reactive character expressions, a chapter atlas, local records, and an original layered soundtrack. This is the full source-and-assets handoff, not a screenshot prototype or a download wrapper.
+Built directly from the supplied v3.1 archive. This full browser game includes its
+source, 48 chapters, eight wings, three difficulties, four spells, expressive
+Typekeeper, mastery, practice, Endless, original music, tests and local launchers.
+No account, API key, CDN, game-engine installation or runtime package download is needed.
 
 ## Play
 
-Extract the archive. Open **PLAY.html** in a desktop browser for the self-contained edition. It includes all game code, artwork and music; no account, engine, API key, npm installation or server is needed for this edition. Browser handling of local-file saves varies; the local server is the recommended path for a stable storage origin.
-
-For the normal website, double-click **START_MAC.command** or **START_WINDOWS.bat**. The launcher uses an already-installed Python 3 or Node.js. On Linux, run `bash START_LINUX.sh`. Python 3.9+ or Node 20+ is expected; Python 3.13.5 and Node 22.16.0 were used in the delivery environment.
-
-### Mac Terminal
-
-Download the ZIP to Downloads, then:
+Extract the archive and open `PLAY.html`, or double-click `START_MAC.command` /
+`START_WINDOWS.bat` for the prebuilt website at a local HTTP address. On Linux use
+`bash START_LINUX.sh`. The server launchers use an existing Python 3.9+ or Node 20+.
+The standalone HTML needs neither. Real Safari/Windows/macOS testing remains a release gate.
 
 ```bash
-cd "$HOME/Downloads" && \
-unzip -o "Typekeeper_Enchanted_Library_v3.1_Full_App.zip" && \
-cd "Typekeeper_Enchanted_Library_v3_1" && \
+cd "$HOME/Downloads"
+unzip -o "Typekeeper_Enchanted_Library_v3.2_Full_App.zip"
+cd "Typekeeper_Enchanted_Library_v3_2"
 bash START_MAC.command
 ```
 
-The server binds only to 127.0.0.1, starting at port 4173. A busy port causes it to try the next available port. Keep that terminal open while playing; **Control+C** stops it. To use a fixed alternative port explicitly:
+Stop an earlier local server with Control+C to reuse its origin and existing saves.
+The separate v3.2 directory leaves the earlier release intact.
+
+## Update your existing GitHub + Vercel project
+
+The included updater copies v3.2 into your existing v3.1 project **after making a
+local backup of its game files**. It preserves `.git`, `.vercel`, environment files,
+and your existing `vercel.json`. It never deletes a repository, force-pushes, logs
+in, changes account settings, or deploys by itself. Backups live beside your project
+under `Typekeeper_Backups`. Export a game save before updating.
 
 ```bash
-python3 scripts/server.py --port 8090 --open
+bash "$HOME/Downloads/Typekeeper_Enchanted_Library_v3_2/scripts/apply-update.sh" "$HOME/Downloads/Typekeeper_Enchanted_Library_v3_1"
+cd "$HOME/Downloads/Typekeeper_Enchanted_Library_v3_1"
+npm test
+npm run build
+git add .
+git commit -m "Typekeeper v3.2: faster pace and adaptive feedback"
+git push
 ```
 
-Do not double-click the source `index.html` or `dist/index.html`: those editions use ES modules and need HTTP. Use `PLAY.html` for direct opening.
+The updater accepts another existing Typekeeper path as its first argument. If your
+Git integration is connected, the push should trigger the existing Vercel project.
+This update was tested on synthetic local folders, **not your actual Mac/repository**.
+No remote GitHub/Vercel change was performed in preparing this archive.
 
-## Upgrading from v3.0 / v2
+A new Vercel import uses Framework **Other**, Build `npm run build`, Output `dist`,
+Install `npm ci`, and repository root. Keep using your established production domain;
+save storage is origin-specific. New random preview URLs have separate storage.
 
-The archive extracts to **Typekeeper_Enchanted_Library_v3_1**, leaving the old
-folder intact. Stop the old local server first, then reuse the same address,
-port and browser profile. **Export the old save before removing anything.**
+## What's different in 3.2
 
-The new key is `typekeeper-enchanted-library-v3.1`. It reads valid v3, v2 and v1
-saves when no current save exists. Original keys are never overwritten or deleted.
-Settings, unlocked chapters, earned stars and valid campaign bookmarks are kept.
-Old score totals go to **Records → Legacy**, because pacing and spells changed.
-An old bookmarked campaign can continue under the new mechanics, but its final
-mixed-version total stays in Legacy. A fresh run earns current-ruleset records.
-New-rule practice records are also filtered by the chapter attempted.
+- **Earlier challenge:** authored speed/arrival knots bring pressure forward, and
+  medium words start entering chapter 2. No skill-based mid-word rubber banding.
+- **Pressure music:** two original synchronized layers enter smoothly as the pile
+  rises; urgent double-time articulation grows above 65%. WIND releases them quickly.
+  The original theme, tempo and original two stems are retained, not sped up.
+- **Typing feel:** small matching-letter glints, full-word-ready chime, a paper sheen
+  on completion, and short gold score sparks. Enter is still required.
+- **Foley:** varied mechanical keys, weighted paper impacts, separate bonus/book/streak
+  rewards, distinct spell cues, natural effect endings and page turns.
+- **Results:** a short interruptible bonus count with restrained tick/seal sounds.
+  Points and stars are saved first. Next/retry never waits for the animation.
+- **Quiet alternatives:** independent pressure-music and typing-shimmer switches;
+  global mute, per-bus levels and reduced motion remain honored.
 
-Migration cannot cross browser profiles or addresses. For a different origin,
-use **Records → Export save** in the old app, then **Import save** here. Local-file
-storage behavior varies by browser, so the local server is recommended. A corrupt
-stored save is preserved in a bounded `-recovery` key before falling back to an
-intact older save; it is not silently discarded. Save import is local, not cloud sync.
-
-Previous audio settings are retained. Music is not recomposed in this release.
+The artwork, chapter names, HTML composition, four spells, item capacities, scoring
+formula, star requirements, trial rests, retry safeguards and no-waste protections
+are preserved. A large streak label now yields to live words rather than covering them.
 
 ## Controls
 
-| Input | Action |
-|---|---|
-| Letters + Enter | Type and submit a falling word |
-| Backspace / cursor / selection | Edit the current word |
-| 1 / 2 / 3 / 4 | FIRE / ICE / SLOW / WIND |
-| Click a glowing spell book | Cast without losing the typed word |
-| Spell name + Enter | Alternate way to cast a stored spell |
-| Escape | Pause; resume or return from menus |
-| Speaker icon | Mute/unmute **all** audio |
+Type a displayed word and press **Enter**. Backspace and normal cursor/selection editing
+work. Number keys/numpad **1 FIRE · 2 ICE · 3 SLOW · 4 WIND** cast without replacing your
+buffer. Spell names plus Enter also work when no exact live word takes precedence.
+Escape pauses. Clicking the result total skips its count-up. No auto-submit was added.
 
-Keyboard shortcuts preserve the buffer and selection. Holding Enter or a spell key does not repeat the action. Colored word cards earn spell books; books glow when ready. An active ICE/SLOW recast, empty-field FIRE and empty-pile WIND do not waste stock. Instructions and scoring details live in **How to play**, not permanently around the playfield.
+FIRE burns cards without granting points, books or chapter progress. ICE freezes cards
+and arrivals for six active seconds. SLOW saves eight seconds of 42%-speed falling,
+waiting behind ICE. WIND clears the accumulated paper pile. Empty/unavailable casts
+never waste stock. Up to three books of each spell can be stored.
 
-## Music
+## Saves and records
 
-**Lanterns & Letters** is an original 40-bar, 90 BPM instrumental loop, approximately 1:47 long. The hearth stem carries the piano-like lead, plucked figures, soft bells, bass and pads. A synchronized motion stem adds light percussion and answering notes during play and trials. Menu, pause, results and gameplay mix the same ongoing audio clock instead of restarting a short loop.
+3.2 writes `typekeeper-enchanted-library-v3.2` and reads previous v3.1/v3/v2/v1 keys
+without rewriting those older keys. Settings, chapter unlocks, stars and valid bookmarks
+migrate. Prior scores move to **Legacy** because the pace changed. A resumed old-rule
+run keeps its score provenance in Legacy; a fresh expedition earns current records.
 
-Music begins after a player gesture. Settings provide master, music and effects levels. Background focus loss suspends audio and pauses play. Missing/blocked audio never stops the game. Both stems, a listening MP3, lossless FLAC masters, MIDI arrangement and deterministic composition script are included. See `docs/MUSIC_PRODUCTION.md` for provenance and measured audio properties.
+Old mute/music preferences are retained. Pressure music and typing shimmer are on by
+default unless subsequently disabled. Audio unlocks on interaction. After tab/focus
+loss, music is suspended and gameplay requires deliberate resume.
 
-## Mechanics changes
+All progress and records remain in the player's browser; there is no global leaderboard
+or account sync. Storage-blocked/private contexts can lose data. Export/import is
+available in Records. A new domain is a new save origin; import an exported save there.
 
-All 48 chapters have a continuous speed/vocabulary curve, with separate Relaxed,
-Classic and Maniac tuning. Empty-field waits shorten after a quick clear without
-changing the speed of already falling cards. Special cards use shuffled four-spell
-cycles; there are no rolls repeatedly redrawn because a spawn lane is blocked.
+## Build and test
 
-SLOW keeps its full remaining duration while ICE is active. A stocked but useless
-FIRE/WIND book says STORED instead of flashing READY. Simultaneous spell/streak
-feedback no longer prints overlapping words in the same location. The game still
-requires Enter; missing a word is not refunded, but immediate submission of that
-just-landed word has a 0.35-second guard against an additional typo penalty.
-
-Campaign death offers **Retry chapter** from the stored chapter-opening score,
-books and pile. Retrying restores the same seeded opening rather than rerolling
-it. Failed-attempt points do not accumulate into the retry. Practice can earn
-stars on an unlocked chapter without secretly unlocking the campaign's next one.
-Endless can be ended from the pause menu and its score is recorded as retired.
-
-## Source workflow
-
-No npm packages are required by the game or its build:
+Node 20+; tested here with Node 22.16.0. The main project has no npm dependencies.
 
 ```bash
 npm ci --offline --ignore-scripts --no-audit --no-fund
 npm test
 npm run check
-npm run dev
-```
-
-`npm run dev` serves the source using the included Node server. Stop it with Control+C. Rebuild and preview:
-
-```bash
 npm run build
-npm run preview
-```
-
-The build recreates **dist/** and **PLAY.html**. Node scripts use only the standard library. Network access is not required for this build. The runtime has no font CDN, telemetry, ads or remote music dependency.
-
-Optional art exports use `scripts/asset-requirements.txt` and `npm run assets`. Optional soundtrack regeneration uses `scripts/audio-requirements.txt`, ffmpeg with libmp3lame, and `npm run audio`. Neither is needed to play or to rebuild using the included assets. The full custom sound is in FLAC; MIDI is an editable arrangement, not a guarantee of matching timbres in another synthesizer.
-
-### Reproduce the mechanics audits
-
-```bash
-npm test
 npm run test:balance
 npm run test:endurance
 ```
 
-The balance audit runs synthetic agents, not human playtests. It writes the raw
-60 campaign attempts and 432 isolated chapter attempts to `docs/qa/`.
-A comparison can use a separately extracted v3.0 baseline:
-
-```bash
-node scripts/playtest-simulation.mjs --baseline /absolute/path/to/v3/project
-```
-
-Optional browser checks need the packages in `e2e/requirements.txt` and an installed
-Playwright browser. Normal HTTP execution should be preferred on your machine:
+`npm run dev` serves source; `npm start` serves the prebuilt `dist` folder. Python
+Playwright/Chromium are optional authoring dependencies for browser audits:
 
 ```bash
 python3 -m pip install -r e2e/requirements.txt
 python3 -m playwright install chromium
-npm run test:e2e
-npm run test:polish
-npm run test:mechanics
+python3 e2e/browser_tests.py --inline
+python3 e2e/polish_tests.py
+python3 e2e/mechanics_tests.py
+python3 e2e/pressure_tests.py
+python3 e2e/feedback_performance.py
 ```
 
-`test:polish` and `test:mechanics` explicitly load the standalone file in browser
-memory. `test:e2e -- --inline` is the managed-browser fallback, not HTTP coverage.
-All three accept `--executable /path/to/chromium`. Diagnostics are enabled only in
-the test fixture, never in an ordinary launch of PLAY.html.
+Each browser script accepts `--executable /absolute/path/to/chromium`. The execution
+environment used for this delivery blocks local browser navigation; these audits
+execute the real shipping standalone HTML in memory with only its diagnostic access
+guard enabled. Separate Node/Python HTTP payload checks verify bytes and MIME types,
+not browser HTTP execution. Do not treat this as Safari, Windows, Steam Deck or
+installation/save-persistence validation on physical hardware.
 
-## Contents
+## Audio authoring and previews
 
-| Path | Purpose |
-|---|---|
-| PLAY.html | Embedded, standalone game |
-| dist/ | Production static site ready to upload to a static host |
-| src/ | Complete editable model, rendering, UI, audio and data modules |
-| public/assets/ | Local runtime artwork, spell vectors, expressions and two MP3 stems |
-| asset-source/ | Illustration masters, expression assets/rig, vector masters, soundtrack source |
-| scripts/ | Build, static servers, asset/audio generation and audits |
-| tests/ | Node logic, storage, rules and polish regressions |
-| e2e/ | Optional Playwright browser audit scripts |
-| docs/ | Current rules, release notes, music, evidence and release checks |
-| tools/ | Optional, unexecuted Blender/Unreal **artwork** review/import helpers |
+`asset-source/music/pressure-and-relief-preview.mp3` is a 40-second **authored
+listening demonstration** of the new pressure layers and release, not gameplay audio.
+`asset-source/audio/Typekeeper_SFX_Preview.mp3` is a 20-second reel rendered through
+the actual GameAudio synthesis in OfflineAudioContext; its cue sheet is included.
+Both previews are optional files outside the normal deployed payload.
 
-## Hosting
+The original theme remains under `asset-source/music/lanterns-and-letters.*`.
+Additional pressure/urgency FLAC masters, MIDI, event JSON and generation code are
+included. Rebuild additions with `npm run audio:pressure` then `npm run build`.
+See `docs/MUSIC_PRODUCTION.md` for Python/ffmpeg dependencies and mixing details.
+No third-party audio samples or font files are bundled.
 
-Upload the **contents of dist/** to a static web host, keeping relative paths intact. Vercel and Netlify configuration files are included. This is a browser-native Canvas 2D game, not an Unreal executable, streaming service, or authenticated multiplayer service. Records are genuinely local to the browser.
+## Evidence and release boundary
 
-## Validation and release boundary
+`docs/QA_REPORT.md` records the actual test results, assumptions, unresolved gates
+and file preservation. Raw current evidence is in `docs/qa`; historic results are
+under `docs/qa/v3.1-baseline`. `docs/RULES.md` and `docs/DIFFICULTY_TABLE.md` define
+the actual numerical behavior. `SHA256SUMS.txt` covers the delivered package.
 
-Read **docs/QA_REPORT.md** and **docs/RELEASE_CHECKLIST.md**. Automated checks cover the shipped logic, embedded Chromium interaction and audio, HTTP payload integrity and clean rebuilding. The managed browser does not allow local HTTP/file URL navigation; embedded interaction tests and server integrity checks are separate. This handoff does not certify actual macOS Safari, mobile keyboard ergonomics, live hosting, human difficulty testing, commercial identity clearance, or studio-quality listening approval. A Steam desktop package, depot configuration, any advertised Steamworks features, and Valve review are separate release gates; see `docs/STEAM_READINESS.md`.
-
-The longer reference video's moving frames/audio could not be accessed. The score is newly authored to the requested relaxing, rhythmic mood, not a copy or verified reconstruction of that recording.
+The latest reference video was not accessible for frame/audio inspection. Additions
+are original interpretations of the user's described pressure, shine and score sounds,
+not verified source-video parity. No human fun/retention/music test, Steam package,
+Valve approval, Unreal port, or commercial/viral success is claimed.

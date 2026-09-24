@@ -1,12 +1,8 @@
-
-> typekeeper-enchanted-library@3.1.0 test:endurance
-> node scripts/endurance-audit.mjs
-
 ┌─────────┬───────────┬─────────────────────────────────────────────────────────┬───────────────────┬─────────────┬─────────┬─────────┬───────────┬──────────────┬───────────┬─────────┬────────┐
 │ (index) │ pace      │ kind                                                    │ chaptersCompleted │ lastChapter │ seconds │ steps   │ peakWords │ replayEvents │ truncated │ score   │ passed │
 ├─────────┼───────────┼─────────────────────────────────────────────────────────┼───────────────────┼─────────────┼─────────┼─────────┼───────────┼──────────────┼───────────┼─────────┼────────┤
-│ 0       │ 'relaxed' │ 'resource-assisted reliability soak, not a fair player' │ 152               │ 201         │ 22851   │ 1371201 │ 1         │ 21641        │ false     │ 3552861 │ true   │
-│ 1       │ 'classic' │ 'resource-assisted reliability soak, not a fair player' │ 152               │ 201         │ 19113   │ 1146961 │ 3         │ 20243        │ false     │ 3549981 │ true   │
-│ 2       │ 'maniac'  │ 'resource-assisted reliability soak, not a fair player' │ 152               │ 201         │ 16053   │ 963361  │ 4         │ 19174        │ false     │ 3543453 │ true   │
+│ 0       │ 'relaxed' │ 'resource-assisted reliability soak, not a fair player' │ 152               │ 201         │ 22217   │ 1333201 │ 2         │ 21414        │ false     │ 3654577 │ true   │
+│ 1       │ 'classic' │ 'resource-assisted reliability soak, not a fair player' │ 152               │ 201         │ 16781   │ 1007041 │ 3         │ 19389        │ false     │ 3654367 │ true   │
+│ 2       │ 'maniac'  │ 'resource-assisted reliability soak, not a fair player' │ 152               │ 201         │ 14145   │ 848881  │ 4         │ 18526        │ false     │ 3604263 │ true   │
 └─────────┴───────────┴─────────────────────────────────────────────────────────┴───────────────────┴─────────────┴─────────┴─────────┴───────────┴──────────────┴───────────┴─────────┴────────┘
-High-pressure scenarios 42 all terminated normally; wins 38
+High-pressure scenarios 42 all terminated normally; wins 18

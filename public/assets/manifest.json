@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0",
+  "version": "3.2.0",
   "assets": [
     {
       "id": "book-fire",
@@ -86,6 +86,22 @@
       "path": "assets/lanterns-motion.mp3",
       "bytes": 2134977,
       "sha256": "0aa59a016fedf4ae21d73743f40b3c852e89d62dd58f976fceca139d4446633f",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "lanterns-pressure",
+      "path": "assets/lanterns-pressure.mp3",
+      "bytes": 1281072,
+      "sha256": "62e2241e648651927eb6f0312f413697ed00d3b2ed42905443da319333834f56",
+      "provenance": "Original procedural vector artwork, texture, or synthesized audio",
+      "status": "shipped"
+    },
+    {
+      "id": "lanterns-urgency",
+      "path": "assets/lanterns-urgency.mp3",
+      "bytes": 1281071,
+      "sha256": "081b7baf685f5fd2d1da6b7433e0ad2e556bc083f6ee405487d6bf56a366f84d",
       "provenance": "Original procedural vector artwork, texture, or synthesized audio",
       "status": "shipped"
     },

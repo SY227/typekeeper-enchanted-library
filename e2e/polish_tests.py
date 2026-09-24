@@ -50,15 +50,15 @@ def main():
   def gesture():
    assert audio()['state']=='uninitialized'
    button('settings').click();page.wait_for_function("window.__TM_TEST__.audioState().musicStatus==='ready'",timeout=16000)
-   a=audio();assert a['state']=='running';assert a['sources']==2;assert a['music'] and a['sfx'];assert a['output']>0
+   a=audio();assert a['state']=='running';assert a['sources']==4;assert a['music'] and a['sfx'];assert a['output']>0
    api('window.__initialSources=t.audio.sources.slice();window.__scoreStart=t.audio.startedAt;')
   check('Real first click unlocks original music without autoplay overrides',gesture)
   def decoded():
    a=audio();assert 106.6<a['loopDuration']<106.7
-   assert api('return t.audio.buffers.every(b=>b.numberOfChannels===2);')
+   assert api('return t.audio.buffers.every((b,i)=>b.numberOfChannels===(i<2?2:1));')
    assert api('return t.audio.buffers.every(b=>b.getChannelData(0).some(x=>Math.abs(x)>.01));')
-   assert a['decodedBytes']<80*1024*1024
-  check('Both stereo stems decode, contain signal and share the authored loop duration',decoded)
+   assert a['decodedBytes']<140*1024*1024
+  check('Four authored stems decode, contain signal and share the authored loop duration',decoded)
   def scene():
    menu();page.wait_for_timeout(1000);m=audio()['stemGains'][1]
    run();page.wait_for_timeout(1600);g=audio()['stemGains'][1]
@@ -85,11 +85,11 @@ def main():
    page.locator('[data-toggle="music"]').click();page.wait_for_timeout(2800)
    assert audio()['musicGain']<.001;assert audio()['fxGain']>.1
    page.locator('[data-toggle="music"]').click();page.wait_for_timeout(1600)
-   assert audio()['musicGain']>.1;assert audio()['sources']==2
+   assert audio()['musicGain']>.1;assert audio()['sources']==4
   check('Music toggle fades rather than resetting playback or disabling effects',music_off)
   def transitions():
    for _ in range(8):menu();settings('display');settings('gameplay');settings('audio')
-   assert audio()['sources']==2;assert api('return t.audio.sources.every((s,i)=>s===window.__initialSources[i]);')
+   assert audio()['sources']==4;assert api('return t.audio.sources.every((s,i)=>s===window.__initialSources[i]);')
   check('Repeated modal transitions do not duplicate music sources',transitions)
   def pausemix():
    run();api("t.word('ARCHIVE');");page.keyboard.press('Escape');page.wait_for_timeout(2200)

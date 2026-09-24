@@ -1,20 +1,30 @@
-# Source and asset provenance — 3.1
+# Source and asset provenance — 3.2
 
-Baseline: the user-uploaded Typekeeper_Enchanted_Library_v3.0_Full_App(1).zip.
-No new art, music, fonts or external assets were introduced. The original 24 master files
-and 22 public asset/manifest files are byte-identical. Layout HTML/CSS, audio code, icons,
-chapter data and pressure thresholds are also hash-compared; see qa/preservation-audit.json.
-That audit lists 52 unchanged files in those scopes, not a claim every source file is unchanged.
+Baseline: the user-uploaded Typekeeper_Enchanted_Library_v3.1_Full_App(1).zip.
+The original 24 asset-source files and 21 previous runtime art/audio files are
+byte-identical. The asset manifest is intentionally regenerated for two additions.
+Chapter data, controls, pressure bands, clock, icons, HTML layout and Vercel config
+are also retained: 52 unchanged files in the stated scope, not every source file.
+All three dictionary arrays deep-equal the baseline (746 entries).
 
-The prior v3 library/character imagery and registered facial expressions remain as supplied.
-The existing Lanterns & Letters soundtrack, its stems, MIDI, synthesis script and masters
-are retained. Earlier provenance is preserved in qa/v3-baseline/documentation/PROVENANCE.md
-and MUSIC_PRODUCTION.md. No original-publisher art was newly extracted from video.
+New pressure/urgency audio is original deterministic mathematical synthesis,
+with no third-party recordings, sample packs or extracted source-video audio.
+The two new mono runtime MP3 files, FLAC masters, editable MIDI, authored event
+JSON and generation script are included. The 40-second pressure-preview mix
+is a demonstration rather than gameplay. The SFX reel is rendered from the
+actual GameAudio class in OfflineAudioContext and has a labeled cue sheet.
 
-Renderer changes only correct feedback concurrency and inactive SLOW-state depiction.
-The screenshots are actual controlled browser states. Example scores in screenshots/test
-saves are synthetic QA data and never prepopulate a normal player's game.
+Typing sheen and score glints are Canvas effects, not generated replacement
+illustrations. New interface markup only adds controls/feedback within the
+existing design. Original painted library, typist and face masters are retained.
+Earlier source lineage is archived under qa/v3.1-baseline/documentation and
+qa/v3.1-baseline/v3-baseline/documentation.
 
-No font binaries are packaged. Runtime files stay local and do not rely on a font CDN,
-remote audio, external inference service, advertising or telemetry. File hashes establish
-integrity, not trademark clearance, publisher affiliation or commercial approval.
+No original-publisher visuals/sounds were newly extracted. The reference video's
+moving frames/audio were inaccessible; new cues do not claim historical parity.
+No fonts, account secrets, external sample libraries or model keys are bundled.
+The normal game loads only its own supplied assets and has no telemetry backend.
+
+Screenshots show actual controlled browser fixtures. Their scores are QA data,
+not preloaded records or independent human play. Hashes establish file integrity,
+not trademark clearance, third-party affiliation or commercial approval.

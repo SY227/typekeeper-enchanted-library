@@ -1,0 +1,197 @@
+{
+  "version": 3,
+  "settings": {
+    "sfx": true,
+    "music": true,
+    "muted": false,
+    "motion": true,
+    "spellPulse": true,
+    "contrast": false,
+    "detailedHUD": false,
+    "hints": true,
+    "resumeCountdown": false,
+    "pace": "classic",
+    "volume": 0.8,
+    "musicVolume": 0.5,
+    "sfxVolume": 0.65
+  },
+  "records": [
+    {
+      "score": 5090,
+      "level": 48,
+      "date": 1790202769228,
+      "pace": "classic",
+      "ruleset": "typekeeper-3.1.0",
+      "mode": "campaign",
+      "legacyMode": "campaign",
+      "victory": true,
+      "retired": false,
+      "words": 1,
+      "streak": 1,
+      "missed": 0,
+      "seconds": 0,
+      "medals": 3,
+      "cleared": 1,
+      "seed": 123,
+      "burned": 0,
+      "retries": 0,
+      "startLevel": 48,
+      "wpm": 0,
+      "accuracy": 100
+    },
+    {
+      "score": 390,
+      "level": 1,
+      "date": 1790202769029,
+      "pace": "classic",
+      "ruleset": "typekeeper-3.1.0",
+      "mode": "practice",
+      "legacyMode": "practice",
+      "victory": false,
+      "retired": false,
+      "words": 1,
+      "streak": 1,
+      "missed": 0,
+      "seconds": 0,
+      "medals": 3,
+      "cleared": 1,
+      "seed": 192580276,
+      "burned": 0,
+      "retries": 0,
+      "startLevel": 1,
+      "wpm": 0,
+      "accuracy": 100
+    },
+    {
+      "score": 40,
+      "level": 1,
+      "date": 1790202769458,
+      "pace": "classic",
+      "ruleset": "typekeeper-3.1.0",
+      "mode": "campaign",
+      "legacyMode": "campaign",
+      "victory": false,
+      "retired": false,
+      "words": 1,
+      "streak": 1,
+      "missed": 0,
+      "seconds": 0,
+      "medals": 0,
+      "cleared": 0,
+      "seed": 123,
+      "burned": 0,
+      "retries": 0,
+      "startLevel": 1,
+      "wpm": 0,
+      "accuracy": 50
+    }
+  ],
+  "progress": {
+    "classic": {
+      "unlocked": 48,
+      "stages": {
+        "1": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 840,
+          "wpm": 3,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.1.0"
+        },
+        "48": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 5090,
+          "wpm": 0,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.1.0"
+        }
+      }
+    },
+    "relaxed": {
+      "unlocked": 1,
+      "stages": {}
+    },
+    "maniac": {
+      "unlocked": 1,
+      "stages": {}
+    }
+  },
+  "checkpoints": {
+    "relaxed": {
+      "version": 3,
+      "ruleset": "typekeeper-3.1.0",
+      "nextLevel": 1,
+      "seed": 4074670997,
+      "nextId": 1,
+      "pace": "relaxed",
+      "mode": "campaign",
+      "startLevel": 1,
+      "score": 0,
+      "danger": 0,
+      "inventory": {
+        "fire": 0,
+        "ice": 0,
+        "slow": 0,
+        "wind": 0
+      },
+      "powerBag": [],
+      "pile": [],
+      "time": 0,
+      "correct": 0,
+      "wrong": 0,
+      "missed": 0,
+      "correctCharacters": 0,
+      "bestStreak": 0,
+      "streak": 0,
+      "burned": 0,
+      "retries": 0,
+      "stageHistory": [],
+      "casts": {
+        "fire": 0,
+        "ice": 0,
+        "slow": 0,
+        "wind": 0
+      }
+    },
+    "classic": {
+      "version": 3,
+      "ruleset": "typekeeper-3.1.0",
+      "nextLevel": 1,
+      "seed": 123,
+      "nextId": 1,
+      "pace": "classic",
+      "mode": "campaign",
+      "startLevel": 1,
+      "score": 0,
+      "danger": 0,
+      "inventory": {
+        "fire": 0,
+        "ice": 0,
+        "slow": 0,
+        "wind": 0
+      },
+      "powerBag": [],
+      "pile": [],
+      "time": 0,
+      "correct": 0,
+      "wrong": 0,
+      "missed": 0,
+      "correctCharacters": 0,
+      "bestStreak": 0,
+      "streak": 0,
+      "burned": 0,
+      "retries": 0,
+      "stageHistory": [],
+      "casts": {
+        "fire": 0,
+        "ice": 0,
+        "slow": 0,
+        "wind": 0
+      }
+    }
+  },
+  "game": "Typekeeper: Enchanted Library",
+  "appVersion": "3.1.0",
+  "exportedAt": "2026-09-23T22:32:51.667Z"
+}

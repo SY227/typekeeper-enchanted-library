@@ -11,8 +11,8 @@ export const WORD_COUNT = Object.values(WORD_BANK).reduce((n,a) => n+a.length,0)
 /** Authored continuous weights avoid sudden vocabulary cliffs at wing boundaries. */
 export function wordDistribution(level) {
  const n=Math.max(1,Math.floor(Number(level)||1));
- const stops=[[1,0,0],[4,0,0],[12,.45,0],[24,.70,.10],[36,.65,.25],[48,.60,.32]];
- let medium=.60,long=.32;
+ const stops=[[1,0,0],[3,.15,0],[6,.40,0],[12,.63,.06],[24,.66,.24],[36,.60,.34],[48,.52,.43]];
+ let medium=.52,long=.43;
  for(let i=1;i<stops.length;i++)if(n<=stops[i][0]){
   const a=stops[i-1],b=stops[i],t=Math.max(0,(n-a[0])/(b[0]-a[0]));
   medium=a[1]+(b[1]-a[1])*t;long=a[2]+(b[2]-a[2])*t;break;
@@ -23,7 +23,7 @@ const levelBanks=new Map();
 export function banksForLevel(level) {
  const n=Math.min(48,Math.max(1,Math.floor(Number(level)||1)));
  if(!levelBanks.has(n)) {
-  const maxLength=Math.min(16,5+Math.floor((n-1)/3));
+  const maxLength=Math.min(16,5+Math.floor(n/2));
   const medium=WORD_BANK.medium.filter(w=>w.length<=maxLength);
   const long=WORD_BANK.long.filter(w=>w.length<=maxLength);
   levelBanks.set(n,{short:WORD_BANK.short,medium:medium.length?medium:WORD_BANK.short,long:long.length?long:medium.length?medium:WORD_BANK.short});
