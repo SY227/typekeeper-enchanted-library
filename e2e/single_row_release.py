@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""v3.3.6 shipping standalone and ES-module browser regression suite.
+"""v3.4.0 shipping standalone and ES-module browser regression suite.
 Controlled fixtures are clearly separated from user-input journeys. One Python
 process observes actual Canvas fillText calls, not only helper return values.
 """
@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 from inline_fixture import inline_fixture
 from module_fixture import module_fixture
 import argparse,json,subprocess,hashlib,time
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'docs/qa';SHOTS=ROOT/'docs/screenshots/v3.3.6'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa340';SHOTS=ROOT/'docs/screenshots/v3.4.0'
 
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--executable',default='/usr/bin/chromium');ap.add_argument('--mode',choices=['standalone','modules'],default='standalone');args=ap.parse_args()
@@ -30,9 +30,9 @@ def main():
     page.screenshot(path=str(OUT/f'single-row-failure-{args.mode}-{len(rows)+1}.png'))
    rows.append(row);print(row,flush=True)
   def identity():
-   assert api('return t.info.version;')=='3.3.6';assert 'v3.3.6' in page.title();assert page.locator('html').get_attribute('data-build')=='3.3.6'
-   assert api('return t.info.buildTag;')=='scroll-layout-repair-336'
-  check('Shipping document, running engine and browser title identify v3.3.6',identity)
+   assert api('return t.info.version;')=='3.4.0';assert 'v3.4.0' in page.title();assert page.locator('html').get_attribute('data-build')=='3.4.0'
+   assert api('return t.info.buildTag;')=='chapter-atmospheres-elemental-340'
+  check('Shipping document, running engine and browser title identify v3.4.0',identity)
   def full_matrix(width,height,dpr=1):
    page.set_viewport_size({'width':width,'height':height});run(48)
    r=page.evaluate(r'''async words=>{
@@ -100,7 +100,7 @@ def main():
   check('Captured actual game frames show complete long words at 1366 and 1920 widths',screenshot)
   # Full shipping production guard is checked in a fresh page, without debug edits.
   def guard():
-   q=b.new_page();q.set_content(inline_fixture(ROOT,diagnostics=False) if args.mode=='standalone' else module_fixture(ROOT,diagnostics=False));q.wait_for_selector('[data-action="start"]');assert q.evaluate('typeof window.__TM_TEST__')=='undefined';assert 'v3.3.6' in q.title();q.close()
+   q=b.new_page();q.set_content(inline_fixture(ROOT,diagnostics=False) if args.mode=='standalone' else module_fixture(ROOT,diagnostics=False));q.wait_for_selector('[data-action="start"]');assert q.evaluate('typeof window.__TM_TEST__')=='undefined';assert 'v3.4.0' in q.title();q.close()
   check('Normal production export exposes no test seam',guard)
   def retina():
    q=b.new_page(viewport={'width':1366,'height':768},device_scale_factor=2);q.on('pageerror',lambda e:errors.append(str(e)))
@@ -109,9 +109,9 @@ def main():
   check('DPR 2 Retina-style scaling retains one row for full long words',retina)
   def stale_guard():
    q=b.new_page();h=inline_fixture(ROOT,diagnostics=False) if args.mode=='standalone' else module_fixture(ROOT,diagnostics=False)
-   h=h.replace('name="typekeeper-version" content="3.3.6"','name="typekeeper-version" content="3.3.1"');q.set_content(h);q.wait_for_selector('text=Mixed game files detected');assert q.locator('[data-action="start"]').count()==0;q.close()
+   h=h.replace('name="typekeeper-version" content="3.4.0"','name="typekeeper-version" content="3.3.1"');q.set_content(h);q.wait_for_selector('text=Mixed game files detected');assert q.locator('[data-action="start"]').count()==0;q.close()
   check('Fault injection: mixed HTML/JS release identity stops launch with an explicit error',stale_guard)
   check('No unhandled browser errors occurred' ,lambda:(_ for _ in ()).throw(AssertionError(errors)) if errors else None)
-  report={'version':'3.3.6','mode':args.mode+' in-memory browser fixture','browser':b.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(x['status']=='PASS' for x in rows),'failed':sum(x['status']=='FAIL' for x in rows),'unhandledErrors':errors,'evidence':evidence};(OUT/f'single-row-{args.mode}.json').write_text(json.dumps(report,indent=2));b.close()
+  report={'version':'3.4.0','mode':args.mode+' in-memory browser fixture','browser':b.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(x['status']=='PASS' for x in rows),'failed':sum(x['status']=='FAIL' for x in rows),'unhandledErrors':errors,'evidence':evidence};(OUT/f'single-row-{args.mode}.json').write_text(json.dumps(report,indent=2));b.close()
  if report['failed']:raise SystemExit(1)
 if __name__=='__main__':main()

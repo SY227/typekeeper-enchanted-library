@@ -1,8 +1,8 @@
 {
   "name": "typekeeper-enchanted-library",
-  "version": "3.3.6",
+  "version": "3.4.0",
   "private": true,
-  "description": "Typekeeper: Enchanted Library. Corrected imperial scroll artwork, protected single-line text and inset spell crests; existing game and audio retained.",
+  "description": "Typekeeper: Enchanted Library. 48 title-aligned chapter atmospheres and crafted FIRE / ICE visuals, preserving the v3.3.6 game and scroll layout.",
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -37,7 +37,10 @@
     "test:book-leaves": "python3 e2e/book_leaf_tests.py",
     "test:book-leaves:modules": "python3 e2e/book_leaf_tests.py --mode modules",
     "test:scroll": "python3 e2e/scroll_repair_tests.py",
-    "test:scroll:modules": "python3 e2e/scroll_repair_tests.py --mode modules"
+    "test:scroll:modules": "python3 e2e/scroll_repair_tests.py --mode modules",
+    "test:chapter-art": "python3 e2e/chapter_art_tests.py",
+    "test:chapter-art:modules": "python3 e2e/chapter_art_tests.py --mode modules",
+    "test:flow": "node qa340/flow_audit.mjs --root . --out qa340/flow-model.json"
   },
   "license": "UNLICENSED"
 }

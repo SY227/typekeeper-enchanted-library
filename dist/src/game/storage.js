@@ -1,6 +1,6 @@
-import { APP_VERSION } from '../build-info.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { RULESET_VERSION, POWERS, RULES } from './rules.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { validEconomy, restoreEconomy } from './economy.js?v=3.3.6-31b6fcc67e9c4a2c';
+import { APP_VERSION } from '../build-info.js?v=3.4.0-cbb049170ccf1a33';
+import { RULESET_VERSION, POWERS, RULES } from './rules.js?v=3.4.0-cbb049170ccf1a33';
+import { validEconomy, restoreEconomy } from './economy.js?v=3.4.0-cbb049170ccf1a33';
 const KEY='typekeeper-enchanted-library-v3.2.1';
 const OLD_KEYS=['typekeeper-enchanted-library-v3.2','typekeeper-enchanted-library-v3.1','typekeeper-enchanted-library-v3','typing-maniac-library-v2','typing-maniac-library-v1'];
 const PACE_NAMES=['classic','relaxed','maniac'];

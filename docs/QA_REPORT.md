@@ -1,173 +1,211 @@
-# Typekeeper v3.3.6 — Scroll repair and validation
+# Typekeeper: Enchanted Library — v3.4.0 release and QA report
 
-**26 September 2026 (Los Angeles) · app 3.3.6 · gameplay ruleset typekeeper-3.2.1**
+**27 September 2026 · application 3.4.0 · preserved balance ruleset typekeeper-3.2.1**
 
-## What failed in the delivered 3.3.5 build
+## Scope and baseline
 
-The user's screenshot was reproduced with the actual prior ZIP. Its card layout
-started ordinary words about 15 logical pixels from the nominal left edge, while
-its rollers and cords extended to approximately 33 pixels. The right side had the
-same mismatch. Consequently the words were single-line but intersected the scroll
-ends. The earlier tests for one full string on one baseline did not detect this.
+Built directly from the accepted full **v3.3.6 ZIP**, not from the broken v3.3.4/3.3.5
+packages. The two requested changes are (1) slight chapter-specific cosmetics
+matching each existing title and (2) richer FIRE and ICE presentation. The repaired
+imperial scrolls, word text, inset magic seals, randomized game openings, difficulty,
+economy and gameplay flow are preserved. This is a complete browser test release,
+not a human playtest or independent AAA/platform certification.
 
-The seal backing was also painted at a different origin from the live magic glyph.
-This was an artwork/layout defect, not a user setup problem and not a reason to tell
-the user to open another folder. `qa336/baseline-reproduction.json` records the
-native browser measurements for WONDER, STORY and IMAGINE in 3.3.5.
+## Chapter cosmetics — all 48, not just eight wings
 
-A separate animated WIND path in that original package invoked `bezierCurveTo` with
-four arguments instead of six. The old shipping build was exercised in Chromium
-and threw a native TypeError. The corrected path is now tested with motion enabled.
+`src/render/chapter-art.js` defines a frozen profile for every existing chapter.
+Each profile is keyed to the real campaign ID/title and specifies a side-shelf
+still-life, auxiliary bound-volume inlay, restrained architectural wash and ambient
+accent. A scene cache keyed only to the wing would accidentally reuse the earlier
+chapter's art: it is now keyed to the chapter and contrast setting, capped at two
+cached scene layers. All 48 produced distinct native pixel hashes in both builds.
 
-## Repair
+Examples: **Rain on Glass** adds the rain/condensation window; **The Eleventh Hour**
+shows a clock at eleven; **The Frozen Seal** gets an iced seal; **Kindling** has a
+warm brazier; **Constellations** uses an astral pattern; **One Last Candle** uses a
+single candle. Changes sit on shelf margins and small props, not in the word lane.
+There are no new obstacles, quotas, platforms, screens or gameplay mechanics.
+`docs/CHAPTER_ART_SPEC.md` documents the exact 48-title mapping. Endless reuses the
+final profile to keep rendering and cache growth bounded.
 
-The new `imperial-scroll.js` owns a shared geometry contract. Both the cached artwork
-and the live text/icon painter use it. A measured ink region includes glyph
-side-bearings and overhangs, not just nominal string advance width. Rollers, silk
-seams, medallions and text have explicitly separated horizontal regions.
+## FIRE and ICE
 
-The scroll ends are narrow engraved brass shafts with stepped fittings and pointed
-finials, replacing the round knob-like ends. Layered silk, quiet woven borders and
-short outer-edge tied cords retain the imperial-scroll direction. The magic crest
-is centred inside its seal. Width follows the measured content, so safety margins
-are not implemented as a large blank rectangle. Text stays one full horizontal row.
+**FIRE:** a layered rising front with irregular flame tongues, warm local light,
+bright hot-paper edges, progressive char, curling local fire and fine ash. The
+cast cue lasts 0.65 presentation seconds. Removed cards transition into ash;
+FIRE still earns no score, books or quota progress, and the game still schedules
+replacement words normally. Live words are drawn after the effect layer.
 
-The same painter is used for menu and live cards, including matching-prefix ink.
-Menu scrolls are opaque. IMAGINE shifts slightly left to keep its correctly sized
-scroll off the character. The rest of the menu, game HUD and controls are unchanged.
+**ICE:** faceted crystal growth on columns, shelf lips, lamp shades and scroll ends,
+followed by a held frozen state and a 0.7-second layered thaw. The existing
+six-second freeze remains the gameplay authority. The clear central ink corridor
+is excluded from the frost texture; 360 actual raster intersections found no frost
+pixels crossing protected lettering. Decorative motion freezes with ICE and slows
+with SLOW, but text input remains immediate. Queued SLOW retains its full duration.
 
-The three-line build/version inconsistency from the earlier hotfix cannot be
-silently rebuilt now: build checks reject differing source HTML, package and app
-versions, and the standalone compiler validates dependency order and parses its
-assembled script. These supplement, not replace, actual browser startup tests.
+The new `ElementalArt` texture cache is limited to 48 entries / 12 MiB, with static
+art cached rather than redrawn into a new texture every frame. Existing word
+textures keep their separate bounded cache. Reduced-motion mode keeps static
+chapter identity and readable status, without decorative flames, moving shards or
+thaw motion. High-contrast mode and independent sound/music preferences are retained.
 
-## Completed gates in the working build
+## Reference access: not viewed
+
+The requested YouTube link was attempted through web access and runtime requests.
+The web fetch returned a cache miss; watch-page/oEmbed runtime requests failed DNS.
+Available plugin discovery did not supply a connected frame-analysis capability.
+**The moving frames and audio were not inspected.** No timings, visual details or
+sounds are asserted as observations of that video. These flame and ice treatments
+are original designs using the user's direction and the actual Typekeeper code.
+The soundtrack/SFX implementation and recordings were not replaced. Raw attempts:
+`qa340/reference-attempt.json`; explanation: `docs/REFERENCE_ACCESS_340.md`.
+
+## Executed automated gates
 
 | Gate | Result |
 |---|---|
-| Node logic, layout, state, storage and build-contract tests | **377 passed / 0 failed** |
-| New scroll-repair suite, standalone | **19 passed** |
-| New scroll-repair suite, ES modules | **19 passed** |
-| Existing single-line/randomness suite, standalone | **19 passed** |
-| Existing single-line/randomness suite, ES modules | **19 passed** |
-| Existing material/caption/input suite, standalone | **26 passed** |
-| Existing material/caption/input suite, ES modules | **26 passed** |
-| Named browser checks total | **128 passed / 0 failed** |
-| Unhandled JS exceptions in those completed browser suites | **0** |
-| Release integrity/launcher/occupied-port/corruption cases | **7 passed** |
+| Node logic, state, rendering contracts, saves and regression tests | **436 passed / 0 failed** |
+| New chapter/elemental browser suite — standalone / modules | **19 / 19 passed** |
+| Existing scroll geometry/raster suite — standalone / modules | **19 / 19 passed** |
+| Existing single-row/randomness suite — standalone / modules | **19 / 19 passed** |
+| Existing material/caption/input suite — standalone / modules | **26 / 26 passed** |
+| Integrated full-game flow suite — standalone / modules | **12 / 12 passed** |
+| Total named browser checks | **190 passed / 0 failed** |
+| Unhandled JS exceptions in completed browser suites | **0** |
+| Last-word model boundary matrix | **23,040 passed / 0 failed** |
+| Full model-level liveness campaigns | **12/12 reached all 48 chapters** |
+| Full rendered campaigns | **2/2 completed all 48 chapters** |
+| Animated all-spell chapter-ending fixtures | **96 endings passed** |
+| Launcher, version, occupied-port and corrupt-file cases | **7 passed** |
 | Backup-first updater cases | **6 passed** |
-| Syntax and production build | **Passed** |
-| Existing asset/audio/core-source files compared to actual v3.3.5 ZIP | **77 byte-identical** |
+| Existing assets/core-source files compared with delivered v3.3.6 | **77 byte-identical** |
 
-These are named automated checks, not people, human playtest hours or studio
-certification. The 377 count includes inherited regressions plus 21 new checks.
-No new full campaign-balance sweep is claimed for this visual-only repair.
+These are distinct layers of software testing. Pixel combinations, simulated ticks
+and 96 chapter endings are coverage inside tests, not hundreds of extra people or
+human play sessions. Current report JSONs carry this shipping SHA; inherited results
+are not counted. `qa340/release-summary.json` enumerates the named browser suites.
 
-### Coverage relevant to the user's screenshot
+### New art / spell-specific checks
 
-The new tests observe the actual title renderer drawing WONDER, STORY and IMAGINE,
-then check their ink bounds against the real hardware and paper regions. The failure
-in the old release is retained as a measured before-case rather than guessed away.
+- Every chapter ID/title mapping, 48 unique native scene pixel signatures, and the
+  two-scene cache limit in both formats.
+- Native Canvas cast onset/middle/expiry samples: **260 states per format**, all four
+  spells; every material's destruction path and transient cleanup.
+- **360 frost/ink raster cases:** ten short, long and custom words, six scroll skins,
+  three scales and two formats. Rasterized letters and the frost texture have zero
+  intersecting alpha pixels in the protected region.
+- Actual 1–4 key casts preserve the current buffer, caret selection and stock rules.
+- ICE freezes word and decorative drift; SLOW queues; thaw completes; input and
+  replacement spawning continue afterward. Pause does not consume spell timers.
+- 190-width texture churn respects cache limits. Restart, menu and chapter changes
+  clear transient effects rather than carrying a stale FIRE/ICE overlay forward.
+- Reduced motion, contrast, real native input/Enter and production boot without the
+  diagnostic seam are explicitly exercised.
 
-The full dictionary is still exercised in **35,808 word/material/viewport/format
-combinations**: 746 words, six skins, four viewport sizes, two build formats. Actual
-Canvas text calls must be complete strings at baseline zero. A supplied obsolete
-two-row layout cannot reinstate wrapping. New-game and Retry randomization and
-Continue's saved-attempt behavior are rechecked through the actual controls.
+### Previous visual fixes remain covered
 
-An additional **1,056 rasterized ink cases** test short words, all three menu words,
-long words and a 24-W custom stress string, with and without prefix highlighting,
-on all six materials and at four viewport sizes in both build formats. Actual
-rasterized lettering must stay inside the protected region. The icon drawing calls
-must place the glyph at the centre of the inset medallion, away from the side rods
-and from the first letter. A separate material-pixel check rules out the earlier
-stray backing at the top edge.
+All **35,808 word/material/viewport/build combinations** are rechecked using actual
+Canvas `fillText` calls: 746 words × six materials × four viewports × two builds.
+Each draw contains the full canonical word at one baseline. Obsolete two-row cached
+layouts cannot resurrect wrapping. Inset seal/rod/letter clearances also remain
+covered by the existing **1,056 rasterized ink cases**. Menus and gameplay use the
+same painter. Viewports include 1366×768, 1920×1080, 1280×720 and 1024×768, plus a
+separate DPR 2 fixture. Captions remain clickable and below their magic books.
 
-Viewports: **1366×768, 1920×1080, 1280×720, 1024×768**. The existing single-row suite
-also runs a DPR 2 fixture. Captured material sheets call the same shipping renderer;
-they are not new concept artwork.
+### Whole-game flow and the reported level-5 stall
 
-Every spell is exercised with motion ON through the actual keyboard, keeping the
-current text and selected range. A further native Canvas pass samples all four
-spell painters at onset, middle and end (28 states). Queued SLOW, pause inertness,
-reduced motion, high contrast, usage captions, all six destruction paths and bounded
-texture caches are rechecked.
+The final-word matrix is **48 chapters × 3 paces × 8 seeds × 20 scenarios**. It covers
+an empty board one word short of quota, FIRE, ICE, SLOW, WIND, combinations, missed
+last words, late Enter, pause/resume and expiry boundaries. The last word must be
+created by the shipped model and submitted, then the next chapter must spawn again.
+No script awards the missing word or finishes the chapter on the player's behalf.
+Intentional trial rests and frozen-time delays are not treated as stalls.
+
+Two continuous rendered campaigns use actual input/result handlers and normally
+earned spells, with accelerated stepping and sampled native rendering. Both finish
+chapter 48. A separate fixture tests all four spell combinations at every chapter
+ending in each format; another real requestAnimationFrame check confirms that the
+clock and spawning still run after the stress sequence. These are automated
+integration tests, not 48-chapter human playability claims.
+
+An additional normal-speed browser journey used actual keyboard events, ordinary
+requestAnimationFrame timing, music and effects enabled, with **no forced spawns or
+clock acceleration**. It typed **82 words in 109.84 wall-clock seconds**, passed
+**level 5: 13/14 → 14/14**, completed the chapter-six trial and reached chapter seven.
+There were no page exceptions. Its 13/14 empty-board capture had an ordinary
+0.6-second pending arrival and progressed naturally. Evidence: `live-journey.json`.
+
+Additional timed agents ran **75 campaigns: 18 completions and 57 ordinary losses**,
+plus **432 completed isolated chapter cases**, with no timeouts. No balance change
+was made to force a higher win rate. The unchanged model is not a claim that this
+synthetic player distribution predicts retention, fun or sales.
+
+### Performance sample
+
+The controlled scene held **12 cards, 95% paper pressure, four music layers** and
+real typing feedback for 600 frame intervals. It measured **59.60 FPS average**,
+**16.8 ms p95 frame interval**, and **0.9 ms median CPU-side Canvas
+draw time** in headless Chromium. This is not a worst-case FIRE/ICE guarantee,
+input-latency measurement or actual Mac/Windows hardware benchmark. Raw frame
+samples and audio source counts are preserved in `feedback-performance.json`.
 
 ## Preservation and packaging
 
-The actual prior ZIP is the preservation baseline. The existing game model, random
-seed logic, speed/economy rules, input policies, save implementation, word bank,
-campaign, audio implementation, styles and original asset files are not changed.
-Four compared source files change (build identity, main's version message,
-presentation geometry and renderer); `imperial-scroll.js` is new. Build/QA/docs
-scripts are updated separately. `qa336/preservation.json` lists the exact scope.
+`tests/fixtures/v336-core-preserved.json` independently pins the unchanged baseline
+files. All existing runtime illustration/audio assets, editable masters, model,
+randomness, economy, rules, controls, storage, vocabulary, campaign, audio code,
+styles and imperial-scroll geometry in that fixture retain identical bytes. New
+modules are original additions. Renderer wiring and release/build metadata change.
+The same save key and ruleset keep v3.3.6 records current, not moved to Legacy.
 
-Old repeated screenshots and generated report copies were removed from the package
-to avoid carrying release-history bulk. Full source, original editable art/music
-masters, runtime assets, prebuilt dist, standalone PLAY, launchers and tests remain.
-The old README is explicitly marked as historical. Current evidence is in qa336.
+The full handoff includes source, editable original masters, audio, public assets,
+prebuilt dist, embedded PLAY.html, launchers, updater, current tests and raw QA.
+Old duplicate screenshots were removed or archived outside this distributable;
+curated current screenshots are compressed to WebP inside the ZIP. Full-resolution
+PNG previews are delivered separately. No new font or account/backend dependency.
 
-## Performance observations — not a 60 FPS guarantee
+## Findings and limits, without hiding the failed attempts
 
-The full 12-card/high-pressure/four-layer-music/typing-feedback sample measured
-**52.03 FPS**, with a **33.3 ms p95** interval in headless Chromium. A separate short
-same-environment static-card comparison measured **46.26 FPS for 3.3.5** and
-**56.25 FPS for 3.3.6**, with median Canvas CPU draw times of approximately **1.1 ms**
-and **1.0 ms**, respectively. These samples use different feedback activity and
-have environmental variability; neither is used to promise an improvement on the
-user's hardware. All raw samples are retained. Input-to-display latency and actual
-Mac/Safari/Windows frame pacing are not measured here.
+Initial checks rejected the prior expected-version literals and a fake test context
+that did not yet supply the new elemental renderer. Test fixtures were updated for
+the new APIs; preservation fixtures and actual raster contracts were not rewritten
+to conceal visual defects. The initial logs are retained. A reset test inspected
+queued model events before flushing; its oracle was corrected without changing the
+game. Several monolithic long browser harness attempts exceeded the tool window or
+queued too much native draw work. The completed campaign harness yields in small
+batches and flushes Canvas work; those interrupted attempts are not counted as
+passes. See the `*-initial*` and `*-interrupted*` logs in qa340.
 
-## Environment and limits
+Actual navigation of the current build to loopback HTTP was attempted and returned
+**ERR_BLOCKED_BY_ADMINISTRATOR**. Browser suites therefore execute the shipping
+standalone HTML in memory and modular build through Blob-module transport. Only
+transport/asset locations and the existing diagnostic guard are adapted; game,
+render, input, DOM and audio functions are not replaced. Actual Node/Python HTTP
+payload delivery and launchers are verified separately with hashes/MIME/HEAD/404.
 
-Chromium 144.0.7559.96 on Linux; Node 22.16.0; Python Playwright. Browser navigation to
-loopback and a controlled test origin was attempted and returned
-ERR_BLOCKED_BY_ADMINISTRATOR. Tests therefore use the existing in-memory standalone
-and Blob-module fixtures. Only asset/import transport and the diagnostic access
-guard are adapted. Game mechanics, drawing code, native Canvas, DOM/input events
-and audio implementations are not replaced.
+Environment: Node v22.16.0, Chromium 144.0.7559.96 on Linux, Python Playwright. The
+Mac Bash launcher is run under Linux, not double-clicked in Finder. Actual Mac
+Chrome/Safari, Windows, real Retina hardware, live Vercel, human enjoyment and
+extended listening remain external checks. A tested browser ZIP is not Steam/Valve
+approval or independent AAA certification.
 
-Actual Node/Python HTTP payloads and launchers are tested separately. The Mac Bash
-launcher is executed on Linux, not by double-clicking Finder. Actual Mac Chrome,
-Safari, Windows hardware, live Vercel deployment, human aesthetic review and player
-retention testing remain outside this run. This is not an independently certified
-AAA or Steam-approved release.
+## Exact build
 
-During development the initial embedded build omitted the new scroll module, which
-the startup smoke test caught as a missing reference. The compiler dependency guard
-was added and both build formats re-tested. One inherited expected-version regex was
-updated for 3.3.6. An inherited claim that the whole painter was byte-identical to a
-much older version was replaced with direct text/geometry/raster checks; its expected
-hash was not simply rewritten to conceal changed artwork.
+- Application: **3.4.0**
+- Build: **3.4.0-cbb049170ccf1a33**
+- Tag: **chapter-atmospheres-elemental-340**
+- Shipping PLAY.html SHA-256: `807353f018d9fb05a29ee2a829ba26f521ade4aa7ebacb7ca185504236552381`
+- Current evidence: `qa340/`; prior documentation: `docs/archive/`.
 
-## Fresh-package verification
+## Fresh-package gate
 
-The CRC-checked candidate was extracted into a new empty folder. Offline install,
-all **377 tests**, syntax checks and rebuild passed. **All 51 runtime outputs were
-byte-identical**, including PLAY.html and the complete dist tree. Both new repair
-suites passed again (**38 repeated checks**) and the launcher audit passed again
-(**7 repeated checks**). The new source-version fault injection was rejected before
-export. Repeated cases are not added to the named browser total. The outer script
-time limit interrupted the final launcher invocation; that audit was completed in
-a separate call, followed by another runtime hash comparison. Exact evidence:
-`qa336/fresh-package.json`.
-
-## Reproduce
-
-```bash
-npm ci --offline --ignore-scripts --no-audit --no-fund
-npm test
-npm run check
-npm run build
-python3 e2e/scroll_repair_tests.py --executable /usr/bin/chromium
-python3 e2e/scroll_repair_tests.py --mode modules --executable /usr/bin/chromium
-python3 e2e/single_row_release.py --executable /usr/bin/chromium
-python3 e2e/single_row_release.py --mode modules --executable /usr/bin/chromium
-python3 scripts/release-audit.py
-```
-
-Use the installed Chromium path on another OS. Normal play does not need QA tools.
-
-**Build:** `3.3.6-31b6fcc67e9c4a2c`
-
-**PLAY.html SHA-256:** `a6be0555cc22bdd7370a587bdfd2bc5492918014584da6b9d0a3f56140dc8c62`
+The actual candidate full ZIP was CRC-checked and extracted into a new empty folder.
+Offline install, all **436 Node tests**, syntax validation and production rebuild
+passed. **All 53 runtime outputs were byte-identical**, including the complete dist
+tree and PLAY.html. Both new chapter/elemental browser suites passed again from the
+extraction (**38 repeated checks**, zero exceptions), followed by **7 launcher checks**
+and **6 updater cases**. These repeats are not added to the 190 named browser total.
+After those runs every runtime hash was compared again. The final handoff adds only
+documentation, evidence and checksums to those verified bytes. Archive CRC, exact
+root directory and runtime hashes are verified again after final packaging.
+Evidence: `qa340/fresh-extraction.json` and `fresh-*` logs / JSON.

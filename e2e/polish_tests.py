@@ -40,7 +40,7 @@ def main():
     except Exception:pass
    rows.append(row);print(row['status'],name,row.get('error',''),flush=True)
   def branding():
-   assert page.title()=='Typekeeper: Enchanted Library — v3.3.6'
+   assert page.title()=='Typekeeper: Enchanted Library — v3.4.0'
    text=page.locator('body').inner_text().upper()
    for removed in ['FOXFORGE PLAYROOM','LOCAL-FIRST','NO ACCOUNT','STORYKEEPER EDITION','TYPE + ENTER','TYPING MANIAC']:
     assert removed not in text,removed

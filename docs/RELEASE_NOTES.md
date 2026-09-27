@@ -1,14 +1,13 @@
-# 3.3.6 — Scroll artwork / overlap repair
+# v3.4.0 release notes
 
-Based on the actual delivered 3.3.5 build. Narrow engraved brass end pieces, silk
-paper shading, outer-edge tied cords and an inset spell seal replace the faulty
-scroll skin. Artwork, badge and full-word lettering now share one coordinate system.
-Words remain single-line and size to their actual measured ink. Title cards use the
-same renderer as gameplay; IMAGINE is moved slightly left to avoid the character.
+Based on the accepted v3.3.6 full ZIP, not an earlier failing scroll draft.
 
-Fixed the four-coordinate WIND cubic call that could throw when motion was enabled.
-Added source-version and standalone-dependency build guards. No balance, vocabulary,
-randomness, save, soundtrack, resource, keybinding, HUD or account changes.
+1. 48 authored, title-aligned chapter profiles; two cached scene layers maximum.
+2. New original layered FIRE, charred paper and ash; 0.65-second foreground spell cue.
+3. Faceted ICE, frost on architecture and scroll ends, static freeze hold and layered thaw.
+4. Word-ink protection: actual raster tests reject frost/letter intersections.
+5. Both new visual modules are included in the modular and embedded builds.
+6. Game rules, pace, inventory, RNG, saved progress, scroll geometry, audio and controls unchanged.
 
-See QA_REPORT.md and qa336/ for the measured before-case, current checks, real
-renderer captures and explicit platform-testing limits. Old records remain current.
+Current evidence and release limitations are in QA_REPORT.md; the 48-title map is
+in CHAPTER_ART_SPEC.md. YouTube reference access was unsuccessful and is documented.

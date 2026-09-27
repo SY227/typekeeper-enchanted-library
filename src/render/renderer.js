@@ -1,3 +1,5 @@
+import { chapterArtForLevel, paintChapterDecoration, paintChapterMotion } from './chapter-art.js';
+import { ElementalArt } from './elemental-art.js';
 import { SCROLL, scrollGeometry, scrollInsets, paintScrollMaterial } from './imperial-scroll.js';
 import { ClassicRenderer } from './classic-renderer.js';
 import { pressureState } from '../game/pressure.js';
@@ -25,6 +27,7 @@ export class GameRenderer extends ClassicRenderer {
   this.pressureDip=0;this.pressureArmed=true;this.shownDanger=0;this.ceremony=null;
   this.guide={word:false,ice:false,targetId:null};this.randomFX=mulberry32(891331);
   this.particleCap=180;this.readability=[];this.outcomeProgress=0;
+  this.elemental=new ElementalArt();this.iceAge=1;
  }
  setViewport(scale){if(Math.abs(scale-this.cssScale)>.0001){this.cssScale=scale;this.cardLayouts.clear();}}
  setSettings(s){
@@ -37,7 +40,7 @@ export class GameRenderer extends ClassicRenderer {
   super.reset();this.spawns?.clear();this.poses?.clear();this.arrivals=[];this.deaths=[];this.bookFlashes=[];this.inkMarks=[];
   this.strike=0;this.recoil=0;this.erase=0;this.streakBeat=0;this.milestone=0;this.glance=null;this.glanceTime=0;
   this.warmEcho=0;this.frostEcho=0;this.windEcho=0;this.shownDanger=this.model.danger||0;
-  this.pressureDip=0;this.pressureArmed=true;this.ceremony=null;if(this.guide)this.guide.targetId=null;
+  this.pressureDip=0;this.pressureArmed=true;this.ceremony=null;this.iceAge=1;if(this.guide)this.guide.targetId=null;
  }
  layout(w){
   const key=`${w.text}/${w.width}/${w.kind}/${this.cssScale.toFixed(4)}`;
@@ -58,15 +61,15 @@ export class GameRenderer extends ClassicRenderer {
   return im;
  }
  roomLayer(){
-  const info=roomForChapter(this.model.level),key=`${info.name}/${this.settings.contrast}`;
+  const info=roomForChapter(this.model.level),chapter=chapterArtForLevel(this.model.level),key=`${chapter.id}/${this.settings.contrast}`;
   if(this.sceneCache.has(key))return this.sceneCache.get(key);
   const im=visOff(1200,790),c=im.getContext('2d'),r=mulberry32(713);
   // An unbound manuscript; translucent dark-green paper keeps the room and the
   // bright live slips separate in value. No opaque ivory rectangle or UI card.
   c.save();c.beginPath();c.moveTo(233,136);c.bezierCurveTo(446,121,745,134,968,135);c.lineTo(968,675);c.quadraticCurveTo(601,687,233,674);c.closePath();
   const g=c.createLinearGradient(228,135,980,688);g.addColorStop(0,visRGBA(info.paper,.53));g.addColorStop(.46,visRGBA(info.paper,.39));g.addColorStop(1,'#142b296f');c.fillStyle=g;c.shadowColor='#0008';c.shadowBlur=15;c.fill();c.shadowBlur=0;
-  c.strokeStyle=visRGBA(info.wash,.22);c.lineWidth=1;c.stroke();c.clip();
-  c.strokeStyle=visRGBA(info.wash,.075);c.lineWidth=.7;
+  c.strokeStyle=visRGBA(chapter.accent,.22);c.lineWidth=1;c.stroke();c.clip();
+  c.strokeStyle=visRGBA(chapter.accent,.075);c.lineWidth=.7;
   for(let y=161;y<680;y+=24){c.beginPath();c.moveTo(255,y);c.bezierCurveTo(465,y+3,756,y-1,950,y+1);c.stroke();}
   c.strokeStyle=visRGBA(info.wash,.14);c.beginPath();c.moveTo(268,140);c.lineTo(268,673);c.stroke();
   for(let i=0;i<740;i++){const x=235+r()*728,y=141+r()*536;c.fillStyle=visRGBA(r()>.5?'#ead6a3':'#051613',.04+r()*.035);c.fillRect(x,y,1+r()*5,.5);}
@@ -82,36 +85,7 @@ export class GameRenderer extends ClassicRenderer {
   return im;
  }
  drawStaticProps(c,room){
-  const [a,b]=room.props;
-  const book=(x,y,w,h,color,tilt=0)=>{c.save();c.translate(x,y);c.rotate(tilt);c.fillStyle='#100d0b99';visRR(c,-w/2-2,-h-2,w+4,h+6,2);c.fill();const g=c.createLinearGradient(-w/2,0,w/2,0);g.addColorStop(0,'#342d26');g.addColorStop(.2,color);g.addColorStop(1,'#28231c');c.fillStyle=g;visRR(c,-w/2,-h,w,h,2);c.fill();c.strokeStyle='#d8bc7666';c.strokeRect(-w/2+3,-h+7,w-6,2);c.strokeRect(-w/2+3,-10,w-6,2);c.restore();};
-  book(91,386,28,94,'#435647',-.04);book(123,385,23,110,'#776445',.04);book(155,386,33,86,'#514251',-.035);
-  for(let i=0;i<6;i++)book(1013+i*21,386,17,73+(i%3)*8,room.wash,i%2?.01:-.02);
-  c.save();c.lineWidth=1.3;c.strokeStyle=visRGBA(room.wash,.64);c.fillStyle='#172b28';
-  if(['gear','orrery'].includes(a)){
-   for(const [cx,cy,rad] of [[126,491,39],[169,553,22]]){c.beginPath();c.arc(cx,cy,rad,0,Math.PI*2);c.stroke();c.beginPath();c.arc(cx,cy,rad-6,0,Math.PI*2);c.stroke();for(let k=0;k<12;k++){const t=k*Math.PI/6;c.beginPath();c.moveTo(cx+Math.cos(t)*(rad-4),cy+Math.sin(t)*(rad-4));c.lineTo(cx+Math.cos(t)*(rad+4),cy+Math.sin(t)*(rad+4));c.stroke();}}
-  }else if(a==='vine'){
-   c.strokeStyle='#9db59c77';c.lineWidth=2;c.beginPath();c.moveTo(136,404);c.bezierCurveTo(108,469,170,508,134,580);c.stroke();
-   for(let k=0;k<8;k++){const y=420+k*22,x=135+Math.sin(k)*10;c.fillStyle=k%2?'#7c9b6377':'#799d8570';c.beginPath();c.ellipse(x+(k%2?12:-12),y,17,6,k%2?-.55:.55,0,Math.PI*2);c.fill();}
-   c.fillStyle='#473b2d';visRR(c,104,574,64,28,5);c.fill();
-  }else if(a==='frost'){
-   this.frost(c,90,422,104,157,.5,1);
-  }else if(a==='brazier'){
-   c.fillStyle='#302823';c.beginPath();c.ellipse(132,569,42,18,0,0,Math.PI);c.fill();c.stroke();c.fillRect(107,572,5,30);c.fillRect(152,572,5,30);
-  }else if(a==='key'){
-   c.beginPath();c.arc(123,451,19,0,Math.PI*2);c.moveTo(123,470);c.lineTo(123,552);c.lineTo(143,552);c.moveTo(123,539);c.lineTo(140,539);c.stroke();
-  }else{
-   book(125,602,74,96,room.wash,-.1);c.fillStyle=visRGBA(room.wash,.6);c.font='24px Georgia';c.textAlign='center';c.fillText(a==='laurel'?'❧':'✦',128,551);
-  }
-  if(['glass','frost','crystal'].includes(b)){
-   c.fillStyle='#90c5d61a';visRR(c,1024,424,84,120,40);c.fill();c.strokeStyle='#bee5e83b';c.stroke();c.strokeStyle='#ddf8ed33';for(let i=0;i<6;i++){const x=1037+i*12;c.beginPath();c.moveTo(x,446+i%3*7);c.lineTo(x-2,469+i%2*13);c.stroke();}
-  }else if(b==='cinder'){
-   c.fillStyle='#352c24';visRR(c,1026,449,76,27,5);c.fill();c.strokeStyle='#ba8c5455';c.stroke();for(let i=0;i<7;i++){c.fillStyle=i%2?'#965d3a':'#cc936058';c.fillRect(1034+i*9,456+(i%2)*5,6,4);}
-  }else if(b==='stars'){
-   const pts=[[1019,460],[1080,432],[1108,474],[1061,526],[1027,509]];c.strokeStyle='#bba9e252';c.beginPath();pts.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.stroke();for(const [x,y]of pts)visStar(c,x,y,4,'#dfd5f2',.7);
-  }else if(b==='seal'){
-   c.strokeStyle='#b89757';c.beginPath();c.arc(1072,485,41,0,Math.PI*2);c.stroke();c.beginPath();c.arc(1072,485,35,0,Math.PI*2);c.stroke();c.fillStyle='#cfb77c';c.font='33px Georgia';c.textAlign='center';c.fillText('VIII',1072,497);
-  }
-  c.restore();
+  paintChapterDecoration(c,chapterArtForLevel(this.model.level));
  }
  frost(c,x,y,w,h,alpha=1,amount=1){
   c.save();c.globalAlpha*=alpha;c.strokeStyle='#c4e6ef';c.lineWidth=.85;
@@ -161,7 +135,7 @@ export class GameRenderer extends ClassicRenderer {
      this.warmEcho=1.5;
      for(const w of e.removed||[]){const p=this.poses.get(w.id);if(this.settings.motion)this.addDeath({...w,x:p?.x??w.x,y:p?.y??w.y},'fire');this.spawns.delete(w.id);this.keyGlints.delete(w.id);}
     }
-    if(e.power==='ice')this.frostEcho=0;
+    if(e.power==='ice'){this.frostEcho=0;this.iceAge=0;}
     if(e.power==='wind'){
      this.relief=1.15;this.windEcho=1.1;this.arrivals=[];this.shownDanger=0;
      if(this.settings.motion)for(let i=0;i<24;i++){const dest=this.pilePoint(80,i),r=this.randomFX;this.particles.push({x:dest.x,y:dest.y+i*3,vx:-170-r()*270,vy:-40-r()*60,t:0,life:.5+r()*.45,color:'#dfcd9f',size:3+r()*5,angle:r()*4,spin:-2-r()*3,kind:'paper'});}
@@ -186,6 +160,7 @@ export class GameRenderer extends ClassicRenderer {
   const begin=performance.now(),dt=this.lastTime?Math.min(.05,Math.max(0,(now-this.lastTime)/1000)):0;this.lastTime=now;
   const paused=this.model.phase==='paused'||document.hidden,fxdt=paused?0:dt;
   this.time+=fxdt;this.motionTime+=this.settings.motion?fxdt:0;
+  if(this.model.effects.ice>0)this.iceAge+=fxdt;
   const worldRate=this.model.effects.ice>0?0:this.model.effects.slow>0?.42:1;
   this.worldTime+=this.settings.motion?fxdt*worldRate:0;
   this.expressionBlend=Math.min(1,this.expressionBlend+fxdt*6);this.relief=Math.max(0,this.relief-fxdt);this.typing=Math.max(0,this.typing-fxdt*8);
@@ -221,7 +196,8 @@ export class GameRenderer extends ClassicRenderer {
   const g=c.createRadialGradient(398,753,2,398,753,210);g.addColorStop(0,'#d39b3a16');g.addColorStop(1,'#d39b3a00');c.fillStyle=g;c.fillRect(188,543,420,243);
  }
  drawRoomMotion(c,menu){
-  const room=roomForChapter(menu?1:this.model.level),d=menu?0:this.model.danger;
+  const chapter=chapterArtForLevel(menu?1:this.model.level),baseRoom=roomForChapter(menu?1:this.model.level);
+  const room=menu?baseRoom:{...baseRoom,lamp:chapter.accent},d=menu?0:this.model.danger;
   const direction=musicDirection('play',d,true),t=direction.tension,u=direction.urgency;
   this.lightDirection={tension:t,urgency:u};
   const frost=this.model.effects.ice>0?Math.min(1,this.model.effects.ice/.8):this.frostEcho/.7;
@@ -240,7 +216,7 @@ export class GameRenderer extends ClassicRenderer {
   if(!menu){
    // Light falls onto the margins, never washes out live word text.
    for(const x of [220,930]){const g=c.createLinearGradient(x,0,x+55,0);g.addColorStop(0,visRGBA(room.lamp,.015+t*.045));g.addColorStop(1,'#00000000');c.fillStyle=g;c.fillRect(x,150,55,540);}
-   if(frost>0)this.frost(c,228,163,742,499,frost*.5,1);
+   this.elemental.drawFrozenRoom(c,this.model.effects.ice,this.iceAge,this.frostEcho,this.settings.motion);
    const count=Math.min(34,room.dust+Math.floor(t*10));
    if(this.settings.motion){
     for(let i=0;i<count;i++){const m=this.motes[i],y=(m.y-this.worldTime*m.v%1000+1000)%1000-50,x=m.x+Math.sin(this.worldTime*.18+m.phase)*8;
@@ -249,17 +225,11 @@ export class GameRenderer extends ClassicRenderer {
      c.globalAlpha=.08+Math.sin(this.worldTime*.7+m.phase)**2*.12;c.fillStyle=room.wash;c.beginPath();c.arc(x,y,m.s,0,Math.PI*2);c.fill();
     }c.globalAlpha=1;
    }
-   if(slow||room.props.includes('pendulum')){
+   if(slow||['pendulum','metronome'].includes(chapter.prop)){
     const clock=slow?this.worldTime*.9:this.worldTime*1.8,angle=this.settings.motion?Math.sin(clock)*.28:0;
     c.save();c.translate(151,467);c.rotate(angle);c.strokeStyle='#d3b375b0';c.lineWidth=1.6;c.beginPath();c.moveTo(0,0);c.lineTo(0,89);c.stroke();const g=c.createRadialGradient(-3,88,1,0,94,13);g.addColorStop(0,'#e0c590');g.addColorStop(1,'#6e512a');c.fillStyle=g;c.beginPath();c.arc(0,94,12,0,Math.PI*2);c.fill();c.restore();
    }
-   if(room.props.includes('brazier')){
-    c.save();const g=c.createRadialGradient(132,552,2,132,552,58);g.addColorStop(0,'#e8a45c45');g.addColorStop(1,'#d27d3800');c.fillStyle=g;c.fillRect(73,493,118,118);
-    for(let i=0;i<4;i++){const size=12+(this.settings.motion?Math.sin(this.worldTime*3+i)*3:0);c.fillStyle=i%2?'#efbd7855':'#d7874a80';c.beginPath();c.moveTo(109+i*13,564);c.quadraticCurveTo(119+i*13,562-size*2,126+i*13,564);c.fill();}c.restore();
-   }
-   if(room.props.includes('lantern')||room.props.includes('candle')){
-    c.fillStyle='#c9b380';visRR(c,1063,471,17,69,3);c.fill();c.strokeStyle='#6b5235';c.stroke();const glow=c.createRadialGradient(1072,465,1,1072,465,45);glow.addColorStop(0,'#f6d09a50');glow.addColorStop(1,'#f6d09a00');c.fillStyle=glow;c.fillRect(1027,420,90,90);c.fillStyle='#edd8a0';c.beginPath();c.ellipse(1072,464,2.5,8,0,0,Math.PI*2);c.fill();
-   }
+   paintChapterMotion(c,chapter,this.worldTime,this.settings.motion);
    // Stage mastery is a shelf detail. No new HUD numeral or collectible currency.
    const completed=Math.max(0,Math.min(6,(this.model.level-1)%6));for(let i=0;i<6;i++)visStar(c,1015+i*20,406,i<completed?3:1.5,i<completed?'#ead395':'#665f4a',.65);
   }
@@ -411,17 +381,9 @@ export class GameRenderer extends ClassicRenderer {
     c.beginPath();c.moveTo(x0,-h/2-16);c.lineTo(x1,-h/2-16);c.lineTo(x1-3,-2);c.lineTo(x1+3,h/2+16);c.lineTo(x0,h/2+16);c.lineTo(x0-3,2);c.closePath();c.clip();draw();c.restore();
    }
   }else if(d.kind==='fire'){
-   const radius=p*(w*.73+h*.24),outer=Math.hypot(w,h);
-   c.save();c.globalAlpha=Math.min(1,(1-p)*2);c.beginPath();c.rect(-w/2-16,-h/2-16,w+32,h+32);c.arc(0,0,Math.max(1,radius),0,Math.PI*2,true);c.clip('evenodd');draw();
-   c.strokeStyle='#4b2b1b';c.lineWidth=9;c.beginPath();c.arc(0,0,radius+3,0,Math.PI*2);c.stroke();c.strokeStyle='#dc9a56';c.lineWidth=1.7;c.stroke();c.restore();
-   for(let i=0;i<8;i++){const a=i*2.4+d.seed;c.globalAlpha=1-p;c.fillStyle=i%2?'#72533a':'#ae7a49';c.fillRect(Math.cos(a)*Math.min(radius,outer*.3)-p*32,Math.sin(a)*18-p*20,2,1.5);}
+   this.elemental.drawBurn(c,d,im,l);
   }else if(d.kind==='ice'){
-   if(p<.18){draw();this.frost(c,-w/2,-h/2,w,h,p/.18*.9,1);}
-   else for(let i=0;i<5;i++){
-    const q=(p-.18)/.82,x0=-w/2+(w*i/5),x1=-w/2+w*(i+1)/5;
-    c.save();c.translate((i-2)*q*14,q*q*89);c.rotate((i-2)*q*.12);c.globalAlpha=1-q;
-    c.beginPath();c.moveTo(x0,-h/2-9);c.lineTo(x1,-h/2-9);c.lineTo(x1+5,h/2+10);c.lineTo(x0-6,h/2+10);c.closePath();c.clip();draw();c.globalCompositeOperation='source-atop';c.fillStyle='#bdedf647';c.fillRect(-w/2-10,-h/2-10,w+20,h+20);c.restore();
-   }
+   this.elemental.drawShatter(c,d,im,l);
   }else if(d.kind==='slow'){
    c.globalAlpha=1-p;c.translate(0,p*30);c.scale(1-p*.05,Math.max(.04,1-p*.94));draw();
    c.fillStyle='#55432366';c.fillRect(-w/2+10,-h/2+10,w-20,h-20);
@@ -468,21 +430,13 @@ export class GameRenderer extends ClassicRenderer {
   if(!this.settings.motion)return;const p=visualClamp(s.t/s.life),a=Math.sin(p*Math.PI);
   c.save();
   if(s.power==='fire'){
-   const sweep=visualEase(p),y=686-sweep*520;
-   c.globalAlpha=.12+.16*a;const warm=c.createRadialGradient(600,524,30,600,524,470);warm.addColorStop(0,'#ffca7240');warm.addColorStop(1,'#ff9a2a00');c.fillStyle=warm;c.fillRect(176,138,848,570);
-   for(let band=0;band<3;band++){
-    c.globalAlpha=(.5-band*.11)*a;c.strokeStyle=band===0?'#ffd08a':band===1?'#ff9f46':'#8a3b22';c.lineWidth=band===0?2.2:band===1?5.5:10;c.beginPath();
-    for(let x=224;x<=976;x+=16){const yy=y+Math.sin(x*.052+p*11+band*.75)*(5+band*2)+(band-1)*3;x===224?c.moveTo(x,yy):c.lineTo(x,yy);}c.stroke();
-   }
-   for(let i=0;i<16;i++){const q=(i/15),px=250+q*700,py=y-8-Math.sin(q*10+p*13)*16;c.globalAlpha=(1-q*.35)*a*.65;c.fillStyle=i%3===0?'#ffe3a2':i%2?'#ff9d4e':'#813620';c.beginPath();c.arc(px,py,1.5+((i%4)*.6),0,Math.PI*2);c.fill();}
+   this.elemental.drawFireCast(c,s);
   }else if(s.power==='wind'){
    c.globalAlpha=.28*a;c.strokeStyle='#efe7fb';c.lineWidth=1.6;
    for(let i=0;i<6;i++){const y=622+i*24,lead=1120-p*165+i*8;c.beginPath();c.moveTo(lead,y);c.bezierCurveTo(924,y-44,612,y+16,358,y-10);c.bezierCurveTo(280,y-18,205,y-25,126-p*38,y-34);c.stroke();}
    for(let i=0;i<10;i++){const q=i/10;c.globalAlpha=.22*a*(1-q*.5);c.fillStyle='#f1e6fb';c.fillRect(910-p*470-q*170,604+i*8,7,1.4);}
   }else if(s.power==='ice'){
-   const alpha=(1-p)*.52;this.frost(c,216,156,768,512,alpha,1.05);
-   c.globalAlpha=.18*a;c.fillStyle='#dff7ff';for(let i=0;i<10;i++){const x=268+i*70,y=194+(i%4)*92;c.beginPath();c.arc(x,y,2+(i%3),0,Math.PI*2);c.fill();}
-   c.globalAlpha=.22*a;c.strokeStyle='#eafcff';c.lineWidth=1.1;c.strokeRect(224,163,752,498);
+   this.elemental.drawIceCast(c,s);
   }else if(s.power==='slow'){
    c.globalAlpha=(1-p)*.22;const amber=c.createRadialGradient(150,560,8,150,560,58);amber.addColorStop(0,'#f3d69eaa');amber.addColorStop(1,'#d4ab5500');c.fillStyle=amber;c.fillRect(88,496,126,126);
    for(let r=0;r<3;r++){c.globalAlpha=(.26-r*.05)*(1-p);c.strokeStyle=r===0?'#f2d08c':'#a57c36';c.lineWidth=1.4+r*.6;c.beginPath();c.ellipse(151,560,18+p*12+r*7,20+p*12+r*7,0,0,Math.PI*2);c.stroke();}
@@ -504,5 +458,5 @@ export class GameRenderer extends ClassicRenderer {
    if(p>.67)visStar(c,1065,274,6,'#f3d797',Math.sin((p-.67)/.33*Math.PI));
   }
  }
- visualSnapshot(){return {room:roomForChapter(this.model.level).name,roomCache:this.sceneCache.size,layouts:this.cardLayouts.size,spawns:this.spawns.size,deaths:this.deaths.length,arrivals:this.arrivals.length,particles:this.particles.length,textureBytes:this.textureBytes,light:this.lightDirection,readability:this.readability,guide:{...this.guide},ceremony:this.ceremony?{...this.ceremony}:null,worldTime:this.worldTime,strike:this.strike,hand:this.hand};}
+ visualSnapshot(){return {chapterArt:chapterArtForLevel(this.model.level).id,chapterArtTitle:chapterArtForLevel(this.model.level).title,elemental:this.elemental.snapshot(),iceAge:this.iceAge,room:roomForChapter(this.model.level).name,roomCache:this.sceneCache.size,layouts:this.cardLayouts.size,spawns:this.spawns.size,deaths:this.deaths.length,arrivals:this.arrivals.length,particles:this.particles.length,textureBytes:this.textureBytes,light:this.lightDirection,readability:this.readability,guide:{...this.guide},ceremony:this.ceremony?{...this.ceremony}:null,worldTime:this.worldTime,strike:this.strike,hand:this.hand};}
 }

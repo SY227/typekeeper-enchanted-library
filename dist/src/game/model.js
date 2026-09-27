@@ -1,9 +1,9 @@
-import { freshRunSeed } from './random.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { FIELD, POWERS, RULES, RULESET_VERSION, levelRules, mulberry32, chapterSeed, normalizeInput, scoreForWord, wordCardWidth, PACES } from './rules.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { CAMPAIGN_LENGTH, stageInfo, medalForStage } from '../data/campaign.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { pressureState } from './pressure.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { dictionaryForLevel } from '../data/words.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { createEconomy, prepareEconomy, restoreEconomy, nextSpellGap } from './economy.js?v=3.3.6-31b6fcc67e9c4a2c';
+import { freshRunSeed } from './random.js?v=3.4.0-cbb049170ccf1a33';
+import { FIELD, POWERS, RULES, RULESET_VERSION, levelRules, mulberry32, chapterSeed, normalizeInput, scoreForWord, wordCardWidth, PACES } from './rules.js?v=3.4.0-cbb049170ccf1a33';
+import { CAMPAIGN_LENGTH, stageInfo, medalForStage } from '../data/campaign.js?v=3.4.0-cbb049170ccf1a33';
+import { pressureState } from './pressure.js?v=3.4.0-cbb049170ccf1a33';
+import { dictionaryForLevel } from '../data/words.js?v=3.4.0-cbb049170ccf1a33';
+import { createEconomy, prepareEconomy, restoreEconomy, nextSpellGap } from './economy.js?v=3.4.0-cbb049170ccf1a33';
 
 /** Deterministic game simulation. No artwork, sound or UI callback owns game state.
  * Every word has exactly one outcome. All timers use active simulation seconds.

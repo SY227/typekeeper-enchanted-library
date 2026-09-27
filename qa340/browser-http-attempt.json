@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:44947/",
+  "scope": "Actual browser navigation attempt; not substituted by in-memory loading.",
+  "success": false,
+  "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:44947/\nCall log:\n  - navigating to \"http://127.0.0.1:44947/\", waiting until \"load\"\n",
+  "pageErrors": []
+}

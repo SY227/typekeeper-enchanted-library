@@ -37,7 +37,7 @@ def main():
     except Exception:pass
    rows.append(row);print(row['status'],name,row.get('error',''),flush=True)
   def identity():
-   assert api('return t.info.version;')=='3.3.6';assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
+   assert api('return t.info.version;')=='3.4.0';assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
    assert btn('start').is_visible();assert page.get_by_role('heading',name='TYPEKEEPER',exact=True).is_visible()
   check('Version 3.3.1 opens with the retained 3.2.1 scoring and economy ruleset',identity)
   def input_surface():
@@ -205,7 +205,7 @@ def main():
    api('t.show("menu");');page.wait_for_timeout(450);page.screenshot(path=str(SHOTS/'06-title.png'))
   check('Gameplay, pressure, ICE, WIND and title screens render into actual browser captures',screenshot_set)
   check('No unhandled application exceptions in the manuscript audit',lambda:None if not errors else (_ for _ in ()).throw(AssertionError(errors)))
-  report={'version':'3.3.6','ruleset':'typekeeper-3.2.1','source':'v3.2.1 ZIP; not the earlier v3.3.0 draft','mode':__doc__,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'browser':browser.version,'passed':sum(x['status']=='PASS' for x in rows),'failed':sum(x['status']=='FAIL' for x in rows),'pageErrors':errors,'tests':rows,'evidence':evidence}
+  report={'version':'3.4.0','ruleset':'typekeeper-3.2.1','source':'v3.2.1 ZIP; not the earlier v3.3.0 draft','mode':__doc__,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'browser':browser.version,'passed':sum(x['status']=='PASS' for x in rows),'failed':sum(x['status']=='FAIL' for x in rows),'pageErrors':errors,'tests':rows,'evidence':evidence}
   (OUT/'manuscript-browser-results.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:report[k]for k in ['passed','failed','pageErrors']},indent=2));browser.close()
   if report['failed'] or errors:raise SystemExit(1)
 if __name__=='__main__':main()

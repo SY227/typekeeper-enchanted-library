@@ -33,7 +33,7 @@ try:
   dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(file,dest)
 except OSError as error:
  raise SystemExit(f'Update stopped: {error}\nYour complete pre-update game backup remains at {backup}. Do not deploy until restored or rerun.')
-(target/'.typekeeper-update-last.json').write_text(json.dumps({'version':'3.3.6','backup':str(backup),'filesCopied':len(files)},indent=2)+'\n')
+(target/'.typekeeper-update-last.json').write_text(json.dumps({'version':'3.4.0','backup':str(backup),'filesCopied':len(files)},indent=2)+'\n')
 print(f'Updated {len(files)} files in: {target}')
 print('Preserved .git, .vercel, environment files and your existing vercel.json. No remote writes were made.')
 print('Run npm test and npm run build in that folder, then commit and push when ready.')

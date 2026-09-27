@@ -1,3 +1,4 @@
+import { ElementalArt } from '../src/render/elemental-art.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -51,8 +52,9 @@ test('The ornament and tassels fit inside the pre-existing texture padding',()=>
  const g=scrollGeometry(240);assert(g.minY>-g.pad);assert(g.maxY<g.height+g.pad);
 });
 test('Native WIND paths use all six cubic coordinates while FIRE/ICE/SLOW also draw without invalid parameters',()=>{
- const c=new Proxy({bezierCurveTo:(...args)=>{assert.equal(args.length,6);assert(args.every(Number.isFinite));},createRadialGradient:()=>({addColorStop(){}})}, {get:(o,k)=>k in o?o[k]:()=>{},set:(o,k,v)=>(o[k]=v,true)});
- const r={settings:{motion:true},frost(){}};
+ const c=new Proxy({bezierCurveTo:(...args)=>{assert.equal(args.length,6);assert(args.every(Number.isFinite));},createRadialGradient:()=>({addColorStop(){}}),createLinearGradient:()=>({addColorStop(){}})}, {get:(o,k)=>k in o?o[k]:()=>{},set:(o,k,v)=>(o[k]=v,true)});
+ const elemental=new ElementalArt();elemental.flameTexture=()=>({width:112,height:176});
+ const r={settings:{motion:true},frost(){},elemental};
  for(const power of ['fire','ice','slow','wind'])for(const t of [0,.1,.325,.649,.65])GameRenderer.prototype.drawSpell.call(r,c,{power,t,life:.65});
 });
 test('Reduced-motion casting emits no animated drawing calls',()=>{

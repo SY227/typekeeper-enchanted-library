@@ -7,9 +7,9 @@ import {APP_VERSION,BUILD_TAG} from '../src/build-info.js';
 import {PRESENTATION_VERSION,readableCardLayout} from '../src/render/presentation.js';
 import {RULESET_VERSION} from '../src/game/rules.js';
 
-test('3.3.6 identifies the folio/caption build while retaining 3.2.1 balance',()=>{
- assert.equal(APP_VERSION,'3.3.6');assert.equal(PRESENTATION_VERSION,APP_VERSION);
- assert.equal(BUILD_TAG,'scroll-layout-repair-336');assert.equal(RULESET_VERSION,'typekeeper-3.2.1');
+test('3.4.0 identifies the folio/caption build while retaining 3.2.1 balance',()=>{
+ assert.equal(APP_VERSION,'3.4.0');assert.equal(PRESENTATION_VERSION,APP_VERSION);
+ assert.equal(BUILD_TAG,'chapter-atmospheres-elemental-340');assert.equal(RULESET_VERSION,'typekeeper-3.2.1');
 });
 for(const kind of ['normal','fire','ice','slow','wind','bonus'])test(`${kind}: immutable local folio material contains complete valid color roles`,()=>{
  const p=folioPalette(kind);assert.equal(p,FOLIO_PALETTES[kind]);assert(Object.isFrozen(p));

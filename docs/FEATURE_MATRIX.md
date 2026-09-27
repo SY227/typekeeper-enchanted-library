@@ -1,15 +1,18 @@
-> **v3.3.2 superseding note:** all letters of one word now stay on one row.
-> Any older wrapping description below is historical. New game and Retry use fresh
-> vocabulary; Continue preserves the current saved attempt. App metadata is 3.3.2;
-> balance constants remain the v3.2.1 ruleset. See RELEASE_NOTES.md and QA_REPORT.md
-> for current behavior and newly executed evidence.
+# v3.4.0 feature summary
 
-# v3.3.1 feature matrix
+| System | Delivered / preserved |
+|---|---|
+| Campaign | 48 existing chapters, three paces, trials, mastery, practice and Endless |
+| Per-chapter identity | 48 title-linked cached side-shelf treatments; final profile reused in Endless |
+| FIRE | Layered rising flame, progressive char and ash; gameplay unchanged |
+| ICE | Faceted room and scroll-end frost, held freeze, staged thaw; protected letters |
+| SLOW / WIND | Existing mechanics, selection-safe keys and prior bug fixes retained |
+| Words | Random new attempts/retries; saved Continue; full single-line canonical text |
+| Scrolls | v3.3.6 repaired hardware/seal/text geometry retained |
+| Saves / scores | Same v3.2.1 ruleset and save key; no visual-update score reset |
+| Audio | Existing four-layer adaptive score and effects preserved |
+| Packaging | Source, masters, modular website, embedded PLAY, launchers and tests |
+| Online / Steam | Not added or claimed |
 
-PRESENTATION_SPEC.md maps each section of the supplied art/experience brief to the
-implemented behavior, parameter and scope. Core game/rules remain defined in RULES.md
-and ECONOMY.md (ruleset 3.2.1). Current execution evidence is in QA_REPORT.md.
-
-The conditional online-platform portion is deferred; no live services or fake competitors
-are shipped. Font licensing is not claimed for an added face: existing system fonts remain.
-Real-device / deployed-origin and human-experience sign-off remain open.
+Current results and external limitations: QA_REPORT.md. Complete chapter design map:
+CHAPTER_ART_SPEC.md. Unavailable video reference: REFERENCE_ACCESS_340.md.

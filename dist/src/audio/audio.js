@@ -1,5 +1,5 @@
-import { asset } from '../game/assets.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { MUSIC_STEMS, MUSIC_LOOP_SECONDS, musicDirection } from './mix.js?v=3.3.6-31b6fcc67e9c4a2c';
+import { asset } from '../game/assets.js?v=3.4.0-cbb049170ccf1a33';
+import { MUSIC_STEMS, MUSIC_LOOP_SECONDS, musicDirection } from './mix.js?v=3.4.0-cbb049170ccf1a33';
 
 /** Original phase-aligned score + bounded procedural foley.
  * Music follows pile pressure, never drives simulation time or changes word speed.

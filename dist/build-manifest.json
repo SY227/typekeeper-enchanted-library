@@ -1,6 +1,6 @@
 {
-  "version": "3.3.6",
-  "buildId": "3.3.6-31b6fcc67e9c4a2c",
+  "version": "3.4.0",
+  "buildId": "3.4.0-cbb049170ccf1a33",
   "files": [
     {
       "path": "assets/book-fire.svg",
@@ -125,17 +125,17 @@
     {
       "path": "index.html",
       "bytes": 5370,
-      "sha256": "4574c64cc56750aebebf25466c5c548fa0ecaf44135811539870045d640d06c6"
+      "sha256": "ead7dcea83e6f5f9f4d3bea0d6c97401622239cede6920a1b4ca1374fae2a9c4"
     },
     {
       "path": "release.json",
-      "bytes": 147,
-      "sha256": "009d9153cb15a2307256b4a4263b7bf56456a4bb9bc888c4fc3f786ce46d2d02"
+      "bytes": 156,
+      "sha256": "530b671ba857dd174a4051c35f17a89a247dcd77eb1cf880ec81f98da75580b3"
     },
     {
       "path": "src/audio/audio.js",
       "bytes": 14187,
-      "sha256": "71702ca3117b9996b0635efd570b4883cccadfba6a9895b0b3751cc42956c6d2"
+      "sha256": "1c646d87c487bb256b429535f6478798d4b7fc14329e05a51c378079c98d45b8"
     },
     {
       "path": "src/audio/mix.js",
@@ -144,8 +144,8 @@
     },
     {
       "path": "src/build-info.js",
-      "bytes": 153,
-      "sha256": "9bbbe90792b5cdd0328caf6c33a794f5c5711403884c40b06cc1809062a13037"
+      "bytes": 162,
+      "sha256": "0a1b59b5aa551529b3d2a50bdd2ab756c435b0375178596f3fab0d46ccffa54d"
     },
     {
       "path": "src/data/campaign.js",
@@ -180,7 +180,7 @@
     {
       "path": "src/game/model.js",
       "bytes": 19840,
-      "sha256": "10675012d4148b0feba24d95b963a70afbf2d46158e471644adcdcc6f0c2926d"
+      "sha256": "4d22fc1659c0421f9a27324e55d409fab3f7163ce9a059ce934e47d286ff50f4"
     },
     {
       "path": "src/game/pressure.js",
@@ -195,17 +195,17 @@
     {
       "path": "src/game/rules.js",
       "bytes": 4387,
-      "sha256": "8ba6026ffa76c58a1ddeac484d6bfb55bff0d7d0bda636116f012cdaa93e9c7f"
+      "sha256": "e23eadffeb86cc8e1192249e1187902b6445ea46a813b7d09c3046e99b58e9f1"
     },
     {
       "path": "src/game/storage.js",
       "bytes": 11192,
-      "sha256": "20cb9de0d263dc5b54170a74c5edf34da6133a4ae7d8a80bd0658edfb3378a73"
+      "sha256": "6931f51775b8467e715902ecb4277e01a2947e97b353edf7a03984edc1a4a4ec"
     },
     {
       "path": "src/main.js",
       "bytes": 51054,
-      "sha256": "269af13a483d439735188c18f4059116ffa2121bdcf2b700aca1992a067f1d49"
+      "sha256": "556c71e5b378ca104a3a8b52cf9420329a79f382a206b07991c46caa7572bcf4"
     },
     {
       "path": "src/render/book-leaf.js",
@@ -213,9 +213,19 @@
       "sha256": "4475b6488269f8ac6460c12e27d0f0234bc85ffc669eb3e131c90a52d3c909fc"
     },
     {
+      "path": "src/render/chapter-art.js",
+      "bytes": 25913,
+      "sha256": "e60d1753b632aa5e3de68a78e8930b4b17216b77d72cc747bb0fe05acf51ca6c"
+    },
+    {
       "path": "src/render/classic-renderer.js",
       "bytes": 23339,
-      "sha256": "9be2e5da0dd6fb869797232aacfe0248fef54043fe5ff39962ef11e4f3a0d62c"
+      "sha256": "48f0c33f3411efa8353dfe7b630fc3c668df15be4fe4494b402c402c08324c7b"
+    },
+    {
+      "path": "src/render/elemental-art.js",
+      "bytes": 11834,
+      "sha256": "731e996719e9fcbde5133b5792255646838c5af459ca8356b517efb9565c9632"
     },
     {
       "path": "src/render/imperial-scroll.js",
@@ -225,12 +235,12 @@
     {
       "path": "src/render/presentation.js",
       "bytes": 5338,
-      "sha256": "1f71230196f1e6e16546c9459876083251247ae0e1f842f4eadfc76e4958a9e8"
+      "sha256": "8575ab84736bf9dec459411665d3d0711f5ee69b8db20d298ae67d0882ff5c35"
     },
     {
       "path": "src/render/renderer.js",
-      "bytes": 41626,
-      "sha256": "95984b2238961e8a83b96ac4dd53014853ae70325ada4a4ccae41bf39581eaf1"
+      "bytes": 36461,
+      "sha256": "2ea034894cfb11496207ac8630fd6f79ac051b07285c28b9781d0f234ea5cea5"
     },
     {
       "path": "src/styles.css",

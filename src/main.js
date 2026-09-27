@@ -417,7 +417,7 @@ async function init(){
  document.title=`Typekeeper: Enchanted Library — v${APP_VERSION}`;
  document.documentElement.dataset.build=APP_VERSION;
  const expected=document.querySelector('meta[name="typekeeper-version"]')?.content;
- if(expected&&expected!==APP_VERSION){$('loading').innerHTML='<div class="load-error"><h2>Mixed game files detected</h2><p>Re-extract the full v3.3.6 ZIP into its own folder and run its launcher.</p></div>';return;}
+ if(expected&&expected!==APP_VERSION){$('loading').innerHTML='<div class="load-error"><h2>Mixed game files detected</h2><p>Re-extract the full v3.4.0 ZIP into its own folder and run its launcher.</p></div>';return;}
  buildInventory();applySettings();fit();
  try{await Promise.all([renderer.load(),$('library-background').decode()]);loaded=true;$('loading').hidden=true;showMenu();requestAnimationFrame(animate);installDiagnostics();if(!store.available)toast('Progress cannot be saved in this browser. Use Records → Export save.',true,5000);}
  catch(error){console.error(error);$('loading').innerHTML=`<div class="load-error"><h2>The library could not open.</h2><p>${esc(error.message||'An asset could not be loaded.')}</p><p>Open PLAY.html, or use the included START_MAC.command / START_WINDOWS.bat launcher.</p><button class="game-button" id="retry-load">Try again</button></div>`;$('retry-load')?.addEventListener('click',()=>location.reload());}

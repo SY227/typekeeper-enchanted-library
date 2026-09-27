@@ -1,0 +1,37 @@
+{
+  "scope": "Release payload, cache graph and launcher checks on Linux. Not a macOS GUI test.",
+  "version": "3.4.0",
+  "buildId": "3.4.0-cbb049170ccf1a33",
+  "tests": [
+    {
+      "name": "Every static JS dependency and CSS entry carries the current content fingerprint",
+      "status": "PASS"
+    },
+    {
+      "name": "All prebuilt payloads match the distributed build manifest",
+      "status": "PASS"
+    },
+    {
+      "name": "Launchers parse as Bash and server/updater scripts parse under Python 3.9 grammar",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual START_MAC.command from an unrelated working directory serves v3.4.0 on its new port",
+      "status": "PASS"
+    },
+    {
+      "name": "An occupied default port cannot silently reopen the old game",
+      "status": "PASS"
+    },
+    {
+      "name": "Python launcher rejects a mixed/corrupted prebuilt renderer before serving it",
+      "status": "PASS"
+    },
+    {
+      "name": "Node launcher rejects a mixed/corrupted prebuilt renderer before serving it",
+      "status": "PASS"
+    }
+  ],
+  "passed": 7,
+  "failed": 0
+}

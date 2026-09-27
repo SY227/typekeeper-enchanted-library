@@ -1,10 +1,10 @@
-TYPEKEEPER: ENCHANTED LIBRARY — v3.3.6
+TYPEKEEPER: ENCHANTED LIBRARY — v3.4.0
 
 Extract the entire ZIP. On Mac, open Terminal in this folder and run:
   bash START_MAC.command
 
 The launcher prints the verified version, source folder and local URL.
-The browser tab should display v3.3.6.
+The browser tab should display v3.4.0.
 
 Alternatively open PLAY.html for the embedded no-server edition.
 The full modular site is in dist/; no API key or account is required.

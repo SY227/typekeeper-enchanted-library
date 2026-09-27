@@ -1,21 +1,20 @@
-# v3.3.1 implementation
+# v3.4.0 implementation
 
-The v3.2.1 model/rules/economy remain unchanged. `src/render/presentation.js` contains
-pure display contracts: eight room profiles, readable measured word wrapping, target
-selection consistent with the model, visual separation, and a cancelable one-slot outcome
-cue. `src/render/renderer.js` extends the retained renderer helpers in
-`src/render/classic-renderer.js`; dynamic paper, character, pile, room lights and effects
-are drawn on one Canvas. Original images/music remain local assets.
+The baseline v3.3.6 game model is unchanged. `src/render/chapter-art.js` maps the
+existing CAMPAIGN into 48 frozen title-specific visual profiles; it does not advance
+or access gameplay randomness. `src/render/elemental-art.js` owns capped Canvas
+textures and original FIRE/ICE drawings. `renderer.js` composes these with the
+existing manuscript/typewriter/scroll renderer. The live canonical text painter and
+imperial-scroll geometry remain the source of truth for letter and crest bounds.
 
-`src/main.js` moves the one real native input to the paper, manages learned visual cues,
-quiet HUD/book states, and result scenes after model persistence. `src/styles.css` gives
-existing controls diegetic styling without adding permanent panels. `src/audio/audio.js`
-adds small erase and failed-submit cues without recomposing the soundtrack.
+Chapter scenes are keyed to chapter+contrast and capped at two entries. Elemental
+textures are capped at 48 entries /12MiB. Motion uses the existing paused/frozen/
+slowed presentation clocks; effects have no authority over score, spawning or saves.
 
-Application/build/export metadata is 3.3.1. Gameplay storage/ruleset stays 3.2.1. Native
-module and standalone builds originate from the same modules. The standalone bundler's
-explicit module order includes presentation, retained helpers and new renderer. Build
-outputs include matching payload hashes. Source can be built without network packages.
+The standalone compiler explicitly orders both new modules after their dependencies.
+Source HTML, APP_VERSION and package.json must agree before building. Dist module
+imports carry one content fingerprint. Launchers validate all prebuilt hashes and
+choose the next free local port without killing an existing server.
 
-See PRESENTATION_SPEC.md, QA_REPORT.md and docs/qa/release-gates.json for behavior and
-measured validation. This is browser-native, not an executed Unreal/Blender port.
+Complete preservation list: qa340/preservation.json. Current QA: QA_REPORT.md.
+Historical implementation documents are under archive/ and not current claims.

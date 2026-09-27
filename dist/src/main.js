@@ -1,19 +1,19 @@
-import { APP_VERSION, BUILD_TAG } from './build-info.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { freshRunSeed } from './game/random.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { asset } from './game/assets.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { GameModel } from './game/model.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { FixedClock } from './game/clock.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { LocalStore } from './game/storage.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { POWERS, POWER_META, PACES, RULES, RULESET_VERSION, normalizeInput, levelRules, wordCardWidth } from './game/rules.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { CAMPAIGN, CAMPAIGN_LENGTH, WINGS, stageInfo, rankForStage } from './data/campaign.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { pressureState } from './game/pressure.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { powerForKey } from './game/controls.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { WORD_COUNT } from './data/words.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { GameRenderer } from './render/renderer.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { GameAudio } from './audio/audio.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { icon, ornament } from './ui/icons.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { ScoreRollup } from './ui/score-rollup.js?v=3.3.6-31b6fcc67e9c4a2c';
-import { OutcomeCue, PRESENTATION_VERSION, PAPER_ANCHOR } from './render/presentation.js?v=3.3.6-31b6fcc67e9c4a2c';
+import { APP_VERSION, BUILD_TAG } from './build-info.js?v=3.4.0-cbb049170ccf1a33';
+import { freshRunSeed } from './game/random.js?v=3.4.0-cbb049170ccf1a33';
+import { asset } from './game/assets.js?v=3.4.0-cbb049170ccf1a33';
+import { GameModel } from './game/model.js?v=3.4.0-cbb049170ccf1a33';
+import { FixedClock } from './game/clock.js?v=3.4.0-cbb049170ccf1a33';
+import { LocalStore } from './game/storage.js?v=3.4.0-cbb049170ccf1a33';
+import { POWERS, POWER_META, PACES, RULES, RULESET_VERSION, normalizeInput, levelRules, wordCardWidth } from './game/rules.js?v=3.4.0-cbb049170ccf1a33';
+import { CAMPAIGN, CAMPAIGN_LENGTH, WINGS, stageInfo, rankForStage } from './data/campaign.js?v=3.4.0-cbb049170ccf1a33';
+import { pressureState } from './game/pressure.js?v=3.4.0-cbb049170ccf1a33';
+import { powerForKey } from './game/controls.js?v=3.4.0-cbb049170ccf1a33';
+import { WORD_COUNT } from './data/words.js?v=3.4.0-cbb049170ccf1a33';
+import { GameRenderer } from './render/renderer.js?v=3.4.0-cbb049170ccf1a33';
+import { GameAudio } from './audio/audio.js?v=3.4.0-cbb049170ccf1a33';
+import { icon, ornament } from './ui/icons.js?v=3.4.0-cbb049170ccf1a33';
+import { ScoreRollup } from './ui/score-rollup.js?v=3.4.0-cbb049170ccf1a33';
+import { OutcomeCue, PRESENTATION_VERSION, PAPER_ANCHOR } from './render/presentation.js?v=3.4.0-cbb049170ccf1a33';
 
 const $=id=>document.getElementById(id);
 const stage=$('stage'),viewport=$('viewport'),screen=$('screen-layer'),typing=$('typing-input');
@@ -417,7 +417,7 @@ async function init(){
  document.title=`Typekeeper: Enchanted Library — v${APP_VERSION}`;
  document.documentElement.dataset.build=APP_VERSION;
  const expected=document.querySelector('meta[name="typekeeper-version"]')?.content;
- if(expected&&expected!==APP_VERSION){$('loading').innerHTML='<div class="load-error"><h2>Mixed game files detected</h2><p>Re-extract the full v3.3.6 ZIP into its own folder and run its launcher.</p></div>';return;}
+ if(expected&&expected!==APP_VERSION){$('loading').innerHTML='<div class="load-error"><h2>Mixed game files detected</h2><p>Re-extract the full v3.4.0 ZIP into its own folder and run its launcher.</p></div>';return;}
  buildInventory();applySettings();fit();
  try{await Promise.all([renderer.load(),$('library-background').decode()]);loaded=true;$('loading').hidden=true;showMenu();requestAnimationFrame(animate);installDiagnostics();if(!store.available)toast('Progress cannot be saved in this browser. Use Records → Export save.',true,5000);}
  catch(error){console.error(error);$('loading').innerHTML=`<div class="load-error"><h2>The library could not open.</h2><p>${esc(error.message||'An asset could not be loaded.')}</p><p>Open PLAY.html, or use the included START_MAC.command / START_WINDOWS.bat launcher.</p><button class="game-button" id="retry-load">Try again</button></div>`;$('retry-load')?.addEventListener('click',()=>location.reload());}

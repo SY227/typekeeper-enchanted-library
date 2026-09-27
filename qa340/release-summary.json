@@ -1,0 +1,113 @@
+{
+  "version": "3.4.0",
+  "buildId": "3.4.0-cbb049170ccf1a33",
+  "shippingSHA256": "807353f018d9fb05a29ee2a829ba26f521ade4aa7ebacb7ca185504236552381",
+  "nodeTests": 436,
+  "browserChecks": 190,
+  "browserFailures": 0,
+  "browserUnhandledExceptions": 0,
+  "suites": [
+    {
+      "suite": "chapter-art",
+      "format": "standalone",
+      "passed": 19,
+      "failed": 0,
+      "path": "qa340/chapter-art-standalone.json"
+    },
+    {
+      "suite": "chapter-art",
+      "format": "modules",
+      "passed": 19,
+      "failed": 0,
+      "path": "qa340/chapter-art-modules.json"
+    },
+    {
+      "suite": "scroll-repair",
+      "format": "standalone",
+      "passed": 19,
+      "failed": 0,
+      "path": "qa340/scroll-repair-standalone.json"
+    },
+    {
+      "suite": "scroll-repair",
+      "format": "modules",
+      "passed": 19,
+      "failed": 0,
+      "path": "qa340/scroll-repair-modules.json"
+    },
+    {
+      "suite": "single-row",
+      "format": "standalone",
+      "passed": 19,
+      "failed": 0,
+      "path": "qa340/single-row-standalone.json"
+    },
+    {
+      "suite": "single-row",
+      "format": "modules",
+      "passed": 19,
+      "failed": 0,
+      "path": "qa340/single-row-modules.json"
+    },
+    {
+      "suite": "book-leaf",
+      "format": "standalone",
+      "passed": 26,
+      "failed": 0,
+      "path": "qa340/book-leaf-standalone.json"
+    },
+    {
+      "suite": "book-leaf",
+      "format": "modules",
+      "passed": 26,
+      "failed": 0,
+      "path": "qa340/book-leaf-modules.json"
+    },
+    {
+      "suite": "flow-browser",
+      "format": "standalone",
+      "passed": 12,
+      "failed": 0,
+      "path": "qa340/flow-browser-standalone.json"
+    },
+    {
+      "suite": "flow-browser",
+      "format": "modules",
+      "passed": 12,
+      "failed": 0,
+      "path": "qa340/flow-browser-modules.json"
+    }
+  ],
+  "lastWordCases": 23040,
+  "modelCampaigns": 12,
+  "renderedCampaigns": 2,
+  "renderedChapterEndings": 96,
+  "normalTimeJourney": {
+    "seconds": 109.84,
+    "wordsTyped": 82,
+    "lastChapter": 7,
+    "passed5_13": true,
+    "errors": []
+  },
+  "preservedFiles": 77,
+  "performance": {
+    "averageFPS": 59.6,
+    "p95FrameMs": 16.799999999999272,
+    "medianCanvasDrawMs": 0.9000000001396984,
+    "audioSources": 4,
+    "cardRange": [
+      12,
+      12
+    ]
+  },
+  "launcherChecks": 7,
+  "updateChecks": 6,
+  "freshExtraction": {
+    "status": "PASS",
+    "runtimeByteIdentical": 53,
+    "browserRepeated": 38,
+    "launcherRepeated": 7,
+    "updaterRepeated": 6
+  },
+  "referenceVideoViewed": false
+}
