@@ -1,0 +1,12 @@
+
+> typekeeper-enchanted-library@3.3.6 build
+> node scripts/build.mjs
+
+file:///mnt/data/typekeeper336/fresh/Typekeeper_Enchanted_Library_v3_3_6/scripts/build.mjs:12
+ throw new Error(`Mixed SOURCE release identity: app ${APP_VERSION}, HTML ${metaVersion}, package ${packageVersion}. Fix before building.`);
+       ^
+
+Error: Mixed SOURCE release identity: app 3.3.6, HTML 3.3.5, package 3.3.6. Fix before building.
+    at file:///mnt/data/typekeeper336/fresh/Typekeeper_Enchanted_Library_v3_3_6/scripts/build.mjs:12:8
+
+Node.js v22.16.0

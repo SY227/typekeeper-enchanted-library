@@ -1,0 +1,701 @@
+{
+  "version": "3.3.6",
+  "scope": "Folio/usage-line regression tests on actual shipping bytes in Chromium.\nTwo supported fixtures: embedded PLAY.html or dist ES modules loaded from Blob URLs.\nOnly existing diagnostic access and local asset/import URLs are adapted. No gameplay\nor painting implementation is replaced. This is not a live Vercel/device test.\n",
+  "mode": "modules",
+  "shippingSHA256": "a6be0555cc22bdd7370a587bdfd2bc5492918014584da6b9d0a3f56140dc8c62",
+  "browser": "144.0.7559.96",
+  "passed": 26,
+  "failed": 0,
+  "unhandledErrors": [],
+  "tests": [
+    {
+      "name": "Shipping title and running folio renderer identify the new 3.3.6 release",
+      "status": "PASS",
+      "seconds": 0.128
+    },
+    {
+      "name": "Exactly four persistent usage lines explain each spell and its existing key",
+      "status": "PASS",
+      "seconds": 0.286
+    },
+    {
+      "name": "Usage-line fit and original halo size at 1366\u00d7768",
+      "status": "PASS",
+      "seconds": 0.112
+    },
+    {
+      "name": "Usage-line fit and original halo size at 1920\u00d71080",
+      "status": "PASS",
+      "seconds": 0.124
+    },
+    {
+      "name": "Usage-line fit and original halo size at 1280\u00d7720",
+      "status": "PASS",
+      "seconds": 0.11
+    },
+    {
+      "name": "Usage-line fit and original halo size at 1024\u00d7768",
+      "status": "PASS",
+      "seconds": 0.12
+    },
+    {
+      "name": "FIRE via key: one cast, no buffer or selection loss",
+      "status": "PASS",
+      "seconds": 0.127
+    },
+    {
+      "name": "FIRE via caption click: one cast, no buffer or selection loss",
+      "status": "PASS",
+      "seconds": 0.171
+    },
+    {
+      "name": "ICE via key: one cast, no buffer or selection loss",
+      "status": "PASS",
+      "seconds": 0.084
+    },
+    {
+      "name": "ICE via caption click: one cast, no buffer or selection loss",
+      "status": "PASS",
+      "seconds": 0.117
+    },
+    {
+      "name": "SLOW via key: one cast, no buffer or selection loss",
+      "status": "PASS",
+      "seconds": 0.075
+    },
+    {
+      "name": "SLOW via caption click: one cast, no buffer or selection loss",
+      "status": "PASS",
+      "seconds": 0.115
+    },
+    {
+      "name": "WIND via key: one cast, no buffer or selection loss",
+      "status": "PASS",
+      "seconds": 0.087
+    },
+    {
+      "name": "WIND via caption click: one cast, no buffer or selection loss",
+      "status": "PASS",
+      "seconds": 0.124
+    },
+    {
+      "name": "Empty inventory keeps the hint visible without gifting or consuming a charge",
+      "status": "PASS",
+      "seconds": 0.132
+    },
+    {
+      "name": "STORED FIRE and WIND retain no-waste protections with the new captions",
+      "status": "PASS",
+      "seconds": 0.082
+    },
+    {
+      "name": "Active and queued spell timers do not replace, cover or relabel usage captions",
+      "status": "PASS",
+      "seconds": 0.049
+    },
+    {
+      "name": "Pause keeps the whole inventory inert and resumes native typing correctly",
+      "status": "PASS",
+      "seconds": 0.091
+    },
+    {
+      "name": "Subtle lines remain readable and non-animated in pressure/contrast/reduced-motion states",
+      "status": "PASS",
+      "seconds": 0.047
+    },
+    {
+      "name": "All six folio skins at four widths cache correctly without touching gameplay state",
+      "status": "PASS",
+      "seconds": 0.105
+    },
+    {
+      "name": "Six material skins render distinct actual pixels, not just distinct metadata",
+      "status": "PASS",
+      "seconds": 0.058
+    },
+    {
+      "name": "A 155-width texture churn remains within the existing cache/memory budgets",
+      "status": "PASS",
+      "seconds": 0.093
+    },
+    {
+      "name": "Typed folio leaves retain six material death paths and clean up after animation",
+      "status": "PASS",
+      "seconds": 1.523
+    },
+    {
+      "name": "Full long-word entry and prefix ink remain one row on the new folio skin",
+      "status": "PASS",
+      "seconds": 0.18
+    },
+    {
+      "name": "Actual-app screenshots and the actual six-skin renderer sheet are captured",
+      "status": "PASS",
+      "seconds": 1.574
+    },
+    {
+      "name": "No unhandled browser JavaScript errors during the suite",
+      "status": "PASS",
+      "seconds": 0.0
+    }
+  ],
+  "evidence": {
+    "viewports": [
+      {
+        "size": [
+          1366,
+          768
+        ],
+        "captions": [
+          {
+            "power": "fire",
+            "x": 256.87188720703125,
+            "y": 710.7022094726562,
+            "w": 96.0888671875,
+            "h": 15.87554931640625,
+            "stageBottom": 760,
+            "titleBottom": 707.3599853515625,
+            "bookBottom": 687.1309204101562,
+            "haloBottom": 673.9378051757812,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 341.1324462890625,
+            "right": 352.96075439453125,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "ice",
+            "x": 367.16522216796875,
+            "y": 710.7022094726562,
+            "w": 96.0888671875,
+            "h": 15.87554931640625,
+            "stageBottom": 760,
+            "titleBottom": 707.3599853515625,
+            "bookBottom": 689.9594116210938,
+            "haloBottom": 673.9378051757812,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 455.1988220214844,
+            "right": 463.25408935546875,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "slow",
+            "x": 904.4274291992188,
+            "y": 710.7022094726562,
+            "w": 96.0888671875,
+            "h": 15.87554931640625,
+            "stageBottom": 760,
+            "titleBottom": 707.3599853515625,
+            "bookBottom": 687.1309204101562,
+            "haloBottom": 673.9378051757812,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 987.5260620117188,
+            "right": 1000.5162963867188,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "wind",
+            "x": 1014.7207641601562,
+            "y": 710.7022094726562,
+            "w": 96.08880615234375,
+            "h": 15.87554931640625,
+            "stageBottom": 760,
+            "titleBottom": 707.3599853515625,
+            "bookBottom": 689.9594116210938,
+            "haloBottom": 673.9378051757812,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 1093.1845703125,
+            "right": 1110.8095703125,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          }
+        ]
+      },
+      {
+        "size": [
+          1920,
+          1080
+        ],
+        "captions": [
+          {
+            "power": "fire",
+            "x": 357.0718688964844,
+            "y": 1002.2489013671875,
+            "w": 135.95556640625,
+            "h": 22.4622802734375,
+            "stageBottom": 1072,
+            "titleBottom": 997.52001953125,
+            "bookBottom": 968.8980102539062,
+            "haloBottom": 950.2311401367188,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 476.2915954589844,
+            "right": 493.0274353027344,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "ice",
+            "x": 513.125244140625,
+            "y": 1002.2489013671875,
+            "w": 135.95556640625,
+            "h": 22.4622802734375,
+            "stageBottom": 1072,
+            "titleBottom": 997.52001953125,
+            "bookBottom": 972.9000244140625,
+            "haloBottom": 950.2311401367188,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 637.6834106445312,
+            "right": 649.080810546875,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "slow",
+            "x": 1273.294189453125,
+            "y": 1002.2489013671875,
+            "w": 135.9554443359375,
+            "h": 22.4622802734375,
+            "stageBottom": 1072,
+            "titleBottom": 997.52001953125,
+            "bookBottom": 968.8980102539062,
+            "haloBottom": 950.2311401367188,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 1390.869873046875,
+            "right": 1409.2496337890625,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "wind",
+            "x": 1429.347412109375,
+            "y": 1002.2489013671875,
+            "w": 135.95556640625,
+            "h": 22.4622802734375,
+            "stageBottom": 1072,
+            "titleBottom": 997.52001953125,
+            "bookBottom": 972.9000244140625,
+            "haloBottom": 950.2311401367188,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 1540.365478515625,
+            "right": 1565.302978515625,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          }
+        ]
+      },
+      {
+        "size": [
+          1280,
+          720
+        ],
+        "captions": [
+          {
+            "power": "fire",
+            "x": 241.07186889648438,
+            "y": 665.848876953125,
+            "w": 89.95556640625,
+            "h": 14.86224365234375,
+            "stageBottom": 712,
+            "titleBottom": 662.719970703125,
+            "bookBottom": 643.7821655273438,
+            "haloBottom": 631.4310913085938,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 319.9541015625,
+            "right": 331.0274353027344,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "ice",
+            "x": 344.3251953125,
+            "y": 665.848876953125,
+            "w": 89.95556640625,
+            "h": 14.86224365234375,
+            "stageBottom": 712,
+            "titleBottom": 662.719970703125,
+            "bookBottom": 646.4300537109375,
+            "haloBottom": 631.4310913085938,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 426.7396545410156,
+            "right": 434.28076171875,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "slow",
+            "x": 847.2940673828125,
+            "y": 665.848876953125,
+            "w": 89.95556640625,
+            "h": 14.86224365234375,
+            "stageBottom": 712,
+            "titleBottom": 662.719970703125,
+            "bookBottom": 643.7821655273438,
+            "haloBottom": 631.4310913085938,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 925.0885009765625,
+            "right": 937.2496337890625,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "wind",
+            "x": 950.5474243164062,
+            "y": 665.848876953125,
+            "w": 89.95550537109375,
+            "h": 14.86224365234375,
+            "stageBottom": 712,
+            "titleBottom": 662.719970703125,
+            "bookBottom": 646.4300537109375,
+            "haloBottom": 631.4310913085938,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 1024.0029296875,
+            "right": 1040.5029296875,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          }
+        ]
+      },
+      {
+        "size": [
+          1024,
+          768
+        ],
+        "captions": [
+          {
+            "power": "fire",
+            "x": 85.87187194824219,
+            "y": 710.7022094726562,
+            "w": 96.08889770507812,
+            "h": 15.87554931640625,
+            "stageBottom": 760,
+            "titleBottom": 707.3599853515625,
+            "bookBottom": 687.1309204101562,
+            "haloBottom": 673.9378051757812,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 170.13243103027344,
+            "right": 181.9607696533203,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "ice",
+            "x": 196.1652069091797,
+            "y": 710.7022094726562,
+            "w": 96.08888244628906,
+            "h": 15.87554931640625,
+            "stageBottom": 760,
+            "titleBottom": 707.3599853515625,
+            "bookBottom": 689.9594116210938,
+            "haloBottom": 673.9378051757812,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 284.1988220214844,
+            "right": 292.25408935546875,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "slow",
+            "x": 733.4274291992188,
+            "y": 710.7022094726562,
+            "w": 96.0888671875,
+            "h": 15.87554931640625,
+            "stageBottom": 760,
+            "titleBottom": 707.3599853515625,
+            "bookBottom": 687.1309204101562,
+            "haloBottom": 673.9378051757812,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 816.5260620117188,
+            "right": 829.5162963867188,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          },
+          {
+            "power": "wind",
+            "x": 843.7207641601562,
+            "y": 710.7022094726562,
+            "w": 96.0888671875,
+            "h": 15.87554931640625,
+            "stageBottom": 760,
+            "titleBottom": 707.3599853515625,
+            "bookBottom": 689.9594116210938,
+            "haloBottom": 673.9378051757812,
+            "textRects": 1,
+            "overflow": false,
+            "textRight": 922.1846313476562,
+            "right": 939.8096313476562,
+            "font": "12.5px",
+            "whiteSpace": "nowrap"
+          }
+        ]
+      }
+    ],
+    "textures": {
+      "checks": [
+        {
+          "kind": "normal",
+          "width": 112,
+          "reused": true,
+          "canvas": [
+            288,
+            184
+          ],
+          "pixels": 25944
+        },
+        {
+          "kind": "normal",
+          "width": 230,
+          "reused": true,
+          "canvas": [
+            524,
+            184
+          ],
+          "pixels": 54349
+        },
+        {
+          "kind": "normal",
+          "width": 410,
+          "reused": true,
+          "canvas": [
+            884,
+            184
+          ],
+          "pixels": 97660
+        },
+        {
+          "kind": "normal",
+          "width": 708,
+          "reused": true,
+          "canvas": [
+            1480,
+            184
+          ],
+          "pixels": 169370
+        },
+        {
+          "kind": "fire",
+          "width": 112,
+          "reused": true,
+          "canvas": [
+            288,
+            184
+          ],
+          "pixels": 25944
+        },
+        {
+          "kind": "fire",
+          "width": 230,
+          "reused": true,
+          "canvas": [
+            524,
+            184
+          ],
+          "pixels": 54349
+        },
+        {
+          "kind": "fire",
+          "width": 410,
+          "reused": true,
+          "canvas": [
+            884,
+            184
+          ],
+          "pixels": 97660
+        },
+        {
+          "kind": "fire",
+          "width": 708,
+          "reused": true,
+          "canvas": [
+            1480,
+            184
+          ],
+          "pixels": 169370
+        },
+        {
+          "kind": "ice",
+          "width": 112,
+          "reused": true,
+          "canvas": [
+            288,
+            184
+          ],
+          "pixels": 25944
+        },
+        {
+          "kind": "ice",
+          "width": 230,
+          "reused": true,
+          "canvas": [
+            524,
+            184
+          ],
+          "pixels": 54349
+        },
+        {
+          "kind": "ice",
+          "width": 410,
+          "reused": true,
+          "canvas": [
+            884,
+            184
+          ],
+          "pixels": 97660
+        },
+        {
+          "kind": "ice",
+          "width": 708,
+          "reused": true,
+          "canvas": [
+            1480,
+            184
+          ],
+          "pixels": 169370
+        },
+        {
+          "kind": "slow",
+          "width": 112,
+          "reused": true,
+          "canvas": [
+            288,
+            184
+          ],
+          "pixels": 25944
+        },
+        {
+          "kind": "slow",
+          "width": 230,
+          "reused": true,
+          "canvas": [
+            524,
+            184
+          ],
+          "pixels": 54349
+        },
+        {
+          "kind": "slow",
+          "width": 410,
+          "reused": true,
+          "canvas": [
+            884,
+            184
+          ],
+          "pixels": 97660
+        },
+        {
+          "kind": "slow",
+          "width": 708,
+          "reused": true,
+          "canvas": [
+            1480,
+            184
+          ],
+          "pixels": 169370
+        },
+        {
+          "kind": "wind",
+          "width": 112,
+          "reused": true,
+          "canvas": [
+            288,
+            184
+          ],
+          "pixels": 25944
+        },
+        {
+          "kind": "wind",
+          "width": 230,
+          "reused": true,
+          "canvas": [
+            524,
+            184
+          ],
+          "pixels": 54349
+        },
+        {
+          "kind": "wind",
+          "width": 410,
+          "reused": true,
+          "canvas": [
+            884,
+            184
+          ],
+          "pixels": 97660
+        },
+        {
+          "kind": "wind",
+          "width": 708,
+          "reused": true,
+          "canvas": [
+            1480,
+            184
+          ],
+          "pixels": 169370
+        },
+        {
+          "kind": "bonus",
+          "width": 112,
+          "reused": true,
+          "canvas": [
+            288,
+            184
+          ],
+          "pixels": 25944
+        },
+        {
+          "kind": "bonus",
+          "width": 230,
+          "reused": true,
+          "canvas": [
+            524,
+            184
+          ],
+          "pixels": 54349
+        },
+        {
+          "kind": "bonus",
+          "width": 410,
+          "reused": true,
+          "canvas": [
+            884,
+            184
+          ],
+          "pixels": 97660
+        },
+        {
+          "kind": "bonus",
+          "width": 708,
+          "reused": true,
+          "canvas": [
+            1480,
+            184
+          ],
+          "pixels": 169370
+        }
+      ],
+      "modelSame": true,
+      "bytes": 15637056,
+      "count": 29
+    },
+    "cacheCap": {
+      "size": 41,
+      "bytes": 32952192
+    }
+  }
+}

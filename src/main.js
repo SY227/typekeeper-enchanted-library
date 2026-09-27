@@ -1,3 +1,5 @@
+import { APP_VERSION, BUILD_TAG } from './build-info.js';
+import { freshRunSeed } from './game/random.js';
 import { asset } from './game/assets.js';
 import { GameModel } from './game/model.js';
 import { FixedClock } from './game/clock.js';
@@ -11,6 +13,7 @@ import { GameRenderer } from './render/renderer.js';
 import { GameAudio } from './audio/audio.js';
 import { icon, ornament } from './ui/icons.js';
 import { ScoreRollup } from './ui/score-rollup.js';
+import { OutcomeCue, PRESENTATION_VERSION, PAPER_ANCHOR } from './render/presentation.js';
 
 const $=id=>document.getElementById(id);
 const stage=$('stage'),viewport=$('viewport'),screen=$('screen-layer'),typing=$('typing-input');
@@ -27,6 +30,11 @@ let recordFilter=settings.pace,recordPeriod='all',recordMode='campaign',recordCh
 let settingsTab='audio',resumeTimer=null,resumeGeneration=0,screenEntered=0,chapterTimer=null;
 const learnedSpells=new Set();
 const scoreRollup=new ScoreRollup();
+const outcomeCue=new OutcomeCue();
+let sceneFrameTime=0,scoreWakeTimer=null;
+const GUIDE_KEY='typekeeper-manuscript-guidance-v1';
+try{const g=JSON.parse(localStorageAccess?.getItem(GUIDE_KEY)||'{}');renderer.guide.word=g.word===true;renderer.guide.ice=g.ice===true;}catch{}
+function saveGuidance(){try{localStorageAccess?.setItem(GUIDE_KEY,JSON.stringify({word:renderer.guide.word,ice:renderer.guide.ice}));}catch{}}
 let tallyMedal=0,lastTallyId='',scoreEmphasis=null;
 let pauseSelection=[0,0];
 const format=n=>Math.max(0,Math.round(Number(n)||0)).toLocaleString('en-US');
@@ -42,6 +50,9 @@ function fit(){
  viewport.style.width=`${width}px`;viewport.style.height=`${width*.75}px`;
  stage.style.transform=`scale(${width/1200})`;
  renderer.resize(Math.min(2,(window.devicePixelRatio||1)*width/1200));
+ renderer.setViewport(width/1200);
+ stage.style.setProperty('--paper-type-size',`${Math.max(29,Math.min(36,23.5/(width/1200)))}px`);
+ Object.assign($('typing-dock').style,{left:`${PAPER_ANCHOR.x}px`,top:`${PAPER_ANCHOR.y}px`,width:`${PAPER_ANCHOR.width}px`});
 }
 window.addEventListener('resize',fit);window.visualViewport?.addEventListener('resize',fit);
 function applySettings(){
@@ -55,17 +66,19 @@ function applySettings(){
  $('sound-button').setAttribute('title',settings.muted?'Unmute audio':'Mute all audio');
  $('sound-button').setAttribute('aria-pressed',String(settings.muted));
  if(!settings.hints)$('onboarding-hint').hidden=true;
+ if(!settings.motion&&outcomeCue.active)completeOutcome(outcomeCue.finish());
 }
 function toast(text,error=false,duration=2900){clearTimeout(toastTimer);$('toast').textContent=text;$('toast').className=`visible${error?' error':''}`;toastTimer=setTimeout(()=>{$('toast').className='';},duration);}
 function announce(text){$('announcer').textContent=text;}
 function focusGame(){if(model.phase==='playing'){typing.disabled=false;typing.focus({preventScroll:true});}}
 function pulse(name){const dock=$('typing-dock');dock.classList.remove(name);void dock.offsetWidth;dock.classList.add(name);setTimeout(()=>dock.classList.remove(name),270);}
 function setScreen(name,html=''){
+ if(!name.startsWith('scene-')){outcomeCue.cancel();renderer.ceremony=null;}
  scoreRollup.cancel();audio.stopScore();
  view=name;screenEntered=performance.now();const generation=++screenGeneration;screen.dataset.screen=name;screen.innerHTML=html;
  $('play-hud').inert=Boolean(html);document.querySelector('.utility-controls').inert=Boolean(screen.querySelector('[role=dialog]'));
  stage.dataset.view=name;
- audio.setScene(name==='playing'?(model.info.trial?'trial':'play'):name==='pause'||name==='countdown'?'pause':name==='level-clear'?'clear':name==='game-over'?'over':model.phase==='paused'?'pause':'menu');
+ audio.setScene(name==='playing'?(model.info.trial?'trial':'play'):name==='pause'||name==='countdown'?'pause':name==='level-clear'||name==='scene-clear'?'clear':name==='game-over'||name==='scene-defeat'?'over':model.phase==='paused'?'pause':'menu');
  typing.disabled=model.phase!=='playing';$('pause-button').hidden=!['playing','paused'].includes(model.phase);$('play-hud').hidden=model.phase==='menu';
  for(const p of POWERS)$(`spell-${p}`)?.setAttribute('tabindex',model.phase==='playing'?'0':'-1');
  if(html)requestAnimationFrame(()=>{if(generation===screenGeneration&&!screen.contains(document.activeElement))(screen.querySelector('[data-autofocus]')||screen.querySelector('button'))?.focus({preventScroll:true});});
@@ -101,13 +114,13 @@ function beginPresentation(){
  resetSpellFeedback();
  lastTallyId='';runRecorded=false;lastBest=store.best(model.pace,model.mode,model.startLevel);clock.reset();typing.value=model.buffer;setScreen('playing');wingAtmosphere();renderHud();focusGame();audio.unlock();
  chapterReveal();
- $('onboarding-hint').hidden=!(settings.hints&&model.level===1&&model.correct===0);
+ $('onboarding-hint').hidden=true;
  announce(`${model.mode==='practice'?'Practice. ':''}Chapter ${model.level}. ${model.info.title}. ${model.info.trial?'Archive trial. ':''}Magic shortcuts: 1 fire, 2 ice, 3 slow, 4 wind.`);
 }
 function start(seed,level=1,mode='campaign'){
- const array=new Uint32Array(1);try{crypto.getRandomValues(array);}catch{array[0]=Date.now();}
+ const runSeed=seed??freshRunSeed();
  if(mode==='campaign')store.clearCheckpoint(settings.pace);
- model.start({seed:seed??array[0],pace:settings.pace,level,mode});
+ model.start({seed:runSeed,pace:settings.pace,level,mode});
  if(mode==='practice'||mode==='endless')for(const p of POWERS)model.inventory[p]=1;
  if(mode==='campaign')store.setCheckpoint(model.checkpoint());
  beginPresentation();
@@ -194,7 +207,7 @@ function updateScoreTally(now){
 }
 screen.addEventListener('click',e=>{if(e.target.closest('#result-score-value')&&scoreRollup.active)finishScoreTally();});
 function showAbout(){
- rememberReturn();setScreen('about',modal(`${closeButton()}<div class="credits-crest">${icon('quill')}</div><h2 id="modal-title">Typekeeper</h2><p class="credits-subtitle">Enchanted Library</p><div class="credits-list"><span>CREATED BY</span><strong>FoxForge Studio</strong><span>ORIGINAL MUSIC</span><strong>Lanterns & Letters</strong><span>WITH THANKS</span><strong>To every keeper of stories.</strong></div><div class="modal-actions">${primary('Back','back','data-autofocus')}</div>`,'compact'));
+ rememberReturn();setScreen('about',modal(`${closeButton()}<div class="credits-crest">${icon('quill')}</div><h2 id="modal-title">Typekeeper</h2><p class="fine-print">Version ${APP_VERSION} · single-line word cards</p><p class="credits-subtitle">Enchanted Library</p><div class="credits-list"><span>CREATED BY</span><strong>FoxForge Studio</strong><span>ORIGINAL MUSIC</span><strong>Lanterns & Letters</strong><span>WITH THANKS</span><strong>To every keeper of stories.</strong></div><div class="modal-actions">${primary('Back','back','data-autofocus')}</div>`,'compact'));
 }
 function goBack(){if(returnView==='menu')showMenu();else if(returnView==='level-clear')showClear();else if(returnView==='game-over')showOver();else showPause();}
 function showQuit(){
@@ -208,7 +221,7 @@ function perform(action){
   case 'start':if(store.checkpoint(settings.pace))perform('new-confirm');else start();break;
   case 'fresh-start':start();break;
   case 'continue':continueRun();break;
-  case 'retry-chapter':{const cp=store.checkpoint(model.pace);if(cp&&cp.seed===model.seed){model.restoreCheckpoint(cp);beginPresentation();}break;}
+  case 'retry-chapter':{const cp=store.checkpoint(model.pace);if(cp&&cp.seed===model.seed){model.retryChapter(cp);store.setCheckpoint(model.checkpoint());beginPresentation();}break;}
   case 'restart':start(undefined,model.mode==='practice'?model.startLevel:model.mode==='endless'?49:1,model.mode);break;
   case 'endless':if(store.progress(settings.pace).stages[48]&&store.progress(settings.pace).stages[48].campaignClear!==false)start(undefined,49,'endless');else toast('Complete all 48 chapters to unlock the Infinite Archive.');break;
   case 'menu':if(model.mode==='endless'&&model.phase!=='menu'&&model.phase!=='game-over'&&!runRecorded&&model.time>0){store.add(model.retire());runRecorded=true;}showMenu();break;
@@ -301,8 +314,9 @@ window.addEventListener('blur',pauseForFocus);document.addEventListener('visibil
 document.addEventListener('pointerdown',()=>audio.unlock(),{once:true});
 document.addEventListener('keydown',()=>audio.unlock(),{once:true});
 
+const spellUseLabels=Object.freeze({fire:'Clear words',ice:'Freeze words',slow:'Slow words',wind:'Clear pile'});
 function buildInventory(){
- $('spell-inventory').innerHTML=POWERS.map(p=>`<button type="button" class="spell-slot" data-power="${p}" id="spell-${p}" aria-keyshortcuts="${POWER_META[p].key}" aria-describedby="tip-${p}" aria-label="${p}: no books yet" aria-disabled="true"><span class="spell-aura" aria-hidden="true"></span><span class="spell-keycap" aria-hidden="true">${POWER_META[p].key}</span><span class="spell-ready" id="ready-${p}">COLLECT</span><img class="spell-book" src="${asset(`assets/book-${p}.svg`)}" alt=""><span class="book-count" id="count-${p}">0</span><span class="spell-command">${POWER_META[p].name}</span><span class="spell-stock" id="stock-${p}" aria-hidden="true">${'<i></i>'.repeat(RULES.inventoryCapacity)}</span><span class="spell-tip" id="tip-${p}" role="tooltip"><b>${POWER_META[p].name} · ${POWER_META[p].key}</b>${POWER_META[p].detail}</span><span class="spell-timer" id="timer-${p}" aria-hidden="true"></span></button>`).join('');
+ $('spell-inventory').innerHTML=POWERS.map(p=>`<button type="button" class="spell-slot" data-power="${p}" id="spell-${p}" aria-keyshortcuts="${POWER_META[p].key}" aria-describedby="use-${p} tip-${p}" aria-label="${p}: no books yet" aria-disabled="true"><span class="spell-aura" aria-hidden="true"></span><span class="spell-keycap" aria-hidden="true">${POWER_META[p].key}</span><span class="spell-ready" id="ready-${p}">COLLECT</span><img class="spell-book" src="${asset(`assets/book-${p}.svg`)}" alt=""><span class="book-leaves" aria-hidden="true"></span><span class="book-count" id="count-${p}">0/${RULES.inventoryCapacity}</span><span class="spell-command">${POWER_META[p].name}</span><span class="spell-use" id="use-${p}"><span class="sr-only">Press </span><kbd>${POWER_META[p].key}</kbd><span class="spell-use-label">${spellUseLabels[p]}</span><span class="sr-only">. You can also click this book.</span></span><span class="spell-stock" id="stock-${p}" aria-hidden="true">${'<i></i>'.repeat(RULES.inventoryCapacity)}</span><span class="spell-tip" id="tip-${p}" role="tooltip"><b>${POWER_META[p].name} · ${POWER_META[p].key}</b>${POWER_META[p].detail}</span><span class="spell-timer" id="timer-${p}" aria-hidden="true"></span></button>`).join('');
  for(const p of POWERS){$(`spell-${p}`).addEventListener('pointerdown',e=>{if(model.phase==='playing')e.preventDefault();});$(`spell-${p}`).addEventListener('click',()=>quickCast(p,'button'));}
 }
 let previousStock={fire:0,ice:0,slow:0,wind:0},lastPressureKey='';
@@ -328,7 +342,7 @@ function renderHud(){
  const rescue=model.danger>=50&&model.inventory.wind>0&&model.phase==='playing';$('rescue-hint').hidden=!rescue;setText('rescue-hint',model.danger>=90?'PRESS 4 · RESCUE':'PRESS 4 · CLEAR PILE');$(`spell-wind`).classList.toggle('rescue',rescue);
  for(const p of POWERS){
   const status=model.spellStatus(p),count=status.count,active=status.remaining>0,queued=status.state==='queued',slot=$(`spell-${p}`),ready=status.ready;
-  setText(`count-${p}`,String(count));slot.classList.toggle('available',count>0);slot.classList.toggle('cast-ready',ready);slot.classList.toggle('effect-active',active);slot.setAttribute('aria-disabled',String(!ready||model.phase!=='playing'));
+  setText(`count-${p}`,`${count}/${RULES.inventoryCapacity}`);slot.classList.toggle('available',count>0);slot.classList.toggle('cast-ready',ready);slot.classList.toggle('effect-active',active);slot.setAttribute('aria-disabled',String(!ready||model.phase!=='playing'));
   slot.setAttribute('aria-label',`${POWER_META[p].name}, shortcut ${POWER_META[p].key}. ${queued?`Queued until ICE ends. ${Math.ceil(model.effects[p])} seconds saved.`:active?`Active, ${Math.ceil(model.effects[p])} seconds remaining.`:ready?`${count} books ready.`:count?`${count} books stored. ${status.reason==='empty-pile'?'The pile is empty.':status.reason==='empty-field'?'No falling words to clear.':'Available during play.'}`:'No books yet. Collect a colored word.'}`);
   setText(`ready-${p}`,queued?'QUEUED':active?'ACTIVE':ready?'READY':count?'STORED':'COLLECT');setText(`timer-${p}`,active?`${model.effects[p].toFixed(1)}s`:'');
   slot.style.setProperty('--effect-progress',active?String(model.effects[p]/(p==='ice'?RULES.iceDuration:RULES.slowDuration)):0);
@@ -337,18 +351,24 @@ function renderHud(){
   if(count>previousStock[p]){clearTimeout(stockPulseTimers[p]);slot.classList.remove('just-ready');void slot.offsetWidth;slot.classList.add('just-ready');stockPulseTimers[p]=setTimeout(()=>{slot.classList.remove('just-ready');stockPulseTimers[p]=null;},1800);}previousStock[p]=count;
  }
  setHTML('effect-status',['ice','slow'].filter(p=>model.effects[p]>0).map(p=>`<span class="effect-chip" style="color:${POWER_META[p].color}"><img src="${asset(`assets/icon-${p}.svg`)}" alt="">${p==='slow'&&model.effects.ice>0?'SLOW · QUEUED':p.toUpperCase()}<b>${model.effects[p].toFixed(1)}s</b></span>`).join(''));
- const power=model.buffer.toLowerCase();setText('typing-label',POWERS.includes(power)&&!model.words.some(w=>w.text===model.buffer)?`CAST ${power.toUpperCase()}`:'');$('typing-label').hidden=!$('typing-label').textContent;
+ const power=model.buffer.toLowerCase();setText('typing-label','');$('typing-label').hidden=true;
+ const guideWord=settings.hints&&!renderer.guide.word?model.words.find(w=>w.id===renderer.guide.targetId)?.text:'';
+ typing.placeholder=guideWord||'';
+ stage.classList.toggle('has-streak',model.streak>0);
  if(lastPressureKey!==pressure.key){lastPressureKey=pressure.key;announce(`Typekeeper ${pressure.label.toLowerCase()}. Paper pile ${meter} percent.`);}
 }
 function processEvents(){
  const events=model.drainEvents();renderer.handle(events);
  for(const e of events){
   audio.setPressure(model.danger);audio.play(e);
+  if(e.type==='input'&&e.changed&&!e.erased&&e.text&&!e.target&&!POWERS.some(p=>p.toUpperCase().startsWith(e.text)))pulse('mistype');
   if(e.type==='correct'){
    if(settings.motion){scoreEmphasis?.cancel();scoreEmphasis=$('score-value').animate([{transform:'scale(1)'},{transform:'scale(1.045)',offset:.3},{transform:'scale(1)'}],{duration:190,easing:'ease-out'});}
-   pulse('success');$('onboarding-hint').hidden=true;if(e.collected&&settings.hints&&!learnedSpells.has(e.word.kind)){learnedSpells.add(e.word.kind);toast(`${POWER_META[e.word.kind].name} collected · shortcut ${POWER_META[e.word.kind].key}`,false,2000);}}
+   pulse('success');$('onboarding-hint').hidden=true;saveGuidance();
+   clearTimeout(scoreWakeTimer);stage.classList.add('score-awake');scoreWakeTimer=setTimeout(()=>stage.classList.remove('score-awake'),700);
+   if(e.collected&&settings.hints&&!learnedSpells.has(e.word.kind)){learnedSpells.add(e.word.kind);announce(`${POWER_META[e.word.kind].name} collected. Shortcut ${POWER_META[e.word.kind].key}.`);}}
   if(e.type==='late'){toast(e.reason==='fire'?'Already cleared.':'Just missed.',false,1200);}
-  if(e.type==='wrong'){pulse('invalid');toast(`No match · +2%`,true,1800);}
+  if(e.type==='wrong'){pulse('invalid');announce('No match. Two percent added to the paper pile.');}
   if(e.type==='unavailable'){
    const msg=e.reason==='active'?`${POWER_META[e.power].name} is active.`:e.reason==='empty-field'?'Nothing to clear.':e.reason==='empty-pile'?'The pile is empty.':e.reason==='cooldown'?'One cast at a time.':`No ${POWER_META[e.power].name} spells.`;
    toast(msg,false,2000);
@@ -357,13 +377,47 @@ function processEvents(){
   if(e.type==='level-clear'){
    if(model.mode==='campaign'){store.completeStage(model.pace,e);if(model.level<48)store.setCheckpoint(model.checkpoint());else if(model.level===48){store.clearCheckpoint(model.pace);if(!runRecorded){store.add(model.finishCampaign());runRecorded=true;}}}
    if(model.mode==='practice'){store.completeStage(model.pace,e,false);if(!runRecorded){const result=model.result({victory:false});store.add(result);model.lastResult=result;runRecorded=true;}}
-   showClear(e);
+   queueOutcome('clear',e);
   }
-  if(e.type==='game-over'){if(model.mode==='campaign')store.markFailure(model.pace,model.seed,model.level);if(!runRecorded){store.add(e.result);runRecorded=true;}showOver(e.result);}
+  if(e.type==='game-over'){if(model.mode==='campaign')store.markFailure(model.pace,model.seed,model.level);if(!runRecorded){store.add(e.result);runRecorded=true;}queueOutcome('defeat',e.result);}
  }
 }
-function animate(now){const alpha=clock.advance(now,dt=>{if(!freezeSimulation)model.step(dt);},model.phase==='playing');processEvents();renderer.frame(now,alpha);updateScoreTally(now);if(now-lastHud>80){renderHud();lastHud=now;}requestAnimationFrame(animate);}
+function queueOutcome(kind,payload){
+ setScreen(`scene-${kind}`);outcomeCue.start(kind,payload,settings.motion);
+ renderer.ceremony={kind,progress:0,level:model.level};
+ $('play-hud').inert=true;typing.disabled=true;
+ stage.focus({preventScroll:true});
+ announce(kind==='defeat'?'The machine is jammed. Press Enter for results.':'Chapter complete. Press Enter for results.');
+ if(!settings.motion)completeOutcome(outcomeCue.finish());
+}
+function completeOutcome(result){
+ if(!result)return;
+ renderer.ceremony=null;
+ if(result.kind==='defeat')showOver(result.payload);else showClear(result.payload);
+}
+function skipOutcome(e){
+ if(!outcomeCue.active)return;
+ if(e.type==='keydown'&&(!['Enter','Escape'].includes(e.key)||e.repeat||e.isComposing||e.metaKey||e.ctrlKey||e.altKey))return;
+ if(e.type==='pointerdown'&&e.target.closest('button'))return;
+ e.preventDefault();e.stopImmediatePropagation();completeOutcome(outcomeCue.finish());
+}
+window.addEventListener('keydown',skipOutcome,true);stage.addEventListener('pointerdown',skipOutcome,true);
+function animate(now){
+ const dt=sceneFrameTime?Math.min(.05,Math.max(0,(now-sceneFrameTime)/1000)):0;sceneFrameTime=now;
+ const alpha=clock.advance(now,dt=>{if(!freezeSimulation)model.step(dt);},model.phase==='playing');
+ processEvents();
+ if(outcomeCue.active){
+  if(renderer.ceremony)renderer.ceremony.progress=outcomeCue.progress;
+  completeOutcome(outcomeCue.step(dt,!document.hidden));
+ }
+ renderer.frame(now,alpha);updateScoreTally(now);
+ if(now-lastHud>80){renderHud();lastHud=now;}requestAnimationFrame(animate);
+}
 async function init(){
+ document.title=`Typekeeper: Enchanted Library — v${APP_VERSION}`;
+ document.documentElement.dataset.build=APP_VERSION;
+ const expected=document.querySelector('meta[name="typekeeper-version"]')?.content;
+ if(expected&&expected!==APP_VERSION){$('loading').innerHTML='<div class="load-error"><h2>Mixed game files detected</h2><p>Re-extract the full v3.3.6 ZIP into its own folder and run its launcher.</p></div>';return;}
  buildInventory();applySettings();fit();
  try{await Promise.all([renderer.load(),$('library-background').decode()]);loaded=true;$('loading').hidden=true;showMenu();requestAnimationFrame(animate);installDiagnostics();if(!store.available)toast('Progress cannot be saved in this browser. Use Records → Export save.',true,5000);}
  catch(error){console.error(error);$('loading').innerHTML=`<div class="load-error"><h2>The library could not open.</h2><p>${esc(error.message||'An asset could not be loaded.')}</p><p>Open PLAY.html, or use the included START_MAC.command / START_WINDOWS.bat launcher.</p><button class="game-button" id="retry-load">Try again</button></div>`;$('retry-load')?.addEventListener('click',()=>location.reload());}
@@ -371,9 +425,9 @@ async function init(){
 function installDiagnostics(){
  // Diagnostic seam is restricted to explicit local test URLs. Never enabled in PLAY.html by default.
  if(!['localhost','127.0.0.1','[::1]'].includes(location.hostname)||new URLSearchParams(location.search).get('test')!=='1')return;
- window.__TM_TEST__={model,renderer,store,clock,snapshot:()=>model.snapshot(),start:(seed=123,level=1,mode='campaign')=>start(seed,level,mode),freeze:(v=true)=>{freezeSimulation=v;},flush:()=>{processEvents();renderHud();},setSettings:s=>{settings={...settings,...s};applySettings();},cast:quickCast,
+ window.__TM_TEST__={model,renderer,store,clock,snapshot:()=>model.snapshot(),start:(seed,level=1,mode='campaign')=>start(seed,level,mode),freeze:(v=true)=>{freezeSimulation=v;},flush:()=>{processEvents();renderHud();},setSettings:s=>{settings={...settings,...s};applySettings();},cast:quickCast,
  word:(text,kind='normal',x=580,y=320)=>{const w={id:model.nextId++,text:normalizeInput(text),kind,x,y,previousY:y,speed:model.config.speed,width:wordCardWidth(text,kind),phase:1};model.words.push(w);return w.id;},
  advance:seconds=>{for(let i=0;i<Math.round(seconds/RULES.step);i++)model.step(RULES.step);processEvents();renderHud();},show:perform,
- performance:()=>({...renderer.stats,particles:renderer.particles.length,textureCache:renderer.textures.size,textureBytes:renderer.textureBytes,expression:renderer.expressionKey}),audioState:()=>audio.snapshot(),audio,scoreRollup,settings:()=>({...settings}),info:{ruleset:RULESET_VERSION,dictionaryWords:WORD_COUNT,stages:48,renderer:'Canvas2D',offlineAssets:true}};
+ performance:()=>({...renderer.stats,particles:renderer.particles.length,textureCache:renderer.textures.size,textureBytes:renderer.textureBytes,expression:renderer.expressionKey}),audioState:()=>audio.snapshot(),audio,scoreRollup,outcomeCue,visual:()=>renderer.visualSnapshot(),skipOutcome:()=>completeOutcome(outcomeCue.finish()),settings:()=>({...settings}),info:{buildTag:BUILD_TAG,version:PRESENTATION_VERSION,ruleset:RULESET_VERSION,dictionaryWords:WORD_COUNT,stages:48,renderer:'Canvas2D',offlineAssets:true}};
 }
 init();

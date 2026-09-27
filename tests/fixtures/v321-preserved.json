@@ -1,0 +1,34 @@
+[
+  {
+    "path": "src/game/model.js",
+    "sha256": "0dec023b3150f8c7c7f1010c6ba0bd8e51e12064fe4b211f087d37aefbc118ee"
+  },
+  {
+    "path": "src/game/rules.js",
+    "sha256": "ea93f8264594d1ddbd9157b97106ff09f1a4ec6aa8b76b10933518b9b4a61d15"
+  },
+  {
+    "path": "src/game/economy.js",
+    "sha256": "6db640431a9d26bc5b68120aa92b5ba04e5e702dc304a3c6e0cf01048721b718"
+  },
+  {
+    "path": "src/game/clock.js",
+    "sha256": "5ce1c5ec16361d8b44fb75170b944ff94444f253650efd40f88d547d976bdb60"
+  },
+  {
+    "path": "src/game/controls.js",
+    "sha256": "b6a1d53f7abc6fe50144b64bfcb312cdb43c46ffc17eb8bfafed6055fe66589d"
+  },
+  {
+    "path": "src/data/campaign.js",
+    "sha256": "ede9d388f656f5ebf1132fd7ed9c4bfeb202634482a53844a4e90a85d275aef2"
+  },
+  {
+    "path": "src/data/words.js",
+    "sha256": "0cce1326624cbadcf90f484379c385731f61240916ee0d7b686c4e62bfb3fcd9"
+  },
+  {
+    "path": "src/audio/mix.js",
+    "sha256": "f75d4a251f892681fd0d1b87ddaf8104f61048d22f8ea4de9fb580cf10fab79d"
+  }
+]

@@ -1,3 +1,4 @@
+import { APP_VERSION } from '../build-info.js';
 import { RULESET_VERSION, POWERS, RULES } from './rules.js';
 import { validEconomy, restoreEconomy } from './economy.js';
 const KEY='typekeeper-enchanted-library-v3.2.1';
@@ -79,6 +80,7 @@ export class LocalStore {
  normalizeCheckpoint(cp){
   const c=structuredClone(cp);
   if(c.version===2){c.version=3;c.ruleset=c.ruleset||'library-edition-2.0.0';}
+  c.sequenceVersion=c.sequenceVersion??1;
   c.powerBag=Array.isArray(c.powerBag)?c.powerBag:[];
   c.inventory=Object.fromEntries(POWERS.map(p=>[p,Math.min(RULES.inventoryCapacity,c.inventory[p])]));
   c.economy=restoreEconomy(c.economy,c.nextLevel);
@@ -88,6 +90,9 @@ export class LocalStore {
  }
  validCheckpoint(c){
   return !!(c&&[2,3].includes(c.version)&&PACE_NAMES.includes(c.pace)&&c.mode==='campaign'
+   &&(c.sequenceVersion===undefined||c.sequenceVersion===1||c.sequenceVersion===2)
+   &&(c.wordSeed===undefined||Number.isInteger(c.wordSeed)&&saneNumber(c.wordSeed,0,4294967295))
+   &&(c.sequenceVersion!==2||Number.isInteger(c.wordSeed))
    &&Number.isInteger(c.nextLevel)&&c.nextLevel>=(c.version===2?2:1)&&c.nextLevel<=48
    &&saneNumber(c.score)&&saneNumber(c.danger,0,99.999)&&saneNumber(c.seed,0,4294967295)
    &&(c.version===2||typeof c.ruleset==='string'&&c.ruleset.length<=64)
@@ -143,6 +148,6 @@ export class LocalStore {
   const since=period==='today'?new Date(new Date(now).setHours(0,0,0,0)).getTime():period==='week'?now-7*86400000:0;
   return this.data.records.filter(r=>(pace==='all'||r.pace===pace)&&(mode==='all'||r.mode===mode)&&r.date>=since&&(mode!=='practice'||chapter===null||r.startLevel===chapter)).sort((a,b)=>b.score-a.score||(a.retries||0)-(b.retries||0)||b.date-a.date);
  }
- exportData(){return JSON.stringify({...this.data,game:'Typekeeper: Enchanted Library',appVersion:'3.2.1',exportedAt:new Date().toISOString()},null,2);}
+ exportData(){return JSON.stringify({...this.data,game:'Typekeeper: Enchanted Library',appVersion:APP_VERSION,exportedAt:new Date().toISOString()},null,2);}
  clearRecords(){this.data.records=[];this.save();}
 }

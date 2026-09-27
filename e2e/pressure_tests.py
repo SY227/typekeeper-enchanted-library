@@ -31,7 +31,7 @@ def main():
   def typeword(text):page.locator('#typing-input').fill(text);page.locator('#typing-input').press('Enter')
   def pressure(v):api(f't.model.danger={v};t.flush();')
   def clear(mode='campaign'):
-   run(6,mode);api("t.model.stageTime=24;t.model.time=24;t.model.score=3200;t.model.progress=t.model.config.quota-1;t.model.stageCorrect=t.model.config.quota-1;t.word('BOOK');t.flush();");typeword('BOOK')
+   run(6,mode);api("t.model.stageTime=24;t.model.time=24;t.model.score=3200;t.model.progress=t.model.config.quota-1;t.model.stageCorrect=t.model.config.quota-1;t.word('BOOK');t.flush();");typeword('BOOK');page.locator('#result-score-value').wait_for(state='visible')
   def check(name,fn):
    at=time.time()
    try:fn();r={'name':name,'status':'PASS','seconds':round(time.time()-at,3)}

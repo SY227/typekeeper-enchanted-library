@@ -40,7 +40,7 @@ def main():
     except Exception:pass
    rows.append(row);print(row['status'],name,row.get('error',''),flush=True)
   def branding():
-   assert page.title()=='Typekeeper: Enchanted Library'
+   assert page.title()=='Typekeeper: Enchanted Library — v3.3.6'
    text=page.locator('body').inner_text().upper()
    for removed in ['FOXFORGE PLAYROOM','LOCAL-FIRST','NO ACCOUNT','STORYKEEPER EDITION','TYPE + ENTER','TYPING MANIAC']:
     assert removed not in text,removed
@@ -124,13 +124,13 @@ def main():
    assert state()['phase']=='playing';assert page.locator('.resume-count').count()==0
   check('Countdown preference provides immediate resume when disabled',immediate)
   def hints():
-   run();assert page.locator('#onboarding-hint').is_visible();api("t.word('INK');");typeword('INK');assert page.locator('#onboarding-hint').is_hidden()
+   run();api("t.renderer.guide.word=false;t.setSettings({hints:true});t.model.words=[];t.model.spawn();t.flush();");first=state()['words'][0]['text'];assert page.locator('#typing-input').get_attribute('placeholder')==first;typeword(first);api('t.flush();');assert page.locator('#typing-input').get_attribute('placeholder')==''
    run();api('t.setSettings({hints:false});');assert page.locator('#onboarding-hint').is_hidden()
   check('First-use typing hint retires on success and respects its preference',hints)
   def focusedhud():
    menu();settings('display');api('t.setSettings({detailedHUD:false});');page.locator('[data-toggle="detailedHUD"]').click()
    assert api('return t.settings().detailedHUD;');api('t.start(10);t.freeze(true);');assert page.locator('.side-stats .stat-block').first.is_visible()
-   api('t.setSettings({detailedHUD:false});');assert page.locator('.side-stats .stat-block').first.is_hidden();assert page.locator('.streak-stat').is_visible()
+   api('t.setSettings({detailedHUD:false});');assert page.locator('.side-stats .stat-block').first.is_hidden();assert page.locator('.streak-stat').is_hidden()
   check('Focused HUD removes secondary numbers; detailed HUD can restore them',focusedhud)
   def reduced():
    run();api('t.setSettings({motion:false,spellPulse:false});t.model.inventory.ice=1;t.flush();')

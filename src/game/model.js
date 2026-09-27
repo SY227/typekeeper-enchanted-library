@@ -1,3 +1,4 @@
+import { freshRunSeed } from './random.js';
 import { FIELD, POWERS, RULES, RULESET_VERSION, levelRules, mulberry32, chapterSeed, normalizeInput, scoreForWord, wordCardWidth, PACES } from './rules.js';
 import { CAMPAIGN_LENGTH, stageInfo, medalForStage } from '../data/campaign.js';
 import { pressureState } from './pressure.js';
@@ -9,7 +10,8 @@ import { createEconomy, prepareEconomy, restoreEconomy, nextSpellGap } from './e
  */
 export class GameModel {
  constructor(){this.reset();}
- reset({seed=128947,pace='classic',level=1,mode='campaign'}={}) {
+ reset({seed=128947,pace='classic',level=1,mode='campaign',wordSeed,sequenceVersion=2}={}) {
+  this.sequenceVersion=sequenceVersion===1?1:2;this.wordSeed=(wordSeed??(seed^0xa73c5f29))>>>0;
   this.seed=seed>>>0;this.pace=PACES[pace]?pace:'classic';
   this.level=Math.max(1,Math.min(10000,Math.floor(Number(level))||1));
   this.mode=['campaign','practice','endless'].includes(mode)?mode:'campaign';
@@ -28,6 +30,7 @@ export class GameModel {
  }
  prepareStage() {
   this.random=mulberry32(chapterSeed(this.seed,this.level));
+  this.wordRandom=this.sequenceVersion===1?this.random:mulberry32(chapterSeed(this.wordSeed,this.level));
   this.recentWords=[];this.recentResolved=[];this.pendingSpawn=null;
   this.spawnClock=.65;this.spawnedThisLevel=0;this.stageSpellOpportunities=0;this.trialRest=false;
   prepareEconomy(this.economy,this.level);
@@ -55,8 +58,8 @@ export class GameModel {
   else this.replayTruncated=true;
  }
  start(options={}){
-  this.reset(options);this.phase='playing';
-  this.record('start',{seed:this.seed,pace:this.pace,level:this.level,mode:this.mode});this.emit('start');
+  this.reset({...options,seed:options.seed??freshRunSeed()});this.phase='playing';
+  this.record('start',{seed:this.seed,wordSeed:this.wordSeed,sequenceVersion:this.sequenceVersion,pace:this.pace,level:this.level,mode:this.mode});this.emit('start');
  }
  setBuffer(raw,record=true){
   if(this.phase!=='playing')return;
@@ -124,12 +127,12 @@ export class GameModel {
   if(this.recentResolved.length>RULES.maxActive)this.recentResolved.shift();
  }
  pickWord(){
-  if(this.level===1&&this.spawnedThisLevel<4)return ['INK','TALE','BOOK','PAGE'][this.spawnedThisLevel];
-  const bank=dictionaryForLevel(this.level,this.random);
+  if(this.sequenceVersion===1&&this.level===1&&this.spawnedThisLevel<4)return ['INK','TALE','BOOK','PAGE'][this.spawnedThisLevel];
+  const bank=dictionaryForLevel(this.level,this.wordRandom);
   const active=new Set(this.words.map(w=>w.text));
   const available=bank.filter(w=>!active.has(w)&&!this.recentWords.includes(w));
   const pool=available.length?available:bank.filter(w=>!active.has(w));
-  return (pool.length?pool:bank)[Math.floor(this.random()*(pool.length||bank.length))];
+  return (pool.length?pool:bank)[Math.floor(this.wordRandom()*(pool.length||bank.length))];
  }
  takePower(preferred=null){
   if(!this.powerBag.length){
@@ -229,7 +232,7 @@ export class GameModel {
  pause(reason='manual'){if(this.phase==='playing'){this.phase='paused';this.record('pause',reason);this.emit('pause',{reason});}}
  resume(){if(this.phase==='paused'){this.phase='playing';this.record('resume',true);this.emit('resume');}}
  result(extra={}){
-  return {score:this.score,level:this.level,words:this.correct,accuracy:this.accuracy,wpm:this.wpm,streak:this.bestStreak,missed:this.missed,burned:this.burned,retries:this.retries,seconds:Math.round(this.time),pace:this.pace,seed:this.seed,ruleset:this.scoreRuleset,mode:this.mode,startLevel:this.startLevel,cleared:this.stageHistory.length,medals:this.stageHistory.reduce((n,s)=>n+s.medal,0),...extra};
+  return {wordSeed:this.wordSeed,sequenceVersion:this.sequenceVersion,score:this.score,level:this.level,words:this.correct,accuracy:this.accuracy,wpm:this.wpm,streak:this.bestStreak,missed:this.missed,burned:this.burned,retries:this.retries,seconds:Math.round(this.time),pace:this.pace,seed:this.seed,ruleset:this.scoreRuleset,mode:this.mode,startLevel:this.startLevel,cleared:this.stageHistory.length,medals:this.stageHistory.reduce((n,s)=>n+s.medal,0),...extra};
  }
  checkGameOver(){
   this.checkPressure();if(this.danger<100||this.phase!=='playing')return;
@@ -241,10 +244,10 @@ export class GameModel {
   const clear=this.phase==='level-clear';
   if(!clear&&(this.stageTime!==0||this.progress!==0||this.words.length))return null;
   if(this.mode!=='campaign'||(clear&&this.level>=48))return null;
-  return {version:3,ruleset:this.scoreRuleset,nextLevel:this.level+(clear?1:0),seed:this.seed,nextId:this.nextId,pace:this.pace,mode:this.mode,startLevel:this.startLevel,score:this.score,danger:this.danger,inventory:{...this.inventory},powerBag:[...this.powerBag],economy:{...this.economy},pile:this.pile.map(p=>({...p})),time:this.time,correct:this.correct,wrong:this.wrong,missed:this.missed,correctCharacters:this.correctCharacters,bestStreak:this.bestStreak,streak:this.streak,burned:this.burned,retries:this.retries,stageHistory:this.stageHistory.map(s=>({...s})),casts:{...this.casts}};
+  return {version:3,wordSeed:this.wordSeed,sequenceVersion:this.sequenceVersion,ruleset:this.scoreRuleset,nextLevel:this.level+(clear?1:0),seed:this.seed,nextId:this.nextId,pace:this.pace,mode:this.mode,startLevel:this.startLevel,score:this.score,danger:this.danger,inventory:{...this.inventory},powerBag:[...this.powerBag],economy:{...this.economy},pile:this.pile.map(p=>({...p})),time:this.time,correct:this.correct,wrong:this.wrong,missed:this.missed,correctCharacters:this.correctCharacters,bestStreak:this.bestStreak,streak:this.streak,burned:this.burned,retries:this.retries,stageHistory:this.stageHistory.map(s=>({...s})),casts:{...this.casts}};
  }
  restoreCheckpoint(c){
-  this.start({seed:c.seed,pace:c.pace,level:c.nextLevel,mode:c.mode});
+  this.start({seed:c.seed,wordSeed:c.wordSeed,sequenceVersion:c.sequenceVersion??1,pace:c.pace,level:c.nextLevel,mode:c.mode});
   for(const k of ['score','danger','time','correct','wrong','missed','correctCharacters','bestStreak','streak','startLevel','burned','retries','nextId'])if(Number.isFinite(c[k]))this[k]=c[k];
   this.inventory=Object.fromEntries(POWERS.map(p=>[p,Math.max(0,Math.min(RULES.inventoryCapacity,Math.floor(Number(c.inventory?.[p]))||0))]));
   this.powerBag=(c.powerBag||[]).filter(p=>POWERS.includes(p));
@@ -254,8 +257,16 @@ export class GameModel {
   this.stageHistory=(c.stageHistory||[]).map(s=>({...s}));this.casts={...this.casts,...c.casts};this.stageStartScore=this.score;
   this.scoreRuleset=c.ruleset||'library-edition-2.0.0';this.record('restore-checkpoint',structuredClone(c));this.checkPressure();
  }
+ /** A deliberate Retry draws fresh vocabulary only; restores the opening score,
+  * pile and stock first. Continue uses restoreCheckpoint and retains its seed. */
+ retryChapter(checkpoint,wordSeed=freshRunSeed()){
+  let next=wordSeed>>>0;
+  if(next===(checkpoint.wordSeed>>>0))next=(next+0x9e3779b9)>>>0;
+  this.restoreCheckpoint({...checkpoint,wordSeed:next,sequenceVersion:2});
+  this.record('retry-vocabulary',{wordSeed:next});
+ }
  finishCampaign(){if(this.phase!=='level-clear'||this.mode!=='campaign'||this.level!==48)return null;this.lastResult=this.result({victory:true});return this.lastResult;}
  retire(){this.lastResult=this.result({victory:false,retired:true});return this.lastResult;}
- exportReplay(){return {ruleset:RULESET_VERSION,seed:this.seed,pace:this.pace,truncated:this.replayTruncated,events:this.replay.map(e=>({...e}))};}
- snapshot(){return {phase:this.phase,level:this.level,score:this.score,progress:this.progress,quota:this.config.quota,danger:this.danger,buffer:this.buffer,time:this.time,tick:this.tick,pace:this.pace,mode:this.mode,pressure:this.pressure.key,info:{...this.info},streak:this.streak,bestStreak:this.bestStreak,correct:this.correct,wrong:this.wrong,missed:this.missed,burned:this.burned,retries:this.retries,wpm:this.wpm,accuracy:this.accuracy,inventory:{...this.inventory},economy:{...this.economy},effects:{...this.effects},trialRest:this.trialRest,words:this.words.map(w=>({...w}))};}
+ exportReplay(){return {ruleset:RULESET_VERSION,seed:this.seed,wordSeed:this.wordSeed,sequenceVersion:this.sequenceVersion,pace:this.pace,truncated:this.replayTruncated,events:this.replay.map(e=>({...e}))};}
+ snapshot(){return {seed:this.seed,wordSeed:this.wordSeed,sequenceVersion:this.sequenceVersion,phase:this.phase,level:this.level,score:this.score,progress:this.progress,quota:this.config.quota,danger:this.danger,buffer:this.buffer,time:this.time,tick:this.tick,pace:this.pace,mode:this.mode,pressure:this.pressure.key,info:{...this.info},streak:this.streak,bestStreak:this.bestStreak,correct:this.correct,wrong:this.wrong,missed:this.missed,burned:this.burned,retries:this.retries,wpm:this.wpm,accuracy:this.accuracy,inventory:{...this.inventory},economy:{...this.economy},effects:{...this.effects},trialRest:this.trialRest,words:this.words.map(w=>({...w}))};}
 }

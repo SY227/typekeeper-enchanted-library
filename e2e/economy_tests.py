@@ -27,7 +27,7 @@ def main():
    api(f"t.setSettings({{pace:'classic',music:false,sfx:false,hints:false,muted:true,resumeCountdown:false,motion:true}});t.start(176,{level},{json.dumps(mode)});t.freeze(true);t.model.words=[];t.model.spawnClock=100;t.flush();")
   def enter(text):page.locator('#typing-input').fill(text);page.locator('#typing-input').press('Enter')
   def spawn():return api("t.model.words=[];t.model.spawn();t.flush();return {...t.model.words.at(-1)};")
-  def clear():api("t.model.words=[];t.model.progress=t.model.config.quota-1;t.word('BOOK');t.flush();");enter('BOOK')
+  def clear():api("t.model.words=[];t.model.progress=t.model.config.quota-1;t.word('BOOK');t.flush();");enter('BOOK');page.locator('#result-score-value').wait_for(state='visible')
   def check(name,fn):
    at=time.time()
    try:fn();row={'name':name,'status':'PASS','seconds':round(time.time()-at,3)}
@@ -44,7 +44,7 @@ def main():
    for power in ['fire','ice','slow','wind']:
     assert page.locator('#stock-'+power+' i').count()==2
     assert page.locator('#ready-'+power).inner_text()=='COLLECT'
-    assert page.locator('#count-'+power).inner_text()=='0'
+    assert page.locator('#count-'+power).inner_text()=='0/2'
   check('Fresh campaign renders zero books and exactly two capacity pips per spell',empty)
   def five():
    run()
@@ -74,7 +74,7 @@ def main():
    run()
    for _ in range(3):api("t.word('SNOW','ice');t.flush();");enter('SNOW')
    assert snap()['inventory']['ice']==2;assert snap()['correct']==3
-   assert page.locator('#stock-ice i.filled').count()==2;assert page.locator('#count-ice').inner_text()=='2'
+   assert page.locator('#stock-ice i.filled').count()==2;assert page.locator('#count-ice').inner_text()=='2/2'
   check('Third pickup awards word points but cannot create a third charge or pip',capacity)
   def castcap():
    page.keyboard.press('2');assert snap()['inventory']['ice']==1
@@ -111,10 +111,10 @@ def main():
   def retry():
    run();first=[]
    for _ in range(6):first.append(spawn())
-   api("t.model.score=999;t.model.inventory.ice=2;t.model.danger=99;t.flush();");enter('ZZZZ');assert btn('retry-chapter').is_visible();btn('retry-chapter').click()
+   api("t.model.score=999;t.model.inventory.ice=2;t.model.danger=99;t.flush();");enter('ZZZZ');btn('retry-chapter').wait_for(state='visible');btn('retry-chapter').click()
    assert snap()['score']==0;assert list(snap()['inventory'].values())==[0,0,0,0]
-   second=[spawn() for _ in range(6)];assert first==second
-  check('Retry reproduces the same sixth-card reward and cannot keep failed-attempt score or stock',retry)
+   second=[spawn() for _ in range(6)];assert [w['text'] for w in first]!=[w['text'] for w in second];assert [w['kind'] for w in first]==[w['kind'] for w in second]
+  check('Retry changes vocabulary, retains the sixth-card reward, and cannot keep failed-attempt score or stock',retry)
   def practice():
    run(1,'practice');assert list(snap()['inventory'].values())==[1,1,1,1]
    assert snap()['mode']=='practice';assert snap()['economy']['tutorialDone']
@@ -154,7 +154,7 @@ def main():
   def export_new():
    api('t.show("records");')
    with page.expect_download() as dl:btn('export-save').click()
-   data=json.loads(Path(dl.value.path()).read_text());assert data['appVersion']=='3.2.1'
+   data=json.loads(Path(dl.value.path()).read_text());assert data['appVersion']=='3.3.6'
    assert 'economy' in data['checkpoints']['classic'];assert data['checkpoints']['classic']['inventory']['ice']==2
   check('Real save export includes the sparse schedule and correct build version',export_new)
   def fresh():

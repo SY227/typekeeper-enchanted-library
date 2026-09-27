@@ -504,3 +504,100 @@ body{justify-content:center;background:radial-gradient(ellipse at 50% 42%,#142d2
 .medal-stars.score-awarded .earned:nth-child(3){animation-delay:.24s}
 @keyframes masteryGleam{0%{transform:scale(.82);text-shadow:none}45%{transform:scale(1.16);text-shadow:0 0 14px #e6b345}100%{transform:scale(1);text-shadow:0 1px #fff3b4,0 0 10px #e3b64e44}}
 .reduced-motion #result-score-value,.reduced-motion .medal-stars .earned{animation:none!important}
+
+/* v3.3.1 / Manuscript staging. No changes to the logical 1200 × 900 field. */
+.pressure-vignette,#stage[data-pressure=alarmed] .pressure-vignette,#stage[data-pressure=critical] .pressure-vignette{box-shadow:none!important}
+.wing-atmosphere{opacity:.35}
+.typing-dock{left:411px;top:746px;bottom:auto;width:378px;height:53px;filter:drop-shadow(0 3px 2px #080e0b88);z-index:5;transform-origin:50% 100%}
+.typing-dock .input-frame{height:53px;border:0;border-radius:1px;background:linear-gradient(102deg,#e9d6ac,#fff1cb 45%,#f0ddb1);box-shadow:inset 0 1px #fff5d8,inset 0 -3px #ac8b4b44;clip-path:polygon(1% 2%,98% 0,100% 9%,99% 98%,0 100%);overflow:hidden}
+.typing-dock .input-frame:before{content:'';position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 22px,#a58c5640 23px,transparent 24px);opacity:.33}
+.typing-dock .input-frame:after{content:'';position:absolute;left:24px;bottom:12px;width:0;height:0;background:#55452c;border-radius:50%;pointer-events:none;opacity:0}
+.typing-dock .input-frame:focus-within{box-shadow:inset 0 1px #fff5d8,inset 0 -3px #ac8b4b66}
+#typing-input{position:absolute;inset:0;width:100%;height:100%;padding:7px 29px 8px 17px;color:#253d32;background:transparent;border:0;outline:none;font:700 var(--paper-type-size,29px)/1.1 var(--serif);letter-spacing:.2px;text-align:left;caret-color:#816439;box-shadow:none}
+#typing-input::selection{color:#153c30;background:#b9c7a9}
+#typing-input::placeholder{font:700 var(--paper-type-size,29px) var(--serif);letter-spacing:.2px;color:#a3916c;opacity:.5}
+.input-flourish,.typing-label,.typing-hint,#onboarding-hint{display:none!important}
+.typing-dock .enter-key{right:7px;top:18px;width:19px;height:18px;font:17px/17px var(--serif);color:#9a855e;border:none;background:none;box-shadow:none;opacity:.64}
+.typing-dock.invalid{animation:paper-error .18s ease-out}
+.typing-dock.invalid .input-frame{border:0}
+.typing-dock.invalid .input-frame:after{width:7px;height:4px;opacity:.6;box-shadow:9px 3px 0 -1px #5e452d,-8px -1px 0 -1px #5e452d}
+.typing-dock.success .input-frame{animation:paper-feed .16s ease-out}
+@keyframes paper-error{0%,100%{transform:none}30%{transform:translateX(-3px)}65%{transform:translateX(3px)}}
+@keyframes paper-feed{0%{transform:translateY(1.5px)}40%{transform:translateY(-1px)}100%{transform:none}}
+
+.score-panel,.focused-hud .score-panel{left:244px;top:38px;width:146px;height:76px;padding:4px 2px;border:0;background:none;box-shadow:none;text-align:left;opacity:.73;transition:opacity .23s}
+.score-panel .eyebrow{font-size:9px;letter-spacing:2.4px;color:#b8ad8d}
+.score-number,.focused-hud .score-number{font-size:33px;line-height:1.05;margin-top:5px;color:#dbc594;text-shadow:0 2px 4px #071e1a80}
+.score-awake .score-panel{opacity:1}
+.score-awake .score-number{color:#fff1be}
+.personal-best{font-size:8px;letter-spacing:.1px;color:#a5a08a}
+.chapter-panel{left:444px;top:31px;width:312px;height:93px;border:0;border-radius:0;padding:9px 22px;background:linear-gradient(90deg,#263a2abf,#3d4932e8,#273c2ae0);box-shadow:none;clip-path:polygon(0 0,100% 0,100% 100%,50% 92%,0 100%)}
+.chapter-panel:before{content:'';position:absolute;inset:4px 8px 11px;border-top:1px solid #c2aa6466;border-left:1px solid #c2aa6426;border-right:1px solid #c2aa6426;pointer-events:none}
+.chapter-panel .eyebrow{font-size:9px;letter-spacing:2.5px;color:#c1b38a}
+.chapter-name{font-size:21px;margin:5px 0 7px;color:#e7dbb7}
+.chapter-track{height:2px;background:#101e1480;border-radius:0}
+.chapter-track i{box-shadow:none;background:linear-gradient(90deg,#809879,#d8bf7e)}
+.chapter-progress{font-size:8px;color:#bdba9f;margin-top:6px;letter-spacing:1px}
+.side-stats{left:57px;top:235px;width:121px;opacity:.84}
+.focused-hud .side-stats{display:none}
+.stat-block{background:none}
+.trial-indicator{top:141px;font-size:9px;right:224px;width:210px;left:auto;color:#d6c291}
+.effect-status{display:none!important}
+
+/* Ink bottle: the liquid summarizes pressure; the canvas paper pile carries it. */
+.limit-instrument{top:486px;right:76px;width:82px;filter:drop-shadow(0 3px 5px #0008)}
+.meter-cap{width:42px;margin:auto;height:21px;font:bold 9px/21px var(--serif);letter-spacing:1px;border:1px solid #7b5c32;border-radius:3px 3px 0 0;color:#dfcfa5;background:linear-gradient(90deg,#624a2e,#9d7b48,#4d3b28);box-shadow:inset 0 1px #bca06866;text-shadow:none}
+.meter-body{height:91px;padding:7px 6px 5px;border:1px solid #baa87555;border-radius:15px 15px 9px 9px;background:linear-gradient(100deg,#a3b5a540,#061c1de0 23%,#314940d9 80%,#a3b5a525)}
+.meter-tube{border:0;border-radius:9px 9px 4px 4px;box-shadow:inset 0 0 10px #07140a80;background:linear-gradient(90deg,#263c3238,#9daf8c1a,#081b1544)}
+.meter-fill{box-shadow:none;background:linear-gradient(90deg,#355646,#87ac7b 45%,#3a6f52)}
+.meter-ticks{opacity:.26;background:repeating-linear-gradient(to top,transparent 0 18px,#dbdec850 18px 19px)}
+.meter-scale{display:none}
+.limit-number{height:26px;font:20px/26px var(--serif);color:#d9ccaa;background:none;border:0;border-radius:0;text-shadow:0 2px #152b23}
+.limit-number small{font-size:11px}
+.meter-caption{font-size:8px;letter-spacing:1.3px;color:#bdad85;margin-top:3px}
+.limit-instrument.critical{animation:none}
+.limit-instrument.danger .meter-fill{box-shadow:none;background:linear-gradient(90deg,#8b5c34,#c19c5c,#735c31)}
+.limit-instrument.critical .meter-fill{background:linear-gradient(90deg,#825338,#c17a50,#72402d)}
+.rescue-hint{right:52px;top:637px;width:132px;padding:4px;border:0;background:none;font-size:9px;line-height:1.4;color:#d8c7f0}
+
+/* The same four book hit areas and keys. Only the covers/pages now articulate. */
+.spell-slot{perspective:650px}
+.spell-ready{font-size:10px;letter-spacing:1px;top:-21px}
+.spell-book{transform-origin:17% 50%}
+.book-leaves{position:absolute;z-index:0;top:11px;left:24px;width:75px;height:107px;border-radius:2px;background:repeating-linear-gradient(0deg,#d6c8a6 0 2px,#9a8b705c 2px 3px);box-shadow:0 0 0 1px #716342;opacity:0;transform:rotate(-3deg)}
+.spell-slot.casting .book-leaves{opacity:.9;animation:leaves-open .48s ease-out}
+.spell-slot.casting .spell-book{animation:cover-open .48s ease-out}
+.spell-slot.casting .spell-keycap{animation:key-press .12s ease-out}
+@keyframes cover-open{0%{transform:translateY(2px) rotateY(0)}26%{transform:translateY(0) rotateY(-15deg) rotate(-3deg)}62%{transform:rotateY(-15deg) rotate(-3deg)}100%{transform:rotateY(0) rotate(-3deg)}}
+@keyframes leaves-open{0%{opacity:.3;filter:brightness(1)}32%{opacity:1;filter:brightness(1.3);box-shadow:0 0 12px var(--spell)}100%{opacity:0;filter:brightness(1)}}
+@keyframes key-press{0%{transform:translateY(2px)}100%{transform:translateY(0)}}
+.spell-stock{position:absolute;right:11px;top:37px;z-index:2;display:flex;flex-direction:column;gap:4px;margin:0}
+.spell-stock i{width:5px;height:11px;transform:none;border-radius:1px;background:#172626;border-color:#b5a37670}
+.spell-stock i.filled{background:var(--spell);box-shadow:none}
+.book-count{top:108px;right:1px;width:34px;height:23px;font:bold 13px/20px var(--serif);border:1px solid #8e7442;border-radius:2px;background:linear-gradient(#e9d6a9,#b19662);color:#40321f;box-shadow:0 2px 3px #0005;z-index:4}
+.spell-command{font-size:13px;margin-top:5px}
+.utility-controls{top:29px;right:28px}
+[data-view=scene-defeat] .score-panel,[data-view=scene-defeat] .chapter-panel,[data-view=scene-defeat] .spell-inventory,[data-view=scene-defeat] .utility-controls{opacity:.36;transition:opacity .5s}
+[data-view=scene-defeat] .typing-dock{filter:brightness(.64) drop-shadow(0 3px 2px #080e0b)}
+[data-view=scene-clear] .chapter-panel{opacity:.74}
+.high-contrast .score-panel{background:none}
+.high-contrast .chapter-panel{background:#132d24}
+.high-contrast #typing-input::placeholder{color:#847145}
+.reduced-motion .book-leaves{display:none!important}
+.reduced-motion .score-panel,.reduced-motion .utility-controls{transition:none!important}
+
+.typing-dock.mistype{animation:paper-error .16s ease-out}
+.typing-dock.mistype .input-frame:after{width:4px;height:3px;opacity:.5;box-shadow:7px 1px 0 -1px #57452a}
+
+/* v3.3.3: one quiet, always-visible usage line, attached to each spell book.
+   No new HUD strip, click handler, tooltip gate, or gameplay dependency. */
+.spell-use{display:flex;align-items:center;justify-content:center;gap:5px;min-height:19px;margin-top:4px;color:#cbbc9e;font:12.5px/19px var(--sans);letter-spacing:0;white-space:nowrap;text-shadow:0 1px 2px #100e0bc0;pointer-events:none}
+.spell-use kbd{display:inline-block;flex:0 0 auto;min-width:15px;height:16px;padding:0 2px;color:#d9c8a4;border:1px solid #aa94666b;border-bottom-width:2px;border-radius:2px;background:#221e1870;box-shadow:none;font:11px/13px var(--sans);text-align:center}
+.spell-use-label{white-space:nowrap}
+.spell-slot:hover .spell-use,.spell-slot:focus-visible .spell-use{color:#e7d9ba}
+.high-contrast .spell-use{color:#fff1ce}
+.high-contrast .spell-use kbd{color:#fff1ce;border-color:#dcc695;background:#14251e}
+/* Caption adds 23px to the button, not to its old ready halo or tooltip anchor. */
+.spell-aura{bottom:63px}
+.spell-tip{bottom:220px}
+.high-contrast .spell-slot:hover .spell-use,.high-contrast .spell-slot:focus-visible .spell-use{color:#fff1ce}

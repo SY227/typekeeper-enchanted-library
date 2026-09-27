@@ -1,24 +1,14 @@
-# Typekeeper 3.2.1 — balance update
+# 3.3.6 — Scroll artwork / overlap repair
 
-## Changed
-- One earned ICE opportunity on the sixth campaign card replaces the four forced
-  first-chapter spell introductions. Campaign inventory remains zero at the start.
-- Maximum two charges per type; HUD pips and help wording match the authoritative cap.
-- Scarcer, seeded opportunity gaps that carry across normal chapter boundaries.
-- Trial opportunity within the first four cards, then every eight; not additional stock.
-- Gentler chapters 1–6, a smooth return to v3.2 by 12, modest late-stage acceleration.
-- Checkpoints retain the resource schedule, with explicit v3.2 migration and Legacy scores.
+Based on the actual delivered 3.3.5 build. Narrow engraved brass end pieces, silk
+paper shading, outer-edge tied cords and an inset spell seal replace the faulty
+scroll skin. Artwork, badge and full-word lettering now share one coordinate system.
+Words remain single-line and size to their actual measured ink. Title cards use the
+same renderer as gameplay; IMAGINE is moved slightly left to avoid the character.
 
-## Fixed
-- A blocked/canceled candidate cannot prematurely consume a reward-bag entry.
-- Empty shelves and new runs cannot retain stale acquisition glow.
+Fixed the four-coordinate WIND cubic call that could throw when motion was enabled.
+Added source-version and standalone-dependency build guards. No balance, vocabulary,
+randomness, save, soundtrack, resource, keybinding, HUD or account changes.
 
-## Unchanged
-Artwork, music and adaptive tension, sound/typing effects, page/CSS layout, controls,
-spell strengths, arrival timing, vocabulary, quotas, score formula, mastery rules,
-48 chapters/eight wings, practice/Endless structure, and existing deployment config.
-Practice/Endless retain their separate one-per-type training/starter kits.
-
-Export a save before updating. Earlier third charges become two under the new cap;
-old storage is not overwritten. Start a fresh campaign for current-version records.
-Read QA_REPORT.md for executed results and the remaining human/device release gates.
+See QA_REPORT.md and qa336/ for the measured before-case, current checks, real
+renderer captures and explicit platform-testing limits. Old records remain current.

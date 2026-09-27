@@ -1,5 +1,6 @@
 {
-  "version": "3.2.1",
+  "version": "3.3.6",
+  "buildId": "3.3.6-31b6fcc67e9c4a2c",
   "files": [
     {
       "path": "assets/book-fire.svg",
@@ -123,18 +124,28 @@
     },
     {
       "path": "index.html",
-      "bytes": 5258,
-      "sha256": "e282a6ad01dbda84109292c2dec2892f53b32dc4a00b46f560527be17fda0987"
+      "bytes": 5370,
+      "sha256": "4574c64cc56750aebebf25466c5c548fa0ecaf44135811539870045d640d06c6"
+    },
+    {
+      "path": "release.json",
+      "bytes": 147,
+      "sha256": "009d9153cb15a2307256b4a4263b7bf56456a4bb9bc888c4fc3f786ce46d2d02"
     },
     {
       "path": "src/audio/audio.js",
-      "bytes": 13965,
-      "sha256": "57ba85d6fa984b31d85ef520e6c1f650156f7e35ec59e843985055d5b6f31037"
+      "bytes": 14187,
+      "sha256": "71702ca3117b9996b0635efd570b4883cccadfba6a9895b0b3751cc42956c6d2"
     },
     {
       "path": "src/audio/mix.js",
       "bytes": 858,
       "sha256": "f75d4a251f892681fd0d1b87ddaf8104f61048d22f8ea4de9fb580cf10fab79d"
+    },
+    {
+      "path": "src/build-info.js",
+      "bytes": 153,
+      "sha256": "9bbbe90792b5cdd0328caf6c33a794f5c5711403884c40b06cc1809062a13037"
     },
     {
       "path": "src/data/campaign.js",
@@ -168,8 +179,8 @@
     },
     {
       "path": "src/game/model.js",
-      "bytes": 18537,
-      "sha256": "0dec023b3150f8c7c7f1010c6ba0bd8e51e12064fe4b211f087d37aefbc118ee"
+      "bytes": 19840,
+      "sha256": "10675012d4148b0feba24d95b963a70afbf2d46158e471644adcdcc6f0c2926d"
     },
     {
       "path": "src/game/pressure.js",
@@ -177,29 +188,54 @@
       "sha256": "ed17bd358f79f211319b4b023061ef05ed96d5cd0d8e872594ce529ede252c0b"
     },
     {
+      "path": "src/game/random.js",
+      "bytes": 712,
+      "sha256": "6b45428588b62d7e87ec89521de170f1439c1a8bc2b2e4914be3c8dd6ca94204"
+    },
+    {
       "path": "src/game/rules.js",
-      "bytes": 4362,
-      "sha256": "ea93f8264594d1ddbd9157b97106ff09f1a4ec6aa8b76b10933518b9b4a61d15"
+      "bytes": 4387,
+      "sha256": "8ba6026ffa76c58a1ddeac484d6bfb55bff0d7d0bda636116f012cdaa93e9c7f"
     },
     {
       "path": "src/game/storage.js",
-      "bytes": 10784,
-      "sha256": "3def0f83b2c09eebe20c10d73345cf16e296a89aab6214bfc9b43e6dd0c95d39"
+      "bytes": 11192,
+      "sha256": "20cb9de0d263dc5b54170a74c5edf34da6133a4ae7d8a80bd0658edfb3378a73"
     },
     {
       "path": "src/main.js",
-      "bytes": 46842,
-      "sha256": "da965e8f6c6b7f7863450a393d982abe3d72801ebe7d12660d202cf7ba779ee0"
+      "bytes": 51054,
+      "sha256": "269af13a483d439735188c18f4059116ffa2121bdcf2b700aca1992a067f1d49"
+    },
+    {
+      "path": "src/render/book-leaf.js",
+      "bytes": 1845,
+      "sha256": "4475b6488269f8ac6460c12e27d0f0234bc85ffc669eb3e131c90a52d3c909fc"
+    },
+    {
+      "path": "src/render/classic-renderer.js",
+      "bytes": 23339,
+      "sha256": "9be2e5da0dd6fb869797232aacfe0248fef54043fe5ff39962ef11e4f3a0d62c"
+    },
+    {
+      "path": "src/render/imperial-scroll.js",
+      "bytes": 8415,
+      "sha256": "f3f28ed248225fce13c49b9198e97946d7e8d723e4fd0f8bc1aeda19e02b0400"
+    },
+    {
+      "path": "src/render/presentation.js",
+      "bytes": 5338,
+      "sha256": "1f71230196f1e6e16546c9459876083251247ae0e1f842f4eadfc76e4958a9e8"
     },
     {
       "path": "src/render/renderer.js",
-      "bytes": 23261,
-      "sha256": "ce7a718089a8274d544b45d4abbbcacdb22a8bc8f10e84cfb4a479476c4a7c8d"
+      "bytes": 41626,
+      "sha256": "95984b2238961e8a83b96ac4dd53014853ae70325ada4a4ccae41bf39581eaf1"
     },
     {
       "path": "src/styles.css",
-      "bytes": 47069,
-      "sha256": "2173dca7ca53e0df0aab8e15159ab7c500fb3692a81ca7eceeb3f3c846315273"
+      "bytes": 56307,
+      "sha256": "0c6ec3a32448de56edf3fcd2bbdfbc09a563d8e11d35ae6ccb6642dcac4fb74e"
     },
     {
       "path": "src/ui/icons.js",

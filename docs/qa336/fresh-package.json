@@ -1,0 +1,20 @@
+{
+  "scope": "CRC-checked candidate extracted into empty folder, offline install, tests, syntax, rebuild; shipping standalone and modular repair suites rerun. Outer orchestrator time limit interrupted just before launcher invocation; launcher audit was run separately and passed.",
+  "passed": true,
+  "runtimeOutputs": 51,
+  "runtimeByteIdentical": true,
+  "logicPassed": 377,
+  "logicFailed": 0,
+  "repeatedBrowserPassed": 38,
+  "repeatedBrowserFailed": 0,
+  "repeatedLauncherPassed": 7,
+  "sourceMismatchRejected": true,
+  "shippingSHA256": "a6be0555cc22bdd7370a587bdfd2bc5492918014584da6b9d0a3f56140dc8c62",
+  "build": {
+    "version": "3.3.6",
+    "buildId": "3.3.6-31b6fcc67e9c4a2c",
+    "tag": "scroll-layout-repair-336",
+    "wordRows": 1,
+    "randomizedNewRuns": true
+  }
+}

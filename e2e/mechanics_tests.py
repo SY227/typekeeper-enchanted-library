@@ -29,7 +29,7 @@ def main():
   def word(text='BOOK',kind='normal',y=300):return api(f"return t.word({json.dumps(text)},{json.dumps(kind)},550,{y});")
   def enter(text):page.locator('#typing-input').fill(text);page.locator('#typing-input').press('Enter')
   def clear():
-   api("t.model.words=[];t.model.progress=t.model.config.quota-1;t.model.stageCorrect=t.model.config.quota-1;t.word('BOOK');t.flush();");enter('BOOK')
+   api("t.model.words=[];t.model.progress=t.model.config.quota-1;t.model.stageCorrect=t.model.config.quota-1;t.word('BOOK');t.flush();");enter('BOOK');page.locator('#result-score-value').wait_for(state='visible')
   def check(name,fn):
    at=time.time()
    try:fn();r={'name':name,'status':'PASS','seconds':round(time.time()-at,3)}
@@ -92,14 +92,14 @@ def main():
    run();api('t.model.progress=t.model.config.quota-1;t.model.spawnClock=0;');word();api('t.advance(.2);');assert len(state()['words'])==1;enter('BOOK');assert state()['phase']=='level-clear';assert len(state()['words'])==0
   check('Final-word quota drains cleanly without spawning disposable extra cards',quota)
   def retry_initial():
-   run();api('t.model.danger=99;');enter('TYPO');assert btn('retry-chapter').is_visible();assert api('return t.store.checkpoint("classic").retries;')==1
+   run();api('t.model.danger=99;');enter('TYPO');btn('retry-chapter').wait_for(state='visible');assert btn('retry-chapter').is_visible();assert api('return t.store.checkpoint("classic").retries;')==1
    btn('retry-chapter').click();assert state()['phase']=='playing' and state()['level']==1 and state()['score']==0 and state()['danger']==0 and state()['retries']==1
   check('Chapter-one failure offers Retry rather than forcing a fresh campaign',retry_initial)
   def retry_checkpoint():
-   run();api('t.model.stageTime=10;t.model.time=10;t.model.danger=40;t.model.inventory.ice=2;');clear();cp=api('return t.store.checkpoint("classic");');btn('next').click();api('t.advance(.7);');original=state()['words'];enter(original[0]['text']);api('t.model.danger=99;');enter('TYPO');count=api('return t.store.records.length;');btn('retry-chapter').click()
+   run();api('t.model.stageTime=10;t.model.time=10;t.model.danger=40;t.model.inventory.ice=2;');clear();cp=api('return t.store.checkpoint("classic");');btn('next').click();api('t.advance(.7);');original=state()['words'];old_word_seed=state()['wordSeed'];enter(original[0]['text']);api('t.model.danger=99;');enter('TYPO');count=api('return t.store.records.length;');btn('retry-chapter').click()
    assert state()['score']==cp['score'] and state()['danger']==cp['danger'] and state()['inventory']==cp['inventory'];assert state()['retries']==1
-   api('t.advance(.7);');assert state()['words']==original;assert api('return t.store.records.length;')==count
-  check('Retry restores chapter resources and the identical opening word, without score farming',retry_checkpoint)
+   api('t.advance(.7);');assert state()['wordSeed']!=old_word_seed;assert len(state()['words'])==len(original);assert state()['words'][0]['speed']==original[0]['speed'];assert api('return t.store.records.length;')==count
+  check('Retry restores chapter resources with a fresh vocabulary seed, without score farming',retry_checkpoint)
   def confirmation():
    run();api('t.model.danger=99;');enter('TYPO');cp=api('return t.store.checkpoint("classic");');btn('records').click();btn('start').click();assert page.get_by_role('heading',name='Start a new game?').is_visible();assert api('return t.store.checkpoint("classic");')==cp
    page.keyboard.press('Escape');assert btn('continue').is_visible()
@@ -122,7 +122,7 @@ def main():
    api("t.show('map');");assert '0 / 48 chapters complete' in page.locator('.atlas-total').inner_text()
   check('Practice stars survive save import without unlocking an uncleared campaign chapter',mastery_reload)
   def legacy():
-   run();api("t.store.clearRecords();t.model.scoreRuleset='library-edition-2.0.0';t.model.score=990000;t.model.danger=99;");enter('TYPO');assert 'NEW PERSONAL BEST' not in page.locator('#screen-layer').inner_text();assert 'Legacy' in page.locator('#screen-layer').inner_text()
+   run();api("t.store.clearRecords();t.model.scoreRuleset='library-edition-2.0.0';t.model.score=990000;t.model.danger=99;");enter('TYPO');page.locator('#result-score-value').wait_for(state='visible');assert 'NEW PERSONAL BEST' not in page.locator('#screen-layer').inner_text();assert 'Legacy' in page.locator('#screen-layer').inner_text()
    btn('records').click();page.locator('#records-mode').select_option('campaign');assert page.locator('.empty-records').is_visible();page.locator('#records-mode').select_option('legacy');assert '990,000' in page.locator('.record-table').inner_text()
   check('Continued old-rule scores are clearly archived instead of claiming a new-rule best',legacy)
   def retire():
@@ -143,8 +143,9 @@ def main():
   def feedback_banner():
    run();word();api('t.model.inventory.ice=t.model.inventory.slow=1;t.flush();');page.keyboard.press('2');page.keyboard.press('3')
    labels=api("const c=t.renderer.ctx,old=c.fillText,seen=[];c.fillText=function(text,...args){if(/CAST|QUEUED|WORD STREAK/.test(text))seen.push(text);return old.call(this,text,...args)};t.renderer.floaters.push({x:600,y:220,text:'8 WORD STREAK',color:'#fff',large:true,t:0,life:1.4});t.renderer.frame(performance.now()+100,1);c.fillText=old;return seen;")
-   assert labels==['SLOW  QUEUED'],labels
-  check('Concurrent spells and streaks share one non-overlapping feedback banner',feedback_banner)
+   assert labels==[],labels
+   assert page.locator('#ready-slow').inner_text()=='QUEUED'
+  check('Concurrent spells keep status on books without a central banner',feedback_banner)
   def typography_layout():
    run(36);api("t.model.inventory={fire:2,ice:1,slow:2,wind:1};t.model.danger=57;t.model.score=28460;t.model.progress=20;t.model.streak=16;t.model.pile=[{x:360,angle:.04},{x:630,angle:-.03},{x:830,angle:.05}];[['WHISPER','normal',370,222],['ARCHIVE','ice',800,300],['WONDER','normal',520,410],['CRYSTAL','bonus',790,520]].forEach(a=>t.word(...a));t.flush();")
    page.locator('#typing-input').fill('WON');page.keyboard.press('2');page.keyboard.press('3');page.wait_for_timeout(400)

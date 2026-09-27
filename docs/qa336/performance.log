@@ -1,0 +1,26 @@
+{
+  "scope": "Controlled 12-card browser profile with four-layer music and real typing\nfeedback. Diagnostic fixtures hold positions and replenish cards; scores/Enter,\nrenderer, DOM and synthesis are shipping code. Not a human run or device benchmark.\n",
+  "shippingSHA256": "a6be0555cc22bdd7370a587bdfd2bc5492918014584da6b9d0a3f56140dc8c62",
+  "browser": "144.0.7559.96",
+  "viewport": {
+    "width": 1440,
+    "height": 1040
+  },
+  "frameIntervals": 600,
+  "averageFPS": 52.03,
+  "medianFrameMs": 16.699999999999818,
+  "p95FrameMs": 33.30000000000291,
+  "maxFrameMs": 50.100000000000364,
+  "medianCanvasDrawMs": 1.2000000000698492,
+  "pressure": 95,
+  "audioSources": 4,
+  "peakParticles": 11,
+  "peakGleams": 1,
+  "peakToneVoices": 13,
+  "peakNoiseVoices": 1,
+  "cardRange": [
+    12,
+    12
+  ],
+  "unhandledErrors": []
+}

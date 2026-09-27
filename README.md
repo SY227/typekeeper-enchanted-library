@@ -1,152 +1,112 @@
-# Typekeeper: Enchanted Library
+# Typekeeper: Enchanted Library — v3.3.6
 
-**Version 3.2.1 · 23 September 2026 · readable opening, scarce spells**
+Scroll-art and text-clearance repair, built from the actual full v3.3.5 package.
+The title screen and gameplay share the same corrected renderer. Gameplay rules,
+randomized new attempts, music, saves, controls and the rest of the UI are retained.
 
-A focused balance update built from the supplied **v3.2** full-app ZIP. The complete
-48-chapter game, its artwork, soundtrack, adaptive music, typing effects, scoring,
-mastery, practice, Endless, and layout are retained. This package includes the editable
-source, local assets and masters, prebuilt `dist/`, standalone `PLAY.html`, tests,
-audits and backup-first update helper. No account, API key, CDN, or engine is needed.
+## Run the prebuilt game
 
-## Play
-
-Open `PLAY.html`, or launch `START_MAC.command` / `START_WINDOWS.bat`. On Linux use
-`bash START_LINUX.sh`. The HTTP launchers need an existing Python 3.9+ or Node 20+;
-the standalone HTML needs neither. Closing/reopening and actual platform QA are
-separate from the automated in-memory browser tests recorded here.
+Stop the previous local Typekeeper server with Control+C to reuse its address.
+Download the ZIP to Downloads, then on macOS:
 
 ```bash
 cd "$HOME/Downloads" &&
-unzip -o "Typekeeper_Enchanted_Library_v3.2.1_Full_App.zip" &&
-cd "Typekeeper_Enchanted_Library_v3_2_1" &&
+unzip -o "Typekeeper_Enchanted_Library_v3.3.6_Full_App.zip" &&
+cd "$HOME/Downloads/Typekeeper_Enchanted_Library_v3_3_6" &&
 bash START_MAC.command
 ```
 
-Stop an older local server with Control+C to reuse its address. Keep the same browser
-and domain to find its saved progress. The separate new folder leaves prior builds intact.
+The launcher verifies the shipped files, then prints the folder, version, build ID
+and URL. It starts at port **4355**, or the next free port. The browser tab must say
+**Typekeeper: Enchanted Library — v3.3.6**. Nothing kills an existing process.
+Use the printed new URL rather than refreshing an unrelated older server.
 
-## Update the existing GitHub + Vercel project
-
-**Export a game save first.** The updater backs up game files before copying and preserves
-`.git`, `.vercel`, environment files and your existing `vercel.json`. It does not push,
-authorize accounts, deploy, change repository visibility, or touch remote projects.
-By default, the existing project is the `v3_1` folder used in the earlier setup; its
-folder name need not match the new version inside it.
+The Mac launcher uses installed Python 3, or installed Node.js as a fallback.
+No package installation, account or API key is required for normal play.
+Windows/Linux launchers and a self-contained `PLAY.html` are also included.
 
 ```bash
-bash "$HOME/Downloads/Typekeeper_Enchanted_Library_v3_2_1/scripts/apply-update.sh" "$HOME/Downloads/Typekeeper_Enchanted_Library_v3_1" &&
-cd "$HOME/Downloads/Typekeeper_Enchanted_Library_v3_1" &&
-npm test &&
-npm run build &&
-git add . &&
-git commit -m "Typekeeper v3.2.1: gentler opening and scarce spells" &&
-git push
+open "$HOME/Downloads/Typekeeper_Enchanted_Library_v3_3_6/PLAY.html"
 ```
 
-Use your existing Git integration for deployment, or explicitly deploy from that same
-linked folder with `npx vercel@latest deploy --prod --yes`. Do not create another project
-or attach a different domain just to apply this balance update. This archive does not
-claim that a production deployment has already been performed.
+## What this corrects
 
-The helper accepts another existing Typekeeper path as its argument. Backups go to
-`Typekeeper_Backups` beside that project. `UPDATE_EXISTING_MAC.command` calls the same
-helper. Synthetic filesystem/update tests are included; these are not on-device Mac tests.
+The former material put its rollers and cords inside the area the layout reserved
+for letters. Single-line tests missed the fact that the words overlapped decoration.
+The seal background and glyph also used different origins.
 
-## Balance changes
+`src/render/imperial-scroll.js` now defines one coordinate system for:
+- the paper and both narrow engraved brass rollers;
+- the inset spell medallion and its centred glyph;
+- the protected full-word ink region, including native font overhangs.
 
-- Campaign still begins with **zero books**. The four forced tutorial powers are replaced
-  by **one ICE opportunity on card six**, earned only by typing that card.
-- **Two charges per spell** (eight total), with two matching stock pips. No change to the
-  strength of FIRE/WIND, six-second ICE, or eight-second SLOW.
-- Ordinary opportunity gaps: chapters 1–6 **8–11 cards**; 7–12 **8–10**; 13–24 **7–10**;
-  25 onward **6–9**. An already drawn gap carries across ordinary chapter boundaries.
-- Trials bring the next opportunity into their first four cards, then use gaps of eight.
-  They replace, rather than add to, the ordinary schedule. This also applies to Endless
-  trials. Collection is still required; no books are automatically granted.
-- Every four scheduled powers cover all four types. Trial preferences favor ICE, then
-  WIND, only when still present in the remaining bag and below capacity. No change is
-  driven by score, typing performance or the current paper pile.
-- Chapters 1–3 fall **10–15% slower**, 4–6 **5–10% slower**, and 7–12 smoothly return to
-  v3.2. Chapter 24 matches v3.2; 36 is 2% faster and 48 is 3% faster. Arrival intervals,
-  vocabulary mix, quotas and trial rests are unchanged.
-- A blocked spawn no longer consumes a reward-bag entry before it actually enters.
-  Empty shelves/new runs cannot inherit a stale pickup glow.
+Cards size around the measured content instead of borrowing unrelated model widths.
+Decorative cords/tassels stay outside the content region. Words remain complete and
+single-line; normal content widens before an exceptional oversized test string fits
+down. The same contract is checked on the real title cards and during gameplay.
 
-A good typist who does not need spells can still fill the shelf. This build does not
-secretly remove earned resources or change the rules to force a target inventory level.
+The three menu scrolls are now opaque. IMAGINE is shifted slightly left so the wider
+correctly padded scroll does not cover the character. The menu controls are unchanged.
+A separate native Canvas error in WIND's inherited animated path was also repaired.
+Spell strengths, timers, particle settings and other effects are not rebalanced.
 
-## Save migration
+## Preserved controls and saves
 
-The new key is `typekeeper-enchanted-library-v3.2.1`. Previous v3.2/v3.1/v3/v2/v1 keys
-are read-only migration sources. Preferences, earned stars, chapter unlocks and valid
-campaign bookmarks are retained. A carried third charge is trimmed to the new two-charge
-limit; it is not turned into a score bonus or a hidden reserve. Original saved bytes
-remain under the older key, and an exported pre-update save remains useful as a backup.
+Type a word and press Enter. Keys **1–4** cast FIRE / ICE / SLOW / WIND without
+changing your word or selection. The existing subtle captions beneath the books
+are preserved. FIRE clears active words; WIND clears only the missed-paper pile.
 
-Old scores and continued old-rule totals remain **Legacy**. Begin a new campaign for
-current-version records. A v3.2 bookmark did not contain the new reward countdown, so
-that countdown is initialized conservatively once; subsequent checkpoints preserve it
-and the bag exactly for retry/continue. Original v3.2 word/drop sequences are not promised.
-Practice and Endless retain their separate one-per-type starter kits and record modes.
+New game and Retry retain randomized vocabulary. Continue restores the saved attempt.
+The v3.2.1 balance rules and storage key remain current: zero campaign starting spells,
+two-charge capacity per spell, scarce early drops, and the same speed curve.
+Scores do not move to Legacy just because the scroll art changed.
 
-## Controls and presentation
+Browser storage is scoped to its address. Reusing the same browser and server port
+retains progress. Use Records → Export save / Import save when moving between an
+old address, another computer, another browser, or the standalone file.
 
-Type a displayed word, then **Enter**. Backspace and normal selection/cursor editing work.
-**1 FIRE · 2 ICE · 3 SLOW · 4 WIND**, including numpad, cast without changing the typed word.
-Escape pauses. The result total can be clicked to skip its count-up. Full-word shine is
-feedback only; it does not auto-submit. Music, adaptive tension, effects, mute, reduced
-motion and typing shimmer retain their existing settings and behavior.
+## Full source and static deployment
 
-## Reproduce the engineering checks
-
-Node-only checks need no package download:
+`src/` contains editable game and procedural artwork source. `public/assets/` and
+`asset-source/` retain all runtime art/audio and editable original masters. `dist/`
+is the complete prebuilt modular website; `PLAY.html` is the embedded edition.
+No font binaries or external content services have been introduced.
 
 ```bash
 npm ci --offline --ignore-scripts --no-audit --no-fund
 npm test
 npm run check
 npm run build
-npm run test:balance
-npm run test:economy
-npm run test:endurance
-node scripts/resource-strategy-audit.mjs
-python3 scripts/test-update.py
 ```
 
-For a paired comparison, pass the extracted v3.2 directory to
-`node scripts/playtest-simulation.mjs --baseline /path/to/v3.2` and
-`node scripts/economy-audit.mjs --baseline /path/to/v3.2`. The former deliberately
-uses the exact baseline model rather than applying new rules to a relabeled run.
+The build now rejects inconsistent source version tags and missing/out-of-order
+standalone module dependencies before exporting, and syntax-checks the assembled
+embedded script. Startup integrity verification remains enabled.
 
-Browser tests require the optional `e2e/requirements.txt` dependencies and Chromium.
-The conventional HTTP main suite is `python3 e2e/browser_tests.py`. In a managed
-environment that blocks local browser navigation, `--inline` exercises the real
-standalone export in memory. The other suites explicitly use that in-memory fixture.
-They enable only the existing diagnostic access guard; they do not replace the rules.
+The existing Vercel configuration uses `npm run build` and the `dist` output directory.
+This ZIP does not create, connect, or deploy a remote project by itself.
+
+## QA reproduction
+
+Current evidence is under `docs/qa336/`. See `docs/QA_REPORT.md` for actual results
+and testing limits; historical claims are not counted as new tests.
 
 ```bash
-python3 e2e/browser_tests.py --inline
-python3 e2e/mechanics_tests.py
-python3 e2e/polish_tests.py
-python3 e2e/pressure_tests.py
-python3 e2e/economy_tests.py
-python3 e2e/feedback_performance.py
+python3 e2e/scroll_repair_tests.py --executable /usr/bin/chromium
+python3 e2e/scroll_repair_tests.py --mode modules --executable /usr/bin/chromium
+python3 e2e/single_row_release.py --executable /usr/bin/chromium
+python3 e2e/single_row_release.py --mode modules --executable /usr/bin/chromium
+python3 scripts/release-audit.py
 ```
 
-`--executable /path/to/chromium` selects an already installed Chromium. Separate HTTP
-integrity and audio signal checks are `python3 scripts/http-audit.py` and
-`python3 scripts/pressure-audio-audit.py` (the audio check needs its optional numeric
-libraries and FFmpeg). Music/art generation is optional: existing exports ship locally.
+Browser tests need `e2e/requirements.txt` and an installed Chromium; substitute its
+actual executable path on another OS. These fixtures execute the shipping drawing,
+input, audio and game code. Only transport URLs and the existing diagnostic guard
+are adapted. They do not certify an actual Mac/Safari or live Vercel installation.
 
-## Evidence and remaining work
+## Existing linked project
 
-`docs/QA_REPORT.md` reports the actual final tests, simulations and limitations.
-`docs/ECONOMY.md` defines the resource policy; `docs/DIFFICULTY_TABLE.md` contains every
-chapter's derived numbers. Raw current evidence is in `docs/qa/`; older results are
-explicitly archived below `docs/qa/v3.2-baseline/` and other versioned subfolders.
-No font binaries, new backend, telemetry, account system or monetization is added.
-
-This is a tested browser build, not a claim of human enjoyment validation, native Steam
-packaging, original-game numerical parity, cross-device certification or viral success.
-Actual human sessions, long-session listening, device/browser persistence, and an owner-run
-production-domain smoke test remain necessary. See `docs/RELEASE_CHECKLIST.md`.
+`bash scripts/apply-update.sh /absolute/path/to/your/existing/Typekeeper/project`
+backs up the target and preserves `.git`, `.vercel`, `.env*`, `node_modules`, and an
+existing `vercel.json`. A missing target is rejected. Use the separate-folder launcher
+above when your old linked folder no longer exists. No remote writes are made.

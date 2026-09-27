@@ -51,7 +51,7 @@ def main():
     results.append(r);print(r['status'],name,r.get('error',''),flush=True)
    def finish_stage():
     api("t.model.words=[];t.model.progress=t.model.config.quota-1;t.model.stageCorrect=t.model.config.quota-1;t.word('BOOK');t.flush();")
-    typeword('BOOK')
+    typeword('BOOK');page.locator('#result-score-value').wait_for(state='visible')
    def menu():api("t.show('menu');")
 
    def test_menu():
@@ -89,7 +89,7 @@ def main():
     word('INK');api('t.model.danger=15;t.flush();')
     for power in ['fire','ice','slow','wind']:
      slot=page.locator('#spell-'+power);assert 'cast-ready' in slot.get_attribute('class');assert 'just-ready' in slot.get_attribute('class')
-     assert page.locator('#ready-'+power).inner_text()=='READY';assert page.locator('#count-'+power).inner_text()=='1'
+     assert page.locator('#ready-'+power).inner_text()=='READY';assert page.locator('#count-'+power).inner_text()=='1/2'
      assert slot.get_attribute('aria-keyshortcuts') in ['1','2','3','4']
    check('All four collected spell books gain stock, READY labels, and acquisition animation',books)
    def hotkeys():

@@ -1,26 +1,14 @@
-TYPEKEEPER: ENCHANTED LIBRARY — 3.2.1
+TYPEKEEPER: ENCHANTED LIBRARY — v3.3.6
 
-PLAY: Open PLAY.html, or use START_MAC.command / START_WINDOWS.bat.
-The local-server launchers require Python 3.9+ or Node 20+. PLAY.html does not.
+Extract the entire ZIP. On Mac, open Terminal in this folder and run:
+  bash START_MAC.command
 
-THIS UPDATE: A gentler opening and scarcer spells. Campaign starts empty; the
-sixth card offers one earned ICE book. Capacity is two per spell. Other art,
-music, effects, controls, scoring and the 48-chapter structure are retained.
+The launcher prints the verified version, source folder and local URL.
+The browser tab should display v3.3.6.
 
-UPDATE EXISTING PROJECT:
-Run UPDATE_EXISTING_MAC.command. The default target is
-~/Downloads/Typekeeper_Enchanted_Library_v3_1, even if it already contains v3.2.
-The helper makes a backup and preserves .git, .vercel, .env and vercel.json.
-It performs no remote push or deployment. README.md contains subsequent commands.
+Alternatively open PLAY.html for the embedded no-server edition.
+The full modular site is in dist/; no API key or account is required.
 
-SAVES:
-Export before updating. Preferences, stars, unlocks and valid bookmarks migrate
-at the same browser/domain. Old saved bytes remain untouched. Old totals stay
-in Legacy. Carried inventory above two per type is capped at two in this version.
-Start a new campaign to experience the new opening and earn current records.
-
-CONTROLS:
-Type + Enter. 1 Fire, 2 Ice, 3 Slow, 4 Wind. Escape pauses.
-Practice/Endless keep their separately scored starter kits.
-
-See docs/QA_REPORT.md for executed tests and honest validation limits.
+Stop the old local server with Control+C to keep port 4355 and same-origin saves.
+An occupied port uses the next available port instead of killing an existing process.
+Use Records → Export/Import save when changing addresses or browsers.

@@ -1,5 +1,5 @@
-import { asset } from '../game/assets.js';
-import { MUSIC_STEMS, MUSIC_LOOP_SECONDS, musicDirection } from './mix.js';
+import { asset } from '../game/assets.js?v=3.3.6-31b6fcc67e9c4a2c';
+import { MUSIC_STEMS, MUSIC_LOOP_SECONDS, musicDirection } from './mix.js?v=3.3.6-31b6fcc67e9c4a2c';
 
 /** Original phase-aligned score + bounded procedural foley.
  * Music follows pile pressure, never drives simulation time or changes word speed.
@@ -170,6 +170,7 @@ export class GameAudio {
  }
  play(event){
   if(event.type==='input'&&event.changed&&!event.erased)this.key(!!event.target,event.complete);
+  if(event.type==='input'&&event.changed&&event.erased){const now=performance.now();if(now-(this.lastErase||0)>35){this.lastErase=now;this.noteCue('paper-erase');this.noise(.028,.10,3500,{endFilter:1800});}}
   if(event.type==='correct'){
    this.noteCue(event.word.kind==='bonus'?'bonus-word':'word-saved');
    const note=[74,78,81,83][Math.floor(Math.max(0,event.streak-1)/4)%4];
@@ -183,7 +184,7 @@ export class GameAudio {
    this.noteCue('pressure-warning');const critical=event.state.key==='critical';
    this.tone(critical?146.83:196,.22,'sine',.16);this.tone(critical?220:293.66,.18,'sine',.1,.16);
   }
-  if(event.type==='wrong'){this.noteCue('wrong');this.tone(130,.10,'triangle',.26,0,{endFrequency:98});this.noise(.035,.16,750);}
+  if(event.type==='wrong'){this.noteCue('wrong');this.bell(69,.11);this.noise(.031,.12,950);}
   if(event.type==='miss'){this.noteCue('paper-impact');this.noise(.17,.55,1700,{endFilter:460});this.tone(102,.14,'sine',.3,0,{endFrequency:62});}
   if(event.type==='unavailable')this.tone(240,.07,'sine',.13);
   if(event.type==='power'){
