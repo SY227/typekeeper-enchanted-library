@@ -1,0 +1,11 @@
+{
+  "name": "book_leaf_tests-modules",
+  "command": [
+    "python",
+    "e2e/book_leaf_tests.py",
+    "--mode",
+    "modules"
+  ],
+  "exit": 1,
+  "seconds": 10.03
+}

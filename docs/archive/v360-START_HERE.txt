@@ -1,0 +1,28 @@
+TYPEKEEPER: ENCHANTED LIBRARY — v3.6.0
+Impact Pass · Score Chase retained
+
+Extract the ENTIRE ZIP. Open PLAY.html for the self-contained offline game.
+Mac local server: bash START_MAC.command
+The launcher and title must show v3.6.0.
+
+New: mechanical typing, stronger prefix/target ink, physical paper landings,
+and compact word-origin rewards. No balance or control changes.
+
+SCORE stays cumulative. BEST is frozen for the active comparable chapter/run.
+FIRST RUN means no proven comparable record yet; NEW BEST shows the gain over
+that frozen target. Campaign compares cumulative totals at the same chapter;
+Practice and Endless are kept separate, as are pace and scoring rules.
+
+Before changing version, URL, port or browser, use Records -> Export save.
+Stop the old server with Control+C to reuse its address. Import when necessary.
+Source, prebuilt dist, PLAY.html, original art/audio and masters, launchers,
+backup-first updater, tests and actual QA are included. No account or API key.
+
+完整解壓後可直接開啟 PLAY.html；Mac 本機伺服器：bash START_MAC.command。
+確認版本 v3.6.0。大分數仍然係累積總分，BEST 喺入關／開局時鎖定。
+更換網址、連接埠或瀏覽器前，請先用 Records -> Export save 匯出存檔。
+
+README.md: play, controls and correct comparison semantics.
+docs/IMPACT_SPEC.md: new feedback contracts and acceptance checks.
+docs/SCORE_CHASE_SPEC.md: design and engineering contracts.
+docs/QA_REPORT.md: executed checks, build hashes and limitations.

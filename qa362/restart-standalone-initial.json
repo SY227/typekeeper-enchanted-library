@@ -1,0 +1,471 @@
+{
+  "version": "3.6.2",
+  "scope": "Fresh Journey: actual shipping UI/input/renderer in both build formats.\nControlled saved-game fixtures and a fault-injectable in-memory storage adapter.\nThe adapter exercises save/reload code paths, not a real hosted localStorage origin.\nNo human playtest, native-device or external studio certification is implied.\n",
+  "mode": "standalone",
+  "shippingSHA256": "5a2350faf462c12a197b093645951b80553c25756f1f875ed9406df97ef8e5a3",
+  "tests": [
+    {
+      "name": "New player retains one-click Play; no unsolicited popup or duplicate restart",
+      "status": "PASS",
+      "seconds": 0.296
+    },
+    {
+      "name": "Returning player sees Continue first and an explicit Chapter 1 option in the main actions",
+      "status": "PASS",
+      "seconds": 0.405
+    },
+    {
+      "name": "Confirmation names the replaced checkpoint, explains what stays, and defaults to cancel",
+      "status": "PASS",
+      "seconds": 0.465
+    },
+    {
+      "name": "Cancel by button keeps every save byte and restores focus to the entry choice",
+      "status": "PASS",
+      "seconds": 0.308
+    },
+    {
+      "name": "Cancel by escape keeps every save byte and restores focus to the entry choice",
+      "status": "PASS",
+      "seconds": 0.251
+    },
+    {
+      "name": "Cancel by close keeps every save byte and restores focus to the entry choice",
+      "status": "PASS",
+      "seconds": 0.285
+    },
+    {
+      "name": "Cancel by enter keeps every save byte and restores focus to the entry choice",
+      "status": "PASS",
+      "seconds": 0.52
+    },
+    {
+      "name": "Confirmation traps keyboard focus and never defaults Enter to the destructive action",
+      "status": "PASS",
+      "seconds": 0.161
+    },
+    {
+      "name": "classic: actual confirm starts Chapter 1, resets only the attempt and retains all collections/BEST",
+      "status": "PASS",
+      "seconds": 0.284
+    },
+    {
+      "name": "relaxed: actual confirm starts Chapter 1, resets only the attempt and retains all collections/BEST",
+      "status": "PASS",
+      "seconds": 0.275
+    },
+    {
+      "name": "maniac: actual confirm starts Chapter 1, resets only the attempt and retains all collections/BEST",
+      "status": "PASS",
+      "seconds": 0.323
+    },
+    {
+      "name": "Actual confirmation makes one complete checkpoint write with no deletion window",
+      "status": "PASS",
+      "seconds": 0.244
+    },
+    {
+      "name": "Duplicate or stale fresh-start events cannot restart an already-running campaign",
+      "status": "PASS",
+      "seconds": 0.254
+    },
+    {
+      "name": "A stale confirmation after cancellation is inert",
+      "status": "PASS",
+      "seconds": 0.17
+    },
+    {
+      "name": "Continue still resumes the exact old chapter/score/seed without starting over",
+      "status": "PASS",
+      "seconds": 0.226
+    },
+    {
+      "name": "After starting again, main-menu Continue clearly points to Chapter 1",
+      "status": "PASS",
+      "seconds": 0.358
+    },
+    {
+      "name": "Restart \u2192 Chapters \u2192 Chapter 12 practice \u2192 Continue returns to the fresh campaign, with no relock",
+      "status": "PASS",
+      "seconds": 0.94
+    },
+    {
+      "name": "Starting again preserves existing unlocks but does not unlock unearned chapters",
+      "status": "PASS",
+      "seconds": 0.618
+    },
+    {
+      "name": "Replaying Chapter 1 with worse mastery advances the new checkpoint without downgrading old stars",
+      "status": "PASS",
+      "seconds": 0.424
+    },
+    {
+      "name": "Late-chapter practice clear/retry never replaces the restarted campaign checkpoint",
+      "status": "PASS",
+      "seconds": 0.509
+    },
+    {
+      "name": "Completed campaign without a checkpoint can restart while all 48 chapters and Endless stay unlocked",
+      "status": "PASS",
+      "seconds": 0.457
+    },
+    {
+      "name": "A saved Chapter 48 run is replaced only after explicit confirmation, never its unlocks",
+      "status": "PASS",
+      "seconds": 0.261
+    },
+    {
+      "name": "Restarting Classic leaves Relaxed and Maniac checkpoints untouched",
+      "status": "PASS",
+      "seconds": 0.263
+    },
+    {
+      "name": "Entry choices follow the selected difficulty without affecting another difficulty\u2019s progress",
+      "status": "FAIL",
+      "error": "Locator.click: Error: strict mode violation: locator(\"[data-action=\\\"back\\\"]\") resolved to 2 elements:\n    1) <button data-action=\"back\" aria-label=\"Close\" class=\"close-button\">\u2026</button> aka get_by_role(\"button\", name=\"Close\")\n    2) <button data-autofocus=\"\" data-action=\"back\" class=\"game-button\">\u2026</button> aka get_by_role(\"button\", name=\"Done\")\n\nCall log:\n  - waiting for locator(\"[data-action=\\\"back\\\"]\")\n",
+      "trace": "Traceback (most recent call last):\n  File \"/mnt/data/restart_work/Typekeeper_Enchanted_Library_v3_6_2/e2e/restart_journey_tests.py\", line 46, in check\n    try:fn();assert not errors,errors;row={'name':name,'status':'PASS','seconds':round(time.monotonic()-st,3)}\n        ~~^^\n  File \"/mnt/data/restart_work/Typekeeper_Enchanted_Library_v3_6_2/e2e/restart_journey_tests.py\", line 114, in change_pace\n    setup();click('settings');page.locator('[data-settings-tab=\"gameplay\"]').click();page.locator('#pace-select').select_option('relaxed');click('back');assert action('start').count()==1;assert action('new-confirm').count()==0;click('start');assert snap()['pace']=='relaxed';assert data()['checkpoints']['classic']['nextLevel']==12\n                                                                                                                                           ~~~~~^^^^^^^^\n  File \"/mnt/data/restart_work/Typekeeper_Enchanted_Library_v3_6_2/e2e/restart_journey_tests.py\", line 40, in click\n    def click(name):action(name).click();page.wait_for_timeout(35)\n                    ~~~~~~~~~~~~~~~~~~^^\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/sync_api/_generated.py\", line 15637, in click\n    self._sync(\n    ~~~~~~~~~~^\n        self._impl_obj.click(\n        ^^^^^^^^^^^^^^^^^^^^^\n    ...<10 lines>...\n        )\n        ^\n    )\n    ^\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_locator.py\", line 162, in click\n    return await self._frame._click(self._selector, strict=True, **params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_frame.py\", line 566, in _click\n    await self._channel.send(\"click\", self._timeout, locals_to_params(locals()))\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    )\n    ^\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.Error: Locator.click: Error: strict mode violation: locator(\"[data-action=\\\"back\\\"]\") resolved to 2 elements:\n    1) <button data-action=\"back\" aria-label=\"Close\" class=\"close-button\">\u2026</button> aka get_by_role(\"button\", name=\"Close\")\n    2) <button data-autofocus=\"\" data-action=\"back\" class=\"game-button\">\u2026</button> aka get_by_role(\"button\", name=\"Done\")\n\nCall log:\n  - waiting for locator(\"[data-action=\\\"back\\\"]\")\n\n",
+      "seconds": 0.22
+    },
+    {
+      "name": "An obsolete confirmation cannot silently restart a different difficulty",
+      "status": "PASS",
+      "seconds": 0.263
+    },
+    {
+      "name": "Cancel from game-over returns to that result, retaining Retry and avoiding duplicate records",
+      "status": "PASS",
+      "seconds": 0.364
+    },
+    {
+      "name": "Cancel from Records restores the originating screen and live paused input, not the menu",
+      "status": "PASS",
+      "seconds": 0.496
+    },
+    {
+      "name": "Five fresh journeys retain lifetime data and produce distinct randomized attempts",
+      "status": "PASS",
+      "seconds": 0.933
+    },
+    {
+      "name": "Real export/import and full app relaunch from a serialized adapter preserve new checkpoint and old mastery",
+      "status": "PASS",
+      "seconds": 2.064
+    },
+    {
+      "name": "Older compatible saves without the newer PB collections still expose safe restart",
+      "status": "PASS",
+      "seconds": 0.512
+    },
+    {
+      "name": "Invalid save import neither resets existing progress nor changes Continue",
+      "status": "PASS",
+      "seconds": 0.258
+    },
+    {
+      "name": "Save denial is disclosed; old persisted bytes survive and current-session unlocks remain usable",
+      "status": "PASS",
+      "seconds": 0.271
+    },
+    {
+      "name": "No clock, score or spell state moves while the restart question is open",
+      "status": "PASS",
+      "seconds": 0.421
+    },
+    {
+      "name": "Modified Escape does not accidentally accept or cancel the question",
+      "status": "PASS",
+      "seconds": 0.169
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1920\u00d71080",
+      "status": "PASS",
+      "seconds": 0.796
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1440\u00d7900",
+      "status": "PASS",
+      "seconds": 0.612
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1366\u00d7768",
+      "status": "PASS",
+      "seconds": 0.777
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1280\u00d7720",
+      "status": "PASS",
+      "seconds": 0.594
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1024\u00d7768",
+      "status": "PASS",
+      "seconds": 0.536
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1024\u00d7600",
+      "status": "PASS",
+      "seconds": 0.584
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 800\u00d7600",
+      "status": "PASS",
+      "seconds": 0.654
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 960\u00d7540",
+      "status": "PASS",
+      "seconds": 0.526
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 640\u00d7480",
+      "status": "PASS",
+      "seconds": 0.503
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 2560\u00d71080",
+      "status": "PASS",
+      "seconds": 0.694
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 768\u00d71024",
+      "status": "PASS",
+      "seconds": 0.522
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 360\u00d7640",
+      "status": "PASS",
+      "seconds": 0.516
+    },
+    {
+      "name": "Completed campaign menu retains every action at 1366\u00d7768",
+      "status": "PASS",
+      "seconds": 0.818
+    },
+    {
+      "name": "Completed campaign menu retains every action at 1024\u00d7600",
+      "status": "PASS",
+      "seconds": 0.517
+    },
+    {
+      "name": "Completed campaign menu retains every action at 800\u00d7600",
+      "status": "PASS",
+      "seconds": 0.66
+    },
+    {
+      "name": "High contrast and reduced motion retain the same readable and safe restart path",
+      "status": "PASS",
+      "seconds": 0.534
+    },
+    {
+      "name": "Last requested READY/RESCUE placement remains above, not on top of, the book art",
+      "status": "PASS",
+      "seconds": 0.624
+    }
+  ],
+  "passed": 50,
+  "failed": 1,
+  "pageerrors": [],
+  "evidence": {
+    "atomicCheckpointWrites": 1,
+    "restartSeeds": [
+      3400293883,
+      177003696,
+      2992986942,
+      1538073197,
+      2617139327
+    ],
+    "viewports": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1366,
+        "height": 768,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1024,
+        "height": 768,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1024,
+        "height": 600,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 640,
+        "height": 480,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 2560,
+        "height": 1080,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1366,
+        "height": 768,
+        "completedCampaign": true,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 437,
+          "sh": 437
+        }
+      },
+      {
+        "width": 1024,
+        "height": 600,
+        "completedCampaign": true,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 437,
+          "sh": 437
+        }
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "completedCampaign": true,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 437,
+          "sh": 437
+        }
+      }
+    ],
+    "aboveBookLabels": [
+      {
+        "power": "fire",
+        "labelBottom": 574.5066528320312,
+        "bookTop": 576.0408935546875,
+        "gap": 1.53424072265625
+      },
+      {
+        "power": "ice",
+        "labelBottom": 574.5066528320312,
+        "bookTop": 578.8693237304688,
+        "gap": 4.3626708984375
+      },
+      {
+        "power": "slow",
+        "labelBottom": 574.5066528320312,
+        "bookTop": 576.0408935546875,
+        "gap": 1.53424072265625
+      },
+      {
+        "power": "wind",
+        "labelBottom": 574.5066528320312,
+        "bookTop": 578.8693237304688,
+        "gap": 4.3626708984375
+      }
+    ]
+  }
+}

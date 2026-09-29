@@ -16,7 +16,7 @@ with tempfile.TemporaryDirectory(prefix='typekeeper-update-') as tmp:
  state=json.loads((target/'.typekeeper-update-last.json').read_text());backup=Path(state['backup'])
  assert (backup/'src/game/rules.js').read_text()=='old rules sentinel'
  assert (backup/'index.html').read_text()=='old game page'
- assert json.loads((target/'package.json').read_text())['version']=='3.4.0'
+ assert json.loads((target/'package.json').read_text())['version']=='3.6.2'
  assert digest(target/'src/game/economy.js')==digest(ROOT/'src/game/economy.js')
  assert all((target/k).read_text()==v for k,v in sentinels.items())
  rows.append({'case':'backup-first update of an existing project including a space in its path','passed':True,'filesCopied':state['filesCopied'],'preserved':['.git','.vercel','.env.production','vercel.json'],'backupContainsOldRules':True})

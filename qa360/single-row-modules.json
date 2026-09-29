@@ -1,0 +1,261 @@
+{
+  "version": "3.6.0",
+  "mode": "modules in-memory browser fixture",
+  "browser": "144.0.7559.96",
+  "shippingSHA256": "e67d83bdfe00337a92746cbe858c4e73c0f04002aa3dde4d28c10aedcc6d7287",
+  "tests": [
+    {
+      "name": "Shipping document, running engine and browser title identify v3.6.0",
+      "status": "PASS",
+      "seconds": 0.09
+    },
+    {
+      "name": "Actual Canvas calls: every 746 word \u00d7 6 skins at 1366\u00d7768",
+      "status": "PASS",
+      "seconds": 5.471
+    },
+    {
+      "name": "Actual Canvas calls: every 746 word \u00d7 6 skins at 1920\u00d71080",
+      "status": "PASS",
+      "seconds": 6.025
+    },
+    {
+      "name": "Actual Canvas calls: every 746 word \u00d7 6 skins at 1280\u00d7720",
+      "status": "PASS",
+      "seconds": 5.447
+    },
+    {
+      "name": "Actual Canvas calls: every 746 word \u00d7 6 skins at 1024\u00d7768",
+      "status": "PASS",
+      "seconds": 5.319
+    },
+    {
+      "name": "Renderer rejects multi-row output even with an obsolete two-row cached layout",
+      "status": "PASS",
+      "seconds": 0.029
+    },
+    {
+      "name": "24 widest custom glyphs never split, truncate, or overflow the card",
+      "status": "PASS",
+      "seconds": 0.021
+    },
+    {
+      "name": "Native keyboard completes the entire long word before Enter resolves it once",
+      "status": "PASS",
+      "seconds": 0.166
+    },
+    {
+      "name": "Long-word editing, selection and quick magic preserve the single-line input",
+      "status": "PASS",
+      "seconds": 0.123
+    },
+    {
+      "name": "20 actual New game button journeys produce distinct randomized openings",
+      "status": "PASS",
+      "seconds": 1.323
+    },
+    {
+      "name": "Actual defeat \u2192 Retry changes words without keeping failed score or free spells",
+      "status": "PASS",
+      "seconds": 0.153
+    },
+    {
+      "name": "Continue reproduces the current attempt; only a deliberate Retry rerolls vocabulary",
+      "status": "PASS",
+      "seconds": 0.075
+    },
+    {
+      "name": "Single-row words survive pressure, ICE, high contrast and reduced-motion settings",
+      "status": "PASS",
+      "seconds": 3.65
+    },
+    {
+      "name": "Chapter completion and next chapter do not restore an older wrapping renderer",
+      "status": "PASS",
+      "seconds": 0.318
+    },
+    {
+      "name": "Captured actual game frames show complete long words at 1366 and 1920 widths",
+      "status": "PASS",
+      "seconds": 1.412
+    },
+    {
+      "name": "Normal production export exposes no test seam",
+      "status": "PASS",
+      "seconds": 1.607
+    },
+    {
+      "name": "DPR 2 Retina-style scaling retains one row for full long words",
+      "status": "PASS",
+      "seconds": 2.216
+    },
+    {
+      "name": "Fault injection: mixed HTML/JS release identity stops launch with an explicit error",
+      "status": "PASS",
+      "seconds": 1.187
+    },
+    {
+      "name": "No unhandled browser errors occurred",
+      "status": "PASS",
+      "seconds": 0.0
+    }
+  ],
+  "passed": 19,
+  "failed": 0,
+  "unhandledErrors": [],
+  "evidence": {
+    "matrix": [
+      {
+        "viewport": [
+          1366,
+          768
+        ],
+        "tested": 4476,
+        "fail": [],
+        "failCount": 0,
+        "minEffectivePixels": 24.231111111111108,
+        "maxCardWidth": 375,
+        "scale": 0.8355555555555555
+      },
+      {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "tested": 4476,
+        "fail": [],
+        "failCount": 0,
+        "minEffectivePixels": 34.284444444444446,
+        "maxCardWidth": 375,
+        "scale": 1.1822222222222223
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "tested": 4476,
+        "fail": [],
+        "failCount": 0,
+        "minEffectivePixels": 23.6,
+        "maxCardWidth": 387,
+        "scale": 0.7822222222222222
+      },
+      {
+        "viewport": [
+          1024,
+          768
+        ],
+        "tested": 4476,
+        "fail": [],
+        "failCount": 0,
+        "minEffectivePixels": 24.231111111111108,
+        "maxCardWidth": 375,
+        "scale": 0.8355555555555555
+      }
+    ],
+    "realNewGameOpenings": [
+      [
+        "FRUIT",
+        "VERSE",
+        "BOWL",
+        "COAST",
+        "TIME",
+        "NEST",
+        "CREAM",
+        "ROAD",
+        "PEACE",
+        "SAND",
+        "TEA",
+        "START"
+      ],
+      [
+        "ISLE",
+        "KEY",
+        "TRACK",
+        "MAP",
+        "SWAN",
+        "FAITH",
+        "LEAF",
+        "MIST",
+        "CHARM",
+        "SNAIL",
+        "WATER",
+        "SWIFT"
+      ],
+      [
+        "BEGIN",
+        "NOVA",
+        "SKY",
+        "SHELF",
+        "SHIP",
+        "TABLE",
+        "ORBIT",
+        "GNOME",
+        "STORM",
+        "END",
+        "TREE",
+        "CRISP"
+      ],
+      [
+        "ELF",
+        "ORBIT",
+        "MAP",
+        "COVER",
+        "TRACK",
+        "BRICK",
+        "BOLD",
+        "DUSK",
+        "RICE",
+        "QUICK",
+        "DAWN",
+        "APPLE"
+      ],
+      [
+        "BEACH",
+        "STORM",
+        "LAUGH",
+        "HARP",
+        "HUE",
+        "NEST",
+        "BOWL",
+        "FRUIT",
+        "WOOL",
+        "PORT",
+        "CORAL",
+        "MIND"
+      ]
+    ],
+    "retry": {
+      "before": [
+        "BOLD",
+        "MAP",
+        "THINK",
+        "BROOK",
+        "FOCUS",
+        "CLIFF",
+        "BUNCH",
+        "ROAD",
+        "SHIP",
+        "BEAR",
+        "MAKE",
+        "WALTZ"
+      ],
+      "after": [
+        "CUP",
+        "TRUST",
+        "NIGHT",
+        "CLEAR",
+        "EAGLE",
+        "BASIL",
+        "WAND",
+        "BLOOM",
+        "RAIN",
+        "PETAL",
+        "CUP",
+        "TYPE"
+      ]
+    },
+    "states": 12
+  }
+}

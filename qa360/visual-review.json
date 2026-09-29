@@ -1,0 +1,37 @@
+{
+  "reviewType": "Assistant direct visual inspection of rendered captures; not a human QA panel or named-studio review.",
+  "runtimeSHA256": "e67d83bdfe00337a92746cbe858c4e73c0f04002aa3dde4d28c10aedcc6d7287",
+  "captures": [
+    {
+      "capture": "qa360/impact-screenshots/exact-word-priority-standalone.png",
+      "sha256": "90a8a9ccbfae379e0b05a07c1bcf41f7ce9890eec2e21b82149174f48bc9f68b",
+      "observation": "BOOK has the full-ready corner emphasis/check; lower BOOKCASE retains only prefix ink. Mechanical keytops and native paper are separate; labels remain readable."
+    },
+    {
+      "capture": "qa360/impact-screenshots/paper-landing-standalone.png",
+      "sha256": "bb7eebf6c1395c5ef5502f7e40e611b4edc2672e40b12e3e40dd1fa1612c895a",
+      "observation": "The settled page visibly carries CLOCKWORK. The narrow lower stack stays between input and SLOW; the pressure instrument/WIND spacing is unchanged."
+    },
+    {
+      "capture": "qa360/impact-screenshots/twelve-card-stress-standalone.png",
+      "sha256": "1c66c023b17dec93a19e99dbca2d1710309bc197e990f21e38903a82e727fa49",
+      "observation": "Controlled 12-card grid: candidate prefixes remain readable and only the lowest incomplete match is bracketed. This is a constructed stress fixture, not a naturally spawned campaign screenshot."
+    },
+    {
+      "capture": "qa360/impact-screenshots/paper-edge-fire-standalone.png",
+      "sha256": "fd63ab9c9a43209d8a17e692e2794a3f9fe7ff88bb56c2f116ddd63774209d2b",
+      "observation": "Local orange seams and thin source filaments remain around removed paper; no broad opaque cross-screen fire layer. A static image does not establish animation quality."
+    },
+    {
+      "capture": "qa360/impact-screenshots/high-pressure-800x600-standalone.png",
+      "sha256": "f6b3ebd025758e2ded1c4b6ed2847d656b9cf707b41781c442e869fa2da6bb21",
+      "observation": "At 95% pressure, the upper stack extends above the input while the lower section stays out of the typing field and SLOW control. Important labels remain visible."
+    },
+    {
+      "capture": "qa360/impact-screenshots/word-origin-release-standalone.png",
+      "sha256": "6399447d7c11e1b400b251d7c201c9be4ff60dfd5290f00ce36b5ca1ae426e23",
+      "observation": "The cleared paper fragments and +90 share the original source; a live word below remains legible. Score is already 90; this is a controlled exact-score fixture."
+    }
+  ],
+  "limits": "Static captures cannot certify tactile enjoyment, audio comfort, naturally occurring worst-case overlap, or native hardware. Automated runtime checks and normal-clock videos are separately reported."
+}

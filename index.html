@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#102b2b">
   <meta name="description" content="A little focus. A little magic. Save falling words, master four spells, and discover the Enchanted Library.">
-  <title>Typekeeper: Enchanted Library — v3.4.0</title>
-  <meta name="typekeeper-version" content="3.4.0">
+  <title>Typekeeper: Enchanted Library — v3.6.2</title>
+  <meta name="typekeeper-version" content="3.6.2">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preload" as="image" href="assets/library.webp">
   <link rel="stylesheet" href="src/styles.css">
@@ -24,14 +24,21 @@
         <button id="fullscreen-button" class="icon-button" title="Fullscreen" aria-label="Enter fullscreen"></button>
       </nav>
       <section id="play-hud" hidden aria-label="Run status">
-        <div class="score-panel engraved-panel"><div class="eyebrow">SCORE</div><div class="score-number" id="score-value">0</div><div class="personal-best">PERSONAL BEST <span id="best-value">0</span></div></div>
+        <div class="score-panel engraved-panel" id="score-panel" data-chase-state="first" role="group" aria-label="Running score and personal best" aria-describedby="score-scope">
+          <div class="eyebrow" id="score-heading">SCORE</div>
+          <div class="score-number" id="score-value">0</div>
+          <div class="personal-best" id="score-chase-line"><span class="chase-mark" aria-hidden="true">◇</span><span id="best-label">FIRST RUN</span><span id="best-value" hidden></span></div>
+          <span class="score-chase-gleam" aria-hidden="true"></span>
+          <span class="sr-only" id="score-scope">Your running score. A personal best is established after an attempt is recorded.</span>
+        </div>
         <div class="chapter-panel engraved-panel"><div class="eyebrow" id="chapter-label">CHAPTER 01</div><div class="chapter-name" id="chapter-name">A new beginning</div><div class="chapter-track"><i id="chapter-fill"></i></div><div class="chapter-progress"><span id="progress-value">0 / 12</span> WORDS SAVED</div></div>
-        <div class="wing-label" id="wing-name" hidden></div><div class="rank-badge" hidden><span>YOUR RANK</span><strong id="rank-value">Apprentice</strong></div><div class="trial-indicator" id="trial-indicator" hidden></div><div class="side-stats"><div class="stat-block"><span>WPM</span><strong id="wpm-value">0</strong></div><div class="stat-block"><span>ACCURACY</span><strong id="accuracy-value">100<small>%</small></strong></div><div class="stat-block streak-stat"><span>STREAK</span><strong id="streak-value">0</strong><em id="multiplier-value">×1</em></div></div>
-        <div class="limit-instrument" id="limit-instrument"><div class="meter-cap">LIMIT</div><div class="meter-body"><div class="meter-scale"><span>100</span><span>75</span><span>50</span><span>25</span><span>0</span></div><div class="meter-tube"><div class="meter-fill" id="limit-fill"></div><div class="meter-glass"></div><div class="meter-ticks"></div></div></div><div class="limit-number" id="limit-value">0<small>%</small></div><div class="meter-caption">PAPER PILE</div></div>
-        <div class="character-status" id="character-status" hidden><span>TYPEKEEPER</span><strong id="character-mood">COMPOSED</strong><i></i></div><div class="rescue-hint" id="rescue-hint" hidden>WIND READY · PRESS 4</div><div class="effect-status" id="effect-status" aria-label="Active powers"></div>
+        <div class="wing-label" id="wing-name" hidden></div><div class="rank-badge" hidden><span>YOUR RANK</span><strong id="rank-value">Apprentice</strong></div><div class="trial-indicator" id="trial-indicator" hidden></div><div class="side-stats"><div class="stat-block"><span>WPM</span><strong id="wpm-value">0</strong></div><div class="stat-block"><span>SUBMISSION<br>ACCURACY</span><strong id="accuracy-value">100<small>%</small></strong></div><div class="stat-block streak-stat"><span>STREAK</span><strong id="streak-value">0</strong><em id="multiplier-value">×1</em></div></div>
+        <div class="limit-instrument" id="limit-instrument" role="meter" aria-label="Paper pile limit" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="meter-cap">LIMIT</div><div class="meter-body"><div class="meter-scale"><span>100</span><span>75</span><span>50</span><span>25</span><span>0</span></div><div class="meter-tube"><div class="meter-fill" id="limit-fill"></div><div class="meter-glass"></div><div class="meter-ticks"></div></div></div><div class="limit-number" id="limit-value">0<small>%</small></div><div class="meter-caption">PAPER PILE</div></div>
+        <div class="character-status" id="character-status" hidden><span>TYPEKEEPER</span><strong id="character-mood">COMPOSED</strong><i></i></div><div class="effect-status" id="effect-status" aria-label="Active powers"></div>
         <div class="spell-inventory" id="spell-inventory" aria-label="Spell book inventory"></div>
         <div class="typing-dock" id="typing-dock">
           <div class="typing-label" id="typing-label" hidden></div>
+          <span id="enter-save-hint" class="enter-save-hint" role="status" hidden><kbd>ENTER</kbd> · SAVE</span>
           <div class="input-frame"><span class="input-flourish" aria-hidden="true">❧</span><input id="typing-input" aria-label="Type a falling word or a stored spell, then press Enter" type="text" inputmode="text" enterkeyhint="go" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" maxlength="24" placeholder="" disabled><span class="enter-key" aria-hidden="true">↵</span></div>
         </div>
       </section>

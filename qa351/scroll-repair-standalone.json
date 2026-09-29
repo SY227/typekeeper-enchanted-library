@@ -1,0 +1,271 @@
+{
+  "version": "3.5.1",
+  "mode": "standalone",
+  "browser": "144.0.7559.96",
+  "scope": "Actual Canvas ink/margin oracle + title, six materials and animated spell regressions.\nRuns unmodified game drawing code in standalone / ES-module in-memory fixtures.\nFixture differences are transport URLs + existing diagnostics guard, not rendering.\n",
+  "shippingSHA256": "5d2eaee3614277d65e83e35724948bae767c004c31ad9c568c984f14c877acda",
+  "tests": [
+    {
+      "name": "Both shipping identity and initialized renderer are v3.5.1",
+      "status": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "name": "The actual title painter keeps WONDER / STORY / IMAGINE inside both rollers",
+      "status": "PASS",
+      "seconds": 0.337
+    },
+    {
+      "name": "Rasterized letter pixels avoid rods / medallions, full words at 1366\u00d7768",
+      "status": "PASS",
+      "seconds": 0.369
+    },
+    {
+      "name": "Rasterized letter pixels avoid rods / medallions, full words at 1920\u00d71080",
+      "status": "PASS",
+      "seconds": 0.242
+    },
+    {
+      "name": "Rasterized letter pixels avoid rods / medallions, full words at 1280\u00d7720",
+      "status": "PASS",
+      "seconds": 0.313
+    },
+    {
+      "name": "Rasterized letter pixels avoid rods / medallions, full words at 1024\u00d7768",
+      "status": "PASS",
+      "seconds": 0.243
+    },
+    {
+      "name": "Inset seal is centred on the parchment, with no stray medallion above its edge",
+      "status": "PASS",
+      "seconds": 0.019
+    },
+    {
+      "name": "Actual gameplay and all six material variants captured at laptop and 1080p sizes",
+      "status": "PASS",
+      "seconds": 1.315
+    },
+    {
+      "name": "Complete one-row word entry, selection edits, and Enter behavior remain intact",
+      "status": "PASS",
+      "seconds": 0.132
+    },
+    {
+      "name": "FIRE with motion enabled: native animation, stock and preserved input",
+      "status": "PASS",
+      "seconds": 0.944
+    },
+    {
+      "name": "ICE with motion enabled: native animation, stock and preserved input",
+      "status": "PASS",
+      "seconds": 0.944
+    },
+    {
+      "name": "SLOW with motion enabled: native animation, stock and preserved input",
+      "status": "PASS",
+      "seconds": 0.956
+    },
+    {
+      "name": "WIND with motion enabled: native animation, stock and preserved input",
+      "status": "PASS",
+      "seconds": 0.944
+    },
+    {
+      "name": "All four native Canvas spell drawing paths render 28 onset/mid/end states",
+      "status": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "name": "Queued SLOW, pause inertness and selection-safe resume survive the visual repair",
+      "status": "PASS",
+      "seconds": 0.217
+    },
+    {
+      "name": "High contrast, high pressure and reduced motion retain legible one-row content",
+      "status": "PASS",
+      "seconds": 0.112
+    },
+    {
+      "name": "Scroll material churn remains bounded and does not change model or vocabulary state",
+      "status": "PASS",
+      "seconds": 0.063
+    },
+    {
+      "name": "Exact production startup succeeds without the diagnostic seam",
+      "status": "PASS",
+      "seconds": 1.175
+    },
+    {
+      "name": "No unhandled JavaScript exceptions in the completed repair suite",
+      "status": "PASS",
+      "seconds": 0.0
+    }
+  ],
+  "passed": 19,
+  "failed": 0,
+  "unhandledErrors": [],
+  "evidence": {
+    "actualTitleCards": [
+      {
+        "text": "WONDER",
+        "kind": "normal",
+        "width": 194,
+        "inkLeft": 29.607177734375,
+        "inkRight": 164.392822265625,
+        "safeLeft": 28,
+        "safeRight": 166
+      },
+      {
+        "text": "STORY",
+        "kind": "normal",
+        "width": 158,
+        "inkLeft": 29.7861328125,
+        "inkRight": 128.2138671875,
+        "safeLeft": 28,
+        "safeRight": 130
+      },
+      {
+        "text": "IMAGINE",
+        "kind": "normal",
+        "width": 193,
+        "inkLeft": 29.6357421875,
+        "inkRight": 163.3642578125,
+        "safeLeft": 28,
+        "safeRight": 165
+      }
+    ],
+    "rasterMatrix": [
+      {
+        "viewport": [
+          1366,
+          768
+        ],
+        "count": 132,
+        "fail": [],
+        "failCount": 0,
+        "scale": 0.8355555555555555
+      },
+      {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "count": 132,
+        "fail": [],
+        "failCount": 0,
+        "scale": 1.1822222222222223
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "count": 132,
+        "fail": [],
+        "failCount": 0,
+        "scale": 0.7822222222222222
+      },
+      {
+        "viewport": [
+          1024,
+          768
+        ],
+        "count": 132,
+        "fail": [],
+        "failCount": 0,
+        "scale": 0.8355555555555555
+      }
+    ],
+    "sealPixels": [
+      {
+        "kind": "fire",
+        "centre": [
+          129,
+          49,
+          36,
+          255
+        ],
+        "outside": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          223,
+          192,
+          121,
+          255
+        ]
+      },
+      {
+        "kind": "ice",
+        "centre": [
+          49,
+          95,
+          119,
+          255
+        ],
+        "outside": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          223,
+          193,
+          123,
+          255
+        ]
+      },
+      {
+        "kind": "slow",
+        "centre": [
+          128,
+          97,
+          37,
+          255
+        ],
+        "outside": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          223,
+          192,
+          121,
+          255
+        ]
+      },
+      {
+        "kind": "wind",
+        "centre": [
+          104,
+          80,
+          119,
+          255
+        ],
+        "outside": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "ring": [
+          223,
+          192,
+          124,
+          255
+        ]
+      }
+    ],
+    "textureCache": {
+      "count": 44,
+      "bytes": 33408512,
+      "same": true
+    }
+  }
+}

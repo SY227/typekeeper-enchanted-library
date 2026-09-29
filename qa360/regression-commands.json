@@ -1,0 +1,215 @@
+[
+  {
+    "name": "flow-audit-model",
+    "command": [
+      "node",
+      "scripts/flow-audit.mjs",
+      "--root",
+      ".",
+      "--out",
+      "qa360/flow-model.json"
+    ],
+    "exit": 0,
+    "seconds": 4.88
+  },
+  {
+    "name": "score_chase_tests-standalone",
+    "command": [
+      "python",
+      "-u",
+      "e2e/score_chase_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 11.21
+  },
+  {
+    "name": "score_chase_tests-modules",
+    "command": [
+      "python",
+      "-u",
+      "e2e/score_chase_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 11.13
+  },
+  {
+    "name": "clarity_mastery_tests-standalone",
+    "command": [
+      "python",
+      "-u",
+      "e2e/clarity_mastery_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 30.25
+  },
+  {
+    "name": "clarity_mastery_tests-modules",
+    "command": [
+      "python",
+      "-u",
+      "e2e/clarity_mastery_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 30.41
+  },
+  {
+    "name": "chapter_art_tests-standalone",
+    "command": [
+      "python",
+      "-u",
+      "e2e/chapter_art_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 29.52
+  },
+  {
+    "name": "chapter_art_tests-modules",
+    "command": [
+      "python",
+      "-u",
+      "e2e/chapter_art_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 29.39
+  },
+  {
+    "name": "scroll_repair_tests-standalone",
+    "command": [
+      "python",
+      "-u",
+      "e2e/scroll_repair_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 11.12
+  },
+  {
+    "name": "scroll_repair_tests-modules",
+    "command": [
+      "python",
+      "-u",
+      "e2e/scroll_repair_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 11.37
+  },
+  {
+    "name": "book_leaf_tests-standalone",
+    "command": [
+      "python",
+      "-u",
+      "e2e/book_leaf_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 7.35
+  },
+  {
+    "name": "book_leaf_tests-modules",
+    "command": [
+      "python",
+      "-u",
+      "e2e/book_leaf_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 7.25
+  },
+  {
+    "name": "single_row_release-standalone",
+    "command": [
+      "python",
+      "-u",
+      "e2e/single_row_release.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 35.87
+  },
+  {
+    "name": "single_row_release-modules",
+    "command": [
+      "python",
+      "-u",
+      "e2e/single_row_release.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 37.18
+  },
+  {
+    "name": "ui_spacing_tests-standalone",
+    "command": [
+      "python",
+      "-u",
+      "e2e/ui_spacing_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 79.92
+  },
+  {
+    "name": "ui_spacing_tests-modules",
+    "command": [
+      "python",
+      "-u",
+      "e2e/ui_spacing_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 81.3
+  },
+  {
+    "name": "flow_tests-standalone",
+    "command": [
+      "python",
+      "-u",
+      "e2e/flow_tests.py",
+      "--mode",
+      "standalone",
+      "--root",
+      ".",
+      "--out",
+      "qa360"
+    ],
+    "exit": 0,
+    "seconds": 60.72
+  },
+  {
+    "name": "flow_tests-modules",
+    "command": [
+      "python",
+      "-u",
+      "e2e/flow_tests.py",
+      "--mode",
+      "modules",
+      "--root",
+      ".",
+      "--out",
+      "qa360"
+    ],
+    "exit": 0,
+    "seconds": 59.22
+  }
+]

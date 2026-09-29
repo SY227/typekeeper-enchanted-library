@@ -1,3 +1,12 @@
+> **v3.6.2 provenance:** available full baseline is v3.6.0 (SHA-256
+> b365782d99f7a0f62d787a85607802adc3d83f54fa07122b36819b6ea45100d7).
+> Above-book labels are reapplied from the supplied v3.6.1 preview; no v3.6.1 source
+> ZIP was available. Original art, music, masters, gameplay and 85 pinned foundation
+> files are unchanged. This release adds the fresh-campaign entry, not a reset system.
+> See FRESH_JOURNEY_SPEC.md and QA_REPORT.md. Material below is historical provenance.
+
+> **v3.5.1 addendum:** See [UI_SPACING_SPEC.md](UI_SPACING_SPEC.md) for this release’s UI-only changes and [QA_REPORT.md](QA_REPORT.md) for current evidence. The material below describes retained systems or earlier decisions.
+
 # Source and asset provenance — 3.2
 
 Baseline: the user-uploaded Typekeeper_Enchanted_Library_v3.1_Full_App(1).zip.

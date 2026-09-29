@@ -17,7 +17,20 @@ export function stageInfo(level) {
   return {level:n,wing:index+1,wingName:w.name,wingStage:(n-1)%6+1,title:w.titles[(n-1)%6],subtitle:w.subtitle,color:w.color,seal:w.seal,story:w.story,trial:n%6===0,endless:false};
 }
 export const CAMPAIGN = Object.freeze(Array.from({length:CAMPAIGN_LENGTH},(_,i)=>Object.freeze(stageInfo(i+1))));
-export function medalForStage({missed=0,wrong=0}) {return missed===0&&wrong===0?3:missed<=2&&wrong<=3?2:1;}
+export const MEDAL_RULES=Object.freeze([
+ Object.freeze({medal:3,missed:0,wrong:0}),Object.freeze({medal:2,missed:2,wrong:3})
+]);
+export function medalForStage({missed=0,wrong=0}) {return MEDAL_RULES.find(r=>missed<=r.missed&&wrong<=r.wrong)?.medal||1;}
+/** A next-star explanation, not a second implementation of the scoring rules. */
+export function medalFeedback(stage={}) {
+ const missed=Math.max(0,Math.floor(Number(stage.missed)||0)),wrong=Math.max(0,Math.floor(Number(stage.wrong)||0));
+ const medal=medalForStage({missed,wrong}),next=MEDAL_RULES.find(r=>r.medal===medal+1);
+ if(!next)return {medal,missed,wrong,next:null,missesToAvoid:0,wrongToAvoid:0,message:'Three stars: no missed words or wrong submissions.'};
+ const missesToAvoid=Math.max(0,missed-next.missed),wrongToAvoid=Math.max(0,wrong-next.wrong),parts=[];
+ if(missesToAvoid)parts.push(`miss ${missesToAvoid} fewer ${missesToAvoid===1?'word':'words'}`);
+ if(wrongToAvoid)parts.push(`make ${wrongToAvoid} fewer wrong ${wrongToAvoid===1?'submission':'submissions'}`);
+ return {medal,missed,wrong,next:next.medal,missesToAvoid,wrongToAvoid,message:`For ${next.medal===2?'two':'three'} stars, ${parts.join(' and ')}.`};
+}
 export function rankForStage(level=1) {
   return ['Apprentice','Page Keeper','Wordsmith','Archivist','Spell Scribe','Master Typist','Lorekeeper','Typekeeper'][Math.min(7,Math.max(0,Math.floor((level-1)/6)))];
 }

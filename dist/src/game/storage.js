@@ -1,6 +1,8 @@
-import { APP_VERSION } from '../build-info.js?v=3.4.0-cbb049170ccf1a33';
-import { RULESET_VERSION, POWERS, RULES } from './rules.js?v=3.4.0-cbb049170ccf1a33';
-import { validEconomy, restoreEconomy } from './economy.js?v=3.4.0-cbb049170ccf1a33';
+import { SCORE_CHASE_LIMIT, scoreChaseScope, scoreChaseKey, sanitizeScoreChaseRecord, checkpointScoreChaseRecords } from './score-chase.js?v=3.6.2-04b297ea546ad828';
+import { APP_VERSION } from '../build-info.js?v=3.6.2-04b297ea546ad828';
+import { chapterRecordKey, sanitizeChapterRecord } from './chapter-records.js?v=3.6.2-04b297ea546ad828';
+import { RULESET_VERSION, POWERS, RULES } from './rules.js?v=3.6.2-04b297ea546ad828';
+import { validEconomy, restoreEconomy } from './economy.js?v=3.6.2-04b297ea546ad828';
 const KEY='typekeeper-enchanted-library-v3.2.1';
 const OLD_KEYS=['typekeeper-enchanted-library-v3.2','typekeeper-enchanted-library-v3.1','typekeeper-enchanted-library-v3','typing-maniac-library-v2','typing-maniac-library-v1'];
 const PACE_NAMES=['classic','relaxed','maniac'];
@@ -12,7 +14,7 @@ function sameRecord(r){return `${r.date}/${r.score}/${r.seed}/${r.ruleset}/${r.m
 export class LocalStore {
  constructor(storage){
   this.storage=storage;this.available=Boolean(storage);
-  this.data={version:3,settings:{...DEFAULT_SETTINGS},records:[],progress:emptyProgress(),checkpoints:{}};
+  this.data={version:3,settings:{...DEFAULT_SETTINGS},records:[],progress:emptyProgress(),checkpoints:{},chapterBests:{},scoreChaseBests:{}};
   this.load();
  }
  load(){
@@ -64,6 +66,23 @@ export class LocalStore {
    const cp=parsed.checkpoints?.[pace];
    if(this.validCheckpoint(cp)&&cp.pace===pace)this.data.checkpoints[pace]=this.normalizeCheckpoint(cp);
   }
+  // Only explicit, fully scoped v3.5+ rows may populate this collection.
+  // Old progress.score/wpm/accuracy aggregates are deliberately not migrated.
+  if(parsed.chapterBests&&typeof parsed.chapterBests==='object'&&!Array.isArray(parsed.chapterBests)){
+   for(const [key,input]of Object.entries(parsed.chapterBests).slice(0,1152)){
+    const row=sanitizeChapterRecord(input);if(!row||chapterRecordKey(row)!==key||row.ruleset!==RULESET_VERSION)continue;
+    const old=this.data.chapterBests[key];if(!old||row.score>old.score)this.data.chapterBests[key]=row;
+   }
+  }
+  // New running-total records are separate from single-chapter result PBs.
+  if(parsed.scoreChaseBests&&typeof parsed.scoreChaseBests==='object'&&!Array.isArray(parsed.scoreChaseBests)){
+   for(const [key,input]of Object.entries(parsed.scoreChaseBests).slice(0,SCORE_CHASE_LIMIT)){
+    const row=sanitizeScoreChaseRecord(input);if(row&&scoreChaseKey(row)===key)this.mergeScoreChase(row);
+   }
+  }
+  // Import only totals we can prove belonged to one attempt. Never sum chapter PBs.
+  for(const row of this.data.records)this.mergeScoreChase({...scoreChaseScope(row),score:row.score,metric:'running-total'});
+  if(!Object.prototype.hasOwnProperty.call(parsed,'scoreChaseBests'))for(const cp of Object.values(this.data.checkpoints))for(const row of checkpointScoreChaseRecords(cp))this.mergeScoreChase(row);
   if(persist)this.save();return true;
  }
  sanitizeRecord(input){
@@ -75,6 +94,8 @@ export class LocalStore {
   for(const key of ['words','streak','missed','seconds','medals','cleared','seed','burned','retries'])row[key]=saneNumber(input[key])?input[key]:0;
   row.startLevel=saneNumber(input.startLevel,1,10000)?input.startLevel:1;
   row.wpm=saneNumber(input.wpm,0,1000)?input.wpm:0;row.accuracy=saneNumber(input.accuracy,0,100)?input.accuracy:0;
+  if(Number.isInteger(input.wordSeed)&&saneNumber(input.wordSeed,0,4294967295))row.wordSeed=input.wordSeed;
+  if([1,2].includes(input.sequenceVersion))row.sequenceVersion=input.sequenceVersion;
   return row;
  }
  normalizeCheckpoint(cp){
@@ -119,7 +140,7 @@ export class LocalStore {
   // Old high totals cannot evict all current records after a balance revision.
   this.data.records=[...this.data.records.filter(r=>r.ruleset===RULESET_VERSION).slice(0,100),...this.data.records.filter(r=>r.ruleset!==RULESET_VERSION).slice(0,100)];
  }
- add(result){const row=this.sanitizeRecord({mode:'campaign',ruleset:RULESET_VERSION,...result,date:Date.now()});this.data.records.push(row);this.sortRecords();this.save();return row;}
+ add(result){const row=this.sanitizeRecord({mode:'campaign',ruleset:RULESET_VERSION,...result,date:Date.now()});this.data.records.push(row);this.mergeScoreChase({...scoreChaseScope(row),score:row.score,metric:'running-total'});this.sortRecords();this.save();return row;}
  completeStage(pace,stage,unlock=true){
   if(!PACE_NAMES.includes(pace)||stage.level<1||stage.level>48)return;
   const data=this.data.progress[pace],old=data.stages[stage.level];
@@ -129,6 +150,43 @@ export class LocalStore {
   data.stages[stage.level]={campaignClear:unlock||(old?old.campaignClear!==false:false),medal:Math.max(old?.medal||0,stage.medal),score:Math.max(same?old.score:0,stage.stageScore),wpm:Math.max(same?old.wpm:0,stage.wpm),accuracy:Math.max(same?old.accuracy:0,stage.accuracy),ruleset,...(!same&&old?{legacyScore:old.score}:{})};
   if(unlock)data.unlocked=Math.max(data.unlocked,Math.min(48,stage.level+1));
   this.save();
+ }
+ chapterBest(pace,mode,level,ruleset=RULESET_VERSION){
+  const key=chapterRecordKey({pace,mode,level,ruleset}),row=key?this.data.chapterBests[key]:null;
+  return row?structuredClone(row):null;
+ }
+ recordChapter(pace,mode,stage,run={}){
+  const scope={pace,mode,level:stage.level,ruleset:stage.ruleset||RULESET_VERSION},key=chapterRecordKey(scope);
+  if(!key||scope.ruleset!==RULESET_VERSION)return {status:'untracked',delta:0,previous:null};
+  const row=sanitizeChapterRecord({...stage,...scope,score:stage.stageScore,seed:run.seed,wordSeed:run.wordSeed,sequenceVersion:run.sequenceVersion});
+  if(!row)return {status:'untracked',delta:0,previous:null};
+  const previous=this.chapterBest(pace,mode,stage.level,scope.ruleset);
+  const status=!previous?'first':row.score>previous.score?'improved':'unchanged';
+  if(status!=='unchanged'){this.data.chapterBests[key]=row;this.save();}
+  return {status,delta:previous?row.score-previous.score:0,previous,current:structuredClone(row)};
+ }
+ mergeScoreChase(input){
+  const row=sanitizeScoreChaseRecord(input);if(!row)return false;
+  const key=scoreChaseKey(row),old=this.data.scoreChaseBests[key];
+  if(old&&old.score>=row.score)return false;
+  if(!old&&Object.keys(this.data.scoreChaseBests).length>=SCORE_CHASE_LIMIT)return false;
+  this.data.scoreChaseBests[key]=row;return true;
+ }
+ recordScoreChase(run){
+  const changed=this.mergeScoreChase({...scoreChaseScope(run),score:run.score,metric:'running-total'});
+  if(changed)this.save();return changed;
+ }
+ scoreChaseBest(scope){
+  const key=scoreChaseKey(scope);if(!key||scope.ruleset!==RULESET_VERSION)return null;
+  let best=this.data.scoreChaseBests[key]||null;
+  const consider=score=>{if(Number.isSafeInteger(score)&&score>=0&&score<=1e12&&(!best||score>best.score))best={...scope,metric:'running-total',score};};
+  for(const row of this.data.records)if(scoreChaseKey(scoreChaseScope(row))===key)consider(row.score);
+  // A practice chapter (or campaign's opening chapter) starts at zero, so its
+  // single-chapter record is also a comparable running total. Later ones are NOT.
+  if(scope.mode!=='endless'&&scope.startLevel===scope.chapter){
+   const row=this.chapterBest(scope.pace,scope.mode,scope.chapter,scope.ruleset);if(row)consider(row.score);
+  }
+  return best?structuredClone(best):null;
  }
  get records(){return [...this.data.records];}
  get settings(){return {...this.data.settings};}
@@ -149,5 +207,5 @@ export class LocalStore {
   return this.data.records.filter(r=>(pace==='all'||r.pace===pace)&&(mode==='all'||r.mode===mode)&&r.date>=since&&(mode!=='practice'||chapter===null||r.startLevel===chapter)).sort((a,b)=>b.score-a.score||(a.retries||0)-(b.retries||0)||b.date-a.date);
  }
  exportData(){return JSON.stringify({...this.data,game:'Typekeeper: Enchanted Library',appVersion:APP_VERSION,exportedAt:new Date().toISOString()},null,2);}
- clearRecords(){this.data.records=[];this.save();}
+ clearRecords(){this.data.records=[];this.data.scoreChaseBests={};this.data.chapterBests={};this.save();}
 }

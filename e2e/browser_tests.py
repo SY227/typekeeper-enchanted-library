@@ -136,7 +136,7 @@ def main():
      assert page.locator('#stage').get_attribute('data-pressure')==state;assert api('return t.performance().expression;')==state
    check('Five live paper-pile bands drive distinct Storykeeper expression assets',pressure)
    def wind():
-    run();api('t.model.danger=95;t.model.inventory.wind=1;t.flush();');assert page.locator('#rescue-hint').is_visible();assert '4' in page.locator('#rescue-hint').inner_text()
+    run();api('t.model.danger=95;t.model.inventory.wind=1;t.flush();');assert page.locator('#rescue-hint').is_visible();assert page.locator('#spell-wind .spell-keycap').inner_text()=='4';assert 'RESCUE' in page.locator('#rescue-hint').inner_text()
     page.keyboard.type('WON');page.keyboard.press('4');assert snap()['danger']==0;assert snap()['buffer']=='WON';assert page.locator('#rescue-hint').is_hidden()
     page.wait_for_timeout(1800);assert api('return t.performance().expression;')=='calm'
    check('Critical WIND rescue hint, pile clearance, relief, and recovery are synchronized',wind)

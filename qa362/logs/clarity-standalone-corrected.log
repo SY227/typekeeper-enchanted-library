@@ -1,0 +1,33 @@
+{"name": "3.5 identity and clean first-load contextual prompts", "status": "PASS", "seconds": 0.034}
+{"name": "First exact word reveals ENTER \u00b7 SAVE; no auto-submit, focus theft or repeat tutorial", "status": "PASS", "seconds": 1.713}
+{"name": "The genuine sixth-card ICE opportunity teaches only when ready and preserves scarce economy", "status": "PASS", "seconds": 4.403}
+{"name": "One star / 100% result explicitly shows three misses and the exact next-star requirement", "status": "PASS", "seconds": 0.419}
+{"name": "Both miss and wrong-submission deficits are explained; no fake improvement is shown", "status": "PASS", "seconds": 0.036}
+{"name": "Real star gains and +120 scoped PB appear once using previous values, including return from map", "status": "PASS", "seconds": 0.528}
+{"name": "Practice attempts cannot beat or relabel a campaign PB; a tied repeat does not celebrate", "status": "PASS", "seconds": 0.135}
+{"name": "8/16/64 model milestones, sound and visual stamp agree; 5/15/63/72 do not falsely celebrate", "status": "PASS", "seconds": 0.864}
+{"name": "Continue preserves an existing multiplier without re-awarding its animation or sound", "status": "PASS", "seconds": 0.034}
+{"name": "14px effective keys/counts and approved compact above-book captions; single-line words at four viewport sizes", "status": "PASS", "seconds": 2.36}
+{"name": "All seven intermediate wings celebrate, keyboard-skip safely and continue to the correct next chapter", "status": "PASS", "seconds": 4.949}
+{"name": "Campaign 48 plays the complete four-second finale, lights all eight seals and opens Endless", "status": "PASS", "seconds": 4.717}
+{"name": "Practice 48 and Endless never trigger or claim the campaign ending", "status": "PASS", "seconds": 0.208}
+{"name": "Reduced motion immediately presents a static complete ending with usable keyboard navigation", "status": "PASS", "seconds": 0.42}
+{"name": "Held Enter does not skip; Escape/button skip once and old ceremonies cannot reopen a later menu", "status": "PASS", "seconds": 4.862}
+{"name": "Visibility-change fixture suspends ceremony time and resumes without progressing gameplay", "status": "PASS", "seconds": 0.765}
+{"name": "Actual WebAudio finale motif schedules and cancels cleanly; independent SFX-off keeps the visual reward", "status": "PASS", "seconds": 0.501}
+  elemental fixture: start FIRE
+  elemental fixture: advance replacement
+  elemental fixture: start ICE
+  elemental fixture: type frozen word
+{"name": "Object-bound FIRE preserves input and replacement rules; frozen long words remain typable", "status": "PASS", "seconds": 1.26}
+{"name": "Actual export contains compatible save schema, correctly scoped PBs and genuine word seeds", "status": "PASS", "seconds": 0.019}
+{
+  "version": "3.6.2",
+  "mode": "standalone",
+  "scope": "3.5 clarity/mastery/homecoming browser integration.\nActual shipping HTML or ES modules via in-memory transport; only the existing\nlocalhost diagnostic guard and asset/import locations are adapted. Controlled\nchapter-ending fixtures are explicitly not human campaigns. No fake game, draw,\nDOM, audio or save implementations. about:blank disallows native localStorage;\npersistence is covered separately by the actual LocalStore tests with adapters.\n",
+  "browser": "144.0.7559.96",
+  "shippingSHA256": "5a2350faf462c12a197b093645951b80553c25756f1f875ed9406df97ef8e5a3",
+  "passed": 19,
+  "failed": 0,
+  "unhandledErrors": []
+}

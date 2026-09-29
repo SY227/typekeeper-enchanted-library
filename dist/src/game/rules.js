@@ -1,5 +1,5 @@
 /** Versioned, authored rules. No claim of exact numerical parity with the reference videos. */
-import { stageInfo } from '../data/campaign.js?v=3.4.0-cbb049170ccf1a33';
+import { stageInfo } from '../data/campaign.js?v=3.6.2-04b297ea546ad828';
 export const RULESET_VERSION = 'typekeeper-3.2.1';
 export const WIDTH=1200, HEIGHT=900;
 export const FIELD=Object.freeze({left:226,right:978,top:172,bottom:648});
@@ -36,7 +36,9 @@ export function levelRules(level,pace='classic') {
 }
 export function normalizeInput(value){return String(value).toUpperCase().replace(/[^A-Z]/g,'').slice(0,RULES.bufferLimit);}
 export function mulberry32(seed){let state=seed>>>0;return()=>{state+=0x6D2B79F5;let t=state;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;};}
-export function scoreForWord(text,kind,streak){const multiplier=Math.min(3,1+Math.floor(streak/8)*.25);return Math.round(text.length*10*multiplier*(kind==='bonus'?2:1));}
+export const COMBO_RULES=Object.freeze({step:8,increment:.25,cap:3});
+export function streakMultiplier(streak){return Math.min(COMBO_RULES.cap,1+Math.floor(streak/COMBO_RULES.step)*COMBO_RULES.increment);}
+export function scoreForWord(text,kind,streak){return Math.round(text.length*10*streakMultiplier(streak)*(kind==='bonus'?2:1));}
 
 /** Conservative serif glyph advances: the simulation does not require a canvas. */
 export function wordCardWidth(text,kind='normal'){

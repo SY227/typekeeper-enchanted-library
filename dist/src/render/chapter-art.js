@@ -1,5 +1,5 @@
-import { CAMPAIGN } from '../data/campaign.js?v=3.4.0-cbb049170ccf1a33';
-import { roomForChapter } from './presentation.js?v=3.4.0-cbb049170ccf1a33';
+import { CAMPAIGN } from '../data/campaign.js?v=3.6.2-04b297ea546ad828';
+import { roomForChapter } from './presentation.js?v=3.6.2-04b297ea546ad828';
 
 /** Authored, cosmetic-only still lifes, keyed to the actual campaign title.
  * These do not touch the word RNG, word list, field, difficulty, or game clock.
@@ -192,11 +192,8 @@ export function paintChapterDecoration(c,profile){
  const back=c.createRadialGradient(136,511,18,136,511,105);back.addColorStop(0,'#102c24b0');back.addColorStop(.55,'#102c2490');back.addColorStop(1,'#102c2400');c.fillStyle=back;c.fillRect(66,419,136,176);
  c.strokeStyle=caRGBA(room.wash,.20);c.lineWidth=.8;caLine(c,79,586,194,586);
  c.translate(136,505);c.globalAlpha=.91;caProp(c,profile);c.restore();
- // Auxiliary inlay sits ABOVE the ink-bottle gauge, on the upper right shelf.
- c.save();c.beginPath();c.rect(1007,253,124,135);c.clip();
- caBook(c,1020,387,17,89,'#596956');caBook(c,1110,387,18,78,'#626052');
- c.fillStyle='#172b27e8';caRR(c,1031,278,67,105,4);c.fill();c.strokeStyle=caRGBA(a,.47);c.lineWidth=.8;c.stroke();c.strokeStyle=caRGBA(a,.18);c.strokeRect(1035,282,59,97);
- c.translate(1065,332);c.globalAlpha=profile.id==='lastcandle'?.28:.79;caSymbol(c,profile.inlay,a,profile.variant);c.restore();
+ // A persistent wing landmark anchors the journey; chapter still lifes remain left.
+ paintWingLandmark(c,profile);
  // A fine local motif near the manuscript margin: never behind actual letters.
  c.save();c.beginPath();c.rect(214,195,15,432);c.clip();c.globalAlpha=.12;c.translate(217,320+profile.variant*22);c.scale(.58,.58);caSymbol(c,profile.inlay,a);c.restore();
  c.restore();
@@ -218,4 +215,38 @@ export function paintChapterMotion(c,profile,time,motion=true){
   caGlow(c,135,profile.id==='lastcandle'?542:472,43,a,.025+Math.sin(time*1.7)**2*.018);
  }
  c.restore();
+}
+
+/** One legible physical landmark per wing, cached with the chapter's scene layer.
+ * Bounded to the upper-right shelf: no part crosses the live word corridor.
+ */
+export const WING_LANDMARKS=Object.freeze([
+ {id:'reading-folio',prop:'folio',motif:'sun'},
+ {id:'glasshouse-tree',prop:'plant',motif:'leaf'},
+ {id:'clockwork-engine',prop:'gear',motif:'clock'},
+ {id:'frost-monolith',prop:'crystal',motif:'snow'},
+ {id:'ember-hearth',prop:'brazier',motif:'flame'},
+ {id:'astral-orrery',prop:'orrery',motif:'star'},
+ {id:'midnight-key',prop:'key',motif:'moon'},
+ {id:'eternal-crest',prop:'crest',motif:'laurel'}
+].map(Object.freeze));
+export function wingLandmarkForLevel(level){return WING_LANDMARKS[Math.max(0,Math.min(7,Math.floor(((Number(level)||1)-1)/6)))];}
+export function paintWingLandmark(c,profile){
+ const landmark=wingLandmarkForLevel(profile.level),room=roomForChapter(profile.level),a=room.wash;
+ c.save();c.beginPath();c.rect(998,217,150,174);c.clip();
+ // A recessed cabinet, a contact shadow, and light from the real right-hand lamp.
+ const recess=c.createRadialGradient(1071,313,18,1071,313,105);recess.addColorStop(0,'#0b201dcc');recess.addColorStop(1,'#0b201d00');c.fillStyle=recess;c.fillRect(998,217,150,174);
+ c.fillStyle='#100e0d75';c.beginPath();c.ellipse(1070,382,51,6,-.025,0,Math.PI*2);c.fill();
+ const wash=c.createRadialGradient(1023,250,0,1023,250,147);wash.addColorStop(0,caRGBA(room.lamp,.11));wash.addColorStop(1,caRGBA(room.lamp,0));c.fillStyle=wash;c.fillRect(998,217,150,174);
+ c.save();c.translate(1070,307);c.globalAlpha=.94;c.shadowColor='#030d0ca0';c.shadowBlur=4;c.shadowOffsetX=3;c.shadowOffsetY=3;
+ caProp(c,{...profile,prop:landmark.prop,id:landmark.id,accent:a});c.shadowBlur=0;c.shadowOffsetX=0;c.shadowOffsetY=0;
+ // Distinct secondary silhouettes are physically related, not floating HUD glyphs.
+ if(landmark.prop==='plant'){c.strokeStyle=caRGBA('#e3e5cd',.18);c.lineWidth=1;c.beginPath();c.moveTo(-49,72);c.lineTo(-49,-20);c.arc(0,-20,49,Math.PI,0);c.lineTo(49,72);c.stroke();}
+ if(landmark.prop==='brazier'){c.save();c.translate(0,17);c.scale(.9,.9);caSymbol(c,'flame','#edb26b');c.restore();}
+ if(landmark.prop==='key'){c.strokeStyle=caRGBA(a,.27);c.lineWidth=2;c.beginPath();c.arc(0,-16,48,Math.PI,0);c.lineTo(48,71);c.moveTo(-48,-16);c.lineTo(-48,71);c.stroke();}
+ c.restore();
+ // Fine age/patina and shelf grain: deterministic and generated once, not per frame.
+ c.strokeStyle=caRGBA(a,.08);c.lineWidth=.6;
+ for(let i=0;i<11;i++){const y=376+(i%3)*3,x=1012+(i*19)%114;caLine(c,x,y,Math.min(1137,x+13),y+.8);}
+ c.strokeStyle='#c3a06a55';c.lineWidth=1;caLine(c,1006,389,1140,389);c.restore();
 }

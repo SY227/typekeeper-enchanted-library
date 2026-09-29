@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Current 3.4.0 chapter/elemental presentation integration in shipping code.
+"""Current 3.6.2 chapter/elemental presentation integration in shipping code.
 In-memory transport enables only the existing diagnostic seam. It is not an actual
 Mac, human-playability, HTTP-browser or independently certified studio test.
 """
@@ -8,8 +8,8 @@ import argparse,base64,hashlib,json,time,sys
 from playwright.sync_api import sync_playwright
 from inline_fixture import inline_fixture
 from module_fixture import module_fixture
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa340';OUT.mkdir(exist_ok=True)
-SHOTS=ROOT/'docs/screenshots/v3.4.0';SHOTS.mkdir(parents=True,exist_ok=True)
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa362';OUT.mkdir(exist_ok=True)
+SHOTS=ROOT/'docs/screenshots/v3.6.2';SHOTS.mkdir(parents=True,exist_ok=True)
 a=argparse.ArgumentParser();a.add_argument('--mode',choices=['standalone','modules'],default='standalone');a.add_argument('--executable',default='/usr/bin/chromium');args=a.parse_args()
 rows=[];errors=[];evidence={}
 with sync_playwright() as pw:
@@ -28,7 +28,7 @@ with sync_playwright() as pw:
    page.screenshot(path=str(OUT/f'failure-chapter-{args.mode}-{len(rows)}.png'))
   rows.append(row);print(json.dumps(row),flush=True)
  def identity():
-  assert api('return t.info.version;')=='3.4.0';assert page.title().endswith('v3.4.0');assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
+  assert api('return t.info.version;')=='3.6.2';assert page.title().endswith('v3.6.2');assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
   q=b.new_page();e=[];q.on('pageerror',lambda x:e.append(str(x)));q.set_content(inline_fixture(ROOT,False) if args.mode=='standalone' else module_fixture(ROOT,False));q.wait_for_selector('[data-action="start"]');assert q.evaluate('typeof __TM_TEST__')=='undefined';assert not e;q.close()
  check('Source/HTML/runtime identity and exact non-diagnostic startup both succeed',identity)
  def all_stages():
@@ -126,6 +126,6 @@ with sync_playwright() as pw:
   page.wait_for_function('__TM_TEST__.model.words.length===1',timeout=4000);word=api('return m.words[0].text;');page.locator('#typing-input').fill(word);page.keyboard.press('Enter');assert api('return m.phase;')=='level-clear';api('t.skipOutcome();');page.locator('[data-action="next"]').click();assert api('return m.level;')==6
  check('Real RAF still generates and accepts level 5’s final word after WIND; chapter 6 opens',finalgap)
  check('Completed suite has no unhandled JavaScript exceptions',lambda:(_ for _ in ()).throw(AssertionError(errors)) if errors else None)
- report={'version':'3.4.0','mode':args.mode,'scope':__doc__,'browser':b.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(r['status']=='PASS'for r in rows),'failed':sum(r['status']=='FAIL'for r in rows),'errors':errors,'evidence':evidence}
+ report={'version':'3.6.2','mode':args.mode,'scope':__doc__,'browser':b.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(r['status']=='PASS'for r in rows),'failed':sum(r['status']=='FAIL'for r in rows),'errors':errors,'evidence':evidence}
  (OUT/f'chapter-art-{args.mode}.json').write_text(json.dumps(report,indent=2));b.close()
  if report['failed']:raise SystemExit(1)

@@ -1,0 +1,142 @@
+[
+  {
+    "name": "final-clarity_mastery_tests-modules",
+    "command": [
+      "python",
+      "e2e/clarity_mastery_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 26.95
+  },
+  {
+    "name": "final-single_row_release-standalone",
+    "command": [
+      "python",
+      "e2e/single_row_release.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 36.09
+  },
+  {
+    "name": "final-single_row_release-modules",
+    "command": [
+      "python",
+      "e2e/single_row_release.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 38.39
+  },
+  {
+    "name": "final-chapter_art_tests-standalone",
+    "command": [
+      "python",
+      "e2e/chapter_art_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 32.7
+  },
+  {
+    "name": "final-chapter_art_tests-modules",
+    "command": [
+      "python",
+      "e2e/chapter_art_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 32.62
+  },
+  {
+    "name": "final-scroll_repair_tests-standalone",
+    "command": [
+      "python",
+      "e2e/scroll_repair_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 12.09
+  },
+  {
+    "name": "final-scroll_repair_tests-modules",
+    "command": [
+      "python",
+      "e2e/scroll_repair_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 12.59
+  },
+  {
+    "name": "final-book_leaf_tests-standalone",
+    "command": [
+      "python",
+      "e2e/book_leaf_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 8.21
+  },
+  {
+    "name": "final-book_leaf_tests-modules",
+    "command": [
+      "python",
+      "e2e/book_leaf_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 8.24
+  },
+  {
+    "name": "final-flow_tests-standalone",
+    "command": [
+      "python",
+      "e2e/flow_tests.py",
+      "--mode",
+      "standalone",
+      "--root",
+      ".",
+      "--out",
+      "qa350"
+    ],
+    "exit": 0,
+    "seconds": 56.92
+  },
+  {
+    "name": "final-flow_tests-modules",
+    "command": [
+      "python",
+      "e2e/flow_tests.py",
+      "--mode",
+      "modules",
+      "--root",
+      ".",
+      "--out",
+      "qa350"
+    ],
+    "exit": 0,
+    "seconds": 51.77
+  },
+  {
+    "name": "final-clarity_mastery_tests-standalone",
+    "command": [
+      "python",
+      "e2e/clarity_mastery_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 26.79
+  }
+]

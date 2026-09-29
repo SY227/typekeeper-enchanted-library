@@ -1,0 +1,394 @@
+{
+  "version": "3.5.1",
+  "mode": "modules",
+  "play_sha256": "5d2eaee3614277d65e83e35724948bae767c004c31ad9c568c984f14c877acda",
+  "scope": "Spawn liveness through shipping Canvas, keyboard handlers, results and clocks.\nFixtures only enable the existing diagnostics seam and provide in-memory transport.\nBoundary cases use legal constructed states; full campaign uses the actual model.\n",
+  "tests": [
+    {
+      "name": "Exact shipping v3.5.1 starts, with matching runtime identity",
+      "status": "PASS",
+      "seconds": 0.071
+    },
+    {
+      "name": "Level 5 at 13/14: WIND on an empty field does not stop real RAF; final word and level 6 follow",
+      "status": "PASS",
+      "seconds": 1.878
+    },
+    {
+      "name": "FIRE destroys the last candidate without progress; its replacement permits completion",
+      "status": "PASS",
+      "seconds": 0.557
+    },
+    {
+      "name": "An empty field under ICE resumes generation after the real six-second expiry",
+      "status": "PASS",
+      "seconds": 0.577
+    },
+    {
+      "name": "ICE + queued SLOW + WIND on the final gap resumes and completes without extra rewards",
+      "status": "PASS",
+      "seconds": 0.565
+    },
+    {
+      "name": "SLOW + FIRE + WIND respects recovery timing and still spawns the final replacement",
+      "status": "PASS",
+      "seconds": 0.185
+    },
+    {
+      "name": "Missing the final word keeps 13/14, then replaces it; no silent quota consumption",
+      "status": "PASS",
+      "seconds": 0.143
+    },
+    {
+      "name": "Pause on an empty frozen field consumes neither time nor spawn opportunity; Resume recovers",
+      "status": "PASS",
+      "seconds": 0.921
+    },
+    {
+      "name": "Retry after a 13/14 loss and Continue both restore a functioning generator and opening state",
+      "status": "PASS",
+      "seconds": 0.458
+    },
+    {
+      "name": "All 48 animated endings with four-spell combination, final entry, and next-stage/finale UI",
+      "status": "PASS",
+      "seconds": 12.441
+    },
+    {
+      "name": "Complete 48-chapter campaign with sampled native frames, actual input/UI handlers and earned FIRE/ICE/SLOW, no spawn bypass",
+      "status": "PASS",
+      "seconds": 28.71
+    },
+    {
+      "name": "Normal RAF and real-time generator remain alive after all chapter stress cases",
+      "status": "PASS",
+      "seconds": 1.518
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "unhandledErrors": [],
+  "evidence": {
+    "level5Wind": {
+      "beforeTick": 0,
+      "afterTick": 36,
+      "word": "FOUND"
+    },
+    "observedReplacementWaits": [
+      1.4,
+      2.0
+    ],
+    "allChapterEndings": {
+      "count": 48,
+      "states": [
+        {
+          "chapter": 1,
+          "status": "PASS"
+        },
+        {
+          "chapter": 2,
+          "status": "PASS"
+        },
+        {
+          "chapter": 3,
+          "status": "PASS"
+        },
+        {
+          "chapter": 4,
+          "status": "PASS"
+        },
+        {
+          "chapter": 5,
+          "status": "PASS"
+        },
+        {
+          "chapter": 6,
+          "status": "PASS"
+        },
+        {
+          "chapter": 7,
+          "status": "PASS"
+        },
+        {
+          "chapter": 8,
+          "status": "PASS"
+        },
+        {
+          "chapter": 9,
+          "status": "PASS"
+        },
+        {
+          "chapter": 10,
+          "status": "PASS"
+        },
+        {
+          "chapter": 11,
+          "status": "PASS"
+        },
+        {
+          "chapter": 12,
+          "status": "PASS"
+        },
+        {
+          "chapter": 13,
+          "status": "PASS"
+        },
+        {
+          "chapter": 14,
+          "status": "PASS"
+        },
+        {
+          "chapter": 15,
+          "status": "PASS"
+        },
+        {
+          "chapter": 16,
+          "status": "PASS"
+        },
+        {
+          "chapter": 17,
+          "status": "PASS"
+        },
+        {
+          "chapter": 18,
+          "status": "PASS"
+        },
+        {
+          "chapter": 19,
+          "status": "PASS"
+        },
+        {
+          "chapter": 20,
+          "status": "PASS"
+        },
+        {
+          "chapter": 21,
+          "status": "PASS"
+        },
+        {
+          "chapter": 22,
+          "status": "PASS"
+        },
+        {
+          "chapter": 23,
+          "status": "PASS"
+        },
+        {
+          "chapter": 24,
+          "status": "PASS"
+        },
+        {
+          "chapter": 25,
+          "status": "PASS"
+        },
+        {
+          "chapter": 26,
+          "status": "PASS"
+        },
+        {
+          "chapter": 27,
+          "status": "PASS"
+        },
+        {
+          "chapter": 28,
+          "status": "PASS"
+        },
+        {
+          "chapter": 29,
+          "status": "PASS"
+        },
+        {
+          "chapter": 30,
+          "status": "PASS"
+        },
+        {
+          "chapter": 31,
+          "status": "PASS"
+        },
+        {
+          "chapter": 32,
+          "status": "PASS"
+        },
+        {
+          "chapter": 33,
+          "status": "PASS"
+        },
+        {
+          "chapter": 34,
+          "status": "PASS"
+        },
+        {
+          "chapter": 35,
+          "status": "PASS"
+        },
+        {
+          "chapter": 36,
+          "status": "PASS"
+        },
+        {
+          "chapter": 37,
+          "status": "PASS"
+        },
+        {
+          "chapter": 38,
+          "status": "PASS"
+        },
+        {
+          "chapter": 39,
+          "status": "PASS"
+        },
+        {
+          "chapter": 40,
+          "status": "PASS"
+        },
+        {
+          "chapter": 41,
+          "status": "PASS"
+        },
+        {
+          "chapter": 42,
+          "status": "PASS"
+        },
+        {
+          "chapter": 43,
+          "status": "PASS"
+        },
+        {
+          "chapter": 44,
+          "status": "PASS"
+        },
+        {
+          "chapter": 45,
+          "status": "PASS"
+        },
+        {
+          "chapter": 46,
+          "status": "PASS"
+        },
+        {
+          "chapter": 47,
+          "status": "PASS"
+        },
+        {
+          "chapter": 48,
+          "status": "PASS"
+        }
+      ]
+    },
+    "renderedCampaign": {
+      "completed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "steps": 14016,
+      "actions": 1198,
+      "virtual": 1423029.3,
+      "gap": 0,
+      "maxGap": 3.0000000000000013,
+      "done": true,
+      "snapshot": {
+        "seed": 987336,
+        "wordSeed": 2805157857,
+        "sequenceVersion": 2,
+        "phase": "level-clear",
+        "level": 48,
+        "score": 397981,
+        "progress": 39,
+        "quota": 39,
+        "danger": 0,
+        "buffer": "",
+        "time": 1401.599999999054,
+        "tick": 84096,
+        "pace": "classic",
+        "mode": "campaign",
+        "pressure": "celebrate",
+        "info": {
+          "level": 48,
+          "wing": 8,
+          "wingName": "The Eternal Library",
+          "wingStage": 6,
+          "title": "The Typekeeper",
+          "subtitle": "Become the Typekeeper",
+          "color": "#f0d59a",
+          "seal": "VIII",
+          "story": "You have saved the stories. Now write the ending.",
+          "trial": true,
+          "endless": false
+        },
+        "streak": 1160,
+        "bestStreak": 1160,
+        "correct": 1160,
+        "wrong": 0,
+        "missed": 0,
+        "burned": 38,
+        "retries": 0,
+        "wpm": 72,
+        "accuracy": 100,
+        "inventory": {
+          "fire": 0,
+          "ice": 0,
+          "slow": 0,
+          "wind": 2
+        },
+        "economy": {
+          "version": 1,
+          "untilNext": 8,
+          "opportunities": 152,
+          "tutorialDone": true
+        },
+        "effects": {
+          "ice": 0,
+          "slow": 0
+        },
+        "trialRest": false,
+        "words": []
+      }
+    }
+  }
+}

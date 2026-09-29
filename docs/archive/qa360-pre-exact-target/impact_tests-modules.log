@@ -1,0 +1,25 @@
+{"name": "Current 3.6.0 identity, retained ruleset and zero-stock campaign start", "status": "PASS", "seconds": 0.006}
+{"name": "Common prefix inks both candidates but brackets only the model-priority target", "status": "PASS", "seconds": 0.554}
+{"name": "Native Backspace corrects and retargets shared prefixes without an error penalty", "status": "PASS", "seconds": 0.113}
+{"name": "Complete ink/check mark stays ready until Enter; no auto-submit or score delay", "status": "PASS", "seconds": 0.712}
+{"name": "Real changed input alternates mechanical taps; native erase has a distinct bounded response", "status": "PASS", "seconds": 0.254}
+{"name": "Enter awards exact points immediately; release keeps last-painted origin, scale and keyboard focus", "status": "PASS", "seconds": 0.969}
+{"name": "Typing the next word interrupts carriage return without locking or losing input", "status": "PASS", "seconds": 0.066}
+{"name": "Wrong submission stays a 2% error; no fake missed-word flight or random target", "status": "PASS", "seconds": 0.089}
+{"name": "A real missed word lands, settles once and preserves the exact miss cost; landing foley follows contact", "status": "PASS", "seconds": 1.577}
+{"name": "Pause freezes the physical landing, machine and stack; Resume finishes once without lost model time", "status": "PASS", "seconds": 0.886}
+{"name": "WIND cancels in-flight paper and pending landing sound without clearing the typed buffer", "status": "PASS", "seconds": 0.596}
+{"name": "Reduced motion cancels moving effects immediately while retaining ink, selection and physical pressure", "status": "PASS", "seconds": 0.494}
+{"name": "ICE freezes world movement, never the typing machine, input or scoring", "status": "PASS", "seconds": 0.297}
+{"name": "FIRE uses paper-local burns, earns no score/progress and keeps the existing input", "status": "PASS", "seconds": 1.208}
+{"name": "Late Enter remains a single miss; feedback cannot refund, duplicate or double-penalize it", "status": "PASS", "seconds": 0.069}
+{"name": "Stress burst stays inside six score labels, 18 releases and the retained 180-particle budget", "status": "PASS", "seconds": 1.432}
+{"name": "Word-origin score labels are suppressed instead of covering a live word", "status": "PASS", "seconds": 0.031}
+{"name": "72 native ink layouts retain complete single-row words and protected glyph bounds on all materials", "status": "PASS", "seconds": 0.128}
+{"name": "High-pressure play at six desktop sizes keeps pile/input/SLOW/Score Chase separation", "status": "PASS", "seconds": 2.605}
+{"name": "Pressure 0\u2192100 maps monotonically to the physical stack without changing meter thresholds", "status": "PASS", "seconds": 0.376}
+{"name": "Menu/new run clears mechanical, target and landing residue without replaying previous events", "status": "PASS", "seconds": 0.066}
+{"name": "Muting before contact drops landing sound; unmute does not replay a stale cue", "status": "PASS", "seconds": 0.642}
+{"name": "Twelve-card readable stress scene preserves target uniqueness and never lets render effects mutate the model", "status": "PASS", "seconds": 0.511}
+{"name": "Normally earned sixth opening card is still ICE; feedback does not manufacture resources", "status": "PASS", "seconds": 0.228}
+{"passed": 24, "failed": 0}

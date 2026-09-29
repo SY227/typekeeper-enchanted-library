@@ -1,0 +1,13 @@
+{
+  "name": "flow-model",
+  "command": [
+    "node",
+    "scripts/flow-audit.mjs",
+    "--root",
+    ".",
+    "--out",
+    "qa350/flow-model.json"
+  ],
+  "exit": 0,
+  "seconds": 5.18
+}

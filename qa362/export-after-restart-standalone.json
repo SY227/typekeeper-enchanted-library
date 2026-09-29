@@ -1,0 +1,233 @@
+{
+  "version": 3,
+  "settings": {
+    "sfx": false,
+    "music": false,
+    "adaptiveMusic": true,
+    "typingShimmer": true,
+    "muted": true,
+    "motion": false,
+    "spellPulse": true,
+    "contrast": false,
+    "detailedHUD": false,
+    "hints": false,
+    "resumeCountdown": false,
+    "pace": "classic",
+    "volume": 0.8,
+    "musicVolume": 0.5,
+    "sfxVolume": 0.65
+  },
+  "records": [
+    {
+      "score": 9200,
+      "level": 6,
+      "date": 1790637077595,
+      "pace": "classic",
+      "ruleset": "typekeeper-3.2.1",
+      "mode": "campaign",
+      "legacyMode": "campaign",
+      "victory": false,
+      "retired": false,
+      "words": 0,
+      "streak": 0,
+      "missed": 0,
+      "seconds": 0,
+      "medals": 0,
+      "cleared": 0,
+      "seed": 0,
+      "burned": 0,
+      "retries": 0,
+      "startLevel": 1,
+      "wpm": 70,
+      "accuracy": 96
+    }
+  ],
+  "progress": {
+    "classic": {
+      "unlocked": 12,
+      "stages": {
+        "1": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1001,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        },
+        "2": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1002,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        },
+        "3": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1003,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        },
+        "4": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1004,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        },
+        "5": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1005,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        },
+        "6": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1006,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        },
+        "7": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1007,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        },
+        "8": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1008,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        },
+        "9": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1009,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        },
+        "10": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1010,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        },
+        "11": {
+          "campaignClear": true,
+          "medal": 3,
+          "score": 1011,
+          "wpm": 80,
+          "accuracy": 100,
+          "ruleset": "typekeeper-3.2.1"
+        }
+      }
+    },
+    "relaxed": {
+      "unlocked": 1,
+      "stages": {}
+    },
+    "maniac": {
+      "unlocked": 1,
+      "stages": {}
+    }
+  },
+  "checkpoints": {
+    "classic": {
+      "version": 3,
+      "wordSeed": 427857078,
+      "sequenceVersion": 2,
+      "ruleset": "typekeeper-3.2.1",
+      "nextLevel": 1,
+      "seed": 3200043935,
+      "nextId": 1,
+      "pace": "classic",
+      "mode": "campaign",
+      "startLevel": 1,
+      "score": 0,
+      "danger": 0,
+      "inventory": {
+        "fire": 0,
+        "ice": 0,
+        "slow": 0,
+        "wind": 0
+      },
+      "powerBag": [],
+      "economy": {
+        "version": 1,
+        "untilNext": 6,
+        "opportunities": 0,
+        "tutorialDone": false
+      },
+      "pile": [],
+      "time": 0,
+      "correct": 0,
+      "wrong": 0,
+      "missed": 0,
+      "correctCharacters": 0,
+      "bestStreak": 0,
+      "streak": 0,
+      "burned": 0,
+      "retries": 0,
+      "stageHistory": [],
+      "casts": {
+        "fire": 0,
+        "ice": 0,
+        "slow": 0,
+        "wind": 0
+      }
+    }
+  },
+  "chapterBests": {
+    "typekeeper-3.2.1|classic|practice|5": {
+      "ruleset": "typekeeper-3.2.1",
+      "pace": "classic",
+      "mode": "practice",
+      "level": 5,
+      "score": 2500,
+      "medal": 3,
+      "wpm": 90,
+      "accuracy": 100,
+      "missed": 0,
+      "wrong": 0,
+      "seconds": 20,
+      "seed": 31
+    }
+  },
+  "scoreChaseBests": {
+    "running-v1|typekeeper-3.2.1|classic|campaign|1|6": {
+      "ruleset": "typekeeper-3.2.1",
+      "pace": "classic",
+      "mode": "campaign",
+      "startLevel": 1,
+      "chapter": 6,
+      "metric": "running-total",
+      "score": 9200
+    },
+    "running-v1|typekeeper-3.2.1|classic|campaign|1|1": {
+      "ruleset": "typekeeper-3.2.1",
+      "pace": "classic",
+      "mode": "campaign",
+      "startLevel": 1,
+      "chapter": 1,
+      "metric": "running-total",
+      "score": 1580
+    }
+  },
+  "game": "Typekeeper: Enchanted Library",
+  "appVersion": "3.6.2",
+  "exportedAt": "2026-09-28T23:11:17.887Z"
+}

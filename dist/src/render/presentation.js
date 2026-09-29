@@ -1,6 +1,6 @@
-import { SCROLL, scrollInsets } from './imperial-scroll.js?v=3.4.0-cbb049170ccf1a33';
+import { SCROLL, scrollInsets } from './imperial-scroll.js?v=3.6.2-04b297ea546ad828';
 /** Presentation-only contracts. Nothing here writes to the gameplay model. */
-export const PRESENTATION_VERSION='3.4.0';
+export const PRESENTATION_VERSION='3.6.2';
 export const BOOK_ANCHORS=Object.freeze({fire:{x:146,y:757},ice:{x:278,y:757},slow:{x:922,y:757},wind:{x:1054,y:757}});
 export const PAPER_ANCHOR=Object.freeze({x:411,y:746,width:378,height:53});
 export const ROOM_PROFILES=Object.freeze([
@@ -69,7 +69,7 @@ export function resolveVisualPositions(words,layouts,left,right){
 /** One slot, explicit completion, cancel-safe; no setTimeout callback can reopen UI. */
 export class OutcomeCue {
  constructor(){this.cancel();}
- start(kind,payload,motion=true){this.kind=kind;this.payload=payload;this.elapsed=0;this.duration=motion?(kind==='defeat'?1.2:.88):0;this.active=true;}
+ start(kind,payload,motion=true){this.kind=kind;this.payload=payload;this.elapsed=0;this.duration=motion?(kind==='finale'?4.2:kind==='wing'?2.1:kind==='defeat'?1.2:.88):0;this.active=true;}
  get progress(){return this.duration?visualClamp(this.elapsed/this.duration):1;}
  step(dt,visible=true){if(!this.active||!visible)return null;this.elapsed+=Math.max(0,Math.min(.05,dt||0));return this.elapsed>=this.duration?this.finish():null;}
  finish(){if(!this.active)return null;const result={kind:this.kind,payload:this.payload};this.cancel();return result;}

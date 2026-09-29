@@ -1,0 +1,14 @@
+TYPEKEEPER: ENCHANTED LIBRARY — v3.4.0
+
+Extract the entire ZIP. On Mac, open Terminal in this folder and run:
+  bash START_MAC.command
+
+The launcher prints the verified version, source folder and local URL.
+The browser tab should display v3.4.0.
+
+Alternatively open PLAY.html for the embedded no-server edition.
+The full modular site is in dist/; no API key or account is required.
+
+Stop the old local server with Control+C to keep port 4355 and same-origin saves.
+An occupied port uses the next available port instead of killing an existing process.
+Use Records → Export/Import save when changing addresses or browsers.

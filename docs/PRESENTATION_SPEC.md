@@ -1,3 +1,5 @@
+> **v3.5.1 addendum:** See [UI_SPACING_SPEC.md](UI_SPACING_SPEC.md) for this release’s UI-only changes and [QA_REPORT.md](QA_REPORT.md) for current evidence. The material below describes retained systems or earlier decisions.
+
 # v3.4.0 presentation specification
 
 See CHAPTER_ART_SPEC.md for all 48 title-specific room treatments. All main playfield,

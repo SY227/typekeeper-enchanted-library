@@ -1,0 +1,2065 @@
+{
+  "scope": "All original gameplay assets are byte-identical. Only QA capture previews are compressed. Use this index to resolve original PNG paths in logs. Raster assertions and numeric JSON were collected before preview encoding.",
+  "captures": [
+    {
+      "originalPath": "docs/screenshots/350-pressure-gameplay.png",
+      "originalSHA256": "1fa3bcae661cbd5c3f96c382ea8acbf6e735be76f4da63182abce367ed5fcac3",
+      "previewPath": "docs/screenshots/350-pressure-gameplay.preview.webp",
+      "size": [
+        1366,
+        1024
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/350-wind-relief.png",
+      "originalSHA256": "7be9030e23ec0584d8fa3b300c89ef6e74b38cd6498684d90a95e6eccbd8e74e",
+      "previewPath": "docs/screenshots/350-wind-relief.preview.webp",
+      "size": [
+        1366,
+        1024
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/350-wing-ceremony.png",
+      "originalSHA256": "450229e72a3943dbd3190e9fa42ebd20aa45a6f665bcf0460a9ffb491887adc5",
+      "previewPath": "docs/screenshots/350-wing-ceremony.preview.webp",
+      "size": [
+        1366,
+        1024
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/350-wing-final.png",
+      "originalSHA256": "d858646a354557c1d8496d4e2f4d117acf19fded548da672e019850a074b4e9d",
+      "previewPath": "docs/screenshots/350-wing-final.preview.webp",
+      "size": [
+        1366,
+        1024
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-01-1366-modules.png",
+      "originalSHA256": "daa29bf74f9327b2c1b8e4a68f9cac8f04b91003bdb7dc1c67f6ce1386111549",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-01-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-01-1366-standalone.png",
+      "originalSHA256": "8e5c3b2fa45a06c26113e45f804c6c17ef19f33625272add5c22e802312c80de",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-01-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-01-1920-modules.png",
+      "originalSHA256": "7b6de7e2f5f03ac12fa0d87469edfd7d469ad6a8e97b4fb10880414d66f0611e",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-01-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-01-1920-standalone.png",
+      "originalSHA256": "3a9765956ed84c9657e3f009257bd4d604d973eead7f95b0811de5930770cb47",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-01-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-10-1366-modules.png",
+      "originalSHA256": "832070358ba90268a567b9a1502805f2128a1651efc44d5dafb83698b5ae3db4",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-10-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-10-1366-standalone.png",
+      "originalSHA256": "b2a832c4f310f0fb5fe7c36a9a18e10007bf32445c1f013a58b9dd1a82231430",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-10-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-10-1920-modules.png",
+      "originalSHA256": "4321a39aa676dfc30227d860e9da449fa778189608f7f0a914f61d5bba8cc78e",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-10-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-10-1920-standalone.png",
+      "originalSHA256": "b40fd22e32ebde1eaf35db1e550fd55b6a4ee7aee4732c394eeee788f245066d",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-10-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-17-1366-modules.png",
+      "originalSHA256": "7bd214a55e24c380e272b4d13d552dc9db241c595e51c96b587b8297202da994",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-17-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-17-1366-standalone.png",
+      "originalSHA256": "1f5a85a0c1f1cb399d8f04a33263b8c7bf1bc0d5e044cea66dac9209f3ab6c9a",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-17-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-17-1920-modules.png",
+      "originalSHA256": "1df45982b1d12e566a1ed05a735f75ac8f3ca8fea1d27fef8e28233669c5bf35",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-17-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-17-1920-standalone.png",
+      "originalSHA256": "ffd89cc94caf924975a3f096018e9ed811786d0690ad2aa1e37cf4cc42ee3d05",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-17-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-24-1366-modules.png",
+      "originalSHA256": "6a2c3a3365fc713e1ffbbf2fd8ac966027654ae9148d54f92cc940d229a91b1f",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-24-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-24-1366-standalone.png",
+      "originalSHA256": "e3f4ed4e7d3e82596961d913150eb3d187d2f9c50a910ac7bb04559eaa8fc379",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-24-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-24-1920-modules.png",
+      "originalSHA256": "5f861bcade7bd9bf594c1f7511234336b0cd61b2a9284b7fd1202af24c537325",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-24-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-24-1920-standalone.png",
+      "originalSHA256": "6268150d47667a0cd27c72dce1d5efe37f0ed0441db708c2e646e819fb10c53f",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-24-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-28-1366-modules.png",
+      "originalSHA256": "205e87895e1b46a081cd86f72b07f1a79a47e988809a41cf9251686eb65e6bca",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-28-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-28-1366-standalone.png",
+      "originalSHA256": "8e4ad9d8f3299b3f502c4fb602dc4894dc136f0f52665f0390533a72d482b1cf",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-28-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-28-1920-modules.png",
+      "originalSHA256": "67b0c6a323aaf1b42e4e8a6ba29fed7443c98e65d74c89bf6ced90ef1559c6fd",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-28-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-28-1920-standalone.png",
+      "originalSHA256": "a217fed9afde01ba28d7da330a2aa6a1a19dd7e00be5687e980bab9aece36969",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-28-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-35-1366-modules.png",
+      "originalSHA256": "aac70f13a3ce2f99c10c51ceecb893300ff9b830c32ff3b677753d3177824af9",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-35-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-35-1366-standalone.png",
+      "originalSHA256": "3303a4b50a29ce46c18cfd53e7548f7461ad37cac5c2fa3dda0c47e961eb8f18",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-35-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-35-1920-modules.png",
+      "originalSHA256": "f5a33f98e697fd9b82966c74cf0376ea9f83fe1d6aa8983517f385eab2acb52e",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-35-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-35-1920-standalone.png",
+      "originalSHA256": "ec1b2c97d0f3730b845b5166a20cc9cab524eed6a6bb5efafab92eaabbb886a7",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-35-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-41-1366-modules.png",
+      "originalSHA256": "f4e7174bf11313e5791bf7f2636a49d11f1f7d31da823bbf520376469c1d9c1e",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-41-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-41-1366-standalone.png",
+      "originalSHA256": "868822b8fb563b88fcb628f9cc845da0b73e21f3ae3933f7348dbe371d0d1118",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-41-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-41-1920-modules.png",
+      "originalSHA256": "1805bf19e640ded999dd7fa05b970657036f2869affca5110626a9196c05adaf",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-41-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-41-1920-standalone.png",
+      "originalSHA256": "018211268397ab195456adddc2edc6075a764028e03294c8b608dfb359c53ae3",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-41-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-48-1366-modules.png",
+      "originalSHA256": "534affeb17abc82d5073f82b880a792aab7fdb3962223202e0b0377bb6e9f4d2",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-48-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-48-1366-standalone.png",
+      "originalSHA256": "eb311be889e55ca038d80896683d75a43c67c542b1724933c1873daa2abb044d",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-48-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-48-1920-modules.png",
+      "originalSHA256": "9df6cca4402b9a656cd2fb11837e5c564da566ca6d8fa799a437fc03c763d163",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-48-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/chapter-48-1920-standalone.png",
+      "originalSHA256": "7e2dfbb506d9bb2affac4602f96f680fb2ca7c7dbacf50b7e910be1d7fe94741",
+      "previewPath": "docs/screenshots/v3.5.2/chapter-48-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/fire-modules.png",
+      "originalSHA256": "2d925bd2dc29ae4147a842e8925af8495b81f4ab4e39eb5bda71997f8b542858",
+      "previewPath": "docs/screenshots/v3.5.2/fire-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/fire-standalone.png",
+      "originalSHA256": "50e356e4f9ae03000d72403ef67b8dfbbd58d42cdc7c4c49d6b74a8ab3ee6c4b",
+      "previewPath": "docs/screenshots/v3.5.2/fire-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/folio-gameplay-1366-modules.png",
+      "originalSHA256": "7e3ae063a58065b791440a6463836ee08c13999b9b4e5adfbdd9f3246dbd4973",
+      "previewPath": "docs/screenshots/v3.5.2/folio-gameplay-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/folio-gameplay-1366-standalone.png",
+      "originalSHA256": "cb06915427b0b55adb87085e211e6e72cb70b00694998470a01d735169014671",
+      "previewPath": "docs/screenshots/v3.5.2/folio-gameplay-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/folio-gameplay-1920-modules.png",
+      "originalSHA256": "71b6eebc286c76af65454be526a373517ea46bcaf78a53467729f3b6accb5d2c",
+      "previewPath": "docs/screenshots/v3.5.2/folio-gameplay-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/folio-gameplay-1920-standalone.png",
+      "originalSHA256": "71b6eebc286c76af65454be526a373517ea46bcaf78a53467729f3b6accb5d2c",
+      "previewPath": "docs/screenshots/v3.5.2/folio-gameplay-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/folio-materials-modules.png",
+      "originalSHA256": "eb455600da56cd79c60e233373f6c9f1ab07bd8c4bd37d242992cba686a43ab6",
+      "previewPath": "docs/screenshots/v3.5.2/folio-materials-modules.preview.webp",
+      "size": [
+        1160,
+        590
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/folio-materials-standalone.png",
+      "originalSHA256": "eb455600da56cd79c60e233373f6c9f1ab07bd8c4bd37d242992cba686a43ab6",
+      "previewPath": "docs/screenshots/v3.5.2/folio-materials-standalone.preview.webp",
+      "size": [
+        1160,
+        590
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/gameplay-1366-modules.png",
+      "originalSHA256": "0e656e2a40c2bf324f28ac97f6fa26c2c02c8337254c609db28ef519950e627a",
+      "previewPath": "docs/screenshots/v3.5.2/gameplay-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/gameplay-1366-standalone.png",
+      "originalSHA256": "2b5cd932c15ddeab68562d1dfedc3d002b0bf1493dabc428c904b7ef56f985ce",
+      "previewPath": "docs/screenshots/v3.5.2/gameplay-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/gameplay-1920-modules.png",
+      "originalSHA256": "f0039b9ebfc94174ed09a19c3535847eda734d6821b37fdc54f9d52076d334a6",
+      "previewPath": "docs/screenshots/v3.5.2/gameplay-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/gameplay-1920-standalone.png",
+      "originalSHA256": "a7786157478ac96829e7543fd649ecd86fed2bc928f1e48849f9be17e3440137",
+      "previewPath": "docs/screenshots/v3.5.2/gameplay-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/ice-modules.png",
+      "originalSHA256": "8b458a2dc3644ad7f3152fdebb3201a95640f6820a1d00e0a981141c82e200c7",
+      "previewPath": "docs/screenshots/v3.5.2/ice-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/ice-standalone.png",
+      "originalSHA256": "c8e013ab4d40fef9aa10ea7e4bd488087c8cf15a64be27a7b7fe44c9178167ec",
+      "previewPath": "docs/screenshots/v3.5.2/ice-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/materials-modules.png",
+      "originalSHA256": "0b01d44fac4831b856063051cb99ba09371798d0523a7b75ad24fd626f4357ca",
+      "previewPath": "docs/screenshots/v3.5.2/materials-modules.preview.webp",
+      "size": [
+        1200,
+        620
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/materials-standalone.png",
+      "originalSHA256": "0b01d44fac4831b856063051cb99ba09371798d0523a7b75ad24fd626f4357ca",
+      "previewPath": "docs/screenshots/v3.5.2/materials-standalone.preview.webp",
+      "size": [
+        1200,
+        620
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/single-row-1366-modules.png",
+      "originalSHA256": "16e4343c971f6f7cfcc910205dab4cf4877f6ffb5b80936a7084822d4d794fa0",
+      "previewPath": "docs/screenshots/v3.5.2/single-row-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/single-row-1366-standalone.png",
+      "originalSHA256": "16e4343c971f6f7cfcc910205dab4cf4877f6ffb5b80936a7084822d4d794fa0",
+      "previewPath": "docs/screenshots/v3.5.2/single-row-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/single-row-1920-modules.png",
+      "originalSHA256": "c6179ccb97367844b3eafe02a13bbcf8364675934ea99c7804e2842cec13e581",
+      "previewPath": "docs/screenshots/v3.5.2/single-row-1920-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/single-row-1920-standalone.png",
+      "originalSHA256": "1a6a1c46f2d5c0d2c26a0c43f62486d488764561a9ce42f5993d2c2137893912",
+      "previewPath": "docs/screenshots/v3.5.2/single-row-1920-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/title-1366-modules.png",
+      "originalSHA256": "f12c1f764e1f38064fcef1b6241fe1e0ef32d9c0050baa5173c3fbd935b8436f",
+      "previewPath": "docs/screenshots/v3.5.2/title-1366-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "docs/screenshots/v3.5.2/title-1366-standalone.png",
+      "originalSHA256": "f12c1f764e1f38064fcef1b6241fe1e0ef32d9c0050baa5173c3fbd935b8436f",
+      "previewPath": "docs/screenshots/v3.5.2/title-1366-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/best-1366-initial.png",
+      "originalSHA256": "28fd6a7cc8bc83e336d9285849b0a05f430e454de8cf7b7b3e9a4aa3849c8c33",
+      "previewPath": "qa352/best-1366-initial.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/first-1366-initial.png",
+      "originalSHA256": "04e46705ecc613ce2abec3eab6b1fbe24b6c1ec3e74fa9bd7d9e587527fc38eb",
+      "previewPath": "qa352/first-1366-initial.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/full-campaign-complete-modules.png",
+      "originalSHA256": "c62a156b3eb934d0eaf0eb91091d81c1480d52b122504778f5592b90709bc5ab",
+      "previewPath": "qa352/full-campaign-complete-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/full-campaign-complete-standalone.png",
+      "originalSHA256": "f4ba29a63cd87afaa87ba7a24ce1f4fa9aba6191a0bacfd0d88e25239eb991dd",
+      "previewPath": "qa352/full-campaign-complete-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/iterations/failure-11-standalone.png",
+      "originalSHA256": "97fa79710a5031b45f3465e3241f688591306c1b5e0db35be72ff139ff4af719",
+      "previewPath": "qa352/iterations/failure-11-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/iterations/failure-9-standalone.png",
+      "originalSHA256": "743e39fec65d6525688ce57a68411cba759a313065722cab8d50931866a3233e",
+      "previewPath": "qa352/iterations/failure-9-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/level5-final-word-modules.png",
+      "originalSHA256": "426f3116bf7400d5df51a30e891095b4c9dfee2ada37012f9614c9dc1904d656",
+      "previewPath": "qa352/level5-final-word-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/level5-final-word-standalone.png",
+      "originalSHA256": "0e5490f06f43d17673a8d90e0ad82df38a7d04752f6490d6333d0cb304c18ff7",
+      "previewPath": "qa352/level5-final-word-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/live-5-13.png",
+      "originalSHA256": "13f39843ce74d323e45819be9665e661000ed0e167b55fa651ab368459841108",
+      "previewPath": "qa352/live-5-13.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/live-end.png",
+      "originalSHA256": "6ac023a982b72095f6bc76c91bb76e86e248b93208281d64a9b95bf2fbc7463a",
+      "previewPath": "qa352/live-end.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/best-1024x600-modules.png",
+      "originalSHA256": "08f37a1120c3b8acf3165de90807a371bd7bbd4d2c599d86abf541e16a58efa5",
+      "previewPath": "qa352/score-chase-screenshots/best-1024x600-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/best-1024x600-standalone.png",
+      "originalSHA256": "08f37a1120c3b8acf3165de90807a371bd7bbd4d2c599d86abf541e16a58efa5",
+      "previewPath": "qa352/score-chase-screenshots/best-1024x600-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/best-1366x768-modules.png",
+      "originalSHA256": "4a1337db106ff9a671d55bf25ab0df5362afd2ccf5170fd650c2863cc534131c",
+      "previewPath": "qa352/score-chase-screenshots/best-1366x768-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/best-1366x768-standalone.png",
+      "originalSHA256": "4a1337db106ff9a671d55bf25ab0df5362afd2ccf5170fd650c2863cc534131c",
+      "previewPath": "qa352/score-chase-screenshots/best-1366x768-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/best-1920x1080-modules.png",
+      "originalSHA256": "5e3622b1d1063527c2ff467ed0acfa7e4e88775e646611eac0e96a87573fd390",
+      "previewPath": "qa352/score-chase-screenshots/best-1920x1080-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/best-1920x1080-standalone.png",
+      "originalSHA256": "5e3622b1d1063527c2ff467ed0acfa7e4e88775e646611eac0e96a87573fd390",
+      "previewPath": "qa352/score-chase-screenshots/best-1920x1080-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/best-800x600-modules.png",
+      "originalSHA256": "c3bcd497ac541d18551852c6717fab839fcbfdc2612c29cf2e6756a44b950572",
+      "previewPath": "qa352/score-chase-screenshots/best-800x600-modules.preview.webp",
+      "size": [
+        800,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/best-800x600-standalone.png",
+      "originalSHA256": "c3bcd497ac541d18551852c6717fab839fcbfdc2612c29cf2e6756a44b950572",
+      "previewPath": "qa352/score-chase-screenshots/best-800x600-standalone.preview.webp",
+      "size": [
+        800,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/bonus-clear-modules.png",
+      "originalSHA256": "01248b6e35b3b0523714ab418a219e9bfeac70477f222a5971eb8bdd6554897e",
+      "previewPath": "qa352/score-chase-screenshots/bonus-clear-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/bonus-clear-standalone.png",
+      "originalSHA256": "01248b6e35b3b0523714ab418a219e9bfeac70477f222a5971eb8bdd6554897e",
+      "previewPath": "qa352/score-chase-screenshots/bonus-clear-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/failure-11-standalone.png",
+      "originalSHA256": "97fa79710a5031b45f3465e3241f688591306c1b5e0db35be72ff139ff4af719",
+      "previewPath": "qa352/score-chase-screenshots/failure-11-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/failure-9-standalone.png",
+      "originalSHA256": "743e39fec65d6525688ce57a68411cba759a313065722cab8d50931866a3233e",
+      "previewPath": "qa352/score-chase-screenshots/failure-9-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/new-best-modules.png",
+      "originalSHA256": "e0196a1171cd2384610e91053d99d7410ff828fc3ccc48be5d342d0be932cc6f",
+      "previewPath": "qa352/score-chase-screenshots/new-best-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/new-best-standalone.png",
+      "originalSHA256": "50d7df5b2bb0251a5e79a8beb96713f7d42b5c5844bcd4efbb3a37b311f62596",
+      "previewPath": "qa352/score-chase-screenshots/new-best-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/reduced-high-contrast-modules.png",
+      "originalSHA256": "20e108a4614b02deda2d8d3819b609bccec2a124287a527427dd97999fc1400d",
+      "previewPath": "qa352/score-chase-screenshots/reduced-high-contrast-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/reduced-high-contrast-standalone.png",
+      "originalSHA256": "20e108a4614b02deda2d8d3819b609bccec2a124287a527427dd97999fc1400d",
+      "previewPath": "qa352/score-chase-screenshots/reduced-high-contrast-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/score-chase-final-modules.png",
+      "originalSHA256": "406fc6423a3e124979dcdef93f88cfbe38a31953f0f08507a6a7607b80fc3181",
+      "previewPath": "qa352/score-chase-screenshots/score-chase-final-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/score-chase-screenshots/score-chase-final-standalone.png",
+      "originalSHA256": "406fc6423a3e124979dcdef93f88cfbe38a31953f0f08507a6a7607b80fc3181",
+      "previewPath": "qa352/score-chase-screenshots/score-chase-final-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/chapter-personal-best-modules.png",
+      "originalSHA256": "c0f3ef97cee270b5abf685c30d83654dd7f52eabed4a9913b147b751c0618bd7",
+      "previewPath": "qa352/screenshots/chapter-personal-best-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/chapter-personal-best-standalone.png",
+      "originalSHA256": "c0f3ef97cee270b5abf685c30d83654dd7f52eabed4a9913b147b751c0618bd7",
+      "previewPath": "qa352/screenshots/chapter-personal-best-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/clear-100pct-three-misses-modules.png",
+      "originalSHA256": "2a2301282695b929c5509fa10fcad8a8b093475cd0e433d7b7586d924c6091bf",
+      "previewPath": "qa352/screenshots/clear-100pct-three-misses-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/clear-100pct-three-misses-standalone.png",
+      "originalSHA256": "2a2301282695b929c5509fa10fcad8a8b093475cd0e433d7b7586d924c6091bf",
+      "previewPath": "qa352/screenshots/clear-100pct-three-misses-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/clockwork-restored-modules.png",
+      "originalSHA256": "df0ff34640e046dd5cd0aa220a3931dca852a31da46d34ed8a684cd317d6220a",
+      "previewPath": "qa352/screenshots/clockwork-restored-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/clockwork-restored-standalone.png",
+      "originalSHA256": "71aa9328b82ffdbcc44dd158cf4f2d64fb311384661a5efb20f47106625111e6",
+      "previewPath": "qa352/screenshots/clockwork-restored-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/failure-clarity-1-modules.png",
+      "originalSHA256": "d70190978251cc17e8e439f1f58b36b56814cee23c21d08102cb0915d699648e",
+      "previewPath": "qa352/screenshots/failure-clarity-1-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/failure-clarity-1-standalone.png",
+      "originalSHA256": "859bd7b4c8b75076e5c67a44f9fe60f69093b67d6a8e5b306c03ce623be936df",
+      "previewPath": "qa352/screenshots/failure-clarity-1-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/finale-all-seals-modules.png",
+      "originalSHA256": "6b7ead19140552b00c576bfe1db93437320e94508521d918a94438a41d66c76f",
+      "previewPath": "qa352/screenshots/finale-all-seals-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/finale-all-seals-standalone.png",
+      "originalSHA256": "a4103eaae78a78d4597539b0c5c27bc97e64aa693debaed9ad744a0190692c4a",
+      "previewPath": "qa352/screenshots/finale-all-seals-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/finale-reduced-motion-modules.png",
+      "originalSHA256": "09e4a164015663ccd99acd8b465fefe130a01e828b0a968838501c5a2031e275",
+      "previewPath": "qa352/screenshots/finale-reduced-motion-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/finale-reduced-motion-standalone.png",
+      "originalSHA256": "09e4a164015663ccd99acd8b465fefe130a01e828b0a968838501c5a2031e275",
+      "previewPath": "qa352/screenshots/finale-reduced-motion-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/finale-results-modules.png",
+      "originalSHA256": "2f56b7ab4fc6e47e7c983b5516740ac3b4e988cc276df3c4320fbf0a4c1c40bc",
+      "previewPath": "qa352/screenshots/finale-results-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/finale-results-standalone.png",
+      "originalSHA256": "9f288f27aa0f09ef86bb3fceb5846e786b9ce1c4b70c7567e182e6caf5706e67",
+      "previewPath": "qa352/screenshots/finale-results-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/fire-object-bound-modules.png",
+      "originalSHA256": "244bd5ca972af6c4924df53ccb4dd31d87c160e90cf08083d16a4a5bd8fc4054",
+      "previewPath": "qa352/screenshots/fire-object-bound-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/fire-object-bound-standalone.png",
+      "originalSHA256": "1da0fa4cf02d591f24272d95b787c0bb5aeaadd5de88e20201d21d124a3ce913",
+      "previewPath": "qa352/screenshots/fire-object-bound-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/first-earned-ice-modules.png",
+      "originalSHA256": "3433135f480afb7bfe1af2b31887996535a54bcd8573ea5377c6153279708055",
+      "previewPath": "qa352/screenshots/first-earned-ice-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/first-earned-ice-standalone.png",
+      "originalSHA256": "1342e141cf781ac92eea406c6b1e7640fcb814a50cad77c749e348141d423f63",
+      "previewPath": "qa352/screenshots/first-earned-ice-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/first-enter-context-modules.png",
+      "originalSHA256": "df0296736202632cc7f7a6aa2240959a27cdee08ae69c44d2ae2dd70cba43811",
+      "previewPath": "qa352/screenshots/first-enter-context-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/first-enter-context-standalone.png",
+      "originalSHA256": "78d287372ad38cb1d95d868f692e71defc7161cdfe76f4425f7fda70a1e2df38",
+      "previewPath": "qa352/screenshots/first-enter-context-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/ice-readable-modules.png",
+      "originalSHA256": "0a1a0968c8e0496c8496b52981a9318995658c6431a3cf33e6a84cbbd7ba3035",
+      "previewPath": "qa352/screenshots/ice-readable-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/ice-readable-standalone.png",
+      "originalSHA256": "54fcce7a0491572b0710e2d8e124a2be38a2d80e4096a1e5de939714b6a3ea00",
+      "previewPath": "qa352/screenshots/ice-readable-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/multiplier-16-exact-modules.png",
+      "originalSHA256": "796480b8296a5bd897fa4e605b7f41043865b268b1919cd428cf2d58f1ca8d00",
+      "previewPath": "qa352/screenshots/multiplier-16-exact-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/multiplier-16-exact-standalone.png",
+      "originalSHA256": "c4a42fc7a8f3c7dbc5eab03c088c2b90ca5a111f48fca10cbdad77954add6f2d",
+      "previewPath": "qa352/screenshots/multiplier-16-exact-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/readability-1024x600-modules.png",
+      "originalSHA256": "03b8f2b44a08c8ee5a2e1d34e3cb8a7de3c44a214da86775dd801a4bf40df563",
+      "previewPath": "qa352/screenshots/readability-1024x600-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/readability-1024x600-standalone.png",
+      "originalSHA256": "5c1a578f6433d7c66a759dca7e247bf87244c9fb44ff38c86bd7e61b42b119e6",
+      "previewPath": "qa352/screenshots/readability-1024x600-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/readability-1280x720-modules.png",
+      "originalSHA256": "aa6e4996f8bfad56d68133d28a2937cf95fe15e70db60cd00e3e2813697de9f4",
+      "previewPath": "qa352/screenshots/readability-1280x720-modules.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/readability-1280x720-standalone.png",
+      "originalSHA256": "363879a5da9aa8ed719d7d48cf463293d401e2ad15176ea1b86f7f08ebb0ddc1",
+      "previewPath": "qa352/screenshots/readability-1280x720-standalone.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/readability-1366x768-modules.png",
+      "originalSHA256": "1adefd3998254d2ab1fcc9f726c9919bc74592504a9eb69badd406414895f1b3",
+      "previewPath": "qa352/screenshots/readability-1366x768-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/readability-1366x768-standalone.png",
+      "originalSHA256": "52fe3573136e6c95c6edc41e0838497f0cb756ab80eff549d7844d0e204e4c9b",
+      "previewPath": "qa352/screenshots/readability-1366x768-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/readability-1920x1080-modules.png",
+      "originalSHA256": "32c96206a174e53895d299a40cfee248b5db14775e533a6278531d112c3159af",
+      "previewPath": "qa352/screenshots/readability-1920x1080-modules.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/screenshots/readability-1920x1080-standalone.png",
+      "originalSHA256": "5f93e05ffbc2a7c23f039a198b4c7a174315ef3f426f2234d21fcaca24dab97a",
+      "previewPath": "qa352/screenshots/readability-1920x1080-standalone.preview.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/about-1024x600-modules.png",
+      "originalSHA256": "e54fea6f03fc2e644165303d240740ef70df0534fd2eb4b290c083e6c47a425f",
+      "previewPath": "qa352/ui-screenshots/about-1024x600-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/about-1024x600-standalone.png",
+      "originalSHA256": "e54fea6f03fc2e644165303d240740ef70df0534fd2eb4b290c083e6c47a425f",
+      "previewPath": "qa352/ui-screenshots/about-1024x600-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/about-1366x768-modules.png",
+      "originalSHA256": "e7d29e299a116d811a84b8cd53b0693dbfd458849b42f969ac18fdcf7f193a6c",
+      "previewPath": "qa352/ui-screenshots/about-1366x768-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/about-1366x768-standalone.png",
+      "originalSHA256": "e7d29e299a116d811a84b8cd53b0693dbfd458849b42f969ac18fdcf7f193a6c",
+      "previewPath": "qa352/ui-screenshots/about-1366x768-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/about-640x480-modules.png",
+      "originalSHA256": "4a48a0ba09faf9e1c2a0f94959ecb63e3a8ac0e6af7ec538128193a8ba15c0ae",
+      "previewPath": "qa352/ui-screenshots/about-640x480-modules.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/about-640x480-standalone.png",
+      "originalSHA256": "4a48a0ba09faf9e1c2a0f94959ecb63e3a8ac0e6af7ec538128193a8ba15c0ae",
+      "previewPath": "qa352/ui-screenshots/about-640x480-standalone.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/finale-ceremony-modules.png",
+      "originalSHA256": "d12467dd898fee6cac76118a15eef04aad7085f9a15f97f4897cd0d605c4f506",
+      "previewPath": "qa352/ui-screenshots/finale-ceremony-modules.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/finale-ceremony-standalone.png",
+      "originalSHA256": "b41107cdc18c8dd772608c6ec342f16bbf494e0d292ad05d99af527ef7e6425e",
+      "previewPath": "qa352/ui-screenshots/finale-ceremony-standalone.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/finale-result-480-modules.png",
+      "originalSHA256": "05d833002ef734e9d700ff6f25770f69a835d34e5a44279f65e43e291be9450c",
+      "previewPath": "qa352/ui-screenshots/finale-result-480-modules.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/finale-result-480-standalone.png",
+      "originalSHA256": "05d833002ef734e9d700ff6f25770f69a835d34e5a44279f65e43e291be9450c",
+      "previewPath": "qa352/ui-screenshots/finale-result-480-standalone.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/finale-result-600-modules.png",
+      "originalSHA256": "0e654cbb724583fca79949270c33187861a3a0bb19635538a0e0b0d83ba04a5d",
+      "previewPath": "qa352/ui-screenshots/finale-result-600-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/finale-result-600-standalone.png",
+      "originalSHA256": "0e654cbb724583fca79949270c33187861a3a0bb19635538a0e0b0d83ba04a5d",
+      "previewPath": "qa352/ui-screenshots/finale-result-600-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/finale-result-720-modules.png",
+      "originalSHA256": "0d2ba2bee4aaacf484014fe69ebfdaefb00ef9f6bf6d669a657379ddcfc52b19",
+      "previewPath": "qa352/ui-screenshots/finale-result-720-modules.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/finale-result-720-standalone.png",
+      "originalSHA256": "0d2ba2bee4aaacf484014fe69ebfdaefb00ef9f6bf6d669a657379ddcfc52b19",
+      "previewPath": "qa352/ui-screenshots/finale-result-720-standalone.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/finale-result-768-modules.png",
+      "originalSHA256": "9919e089724da79947dfe27b47fe4dfe54c748f100cb39a5fb175cc7328d6f24",
+      "previewPath": "qa352/ui-screenshots/finale-result-768-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/finale-result-768-standalone.png",
+      "originalSHA256": "9919e089724da79947dfe27b47fe4dfe54c748f100cb39a5fb175cc7328d6f24",
+      "previewPath": "qa352/ui-screenshots/finale-result-768-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/first-ice-clear-desk-modules.png",
+      "originalSHA256": "3334c407fe4543f89890456bf44d7d9d9f6f6b745148f9c7f942b89ed626eff9",
+      "previewPath": "qa352/ui-screenshots/first-ice-clear-desk-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/first-ice-clear-desk-standalone.png",
+      "originalSHA256": "3334c407fe4543f89890456bf44d7d9d9f6f6b745148f9c7f942b89ed626eff9",
+      "previewPath": "qa352/ui-screenshots/first-ice-clear-desk-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/game-over-600p-modules.png",
+      "originalSHA256": "7c06e873ea52dbaf4590dcccff81cedce716de3abce8e6b6aa2d6252bd7e0223",
+      "previewPath": "qa352/ui-screenshots/game-over-600p-modules.preview.webp",
+      "size": [
+        800,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/game-over-600p-standalone.png",
+      "originalSHA256": "7c06e873ea52dbaf4590dcccff81cedce716de3abce8e6b6aa2d6252bd7e0223",
+      "previewPath": "qa352/ui-screenshots/game-over-600p-standalone.preview.webp",
+      "size": [
+        800,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/how-1024x600-modules.png",
+      "originalSHA256": "d467f2e01f3d57c4f4a4e353062fff94854668126fbd2e0eeb3def9036dd3f12",
+      "previewPath": "qa352/ui-screenshots/how-1024x600-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/how-1024x600-standalone.png",
+      "originalSHA256": "d467f2e01f3d57c4f4a4e353062fff94854668126fbd2e0eeb3def9036dd3f12",
+      "previewPath": "qa352/ui-screenshots/how-1024x600-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/how-1366x768-modules.png",
+      "originalSHA256": "dcc8db3729881bbda1e6ec1755b96f47133a3db1da6611f4ce453b959cdd985c",
+      "previewPath": "qa352/ui-screenshots/how-1366x768-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/how-1366x768-standalone.png",
+      "originalSHA256": "dcc8db3729881bbda1e6ec1755b96f47133a3db1da6611f4ce453b959cdd985c",
+      "previewPath": "qa352/ui-screenshots/how-1366x768-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/how-640x480-modules.png",
+      "originalSHA256": "6daa1162a43a6e11f3025c4ced8a6c53a1f9ac5d913116f432d964d65959e050",
+      "previewPath": "qa352/ui-screenshots/how-640x480-modules.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/how-640x480-standalone.png",
+      "originalSHA256": "6daa1162a43a6e11f3025c4ced8a6c53a1f9ac5d913116f432d964d65959e050",
+      "previewPath": "qa352/ui-screenshots/how-640x480-standalone.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/how-expanded-modules.png",
+      "originalSHA256": "f4c228f6795e5bbc405513d05ce399f3f026c0782262ab218244fc3793353b45",
+      "previewPath": "qa352/ui-screenshots/how-expanded-modules.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/how-expanded-standalone.png",
+      "originalSHA256": "f4c228f6795e5bbc405513d05ce399f3f026c0782262ab218244fc3793353b45",
+      "previewPath": "qa352/ui-screenshots/how-expanded-standalone.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-1280x720-0-modules.png",
+      "originalSHA256": "16a43c9f79feb83dd392deb35eb05ca45c93c898d6be416b4f7d4fbe990993c6",
+      "previewPath": "qa352/ui-screenshots/hud-1280x720-0-modules.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-1280x720-0-standalone.png",
+      "originalSHA256": "16a43c9f79feb83dd392deb35eb05ca45c93c898d6be416b4f7d4fbe990993c6",
+      "previewPath": "qa352/ui-screenshots/hud-1280x720-0-standalone.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-1280x720-95-modules.png",
+      "originalSHA256": "8021069dc0d132b7a7471be7edf7eca6bd5c53f73dd62a9a22d9576c82431b82",
+      "previewPath": "qa352/ui-screenshots/hud-1280x720-95-modules.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-1280x720-95-standalone.png",
+      "originalSHA256": "8021069dc0d132b7a7471be7edf7eca6bd5c53f73dd62a9a22d9576c82431b82",
+      "previewPath": "qa352/ui-screenshots/hud-1280x720-95-standalone.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-1366x768-0-modules.png",
+      "originalSHA256": "9a48d1b561671fa8457a33d8b77fce85db3f7906a8f5f6764923638d50d81630",
+      "previewPath": "qa352/ui-screenshots/hud-1366x768-0-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-1366x768-0-standalone.png",
+      "originalSHA256": "9a48d1b561671fa8457a33d8b77fce85db3f7906a8f5f6764923638d50d81630",
+      "previewPath": "qa352/ui-screenshots/hud-1366x768-0-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-1366x768-95-modules.png",
+      "originalSHA256": "fdce6be71e1be4070e79cf18d07e599e81f16a849aade26b5c99d8806737cff5",
+      "previewPath": "qa352/ui-screenshots/hud-1366x768-95-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-1366x768-95-standalone.png",
+      "originalSHA256": "fdce6be71e1be4070e79cf18d07e599e81f16a849aade26b5c99d8806737cff5",
+      "previewPath": "qa352/ui-screenshots/hud-1366x768-95-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-800x600-0-modules.png",
+      "originalSHA256": "617bd164a23d11e844f3537a39e7169662a8affbd8f93fdf4ed87db72c67297b",
+      "previewPath": "qa352/ui-screenshots/hud-800x600-0-modules.preview.webp",
+      "size": [
+        800,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-800x600-0-standalone.png",
+      "originalSHA256": "617bd164a23d11e844f3537a39e7169662a8affbd8f93fdf4ed87db72c67297b",
+      "previewPath": "qa352/ui-screenshots/hud-800x600-0-standalone.preview.webp",
+      "size": [
+        800,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-800x600-95-modules.png",
+      "originalSHA256": "cb3dc4fc713c6e6ffb7a44a55b47d378af8e119b5369aa55f81eae4bd5bcf60b",
+      "previewPath": "qa352/ui-screenshots/hud-800x600-95-modules.preview.webp",
+      "size": [
+        800,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/hud-800x600-95-standalone.png",
+      "originalSHA256": "cb3dc4fc713c6e6ffb7a44a55b47d378af8e119b5369aa55f81eae4bd5bcf60b",
+      "previewPath": "qa352/ui-screenshots/hud-800x600-95-standalone.preview.webp",
+      "size": [
+        800,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/import-error-inline-modules.png",
+      "originalSHA256": "347fb32e2af6387efe046014d29dfdae9c4a5ae29f517ff8d891864c9621799f",
+      "previewPath": "qa352/ui-screenshots/import-error-inline-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/import-error-inline-standalone.png",
+      "originalSHA256": "347fb32e2af6387efe046014d29dfdae9c4a5ae29f517ff8d891864c9621799f",
+      "previewPath": "qa352/ui-screenshots/import-error-inline-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/last-live-card-safe-zone-modules.png",
+      "originalSHA256": "9e30ace85862ba3d81e4b4d5c5799d0cda4fc23f32fea3801246293e71561133",
+      "previewPath": "qa352/ui-screenshots/last-live-card-safe-zone-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/last-live-card-safe-zone-standalone.png",
+      "originalSHA256": "9e30ace85862ba3d81e4b4d5c5799d0cda4fc23f32fea3801246293e71561133",
+      "previewPath": "qa352/ui-screenshots/last-live-card-safe-zone-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/long-score-practice-header-modules.png",
+      "originalSHA256": "61bc7fb81bc411942c7a7d034a179c1f27085fb6c35f4611541eacfea2004946",
+      "previewPath": "qa352/ui-screenshots/long-score-practice-header-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/long-score-practice-header-standalone.png",
+      "originalSHA256": "61bc7fb81bc411942c7a7d034a179c1f27085fb6c35f4611541eacfea2004946",
+      "previewPath": "qa352/ui-screenshots/long-score-practice-header-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/map-1024x600-modules.png",
+      "originalSHA256": "33603841f125701e127b3953b5088f30fcd9911dfb7438c869087c892df63504",
+      "previewPath": "qa352/ui-screenshots/map-1024x600-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/map-1024x600-standalone.png",
+      "originalSHA256": "33603841f125701e127b3953b5088f30fcd9911dfb7438c869087c892df63504",
+      "previewPath": "qa352/ui-screenshots/map-1024x600-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/map-1366x768-modules.png",
+      "originalSHA256": "9c6500c70efe92775ac7000c7526791345611e96dbb732121a3ad6675555d2fc",
+      "previewPath": "qa352/ui-screenshots/map-1366x768-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/map-1366x768-standalone.png",
+      "originalSHA256": "9c6500c70efe92775ac7000c7526791345611e96dbb732121a3ad6675555d2fc",
+      "previewPath": "qa352/ui-screenshots/map-1366x768-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/map-640x480-modules.png",
+      "originalSHA256": "b3fc849156da12bb997c72ac96f28a7b2c025d6de042771e807560b36e740f7c",
+      "previewPath": "qa352/ui-screenshots/map-640x480-modules.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/map-640x480-standalone.png",
+      "originalSHA256": "b3fc849156da12bb997c72ac96f28a7b2c025d6de042771e807560b36e740f7c",
+      "previewPath": "qa352/ui-screenshots/map-640x480-standalone.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/mastery-final-wing-modules.png",
+      "originalSHA256": "70091a98fb6648248d2934ee18e8e8dc29352f138cbd1b51a9c7c6e32655cee6",
+      "previewPath": "qa352/ui-screenshots/mastery-final-wing-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/mastery-final-wing-standalone.png",
+      "originalSHA256": "70091a98fb6648248d2934ee18e8e8dc29352f138cbd1b51a9c7c6e32655cee6",
+      "previewPath": "qa352/ui-screenshots/mastery-final-wing-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/new-game-confirm-modules.png",
+      "originalSHA256": "d0227d42fc773f1611914a616154bd8ad4f4aa310b8fec9f262b67c9034926c4",
+      "previewPath": "qa352/ui-screenshots/new-game-confirm-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/new-game-confirm-standalone.png",
+      "originalSHA256": "d0227d42fc773f1611914a616154bd8ad4f4aa310b8fec9f262b67c9034926c4",
+      "previewPath": "qa352/ui-screenshots/new-game-confirm-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/one-star-480-modules.png",
+      "originalSHA256": "884f3f39475d8c36f6f212ea913eb7ab9ea6ad3a28bd321aff5b0a6cb159ba4d",
+      "previewPath": "qa352/ui-screenshots/one-star-480-modules.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/one-star-480-standalone.png",
+      "originalSHA256": "884f3f39475d8c36f6f212ea913eb7ab9ea6ad3a28bd321aff5b0a6cb159ba4d",
+      "previewPath": "qa352/ui-screenshots/one-star-480-standalone.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/one-star-600-modules.png",
+      "originalSHA256": "39ca927b9937a915e6e88ea2f1351ea49c54f91d9578865bb656764dc76f6caa",
+      "previewPath": "qa352/ui-screenshots/one-star-600-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/one-star-600-standalone.png",
+      "originalSHA256": "39ca927b9937a915e6e88ea2f1351ea49c54f91d9578865bb656764dc76f6caa",
+      "previewPath": "qa352/ui-screenshots/one-star-600-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/one-star-720-modules.png",
+      "originalSHA256": "c79ec5c8edef67e23df899d95495b963023d5d0a157b4b29f4edc61f50e5ab23",
+      "previewPath": "qa352/ui-screenshots/one-star-720-modules.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/one-star-720-standalone.png",
+      "originalSHA256": "c79ec5c8edef67e23df899d95495b963023d5d0a157b4b29f4edc61f50e5ab23",
+      "previewPath": "qa352/ui-screenshots/one-star-720-standalone.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/one-star-768-modules.png",
+      "originalSHA256": "fb72cda03e042783c77e20e5f2b222c4737f8c63af658c51eba32e8fd893c675",
+      "previewPath": "qa352/ui-screenshots/one-star-768-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/one-star-768-standalone.png",
+      "originalSHA256": "fb72cda03e042783c77e20e5f2b222c4737f8c63af658c51eba32e8fd893c675",
+      "previewPath": "qa352/ui-screenshots/one-star-768-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/queued-slow-600p-modules.png",
+      "originalSHA256": "f4a730d7b8a3f24a332a229141f29e849baecb3f11ad8d52a5618f97396580ec",
+      "previewPath": "qa352/ui-screenshots/queued-slow-600p-modules.preview.webp",
+      "size": [
+        800,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/queued-slow-600p-standalone.png",
+      "originalSHA256": "f4a730d7b8a3f24a332a229141f29e849baecb3f11ad8d52a5618f97396580ec",
+      "previewPath": "qa352/ui-screenshots/queued-slow-600p-standalone.preview.webp",
+      "size": [
+        800,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/records-1024x600-modules.png",
+      "originalSHA256": "2202f2457300c66614bed36aaf217c41f4eac9bf994be4e61c5c37e3649fd606",
+      "previewPath": "qa352/ui-screenshots/records-1024x600-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/records-1024x600-standalone.png",
+      "originalSHA256": "2202f2457300c66614bed36aaf217c41f4eac9bf994be4e61c5c37e3649fd606",
+      "previewPath": "qa352/ui-screenshots/records-1024x600-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/records-1366x768-modules.png",
+      "originalSHA256": "c063dce15250afd1739c25cb367fecf4aec0f99c7f694c391ad0a7c6b082949d",
+      "previewPath": "qa352/ui-screenshots/records-1366x768-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/records-1366x768-standalone.png",
+      "originalSHA256": "c063dce15250afd1739c25cb367fecf4aec0f99c7f694c391ad0a7c6b082949d",
+      "previewPath": "qa352/ui-screenshots/records-1366x768-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/records-640x480-modules.png",
+      "originalSHA256": "99d8e18a92991784535cc3cc9ab10652a97a5e5fa9eb6f731e4c5e6b7e0a89c0",
+      "previewPath": "qa352/ui-screenshots/records-640x480-modules.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/records-640x480-standalone.png",
+      "originalSHA256": "99d8e18a92991784535cc3cc9ab10652a97a5e5fa9eb6f731e4c5e6b7e0a89c0",
+      "previewPath": "qa352/ui-screenshots/records-640x480-standalone.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/records-populated-modules.png",
+      "originalSHA256": "af1ea5d95736d0ccddea57bdfbd2a9101cd114248e7cdb2077db00d7702736f6",
+      "previewPath": "qa352/ui-screenshots/records-populated-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/records-populated-standalone.png",
+      "originalSHA256": "af1ea5d95736d0ccddea57bdfbd2a9101cd114248e7cdb2077db00d7702736f6",
+      "previewPath": "qa352/ui-screenshots/records-populated-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/records-practice-600p-modules.png",
+      "originalSHA256": "01c448e5f5f457aed30de4300d71f76495707a08afc2ddd66956a0f9d67e130b",
+      "previewPath": "qa352/ui-screenshots/records-practice-600p-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/records-practice-600p-standalone.png",
+      "originalSHA256": "01c448e5f5f457aed30de4300d71f76495707a08afc2ddd66956a0f9d67e130b",
+      "previewPath": "qa352/ui-screenshots/records-practice-600p-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/retina-dpr2-modules.png",
+      "originalSHA256": "7801c8b87d8aa8f14470e70fa63bd8469d8a4b97da01de68544425753bf56bd7",
+      "previewPath": "qa352/ui-screenshots/retina-dpr2-modules.preview.webp",
+      "size": [
+        2880,
+        1800
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/retina-dpr2-standalone.png",
+      "originalSHA256": "7801c8b87d8aa8f14470e70fa63bd8469d8a4b97da01de68544425753bf56bd7",
+      "previewPath": "qa352/ui-screenshots/retina-dpr2-standalone.preview.webp",
+      "size": [
+        2880,
+        1800
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/settings-1024x600-modules.png",
+      "originalSHA256": "7ad96321aa5507fd5cdcf9abe9fb8fb79f40ef3d81cdf491842dee5b72718b19",
+      "previewPath": "qa352/ui-screenshots/settings-1024x600-modules.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/settings-1024x600-standalone.png",
+      "originalSHA256": "7ad96321aa5507fd5cdcf9abe9fb8fb79f40ef3d81cdf491842dee5b72718b19",
+      "previewPath": "qa352/ui-screenshots/settings-1024x600-standalone.preview.webp",
+      "size": [
+        1024,
+        600
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/settings-1366x768-modules.png",
+      "originalSHA256": "791c397de406330781748ec4ccdf963c46c5c3fc7eaa68fb215a1cb610a98014",
+      "previewPath": "qa352/ui-screenshots/settings-1366x768-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/settings-1366x768-standalone.png",
+      "originalSHA256": "c19e203a07d394660ba74e8381dd83816ebcac9e1f9d2a1f48933aad98ad926a",
+      "previewPath": "qa352/ui-screenshots/settings-1366x768-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/settings-640x480-modules.png",
+      "originalSHA256": "ecddf65240a1a4051efcd7b1ce4003fd15221797ffd10e0e4acc1b12e54ca528",
+      "previewPath": "qa352/ui-screenshots/settings-640x480-modules.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/settings-640x480-standalone.png",
+      "originalSHA256": "ecddf65240a1a4051efcd7b1ce4003fd15221797ffd10e0e4acc1b12e54ca528",
+      "previewPath": "qa352/ui-screenshots/settings-640x480-standalone.preview.webp",
+      "size": [
+        640,
+        480
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/settings-display-focus-modules.png",
+      "originalSHA256": "fe53d74c95913da405976cfd806a701561b8bdc6b7faa63ed4ddedba72c4dbe4",
+      "previewPath": "qa352/ui-screenshots/settings-display-focus-modules.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/settings-display-focus-standalone.png",
+      "originalSHA256": "fe53d74c95913da405976cfd806a701561b8bdc6b7faa63ed4ddedba72c4dbe4",
+      "previewPath": "qa352/ui-screenshots/settings-display-focus-standalone.preview.webp",
+      "size": [
+        1280,
+        720
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/wind-context-desk-modules.png",
+      "originalSHA256": "3ed7b26bb7789485b333a172a667584b6590146e8f9f3195281bd4a1fb3c027b",
+      "previewPath": "qa352/ui-screenshots/wind-context-desk-modules.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    },
+    {
+      "originalPath": "qa352/ui-screenshots/wind-context-desk-standalone.png",
+      "originalSHA256": "3ed7b26bb7789485b333a172a667584b6590146e8f9f3195281bd4a1fb3c027b",
+      "previewPath": "qa352/ui-screenshots/wind-context-desk-standalone.preview.webp",
+      "size": [
+        1366,
+        768
+      ],
+      "encoding": "WebP quality 88; presentation preview, not original-pixel raster data"
+    }
+  ]
+}

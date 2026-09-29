@@ -30,10 +30,10 @@ def main():
   (ROOT/'docs/qa/feedback-performance.json').write_text(json.dumps(result,indent=2));print(json.dumps({k:v for k,v in result.items() if k!='samples'},indent=2));assert not errors
   # A separate readable composition. Pressure and its animated meter settle before input.
   page.evaluate("()=>{const t=__TM_TEST__;t.start(712,12,'practice');t.freeze(true);t.setSettings({hints:false});t.model.words=[];t.model.spawnClock=100;t.model.score=24680;t.model.progress=13;t.model.streak=15;t.model.danger=83;t.model.pile=[{x:340,angle:.04},{x:510,angle:-.06},{x:720,angle:.05},{x:840,angle:-.04}];[['WONDER','normal',355,245],['STORIES','ice',765,315],['LIBRARY','normal',545,430],['CRYSTAL','bonus',819,525]].forEach(w=>t.word(...w));t.flush();}")
-  page.wait_for_timeout(850);page.locator('#typing-input').fill('LIBRA');page.evaluate('__TM_TEST__.flush()');page.locator('#stage').screenshot(path=str(ROOT/'docs/screenshots/20-v32-pressure-gameplay.png'))
-  page.keyboard.press('4');page.wait_for_timeout(450);page.locator('#stage').screenshot(path=str(ROOT/'docs/screenshots/21-v32-wind-relief.png'))
+  page.wait_for_timeout(850);page.locator('#typing-input').fill('LIBRA');page.evaluate('__TM_TEST__.flush()');page.locator('#stage').screenshot(path=str(ROOT/'docs/screenshots/350-pressure-gameplay.png'))
+  page.keyboard.press('4');page.wait_for_timeout(450);page.locator('#stage').screenshot(path=str(ROOT/'docs/screenshots/350-wind-relief.png'))
   page.evaluate("()=>{const t=__TM_TEST__;t.start(712,6,'campaign');t.freeze(true);t.model.words=[];t.model.spawnClock=100;t.model.stageTime=24;t.model.time=24;t.model.stageCharacters=124;t.model.correctCharacters=420;t.model.score=3200;t.model.progress=t.model.config.quota-1;t.model.stageCorrect=t.model.config.quota-1;t.word('BOOK');t.flush();}")
-  page.locator('#typing-input').fill('BOOK');page.keyboard.press('Enter');page.wait_for_timeout(550);page.locator('#stage').screenshot(path=str(ROOT/'docs/screenshots/22-v32-score-ceremony.png'))
-  page.wait_for_timeout(750);page.locator('#stage').screenshot(path=str(ROOT/'docs/screenshots/24-v32-score-final.png'))
+  page.locator('#typing-input').fill('BOOK');page.keyboard.press('Enter');page.wait_for_timeout(550);page.locator('#stage').screenshot(path=str(ROOT/'docs/screenshots/350-wing-ceremony.png'))
+  page.wait_for_timeout(750);page.locator('#stage').screenshot(path=str(ROOT/'docs/screenshots/350-wing-final.png'))
   browser.close()
 if __name__=='__main__':main()

@@ -1,14 +1,28 @@
-TYPEKEEPER: ENCHANTED LIBRARY — v3.4.0
+TYPEKEEPER: ENCHANTED LIBRARY — v3.6.2
+A Fresh Journey
 
-Extract the entire ZIP. On Mac, open Terminal in this folder and run:
-  bash START_MAC.command
+Extract the ENTIRE ZIP. Open PLAY.html for the self-contained offline game.
+Mac local server: bash START_MAC.command
+The launcher and title should show v3.6.2.
 
-The launcher prints the verified version, source folder and local URL.
-The browser tab should display v3.4.0.
+Returning players have three clear choices:
+  Continue: resume your saved campaign chapter.
+  Start from Chapter 1: confirm a fresh attempt, keeping all lifetime progress.
+  Chapters: practice any unlocked chapter without replacing campaign Continue.
 
-Alternatively open PLAY.html for the embedded no-server edition.
-The full modular site is in dist/; no API key or account is required.
+Starting again replaces ONLY the selected difficulty's campaign Continue point.
+Unlocked chapters, mastery stars, recorded best scores and other difficulties stay.
+Escape / Close / Keep current journey cancels without changing the save.
 
-Stop the old local server with Control+C to keep port 4355 and same-origin saves.
-An occupied port uses the next available port instead of killing an existing process.
-Use Records → Export/Import save when changing addresses or browsers.
+Before changing browser, URL, port or local-file location: Records -> Export save.
+Stop an old local server with Control+C to reuse its address; import when needed.
+
+完整解壓後可直接開啟 PLAY.html；Mac 本機伺服器：bash START_MAC.command。
+確認版本 v3.6.2。新增 Start from Chapter 1，確認後由第一章重新開局。
+只替換目前難度嘅 Continue 位置；已解鎖章節、星級及最高分全部保留。
+之後仍可用 Chapters 選擇已解鎖章節練習；練習唔會取代新旅程嘅 Continue。
+更換網址、連接埠、瀏覽器或本機檔案位置之前，請先 Export save 備份。
+
+README.md: play, saves and source provenance.
+docs/FRESH_JOURNEY_SPEC.md: new entry and safety contracts.
+docs/QA_REPORT.md: actual QA, raw evidence and limitations.

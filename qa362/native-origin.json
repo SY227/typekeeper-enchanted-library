@@ -1,0 +1,67 @@
+{
+  "version": "3.6.2",
+  "scope": "Attempt unchanged shipping game on native HTTP and file URLs. Controlled saved\nrecord fixture tests browser persistence, not a human-earned personal record.\nA transport failure is reported as an environment limit, not counted as a pass.\n",
+  "shippingSHA256": "5a2350faf462c12a197b093645951b80553c25756f1f875ed9406df97ef8e5a3",
+  "checks": [
+    {
+      "name": "http-modules",
+      "url": "http://127.0.0.1:4592/",
+      "unchangedRuntime": true,
+      "controlledSaveFixture": {
+        "version": 3,
+        "settings": {
+          "muted": true,
+          "music": false,
+          "sfx": false,
+          "resumeCountdown": false
+        },
+        "scoreChaseBests": {
+          "running-v1|typekeeper-3.2.1|classic|campaign|1|1": {
+            "ruleset": "typekeeper-3.2.1",
+            "pace": "classic",
+            "mode": "campaign",
+            "startLevel": 1,
+            "chapter": 1,
+            "metric": "running-total",
+            "score": 1580
+          }
+        }
+      },
+      "steps": [],
+      "status": "UNVERIFIED",
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:4592/\nCall log:\n  - navigating to \"http://127.0.0.1:4592/\", waiting until \"load\"\n",
+      "pageerrors": []
+    },
+    {
+      "name": "file-standalone",
+      "url": "file:///mnt/data/restart_work/Typekeeper_Enchanted_Library_v3_6_2/PLAY.html",
+      "unchangedRuntime": true,
+      "controlledSaveFixture": {
+        "version": 3,
+        "settings": {
+          "muted": true,
+          "music": false,
+          "sfx": false,
+          "resumeCountdown": false
+        },
+        "scoreChaseBests": {
+          "running-v1|typekeeper-3.2.1|classic|campaign|1|1": {
+            "ruleset": "typekeeper-3.2.1",
+            "pace": "classic",
+            "mode": "campaign",
+            "startLevel": 1,
+            "chapter": 1,
+            "metric": "running-total",
+            "score": 1580
+          }
+        }
+      },
+      "steps": [],
+      "status": "UNVERIFIED",
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/restart_work/Typekeeper_Enchanted_Library_v3_6_2/PLAY.html\nCall log:\n  - navigating to \"file:///mnt/data/restart_work/Typekeeper_Enchanted_Library_v3_6_2/PLAY.html\", waiting until \"load\"\n",
+      "pageerrors": []
+    }
+  ],
+  "passed": 0,
+  "unverified": 2
+}

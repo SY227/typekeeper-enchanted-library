@@ -601,3 +601,338 @@ body{justify-content:center;background:radial-gradient(ellipse at 50% 42%,#142d2
 .spell-aura{bottom:63px}
 .spell-tip{bottom:220px}
 .high-contrast .spell-slot:hover .spell-use,.high-contrast .spell-slot:focus-visible .spell-use{color:#fff1ce}
+
+
+/* v3.5 / Clarity, mastery and homecoming. Layout/rules stay on the same stage. */
+.enter-save-hint{position:absolute;right:4px;bottom:calc(100% + 7px);padding:6px 12px;border:1px solid #c7b17b;border-radius:3px;background:linear-gradient(#f5e4b8,#dbca9d);box-shadow:0 3px 8px #041c18aa;color:#254837;font:700 var(--cue-label-size,18px)/1.15 var(--sans);letter-spacing:.45px;white-space:nowrap;pointer-events:none}
+.enter-save-hint:after{content:'';position:absolute;right:11px;bottom:-5px;width:8px;height:8px;border-right:1px solid #c7b17b;border-bottom:1px solid #c7b17b;background:#dfcfa4;transform:rotate(45deg)}
+.enter-save-hint kbd,.first-ice-hint kbd{font:inherit;color:inherit;background:transparent;border:0;box-shadow:none;padding:0}
+.awaiting-enter .enter-key{opacity:1;color:#205438;font-weight:bold}
+.first-ice-hint{position:absolute;z-index:6;left:50%;top:-73px;transform:translateX(-50%);white-space:nowrap;padding:8px 11px;border-radius:3px;border:1px solid #a7ccce;background:#12383bf5;color:#e3f4ea;font:var(--cue-label-size,18px)/1.15 var(--sans);box-shadow:0 3px 7px #031d1db3;pointer-events:none}
+.first-ice-hint:after{content:'';position:absolute;bottom:-5px;left:calc(50% - 4px);width:8px;height:8px;border-right:1px solid #a7ccce;border-bottom:1px solid #a7ccce;background:#12383b;transform:rotate(45deg)}
+.spell-keycap{font-size:var(--hud-key-size,23px)}
+.spell-ready{font:var(--hud-label-size,17px)/1 var(--sans);letter-spacing:0;left:43px;top:-25px;color:#d0c4a6;text-shadow:0 1px 3px #031c19}
+.spell-use{font:var(--hud-label-size,17px)/1.25 var(--sans);gap:4px;min-height:23px;letter-spacing:0;color:#d9ccb0;width:calc(100% + 10px);margin-left:-5px}
+.spell-use kbd{font:var(--hud-label-size,17px)/1.05 var(--sans);min-width:18px;height:auto;padding:1px 3px}
+.spell-timer{font-size:var(--hud-label-size,17px);line-height:1.15;left:9px;top:86px;min-width:48px;padding:4px 5px}
+.spell-command{font-size:var(--hud-label-size,17px);letter-spacing:1px}
+.book-count{font-size:var(--hud-label-size,17px);min-width:38px;right:-1px;height:27px;line-height:24px}
+.trial-indicator{font-size:var(--hud-label-size,17px);width:auto;right:230px;top:139px;letter-spacing:.4px;line-height:1.2}
+.meter-caption{font-size:var(--hud-label-size,17px);letter-spacing:0;width:110px;margin-left:-14px;color:#d6c7a8}
+.meter-cap{font-size:13px;width:51px;letter-spacing:.4px}
+.rescue-hint{top:650px;font-size:var(--hud-label-size,17px);width:166px;right:33px;background:#162b2399;border-radius:2px;padding:5px 2px;color:#efddff}
+.spell-slot[data-power=wind].rescue .spell-ready{color:#efddff}
+.high-contrast .spell-ready,.high-contrast .spell-use,.high-contrast .meter-caption{color:#fff1ce;text-shadow:0 1px 2px #000}
+.high-contrast .enter-save-hint{color:#092d1b;background:#fff1c9;border-color:#234d38}
+.high-contrast .first-ice-hint{background:#062627;color:#fff;border-color:#d6f2ed}
+
+/* A single clean result surface: explicit causes, one earned achievement. */
+.modal.clear-results{width:714px;padding:27px 35px 22px;max-height:841px}
+#screen-layer[data-screen=level-clear] .clear-results h2{font-size:35px;margin:9px 0 10px}
+.clear-results .eyebrow{font-size:13px;letter-spacing:1.3px;color:#756440}
+.clear-results .medal-stars{margin:5px auto 10px;font-size:29px;line-height:1.05}
+.clear-results .result-score{font-size:58px;line-height:1.04;margin:12px 0 7px}
+.clear-results .result-score small{font-size:12px;line-height:1.3;letter-spacing:1.3px;margin-top:5px}
+.clear-results .bonus-tag{font-size:13px;line-height:1.2;margin:0}
+.clear-results .result-grid{margin:16px 0 0;padding:15px 0 12px;gap:13px;border-bottom:0}
+.clear-results .result-grid strong{font-size:29px}
+.clear-results .result-grid span{font-size:14px;line-height:1.2;letter-spacing:.35px;color:#665940}
+.mastery-explanation{padding:11px 14px 12px;background:#d3c19336;border-top:1px solid #bca27150;border-bottom:1px solid #bca27150}
+.performance-summary{display:flex;justify-content:center;gap:27px;flex-wrap:wrap;color:#574d3a;font:16px/1.45 var(--sans)}
+.performance-summary b{margin-left:5px;color:#364c39;font-weight:bold;font-variant-numeric:tabular-nums}
+.mastery-explanation p{margin:9px 0 0;color:#34573f;font:16px/1.45 var(--sans)}
+.achievement-line{display:flex;justify-content:center;align-items:center;gap:12px;margin:14px 0 0;text-align:left;color:#304e37;padding:9px 12px;border:1px solid #9ca5725e;background:linear-gradient(110deg,#c6d2ad42,#ece5c51a);border-radius:3px}
+.achievement-glyph{font:27px/1 var(--serif);color:#998047}
+.achievement-line strong{font:700 18px/1.2 var(--sans);display:block}
+.achievement-line small{display:block;font:14px/1.4 var(--sans);color:#76674b;margin-top:4px}
+.achievement-line.first{border-color:#baa87746;background:#bbaa7330}
+.clear-results .next-preview{margin-top:14px;padding:10px 14px}
+.clear-results .next-preview>span{font-size:12px;letter-spacing:1px}
+.clear-results .next-preview>strong{font-size:19px}
+.clear-results .next-preview small{font-size:12px;letter-spacing:.3px;margin-top:5px}
+.clear-results .modal-actions{margin-top:18px;gap:11px;flex-wrap:wrap}
+.clear-results .game-button{font-size:17px;padding:12px 20px;min-height:46px}
+.clear-results .fine-print{font-size:13px;line-height:1.4;margin:12px 0 0}
+.wing-reward{display:flex;align-items:center;justify-content:center;gap:10px;margin:9px 0 0;color:#426049}
+.wing-reward>.wing-mark,.wing-reward>span .wing-mark{width:34px;height:34px;display:block}
+.wing-reward strong{display:block;font:20px/1.25 var(--serif);font-weight:normal}
+.wing-reward small{display:block;font:13px/1.4 var(--sans);color:#746447}
+.wing-tab-emblem{position:relative;display:block;margin:auto;color:#a7956f}
+.wing-tab-emblem .wing-mark{display:block;width:28px;height:28px;margin:auto}
+.wing-tab-emblem.restored{color:#37654b}
+.restored-tick{position:absolute;right:calc(50% - 28px);top:6px;font:bold 13px var(--sans);color:#37654b}
+.mastery-note{display:block;font:12px/1.2 var(--sans);letter-spacing:.5px;color:#806641;margin-top:3px}
+.mastery-note.mastered{color:#35563a}
+.stage-tile{min-height:136px}
+
+/* Journey cues are skippable, presentation-only and freeze when the tab is hidden. */
+.journey-overlay{position:absolute;inset:0;pointer-events:none}
+.journey-overlay:before{content:'';position:absolute;left:220px;right:220px;top:141px;height:420px;background:radial-gradient(ellipse at 50% 25%,#0c2720ed,#0c27207d 55%,transparent 75%)}
+.journey-copy{position:absolute;left:242px;right:242px;top:174px;text-align:center;text-shadow:0 2px 5px #05231c;color:#f1dfb9}
+.journey-copy .eyebrow{font-size:15px;letter-spacing:3px;color:#c6b384}
+.journey-copy h2{font:40px/1.18 var(--serif);font-weight:normal;margin:15px -15px 12px}
+.journey-copy p{font:18px/1.5 var(--serif);max-width:580px;margin:0 auto;color:#d4d6bc}
+.journey-seals{display:flex;align-items:center;justify-content:center;gap:13px;margin:23px auto 15px}
+.journey-seal{display:flex;flex-direction:column;align-items:center;justify-content:center;width:55px;min-height:69px;flex:0 0 55px;color:#658277;opacity:.32;border:1px solid #61766655;border-radius:26px 26px 5px 5px;background:linear-gradient(#173329aa,#142c26aa);transition:color .2s,opacity .2s,box-shadow .3s,background .3s}
+.journey-seal .wing-mark{display:block;width:33px;height:33px;margin:5px 0 3px}
+.journey-seal small{font:12px/1.3 var(--serif);margin-bottom:5px}
+.journey-seal.lit{color:var(--seal-color,#e8d0a0);opacity:1;border-color:#c4b57e88;background:linear-gradient(#374638eb,#152c24ed);box-shadow:0 0 15px #d1c07a17,inset 0 0 8px #e5d7a510}
+.journey-detail{font:14px/1.4 var(--sans);letter-spacing:1.2px;color:#bcbf9f}
+.journey-skip{position:absolute;bottom:39px;left:50%;transform:translateX(-50%);padding:10px 18px;border:1px solid #c6ab6b80;border-radius:3px;background:#122a23e8;color:#e1d1a9;font:16px/1.3 var(--sans);pointer-events:auto}
+.journey-skip kbd{font:12px/1.3 var(--sans);padding:2px 5px;margin-left:9px;background:#c7b78520;border-color:#c7b78566;color:#f3e5c6}
+.journey-skip:hover,.journey-skip:focus-visible{background:#2b4837;color:#fff4d4;border-color:#ead39d}
+[data-view=scene-wing] .score-panel,[data-view=scene-finale] .score-panel,[data-view=scene-wing] .chapter-panel,[data-view=scene-finale] .chapter-panel{opacity:.45}
+[data-view=scene-wing] .spell-inventory,[data-view=scene-finale] .spell-inventory{opacity:.65}
+.clear-results .journey-seals{margin:13px 0 7px;gap:11px}
+.clear-results .journey-seal{min-height:48px;width:45px;flex-basis:45px;border-radius:19px 19px 4px 4px;background:#c0b58a27;border-color:#8e946056;box-shadow:none;color:#536044}
+.clear-results .journey-seal .wing-mark{width:26px;height:26px;margin:3px 0 1px}
+.clear-results .journey-seal small{font-size:10px;margin-bottom:3px}
+.reduced-motion .journey-seal{transition:none}
+.high-contrast .mastery-explanation p,.high-contrast .performance-summary,.high-contrast .achievement-line,.high-contrast .clear-results .result-grid span{color:#123a24}
+@media(prefers-reduced-motion:reduce){.journey-seal{transition:none}}
+
+/* At small windows keep the description readable; the main hotkey above each
+   book remains visible and announced, so its duplicate here is unnecessary. */
+.compact-labels .spell-use kbd{display:none}
+
+/* v3.5.1 · Breathing Room
+   UI zones: quiet pile instrument / book readiness / covers / commands.
+   This is a presentation-only pass. Book centers, typing paper, canvas field,
+   authored difficulty, stock and visual assets are unchanged. */
+.limit-instrument{
+ left:var(--pile-x,1005px);top:var(--pile-y,438px);right:auto;
+ width:var(--pile-width,156px);display:flex;flex-direction:column;align-items:center;
+}
+.limit-instrument .meter-cap{flex:0 0 21px;margin:0;}
+.limit-instrument .meter-body{width:var(--pile-bottle,82px);flex:0 0 91px;}
+.limit-instrument .limit-number{width:100%;height:32px;line-height:32px;font-size:25px;margin-top:2px;}
+.limit-instrument .limit-number small{font-size:14px;margin-left:1px;}
+.limit-instrument .meter-caption{
+ width:100%;margin:6px 0 0;padding:0 3px;white-space:nowrap;
+ font:var(--hud-label-size,17px)/1.25 var(--sans);letter-spacing:0;
+ text-shadow:0 2px 4px #041511,0 0 10px #041511;
+}
+
+/* Every status gets a full line. A brass key tab occupies only the cover corner;
+   no two-column squeeze for COLLECT / QUEUED at small laptop sizes. */
+.spell-slot[data-power=fire]{--slot-x:90px;}
+.spell-slot[data-power=ice]{--slot-x:222px;}
+.spell-slot[data-power=slow]{--slot-x:865px;}
+.spell-slot[data-power=wind]{--slot-x:997px;}
+.spell-keycap{top:var(--book-key-top,35px);left:0;width:32px;min-width:32px;height:32px;line-height:28px;}
+.spell-ready{
+ top:var(--book-status-top,-4px);left:0;right:0;width:100%;text-align:center;
+ white-space:nowrap;font:var(--hud-label-size,17px)/1.2 var(--sans);letter-spacing:0;
+}
+.spell-slot .rescue-hint{
+ top:var(--book-status-top,-4px);left:0;right:0;width:100%;padding:0;margin:0;
+ border:0;background:none;border-radius:0;color:#efddff;
+ font:700 var(--hud-label-size,17px)/1.2 var(--sans);letter-spacing:0;
+}
+.spell-aura{top:-1px;bottom:auto;height:124px;}
+.book-count{top:104px;height:28px;line-height:25px;}
+.spell-command{margin-top:12px;line-height:1.15;}
+.spell-use{width:130px;margin-left:-7.5px;margin-top:6px;line-height:1.25;}
+.first-ice-hint{top:auto;bottom:calc(100% + 64px);}
+
+/* Hover/focus information lives on the unused center desk, not over word ink,
+   the pressure instrument or another book. No permanent extra HUD panel. */
+.spell-tip{
+ left:calc(var(--context-x,350px) - var(--slot-x));
+ top:calc(var(--context-y,812px) - 688px);bottom:auto;transform:none;
+ width:var(--context-width,500px);max-width:none;min-height:52px;
+ max-height:var(--context-height,76px);padding:8px 15px;
+ font:var(--ui-tooltip-size,17px)/1.32 var(--sans);text-align:center;
+ color:#f0e4c6;background:#0d2821f5;border-color:#ad9669aa;
+ border-radius:4px;box-shadow:0 3px 10px #04151199;z-index:8;
+}
+.has-toast .spell-tip{display:none!important;}
+.spell-slot:focus-visible{outline:2px solid #f2d89c;outline-offset:6px;}
+.spell-slot:hover{z-index:2;}
+.spell-slot:focus-visible{z-index:3;}
+
+/* The context well is shared, with notifications taking precedence over help.
+   Dialog notifications enter normal document flow rather than cover actions. */
+#toast{
+ left:var(--context-x,350px);top:var(--context-y,812px);bottom:auto;
+ transform:translateY(5px);width:var(--context-width,500px);max-width:none;
+ padding:9px 15px;font:var(--ui-tooltip-size,17px)/1.32 var(--sans);
+ letter-spacing:0;min-height:48px;
+}
+#toast.visible{transform:translateY(0);}
+[data-view=menu] #toast{left:84px;top:803px;width:563px;}
+.dialog-notice{
+ margin:16px 0 0;padding:12px 16px;border:1px solid #6a88685c;border-radius:3px;
+ background:#bccda349;color:#254632;font:var(--ui-body-size,16px)/1.45 var(--sans);
+ text-align:center;overflow-wrap:anywhere;
+}
+.dialog-notice.error{background:#bf89662b;color:#803e2f;border-color:#a46a4e66;}
+
+/* The same stage at every aspect ratio; useful controls keep larger targets. */
+.icon-button{width:var(--ui-utility-size,44px);height:var(--ui-utility-size,44px);}
+.utility-controls{gap:12px;}
+.modal{overscroll-behavior:contain;scroll-padding:64px 0 24px;scrollbar-gutter:stable;}
+.modal .close-button{top:15px;right:15px;width:var(--ui-control-size,44px);height:var(--ui-control-size,44px);border-radius:4px;}
+.modal .close-button:hover,.modal .close-button:focus-visible{background:#b3975d24;}
+.modal .close-button svg{width:23px;height:23px;}
+.modal-actions{flex-wrap:wrap;gap:14px;}
+.modal .game-button{min-height:var(--ui-control-size,46px);}
+.modal>p,.about-copy p,.guide-detail{font-size:var(--ui-body-size,16px);line-height:1.55;}
+.modal .fine-print{font-size:var(--ui-small-size,13px)!important;line-height:1.5!important;letter-spacing:0;}
+.modal .eyebrow{font-size:var(--ui-small-size,13px);line-height:1.3;letter-spacing:1.2px;}
+.modal .settings-note{font-size:var(--ui-small-size,13px)!important;}
+.settings-tabs{gap:10px;margin-bottom:18px;}
+.settings-tabs button{min-height:var(--ui-control-size,46px);padding:12px 22px;font-size:19px;}
+.settings-body .setting-row{gap:22px;padding:13px 0;min-height:66px;}
+.settings-body .setting-row>div:first-child{min-width:0;}
+.settings-body .setting-row strong{font-size:var(--ui-body-size,17px);line-height:1.25;}
+.settings-body .setting-row p{font-size:var(--ui-small-size,13px);line-height:1.5;}
+.settings-body .toggle{flex-shrink:0;min-width:74px;min-height:var(--ui-control-size,44px);font-size:var(--ui-small-size,13px);}
+.settings-body .setting-row select{font-size:var(--ui-body-size,16px);min-height:var(--ui-control-size,44px);}
+.settings-body .range-wrap{flex:0 0 216px;width:216px;gap:12px;}
+.settings-body input[type=range]{width:154px;min-height:var(--ui-control-size,44px);}
+.settings-body output{min-width:46px;font-size:var(--ui-small-size,13px);}
+.now-playing span,.now-playing small{font-size:var(--ui-small-size,13px);line-height:1.3;letter-spacing:.7px;}
+.now-playing small:empty{display:none;}
+
+/* Filters wrap by purpose, never squeeze the selected chapter title. */
+.record-filter{gap:10px;flex-wrap:wrap;margin:18px 0 20px;}
+.record-filter button{min-height:var(--ui-control-size,44px);padding:9px 17px;font-size:var(--ui-small-size,13px);}
+.record-selects{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px 20px;margin:18px 0;font-size:var(--ui-small-size,13px);}
+.record-selects label{display:flex;align-items:center;gap:10px;min-width:0;}
+.record-selects label:nth-child(3){grid-column:1/-1;}
+.record-selects select{flex:1;min-width:0;max-width:100%;font-size:var(--ui-body-size,16px);min-height:var(--ui-control-size,44px);padding:8px 11px;}
+.record-table th{font-size:var(--ui-small-size,13px);line-height:1.3;letter-spacing:.35px;padding:12px 7px;}
+.record-table td{font-size:var(--ui-body-size,16px);line-height:1.35;padding:12px 7px;}
+.empty-records p,.record-crown{font-size:var(--ui-small-size,13px);line-height:1.5;}
+#screen-layer[data-screen=records] .modal-actions{gap:14px;}
+#screen-layer[data-screen=records] .game-button{padding:12px 20px;font-size:19px;}
+
+/* Secondary text is readable without making the already-clear word cards bigger. */
+.tutorial-steps{gap:24px;margin:24px 0;}
+.tutorial-step h3{font-size:19px;line-height:1.3;}
+.tutorial-step p,.power-guide-item p{font-size:var(--ui-small-size,13px);line-height:1.5;}
+.tutorial-step kbd{font-size:var(--ui-small-size,13px);}
+.rules-details summary{padding:8px 0;min-height:var(--ui-control-size,44px);font-size:var(--ui-body-size,16px);}
+.rules-details p{font-size:var(--ui-small-size,13px)!important;}
+.power-guide{gap:18px;}
+.power-guide-item h3{font-size:16px;}
+.wing-tabs{gap:8px;}
+.wing-tabs button{padding:8px;min-height:52px;font:var(--ui-small-size,13px)/1.3 var(--sans);}
+.wing-tabs .wing-tab-emblem{flex:0 0 30px;}
+.wing-heading p,.atlas-total{font-size:var(--ui-small-size,13px);line-height:1.4;}
+.tile-title{line-height:1.25;font-size:20px;min-height:49px;}
+.tile-meta{font-size:12px;line-height:1.4;letter-spacing:.1px;}
+.stage-status{font-size:13px;line-height:1.4;}
+.stage-tile{min-height:145px;}
+.menu-links .text-button{font-size:var(--ui-small-size,14px);min-height:34px;}
+.menu-links{gap:16px;}
+.menu-actions{gap:15px;}
+.continue-detail{font-size:16px;line-height:1.35;}
+.credits-list span{font-size:var(--ui-small-size,13px);line-height:1.3;letter-spacing:1px;}
+.high-contrast .dialog-notice{color:#10351f;border-color:#456247;background:#e6efcb;}
+.high-contrast .dialog-notice.error{color:#6d2419;background:#f3d2b8;}
+.high-contrast .spell-tip{background:#031c16;color:#fff1ce;border-color:#deca98;}
+
+/* Readiness belongs to each book, below the last live card (FIELD bottom +
+   half the 60px scroll = 678). The number remains a clear brass spine tab. */
+.spell-ready,.spell-slot .rescue-hint{
+ padding:2px 0 3px;border-radius:3px;z-index:3;
+ background:linear-gradient(90deg,transparent,#08251eed 14%,#08251eed 86%,transparent);
+}
+/* Trial copy belongs to the upper HUD, never the incoming word corridor. */
+.trial-indicator{top:99px;left:auto;right:204px;width:220px;text-align:center;}
+/* Keyboard focus owns the shared description well until focus leaves a book. */
+.spell-inventory:has(.spell-slot:focus-visible) .spell-slot:not(:focus-visible) .spell-tip{opacity:0;visibility:hidden;}
+.wing-tabs .wing-tab-emblem{margin:0;}
+.stage-status.locked-status{font-size:20px;letter-spacing:2px;line-height:1;margin-top:11px;color:#7d805f;}
+/* Keep corner studs inside scrollable parchment. The old -5px ornament created
+   a five-pixel horizontal scroll range on every modal despite fitting content. */
+.modal.parchment:after{inset:0;}
+/* Quota and chapter context are player information, not decorative microtype.
+   The enlarged ribbon still ends above incoming scrolls at y142. */
+.chapter-panel{height:106px;}
+.chapter-panel .eyebrow{font:var(--ui-small-size,13px)/1.2 var(--sans);letter-spacing:1px;white-space:nowrap;}
+.chapter-name{line-height:1.2;margin:4px 0 5px;white-space:nowrap;}
+.chapter-progress{font:var(--ui-small-size,13px)/1.2 var(--sans);letter-spacing:.35px;margin-top:4px;white-space:nowrap;}
+.score-panel,.focused-hud .score-panel{width:180px;opacity:.85;}
+.score-panel .eyebrow{font:var(--ui-small-size,13px)/1.2 var(--sans);letter-spacing:1.5px;}
+.score-number,.focused-hud .score-number{font-size:var(--score-fit-size,33px);white-space:nowrap;}
+.personal-best{font:var(--ui-small-size,13px)/1.3 var(--sans);letter-spacing:.2px;}
+
+/* First-use guidance uses the same clear desk zone as contextual help. It never
+   masks a low falling word. Important notifications postpone its visible timer. */
+.first-ice-hint{
+ left:calc(var(--context-x,350px) - var(--slot-x));
+ top:calc(var(--context-y,812px) - 688px);bottom:auto;transform:none;
+ width:var(--context-width,500px);min-height:48px;padding:10px 15px;
+ font:var(--cue-label-size,18px)/1.25 var(--sans);text-align:center;
+}
+.first-ice-hint:after{display:none;}
+.has-toast .first-ice-hint{display:none;}
+.spell-inventory:has(.first-ice-hint:not([hidden])) .spell-tip{display:none;}
+.trial-indicator{text-shadow:0 1px 3px #041c17,0 0 7px #041c17;}
+
+/* v3.5.2 — Score Chase. One existing score territory; exact total over a frozen
+   best. Geometry stays left of the chapter ribbon and above the word entry line. */
+.score-panel,.focused-hud .score-panel{
+ left:238px;top:33px;width:184px;height:102px;padding:8px 8px 7px;
+ opacity:1;border:0;border-radius:3px;box-shadow:none;overflow:hidden;
+ background:linear-gradient(115deg,#0a25236b,#102c2924 85%,transparent);
+ transition:none;
+}
+.score-panel:before{
+ content:'';position:absolute;inset:1px 5px 2px 0;pointer-events:none;
+ border-top:1px solid #c5af713b;border-left:1px solid #c5af7159;
+ border-bottom:1px solid #c5af7117;border-radius:2px;
+}
+.score-panel .eyebrow{font-size:13px;line-height:16px;letter-spacing:2px;color:#c3b895;white-space:nowrap;}
+.score-number,.focused-hud .score-number{
+ font-size:var(--score-fit-size,35px);line-height:38px;height:38px;margin:2px 0 0;
+ letter-spacing:0;color:#f3e1b1;font-weight:400;white-space:nowrap;
+ font-variant-numeric:tabular-nums lining-nums;text-shadow:0 2px 4px #041c1ac9;
+ transform-origin:left center;
+}
+.score-panel .personal-best,.focused-hud .score-panel .personal-best{
+ display:flex;align-items:center;gap:6px;height:24px;margin:3px 0 0;
+ font:600 var(--chase-label-size,14px)/1.2 var(--sans);letter-spacing:0;
+ color:#c0bea7;white-space:nowrap;font-variant-numeric:tabular-nums;
+ transition:color .25s ease;
+}
+.score-panel .personal-best span{margin:0;color:inherit;}
+.score-panel #best-value{color:#e2d3ad;}
+.score-panel .chase-mark{display:inline-flex;justify-content:center;width:10px;flex:none;font-size:12px;color:#9e956f;}
+.score-panel[data-chase-state=first] .chase-mark{opacity:.6;}
+.score-panel[data-chase-state=near] .personal-best,.score-panel[data-chase-state=near] #best-value{color:#ead19a;}
+.score-panel[data-chase-state=beaten] .personal-best,.score-panel[data-chase-state=beaten] #best-value{color:#f4d795;}
+.score-panel[data-chase-state=beaten] .chase-mark{color:#f4d795;text-shadow:0 0 8px #f2d08144;}
+.score-panel[data-chase-state=beaten]:before{border-left-color:#d5b76ca8;border-top-color:#d5b76c6e;}
+.score-chase-gleam{position:absolute;inset:0;opacity:0;pointer-events:none;border-radius:3px;background:linear-gradient(108deg,transparent 20%,#f6dc9626 46%,#fff3c755 50%,#f6dc9617 54%,transparent 78%);}
+.record-pulse .score-chase-gleam{animation:score-chase-seal .65s ease-out 1;}
+@keyframes score-chase-seal{0%{opacity:0;transform:translateX(-70%);}28%{opacity:.65;}100%{opacity:0;transform:translateX(75%);}}
+.high-contrast .score-panel{background:#062421e8;}
+.high-contrast .score-panel .eyebrow,.high-contrast .score-panel .personal-best{color:#efe4c7;}
+.high-contrast .score-panel #best-value,.high-contrast .score-panel .score-number{color:#fff2cc;}
+.reduced-motion .score-panel .personal-best{transition:none;}
+.reduced-motion .score-chase-gleam{display:none;animation:none!important;}
+[data-view=scene-defeat] .score-panel,[data-view=scene-wing] .score-panel,[data-view=scene-finale] .score-panel{opacity:.45;}
+
+/* v3.6.2 / replay entry. The original title layout is unchanged for new players. */
+.menu-panel.returning-player{padding-top:23px;padding-bottom:18px;max-height:482px;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#aa9164 #e8d9b4;}
+.returning-player .menu-actions{gap:10px;}
+.returning-player .menu-actions [data-action="new-confirm"]{font-size:18px;line-height:1.3;min-height:44px;}
+.returning-player .continue-detail{margin:-3px 0 1px;}
+.menu-panel.campaign-complete.returning-player{top:370px;max-height:508px;}
+.fresh-progress-kept{margin:20px 0 22px;padding:15px 17px;text-align:left;border:1px solid #7f8c5966;border-radius:3px;background:linear-gradient(115deg,#dbe4c066,#f8edca66);}
+.fresh-progress-kept strong{display:block;font:700 22px/1.3 var(--serif);color:#244d37;margin-bottom:7px;}
+.fresh-progress-kept p{margin:0!important;color:#4f553d;font-size:var(--ui-body-size,17px);line-height:1.5;}
+.fresh-start-dialog .modal-actions{gap:14px;}
+.high-contrast .fresh-progress-kept{background:#f5f3d4;border-color:#23472d;}
+.high-contrast .fresh-progress-kept strong,.high-contrast .fresh-progress-kept p{color:#173520;}
+/* Retain the requested above-cover label treatment: a shallow caption, not an
+   overlay on the illustration. Labels remain still while books lift or cast. */
+.spell-ready,.spell-slot .rescue-hint{height:18px;line-height:18px;font-size:16px;padding:0;}
+
+.fresh-start-dialog .fresh-storage-note{font-size:var(--ui-small-size,14px);line-height:1.45;color:#69462e;margin:0 0 15px;}
+/* Keep the menu's decorative corner studs inside its new scroll boundary. */
+.menu-panel.returning-player.parchment:after{inset:0;}

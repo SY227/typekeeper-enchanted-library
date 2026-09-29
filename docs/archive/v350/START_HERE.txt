@@ -1,0 +1,21 @@
+TYPEKEEPER: ENCHANTED LIBRARY — v3.5.0
+Clarity, Mastery & Homecoming
+
+Extract the ENTIRE ZIP. Fastest no-server option: open PLAY.html.
+On Mac, open Terminal in the extracted folder and run:
+  bash START_MAC.command
+
+The tab and launcher must show v3.5.0. No account or API key is required.
+Source, dist, assets, editable masters, tests and launchers are all included.
+
+To preserve same-origin browser saves, stop the previous server with Control+C
+before starting this one at the same address. A busy port uses the next free port.
+Records -> Export/Import save moves progress between addresses or browsers.
+The balance ruleset and existing save key are unchanged.
+
+完整解壓後，可直接開啟 PLAY.html 試玩。
+Mac 亦可在資料夾內執行：bash START_MAC.command
+請確認標題顯示 v3.5.0。更換網址、連接埠或瀏覽器前，先匯出存檔。
+
+Read README.md for controls, upgrades, rebuild and deployment.
+See docs/QA_REPORT.md for executed tests and limits.

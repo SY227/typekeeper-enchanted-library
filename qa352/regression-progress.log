@@ -1,0 +1,37 @@
+START clarity_mastery_tests-standalone
+DONE clarity_mastery_tests-standalone 0 30.608
+START clarity_mastery_tests-modules
+DONE clarity_mastery_tests-modules 0 31.005
+START chapter_art_tests-standalone
+DONE chapter_art_tests-standalone 0 30.427
+START chapter_art_tests-modules
+DONE chapter_art_tests-modules 0 30.48
+START scroll_repair_tests-standalone
+DONE scroll_repair_tests-standalone 0 10.871
+START scroll_repair_tests-modules
+DONE scroll_repair_tests-modules 0 11.121
+START book_leaf_tests-standalone
+DONE book_leaf_tests-standalone 0 7.248
+START book_leaf_tests-modules
+DONE book_leaf_tests-modules 0 7.198
+START single_row_release-standalone
+DONE single_row_release-standalone 0 36.168
+START single_row_release-modules
+DONE single_row_release-modules 0 36.73
+START ui_spacing_tests-standalone
+DONE ui_spacing_tests-standalone 0 79.471
+START ui_spacing_tests-modules
+DONE ui_spacing_tests-modules 0 79.456
+START flow-standalone
+DONE flow-standalone 0 59.146
+START flow-modules
+DONE flow-modules 0 58.339
+START performance
+DONE performance 0 23.65
+START http-payload
+DONE http-payload 0 1.322
+START launcher
+DONE launcher 0 2.292
+START updater
+DONE updater 0 4.748
+FAILURES 0

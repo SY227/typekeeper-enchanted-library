@@ -1,0 +1,49 @@
+{
+  "shippingSHA256": "8dd79e580f46ab08f36c0775f0bedb985cc8ab17ee63d98d2950880178953105",
+  "commands": [
+    {
+      "label": "clarity_mastery_tests-standalone",
+      "command": [
+        "python3",
+        "e2e/clarity_mastery_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 0,
+      "seconds": 30.097
+    },
+    {
+      "label": "clarity_mastery_tests-modules",
+      "command": [
+        "python3",
+        "e2e/clarity_mastery_tests.py",
+        "--mode",
+        "modules"
+      ],
+      "returncode": 0,
+      "seconds": 30.319
+    },
+    {
+      "label": "chapter_art_tests-standalone",
+      "command": [
+        "python3",
+        "e2e/chapter_art_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 0,
+      "seconds": 29.926
+    },
+    {
+      "label": "chapter_art_tests-modules",
+      "command": [
+        "python3",
+        "e2e/chapter_art_tests.py",
+        "--mode",
+        "modules"
+      ],
+      "returncode": 0,
+      "seconds": 29.794
+    }
+  ]
+}

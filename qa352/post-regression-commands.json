@@ -1,0 +1,33 @@
+[
+  {
+    "name": "live-journey",
+    "command": [
+      "python3",
+      "e2e/live_journey.py"
+    ],
+    "seconds": 114.84,
+    "returncode": 0
+  },
+  {
+    "name": "native-origin",
+    "command": [
+      "python3",
+      "scripts/score-chase-origin-audit.py"
+    ],
+    "seconds": 1.43,
+    "returncode": 0
+  },
+  {
+    "name": "final-flow-model",
+    "command": [
+      "node",
+      "scripts/flow-audit.mjs",
+      "--root",
+      ".",
+      "--out",
+      "qa352/flow-model.json"
+    ],
+    "seconds": 4.83,
+    "returncode": 0
+  }
+]

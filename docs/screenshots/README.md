@@ -1,8 +1,8 @@
-# Current screenshots
+# Current UI captures
 
-These are real application captures from controlled native Canvas/DOM browser tests,
-not concept illustrations. The v3.4.0 selection contains chapter treatments and
-FIRE/ICE. The same captures are compressed to WebP here to avoid release-history
-bulk; full-resolution PNG examples are delivered separately. Some inherited test
-scripts generate older-numbered screenshot filenames when rerun; their scripts and
-JSON scope describe the actual build being executed.
+These are native game captures from the current standalone/Blob browser harness,
+compressed to WebP for documentation only. App imagery, source masters and renderer
+textures are not recompressed. index.json preserves the original capture dimensions
+and SHA-256. All numeric reports, scripts and logs are included under qa351/e2e.
+Rerun the harnesses to produce the full PNG capture sets. Historic duplicate PNGs
+and failed-attempt bitmaps are omitted from the handoff, not claimed as current tests.

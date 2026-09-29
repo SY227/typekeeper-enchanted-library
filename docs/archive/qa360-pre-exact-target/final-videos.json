@@ -1,0 +1,30 @@
+[
+  {
+    "name": "live-journey-final",
+    "exit": 0,
+    "seconds": 117.33,
+    "video": {
+      "format": {
+        "duration": "116.520000",
+        "size": "14463008"
+      }
+    },
+    "probeErrors": "",
+    "decodeExit": 0,
+    "decodeErrors": ""
+  },
+  {
+    "name": "natural-pressure-final",
+    "exit": 0,
+    "seconds": 38.29,
+    "video": {
+      "format": {
+        "duration": "37.800000",
+        "size": "4496607"
+      }
+    },
+    "probeErrors": "",
+    "decodeExit": 0,
+    "decodeErrors": ""
+  }
+]

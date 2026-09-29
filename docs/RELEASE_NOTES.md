@@ -1,13 +1,17 @@
-# v3.4.0 release notes
+# v3.6.2 — A Fresh Journey
 
-Based on the accepted v3.3.6 full ZIP, not an earlier failing scroll draft.
+Returning players can choose **Start from Chapter 1** directly below Continue.
+This starts a new campaign attempt without clearing unlocked chapters, mastery
+stars or personal bests. Chapters remains available for later unlocked Practice.
 
-1. 48 authored, title-aligned chapter profiles; two cached scene layers maximum.
-2. New original layered FIRE, charred paper and ash; 0.65-second foreground spell cue.
-3. Faceted ICE, frost on architecture and scroll ends, static freeze hold and layered thaw.
-4. Word-ink protection: actual raster tests reject frost/letter intersections.
-5. Both new visual modules are included in the modular and embedded builds.
-6. Game rules, pace, inventory, RNG, saved progress, scroll geometry, audio and controls unchanged.
+- Explicit confirmation names the Continue chapter that will be replaced.
+- Cancel/Close/Escape preserve the current save and return to the originating view.
+- Safe keyboard default; repeat/stale confirmations cannot restart active play.
+- A single checkpoint replacement instead of deletion then re-save.
+- New/returning/completed game states and difficulty-specific saves handled.
+- Previous above-book READY/COLLECT placement retained through a small reapplication
+  from the supplied v3.6.1 preview to the available v3.6.0 complete source.
+- All core rules, gameplay, original assets and audio retained.
 
-Current evidence and release limitations are in QA_REPORT.md; the 48-title map is
-in CHAPTER_ART_SPEC.md. YouTube reference access was unsuccessful and is documented.
+See QA_REPORT.md for actual executed gates and FRESH_JOURNEY_SPEC.md for scope.
+Older release reports in archive/ are historical, not new runs.

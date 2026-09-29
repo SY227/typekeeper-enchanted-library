@@ -1,0 +1,205 @@
+{
+  "shippingSHA256": "ed3fd19385c13d069c35b644d542028dd6046b7d28bbb8aef8831863e6f7b044",
+  "commands": [
+    {
+      "label": "clarity_mastery_tests-standalone",
+      "command": [
+        "python3",
+        "e2e/clarity_mastery_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 0,
+      "seconds": 30.608
+    },
+    {
+      "label": "clarity_mastery_tests-modules",
+      "command": [
+        "python3",
+        "e2e/clarity_mastery_tests.py",
+        "--mode",
+        "modules"
+      ],
+      "returncode": 0,
+      "seconds": 31.005
+    },
+    {
+      "label": "chapter_art_tests-standalone",
+      "command": [
+        "python3",
+        "e2e/chapter_art_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 0,
+      "seconds": 30.427
+    },
+    {
+      "label": "chapter_art_tests-modules",
+      "command": [
+        "python3",
+        "e2e/chapter_art_tests.py",
+        "--mode",
+        "modules"
+      ],
+      "returncode": 0,
+      "seconds": 30.48
+    },
+    {
+      "label": "scroll_repair_tests-standalone",
+      "command": [
+        "python3",
+        "e2e/scroll_repair_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 0,
+      "seconds": 10.871
+    },
+    {
+      "label": "scroll_repair_tests-modules",
+      "command": [
+        "python3",
+        "e2e/scroll_repair_tests.py",
+        "--mode",
+        "modules"
+      ],
+      "returncode": 0,
+      "seconds": 11.121
+    },
+    {
+      "label": "book_leaf_tests-standalone",
+      "command": [
+        "python3",
+        "e2e/book_leaf_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 0,
+      "seconds": 7.248
+    },
+    {
+      "label": "book_leaf_tests-modules",
+      "command": [
+        "python3",
+        "e2e/book_leaf_tests.py",
+        "--mode",
+        "modules"
+      ],
+      "returncode": 0,
+      "seconds": 7.198
+    },
+    {
+      "label": "single_row_release-standalone",
+      "command": [
+        "python3",
+        "e2e/single_row_release.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 0,
+      "seconds": 36.168
+    },
+    {
+      "label": "single_row_release-modules",
+      "command": [
+        "python3",
+        "e2e/single_row_release.py",
+        "--mode",
+        "modules"
+      ],
+      "returncode": 0,
+      "seconds": 36.73
+    },
+    {
+      "label": "ui_spacing_tests-standalone",
+      "command": [
+        "python3",
+        "e2e/ui_spacing_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 0,
+      "seconds": 79.471
+    },
+    {
+      "label": "ui_spacing_tests-modules",
+      "command": [
+        "python3",
+        "e2e/ui_spacing_tests.py",
+        "--mode",
+        "modules"
+      ],
+      "returncode": 0,
+      "seconds": 79.456
+    },
+    {
+      "label": "flow-standalone",
+      "command": [
+        "python3",
+        "e2e/flow_tests.py",
+        "--root",
+        "/mnt/data/score_chase/Typekeeper_Enchanted_Library_v3_5_2",
+        "--mode",
+        "standalone",
+        "--out",
+        "/mnt/data/score_chase/Typekeeper_Enchanted_Library_v3_5_2/qa352"
+      ],
+      "returncode": 0,
+      "seconds": 59.146
+    },
+    {
+      "label": "flow-modules",
+      "command": [
+        "python3",
+        "e2e/flow_tests.py",
+        "--root",
+        "/mnt/data/score_chase/Typekeeper_Enchanted_Library_v3_5_2",
+        "--mode",
+        "modules",
+        "--out",
+        "/mnt/data/score_chase/Typekeeper_Enchanted_Library_v3_5_2/qa352"
+      ],
+      "returncode": 0,
+      "seconds": 58.339
+    },
+    {
+      "label": "performance",
+      "command": [
+        "python3",
+        "e2e/feedback_performance.py",
+        "--executable",
+        "/usr/bin/chromium"
+      ],
+      "returncode": 0,
+      "seconds": 23.65
+    },
+    {
+      "label": "http-payload",
+      "command": [
+        "python3",
+        "scripts/http-payload-audit.py"
+      ],
+      "returncode": 0,
+      "seconds": 1.322
+    },
+    {
+      "label": "launcher",
+      "command": [
+        "python3",
+        "scripts/release-audit.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.292
+    },
+    {
+      "label": "updater",
+      "command": [
+        "python3",
+        "scripts/test-update.py"
+      ],
+      "returncode": 0,
+      "seconds": 4.748
+    }
+  ]
+}

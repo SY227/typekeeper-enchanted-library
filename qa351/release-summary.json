@@ -1,0 +1,149 @@
+{
+  "version": "3.5.1",
+  "name": "Breathing Room",
+  "buildId": "3.5.1-cede4396e07379e3",
+  "shippingSHA256": "5d2eaee3614277d65e83e35724948bae767c004c31ad9c568c984f14c877acda",
+  "node": {
+    "passed": 616,
+    "failed": 0,
+    "includesPreservedFileHashes": 83
+  },
+  "browser": {
+    "passed": 352,
+    "failed": 0,
+    "unhandledErrors": 0,
+    "suites": [
+      {
+        "file": "clarity-mastery-standalone.json",
+        "passed": 19,
+        "failed": 0,
+        "mode": "standalone",
+        "suite": "clarity-mastery"
+      },
+      {
+        "file": "clarity-mastery-modules.json",
+        "passed": 19,
+        "failed": 0,
+        "mode": "modules",
+        "suite": "clarity-mastery"
+      },
+      {
+        "file": "chapter-art-standalone.json",
+        "passed": 19,
+        "failed": 0,
+        "mode": "standalone",
+        "suite": "chapter-art"
+      },
+      {
+        "file": "chapter-art-modules.json",
+        "passed": 19,
+        "failed": 0,
+        "mode": "modules",
+        "suite": "chapter-art"
+      },
+      {
+        "file": "scroll-repair-standalone.json",
+        "passed": 19,
+        "failed": 0,
+        "mode": "standalone",
+        "suite": "scroll-repair"
+      },
+      {
+        "file": "scroll-repair-modules.json",
+        "passed": 19,
+        "failed": 0,
+        "mode": "modules",
+        "suite": "scroll-repair"
+      },
+      {
+        "file": "book-leaf-standalone.json",
+        "passed": 26,
+        "failed": 0,
+        "mode": "standalone",
+        "suite": "book-leaf"
+      },
+      {
+        "file": "book-leaf-modules.json",
+        "passed": 26,
+        "failed": 0,
+        "mode": "modules",
+        "suite": "book-leaf"
+      },
+      {
+        "file": "single-row-standalone.json",
+        "passed": 19,
+        "failed": 0,
+        "mode": "standalone",
+        "suite": "single-row"
+      },
+      {
+        "file": "single-row-modules.json",
+        "passed": 19,
+        "failed": 0,
+        "mode": "modules",
+        "suite": "single-row"
+      },
+      {
+        "file": "flow-browser-standalone.json",
+        "passed": 12,
+        "failed": 0,
+        "mode": "standalone",
+        "suite": "flow-browser"
+      },
+      {
+        "file": "flow-browser-modules.json",
+        "passed": 12,
+        "failed": 0,
+        "mode": "modules",
+        "suite": "flow-browser"
+      },
+      {
+        "file": "ui-spacing-standalone.json",
+        "passed": 62,
+        "failed": 0,
+        "mode": "standalone",
+        "suite": "ui-spacing"
+      },
+      {
+        "file": "ui-spacing-modules.json",
+        "passed": 62,
+        "failed": 0,
+        "mode": "modules",
+        "suite": "ui-spacing"
+      }
+    ]
+  },
+  "flow": {
+    "boundaryCases": 23040,
+    "failures": 0,
+    "modelCampaigns": 12,
+    "renderedCampaigns": 2,
+    "allSpellChapterEndingFixtures": 96
+  },
+  "normalClockJourney": {
+    "typedWords": 82,
+    "wallSeconds": 111.58,
+    "reachedChapter": 7,
+    "passedLevel5_13to14": true
+  },
+  "launcherChecks": 7,
+  "updaterChecks": 6,
+  "runtimeOutputs": 57,
+  "freshExtraction": {
+    "status": "PASS",
+    "nodePassed": 616,
+    "browserUIRepeated": 124,
+    "launcherRepeated": 7,
+    "updaterRepeated": 6,
+    "byteIdenticalRuntimeOutputs": 57,
+    "candidateZipSHA256": "3976bf9d0f3ed42089b505e4421d623d0e765980b4bcb27ed6f92c6842b39628",
+    "report": "fresh-extraction.json"
+  },
+  "limitations": [
+    "Linux Chromium only; no real Mac/Windows/Safari/Firefox/Edge hardware verification",
+    "Loopback browser HTTP blocked. Shipping standalone in memory and modular build via Blob transport. Native HTTP payloads tested separately.",
+    "Origin-less harness cannot certify native storage persistence. Real import/export and serialized storage/migration tests are covered.",
+    "No human playtest, subjective listening, live hosting, or AAA/platform certification.",
+    "Initial four-way parallel Chromium batch exhausted the 4GiB shared container. Interrupted/failed attempts are excluded; final browser suites ran serially."
+  ]
+}

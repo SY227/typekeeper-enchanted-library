@@ -1,8 +1,8 @@
 {
   "name": "typekeeper-enchanted-library",
-  "version": "3.4.0",
+  "version": "3.6.2",
   "private": true,
-  "description": "Typekeeper: Enchanted Library. 48 title-aligned chapter atmospheres and crafted FIRE / ICE visuals, preserving the v3.3.6 game and scroll layout.",
+  "description": "Typekeeper: Enchanted Library \u2014 A Fresh Journey. Restart from Chapter 1 while preserving unlocked chapters, stars and personal bests.",
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -14,7 +14,7 @@
     "build": "node scripts/build.mjs",
     "check": "node scripts/check.mjs",
     "test": "node --test",
-    "test:e2e": "python3 e2e/browser_tests.py",
+    "test:e2e": "python3 scripts/browser-release.py",
     "assets": "python3 scripts/create_assets.py && python3 scripts/create_expressions.py && node scripts/manifest.mjs",
     "test:balance": "node scripts/playtest-simulation.mjs",
     "audio": "python3 scripts/compose_score.py",
@@ -40,7 +40,18 @@
     "test:scroll:modules": "python3 e2e/scroll_repair_tests.py --mode modules",
     "test:chapter-art": "python3 e2e/chapter_art_tests.py",
     "test:chapter-art:modules": "python3 e2e/chapter_art_tests.py --mode modules",
-    "test:flow": "node qa340/flow_audit.mjs --root . --out qa340/flow-model.json"
+    "test:flow": "node scripts/flow-audit.mjs --root . --out qa362/flow-model.json",
+    "test:clarity": "python3 e2e/clarity_mastery_tests.py",
+    "test:clarity:modules": "python3 e2e/clarity_mastery_tests.py --mode modules",
+    "test:flow:browser": "python3 e2e/flow_tests.py --root . --out qa362",
+    "test:ui": "python3 e2e/ui_spacing_tests.py",
+    "test:ui:modules": "python3 e2e/ui_spacing_tests.py --mode modules",
+    "test:score-chase": "python3 e2e/score_chase_tests.py",
+    "test:score-chase:modules": "python3 e2e/score_chase_tests.py --mode modules",
+    "test:impact": "python3 e2e/impact_tests.py",
+    "test:impact:modules": "python3 e2e/impact_tests.py --mode modules",
+    "test:restart": "python3 e2e/restart_journey_tests.py",
+    "test:restart:modules": "python3 e2e/restart_journey_tests.py --mode modules"
   },
   "license": "UNLICENSED"
 }

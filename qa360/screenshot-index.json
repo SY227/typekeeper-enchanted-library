@@ -1,0 +1,2535 @@
+{
+  "scope": "New v3.6.0 QA captures only. Lossy preview compression is not applied to runtime assets. Tests regenerate PNGs when rerun.",
+  "items": [
+    {
+      "original": "docs/screenshots/350-pressure-gameplay.png",
+      "originalSHA256": "1feee47c871e9c36cc64550d49afb35dd5d35f66d2eec3bedfd2b9ae3631d87b",
+      "size": [
+        1366,
+        1024
+      ],
+      "distributed": "docs/screenshots/350-pressure-gameplay.webp",
+      "distributedSHA256": "5e39cee197edad39da50420f7126adfb033c1db309fb287c360f8e7a08f5a8e3",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/350-wind-relief.png",
+      "originalSHA256": "be70734d98f6c5f941525df08393a9455143b951af6a91de7c0eedb8c67353d4",
+      "size": [
+        1366,
+        1024
+      ],
+      "distributed": "docs/screenshots/350-wind-relief.webp",
+      "distributedSHA256": "3d0659fb422cf37ae63969a79a7833194fbf7bd1510082650885d926f262283f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/350-wing-ceremony.png",
+      "originalSHA256": "53717a6360b496c52ae4da7820fc4220e1acc3e2ae08b4b700f54a957ef6470b",
+      "size": [
+        1366,
+        1024
+      ],
+      "distributed": "docs/screenshots/350-wing-ceremony.webp",
+      "distributedSHA256": "0ffafdebf88c11923042d991b6a0c263946c252e764823ea6910a25b667b41ec",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/350-wing-final.png",
+      "originalSHA256": "4b9d9bbc2d32ea75265c7a8499247a1650b4c43156cba78ce9218f8d454d77f7",
+      "size": [
+        1366,
+        1024
+      ],
+      "distributed": "docs/screenshots/350-wing-final.webp",
+      "distributedSHA256": "01a1347d8c477c5509ccf5bab4cf91810ac5452d957682b9c5d6286951b3fe18",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-01-1366-modules.png",
+      "originalSHA256": "7aa5b212e3746f1e4229a6aa3ff04d61980bc9e87d7dedb40541bcf2cbf6b6cd",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-01-1366-modules.webp",
+      "distributedSHA256": "810e10f899ee9171742a73727b9bc5f89f6dfc5cd102caa3297bd347ba13274c",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-01-1366-standalone.png",
+      "originalSHA256": "a473a42c229e86c320a5dab20868607192a0ee67355e2336cf8679aabb03a542",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-01-1366-standalone.webp",
+      "distributedSHA256": "9a99d06eae031ca51ecbcccac61d3a1a0e4e44cf53e3dd3eed63b1baa9e3d504",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-01-1920-modules.png",
+      "originalSHA256": "ccd05f82977207ef5b8896152cfecdc888bdb63461493baac9f7880d76be619e",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-01-1920-modules.webp",
+      "distributedSHA256": "edcedd3ae8da3850e85623be7d5293698f9da0e87d95e40838dc1effc704b612",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-01-1920-standalone.png",
+      "originalSHA256": "44897ceef9910a7fc915c65cd707ec007c2241e3cdbccb0e3e128df1c97c6d1a",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-01-1920-standalone.webp",
+      "distributedSHA256": "973848db966c395b90ef516a24cf930f6ce1b465e79f38dc94d9ba6def42a6d4",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-10-1366-modules.png",
+      "originalSHA256": "bacfe9074ab7200af54e49451b75c5aa929bf9eb005287aef39f9782d82ab0b7",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-10-1366-modules.webp",
+      "distributedSHA256": "f1b940578a2dc22c306b9b80c03e4fc07e25670ae959b248cfe2768b425eb132",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-10-1366-standalone.png",
+      "originalSHA256": "b99e7d057a94ec2780a46afa11f0d6d25f6b661ac0e88857ccd3360078aff2a3",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-10-1366-standalone.webp",
+      "distributedSHA256": "d6f9e21585e1fb140b03e7887969d49c7feff7ae9c643481b8e2c49e64721640",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-10-1920-modules.png",
+      "originalSHA256": "749c82557b5b9ee6e5cea028639f032466adcae80ea7d7aa6b1194e52934a673",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-10-1920-modules.webp",
+      "distributedSHA256": "a5e10df80aa7962bf2a1a66425920e3d896140468afd366a00bd9c7011c5afc6",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-10-1920-standalone.png",
+      "originalSHA256": "4bf804912c11a4d06f9c2f1a4ce7f45a96ec02a5bdc1c2c906b81a7437ef752a",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-10-1920-standalone.webp",
+      "distributedSHA256": "3f901a2aabd1d2fa2fec42b0b42bc7e2ea45890407abf94ea6151aa1fa6eb67a",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-17-1366-modules.png",
+      "originalSHA256": "294244ea942491857ec127b6881a5df4a3ea1f3c68edd42d6ca21a2d222cd03d",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-17-1366-modules.webp",
+      "distributedSHA256": "f1964d22cbfc0ab1302212eb81c4b557f7c309cc00ab68434f3898224408b75f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-17-1366-standalone.png",
+      "originalSHA256": "433f46e2a30c1577194ac9dd716cd9a8c70bdac3215d62b6c8e3cc518c31a3ad",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-17-1366-standalone.webp",
+      "distributedSHA256": "ec83ae3180bd6bcfcb3b49300a491deb4538703069f0fa518994aada1e6e5c9d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-17-1920-modules.png",
+      "originalSHA256": "99884bf966579c71ed9cb54ae08dd9dec549c2e50e9057966c7e7487588b0fb6",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-17-1920-modules.webp",
+      "distributedSHA256": "c0eb342e94dfa938b44aa6ea8e3d498a96bc4a62dc4c67578a88c3147c6a1f7c",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-17-1920-standalone.png",
+      "originalSHA256": "9d72cfaa04ce057f48fc7c911fe7b0a79bd449ac21ba52f685e50fcb65c2b20a",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-17-1920-standalone.webp",
+      "distributedSHA256": "afc3f1600f9ca9550820974389c1893381ca9e34186bf16bf7d9672939604703",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-24-1366-modules.png",
+      "originalSHA256": "8d0139ce29de4998426374f9ff558d27693b84aea42f572ff2058d130e66cde7",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-24-1366-modules.webp",
+      "distributedSHA256": "b6de6e71054f0b322e95b9e591dde1297b9ab79ae95cb8291331058074b3433e",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-24-1366-standalone.png",
+      "originalSHA256": "6b1a39b56f8528dd5c63e28e1a6dc1662194dac8ea23dfa941724c61655544e3",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-24-1366-standalone.webp",
+      "distributedSHA256": "337d8defb61287b0c7dffd43c9033048c65c29e36631b4038ce1ce68a49a83aa",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-24-1920-modules.png",
+      "originalSHA256": "0d6d136539846afe15dcdd7b8329c215a915261eb1606e5955f5decc3eb2f087",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-24-1920-modules.webp",
+      "distributedSHA256": "6c2d9bcd8e02626471894b673fce87d918565d8eb853242d67af6b2332995a37",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-24-1920-standalone.png",
+      "originalSHA256": "fa2e4934a1def4e459c249003c94b94761070af8cdaa74eb1ed39e2f5d3d492a",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-24-1920-standalone.webp",
+      "distributedSHA256": "9b26166583271c0ac852d702858716d6d852d0eacde5e9bafaee74ab1c714a89",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-28-1366-modules.png",
+      "originalSHA256": "49cef8ff6df0029c70056337e2891bb6118d001681d1171e619701abb7c9d35b",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-28-1366-modules.webp",
+      "distributedSHA256": "93f71c737858bf0914fc35d2951c128b21479c6ff50fc10eebf48ef60957aaf4",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-28-1366-standalone.png",
+      "originalSHA256": "98c9710492aaf024195a3d130f338ba2bb412e6f144986315dc2ada3345e67dd",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-28-1366-standalone.webp",
+      "distributedSHA256": "48c380d5b7961a02fb87bc19e985388c1aa3583131c5d9f324ee450e9d41d489",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-28-1920-modules.png",
+      "originalSHA256": "bb8991814eb6b523fe27ebe3b9b978930d171cbb4a1c90d4ab58bf701e1a9630",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-28-1920-modules.webp",
+      "distributedSHA256": "687d1a2226848e18152999bac2086871a1bc418a1d806e5193a2833bf6f858c0",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-28-1920-standalone.png",
+      "originalSHA256": "db3af4c16824fe837bcb9dd7398847527f75d9b10c8d9deee1ea5c6d68fc7981",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-28-1920-standalone.webp",
+      "distributedSHA256": "041d009bc95f002654cf95ab0505dbda90065dc8e2c4423cb236f123d140a984",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-35-1366-modules.png",
+      "originalSHA256": "41dd5b2a4d9a1109bbca0bef5bc9260d8d6385f9be661f0f01fc37b1b9f7ec31",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-35-1366-modules.webp",
+      "distributedSHA256": "1a6bd67769fc8b170730b1f9245ab71afa369a61ab1ea25461c7b8340a00fdfb",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-35-1366-standalone.png",
+      "originalSHA256": "e7db27d2a499255261427b7fa6091770c34c6cc035d4974a64e07f4b66f961c1",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-35-1366-standalone.webp",
+      "distributedSHA256": "045bf28face5256b2164cd598aee0a7180254b0795ad5e9621f8ddf0588b7cd0",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-35-1920-modules.png",
+      "originalSHA256": "e2c65b8f6133ffd9dbbab9b4b6f75d7ce061493a30cd83c6a010f25e45c05b57",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-35-1920-modules.webp",
+      "distributedSHA256": "367923886540ce4c3a333a64048d0469c630a1178010238cb967b65790ae0a12",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-35-1920-standalone.png",
+      "originalSHA256": "65b391cdbc71b62e86c5d061c891c45f75822b8db38df6f6415919dc1c53c3cd",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-35-1920-standalone.webp",
+      "distributedSHA256": "deaebf11e1b35923e788e2736796c5b20d1ca8a743beb4530767249ec34c9fcb",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-41-1366-modules.png",
+      "originalSHA256": "8f6c81ad1a8611990debf1ae8cf943c4d57f20859faeb45b1b9fd79c8d44a651",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-41-1366-modules.webp",
+      "distributedSHA256": "7034408cb8f79fa0b3968ddd2809fbe58507a11115ad56a62018c1fd1ad929c7",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-41-1366-standalone.png",
+      "originalSHA256": "b48bfd3ffa78a635b71bab296e262f1cd352099e734cb7b13632169052e0356e",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-41-1366-standalone.webp",
+      "distributedSHA256": "cf3849d3ab96e138d0a8925a1447ecb31c775bdd7affe5a38061c51566097ba7",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-41-1920-modules.png",
+      "originalSHA256": "1192a0d4c1eca78b5d2db265ad6f383739fe52df336c7c0e27da48a9979b6421",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-41-1920-modules.webp",
+      "distributedSHA256": "fac3dc7778dff643f3128df1751f411e5d8848935a859c7d7b193f8cae89cf61",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-41-1920-standalone.png",
+      "originalSHA256": "956429a63a88257d906ba19b2ec5bdc08b108fe61ecd2579afb71fce9bc466f6",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-41-1920-standalone.webp",
+      "distributedSHA256": "31573f7e2c7acea2b3279a3003e49195406856f07466dbeb7fdf803ed773742f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-48-1366-modules.png",
+      "originalSHA256": "5fcabf48b15f3604328bd4ac7088a498f3b91099235b3bb3dd2e22539e4075aa",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-48-1366-modules.webp",
+      "distributedSHA256": "c2a54f244fc19b3918e5fae3f78330d8a88cac705f683454864b4d2d4131d5c8",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-48-1366-standalone.png",
+      "originalSHA256": "5ed8863888375dea688ab0c6cf3ebfadaa72567e52bc6a132a3b8ae40f1b8a23",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-48-1366-standalone.webp",
+      "distributedSHA256": "4bb7f64c326f396479c47b7e1b502d85bf201ea5f0202fb9ba534b669b783c50",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-48-1920-modules.png",
+      "originalSHA256": "56c807bdae873fa3f70b2fa7032771f65f08c8ad22e997ffddc82bd288b632ab",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-48-1920-modules.webp",
+      "distributedSHA256": "e41e0104ebb60c2a553bf6289990ac678a2a0a295394605e30f5c7f6ed85f158",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/chapter-48-1920-standalone.png",
+      "originalSHA256": "0e71bd08c9389f11f1a96fbdeb79e896a26ff3ef604818a855486fb71ef0b069",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/chapter-48-1920-standalone.webp",
+      "distributedSHA256": "9549822e8b8eaeb529481ab9474092aba41f31791d1969bd758dd99bc2b46497",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/fire-modules.png",
+      "originalSHA256": "423bf4b507334632b661e2c0a77b492957594fcbf2b15822670776618cf2f2e3",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/fire-modules.webp",
+      "distributedSHA256": "43f64e990d0adcea331549a449e9f73fc723133b26990aa05cf324a20067aba3",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/fire-standalone.png",
+      "originalSHA256": "049b5f5bda866741cbea1e1cff9e7fb4f8bac577fd597605f91d05be8d53ed29",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/fire-standalone.webp",
+      "distributedSHA256": "32aed8340e7b696df905382e26eb4322971f046b492af6c1e29851ddd9b2de8c",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/folio-gameplay-1366-modules.png",
+      "originalSHA256": "daba65928c5a17bf022c3b30bfa6180d79e9cda02a11f553f750ad290c3f9953",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/folio-gameplay-1366-modules.webp",
+      "distributedSHA256": "70ee46ee0c75da25f0089b3068b6ed4716dd10b36eb580cd5cdd6803fec664a4",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/folio-gameplay-1366-standalone.png",
+      "originalSHA256": "daba65928c5a17bf022c3b30bfa6180d79e9cda02a11f553f750ad290c3f9953",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/folio-gameplay-1366-standalone.webp",
+      "distributedSHA256": "70ee46ee0c75da25f0089b3068b6ed4716dd10b36eb580cd5cdd6803fec664a4",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/folio-gameplay-1920-modules.png",
+      "originalSHA256": "014e2b507dc14cb5848cee78c5f82a68811372a43c88953f2b7e5e0c69712c3c",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/folio-gameplay-1920-modules.webp",
+      "distributedSHA256": "0957bd8c254d6014fa696675f60b8ea1bd01a91bd091fdbf5a3b74901fefa2e9",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/folio-gameplay-1920-standalone.png",
+      "originalSHA256": "014e2b507dc14cb5848cee78c5f82a68811372a43c88953f2b7e5e0c69712c3c",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/folio-gameplay-1920-standalone.webp",
+      "distributedSHA256": "0957bd8c254d6014fa696675f60b8ea1bd01a91bd091fdbf5a3b74901fefa2e9",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/folio-materials-modules.png",
+      "originalSHA256": "eb455600da56cd79c60e233373f6c9f1ab07bd8c4bd37d242992cba686a43ab6",
+      "size": [
+        1160,
+        590
+      ],
+      "distributed": "docs/screenshots/v3.6.0/folio-materials-modules.webp",
+      "distributedSHA256": "0c2f96fd3fe84c0bbcb81cc6f4425fee85965b6a6b0703e1c55212de11c8294f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/folio-materials-standalone.png",
+      "originalSHA256": "eb455600da56cd79c60e233373f6c9f1ab07bd8c4bd37d242992cba686a43ab6",
+      "size": [
+        1160,
+        590
+      ],
+      "distributed": "docs/screenshots/v3.6.0/folio-materials-standalone.webp",
+      "distributedSHA256": "0c2f96fd3fe84c0bbcb81cc6f4425fee85965b6a6b0703e1c55212de11c8294f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/gameplay-1366-modules.png",
+      "originalSHA256": "947e96bd1072f569d8e30c438273cfaad306cccad0b49df57fd9b38d6ca41da3",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/gameplay-1366-modules.webp",
+      "distributedSHA256": "9e511bcba559aac3c195fccdffa11cb3be9c78019a287615f1728199e81b9d77",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/gameplay-1366-standalone.png",
+      "originalSHA256": "947e96bd1072f569d8e30c438273cfaad306cccad0b49df57fd9b38d6ca41da3",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/gameplay-1366-standalone.webp",
+      "distributedSHA256": "9e511bcba559aac3c195fccdffa11cb3be9c78019a287615f1728199e81b9d77",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/gameplay-1920-modules.png",
+      "originalSHA256": "d664a24c794a4520a04f4376f08c4d1294c3b84a2c5a99f21a00706d3a50a894",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/gameplay-1920-modules.webp",
+      "distributedSHA256": "fe0ba2e5d8b8b86625117156e4617d6ce5669ca745cec83bcdef7f07cf90e708",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/gameplay-1920-standalone.png",
+      "originalSHA256": "d664a24c794a4520a04f4376f08c4d1294c3b84a2c5a99f21a00706d3a50a894",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/gameplay-1920-standalone.webp",
+      "distributedSHA256": "fe0ba2e5d8b8b86625117156e4617d6ce5669ca745cec83bcdef7f07cf90e708",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/ice-modules.png",
+      "originalSHA256": "56a68514e1cb6fd5d7ffec1288c69ae10e01c690c34fe7076a86fd4c0ff81049",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/ice-modules.webp",
+      "distributedSHA256": "ca65e22f5010619e1a2367787f5b0bcd04b488346ca735a50ec4dc9d1afd4e9b",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/ice-standalone.png",
+      "originalSHA256": "c95b4965842f5902b28fc557b4eac7ddaae08d63d42a4de1416d3a30e39920a6",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/ice-standalone.webp",
+      "distributedSHA256": "83a57485f005ebf2760dfcaf4df779e743f0a87313fe61e4e2df6b6fd7eeb092",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/materials-modules.png",
+      "originalSHA256": "0b01d44fac4831b856063051cb99ba09371798d0523a7b75ad24fd626f4357ca",
+      "size": [
+        1200,
+        620
+      ],
+      "distributed": "docs/screenshots/v3.6.0/materials-modules.webp",
+      "distributedSHA256": "652e962f073ea54b986ec61698eb71bedb538bd483b086e02c799d2b9e74f390",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/materials-standalone.png",
+      "originalSHA256": "0b01d44fac4831b856063051cb99ba09371798d0523a7b75ad24fd626f4357ca",
+      "size": [
+        1200,
+        620
+      ],
+      "distributed": "docs/screenshots/v3.6.0/materials-standalone.webp",
+      "distributedSHA256": "652e962f073ea54b986ec61698eb71bedb538bd483b086e02c799d2b9e74f390",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/single-row-1366-modules.png",
+      "originalSHA256": "a3c4c71eb6197b0dd8427b5f7352b908085b45bfa07ddc2fe05c2b85fd844525",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/single-row-1366-modules.webp",
+      "distributedSHA256": "f04cd06c22239a1b8e3eb16872db91dbc00365aad8d2bed9bf7b2bbaea3d9b39",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/single-row-1366-standalone.png",
+      "originalSHA256": "a3c4c71eb6197b0dd8427b5f7352b908085b45bfa07ddc2fe05c2b85fd844525",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/single-row-1366-standalone.webp",
+      "distributedSHA256": "f04cd06c22239a1b8e3eb16872db91dbc00365aad8d2bed9bf7b2bbaea3d9b39",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/single-row-1920-modules.png",
+      "originalSHA256": "9a1f3cfded9f02b833d1e5868157fc43de2e95c7bc405b0eb62939306f637390",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/single-row-1920-modules.webp",
+      "distributedSHA256": "80137dcf8c1c74d2b5164283375f4af178f4fe70f57678373ca785b3a4d769fa",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/single-row-1920-standalone.png",
+      "originalSHA256": "9a1f3cfded9f02b833d1e5868157fc43de2e95c7bc405b0eb62939306f637390",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "docs/screenshots/v3.6.0/single-row-1920-standalone.webp",
+      "distributedSHA256": "80137dcf8c1c74d2b5164283375f4af178f4fe70f57678373ca785b3a4d769fa",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/title-1366-modules.png",
+      "originalSHA256": "f12c1f764e1f38064fcef1b6241fe1e0ef32d9c0050baa5173c3fbd935b8436f",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/title-1366-modules.webp",
+      "distributedSHA256": "ec7f93345898aa8459b9205f963d05eab7dfe6f16f88c0b2f6e3ed8712cad4b9",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "docs/screenshots/v3.6.0/title-1366-standalone.png",
+      "originalSHA256": "f12c1f764e1f38064fcef1b6241fe1e0ef32d9c0050baa5173c3fbd935b8436f",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "docs/screenshots/v3.6.0/title-1366-standalone.webp",
+      "distributedSHA256": "ec7f93345898aa8459b9205f963d05eab7dfe6f16f88c0b2f6e3ed8712cad4b9",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/full-campaign-complete-modules.png",
+      "originalSHA256": "0a981099175bf79120de05c160c72a007ebaed3021314b43fe7436cfe0720946",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/full-campaign-complete-modules.webp",
+      "distributedSHA256": "4efbbb20276b9fd0e8b1ad1503c287fb659acfe8193f047fa8df9d9d386172fe",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/full-campaign-complete-standalone.png",
+      "originalSHA256": "a7097ed22587a61bbb86c45eaef0d63b7695bbb79d4316e8c72cd0b11e18b5de",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/full-campaign-complete-standalone.webp",
+      "distributedSHA256": "8c74bf5c146fd9a860d35b8fa740c1d063c2a7601ad58f384f044783bb6a4384",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/exact-word-priority-modules.png",
+      "originalSHA256": "ed019499e08a6b7e2a4b842530faa252447d87ec8d09c4641cac09bc1593b48a",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/exact-word-priority-modules.webp",
+      "distributedSHA256": "09b826eca29d9a6c6a6aa708d4fbd4e201b207f514f59803ba55b88b3be1464e",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/exact-word-priority-standalone.png",
+      "originalSHA256": "90a8a9ccbfae379e0b05a07c1bcf41f7ce9890eec2e21b82149174f48bc9f68b",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/exact-word-priority-standalone.webp",
+      "distributedSHA256": "54c862307903bd46a7ffc5c545a86d372249c2fae2e752f72efaf8175266d50f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-1024x600-modules.png",
+      "originalSHA256": "412e273680a787fc7a2c4a4b4699a758894741a8e57ea4907a8a3d7d8ef4f73e",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-1024x600-modules.webp",
+      "distributedSHA256": "455d771fb5807956b18b68f7972180423412033035a8389b8e19371853c29364",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-1024x600-standalone.png",
+      "originalSHA256": "412e273680a787fc7a2c4a4b4699a758894741a8e57ea4907a8a3d7d8ef4f73e",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-1024x600-standalone.webp",
+      "distributedSHA256": "455d771fb5807956b18b68f7972180423412033035a8389b8e19371853c29364",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-1280x720-modules.png",
+      "originalSHA256": "76cc84fa316fe3aa95150d3b27f8d596d4e304e692f5521697984effd18850f1",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-1280x720-modules.webp",
+      "distributedSHA256": "e8430fa98543b48ff03ffe9407a12580f2fb90ef3ed494c8960524e5d3aade9a",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-1280x720-standalone.png",
+      "originalSHA256": "76cc84fa316fe3aa95150d3b27f8d596d4e304e692f5521697984effd18850f1",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-1280x720-standalone.webp",
+      "distributedSHA256": "e8430fa98543b48ff03ffe9407a12580f2fb90ef3ed494c8960524e5d3aade9a",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-1366x768-modules.png",
+      "originalSHA256": "50144d08db0ea70601f7e1a976508eb182d8b06666f5888f6b2b59b7c1c007b6",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-1366x768-modules.webp",
+      "distributedSHA256": "0c24377d931629c7a07c2463c4436a9ec5d3bf5295673afce07072a84364686a",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-1366x768-standalone.png",
+      "originalSHA256": "3a90fe9041e0aa0edf5df3e5b7ae707052a2c106543850ed0cbf826fb52a4d3b",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-1366x768-standalone.webp",
+      "distributedSHA256": "56c2211797c0dda524595257095128b5d14491678c1e2e6113e5848218c41639",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-1920x1080-modules.png",
+      "originalSHA256": "a3d149a1e1f6b0679a4b9e702f9601d288902d5370118416afbdf55c28fbaf67",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-1920x1080-modules.webp",
+      "distributedSHA256": "10d4ead6fa9858e0ec4d25087fe6a51990c217526bc64e92570b6bf847004f2d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-1920x1080-standalone.png",
+      "originalSHA256": "a3d149a1e1f6b0679a4b9e702f9601d288902d5370118416afbdf55c28fbaf67",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-1920x1080-standalone.webp",
+      "distributedSHA256": "10d4ead6fa9858e0ec4d25087fe6a51990c217526bc64e92570b6bf847004f2d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-640x480-modules.png",
+      "originalSHA256": "1b3087693212f522227c39c3eb1c2cf1e1cc69e313f457d836799b596bed8846",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-640x480-modules.webp",
+      "distributedSHA256": "e5c5d6ccb98cf70ae0766ca370e2b3f6ccbbf8e22cf163c39f82f11039b09a2e",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-640x480-standalone.png",
+      "originalSHA256": "1b3087693212f522227c39c3eb1c2cf1e1cc69e313f457d836799b596bed8846",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-640x480-standalone.webp",
+      "distributedSHA256": "e5c5d6ccb98cf70ae0766ca370e2b3f6ccbbf8e22cf163c39f82f11039b09a2e",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-800x600-modules.png",
+      "originalSHA256": "f6b3ebd025758e2ded1c4b6ed2847d656b9cf707b41781c442e869fa2da6bb21",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-800x600-modules.webp",
+      "distributedSHA256": "dc37f43c79e669ecade14cd0acb428464c7ed8db9296cba9b91aef9707f3a65e",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/high-pressure-800x600-standalone.png",
+      "originalSHA256": "f6b3ebd025758e2ded1c4b6ed2847d656b9cf707b41781c442e869fa2da6bb21",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/impact-screenshots/high-pressure-800x600-standalone.webp",
+      "distributedSHA256": "dc37f43c79e669ecade14cd0acb428464c7ed8db9296cba9b91aef9707f3a65e",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/matching-prefix-modules.png",
+      "originalSHA256": "00f1ad591c8e75f79ad964346ab0542f1e9f89e6dd3e6f2613c868e546d73526",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/matching-prefix-modules.webp",
+      "distributedSHA256": "a4e6f6e55d0c308d9af8e036d2ee8fd0066597136d4cef784dcbe917ad84a6db",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/matching-prefix-standalone.png",
+      "originalSHA256": "55717653a12ff22e6acfb8f36947293abf4e4316c20251dc92804a8579b21bef",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/matching-prefix-standalone.webp",
+      "distributedSHA256": "d98bb22e1028b8be2fe6f198d8397dc0b26f6f77c788150bf61e62f627297c0a",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/miss-in-flight-modules.png",
+      "originalSHA256": "840f1802bdbdc9a387cb1bac56fcf9b876428529997a3f98101aa3b2e3b8994a",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/miss-in-flight-modules.webp",
+      "distributedSHA256": "3b9b4d6e19e4a31565aa40170d6f3e9e412f12988e3c8de2453acc15b048dd1c",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/miss-in-flight-standalone.png",
+      "originalSHA256": "8e6072b8a2244dba43cccb1fe4b45fc253a953ce3769d8a78da32c08ce5fb1ec",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/miss-in-flight-standalone.webp",
+      "distributedSHA256": "896a69e521e8f80bec1499093e28a15bb1a1addf353f2361ff43accee358199b",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/paper-edge-fire-modules.png",
+      "originalSHA256": "b7f140f1d7c9204d90ed0c32d58c9ebdb1553d069a7b83b25ba2c362cd3d9203",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/paper-edge-fire-modules.webp",
+      "distributedSHA256": "99080d79c88e20dd42c4e64f67dd12607baeaf3c48181e3f5c7f6607e817ef54",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/paper-edge-fire-standalone.png",
+      "originalSHA256": "fd63ab9c9a43209d8a17e692e2794a3f9fe7ff88bb56c2f116ddd63774209d2b",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/paper-edge-fire-standalone.webp",
+      "distributedSHA256": "b4078d8be4a4ead8b56674de7c93265feebaac448d4cb3e23d050854b5a6fd82",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/paper-landing-modules.png",
+      "originalSHA256": "2c4062440cf50fca67893851cba0da0cf5f0781fd3f7caa50d18e98da3dcc3df",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/paper-landing-modules.webp",
+      "distributedSHA256": "97cad37aa9b036e30bd427785b64d7b25bb875982c0f5db0c864f90e1544f753",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/paper-landing-standalone.png",
+      "originalSHA256": "bb7eebf6c1395c5ef5502f7e40e611b4edc2672e40b12e3e40dd1fa1612c895a",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/paper-landing-standalone.webp",
+      "distributedSHA256": "7804a43623b2194b678e2dcd02a60bcb7a9cc68eaf4c703cc437d49b0824adf3",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/ready-to-save-modules.png",
+      "originalSHA256": "e4cdf551fde2abba44fd6397410523ea78afdab4f1c3b7c1db0f4702b2091ef2",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/ready-to-save-modules.webp",
+      "distributedSHA256": "744f3ed4acb3e73042716b02d22a4dbc1b36c2770e5ae8a2ce36a1995cddabf3",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/ready-to-save-standalone.png",
+      "originalSHA256": "c82c6f4bfcac5d84d03655c1070557c38fc0b714e8221bc50fd824710e67dd3a",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/ready-to-save-standalone.webp",
+      "distributedSHA256": "80cde3dea989afcec474bac9845422575a0575d82c0692d91641acb981b5dd8f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/reduced-high-contrast-modules.png",
+      "originalSHA256": "7af464d12b213eec595d77286d421ff2af27d681d6f5917e78278b796e5d3027",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/reduced-high-contrast-modules.webp",
+      "distributedSHA256": "893460b3a7fffd80de7668c9a4c4d57d466655ed9692c53eb48ee612c666466b",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/reduced-high-contrast-standalone.png",
+      "originalSHA256": "7af464d12b213eec595d77286d421ff2af27d681d6f5917e78278b796e5d3027",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/reduced-high-contrast-standalone.webp",
+      "distributedSHA256": "893460b3a7fffd80de7668c9a4c4d57d466655ed9692c53eb48ee612c666466b",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/twelve-card-stress-modules.png",
+      "originalSHA256": "81d9d82fc820b8a87b51872b78ebb152617b7484ec84c35796cf0ba543b7b9e2",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/twelve-card-stress-modules.webp",
+      "distributedSHA256": "b5ac7a41988f6ea01500406d1ae5ca6c9affb7c4d31c7a6af6c44c8b1e7bb6d9",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/twelve-card-stress-standalone.png",
+      "originalSHA256": "1c66c023b17dec93a19e99dbca2d1710309bc197e990f21e38903a82e727fa49",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/twelve-card-stress-standalone.webp",
+      "distributedSHA256": "2518796117de37f7bb5898c5ac6f09b9fa476577acb94acd6796de9413c1e248",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/word-origin-release-modules.png",
+      "originalSHA256": "51931774eafc8bc86887e45deabe64d4d6d49cbe98be61da002e4ba27929c676",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/word-origin-release-modules.webp",
+      "distributedSHA256": "31a39815fbf8fd26b265c4a891cd4a67b06c78de520842939c5d55617d81ad6f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/impact-screenshots/word-origin-release-standalone.png",
+      "originalSHA256": "6399447d7c11e1b400b251d7c201c9be4ff60dfd5290f00ce36b5ca1ae426e23",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/impact-screenshots/word-origin-release-standalone.webp",
+      "distributedSHA256": "4cfa289f7c1f5237f1766e0652dd3662f9e6f5ae43d6c47f16ccd9056e6f97e5",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/level5-final-word-modules.png",
+      "originalSHA256": "00ddbf5122d772c2727ea3feda82213021fb394cbbe68896f253e799b8800e24",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/level5-final-word-modules.webp",
+      "distributedSHA256": "db9cbe5f7faf85d294a05a89995fd7a2dcf97e46f1b3b31c1f1c586db62599a9",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/level5-final-word-standalone.png",
+      "originalSHA256": "cd553524ae957c146a6b4596622936d752d39687055ef2586989056180e711e4",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/level5-final-word-standalone.webp",
+      "distributedSHA256": "af6179a2c46277befede306dbe19d301cdb3e6e416ce19931dd7b4005daad07f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/live-5-13.png",
+      "originalSHA256": "7c3d72c1f094ecc59a5f7cb19aa0a0cd051d515a11b546d7fb7da4909d9693b9",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/live-5-13.webp",
+      "distributedSHA256": "6b731c7234088671555388720886430faf7294f013bee1f47a51a6fd07d62e17",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/live-end.png",
+      "originalSHA256": "e29dd2cb3f8604f8da40a9f56383519d31a3226e75ef19a1f6a6c3a55b8fc4f1",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/live-end.webp",
+      "distributedSHA256": "2eaaeb577ff2d123aff74095c36534ead2c045a836d483112c445a507fc88b7c",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/natural-pressure.png",
+      "originalSHA256": "d8058bb5cb8a750b01598a70b38d77cc924e9afcac2dbaaf6c7e7287b151c27b",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/natural-pressure.webp",
+      "distributedSHA256": "3eeec70a49da9cf9101147a0217d2344ceb10a14f66accf967ed7296e01e8fe8",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/natural-recovery.png",
+      "originalSHA256": "0ae518c442e619f6cc34dc032dae8d8cc5f653b9ffcc25e4c89df09094d82f31",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/natural-recovery.webp",
+      "distributedSHA256": "82a58102b16e953b9a0d3ea13cbabd900bc67cbc96c37448480acb4e156a1506",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/best-1024x600-modules.png",
+      "originalSHA256": "7f1104959c591f025ff9a3c86565ce9e55dd68a9b2b58edbec6068bd03fa1ce2",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/score-chase-screenshots/best-1024x600-modules.webp",
+      "distributedSHA256": "b9c1908e4e4b19dc305edc298539106f9c334c45453e91b209fdbbea3cb35ae8",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/best-1024x600-standalone.png",
+      "originalSHA256": "7f1104959c591f025ff9a3c86565ce9e55dd68a9b2b58edbec6068bd03fa1ce2",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/score-chase-screenshots/best-1024x600-standalone.webp",
+      "distributedSHA256": "b9c1908e4e4b19dc305edc298539106f9c334c45453e91b209fdbbea3cb35ae8",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/best-1366x768-modules.png",
+      "originalSHA256": "3a83ad6ff4e4a6131b19f544d1f7dfca2ed013cb416318072496c4a2e436a9be",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/score-chase-screenshots/best-1366x768-modules.webp",
+      "distributedSHA256": "2f9a8e05f66481daf725b7a7d3bbed95b8aaf0ecb2f9719d8ef2bad20e35adac",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/best-1366x768-standalone.png",
+      "originalSHA256": "3a83ad6ff4e4a6131b19f544d1f7dfca2ed013cb416318072496c4a2e436a9be",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/score-chase-screenshots/best-1366x768-standalone.webp",
+      "distributedSHA256": "2f9a8e05f66481daf725b7a7d3bbed95b8aaf0ecb2f9719d8ef2bad20e35adac",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/best-1920x1080-modules.png",
+      "originalSHA256": "7171d69ce066c5095f45c62cc7a3f8566afa78ec51f6f80cbf5a597741bcaa4f",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "qa360/score-chase-screenshots/best-1920x1080-modules.webp",
+      "distributedSHA256": "ba40750997e6154a4c5bfdd58beb4efb2503b7e474b5d491d0fd5e90f7d55c18",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/best-1920x1080-standalone.png",
+      "originalSHA256": "7171d69ce066c5095f45c62cc7a3f8566afa78ec51f6f80cbf5a597741bcaa4f",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "qa360/score-chase-screenshots/best-1920x1080-standalone.webp",
+      "distributedSHA256": "ba40750997e6154a4c5bfdd58beb4efb2503b7e474b5d491d0fd5e90f7d55c18",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/best-800x600-modules.png",
+      "originalSHA256": "2af23a6e69259374e6faac7e39f076ebdd7669c116d000288b5db12003bf906c",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/score-chase-screenshots/best-800x600-modules.webp",
+      "distributedSHA256": "57272dd5a2749c2dfcb5105c6f7b51072840852a87f8e2b9248fbb918b88d74d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/best-800x600-standalone.png",
+      "originalSHA256": "2af23a6e69259374e6faac7e39f076ebdd7669c116d000288b5db12003bf906c",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/score-chase-screenshots/best-800x600-standalone.webp",
+      "distributedSHA256": "57272dd5a2749c2dfcb5105c6f7b51072840852a87f8e2b9248fbb918b88d74d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/bonus-clear-modules.png",
+      "originalSHA256": "01248b6e35b3b0523714ab418a219e9bfeac70477f222a5971eb8bdd6554897e",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/score-chase-screenshots/bonus-clear-modules.webp",
+      "distributedSHA256": "6a07c36ef4d8105e8706e6ea40e6388dd2bbb9d5a1c3c6df5f93815649840720",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/bonus-clear-standalone.png",
+      "originalSHA256": "01248b6e35b3b0523714ab418a219e9bfeac70477f222a5971eb8bdd6554897e",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/score-chase-screenshots/bonus-clear-standalone.webp",
+      "distributedSHA256": "6a07c36ef4d8105e8706e6ea40e6388dd2bbb9d5a1c3c6df5f93815649840720",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/new-best-modules.png",
+      "originalSHA256": "d068a139e2f6d9eea78e3b0ea0632f7e1692f5029bd1192b0c40187f3405bd1a",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/score-chase-screenshots/new-best-modules.webp",
+      "distributedSHA256": "db69be83496f7f9f3856ad90b2156b8df5f1ffd5a86fc92652d9228c93621477",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/new-best-standalone.png",
+      "originalSHA256": "ccd0a7e3d59162602adb7a45508e9bf633e239f65b01edcc4d78fe2feb10d643",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/score-chase-screenshots/new-best-standalone.webp",
+      "distributedSHA256": "56aa4f1d666974de71828577e62db245e8f835d7a436a74e3906c6829330d4be",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/reduced-high-contrast-modules.png",
+      "originalSHA256": "7cdf76ad47d542a7c7fc852ba68f7770ef07108a9b57550a1983e61cbb1cdffa",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/score-chase-screenshots/reduced-high-contrast-modules.webp",
+      "distributedSHA256": "25e5963fa88a335cc5fa70f2b7d4551bc7e5a3ccd0810cca69bc9cf2c4456826",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/reduced-high-contrast-standalone.png",
+      "originalSHA256": "7cdf76ad47d542a7c7fc852ba68f7770ef07108a9b57550a1983e61cbb1cdffa",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/score-chase-screenshots/reduced-high-contrast-standalone.webp",
+      "distributedSHA256": "25e5963fa88a335cc5fa70f2b7d4551bc7e5a3ccd0810cca69bc9cf2c4456826",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/score-chase-final-modules.png",
+      "originalSHA256": "7a9f9cde7a84d1c4e2f5c690093812f48b282f154637891c2b16e2a922f20373",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/score-chase-screenshots/score-chase-final-modules.webp",
+      "distributedSHA256": "c4399c91690c214544505104c56350f2b8f06d18ade9fedfafea8c3b747eefda",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/score-chase-screenshots/score-chase-final-standalone.png",
+      "originalSHA256": "a52aaf6d49668ec8cad218328db2844302fc30b27696de4ca9e390411180eada",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/score-chase-screenshots/score-chase-final-standalone.webp",
+      "distributedSHA256": "c4399c91690c214544505104c56350f2b8f06d18ade9fedfafea8c3b747eefda",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/chapter-personal-best-modules.png",
+      "originalSHA256": "c0f3ef97cee270b5abf685c30d83654dd7f52eabed4a9913b147b751c0618bd7",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/chapter-personal-best-modules.webp",
+      "distributedSHA256": "00d618ba66066d31e30b19be844a0c69ad340b1a014a8b46aefe85492389ee76",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/chapter-personal-best-standalone.png",
+      "originalSHA256": "c0f3ef97cee270b5abf685c30d83654dd7f52eabed4a9913b147b751c0618bd7",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/chapter-personal-best-standalone.webp",
+      "distributedSHA256": "00d618ba66066d31e30b19be844a0c69ad340b1a014a8b46aefe85492389ee76",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/clear-100pct-three-misses-modules.png",
+      "originalSHA256": "2a2301282695b929c5509fa10fcad8a8b093475cd0e433d7b7586d924c6091bf",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/clear-100pct-three-misses-modules.webp",
+      "distributedSHA256": "20c00000dd56532675334754db3421e8ade1ce37683c561c6c876c9b7b56fdfe",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/clear-100pct-three-misses-standalone.png",
+      "originalSHA256": "2a2301282695b929c5509fa10fcad8a8b093475cd0e433d7b7586d924c6091bf",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/clear-100pct-three-misses-standalone.webp",
+      "distributedSHA256": "20c00000dd56532675334754db3421e8ade1ce37683c561c6c876c9b7b56fdfe",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/clockwork-restored-modules.png",
+      "originalSHA256": "d61f696d01ca784c93aa8f754bc7e57e8057f9f68421ec214cf8893d72a924b2",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/clockwork-restored-modules.webp",
+      "distributedSHA256": "2f535d48c32eab66b5c59dbdbd797723d89c0883f5c2834b1b10f04a8afff5a2",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/clockwork-restored-standalone.png",
+      "originalSHA256": "b251e9fc7b785ffc0f23ce2184eaa04813f5d99dc2549ad3000045ac9bdeaa21",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/clockwork-restored-standalone.webp",
+      "distributedSHA256": "c89c1a43e56ec3a36ade35424c1a440ba39847e6208fd794f6ec5f4d4d6d4274",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/finale-all-seals-modules.png",
+      "originalSHA256": "a69c239fb9998680fb1d298d300aada3ce058364cc1afce7f9deaf4134806572",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/finale-all-seals-modules.webp",
+      "distributedSHA256": "d3a37f7c39f7aca3bdba996d600aaf929c260b47daac1a29d08dd01a8949936d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/finale-all-seals-standalone.png",
+      "originalSHA256": "4e4568a8d15301b89a75ecb5986dd238973be4217e13db333911492ca4a06807",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/finale-all-seals-standalone.webp",
+      "distributedSHA256": "a9dde2698083c4d41068180525359c72e21d5826536c2a9125aec371f13e82fd",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/finale-reduced-motion-modules.png",
+      "originalSHA256": "09e4a164015663ccd99acd8b465fefe130a01e828b0a968838501c5a2031e275",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/finale-reduced-motion-modules.webp",
+      "distributedSHA256": "5e1d61ad2de7f5ab1b1ea4b3832b9f7a4461d485e06e4bd42c554963bb598546",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/finale-reduced-motion-standalone.png",
+      "originalSHA256": "09e4a164015663ccd99acd8b465fefe130a01e828b0a968838501c5a2031e275",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/finale-reduced-motion-standalone.webp",
+      "distributedSHA256": "5e1d61ad2de7f5ab1b1ea4b3832b9f7a4461d485e06e4bd42c554963bb598546",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/finale-results-modules.png",
+      "originalSHA256": "00259c9dedceb65c214dab2fc8f8b65e512270eea13d7713d892749ddad0d7cf",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/finale-results-modules.webp",
+      "distributedSHA256": "7d29162ba6b263cf55040a19cc46816b2043817adeb735c83b1656d84e1b6762",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/finale-results-standalone.png",
+      "originalSHA256": "148e0626e240802a450c7b385520ba6bb9e171ef0cc85fffb7af970b13c5c356",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/finale-results-standalone.webp",
+      "distributedSHA256": "d34cc11dffe7e2914bac672189fdd92ff03f4461e396aaefe99029f58e7664f0",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/fire-object-bound-modules.png",
+      "originalSHA256": "6c5c3407f13228584ce87097a2f1f71a2e7c0160fb81e613537c8845d6c2f84b",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/fire-object-bound-modules.webp",
+      "distributedSHA256": "46b5d6ccc75c0cd3fe34f2dc38b207656f961786e60037d43181b693e638157d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/fire-object-bound-standalone.png",
+      "originalSHA256": "892f51971c35c9978604a2809b312321185cf43b92e207de9f3c0ad3c60a31cb",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/fire-object-bound-standalone.webp",
+      "distributedSHA256": "baed7bf74de0fe40e05359e1b3f9e3fa562f7d630e31555be1292f201f3ea500",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/first-earned-ice-modules.png",
+      "originalSHA256": "962cff619c4c36c920ccdefb0a498f5ae1989dbf529356e38e97250bfa9edf10",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/first-earned-ice-modules.webp",
+      "distributedSHA256": "e78d4d7f4723ef7c160f8b2cc997ca68d5887e1fe0d6c614cdd33bf2418e7bd8",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/first-earned-ice-standalone.png",
+      "originalSHA256": "855118598e9c737825ec876233bcae85c3677efa697b8b5a78cc2a94658f75e9",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/first-earned-ice-standalone.webp",
+      "distributedSHA256": "b15a3a7c6cac689ccb1da9aea47d9bdefa82a531a3bfafea8ff53e9af965cfb1",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/first-enter-context-modules.png",
+      "originalSHA256": "04adc1c4699273cdb4227e0c2e39a7028b7aa7b0f3b586300b854bc90aec6594",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/first-enter-context-modules.webp",
+      "distributedSHA256": "84c3203cb7436577d72e623f30df3815f62feef85567f233ca54d9b8f239d74c",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/first-enter-context-standalone.png",
+      "originalSHA256": "1f0eccdece8fdae4f87ecf10427a80fce3eec50ff5fd826b1aa528e79bbdddfe",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/first-enter-context-standalone.webp",
+      "distributedSHA256": "8bfc20ca25339232bbb66bae6afeec22e0a38cc4a4dcab94251122a0d811f7d0",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/ice-readable-modules.png",
+      "originalSHA256": "f62d913759eb49ec6b578b046381007ff340e8d65dc1051945fda510cc902bbc",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/ice-readable-modules.webp",
+      "distributedSHA256": "8df0cd9f065ceebf2201a5269f4236afedb50a7a87e370fac92572bf90e85d23",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/ice-readable-standalone.png",
+      "originalSHA256": "55df2a2a1e2f45dd15e9f81aacc8e1c81dc39cb6d41f88fa728644ce87f2a341",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/ice-readable-standalone.webp",
+      "distributedSHA256": "15e9160c589d03afdc3eb639fe602bc669608747e2b0f573563a6e4f3fb1fde5",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/multiplier-16-exact-modules.png",
+      "originalSHA256": "f720a98a99be3cc47228ccdb0331c421272039135793148ff3622fc425f8ec2a",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/multiplier-16-exact-modules.webp",
+      "distributedSHA256": "4965e712c549bb78d3e5eefdff0fd836dd0b21b390302ac9f535d56f79c8a48c",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/multiplier-16-exact-standalone.png",
+      "originalSHA256": "648e9eb100cc364f1d29ce1e0a61cc0f093b44859a631cd2137493c76c90f54e",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/multiplier-16-exact-standalone.webp",
+      "distributedSHA256": "009aca8ad27c3350af4abdba210eefb9357adbd7be131a6366d508d056f64c21",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/readability-1024x600-modules.png",
+      "originalSHA256": "90c49cd30fda43aa48abb2f14789745a0eabc74f99463b07c037bf99dc9aa2c0",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/screenshots/readability-1024x600-modules.webp",
+      "distributedSHA256": "6753b5daaaab02952d8e6389fb11872d7be90053493b6aacda05d7545eee7bef",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/readability-1024x600-standalone.png",
+      "originalSHA256": "71a54de03fe5cbc92ebd3e83e5bb7ccbfd9d954f3b1cb64fb28b8e85782fe2b6",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/screenshots/readability-1024x600-standalone.webp",
+      "distributedSHA256": "4b7759b112119cc0aafccf46b8cd69be859401c4dfa1344e2b10fcf2bfdce8cb",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/readability-1280x720-modules.png",
+      "originalSHA256": "06ee0bd653f127b2f00b529c9c8ee0a1f1b0cd4c860be379e3ea11a8a0adbfb2",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/screenshots/readability-1280x720-modules.webp",
+      "distributedSHA256": "8f8e12dd9467daf573f65a7d1928f91bf77d9413e696e53ffa06854629b71e06",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/readability-1280x720-standalone.png",
+      "originalSHA256": "55ba8f302d42d48c32f5b12f04747fad073de0688662544764a2ddac6dae42db",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/screenshots/readability-1280x720-standalone.webp",
+      "distributedSHA256": "f064142288025fcd32bb953998fb2ae02969b91c7be4b10057fa933fa72530ea",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/readability-1366x768-modules.png",
+      "originalSHA256": "49726adef86fad026e8afb2ad97161a3472a5e969230f638484dca3f171ac9fd",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/readability-1366x768-modules.webp",
+      "distributedSHA256": "587aeab1ecf5d4873a4b780fbc92734c7cdcf1fb6ca60b2190359e7b5b878c34",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/readability-1366x768-standalone.png",
+      "originalSHA256": "8a5db1b170799b5d8e23e22dea81b62b2037962d7b1489d04ede45b0f991665a",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/screenshots/readability-1366x768-standalone.webp",
+      "distributedSHA256": "299e3893342a6dc369436887bc79cb6c1fc71ad85dcf4b87ecd41d467d945bc7",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/readability-1920x1080-modules.png",
+      "originalSHA256": "149d21a5c1f82349d78912c6b3a939523abba1f3b84101a5ada9acda6c42c89a",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "qa360/screenshots/readability-1920x1080-modules.webp",
+      "distributedSHA256": "af53d77c95058db661a9ef6a43262755972c085e02f2015ee3b102eec3d94c59",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/screenshots/readability-1920x1080-standalone.png",
+      "originalSHA256": "fb1bbadd8cc052c5858ad6818b97e0abd5c580cfe8d1b7d34a9aa8bfac27a948",
+      "size": [
+        1920,
+        1080
+      ],
+      "distributed": "qa360/screenshots/readability-1920x1080-standalone.webp",
+      "distributedSHA256": "d0399227504e2b498adcd0f01b209cc1bc31e3bcab375b450b9e0b4db8e29de6",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/about-1024x600-modules.png",
+      "originalSHA256": "4ad9b9e3f214d562c7eb04dfe701768b10876db5de7317f8bd23aad2001628e5",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/about-1024x600-modules.webp",
+      "distributedSHA256": "3a4815d32b9edb8c362d57e69e0db74aa19fdc6bec89dabb132cbbcac52edfbc",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/about-1024x600-standalone.png",
+      "originalSHA256": "4ad9b9e3f214d562c7eb04dfe701768b10876db5de7317f8bd23aad2001628e5",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/about-1024x600-standalone.webp",
+      "distributedSHA256": "3a4815d32b9edb8c362d57e69e0db74aa19fdc6bec89dabb132cbbcac52edfbc",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/about-1366x768-modules.png",
+      "originalSHA256": "c493d9cab7f93143c62e4347b1a1c9c9de9cfac2816d720f05cd071fcee49f56",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/about-1366x768-modules.webp",
+      "distributedSHA256": "4ff9f59906d7c85c29642303e333605e4bf4276a84ec66a0dfdf9ae902bba2fb",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/about-1366x768-standalone.png",
+      "originalSHA256": "c493d9cab7f93143c62e4347b1a1c9c9de9cfac2816d720f05cd071fcee49f56",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/about-1366x768-standalone.webp",
+      "distributedSHA256": "4ff9f59906d7c85c29642303e333605e4bf4276a84ec66a0dfdf9ae902bba2fb",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/about-640x480-modules.png",
+      "originalSHA256": "29570e56a3db282cd882a8cfcbdca7564377ec8b6ec2040c8227bd8e3894a6a4",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/about-640x480-modules.webp",
+      "distributedSHA256": "ae5ac0025a5501b17d904b68bf2d1281c2cf70f1d8d84b0e0804874f98e24446",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/about-640x480-standalone.png",
+      "originalSHA256": "29570e56a3db282cd882a8cfcbdca7564377ec8b6ec2040c8227bd8e3894a6a4",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/about-640x480-standalone.webp",
+      "distributedSHA256": "ae5ac0025a5501b17d904b68bf2d1281c2cf70f1d8d84b0e0804874f98e24446",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/finale-ceremony-modules.png",
+      "originalSHA256": "164a6c8a845176cd76aeafa207d74039c30b910e44a80e344ea91daec980c2b1",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/finale-ceremony-modules.webp",
+      "distributedSHA256": "3f70d8d80bd1bfa1061bf0335f844211740d6966e24f779168c31c444fb04b25",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/finale-ceremony-standalone.png",
+      "originalSHA256": "d8ba10bc16c9e3d65339c47211ec134fa2ac6b2f59a37dc4bd45018d08c8e1ee",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/finale-ceremony-standalone.webp",
+      "distributedSHA256": "6d9832d3e87207570b236761d437155799c6874c4d092e8763db1ff65b185e62",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/finale-result-480-modules.png",
+      "originalSHA256": "05d833002ef734e9d700ff6f25770f69a835d34e5a44279f65e43e291be9450c",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/finale-result-480-modules.webp",
+      "distributedSHA256": "1d4cf570bdcb6628c8c964b3d66bf9feeaa09d21ec903356d113f2d4bfafff59",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/finale-result-480-standalone.png",
+      "originalSHA256": "05d833002ef734e9d700ff6f25770f69a835d34e5a44279f65e43e291be9450c",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/finale-result-480-standalone.webp",
+      "distributedSHA256": "1d4cf570bdcb6628c8c964b3d66bf9feeaa09d21ec903356d113f2d4bfafff59",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/finale-result-600-modules.png",
+      "originalSHA256": "0bdaf0127af5aae318d5488501611ac8caca41ed8d3a4b4ce913dd042af2f70b",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/finale-result-600-modules.webp",
+      "distributedSHA256": "8b9ed42fdd551bb2d96b81e96728f51e04a3ee59527bd14a691af707fb5c762d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/finale-result-600-standalone.png",
+      "originalSHA256": "0bdaf0127af5aae318d5488501611ac8caca41ed8d3a4b4ce913dd042af2f70b",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/finale-result-600-standalone.webp",
+      "distributedSHA256": "8b9ed42fdd551bb2d96b81e96728f51e04a3ee59527bd14a691af707fb5c762d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/finale-result-720-modules.png",
+      "originalSHA256": "0d2ba2bee4aaacf484014fe69ebfdaefb00ef9f6bf6d669a657379ddcfc52b19",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/finale-result-720-modules.webp",
+      "distributedSHA256": "561e5e0d27ce7bf51c1177d396b6b6f14644117f0491c1f2ca3db501c0457d34",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/finale-result-720-standalone.png",
+      "originalSHA256": "0d2ba2bee4aaacf484014fe69ebfdaefb00ef9f6bf6d669a657379ddcfc52b19",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/finale-result-720-standalone.webp",
+      "distributedSHA256": "561e5e0d27ce7bf51c1177d396b6b6f14644117f0491c1f2ca3db501c0457d34",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/finale-result-768-modules.png",
+      "originalSHA256": "9919e089724da79947dfe27b47fe4dfe54c748f100cb39a5fb175cc7328d6f24",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/finale-result-768-modules.webp",
+      "distributedSHA256": "ce1d9bfc4bd1553ca4f308da6c43f8f1b34cd345b14664056f652f11c19e8a5d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/finale-result-768-standalone.png",
+      "originalSHA256": "9919e089724da79947dfe27b47fe4dfe54c748f100cb39a5fb175cc7328d6f24",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/finale-result-768-standalone.webp",
+      "distributedSHA256": "ce1d9bfc4bd1553ca4f308da6c43f8f1b34cd345b14664056f652f11c19e8a5d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/first-ice-clear-desk-modules.png",
+      "originalSHA256": "58d08a8c2069c07b67b314ff47f909228e06641ecbdc0811f70272aa8861f8a2",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/first-ice-clear-desk-modules.webp",
+      "distributedSHA256": "b35206f039c94d84a93fcde4e1ee12651a7a701ac69c1c1ea510d682190468d6",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/first-ice-clear-desk-standalone.png",
+      "originalSHA256": "58d08a8c2069c07b67b314ff47f909228e06641ecbdc0811f70272aa8861f8a2",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/first-ice-clear-desk-standalone.webp",
+      "distributedSHA256": "b35206f039c94d84a93fcde4e1ee12651a7a701ac69c1c1ea510d682190468d6",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/game-over-600p-modules.png",
+      "originalSHA256": "7c06e873ea52dbaf4590dcccff81cedce716de3abce8e6b6aa2d6252bd7e0223",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/game-over-600p-modules.webp",
+      "distributedSHA256": "9c04eb9972875f044028a5092bd5704e58901c645da83b47bf2813f962b7cdeb",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/game-over-600p-standalone.png",
+      "originalSHA256": "7c06e873ea52dbaf4590dcccff81cedce716de3abce8e6b6aa2d6252bd7e0223",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/game-over-600p-standalone.webp",
+      "distributedSHA256": "9c04eb9972875f044028a5092bd5704e58901c645da83b47bf2813f962b7cdeb",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/how-1024x600-modules.png",
+      "originalSHA256": "d467f2e01f3d57c4f4a4e353062fff94854668126fbd2e0eeb3def9036dd3f12",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/how-1024x600-modules.webp",
+      "distributedSHA256": "784f4a99c3b805e28f2c0acaf02943738fb26d74706846e9afa6485c40dba6f2",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/how-1024x600-standalone.png",
+      "originalSHA256": "d467f2e01f3d57c4f4a4e353062fff94854668126fbd2e0eeb3def9036dd3f12",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/how-1024x600-standalone.webp",
+      "distributedSHA256": "784f4a99c3b805e28f2c0acaf02943738fb26d74706846e9afa6485c40dba6f2",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/how-1366x768-modules.png",
+      "originalSHA256": "dcc8db3729881bbda1e6ec1755b96f47133a3db1da6611f4ce453b959cdd985c",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/how-1366x768-modules.webp",
+      "distributedSHA256": "1805e92ca13646376562b44bcc3ec1533d6868f9a9f642b1740c48cadef00c37",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/how-1366x768-standalone.png",
+      "originalSHA256": "dcc8db3729881bbda1e6ec1755b96f47133a3db1da6611f4ce453b959cdd985c",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/how-1366x768-standalone.webp",
+      "distributedSHA256": "1805e92ca13646376562b44bcc3ec1533d6868f9a9f642b1740c48cadef00c37",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/how-640x480-modules.png",
+      "originalSHA256": "6daa1162a43a6e11f3025c4ced8a6c53a1f9ac5d913116f432d964d65959e050",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/how-640x480-modules.webp",
+      "distributedSHA256": "a768011e44b46aef9bbec2027d21c74a2dc36e5fc438bef6efc4ba29961090b5",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/how-640x480-standalone.png",
+      "originalSHA256": "6daa1162a43a6e11f3025c4ced8a6c53a1f9ac5d913116f432d964d65959e050",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/how-640x480-standalone.webp",
+      "distributedSHA256": "a768011e44b46aef9bbec2027d21c74a2dc36e5fc438bef6efc4ba29961090b5",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/how-expanded-modules.png",
+      "originalSHA256": "f4c228f6795e5bbc405513d05ce399f3f026c0782262ab218244fc3793353b45",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/how-expanded-modules.webp",
+      "distributedSHA256": "f733350bdfb7e9110009840b3d965f7cc45f0328ed55a02ace6c736ad264ce7a",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/how-expanded-standalone.png",
+      "originalSHA256": "f4c228f6795e5bbc405513d05ce399f3f026c0782262ab218244fc3793353b45",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/how-expanded-standalone.webp",
+      "distributedSHA256": "f733350bdfb7e9110009840b3d965f7cc45f0328ed55a02ace6c736ad264ce7a",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-1280x720-0-modules.png",
+      "originalSHA256": "139922b874a7dd64ad8640cf3393ba75f8ae62c737867120368d9e407d7de0b0",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/hud-1280x720-0-modules.webp",
+      "distributedSHA256": "7085b088d5446a1e1d5f6e46428f1dc9f7973d00d9f607a47da6c5454b5e89c0",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-1280x720-0-standalone.png",
+      "originalSHA256": "139922b874a7dd64ad8640cf3393ba75f8ae62c737867120368d9e407d7de0b0",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/hud-1280x720-0-standalone.webp",
+      "distributedSHA256": "7085b088d5446a1e1d5f6e46428f1dc9f7973d00d9f607a47da6c5454b5e89c0",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-1280x720-95-modules.png",
+      "originalSHA256": "c84ca0cf906cac31df6b3bedc3217ce98de95d9f075cbb352cbeb4154a18a8c6",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/hud-1280x720-95-modules.webp",
+      "distributedSHA256": "c9bb3bc470b7d8e31e1c629d60a925c8e4f657e0bd05a2d6786ec105d3a99ab4",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-1280x720-95-standalone.png",
+      "originalSHA256": "c84ca0cf906cac31df6b3bedc3217ce98de95d9f075cbb352cbeb4154a18a8c6",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/hud-1280x720-95-standalone.webp",
+      "distributedSHA256": "c9bb3bc470b7d8e31e1c629d60a925c8e4f657e0bd05a2d6786ec105d3a99ab4",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-1366x768-0-modules.png",
+      "originalSHA256": "9d53feb798763b54d66240f5a5d5c150269aa29fa2eda7fddf00c823381fafb2",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/hud-1366x768-0-modules.webp",
+      "distributedSHA256": "12fb1968cbc3a54a3c214aba20c9ba952b77a502e8d82c8eccc72ab7ac90ad72",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-1366x768-0-standalone.png",
+      "originalSHA256": "9d53feb798763b54d66240f5a5d5c150269aa29fa2eda7fddf00c823381fafb2",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/hud-1366x768-0-standalone.webp",
+      "distributedSHA256": "12fb1968cbc3a54a3c214aba20c9ba952b77a502e8d82c8eccc72ab7ac90ad72",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-1366x768-95-modules.png",
+      "originalSHA256": "97957d6bf674159f857aa8be829b16ecc1358f313f5408f78931b5577c380d1d",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/hud-1366x768-95-modules.webp",
+      "distributedSHA256": "60017a3ed231f50774766c5c8b4a91f04b94f95bd49b345c39d854f90fec46aa",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-1366x768-95-standalone.png",
+      "originalSHA256": "97957d6bf674159f857aa8be829b16ecc1358f313f5408f78931b5577c380d1d",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/hud-1366x768-95-standalone.webp",
+      "distributedSHA256": "60017a3ed231f50774766c5c8b4a91f04b94f95bd49b345c39d854f90fec46aa",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-800x600-0-modules.png",
+      "originalSHA256": "cf59ed4361fbb6977f59cf4d3ea477d489c58bd39e1e56f9a6a9a19ae3a88fdf",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/hud-800x600-0-modules.webp",
+      "distributedSHA256": "0a86e9965e6489928fa4dc83ac0f3647918d88dfe9f852621a0ab3d4b6544220",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-800x600-0-standalone.png",
+      "originalSHA256": "cf59ed4361fbb6977f59cf4d3ea477d489c58bd39e1e56f9a6a9a19ae3a88fdf",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/hud-800x600-0-standalone.webp",
+      "distributedSHA256": "0a86e9965e6489928fa4dc83ac0f3647918d88dfe9f852621a0ab3d4b6544220",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-800x600-95-modules.png",
+      "originalSHA256": "30a94b0084615b6c10ef7fc3e6da257bfc0ef85dc56adaadd60e82a14580790b",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/hud-800x600-95-modules.webp",
+      "distributedSHA256": "6714697ffbc35644976fdb64c0dafea0ce24397ec158baaee1696166b9183ca4",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/hud-800x600-95-standalone.png",
+      "originalSHA256": "30a94b0084615b6c10ef7fc3e6da257bfc0ef85dc56adaadd60e82a14580790b",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/hud-800x600-95-standalone.webp",
+      "distributedSHA256": "6714697ffbc35644976fdb64c0dafea0ce24397ec158baaee1696166b9183ca4",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/import-error-inline-modules.png",
+      "originalSHA256": "347fb32e2af6387efe046014d29dfdae9c4a5ae29f517ff8d891864c9621799f",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/import-error-inline-modules.webp",
+      "distributedSHA256": "9ae35cbcfa9ff4170e703336bc7f29e913dd8c50b3d86195b18118f3adceffdf",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/import-error-inline-standalone.png",
+      "originalSHA256": "347fb32e2af6387efe046014d29dfdae9c4a5ae29f517ff8d891864c9621799f",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/import-error-inline-standalone.webp",
+      "distributedSHA256": "9ae35cbcfa9ff4170e703336bc7f29e913dd8c50b3d86195b18118f3adceffdf",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/last-live-card-safe-zone-modules.png",
+      "originalSHA256": "fe58f2ed12122a7b8f8cebcd212fb329b6cb92291b5ae9d9067f1a32669e1c13",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/last-live-card-safe-zone-modules.webp",
+      "distributedSHA256": "d5434e67a103acaae7bfb342437bac599dffbf5dc4c6b02491c0cf8ecb81f086",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/last-live-card-safe-zone-standalone.png",
+      "originalSHA256": "fe58f2ed12122a7b8f8cebcd212fb329b6cb92291b5ae9d9067f1a32669e1c13",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/last-live-card-safe-zone-standalone.webp",
+      "distributedSHA256": "d5434e67a103acaae7bfb342437bac599dffbf5dc4c6b02491c0cf8ecb81f086",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/long-score-practice-header-modules.png",
+      "originalSHA256": "7c3a84b3a87abc5e552117c0abe3576652fefeb4411e489c13d7029ee877cb62",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/long-score-practice-header-modules.webp",
+      "distributedSHA256": "5c54068f906dbd0fd9f7397187ca1201afb13c316e8e27e13eead9eec74eef2d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/long-score-practice-header-standalone.png",
+      "originalSHA256": "7c3a84b3a87abc5e552117c0abe3576652fefeb4411e489c13d7029ee877cb62",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/long-score-practice-header-standalone.webp",
+      "distributedSHA256": "5c54068f906dbd0fd9f7397187ca1201afb13c316e8e27e13eead9eec74eef2d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/map-1024x600-modules.png",
+      "originalSHA256": "33603841f125701e127b3953b5088f30fcd9911dfb7438c869087c892df63504",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/map-1024x600-modules.webp",
+      "distributedSHA256": "2971993095192de437f3ca9dc03f0d1f6de1786f7937cfeb1ff7921ba76a275a",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/map-1024x600-standalone.png",
+      "originalSHA256": "33603841f125701e127b3953b5088f30fcd9911dfb7438c869087c892df63504",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/map-1024x600-standalone.webp",
+      "distributedSHA256": "2971993095192de437f3ca9dc03f0d1f6de1786f7937cfeb1ff7921ba76a275a",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/map-1366x768-modules.png",
+      "originalSHA256": "9c6500c70efe92775ac7000c7526791345611e96dbb732121a3ad6675555d2fc",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/map-1366x768-modules.webp",
+      "distributedSHA256": "fce2c3f8015f3d35c41bcabdb8440da10a5b88eb339661e62aa1ff1af41558cd",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/map-1366x768-standalone.png",
+      "originalSHA256": "9c6500c70efe92775ac7000c7526791345611e96dbb732121a3ad6675555d2fc",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/map-1366x768-standalone.webp",
+      "distributedSHA256": "fce2c3f8015f3d35c41bcabdb8440da10a5b88eb339661e62aa1ff1af41558cd",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/map-640x480-modules.png",
+      "originalSHA256": "b3fc849156da12bb997c72ac96f28a7b2c025d6de042771e807560b36e740f7c",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/map-640x480-modules.webp",
+      "distributedSHA256": "0bfa756779bef582414232dcf972ec963d2796fb6e2a734bef7926e513e093fd",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/map-640x480-standalone.png",
+      "originalSHA256": "b3fc849156da12bb997c72ac96f28a7b2c025d6de042771e807560b36e740f7c",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/map-640x480-standalone.webp",
+      "distributedSHA256": "0bfa756779bef582414232dcf972ec963d2796fb6e2a734bef7926e513e093fd",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/mastery-final-wing-modules.png",
+      "originalSHA256": "70091a98fb6648248d2934ee18e8e8dc29352f138cbd1b51a9c7c6e32655cee6",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/mastery-final-wing-modules.webp",
+      "distributedSHA256": "0e3bd2517908406df198e458ec3ed92580cbfdc5c7c17bc25da5609070f685a0",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/mastery-final-wing-standalone.png",
+      "originalSHA256": "70091a98fb6648248d2934ee18e8e8dc29352f138cbd1b51a9c7c6e32655cee6",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/mastery-final-wing-standalone.webp",
+      "distributedSHA256": "0e3bd2517908406df198e458ec3ed92580cbfdc5c7c17bc25da5609070f685a0",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/new-game-confirm-modules.png",
+      "originalSHA256": "d0227d42fc773f1611914a616154bd8ad4f4aa310b8fec9f262b67c9034926c4",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/new-game-confirm-modules.webp",
+      "distributedSHA256": "0fd283a2a1cdbd6ce1d16acd6c5f4260301c04f8d6d11db824bc523a7ff45cf9",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/new-game-confirm-standalone.png",
+      "originalSHA256": "d0227d42fc773f1611914a616154bd8ad4f4aa310b8fec9f262b67c9034926c4",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/new-game-confirm-standalone.webp",
+      "distributedSHA256": "0fd283a2a1cdbd6ce1d16acd6c5f4260301c04f8d6d11db824bc523a7ff45cf9",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/one-star-480-modules.png",
+      "originalSHA256": "884f3f39475d8c36f6f212ea913eb7ab9ea6ad3a28bd321aff5b0a6cb159ba4d",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/one-star-480-modules.webp",
+      "distributedSHA256": "748e8a6fcc84eff4b4448a3ff08255e14e95c5929a8da4f0d89ba0fadb0bab5e",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/one-star-480-standalone.png",
+      "originalSHA256": "884f3f39475d8c36f6f212ea913eb7ab9ea6ad3a28bd321aff5b0a6cb159ba4d",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/one-star-480-standalone.webp",
+      "distributedSHA256": "748e8a6fcc84eff4b4448a3ff08255e14e95c5929a8da4f0d89ba0fadb0bab5e",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/one-star-600-modules.png",
+      "originalSHA256": "b6767f7ce3e13424182a74f37deb077394d5e84708b41eca453f68971b417671",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/one-star-600-modules.webp",
+      "distributedSHA256": "da3bd83a69ed6bb66d7acd87861bee449490794dc7a2520134a611ede1d94ab4",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/one-star-600-standalone.png",
+      "originalSHA256": "b6767f7ce3e13424182a74f37deb077394d5e84708b41eca453f68971b417671",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/one-star-600-standalone.webp",
+      "distributedSHA256": "da3bd83a69ed6bb66d7acd87861bee449490794dc7a2520134a611ede1d94ab4",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/one-star-720-modules.png",
+      "originalSHA256": "c79ec5c8edef67e23df899d95495b963023d5d0a157b4b29f4edc61f50e5ab23",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/one-star-720-modules.webp",
+      "distributedSHA256": "b365df957b16de8ebfd939a519ecbbd100ae64ec5412a8870b3972a8615e1da9",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/one-star-720-standalone.png",
+      "originalSHA256": "c79ec5c8edef67e23df899d95495b963023d5d0a157b4b29f4edc61f50e5ab23",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/one-star-720-standalone.webp",
+      "distributedSHA256": "b365df957b16de8ebfd939a519ecbbd100ae64ec5412a8870b3972a8615e1da9",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/one-star-768-modules.png",
+      "originalSHA256": "fb72cda03e042783c77e20e5f2b222c4737f8c63af658c51eba32e8fd893c675",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/one-star-768-modules.webp",
+      "distributedSHA256": "bc7af8b255d787e4b3a5f0a28448097220ab67368193aef20a690766defaf782",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/one-star-768-standalone.png",
+      "originalSHA256": "fb72cda03e042783c77e20e5f2b222c4737f8c63af658c51eba32e8fd893c675",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/one-star-768-standalone.webp",
+      "distributedSHA256": "bc7af8b255d787e4b3a5f0a28448097220ab67368193aef20a690766defaf782",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/queued-slow-600p-modules.png",
+      "originalSHA256": "56635ea1d0b055e2d3bf04025bae89464141acd9b1d2946317713c3d7487979e",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/queued-slow-600p-modules.webp",
+      "distributedSHA256": "a35848103100958f2fc1499e8490be85fcebdcab0ea1298aea68b8c2f6ad1f4e",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/queued-slow-600p-standalone.png",
+      "originalSHA256": "6a91783b7bc3257cd87941bf7d7b1ae9f637535d3c8467706b68a3de6fbd248b",
+      "size": [
+        800,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/queued-slow-600p-standalone.webp",
+      "distributedSHA256": "825d7b290df169dc7ff558ff7811145763dd6b6289c711d30741438d0adf8e80",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/records-1024x600-modules.png",
+      "originalSHA256": "2202f2457300c66614bed36aaf217c41f4eac9bf994be4e61c5c37e3649fd606",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/records-1024x600-modules.webp",
+      "distributedSHA256": "5ff0f38ab172467d497c384ca17c74b0e191654da6c0fbb4a1b6041312452cae",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/records-1024x600-standalone.png",
+      "originalSHA256": "2202f2457300c66614bed36aaf217c41f4eac9bf994be4e61c5c37e3649fd606",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/records-1024x600-standalone.webp",
+      "distributedSHA256": "5ff0f38ab172467d497c384ca17c74b0e191654da6c0fbb4a1b6041312452cae",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/records-1366x768-modules.png",
+      "originalSHA256": "c063dce15250afd1739c25cb367fecf4aec0f99c7f694c391ad0a7c6b082949d",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/records-1366x768-modules.webp",
+      "distributedSHA256": "3447059474bfedd00cd1036b6cc52182bbfb0412abee3ce2c9081f2033c74177",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/records-1366x768-standalone.png",
+      "originalSHA256": "c063dce15250afd1739c25cb367fecf4aec0f99c7f694c391ad0a7c6b082949d",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/records-1366x768-standalone.webp",
+      "distributedSHA256": "3447059474bfedd00cd1036b6cc52182bbfb0412abee3ce2c9081f2033c74177",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/records-640x480-modules.png",
+      "originalSHA256": "99d8e18a92991784535cc3cc9ab10652a97a5e5fa9eb6f731e4c5e6b7e0a89c0",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/records-640x480-modules.webp",
+      "distributedSHA256": "0e620ab255afd4858b82aa1f481b3d813164f4b3bf80f31143646ed0f2f5c37b",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/records-640x480-standalone.png",
+      "originalSHA256": "99d8e18a92991784535cc3cc9ab10652a97a5e5fa9eb6f731e4c5e6b7e0a89c0",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/records-640x480-standalone.webp",
+      "distributedSHA256": "0e620ab255afd4858b82aa1f481b3d813164f4b3bf80f31143646ed0f2f5c37b",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/records-populated-modules.png",
+      "originalSHA256": "af1ea5d95736d0ccddea57bdfbd2a9101cd114248e7cdb2077db00d7702736f6",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/records-populated-modules.webp",
+      "distributedSHA256": "196612d8db7a360a8aeeed1ac4d947067eec8b47caceb5c5ab28ec58aa094904",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/records-populated-standalone.png",
+      "originalSHA256": "af1ea5d95736d0ccddea57bdfbd2a9101cd114248e7cdb2077db00d7702736f6",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/records-populated-standalone.webp",
+      "distributedSHA256": "196612d8db7a360a8aeeed1ac4d947067eec8b47caceb5c5ab28ec58aa094904",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/records-practice-600p-modules.png",
+      "originalSHA256": "01c448e5f5f457aed30de4300d71f76495707a08afc2ddd66956a0f9d67e130b",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/records-practice-600p-modules.webp",
+      "distributedSHA256": "3800c63c08c394f013f93c32b6138ccfb84765263132176534968587ae299009",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/records-practice-600p-standalone.png",
+      "originalSHA256": "01c448e5f5f457aed30de4300d71f76495707a08afc2ddd66956a0f9d67e130b",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/records-practice-600p-standalone.webp",
+      "distributedSHA256": "3800c63c08c394f013f93c32b6138ccfb84765263132176534968587ae299009",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/retina-dpr2-modules.png",
+      "originalSHA256": "adbfd68d90cfea99359db3e7a19ae11345a33829592c763719c14773dec20ff1",
+      "size": [
+        2880,
+        1800
+      ],
+      "distributed": "qa360/ui-screenshots/retina-dpr2-modules.webp",
+      "distributedSHA256": "982942dd653e338117c76b81ddc38c48033b560a2f88ee8f594ffa2879a6a19f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/retina-dpr2-standalone.png",
+      "originalSHA256": "adbfd68d90cfea99359db3e7a19ae11345a33829592c763719c14773dec20ff1",
+      "size": [
+        2880,
+        1800
+      ],
+      "distributed": "qa360/ui-screenshots/retina-dpr2-standalone.webp",
+      "distributedSHA256": "982942dd653e338117c76b81ddc38c48033b560a2f88ee8f594ffa2879a6a19f",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/settings-1024x600-modules.png",
+      "originalSHA256": "7ad96321aa5507fd5cdcf9abe9fb8fb79f40ef3d81cdf491842dee5b72718b19",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/settings-1024x600-modules.webp",
+      "distributedSHA256": "2bd0b4b724bbcc3443c5ea4dda2057501be4b9ada1b0c6ee18e4da05732448ee",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/settings-1024x600-standalone.png",
+      "originalSHA256": "7ad96321aa5507fd5cdcf9abe9fb8fb79f40ef3d81cdf491842dee5b72718b19",
+      "size": [
+        1024,
+        600
+      ],
+      "distributed": "qa360/ui-screenshots/settings-1024x600-standalone.webp",
+      "distributedSHA256": "2bd0b4b724bbcc3443c5ea4dda2057501be4b9ada1b0c6ee18e4da05732448ee",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/settings-1366x768-modules.png",
+      "originalSHA256": "791c397de406330781748ec4ccdf963c46c5c3fc7eaa68fb215a1cb610a98014",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/settings-1366x768-modules.webp",
+      "distributedSHA256": "bed7338c46d746a6efa866a676fa7398327d0d98cf38c8e89b5024a4e45eb5c7",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/settings-1366x768-standalone.png",
+      "originalSHA256": "791c397de406330781748ec4ccdf963c46c5c3fc7eaa68fb215a1cb610a98014",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/settings-1366x768-standalone.webp",
+      "distributedSHA256": "bed7338c46d746a6efa866a676fa7398327d0d98cf38c8e89b5024a4e45eb5c7",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/settings-640x480-modules.png",
+      "originalSHA256": "ecddf65240a1a4051efcd7b1ce4003fd15221797ffd10e0e4acc1b12e54ca528",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/settings-640x480-modules.webp",
+      "distributedSHA256": "685f6aa6433067798198b8beb72238e6ba0476316041f306f055077f9455e11d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/settings-640x480-standalone.png",
+      "originalSHA256": "ecddf65240a1a4051efcd7b1ce4003fd15221797ffd10e0e4acc1b12e54ca528",
+      "size": [
+        640,
+        480
+      ],
+      "distributed": "qa360/ui-screenshots/settings-640x480-standalone.webp",
+      "distributedSHA256": "685f6aa6433067798198b8beb72238e6ba0476316041f306f055077f9455e11d",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/settings-display-focus-modules.png",
+      "originalSHA256": "fe53d74c95913da405976cfd806a701561b8bdc6b7faa63ed4ddedba72c4dbe4",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/settings-display-focus-modules.webp",
+      "distributedSHA256": "a578e1699ec57f923356203b553f14fe185cdf1eeb4c766eb6cc58cd185952cf",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/settings-display-focus-standalone.png",
+      "originalSHA256": "76473662988f48793a21ee1b9d5f272a3bbd23376c2947c0bede8bfd18d1b168",
+      "size": [
+        1280,
+        720
+      ],
+      "distributed": "qa360/ui-screenshots/settings-display-focus-standalone.webp",
+      "distributedSHA256": "4c18b271b1e4fb774b7eceac650a2d4d0aae1fb227f91aeca20bd7455cc60687",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/wind-context-desk-modules.png",
+      "originalSHA256": "8faab2720df4afc5322a4bf2f8f639dc9da1a0f92117322aa904491d12b92338",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/wind-context-desk-modules.webp",
+      "distributedSHA256": "5f618a218f61955a16ae28e1cb915743740be46b822e28273b9b4401a6b44a93",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    },
+    {
+      "original": "qa360/ui-screenshots/wind-context-desk-standalone.png",
+      "originalSHA256": "8faab2720df4afc5322a4bf2f8f639dc9da1a0f92117322aa904491d12b92338",
+      "size": [
+        1366,
+        768
+      ],
+      "distributed": "qa360/ui-screenshots/wind-context-desk-standalone.webp",
+      "distributedSHA256": "5f618a218f61955a16ae28e1cb915743740be46b822e28273b9b4401a6b44a93",
+      "note": "QA preview conversion only; original raster observations remain in test JSON."
+    }
+  ]
+}

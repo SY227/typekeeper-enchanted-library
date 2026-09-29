@@ -37,7 +37,7 @@ def main():
     except Exception:pass
    rows.append(row);print(row['status'],name,row.get('error',''),flush=True)
   def identity():
-   assert api('return t.info.version;')=='3.4.0';assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
+   assert api('return t.info.version;')=='3.6.2';assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
    assert btn('start').is_visible();assert page.get_by_role('heading',name='TYPEKEEPER',exact=True).is_visible()
   check('Version 3.3.1 opens with the retained 3.2.1 scoring and economy ruleset',identity)
   def input_surface():
@@ -71,9 +71,9 @@ def main():
     assert snap()['correct']==1;assert snap()['inventory'].get(kind,0)==(1 if kind in ['fire','ice','slow','wind'] else 0)
   check('Each card material resolves once into its own destruction sequence',material_frames)
   def normal_life():
-   run();word('BOOK');enter('BOOK');assert abs(api('return t.renderer.deaths[0].life;')-.32)<.0001
+   run();word('BOOK');enter('BOOK');assert abs(api('return t.renderer.deaths[0].life;')-.25)<.0001
    page.wait_for_timeout(400);assert visual()['deaths']==0
-  check('Normal paper tears for 320 ms and is then released from memory',normal_life)
+  check('Normal paper releases for 250 ms and is then released from memory',normal_life)
   def shelf_spawn():
    run();api('t.model.spawn();t.flush();');v=visual();assert v['spawns']==1
    origin=api('return [...t.renderer.spawns.values()][0];');assert origin['from']['x'] in [181,1017] and abs(origin['life']-.21)<.0001
@@ -205,7 +205,7 @@ def main():
    api('t.show("menu");');page.wait_for_timeout(450);page.screenshot(path=str(SHOTS/'06-title.png'))
   check('Gameplay, pressure, ICE, WIND and title screens render into actual browser captures',screenshot_set)
   check('No unhandled application exceptions in the manuscript audit',lambda:None if not errors else (_ for _ in ()).throw(AssertionError(errors)))
-  report={'version':'3.4.0','ruleset':'typekeeper-3.2.1','source':'v3.2.1 ZIP; not the earlier v3.3.0 draft','mode':__doc__,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'browser':browser.version,'passed':sum(x['status']=='PASS' for x in rows),'failed':sum(x['status']=='FAIL' for x in rows),'pageErrors':errors,'tests':rows,'evidence':evidence}
+  report={'version':'3.6.2','ruleset':'typekeeper-3.2.1','source':'v3.2.1 ZIP; not the earlier v3.3.0 draft','mode':__doc__,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'browser':browser.version,'passed':sum(x['status']=='PASS' for x in rows),'failed':sum(x['status']=='FAIL' for x in rows),'pageErrors':errors,'tests':rows,'evidence':evidence}
   (OUT/'manuscript-browser-results.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:report[k]for k in ['passed','failed','pageErrors']},indent=2));browser.close()
   if report['failed'] or errors:raise SystemExit(1)
 if __name__=='__main__':main()

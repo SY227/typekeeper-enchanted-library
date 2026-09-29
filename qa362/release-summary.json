@@ -1,0 +1,71 @@
+{
+  "version": "3.6.2",
+  "buildId": "3.6.2-04b297ea546ad828",
+  "ruleset": "typekeeper-3.2.1",
+  "PLAY_SHA256": "5a2350faf462c12a197b093645951b80553c25756f1f875ed9406df97ef8e5a3",
+  "runtimeOutputs": 60,
+  "unitPassed": 807,
+  "unitFailed": 0,
+  "browserPassed": 582,
+  "browserFailed": 0,
+  "browserSuites": [
+    {
+      "suite": "restart",
+      "standalone": 51,
+      "modules": 51
+    },
+    {
+      "suite": "ui-spacing",
+      "standalone": 62,
+      "modules": 62
+    },
+    {
+      "suite": "score-chase",
+      "standalone": 38,
+      "modules": 38
+    },
+    {
+      "suite": "impact",
+      "standalone": 26,
+      "modules": 26
+    },
+    {
+      "suite": "clarity-mastery",
+      "standalone": 19,
+      "modules": 19
+    },
+    {
+      "suite": "chapter-art",
+      "standalone": 19,
+      "modules": 19
+    },
+    {
+      "suite": "scroll-repair",
+      "standalone": 19,
+      "modules": 19
+    },
+    {
+      "suite": "book-leaf",
+      "standalone": 26,
+      "modules": 26
+    },
+    {
+      "suite": "single-row",
+      "standalone": 19,
+      "modules": 19
+    },
+    {
+      "suite": "flow-browser",
+      "standalone": 12,
+      "modules": 12
+    }
+  ],
+  "unhandledPageErrors": 0,
+  "modelBoundaryPassed": 23040,
+  "modelCampaignCompletions": 12,
+  "renderedCampaignCompletions": 2,
+  "launcherPassed": 7,
+  "updaterPassed": 6,
+  "unchangedFoundationFiles": 85,
+  "note": "Current executions only. Repeated fresh extraction checks and historical evidence excluded from named counts. Automated agents, not humans."
+}

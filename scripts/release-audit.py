@@ -15,10 +15,10 @@ def graph():
    assert (p.parent/relative.split('?')[0]).resolve().is_file(),relative
  assert ('src/main.js?v='+build) in (ROOT/'dist/index.html').read_text()
  assert ('src/styles.css?v='+build) in (ROOT/'dist/index.html').read_text()
- assert json.loads((ROOT/'dist/release.json').read_text())['version']=='3.4.0'
+ assert json.loads((ROOT/'dist/release.json').read_text())['version']=='3.6.2'
 check('Every static JS dependency and CSS entry carries the current content fingerprint',graph)
 def integrity():
- assert manifest['version']=='3.4.0'
+ assert manifest['version']=='3.6.2'
  for p in manifest['files']:
   b=(ROOT/'dist'/p['path']).read_bytes();assert len(b)==p['bytes'] and hashlib.sha256(b).hexdigest()==p['sha256'],p['path']
 check('All prebuilt payloads match the distributed build manifest',integrity)
@@ -48,8 +48,8 @@ def launcher(collision=False):
   finally:
    p.terminate();log=p.communicate(timeout=5)[0];(out/('launcher-collision.log'if collision else'launcher-default.log')).write_text(log)
    if blocker:blocker.close()
-  assert 'v3.4.0' in log and str(ROOT/'dist') in log
-check('Actual START_MAC.command from an unrelated working directory serves v3.4.0 on its new port',launcher)
+  assert 'v3.6.2' in log and str(ROOT/'dist') in log
+check('Actual START_MAC.command from an unrelated working directory serves v3.6.2 on its new port',launcher)
 check('An occupied default port cannot silently reopen the old game',lambda:launcher(True))
 def reject_mixed(kind):
  with tempfile.TemporaryDirectory()as tmp:
@@ -60,4 +60,4 @@ def reject_mixed(kind):
   assert p.returncode!=0;assert 'Mixed/damaged' in p.stderr+p.stdout
 check('Python launcher rejects a mixed/corrupted prebuilt renderer before serving it',lambda:reject_mixed('python'))
 check('Node launcher rejects a mixed/corrupted prebuilt renderer before serving it',lambda:reject_mixed('node'))
-report={'scope':__doc__,'version':'3.4.0','buildId':build,'tests':rows,'passed':sum(x['status']=='PASS'for x in rows),'failed':sum(x['status']=='FAIL'for x in rows)};(out/'release-audit.json').write_text(json.dumps(report,indent=2));assert report['failed']==0
+report={'scope':__doc__,'version':'3.6.2','buildId':build,'tests':rows,'passed':sum(x['status']=='PASS'for x in rows),'failed':sum(x['status']=='FAIL'for x in rows)};(out/'release-audit.json').write_text(json.dumps(report,indent=2));assert report['failed']==0

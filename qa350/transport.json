@@ -1,0 +1,4 @@
+{
+  "kind": "embedded",
+  "httpError": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:4385/?test=1\nCall log:\n  - navigating to \"http://127.0.0.1:4385/?test=1\", waiting until \"load\"\n"
+}

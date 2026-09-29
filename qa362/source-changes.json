@@ -1,0 +1,38 @@
+[
+  {
+    "path": "src/build-info.js",
+    "beforeSHA256": "0240c15e4c093a11b2d880811aea4ee878981a0cff5026d21b1554127ea014e0",
+    "afterSHA256": "5d296a63071985b03f191c65c106b8e46559d8e6548cecd1f13085dbb32ca015",
+    "newFile": false
+  },
+  {
+    "path": "src/main.js",
+    "beforeSHA256": "c9a5ab9769cd912e482298059869196a28ada52e3310b54c4e97dd06ba3c9150",
+    "afterSHA256": "22b69066ae77442942ec86a3527ce8f0a496e2154b6098929c5fa5593df8935d",
+    "newFile": false
+  },
+  {
+    "path": "src/render/presentation.js",
+    "beforeSHA256": "d07d268a41b6d460de6ecb2a2ac0994a428a599dd760dbe2cff72ecbeb5f85e8",
+    "afterSHA256": "60c006d832f750519bab0cc5072c9a64284c5385b61ed2a1707590556c1b5023",
+    "newFile": false
+  },
+  {
+    "path": "src/styles.css",
+    "beforeSHA256": "c2ded7a05e69997f509df1f4d12fd14224f6ec09c456bf20e1fec75665500329",
+    "afterSHA256": "d89b07b45923345de3bea8629bda0ffe053947a6a19fb155a75a47ef33b4244a",
+    "newFile": false
+  },
+  {
+    "path": "src/ui/campaign-entry.js",
+    "beforeSHA256": null,
+    "afterSHA256": "f5450217bcd6b0aa15ff3563282f69bc09dd47eed85050dc7b2161d808594d8e",
+    "newFile": true
+  },
+  {
+    "path": "src/ui/layout.js",
+    "beforeSHA256": "6ba34783117f02b9377d1cb9cb8939f54a990296d73ff7e7e919fb08dfb22f43",
+    "afterSHA256": "de6580e600840d71023d4ddc6b55ef1fbfdbb0bcdaf00e947b2be6e333c09471",
+    "newFile": false
+  }
+]

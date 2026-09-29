@@ -1,0 +1,17 @@
+{
+  "changedSource": [
+    "src/build-info.js",
+    "src/game/storage.js",
+    "src/main.js",
+    "src/render/presentation.js",
+    "src/styles.css"
+  ],
+  "addedSource": [
+    "src/game/score-chase.js"
+  ],
+  "node": "v22.16.0",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "chromium": "Chromium 144.0.7559.96 built on Debian GNU/Linux 13 (trixie)",
+  "preservedFiles": 83
+}

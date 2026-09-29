@@ -7,9 +7,9 @@ import {APP_VERSION,BUILD_TAG} from '../src/build-info.js';
 import {PRESENTATION_VERSION,readableCardLayout} from '../src/render/presentation.js';
 import {RULESET_VERSION} from '../src/game/rules.js';
 
-test('3.4.0 identifies the folio/caption build while retaining 3.2.1 balance',()=>{
- assert.equal(APP_VERSION,'3.4.0');assert.equal(PRESENTATION_VERSION,APP_VERSION);
- assert.equal(BUILD_TAG,'chapter-atmospheres-elemental-340');assert.equal(RULESET_VERSION,'typekeeper-3.2.1');
+test('3.5.1 identifies the folio/caption build while retaining 3.2.1 balance',()=>{
+ assert.equal(APP_VERSION,'3.6.2');assert.equal(PRESENTATION_VERSION,APP_VERSION);
+ assert.equal(BUILD_TAG,'fresh-journey-362');assert.equal(RULESET_VERSION,'typekeeper-3.2.1');
 });
 for(const kind of ['normal','fire','ice','slow','wind','bonus'])test(`${kind}: immutable local folio material contains complete valid color roles`,()=>{
  const p=folioPalette(kind);assert.equal(p,FOLIO_PALETTES[kind]);assert(Object.isFrozen(p));
@@ -43,8 +43,8 @@ test('Book art does not change single-line layout width, height, or full-word co
   assert.equal(m.width,l.width);assert.equal(m.height,l.height);assert(l.textWidth<=l.textMaxWidth+.01);
  }
 });
-test('Game, randomness, save logic, audio, dictionary and existing art remain byte-identical',()=>{
- const expected=JSON.parse(fs.readFileSync(new URL('./fixtures/v332-preserved.json',import.meta.url)));
+test('3.5: all out-of-scope 3.4 runtime sources and existing art/audio assets remain byte-identical',()=>{
+ const expected=JSON.parse(fs.readFileSync(new URL('./fixtures/v340-unchanged.json',import.meta.url)));
  for(const [p,hash]of Object.entries(expected)){
   assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../'+p,import.meta.url))).digest('hex'),hash,p);
  }

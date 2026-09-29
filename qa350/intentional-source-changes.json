@@ -1,0 +1,19 @@
+{
+  "baseline": "uploaded 3.4.0 full ZIP",
+  "intentionallyChanged": [
+    "src/audio/audio.js",
+    "src/build-info.js",
+    "src/data/campaign.js",
+    "src/game/model.js",
+    "src/game/rules.js",
+    "src/game/storage.js",
+    "src/main.js",
+    "src/render/chapter-art.js",
+    "src/render/elemental-art.js",
+    "src/render/presentation.js",
+    "src/render/renderer.js",
+    "src/styles.css"
+  ],
+  "unchangedCount": 72,
+  "unchangedScope": "runtime/source plus original editable masters"
+}

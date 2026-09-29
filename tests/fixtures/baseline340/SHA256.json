@@ -1,0 +1,9 @@
+{
+  "src/data/campaign.js": "ede9d388f656f5ebf1132fd7ed9c4bfeb202634482a53844a4e90a85d275aef2",
+  "src/data/words.js": "0cce1326624cbadcf90f484379c385731f61240916ee0d7b686c4e62bfb3fcd9",
+  "src/game/economy.js": "6db640431a9d26bc5b68120aa92b5ba04e5e702dc304a3c6e0cf01048721b718",
+  "src/game/model.js": "0ce054464724078cd8586c3ac18d4a2e66a2f44fed36d19a0afc0f2142ddf105",
+  "src/game/pressure.js": "ed17bd358f79f211319b4b023061ef05ed96d5cd0d8e872594ce529ede252c0b",
+  "src/game/random.js": "6b45428588b62d7e87ec89521de170f1439c1a8bc2b2e4914be3c8dd6ca94204",
+  "src/game/rules.js": "ea93f8264594d1ddbd9157b97106ff09f1a4ec6aa8b76b10933518b9b4a61d15"
+}

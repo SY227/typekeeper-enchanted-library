@@ -1,0 +1,26 @@
+{'name': 'Shipping title and running folio renderer identify the new 3.5.0 release', 'status': 'PASS', 'seconds': 0.101}
+{'name': 'Exactly four persistent usage lines explain each spell and its existing key', 'status': 'PASS', 'seconds': 0.277}
+{'name': 'Usage-line fit and original halo size at 1366×768', 'status': 'PASS', 'seconds': 0.107}
+{'name': 'Usage-line fit and original halo size at 1920×1080', 'status': 'PASS', 'seconds': 0.15}
+{'name': 'Usage-line fit and original halo size at 1280×720', 'status': 'FAIL', 'error': "AssertionError({'power': 'fire', 'x': 241.07186889648438, 'y': 669.760009765625, 'w': 89.95556640625, 'h': 18.6021728515625, 'stageBottom': 712, 'titleBottom': 666.631103515625, 'bookBottom': 643.7821655273438, 'haloBottom': 639.0822143554688, 'textRects': 1, 'overflow': True, 'textRight': 331.956298828125, 'right': 331.0274353027344, 'font': '17.8977px', 'whiteSpace': 'nowrap'})", 'seconds': 0.14}
+{'name': 'Usage-line fit and original halo size at 1024×768', 'status': 'PASS', 'seconds': 0.122}
+{'name': 'FIRE via key: one cast, no buffer or selection loss', 'status': 'PASS', 'seconds': 0.102}
+{'name': 'FIRE via caption click: one cast, no buffer or selection loss', 'status': 'PASS', 'seconds': 0.165}
+{'name': 'ICE via key: one cast, no buffer or selection loss', 'status': 'PASS', 'seconds': 0.102}
+{'name': 'ICE via caption click: one cast, no buffer or selection loss', 'status': 'PASS', 'seconds': 0.13}
+{'name': 'SLOW via key: one cast, no buffer or selection loss', 'status': 'PASS', 'seconds': 0.099}
+{'name': 'SLOW via caption click: one cast, no buffer or selection loss', 'status': 'PASS', 'seconds': 0.172}
+{'name': 'WIND via key: one cast, no buffer or selection loss', 'status': 'PASS', 'seconds': 0.092}
+{'name': 'WIND via caption click: one cast, no buffer or selection loss', 'status': 'PASS', 'seconds': 0.114}
+{'name': 'Empty inventory keeps the hint visible without gifting or consuming a charge', 'status': 'PASS', 'seconds': 0.109}
+{'name': 'STORED FIRE and WIND retain no-waste protections with the new captions', 'status': 'PASS', 'seconds': 0.085}
+{'name': 'Active and queued spell timers do not replace, cover or relabel usage captions', 'status': 'FAIL', 'error': 'AssertionError()', 'seconds': 0.05}
+{'name': 'Pause keeps the whole inventory inert and resumes native typing correctly', 'status': 'PASS', 'seconds': 0.127}
+{'name': 'Subtle lines remain readable and non-animated in pressure/contrast/reduced-motion states', 'status': 'FAIL', 'error': "AssertionError([{'visible': True, 'animation': 'none', 'color': 'rgb(255, 242, 208)'}, {'visible': True, 'animation': 'none', 'color': 'rgb(255, 242, 208)'}, {'visible': True, 'animation': 'none', 'color': 'rgb(255, 242, 208)'}, {'visible': True, 'animation': 'none', 'color': 'rgb(255, 241, 206)'}])", 'seconds': 0.126}
+{'name': 'All six folio skins at four widths cache correctly without touching gameplay state', 'status': 'PASS', 'seconds': 0.106}
+{'name': 'Six material skins render distinct actual pixels, not just distinct metadata', 'status': 'PASS', 'seconds': 0.054}
+{'name': 'A 155-width texture churn remains within the existing cache/memory budgets', 'status': 'PASS', 'seconds': 0.086}
+{'name': 'Typed folio leaves retain six material death paths and clean up after animation', 'status': 'PASS', 'seconds': 1.616}
+{'name': 'Full long-word entry and prefix ink remain one row on the new folio skin', 'status': 'PASS', 'seconds': 0.163}
+{'name': 'Actual-app screenshots and the actual six-skin renderer sheet are captured', 'status': 'PASS', 'seconds': 1.742}
+{'name': 'No unhandled browser JavaScript errors during the suite', 'status': 'PASS', 'seconds': 0.0}

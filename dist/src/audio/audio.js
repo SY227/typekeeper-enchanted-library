@@ -1,5 +1,5 @@
-import { asset } from '../game/assets.js?v=3.4.0-cbb049170ccf1a33';
-import { MUSIC_STEMS, MUSIC_LOOP_SECONDS, musicDirection } from './mix.js?v=3.4.0-cbb049170ccf1a33';
+import { asset } from '../game/assets.js?v=3.6.2-04b297ea546ad828';
+import { MUSIC_STEMS, MUSIC_LOOP_SECONDS, musicDirection } from './mix.js?v=3.6.2-04b297ea546ad828';
 
 /** Original phase-aligned score + bounded procedural foley.
  * Music follows pile pressure, never drives simulation time or changes word speed.
@@ -13,7 +13,7 @@ export class GameAudio {
   this.scene='menu';this.pressure=0;this.direction=musicDirection();
   this.lastKey=-Infinity;this.lastUI=-Infinity;this.lastFailure=0;this.lastTally=-Infinity;
   this.voiceCount=0;this.noiseCount=0;this.backgroundTimer=null;this.startedAt=0;
-  this.handles=new Set();this.noiseCache=new Map();this.keyIndex=0;this.cueLog=[];
+  this.journeyPlaying=false;this.handles=new Set();this.noiseCache=new Map();this.keyIndex=0;this.cueLog=[];
  }
  async unlock(){
   try{
@@ -33,7 +33,7 @@ export class GameAudio {
    this.active=true;this.apply();if(this.settings.music)this.loadMusic();
   }catch{this.active=false;}
  }
- setSettings(settings){this.settings=settings;this.apply();}
+ setSettings(settings){this.settings=settings;if(settings.muted||!settings.sfx)this.stopJourney();this.apply();}
  setScene(scene){if(scene!==this.scene)this.stopScore();this.scene=scene;this.apply();}
  setPressure(value){
   const next=Number.isFinite(value)?Math.max(0,Math.min(100,value)):0;
@@ -41,7 +41,7 @@ export class GameAudio {
   const falling=next<this.pressure;this.pressure=next;this.applyDirection(falling?.27:.55);
  }
  setBackground(value){
-  this.background=Boolean(value);clearTimeout(this.backgroundTimer);if(this.background)this.stopScore();this.apply();
+  this.background=Boolean(value);clearTimeout(this.backgroundTimer);if(this.background){this.stopScore();this.stopJourney();}this.apply();
   if(this.background&&this.context)this.backgroundTimer=setTimeout(()=>{if(this.background)this.context.suspend().catch(()=>{});},180);
   else if(this.context&&this.active)this.context.resume().catch(()=>{});
  }
@@ -63,7 +63,7 @@ export class GameAudio {
   this.ramp(this.output.gain,s.muted||this.background?0:s.volume,.045);
   this.ramp(this.master.gain,s.sfx?s.sfxVolume*.19:0,.025);
   const paused=this.scene==='pause';
-  const sceneGain=paused?.22:this.scene==='over'?.32:this.scene==='clear'?.64:this.scene==='menu'?.82:1;
+  const sceneGain=this.journeyPlaying?.34:paused?.22:this.scene==='over'?.32:this.scene==='clear'?.64:this.scene==='menu'?.82:1;
   this.ramp(this.musicBus.gain,s.music?s.musicVolume*.75*sceneGain:0,.4);
   this.ramp(this.filter.frequency,paused?2200:13000,.35);this.applyDirection();
   if(s.music&&this.active&&!this.loadPromise&&!['ready','degraded'].includes(this.status)&&(this.status!=='failed'||performance.now()-this.lastFailure>10000))this.loadMusic();
@@ -168,6 +168,24 @@ export class GameAudio {
   this.bell(74,.2,0,'score');
   for(let i=0;i<Math.min(3,medal);i++)this.bell([78,81,86][i],.2,.11+i*.12,'score',-.18+i*.18);
  }
+ stopJourney(){
+  for(const h of this.handles)if(h.group==='journey'){
+   try{const now=this.context.currentTime;h.gain.gain.cancelScheduledValues(now);h.gain.gain.setTargetAtTime(.0001,now,.012);h.source.stop(now+.045);}catch{}
+  }
+  if(this.journeyPlaying){this.journeyPlaying=false;this.apply();}
+ }
+ journey(journey){
+  this.stopJourney();if(!journey||!this.allowed())return;
+  this.journeyPlaying=true;this.apply();
+  const finale=journey.kind==='finale';this.noteCue(finale?'library-homecoming':`wing-restored-${journey.wing}`);
+  // New original motifs use the existing bell/foley palette rather than adding
+  // another soundtrack. Future voices share a group and cancel on skip/navigation.
+  const notes=finale?[74,78,81,86,81,86]:[74,78,81,86];
+  const times=finale?[.04,.21,.39,.63,.99,1.53]:[.03,.19,.37,.68];
+  notes.forEach((n,i)=>this.bell(n,finale?.22:.17,times[i],'journey',((i%3)-1)*.12));
+  this.noise(.21,.14,2100,{group:'journey',endFilter:800});
+  if(finale){this.tone(146.832,1.45,'sine',.12,1.48,{group:'journey'});this.tone(293.665,1.25,'sine',.09,1.53,{group:'journey'});}
+ }
  play(event){
   if(event.type==='input'&&event.changed&&!event.erased)this.key(!!event.target,event.complete);
   if(event.type==='input'&&event.changed&&event.erased){const now=performance.now();if(now-(this.lastErase||0)>35){this.lastErase=now;this.noteCue('paper-erase');this.noise(.028,.10,3500,{endFilter:1800});}}
@@ -178,14 +196,18 @@ export class GameAudio {
    this.bell(note,event.word.kind==='bonus'?.34:.25,0,'fx',Math.max(-.3,Math.min(.3,(event.word.x-600)/1500)));
    if(event.word.kind==='bonus')this.bell(note+12,.12,.05);
    if(event.collected){this.noteCue('book-collected');this.noise(.14,.18,3400);this.bell(86,.14,.09);this.bell(90,.1,.16);}
-   if(event.streak>0&&event.streak%8===0){this.noteCue('streak');[78,81,86].forEach((n,i)=>this.bell(n,.13,.075+i*.065));}
+   // Multiplier milestones arrive as their own authoritative model event.
   }
+  if(event.type==='multiplier-up'){this.noteCue('streak');[78,81,86].forEach((n,i)=>this.bell(n,.13,.075+i*.065));}
   if(event.type==='pressure'&&['alarmed','critical'].includes(event.state?.key)){
    this.noteCue('pressure-warning');const critical=event.state.key==='critical';
    this.tone(critical?146.83:196,.22,'sine',.16);this.tone(critical?220:293.66,.18,'sine',.1,.16);
   }
   if(event.type==='wrong'){this.noteCue('wrong');this.bell(69,.11);this.noise(.031,.12,950);}
-  if(event.type==='miss'){this.noteCue('paper-impact');this.noise(.17,.55,1700,{endFilter:460});this.tone(102,.14,'sine',.3,0,{endFrequency:62});}
+  if(event.type==='miss'){this.noteCue('paper-impact');this.noise(.065,.23,2100,{endFilter:920});if(!this.settings.motion){this.tone(102,.09,'sine',.22,0,{endFrequency:66});}}
+  if(event.type==='paper-settle'&&this.allowed()){
+   const now=performance.now();if(now-(this.lastSettle||-Infinity)>65){this.lastSettle=now;this.noteCue('paper-settle');this.noise(.085,.28,1250,{endFilter:430});this.tone(106,.085,'sine',.20,0,{endFrequency:72});}
+  }
   if(event.type==='unavailable')this.tone(240,.07,'sine',.13);
   if(event.type==='power'){
    const p=event.power;this.noteCue(`spell-${p}`);
@@ -199,5 +221,5 @@ export class GameAudio {
   if(event.type==='level-clear'){this.noteCue('chapter-clear');this.noise(.19,.2,1900);this.bell(81,.13,.02);}
   if(event.type==='game-over'){this.noteCue('run-over');[74,69,66,62].forEach((n,i)=>this.bell(n,.18,i*.15));}
  }
- snapshot(){return {state:this.context?.state||'uninitialized',sfx:this.settings.sfx,music:this.settings.music,adaptive:this.settings.adaptiveMusic!==false,muted:this.settings.muted,musicStatus:this.status,scene:this.scene,pressure:this.pressure,tension:this.direction.tension,urgency:this.direction.urgency,targets:this.direction.stems,background:this.background,sources:this.sources.length,output:this.output?.gain.value??0,musicGain:this.musicBus?.gain.value??0,fxGain:this.master?.gain.value??0,stemGains:this.stemGains.map(n=>n?.gain.value??0),loopDuration:this.sources[0]?.loopEnd||0,decodedBytes:this.buffers.reduce((n,b)=>n+b.length*b.numberOfChannels*4,0),voices:this.voiceCount,noiseVoices:this.noiseCount,noiseCache:this.noiseCache.size,cues:this.cueLog.map(x=>({...x}))};}
+ snapshot(){return {journeyPlaying:this.journeyPlaying,journeyVoices:[...this.handles].filter(h=>h.group==='journey').length,state:this.context?.state||'uninitialized',sfx:this.settings.sfx,music:this.settings.music,adaptive:this.settings.adaptiveMusic!==false,muted:this.settings.muted,musicStatus:this.status,scene:this.scene,pressure:this.pressure,tension:this.direction.tension,urgency:this.direction.urgency,targets:this.direction.stems,background:this.background,sources:this.sources.length,output:this.output?.gain.value??0,musicGain:this.musicBus?.gain.value??0,fxGain:this.master?.gain.value??0,stemGains:this.stemGains.map(n=>n?.gain.value??0),loopDuration:this.sources[0]?.loopEnd||0,decodedBytes:this.buffers.reduce((n,b)=>n+b.length*b.numberOfChannels*4,0),voices:this.voiceCount,noiseVoices:this.noiseCount,noiseCache:this.noiseCache.size,cues:this.cueLog.map(x=>({...x}))};}
 }

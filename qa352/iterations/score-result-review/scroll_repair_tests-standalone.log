@@ -1,0 +1,5 @@
+{"name": "Both shipping identity and initialized renderer are v3.5.2", "status": "PASS", "seconds": 0.005}
+{"name": "The actual title painter keeps WONDER / STORY / IMAGINE inside both rollers", "status": "PASS", "seconds": 0.365}
+{"name": "Rasterized letter pixels avoid rods / medallions, full words at 1366\u00d7768", "status": "PASS", "seconds": 0.455}
+{"name": "Rasterized letter pixels avoid rods / medallions, full words at 1920\u00d71080", "status": "PASS", "seconds": 0.23}
+{"name": "Rasterized letter pixels avoid rods / medallions, full words at 1280\u00d7720", "status": "PASS", "seconds": 0.393}

@@ -1,0 +1,11 @@
+{
+  "name": "book_leaf_tests-standalone",
+  "command": [
+    "python",
+    "e2e/book_leaf_tests.py",
+    "--mode",
+    "standalone"
+  ],
+  "exit": 1,
+  "seconds": 9.84
+}

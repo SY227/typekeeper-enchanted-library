@@ -1,0 +1,39 @@
+{
+  "scope": "Backup-first updater audit on disposable Linux folders, not the user's Mac/repo.",
+  "passed": 6,
+  "failed": 0,
+  "cases": [
+    {
+      "case": "backup-first update of an existing project including a space in its path",
+      "passed": true,
+      "filesCopied": 1422,
+      "preserved": [
+        ".git",
+        ".vercel",
+        ".env.production",
+        "vercel.json"
+      ],
+      "backupContainsOldRules": true
+    },
+    {
+      "case": "repeating an update creates a distinct backup and preserves bindings",
+      "passed": true
+    },
+    {
+      "case": "non-Typekeeper target rejected without changes",
+      "passed": true
+    },
+    {
+      "case": "self-update target rejected",
+      "passed": true
+    },
+    {
+      "case": "missing target rejected without creating a directory",
+      "passed": true
+    },
+    {
+      "case": "symlink destination rejected before external file overwrite",
+      "passed": true
+    }
+  ]
+}

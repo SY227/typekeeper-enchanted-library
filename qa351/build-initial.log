@@ -1,0 +1,15 @@
+
+> typekeeper-enchanted-library@3.5.1 build
+> node scripts/build.mjs
+
+Manifest verified: 23 local assets.
+Built 55 local files; 8.14 MiB. Build 3.5.1-5918ab32d405425e
+file:///mnt/data/tk_ui_pass/work/Typekeeper_Enchanted_Library_v3_5_1/scripts/standalone.mjs:18
+   if(!emitted.has(dependency))throw new Error(`Standalone dependency missing or out of order: ${name} needs ${dependency}`);
+                                     ^
+
+Error: Standalone dependency missing or out of order: main.js needs ui/layout.js
+    at standalone (file:///mnt/data/tk_ui_pass/work/Typekeeper_Enchanted_Library_v3_5_1/scripts/standalone.mjs:18:38)
+    at async file:///mnt/data/tk_ui_pass/work/Typekeeper_Enchanted_Library_v3_5_1/scripts/build.mjs:41:53
+
+Node.js v22.16.0

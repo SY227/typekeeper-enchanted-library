@@ -1,0 +1,94 @@
+{
+  "errors": [],
+  "visual": {
+    "impact": {
+      "machine": {
+        "tap": 0,
+        "erase": 0,
+        "returning": 0,
+        "shift": -0.0,
+        "hand": 0
+      },
+      "pendingLandings": 0,
+      "pileImpulse": 0,
+      "pile": {
+        "x": 807,
+        "y": 699.0000000001362,
+        "width": 100,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "last": {
+        "type": "miss",
+        "id": 4,
+        "x": 630,
+        "y": 648.5
+      }
+    },
+    "milestone": 0,
+    "multiplier": 1,
+    "chapterArt": "dawn",
+    "chapterArtTitle": "First Light",
+    "elemental": {
+      "entries": 0,
+      "bytes": 0,
+      "limit": 12582912
+    },
+    "iceAge": 1,
+    "room": "Reading Room",
+    "roomCache": 1,
+    "layouts": 4,
+    "spawns": 0,
+    "deaths": 0,
+    "arrivals": 0,
+    "particles": 0,
+    "textureBytes": 2337536,
+    "light": {
+      "tension": 1,
+      "urgency": 1
+    },
+    "readability": [
+      {
+        "id": 2,
+        "text": "CLOISTER",
+        "fontSize": 29,
+        "effectivePixels": 24.231111111111108,
+        "width": 210,
+        "height": 60,
+        "lines": [
+          "CLOISTER"
+        ],
+        "x": 780,
+        "y": 235.51,
+        "selected": false,
+        "matching": false,
+        "complete": false
+      },
+      {
+        "id": 3,
+        "text": "STORY",
+        "fontSize": 29,
+        "effectivePixels": 24.231111111111108,
+        "width": 194,
+        "height": 60,
+        "lines": [
+          "STORY"
+        ],
+        "x": 778,
+        "y": 486.51,
+        "selected": false,
+        "matching": false,
+        "complete": false
+      }
+    ],
+    "guide": {
+      "word": true,
+      "ice": false,
+      "targetId": null
+    },
+    "ceremony": null,
+    "worldTime": 3.966399999999996,
+    "strike": 0,
+    "hand": 0
+  }
+}

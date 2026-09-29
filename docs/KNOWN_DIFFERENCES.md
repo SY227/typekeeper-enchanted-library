@@ -1,47 +1,29 @@
-> **v3.3.2 superseding note:** all letters of one word now stay on one row.
-> Any older wrapping description below is historical. New game and Retry use fresh
-> vocabulary; Continue preserves the current saved attempt. App metadata is 3.3.2;
-> balance constants remain the v3.2.1 ruleset. See RELEASE_NOTES.md and QA_REPORT.md
-> for current behavior and newly executed evidence.
+> **v3.5.1 addendum:** See [UI_SPACING_SPEC.md](UI_SPACING_SPEC.md) for this release’s UI-only changes and [QA_REPORT.md](QA_REPORT.md) for current evidence. The material below describes retained systems or earlier decisions.
 
-# v3.2.1 balance-specific differences
+# Scope and remaining validation
 
-This update follows the user-approved authored economy, not measured original Typing
-Maniac numbers. It retains the existing assets and mechanics except for the explicit
-speed/drop/cap/migration changes in `ECONOMY.md`. The runtime is a browser game, not
-an executed Unreal/Blender port or a native Steam release. Human first-play and target
-platform approval are still open; all simulated losses remain in `docs/qa/`.
+This is the supplied Typekeeper browser game upgraded in-place, not a remake of
+Typing Maniac, a new engine, or an independently certified AAA product.
 
-The reference-video limitations and earlier implementation differences below remain
-applicable. The current rules and QA report supersede earlier version labels/counts.
+The same accepted illustrated library and typing flow are retained. New landmarks
+and FIRE integration are procedural Canvas art layered into that scene; the finale
+uses existing character assets with a subtle pose/hand movement, not a newly
+rendered cinematic or a fully rigged character.
 
----
+The release is English-language as before. The Chinese production brief was not
+interpreted as a request to translate the whole game or change vocabulary.
 
-# Scope and remaining gates — 3.2
+A personal best is a real same-scope chapter score, not a ghost, network ranking
+or proof that randomized word sequences had identical difficulty. No leaderboard
+or cross-seed speed-race fairness is implied. Historic aggregate maxima are not
+converted to fabricated atomic runs.
 
-A complete browser build and editable source/assets. Not a native Steam binary,
-AAA certification, exact Typing Maniac copy or prediction of commercial success.
-The requested earlier challenge and pressure-dependent sound are implemented as
-authored changes from the attached v3.1 and the user's described observations.
-The linked video's frames/audio were not accessible for direct comparison.
+Testing was on Linux/Chromium with actual shipping embedded/Blob-module code.
+The environment blocks browser navigation, so HTTP payload/server checks are
+separate from DOM/Canvas/input/audio checks. Native desktop browser/device,
+real-origin browser storage, long-session listening and external human playtests
+remain validation tasks. See HUMAN_DEVICE_QA.md and QA_REPORT.md.
 
-Real browser tests use the shipping HTML in Chromium on Linux, with diagnostics
-explicitly enabled in memory. Local browser navigation is blocked here. HTTP
-payload/MIME/hash validation is separate. Physical Windows/Mac, Safari/Firefox/
-Edge, alternate refresh rates/keyboards and real hosted save persistence are not
-certified by those fixtures. Friends should test the actual deployed update.
-
-Synthetic agents see exact visible strings and use defined acquisition delays,
-errors and reactive powers. They do not model reading, attention, fatigue, learning,
-enjoyment or retention. The faster curve causes earlier losses for slower profiles;
-all outcomes are retained. Endless soaks inject books to reach long-lived states.
-
-New music is synthesized and objectively decoded/measured, not human-listening
-approved. Four decoded layers use additional memory (~107.7 MiB at 44.1 kHz),
-requiring target-device profiling. Pressure layers gracefully degrade to the base
-score if optional files fail. Signal/peak checks cannot establish subjective quality.
-
-Local records are editable, not authenticated shared rankings. Legacy separation
-is provenance, not anti-cheat. The keyboard remains essential; viewport scaling
-alone is not controller or handheld compatibility. Unreal/Blender authoring helpers
-remain optional/unexecuted. No engine port was needed or claimed.
+Local-file storage behaviour varies by browser. Use Records → Export/Import save
+for a portable backup and reuse the same hosted/local-server address for automatic
+save continuity. No account or cloud save has been silently added.

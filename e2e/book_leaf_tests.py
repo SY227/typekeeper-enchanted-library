@@ -9,8 +9,8 @@ from playwright.sync_api import sync_playwright
 from inline_fixture import inline_fixture
 from module_fixture import module_fixture
 import argparse,json,hashlib,time,base64
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa340';SHOTS=ROOT/'docs/screenshots/v3.4.0'
-LABELS={'fire':'Clear words','ice':'Freeze words','slow':'Slow words','wind':'Clear pile'}
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa362';SHOTS=ROOT/'docs/screenshots/v3.6.2'
+LABELS={'fire':'Clear words','ice':'Freeze','slow':'Slow','wind':'Clear pile'}
 
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--executable',default='/usr/bin/chromium');ap.add_argument('--mode',choices=['standalone','modules'],default='standalone');a=ap.parse_args()
@@ -32,9 +32,9 @@ def main():
     except Exception:pass
    rows.append(row);print(row,flush=True)
   def identity():
-   assert api('return t.info.version;')=='3.4.0';assert api('return t.info.buildTag;')=='chapter-atmospheres-elemental-340'
-   assert page.title().endswith('v3.4.0');assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
-  check('Shipping title and running folio renderer identify the new 3.4.0 release',identity)
+   assert api('return t.info.version;')=='3.6.2';assert api('return t.info.buildTag;')=='fresh-journey-362'
+   assert page.title().endswith('v3.6.2');assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
+  check('Shipping title and running folio renderer identify the new 3.5.2 release',identity)
   def captions():
    run();assert page.locator('.spell-use').count()==4
    for i,(power,label) in enumerate(LABELS.items(),1):
@@ -83,7 +83,7 @@ def main():
   check('STORED FIRE and WIND retain no-waste protections with the new captions',no_waste)
   def combo():
    run();page.keyboard.press('2');page.keyboard.press('3');assert page.locator('#ready-slow').inner_text()=='QUEUED'
-   assert page.locator('#use-slow .spell-use-label').inner_text()=='Slow words';assert snap()['inventory']['ice']==1 and snap()['inventory']['slow']==1
+   assert page.locator('#use-slow .spell-use-label').inner_text()=='Slow';assert snap()['inventory']['ice']==1 and snap()['inventory']['slow']==1
   check('Active and queued spell timers do not replace, cover or relabel usage captions',combo)
   def pause():
    run();page.locator('#typing-input').fill('LIB');page.keyboard.press('Escape');before=snap();assert page.locator('#play-hud').get_attribute('inert')is not None
@@ -139,7 +139,7 @@ def main():
   check('Actual-app screenshots and the actual six-skin renderer sheet are captured',shots)
   def no_errors():assert not errors,errors
   check('No unhandled browser JavaScript errors during the suite',no_errors)
-  report={'version':'3.4.0','scope':__doc__,'mode':a.mode,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'browser':b.version,'passed':sum(x['status']=='PASS'for x in rows),'failed':sum(x['status']=='FAIL'for x in rows),'unhandledErrors':errors,'tests':rows,'evidence':evidence}
+  report={'version':'3.6.2','scope':__doc__,'mode':a.mode,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'browser':b.version,'passed':sum(x['status']=='PASS'for x in rows),'failed':sum(x['status']=='FAIL'for x in rows),'unhandledErrors':errors,'tests':rows,'evidence':evidence}
   (OUT/f'book-leaf-{a.mode}.json').write_text(json.dumps(report,indent=2));b.close()
  if report['failed']:raise SystemExit(1)
 if __name__=='__main__':main()

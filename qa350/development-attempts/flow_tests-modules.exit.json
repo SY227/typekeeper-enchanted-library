@@ -1,0 +1,15 @@
+{
+  "name": "flow_tests-modules",
+  "command": [
+    "python",
+    "e2e/flow_tests.py",
+    "--mode",
+    "modules",
+    "--root",
+    ".",
+    "--out",
+    "qa350"
+  ],
+  "exit": 0,
+  "seconds": 53.41
+}

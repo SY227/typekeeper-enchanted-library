@@ -1,0 +1,22 @@
+TYPEKEEPER: ENCHANTED LIBRARY — v3.5.1
+Breathing Room
+
+Extract the ENTIRE ZIP. Open PLAY.html for the self-contained offline game.
+For the locally served edition on Mac, run in the extracted folder:
+  bash START_MAC.command
+
+The title must show v3.5.1. Source, dist, art, audio, masters, launchers,
+update helper, tests and current QA are included. No account or API key.
+
+Before updating, use Records -> Export save. Stop your old local server with
+Control+C to reuse the same address/port. A different port or local file may
+have different browser storage. Import your exported save there if needed.
+The game rules, save key and v3.5 mechanics are preserved.
+
+完整解壓後，可直接開啟 PLAY.html。
+Mac 本機伺服器：bash START_MAC.command
+請確認標題顯示 v3.5.1。更換網址、連接埠或瀏覽器之前，先匯出存檔。
+
+README.md: changes, controls, launch, source/build.
+docs/QA_REPORT.md: actual tests, evidence and limitations.
+docs/UI_SPACING_SPEC.md: spacing contracts and UX decisions.

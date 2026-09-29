@@ -1,0 +1,114 @@
+[
+  {
+    "capture": "qa351/ui-screenshots/hud-1366x768-0-standalone.png",
+    "preview": "hud-empty-1366.webp",
+    "width": 1366,
+    "height": 768,
+    "captureSHA256": "93be359f363760f2df91d2432d1d487654310616a6bf6b763632d3b9278e55be"
+  },
+  {
+    "capture": "qa351/ui-screenshots/hud-1366x768-95-standalone.png",
+    "preview": "hud-rescue-1366.webp",
+    "width": 1366,
+    "height": 768,
+    "captureSHA256": "5730ed68de2e8bbca9f48a5eb3836cd326806ac08e0ee1950ed69dbf84c840a4"
+  },
+  {
+    "capture": "qa351/ui-screenshots/hud-800x600-95-standalone.png",
+    "preview": "hud-rescue-600p.webp",
+    "width": 800,
+    "height": 600,
+    "captureSHA256": "70f462662e7819d2bcbf0bb5001375f7347dfba37eb4349221fa6ed3a5c362c5"
+  },
+  {
+    "capture": "qa351/ui-screenshots/last-live-card-safe-zone-standalone.png",
+    "preview": "last-word-clearance.webp",
+    "width": 1366,
+    "height": 768,
+    "captureSHA256": "a4949ab4a612bed9819744c7ed72e425471231661310cdf91071cc52843b64ab"
+  },
+  {
+    "capture": "qa351/ui-screenshots/first-ice-clear-desk-standalone.png",
+    "preview": "first-ice-context.webp",
+    "width": 1366,
+    "height": 768,
+    "captureSHA256": "48aeba1aa52a161ebee47657baa729a738505043bc2b2740867e8e2dda06739b"
+  },
+  {
+    "capture": "qa351/ui-screenshots/wind-context-desk-standalone.png",
+    "preview": "wind-context.webp",
+    "width": 1366,
+    "height": 768,
+    "captureSHA256": "7ee670f7879e9b9c75f995d86ebd618c720b5ea64575662cdc0c31bd0a067171"
+  },
+  {
+    "capture": "qa351/ui-screenshots/settings-display-focus-standalone.png",
+    "preview": "settings-focus.webp",
+    "width": 1280,
+    "height": 720,
+    "captureSHA256": "76473662988f48793a21ee1b9d5f272a3bbd23376c2947c0bede8bfd18d1b168"
+  },
+  {
+    "capture": "qa351/ui-screenshots/records-practice-600p-standalone.png",
+    "preview": "records-practice.webp",
+    "width": 1024,
+    "height": 600,
+    "captureSHA256": "01c448e5f5f457aed30de4300d71f76495707a08afc2ddd66956a0f9d67e130b"
+  },
+  {
+    "capture": "qa351/ui-screenshots/import-error-inline-standalone.png",
+    "preview": "save-error-inline.webp",
+    "width": 1366,
+    "height": 768,
+    "captureSHA256": "347fb32e2af6387efe046014d29dfdae9c4a5ae29f517ff8d891864c9621799f"
+  },
+  {
+    "capture": "qa351/ui-screenshots/mastery-final-wing-standalone.png",
+    "preview": "mastery-final-wing.webp",
+    "width": 1366,
+    "height": 768,
+    "captureSHA256": "70091a98fb6648248d2934ee18e8e8dc29352f138cbd1b51a9c7c6e32655cee6"
+  },
+  {
+    "capture": "qa351/ui-screenshots/how-expanded-standalone.png",
+    "preview": "expanded-rules.webp",
+    "width": 1280,
+    "height": 720,
+    "captureSHA256": "6d79f8d5d4227ad6c825331f7747ba255b3053923e84e572d80ea4547be17d77"
+  },
+  {
+    "capture": "qa351/ui-screenshots/one-star-768-standalone.png",
+    "preview": "result-star-explanation.webp",
+    "width": 1366,
+    "height": 768,
+    "captureSHA256": "b3f8ea6f16f50c6e93ffca7d6e87894b2fd45d64d1b55541af791cbedba17b14"
+  },
+  {
+    "capture": "qa351/ui-screenshots/finale-result-600-standalone.png",
+    "preview": "finale-600p.webp",
+    "width": 1024,
+    "height": 600,
+    "captureSHA256": "84993f1a70a280f1663b14bca39053b54764549e7a8e9a355fcac08ebb4c3d2f"
+  },
+  {
+    "capture": "qa351/ui-screenshots/finale-ceremony-standalone.png",
+    "preview": "finale-ceremony.webp",
+    "width": 1280,
+    "height": 720,
+    "captureSHA256": "621978208384ec6b74097c2c36acf4f12cbdfb34c35d5c16a46c20f31ed87fe7"
+  },
+  {
+    "capture": "qa351/ui-screenshots/game-over-600p-standalone.png",
+    "preview": "game-over-600p.webp",
+    "width": 800,
+    "height": 600,
+    "captureSHA256": "484ebe49477bcca5d92aca428c412296bea6914d6ca962f02819cd71bf1925ae"
+  },
+  {
+    "capture": "qa351/ui-screenshots/retina-dpr2-standalone.png",
+    "preview": "dpr2-emulation.webp",
+    "width": 2880,
+    "height": 1800,
+    "captureSHA256": "999aeb36e9cf56243fac28dcbf074e24772d91bb5687749281bd1302b4753ec7"
+  }
+]

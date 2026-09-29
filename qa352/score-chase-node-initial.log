@@ -1,0 +1,278 @@
+TAP version 13
+# Subtest: Current SCORE keeps running total; campaign key identifies current chapter and starting chapter
+ok 1 - Current SCORE keeps running total; campaign key identifies current chapter and starting chapter
+  ---
+  duration_ms: 2.031797
+  type: 'test'
+  ...
+# Subtest: Independent scope: classic campaign
+ok 2 - Independent scope: classic campaign
+  ---
+  duration_ms: 0.554767
+  type: 'test'
+  ...
+# Subtest: Independent scope: classic practice
+ok 3 - Independent scope: classic practice
+  ---
+  duration_ms: 0.725661
+  type: 'test'
+  ...
+# Subtest: Independent scope: classic endless
+ok 4 - Independent scope: classic endless
+  ---
+  duration_ms: 0.192297
+  type: 'test'
+  ...
+# Subtest: Independent scope: relaxed campaign
+ok 5 - Independent scope: relaxed campaign
+  ---
+  duration_ms: 0.145797
+  type: 'test'
+  ...
+# Subtest: Independent scope: relaxed practice
+ok 6 - Independent scope: relaxed practice
+  ---
+  duration_ms: 0.162061
+  type: 'test'
+  ...
+# Subtest: Independent scope: relaxed endless
+ok 7 - Independent scope: relaxed endless
+  ---
+  duration_ms: 0.097415
+  type: 'test'
+  ...
+# Subtest: Independent scope: maniac campaign
+ok 8 - Independent scope: maniac campaign
+  ---
+  duration_ms: 0.179267
+  type: 'test'
+  ...
+# Subtest: Independent scope: maniac practice
+ok 9 - Independent scope: maniac practice
+  ---
+  duration_ms: 0.252246
+  type: 'test'
+  ...
+# Subtest: Independent scope: maniac endless
+ok 10 - Independent scope: maniac endless
+  ---
+  duration_ms: 0.401909
+  type: 'test'
+  ...
+# Subtest: Different campaign chapters and starting chapters never share a target
+ok 11 - Different campaign chapters and starting chapters never share a target
+  ---
+  duration_ms: 0.238415
+  type: 'test'
+  ...
+# Subtest: Invalid scope, pace, chapter, start point or mode is rejected
+ok 12 - Invalid scope, pace, chapter, start point or mode is rejected
+  ---
+  duration_ms: 0.151296
+  type: 'test'
+  ...
+# Subtest: Bad scores, wrong metric and foreign rulesets cannot enter new persistent records
+ok 13 - Bad scores, wrong metric and foreign rulesets cannot enter new persistent records
+  ---
+  duration_ms: 0.128902
+  type: 'test'
+  ...
+# Subtest: A valid zero is a real record, not FIRST RUN; first-run never celebrates a fictitious zero PB
+ok 14 - A valid zero is a real record, not FIRST RUN; first-run never celebrates a fictitious zero PB
+  ---
+  duration_ms: 0.274259
+  type: 'test'
+  ...
+# Subtest: PB target is a primitive snapshot, not a live record reference
+ok 15 - PB target is a primitive snapshot, not a live record reference
+  ---
+  duration_ms: 0.143354
+  type: 'test'
+  ...
+# Subtest: Mismatched target scope is rejected even if caller passes a numeric score
+ok 16 - Mismatched target scope is rejected even if caller passes a numeric score
+  ---
+  duration_ms: 0.088422
+  type: 'test'
+  ...
+# Subtest: 90 percent softly enters near state; a tie is never a new record
+ok 17 - 90 percent softly enters near state; a tie is never a new record
+  ---
+  duration_ms: 0.081462
+  type: 'test'
+  ...
+# Subtest: Crossing fires once and delta grows against frozen pre-attempt score
+ok 18 - Crossing fires once and delta grows against frozen pre-attempt score
+  ---
+  duration_ms: 0.090575
+  type: 'test'
+  ...
+# Subtest: Synchronized/restored beaten state never replays congratulations
+ok 19 - Synchronized/restored beaten state never replays congratulations
+  ---
+  duration_ms: 0.132618
+  type: 'test'
+  ...
+# Subtest: Retry/new chapter begins a new target snapshot without moving an existing chase
+ok 20 - Retry/new chapter begins a new target snapshot without moving an existing chase
+  ---
+  duration_ms: 0.226417
+  type: 'test'
+  ...
+# Subtest: Invalid observations cannot poison display state
+ok 21 - Invalid observations cannot poison display state
+  ---
+  duration_ms: 0.102743
+  type: 'test'
+  ...
+# Subtest: Earlier-rule checkpoint remains visibly unranked
+ok 22 - Earlier-rule checkpoint remains visibly unranked
+  ---
+  duration_ms: 0.070315
+  type: 'test'
+  ...
+# Subtest: A new Endless wave never changes the persistent scope
+ok 23 - A new Endless wave never changes the persistent scope
+  ---
+  duration_ms: 0.082723
+  type: 'test'
+  ...
+# Subtest: One complete, contiguous checkpoint recovers real running totals
+ok 24 - One complete, contiguous checkpoint recovers real running totals
+  ---
+  duration_ms: 0.738821
+  type: 'test'
+  ...
+# Subtest: Per-chapter maxima from different plays are never summed into campaign totals
+ok 25 - Per-chapter maxima from different plays are never summed into campaign totals
+  ---
+  duration_ms: 0.426886
+  type: 'test'
+  ...
+# Subtest: Existing practice chapter PB is usable immediately; campaign row cannot substitute
+ok 26 - Existing practice chapter PB is usable immediately; campaign row cannot substitute
+  ---
+  duration_ms: 0.162362
+  type: 'test'
+  ...
+# Subtest: Game-over / retired / completed records contribute scoped real running totals
+ok 27 - Game-over / retired / completed records contribute scoped real running totals
+  ---
+  duration_ms: 0.411143
+  type: 'test'
+  ...
+# Subtest: Lower scores and ties do not replace a saved best
+ok 28 - Lower scores and ties do not replace a saved best
+  ---
+  duration_ms: 0.116884
+  type: 'test'
+  ...
+# Subtest: Local best survives 100-row global leaderboard trimming
+ok 29 - Local best survives 100-row global leaderboard trimming
+  ---
+  duration_ms: 7.500154
+  type: 'test'
+  ...
+# Subtest: Save export/import and a fresh LocalStore retain targets without touching progression
+ok 30 - Save export/import and a fresh LocalStore retain targets without touching progression
+  ---
+  duration_ms: 1.366096
+  type: 'test'
+  ...
+# Subtest: Import merges higher PB, rejects key mismatch/foreign ruleset and is idempotent
+ok 31 - Import merges higher PB, rejects key mismatch/foreign ruleset and is idempotent
+  ---
+  duration_ms: 0.358995
+  type: 'test'
+  ...
+# Subtest: Malformed old aggregate progress does not invent a comparable target
+ok 32 - Malformed old aggregate progress does not invent a comparable target
+  ---
+  duration_ms: 0.143855
+  type: 'test'
+  ...
+# Subtest: Clearing scores clears chase and chapter PBs but keeps unlocks, stars and settings
+ok 33 - Clearing scores clears chase and chapter PBs but keeps unlocks, stars and settings
+  ---
+  duration_ms: 0.244594
+  type: 'test'
+  ...
+# Subtest: Cleared scores are not resurrected from checkpoint on subsequent import/reload
+not ok 34 - Cleared scores are not resurrected from checkpoint on subsequent import/reload
+  ---
+  duration_ms: 0.353386
+  type: 'test'
+  location: '/mnt/data/score_chase/Typekeeper_Enchanted_Library_v3_5_2/tests/score-chase.test.mjs:43:1'
+  failureType: 'testCodeFailure'
+  error: 'm.completeStage is not a function'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/score_chase/Typekeeper_Enchanted_Library_v3_5_2/tests/score-chase.test.mjs:43:205)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: Missing/denied storage leaves Score Chase functional in memory
+ok 35 - Missing/denied storage leaves Score Chase functional in memory
+  ---
+  duration_ms: 0.398524
+  type: 'test'
+  ...
+# Subtest: Chase collection stays bounded under malformed or oversized imports
+ok 36 - Chase collection stays bounded under malformed or oversized imports
+  ---
+  duration_ms: 9.998646
+  type: 'test'
+  ...
+# Subtest: Scope descriptions explain cumulative campaign, practice and continuous Endless semantics
+ok 37 - Scope descriptions explain cumulative campaign, practice and continuous Endless semantics
+  ---
+  duration_ms: 0.356321
+  type: 'test'
+  ...
+# Subtest: Presentation identity change is the only changed byte in the original presentation contract
+not ok 38 - Presentation identity change is the only changed byte in the original presentation contract
+  ---
+  duration_ms: 1.483049
+  type: 'test'
+  location: '/mnt/data/score_chase/Typekeeper_Enchanted_Library_v3_5_2/tests/score-chase.test.mjs:47:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'ac68c367c534eafea672ad237bc387c679d3223f91d7e090d872712c8bc03fc1'
+    - undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual: 'ac68c367c534eafea672ad237bc387c679d3223f91d7e090d872712c8bc03fc1'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/score_chase/Typekeeper_Enchanted_Library_v3_5_2/tests/score-chase.test.mjs:47:374)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: No network, leaderboard, UI state or timing affects the immutable game model
+ok 39 - No network, leaderboard, UI state or timing affects the immutable game model
+  ---
+  duration_ms: 3.331674
+  type: 'test'
+  ...
+1..39
+# tests 39
+# suites 0
+# pass 37
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 111.842367

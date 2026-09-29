@@ -154,7 +154,7 @@ def main():
   def export_new():
    api('t.show("records");')
    with page.expect_download() as dl:btn('export-save').click()
-   data=json.loads(Path(dl.value.path()).read_text());assert data['appVersion']=='3.4.0'
+   data=json.loads(Path(dl.value.path()).read_text());assert data['appVersion']=='3.6.2'
    assert 'economy' in data['checkpoints']['classic'];assert data['checkpoints']['classic']['inventory']['ice']==2
   check('Real save export includes the sparse schedule and correct build version',export_new)
   def fresh():

@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 from inline_fixture import inline_fixture
 from module_fixture import module_fixture
 import argparse,json,time,hashlib,base64,subprocess
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa340';SHOTS=ROOT/'docs/screenshots/v3.4.0'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa362';SHOTS=ROOT/'docs/screenshots/v3.6.2'
 
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--mode',choices=['standalone','modules'],default='standalone');ap.add_argument('--executable',default='/usr/bin/chromium');a=ap.parse_args()
@@ -27,8 +27,8 @@ def main():
     page.screenshot(path=str(OUT/f'repair-failure-{a.mode}-{len(rows)+1}.png'))
    rows.append(row);print(json.dumps(row),flush=True)
   def identity():
-   assert 'v3.4.0' in page.title();assert api('return t.info.version;')=='3.4.0';assert api('return t.info.buildTag;')=='chapter-atmospheres-elemental-340'
-  check('Both shipping identity and initialized renderer are v3.4.0',identity)
+   assert 'v3.6.2' in page.title();assert api('return t.info.version;')=='3.6.2';assert api('return t.info.buildTag;')=='fresh-journey-362'
+  check('Both shipping identity and initialized renderer are v3.6.2',identity)
   def title():
    api('t.setSettings({motion:false,hints:false,muted:true});t.show("menu");')
    data=api('''const r=t.renderer,orig=r.paintCard,seen=[];
@@ -118,7 +118,7 @@ def main():
    q=b.new_page();e=[];q.on('pageerror',lambda x:e.append(str(x)));q.set_content(inline_fixture(ROOT,False) if a.mode=='standalone' else module_fixture(ROOT,False));q.wait_for_selector('[data-action="start"]');assert q.evaluate('typeof __TM_TEST__')=='undefined';assert not e;q.close()
   check('Exact production startup succeeds without the diagnostic seam',production)
   check('No unhandled JavaScript exceptions in the completed repair suite',lambda:(_ for _ in ()).throw(AssertionError(errors)) if errors else None)
-  out={'version':'3.4.0','mode':a.mode,'browser':b.version,'scope':__doc__,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(r['status']=='PASS' for r in rows),'failed':sum(r['status']=='FAIL' for r in rows),'unhandledErrors':errors,'evidence':evidence}
+  out={'version':'3.6.2','mode':a.mode,'browser':b.version,'scope':__doc__,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(r['status']=='PASS' for r in rows),'failed':sum(r['status']=='FAIL' for r in rows),'unhandledErrors':errors,'evidence':evidence}
   (OUT/f'scroll-repair-{a.mode}.json').write_text(json.dumps(out,indent=2));b.close()
  if out['failed']:raise SystemExit(1)
 if __name__=='__main__':main()

@@ -1,0 +1,7 @@
+{'name': 'install', 'exit': 0, 'seconds': 0.26}
+{'name': 'logic', 'exit': 0, 'seconds': 1.37}
+{'name': 'syntax', 'exit': 0, 'seconds': 0.92}
+{'name': 'build', 'exit': 0, 'seconds': 0.37}
+{'name': 'clarity-standalone', 'exit': 0, 'seconds': 27.24}
+{'name': 'clarity-modules', 'exit': 0, 'seconds': 27.19}
+FRESH EXTRACTION PASS

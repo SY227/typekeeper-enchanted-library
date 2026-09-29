@@ -1,0 +1,3944 @@
+
+> typekeeper-enchanted-library@3.5.2 test
+> node --test
+
+TAP version 13
+# Subtest: Differential-test reference hashes match the immutable user-uploaded 3.4.0 source
+ok 1 - Differential-test reference hashes match the immutable user-uploaded 3.4.0 source
+  ---
+  duration_ms: 2.3022
+  type: 'test'
+  ...
+# Subtest: All authored rules, pace curves, power metadata and 1..100 chapter configurations match 3.4
+ok 2 - All authored rules, pace curves, power metadata and 1..100 chapter configurations match 3.4
+  ---
+  duration_ms: 2.842475
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 1, all three paces, identical genuine spawns/actions
+ok 3 - 3.4 → 3.5 authoritative parity: chapter 1, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 24.971122
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 2, all three paces, identical genuine spawns/actions
+ok 4 - 3.4 → 3.5 authoritative parity: chapter 2, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 16.247165
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 3, all three paces, identical genuine spawns/actions
+ok 5 - 3.4 → 3.5 authoritative parity: chapter 3, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.445982
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 4, all three paces, identical genuine spawns/actions
+ok 6 - 3.4 → 3.5 authoritative parity: chapter 4, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 15.547964
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 5, all three paces, identical genuine spawns/actions
+ok 7 - 3.4 → 3.5 authoritative parity: chapter 5, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 20.602224
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 6, all three paces, identical genuine spawns/actions
+ok 8 - 3.4 → 3.5 authoritative parity: chapter 6, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 18.930543
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 7, all three paces, identical genuine spawns/actions
+ok 9 - 3.4 → 3.5 authoritative parity: chapter 7, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 14.381716
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 8, all three paces, identical genuine spawns/actions
+ok 10 - 3.4 → 3.5 authoritative parity: chapter 8, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 11.398883
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 9, all three paces, identical genuine spawns/actions
+ok 11 - 3.4 → 3.5 authoritative parity: chapter 9, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 11.268127
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 10, all three paces, identical genuine spawns/actions
+ok 12 - 3.4 → 3.5 authoritative parity: chapter 10, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 10.314912
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 11, all three paces, identical genuine spawns/actions
+ok 13 - 3.4 → 3.5 authoritative parity: chapter 11, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 19.597466
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 12, all three paces, identical genuine spawns/actions
+ok 14 - 3.4 → 3.5 authoritative parity: chapter 12, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 17.020648
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 13, all three paces, identical genuine spawns/actions
+ok 15 - 3.4 → 3.5 authoritative parity: chapter 13, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 14.335778
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 14, all three paces, identical genuine spawns/actions
+ok 16 - 3.4 → 3.5 authoritative parity: chapter 14, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 8.614975
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 15, all three paces, identical genuine spawns/actions
+ok 17 - 3.4 → 3.5 authoritative parity: chapter 15, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 10.722014
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 16, all three paces, identical genuine spawns/actions
+ok 18 - 3.4 → 3.5 authoritative parity: chapter 16, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 9.803045
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 17, all three paces, identical genuine spawns/actions
+ok 19 - 3.4 → 3.5 authoritative parity: chapter 17, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 11.867971
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 18, all three paces, identical genuine spawns/actions
+ok 20 - 3.4 → 3.5 authoritative parity: chapter 18, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.967298
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 19, all three paces, identical genuine spawns/actions
+ok 21 - 3.4 → 3.5 authoritative parity: chapter 19, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 18.090492
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 20, all three paces, identical genuine spawns/actions
+ok 22 - 3.4 → 3.5 authoritative parity: chapter 20, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 14.172484
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 21, all three paces, identical genuine spawns/actions
+ok 23 - 3.4 → 3.5 authoritative parity: chapter 21, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 18.560292
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 22, all three paces, identical genuine spawns/actions
+ok 24 - 3.4 → 3.5 authoritative parity: chapter 22, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 11.944605
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 23, all three paces, identical genuine spawns/actions
+ok 25 - 3.4 → 3.5 authoritative parity: chapter 23, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 14.047588
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 24, all three paces, identical genuine spawns/actions
+ok 26 - 3.4 → 3.5 authoritative parity: chapter 24, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 14.137492
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 25, all three paces, identical genuine spawns/actions
+ok 27 - 3.4 → 3.5 authoritative parity: chapter 25, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 12.675764
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 26, all three paces, identical genuine spawns/actions
+ok 28 - 3.4 → 3.5 authoritative parity: chapter 26, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 12.92113
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 27, all three paces, identical genuine spawns/actions
+ok 29 - 3.4 → 3.5 authoritative parity: chapter 27, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 15.338292
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 28, all three paces, identical genuine spawns/actions
+ok 30 - 3.4 → 3.5 authoritative parity: chapter 28, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.59167
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 29, all three paces, identical genuine spawns/actions
+ok 31 - 3.4 → 3.5 authoritative parity: chapter 29, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.326193
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 30, all three paces, identical genuine spawns/actions
+ok 32 - 3.4 → 3.5 authoritative parity: chapter 30, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.581705
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 31, all three paces, identical genuine spawns/actions
+ok 33 - 3.4 → 3.5 authoritative parity: chapter 31, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 12.724126
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 32, all three paces, identical genuine spawns/actions
+ok 34 - 3.4 → 3.5 authoritative parity: chapter 32, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 16.132755
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 33, all three paces, identical genuine spawns/actions
+ok 35 - 3.4 → 3.5 authoritative parity: chapter 33, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.642736
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 34, all three paces, identical genuine spawns/actions
+ok 36 - 3.4 → 3.5 authoritative parity: chapter 34, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.292704
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 35, all three paces, identical genuine spawns/actions
+ok 37 - 3.4 → 3.5 authoritative parity: chapter 35, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 14.345041
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 36, all three paces, identical genuine spawns/actions
+ok 38 - 3.4 → 3.5 authoritative parity: chapter 36, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 15.206755
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 37, all three paces, identical genuine spawns/actions
+ok 39 - 3.4 → 3.5 authoritative parity: chapter 37, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 14.625209
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 38, all three paces, identical genuine spawns/actions
+ok 40 - 3.4 → 3.5 authoritative parity: chapter 38, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 16.856293
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 39, all three paces, identical genuine spawns/actions
+ok 41 - 3.4 → 3.5 authoritative parity: chapter 39, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 17.184923
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 40, all three paces, identical genuine spawns/actions
+ok 42 - 3.4 → 3.5 authoritative parity: chapter 40, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.510338
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 41, all three paces, identical genuine spawns/actions
+ok 43 - 3.4 → 3.5 authoritative parity: chapter 41, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.532341
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 42, all three paces, identical genuine spawns/actions
+ok 44 - 3.4 → 3.5 authoritative parity: chapter 42, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.060178
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 43, all three paces, identical genuine spawns/actions
+ok 45 - 3.4 → 3.5 authoritative parity: chapter 43, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.784025
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 44, all three paces, identical genuine spawns/actions
+ok 46 - 3.4 → 3.5 authoritative parity: chapter 44, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 13.779559
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 45, all three paces, identical genuine spawns/actions
+ok 47 - 3.4 → 3.5 authoritative parity: chapter 45, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 14.388587
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 46, all three paces, identical genuine spawns/actions
+ok 48 - 3.4 → 3.5 authoritative parity: chapter 46, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 17.903352
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 47, all three paces, identical genuine spawns/actions
+ok 49 - 3.4 → 3.5 authoritative parity: chapter 47, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 18.076661
+  type: 'test'
+  ...
+# Subtest: 3.4 → 3.5 authoritative parity: chapter 48, all three paces, identical genuine spawns/actions
+ok 50 - 3.4 → 3.5 authoritative parity: chapter 48, all three paces, identical genuine spawns/actions
+  ---
+  duration_ms: 15.010943
+  type: 'test'
+  ...
+# Subtest: Miss, late-submit, compound FIRE/ICE/SLOW/WIND, and restoration retain exact 3.4 authority
+ok 51 - Miss, late-submit, compound FIRE/ICE/SLOW/WIND, and restoration retain exact 3.4 authority
+  ---
+  duration_ms: 3.401989
+  type: 'test'
+  ...
+# Subtest: 3.5.1 identifies the folio/caption build while retaining 3.2.1 balance
+ok 52 - 3.5.1 identifies the folio/caption build while retaining 3.2.1 balance
+  ---
+  duration_ms: 1.041732
+  type: 'test'
+  ...
+# Subtest: normal: immutable local folio material contains complete valid color roles
+ok 53 - normal: immutable local folio material contains complete valid color roles
+  ---
+  duration_ms: 0.329922
+  type: 'test'
+  ...
+# Subtest: fire: immutable local folio material contains complete valid color roles
+ok 54 - fire: immutable local folio material contains complete valid color roles
+  ---
+  duration_ms: 0.178846
+  type: 'test'
+  ...
+# Subtest: ice: immutable local folio material contains complete valid color roles
+ok 55 - ice: immutable local folio material contains complete valid color roles
+  ---
+  duration_ms: 0.071437
+  type: 'test'
+  ...
+# Subtest: slow: immutable local folio material contains complete valid color roles
+ok 56 - slow: immutable local folio material contains complete valid color roles
+  ---
+  duration_ms: 0.12714
+  type: 'test'
+  ...
+# Subtest: wind: immutable local folio material contains complete valid color roles
+ok 57 - wind: immutable local folio material contains complete valid color roles
+  ---
+  duration_ms: 0.058667
+  type: 'test'
+  ...
+# Subtest: bonus: immutable local folio material contains complete valid color roles
+ok 58 - bonus: immutable local folio material contains complete valid color roles
+  ---
+  duration_ms: 0.106259
+  type: 'test'
+  ...
+# Subtest: Unknown material has a safe normal-page fallback
+ok 59 - Unknown material has a safe normal-page fallback
+  ---
+  duration_ms: 0.071196
+  type: 'test'
+  ...
+# Subtest: Folio width 112: decoration stays outside the central ink lane
+ok 60 - Folio width 112: decoration stays outside the central ink lane
+  ---
+  duration_ms: 0.415399
+  type: 'test'
+  ...
+# Subtest: Folio width 160: decoration stays outside the central ink lane
+ok 61 - Folio width 160: decoration stays outside the central ink lane
+  ---
+  duration_ms: 0.254409
+  type: 'test'
+  ...
+# Subtest: Folio width 240: decoration stays outside the central ink lane
+ok 62 - Folio width 240: decoration stays outside the central ink lane
+  ---
+  duration_ms: 0.105978
+  type: 'test'
+  ...
+# Subtest: Folio width 410: decoration stays outside the central ink lane
+ok 63 - Folio width 410: decoration stays outside the central ink lane
+  ---
+  duration_ms: 0.050185
+  type: 'test'
+  ...
+# Subtest: Folio width 520: decoration stays outside the central ink lane
+ok 64 - Folio width 520: decoration stays outside the central ink lane
+  ---
+  duration_ms: 0.037626
+  type: 'test'
+  ...
+# Subtest: Folio width 620: decoration stays outside the central ink lane
+ok 65 - Folio width 620: decoration stays outside the central ink lane
+  ---
+  duration_ms: 0.032398
+  type: 'test'
+  ...
+# Subtest: Folio width 708: decoration stays outside the central ink lane
+ok 66 - Folio width 708: decoration stays outside the central ink lane
+  ---
+  duration_ms: 0.030676
+  type: 'test'
+  ...
+# Subtest: Folio metrics bound malformed inputs without nonfinite texture sizes
+ok 67 - Folio metrics bound malformed inputs without nonfinite texture sizes
+  ---
+  duration_ms: 0.126058
+  type: 'test'
+  ...
+# Subtest: All six book styles remain different without relying on new labels or fonts
+ok 68 - All six book styles remain different without relying on new labels or fonts
+  ---
+  duration_ms: 0.077426
+  type: 'test'
+  ...
+# Subtest: Single-baseline text block still draws only full canonical strings; crest uses shared scroll coordinates
+ok 69 - Single-baseline text block still draws only full canonical strings; crest uses shared scroll coordinates
+  ---
+  duration_ms: 0.451693
+  type: 'test'
+  ...
+# Subtest: Book art does not change single-line layout width, height, or full-word content
+ok 70 - Book art does not change single-line layout width, height, or full-word content
+  ---
+  duration_ms: 0.612273
+  type: 'test'
+  ...
+# Subtest: 3.5: all out-of-scope 3.4 runtime sources and existing art/audio assets remain byte-identical
+ok 71 - 3.5: all out-of-scope 3.4 runtime sources and existing art/audio assets remain byte-identical
+  ---
+  duration_ms: 40.50173
+  type: 'test'
+  ...
+# Subtest: Chapter 1: First Light has its own named, title-aligned cosmetic profile
+ok 72 - Chapter 1: First Light has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 3.112157
+  type: 'test'
+  ...
+# Subtest: Chapter 2: Ink & Paper has its own named, title-aligned cosmetic profile
+ok 73 - Chapter 2: Ink & Paper has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.431603
+  type: 'test'
+  ...
+# Subtest: Chapter 3: A Quiet Rhythm has its own named, title-aligned cosmetic profile
+ok 74 - Chapter 3: A Quiet Rhythm has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.28866
+  type: 'test'
+  ...
+# Subtest: Chapter 4: The First Spark has its own named, title-aligned cosmetic profile
+ok 75 - Chapter 4: The First Spark has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.748556
+  type: 'test'
+  ...
+# Subtest: Chapter 5: Between the Lines has its own named, title-aligned cosmetic profile
+ok 76 - Chapter 5: Between the Lines has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.295841
+  type: 'test'
+  ...
+# Subtest: Chapter 6: The Opening Bell has its own named, title-aligned cosmetic profile
+ok 77 - Chapter 6: The Opening Bell has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.429369
+  type: 'test'
+  ...
+# Subtest: Chapter 7: Emerald Leaves has its own named, title-aligned cosmetic profile
+ok 78 - Chapter 7: Emerald Leaves has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.365835
+  type: 'test'
+  ...
+# Subtest: Chapter 8: A Growing Tale has its own named, title-aligned cosmetic profile
+ok 79 - Chapter 8: A Growing Tale has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.275991
+  type: 'test'
+  ...
+# Subtest: Chapter 9: Branches of Thought has its own named, title-aligned cosmetic profile
+ok 80 - Chapter 9: Branches of Thought has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.595166
+  type: 'test'
+  ...
+# Subtest: Chapter 10: Rain on Glass has its own named, title-aligned cosmetic profile
+ok 81 - Chapter 10: Rain on Glass has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.498522
+  type: 'test'
+  ...
+# Subtest: Chapter 11: Hidden Blossoms has its own named, title-aligned cosmetic profile
+ok 82 - Chapter 11: Hidden Blossoms has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.816597
+  type: 'test'
+  ...
+# Subtest: Chapter 12: The Garden Gate has its own named, title-aligned cosmetic profile
+ok 83 - Chapter 12: The Garden Gate has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.219817
+  type: 'test'
+  ...
+# Subtest: Chapter 13: Golden Gears has its own named, title-aligned cosmetic profile
+ok 84 - Chapter 13: Golden Gears has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.408067
+  type: 'test'
+  ...
+# Subtest: Chapter 14: A Measured Beat has its own named, title-aligned cosmetic profile
+ok 85 - Chapter 14: A Measured Beat has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.168331
+  type: 'test'
+  ...
+# Subtest: Chapter 15: Pendulum Pages has its own named, title-aligned cosmetic profile
+ok 86 - Chapter 15: Pendulum Pages has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.227039
+  type: 'test'
+  ...
+# Subtest: Chapter 16: Stolen Seconds has its own named, title-aligned cosmetic profile
+ok 87 - Chapter 16: Stolen Seconds has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.210584
+  type: 'test'
+  ...
+# Subtest: Chapter 17: The Eleventh Hour has its own named, title-aligned cosmetic profile
+ok 88 - Chapter 17: The Eleventh Hour has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.182182
+  type: 'test'
+  ...
+# Subtest: Chapter 18: The Clock Strikes has its own named, title-aligned cosmetic profile
+ok 89 - Chapter 18: The Clock Strikes has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.199777
+  type: 'test'
+  ...
+# Subtest: Chapter 19: Silver Breath has its own named, title-aligned cosmetic profile
+ok 90 - Chapter 19: Silver Breath has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.191085
+  type: 'test'
+  ...
+# Subtest: Chapter 20: Crystal Margins has its own named, title-aligned cosmetic profile
+ok 91 - Chapter 20: Crystal Margins has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.121621
+  type: 'test'
+  ...
+# Subtest: Chapter 21: The Still Page has its own named, title-aligned cosmetic profile
+ok 92 - Chapter 21: The Still Page has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.178425
+  type: 'test'
+  ...
+# Subtest: Chapter 22: Winter Whispers has its own named, title-aligned cosmetic profile
+ok 93 - Chapter 22: Winter Whispers has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.172227
+  type: 'test'
+  ...
+# Subtest: Chapter 23: Cold Precision has its own named, title-aligned cosmetic profile
+ok 94 - Chapter 23: Cold Precision has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.392204
+  type: 'test'
+  ...
+# Subtest: Chapter 24: The Frozen Seal has its own named, title-aligned cosmetic profile
+ok 95 - Chapter 24: The Frozen Seal has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.171596
+  type: 'test'
+  ...
+# Subtest: Chapter 25: Kindling has its own named, title-aligned cosmetic profile
+ok 96 - Chapter 25: Kindling has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.104866
+  type: 'test'
+  ...
+# Subtest: Chapter 26: Letters of Flame has its own named, title-aligned cosmetic profile
+ok 97 - Chapter 26: Letters of Flame has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.095051
+  type: 'test'
+  ...
+# Subtest: Chapter 27: The Warmest Ink has its own named, title-aligned cosmetic profile
+ok 98 - Chapter 27: The Warmest Ink has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.08738
+  type: 'test'
+  ...
+# Subtest: Chapter 28: Firelight Fables has its own named, title-aligned cosmetic profile
+ok 99 - Chapter 28: Firelight Fables has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.104616
+  type: 'test'
+  ...
+# Subtest: Chapter 29: Under Pressure has its own named, title-aligned cosmetic profile
+ok 100 - Chapter 29: Under Pressure has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.110765
+  type: 'test'
+  ...
+# Subtest: Chapter 30: The Burning Chapter has its own named, title-aligned cosmetic profile
+ok 101 - Chapter 30: The Burning Chapter has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.1338
+  type: 'test'
+  ...
+# Subtest: Chapter 31: Starlit Script has its own named, title-aligned cosmetic profile
+ok 102 - Chapter 31: Starlit Script has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.198406
+  type: 'test'
+  ...
+# Subtest: Chapter 32: The Long View has its own named, title-aligned cosmetic profile
+ok 103 - Chapter 32: The Long View has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.084065
+  type: 'test'
+  ...
+# Subtest: Chapter 33: Celestial Signs has its own named, title-aligned cosmetic profile
+ok 104 - Chapter 33: Celestial Signs has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.106749
+  type: 'test'
+  ...
+# Subtest: Chapter 34: Orbiting Ideas has its own named, title-aligned cosmetic profile
+ok 105 - Chapter 34: Orbiting Ideas has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.095483
+  type: 'test'
+  ...
+# Subtest: Chapter 35: Constellations has its own named, title-aligned cosmetic profile
+ok 106 - Chapter 35: Constellations has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.150354
+  type: 'test'
+  ...
+# Subtest: Chapter 36: The Starfall Trial has its own named, title-aligned cosmetic profile
+ok 107 - Chapter 36: The Starfall Trial has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.155051
+  type: 'test'
+  ...
+# Subtest: Chapter 37: After Hours has its own named, title-aligned cosmetic profile
+ok 108 - Chapter 37: After Hours has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.145487
+  type: 'test'
+  ...
+# Subtest: Chapter 38: Secret Passages has its own named, title-aligned cosmetic profile
+ok 109 - Chapter 38: Secret Passages has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.076835
+  type: 'test'
+  ...
+# Subtest: Chapter 39: Velvet Shadows has its own named, title-aligned cosmetic profile
+ok 110 - Chapter 39: Velvet Shadows has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.18805
+  type: 'test'
+  ...
+# Subtest: Chapter 40: The Lost Manuscript has its own named, title-aligned cosmetic profile
+ok 111 - Chapter 40: The Lost Manuscript has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.320307
+  type: 'test'
+  ...
+# Subtest: Chapter 41: One Last Candle has its own named, title-aligned cosmetic profile
+ok 112 - Chapter 41: One Last Candle has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.230023
+  type: 'test'
+  ...
+# Subtest: Chapter 42: The Midnight Key has its own named, title-aligned cosmetic profile
+ok 113 - Chapter 42: The Midnight Key has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.085908
+  type: 'test'
+  ...
+# Subtest: Chapter 43: The Final Volume has its own named, title-aligned cosmetic profile
+ok 114 - Chapter 43: The Final Volume has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.115733
+  type: 'test'
+  ...
+# Subtest: Chapter 44: Pages Without End has its own named, title-aligned cosmetic profile
+ok 115 - Chapter 44: Pages Without End has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.111746
+  type: 'test'
+  ...
+# Subtest: Chapter 45: A Thousand Voices has its own named, title-aligned cosmetic profile
+ok 116 - Chapter 45: A Thousand Voices has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.394908
+  type: 'test'
+  ...
+# Subtest: Chapter 46: The Master Scribe has its own named, title-aligned cosmetic profile
+ok 117 - Chapter 46: The Master Scribe has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.125046
+  type: 'test'
+  ...
+# Subtest: Chapter 47: The Last Word has its own named, title-aligned cosmetic profile
+ok 118 - Chapter 47: The Last Word has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.13462
+  type: 'test'
+  ...
+# Subtest: Chapter 48: The Typekeeper has its own named, title-aligned cosmetic profile
+ok 119 - Chapter 48: The Typekeeper has its own named, title-aligned cosmetic profile
+  ---
+  duration_ms: 0.154651
+  type: 'test'
+  ...
+# Subtest: Exactly 48 unique cosmetic IDs correspond to the existing 48 campaign titles
+ok 120 - Exactly 48 unique cosmetic IDs correspond to the existing 48 campaign titles
+  ---
+  duration_ms: 0.639332
+  type: 'test'
+  ...
+# Subtest: Endless and invalid low chapter requests reuse bounded profiles rather than allocate unbounded art
+ok 121 - Endless and invalid low chapter requests reuse bounded profiles rather than allocate unbounded art
+  ---
+  duration_ms: 0.08753
+  type: 'test'
+  ...
+# Subtest: Reduced motion removes chapter ambient drawing, not chapter identity
+ok 122 - Reduced motion removes chapter ambient drawing, not chapter identity
+  ---
+  duration_ms: 0.090045
+  type: 'test'
+  ...
+# Subtest: All native-path argument counts remain valid for FIRE and ICE across the complete cast envelope
+ok 123 - All native-path argument counts remain valid for FIRE and ICE across the complete cast envelope
+  ---
+  duration_ms: 1.326697
+  type: 'test'
+  ...
+# Subtest: FIRE and ICE destruction draw valid, balanced paths at onset, peak and completion
+ok 124 - FIRE and ICE destruction draw valid, balanced paths at onset, peak and completion
+  ---
+  duration_ms: 2.350882
+  type: 'test'
+  ...
+# Subtest: Elemental cast envelope never returns nonfinite or unbounded intensity
+ok 125 - Elemental cast envelope never returns nonfinite or unbounded intensity
+  ---
+  duration_ms: 0.151817
+  type: 'test'
+  ...
+# Subtest: Freeze entry, hold, thaw and reduced-motion state are bounded
+ok 126 - Freeze entry, hold, thaw and reduced-motion state are bounded
+  ---
+  duration_ms: 0.297573
+  type: 'test'
+  ...
+# Subtest: Elemental cache obeys byte and entry budgets under many surface widths
+ok 127 - Elemental cache obeys byte and entry budgets under many surface widths
+  ---
+  duration_ms: 0.270593
+  type: 'test'
+  ...
+# Subtest: 48 room profiles and VFX calculations do not advance either model random stream
+ok 128 - 48 room profiles and VFX calculations do not advance either model random stream
+  ---
+  duration_ms: 6.440745
+  type: 'test'
+  ...
+# Subtest: 3.5 preservation: original assets, economy, RNG, controls and scroll geometry are byte-identical
+ok 129 - 3.5 preservation: original assets, economy, RNG, controls and scroll geometry are byte-identical
+  ---
+  duration_ms: 35.858353
+  type: 'test'
+  ...
+# Subtest: Standalone builder includes both new presentation dependencies before the renderer
+ok 130 - Standalone builder includes both new presentation dependencies before the renderer
+  ---
+  duration_ms: 0.352465
+  type: 'test'
+  ...
+# Subtest: Star explanation shares the actual thresholds, including both simultaneous deficits
+ok 131 - Star explanation shares the actual thresholds, including both simultaneous deficits
+  ---
+  duration_ms: 2.032367
+  type: 'test'
+  ...
+# Subtest: Every generated next-star instruction actually reaches that star when fulfilled
+ok 132 - Every generated next-star instruction actually reaches that star when fulfilled
+  ---
+  duration_ms: 3.44398
+  type: 'test'
+  ...
+# Subtest: 100% submission accuracy with three misses remains one star, not a new scoring rule
+ok 133 - 100% submission accuracy with three misses remains one star, not a new scoring rule
+  ---
+  duration_ms: 1.736717
+  type: 'test'
+  ...
+# Subtest: Eight real multiplier upgrades occur at 8..64, never at 5/15 or after cap
+ok 134 - Eight real multiplier upgrades occur at 8..64, never at 5/15 or after cap
+  ---
+  duration_ms: 2.487085
+  type: 'test'
+  ...
+# Subtest: Authoritative 7 → 8 event and word points agree
+ok 135 - Authoritative 7 → 8 event and word points agree
+  ---
+  duration_ms: 0.299346
+  type: 'test'
+  ...
+# Subtest: Authoritative 15 → 16 event and word points agree
+ok 136 - Authoritative 15 → 16 event and word points agree
+  ---
+  duration_ms: 0.159918
+  type: 'test'
+  ...
+# Subtest: Authoritative 63 → 64 event and word points agree
+ok 137 - Authoritative 63 → 64 event and word points agree
+  ---
+  duration_ms: 0.191616
+  type: 'test'
+  ...
+# Subtest: Wrong input resets the multiplier; next correct input does not invent a level-up
+ok 138 - Wrong input resets the multiplier; next correct input does not invent a level-up
+  ---
+  duration_ms: 0.273227
+  type: 'test'
+  ...
+# Subtest: Restoring an existing streak/checkpoint emits no spurious multiplier upgrade
+ok 139 - Restoring an existing streak/checkpoint emits no spurious multiplier upgrade
+  ---
+  duration_ms: 1.034251
+  type: 'test'
+  ...
+# Subtest: Audio milestone reacts to one model event, not its own correct-word modulus
+ok 140 - Audio milestone reacts to one model event, not its own correct-word modulus
+  ---
+  duration_ms: 1.083855
+  type: 'test'
+  ...
+# Subtest: Record keys isolate all 288 pace/mode/chapter combinations and the ruleset
+ok 141 - Record keys isolate all 288 pace/mode/chapter combinations and the ruleset
+  ---
+  duration_ms: 0.822626
+  type: 'test'
+  ...
+# Subtest: Chapter PB captures the previous atomic attempt before updating
+ok 142 - Chapter PB captures the previous atomic attempt before updating
+  ---
+  duration_ms: 0.743038
+  type: 'test'
+  ...
+# Subtest: Ties/lower scores never mix WPM, accuracy or medal maxima into the score-best attempt
+ok 143 - Ties/lower scores never mix WPM, accuracy or medal maxima into the score-best attempt
+  ---
+  duration_ms: 0.298395
+  type: 'test'
+  ...
+# Subtest: Practice, different pace and other chapter cannot beat a campaign chapter PB
+ok 144 - Practice, different pace and other chapter cannot beat a campaign chapter PB
+  ---
+  duration_ms: 0.305855
+  type: 'test'
+  ...
+# Subtest: Old saves preserve settings, mastery and checkpoints without inventing scoped PBs
+ok 145 - Old saves preserve settings, mastery and checkpoints without inventing scoped PBs
+  ---
+  duration_ms: 1.636117
+  type: 'test'
+  ...
+# Subtest: Scoped save round trip retains actual word sequence provenance
+ok 146 - Scoped save round trip retains actual word sequence provenance
+  ---
+  duration_ms: 0.340187
+  type: 'test'
+  ...
+# Subtest: Malformed or unscoped imports are rejected instead of promoted to a trusted PB
+ok 147 - Malformed or unscoped imports are rejected instead of promoted to a trusted PB
+  ---
+  duration_ms: 0.204404
+  type: 'test'
+  ...
+# Subtest: Missing random provenance stays missing, not a fabricated seed or sequence version
+ok 148 - Missing random provenance stays missing, not a fabricated seed or sequence version
+  ---
+  duration_ms: 0.094571
+  type: 'test'
+  ...
+# Subtest: Mastery improvement has priority; unchanged attempts receive no fake celebration
+ok 149 - Mastery improvement has priority; unchanged attempts receive no fake celebration
+  ---
+  duration_ms: 16.058082
+  type: 'test'
+  ...
+# Subtest: ENTER guidance is exact-match only and disappears after first actual save
+ok 150 - ENTER guidance is exact-match only and disappears after first actual save
+  ---
+  duration_ms: 0.270393
+  type: 'test'
+  ...
+# Subtest: ICE hint waits for a usable spell and six visible active seconds, not wall time
+ok 151 - ICE hint waits for a usable spell and six visible active seconds, not wall time
+  ---
+  duration_ms: 0.438293
+  type: 'test'
+  ...
+# Subtest: Hint toggle and pause hide prompts without consuming their learning window
+ok 152 - Hint toggle and pause hide prompts without consuming their learning window
+  ---
+  duration_ms: 0.206097
+  type: 'test'
+  ...
+# Subtest: Laptop helper labels meet the proposed 14 CSS-pixel target without changing word geometry
+ok 153 - Laptop helper labels meet the proposed 14 CSS-pixel target without changing word geometry
+  ---
+  duration_ms: 0.316932
+  type: 'test'
+  ...
+# Subtest: Journey metadata exists at exactly eight campaign boundaries, never practice/endless
+ok 154 - Journey metadata exists at exactly eight campaign boundaries, never practice/endless
+  ---
+  duration_ms: 0.269472
+  type: 'test'
+  ...
+# Subtest: Restored wing markers require all six campaign clears, not practice-only stars
+ok 155 - Restored wing markers require all six campaign clears, not practice-only stars
+  ---
+  duration_ms: 6.627784
+  type: 'test'
+  ...
+# Subtest: Eight distinct small seals and landmarks reuse bounded identities beyond the campaign
+ok 156 - Eight distinct small seals and landmarks reuse bounded identities beyond the campaign
+  ---
+  duration_ms: 0.411733
+  type: 'test'
+  ...
+# Subtest: wing ceremony is bounded, pausable, skippable, cancel-safe and motion-optional
+ok 157 - wing ceremony is bounded, pausable, skippable, cancel-safe and motion-optional
+  ---
+  duration_ms: 0.319957
+  type: 'test'
+  ...
+# Subtest: finale ceremony is bounded, pausable, skippable, cancel-safe and motion-optional
+ok 158 - finale ceremony is bounded, pausable, skippable, cancel-safe and motion-optional
+  ---
+  duration_ms: 0.082583
+  type: 'test'
+  ...
+# Subtest: v3.2.1 capacity is two per spell, eight in total; effect strength is preserved
+ok 159 - v3.2.1 capacity is two per spell, eight in total; effect strength is preserved
+  ---
+  duration_ms: 1.699402
+  type: 'test'
+  ...
+# Subtest: relaxed: a new campaign has no books and only one chapter-one opportunity
+ok 160 - relaxed: a new campaign has no books and only one chapter-one opportunity
+  ---
+  duration_ms: 4.456369
+  type: 'test'
+  ...
+# Subtest: relaxed: opening is 10–15% gentler, 4–6 is 5–10% gentler, then rejoins the curve
+ok 161 - relaxed: opening is 10–15% gentler, 4–6 is 5–10% gentler, then rejoins the curve
+  ---
+  duration_ms: 0.334117
+  type: 'test'
+  ...
+# Subtest: relaxed: every chapter remains monotone with no opening or Endless difficulty reset
+ok 162 - relaxed: every chapter remains monotone with no opening or Endless difficulty reset
+  ---
+  duration_ms: 0.580555
+  type: 'test'
+  ...
+# Subtest: classic: a new campaign has no books and only one chapter-one opportunity
+ok 163 - classic: a new campaign has no books and only one chapter-one opportunity
+  ---
+  duration_ms: 0.712322
+  type: 'test'
+  ...
+# Subtest: classic: opening is 10–15% gentler, 4–6 is 5–10% gentler, then rejoins the curve
+ok 164 - classic: opening is 10–15% gentler, 4–6 is 5–10% gentler, then rejoins the curve
+  ---
+  duration_ms: 0.112157
+  type: 'test'
+  ...
+# Subtest: classic: every chapter remains monotone with no opening or Endless difficulty reset
+ok 165 - classic: every chapter remains monotone with no opening or Endless difficulty reset
+  ---
+  duration_ms: 1.274368
+  type: 'test'
+  ...
+# Subtest: maniac: a new campaign has no books and only one chapter-one opportunity
+ok 166 - maniac: a new campaign has no books and only one chapter-one opportunity
+  ---
+  duration_ms: 1.048312
+  type: 'test'
+  ...
+# Subtest: maniac: opening is 10–15% gentler, 4–6 is 5–10% gentler, then rejoins the curve
+ok 167 - maniac: opening is 10–15% gentler, 4–6 is 5–10% gentler, then rejoins the curve
+  ---
+  duration_ms: 0.304944
+  type: 'test'
+  ...
+# Subtest: maniac: every chapter remains monotone with no opening or Endless difficulty reset
+ok 168 - maniac: every chapter remains monotone with no opening or Endless difficulty reset
+  ---
+  duration_ms: 0.795035
+  type: 'test'
+  ...
+# Subtest: chapter 1: actual opportunity gaps stay inside 8–11 arrivals
+ok 169 - chapter 1: actual opportunity gaps stay inside 8–11 arrivals
+  ---
+  duration_ms: 7.046979
+  type: 'test'
+  ...
+# Subtest: chapter 4: actual opportunity gaps stay inside 8–11 arrivals
+ok 170 - chapter 4: actual opportunity gaps stay inside 8–11 arrivals
+  ---
+  duration_ms: 4.504611
+  type: 'test'
+  ...
+# Subtest: chapter 7: actual opportunity gaps stay inside 8–10 arrivals
+ok 171 - chapter 7: actual opportunity gaps stay inside 8–10 arrivals
+  ---
+  duration_ms: 3.515137
+  type: 'test'
+  ...
+# Subtest: chapter 11: actual opportunity gaps stay inside 8–10 arrivals
+ok 172 - chapter 11: actual opportunity gaps stay inside 8–10 arrivals
+  ---
+  duration_ms: 3.180258
+  type: 'test'
+  ...
+# Subtest: chapter 13: actual opportunity gaps stay inside 7–10 arrivals
+ok 173 - chapter 13: actual opportunity gaps stay inside 7–10 arrivals
+  ---
+  duration_ms: 3.951217
+  type: 'test'
+  ...
+# Subtest: chapter 23: actual opportunity gaps stay inside 7–10 arrivals
+ok 174 - chapter 23: actual opportunity gaps stay inside 7–10 arrivals
+  ---
+  duration_ms: 2.840813
+  type: 'test'
+  ...
+# Subtest: chapter 25: actual opportunity gaps stay inside 6–9 arrivals
+ok 175 - chapter 25: actual opportunity gaps stay inside 6–9 arrivals
+  ---
+  duration_ms: 2.232817
+  type: 'test'
+  ...
+# Subtest: chapter 47: actual opportunity gaps stay inside 6–9 arrivals
+ok 176 - chapter 47: actual opportunity gaps stay inside 6–9 arrivals
+  ---
+  duration_ms: 2.247779
+  type: 'test'
+  ...
+# Subtest: chapter 49: actual opportunity gaps stay inside 6–9 arrivals
+ok 177 - chapter 49: actual opportunity gaps stay inside 6–9 arrivals
+  ---
+  duration_ms: 2.759371
+  type: 'test'
+  ...
+# Subtest: trial 6: first opportunity in wave one, then one every eight arrivals
+ok 178 - trial 6: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 1.292426
+  type: 'test'
+  ...
+# Subtest: trial 12: first opportunity in wave one, then one every eight arrivals
+ok 179 - trial 12: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 1.542257
+  type: 'test'
+  ...
+# Subtest: trial 18: first opportunity in wave one, then one every eight arrivals
+ok 180 - trial 18: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 0.747434
+  type: 'test'
+  ...
+# Subtest: trial 24: first opportunity in wave one, then one every eight arrivals
+ok 181 - trial 24: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 1.048442
+  type: 'test'
+  ...
+# Subtest: trial 30: first opportunity in wave one, then one every eight arrivals
+ok 182 - trial 30: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 0.651511
+  type: 'test'
+  ...
+# Subtest: trial 36: first opportunity in wave one, then one every eight arrivals
+ok 183 - trial 36: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 0.753152
+  type: 'test'
+  ...
+# Subtest: trial 42: first opportunity in wave one, then one every eight arrivals
+ok 184 - trial 42: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 0.703468
+  type: 'test'
+  ...
+# Subtest: trial 48: first opportunity in wave one, then one every eight arrivals
+ok 185 - trial 48: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 0.599764
+  type: 'test'
+  ...
+# Subtest: trial 54: first opportunity in wave one, then one every eight arrivals
+ok 186 - trial 54: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 0.686723
+  type: 'test'
+  ...
+# Subtest: trial 102: first opportunity in wave one, then one every eight arrivals
+ok 187 - trial 102: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 0.760863
+  type: 'test'
+  ...
+# Subtest: trial 198: first opportunity in wave one, then one every eight arrivals
+ok 188 - trial 198: first opportunity in wave one, then one every eight arrivals
+  ---
+  duration_ms: 0.792972
+  type: 'test'
+  ...
+# Subtest: first opportunity must be typed; merely appearing grants no spell
+ok 189 - first opportunity must be typed; merely appearing grants no spell
+  ---
+  duration_ms: 0.626944
+  type: 'test'
+  ...
+# Subtest: missing the introductory ICE does not gift another tutorial set
+ok 190 - missing the introductory ICE does not gift another tutorial set
+  ---
+  duration_ms: 0.691069
+  type: 'test'
+  ...
+# Subtest: burning a spell grants no inventory and does not accelerate its replacement opportunity
+ok 191 - burning a spell grants no inventory and does not accelerate its replacement opportunity
+  ---
+  duration_ms: 0.595117
+  type: 'test'
+  ...
+# Subtest: full shelves still cap at two; overflow remains a scored word, not another book
+ok 192 - full shelves still cap at two; overflow remains a scored word, not another book
+  ---
+  duration_ms: 0.500756
+  type: 'test'
+  ...
+# Subtest: entering a normal chapter does not restart the reward countdown or refill books
+ok 193 - entering a normal chapter does not restart the reward countdown or refill books
+  ---
+  duration_ms: 1.087019
+  type: 'test'
+  ...
+# Subtest: trial entry pulls a distant drop into wave one, without giving an extra one
+ok 194 - trial entry pulls a distant drop into wave one, without giving an extra one
+  ---
+  duration_ms: 0.846541
+  type: 'test'
+  ...
+# Subtest: an already due spell remains due rather than being delayed by trial setup
+ok 195 - an already due spell remains due rather than being delayed by trial setup
+  ---
+  duration_ms: 0.81205
+  type: 'test'
+  ...
+# Subtest: trial preferences never break the four-spell bag or grant free rescue inventory
+ok 196 - trial preferences never break the four-spell bag or grant free rescue inventory
+  ---
+  duration_ms: 1.14137
+  type: 'test'
+  ...
+# Subtest: blocked candidate does not consume the countdown or a power-bag entry
+ok 197 - blocked candidate does not consume the countdown or a power-bag entry
+  ---
+  duration_ms: 0.803878
+  type: 'test'
+  ...
+# Subtest: canceling a reserved card at chapter clear never loses a bag entry
+ok 198 - canceling a reserved card at chapter clear never loses a bag entry
+  ---
+  duration_ms: 0.243603
+  type: 'test'
+  ...
+# Subtest: pausing and waiting never manufacture or consume spell opportunities
+ok 199 - pausing and waiting never manufacture or consume spell opportunities
+  ---
+  duration_ms: 0.29545
+  type: 'test'
+  ...
+# Subtest: active ICE freezes the scheduled arrival counter as well as card positions
+ok 200 - active ICE freezes the scheduled arrival counter as well as card positions
+  ---
+  duration_ms: 0.324844
+  type: 'test'
+  ...
+# Subtest: danger and score do not change scheduled spell types or gaps
+ok 201 - danger and score do not change scheduled spell types or gaps
+  ---
+  duration_ms: 4.888393
+  type: 'test'
+  ...
+# Subtest: each shuffled cycle still includes all four spells in all campaign wings
+ok 202 - each shuffled cycle still includes all four spells in all campaign wings
+  ---
+  duration_ms: 31.798904
+  type: 'test'
+  ...
+# Subtest: chapter 1 boundary preserves words, spacing, cycle and inventory through save/restore
+ok 203 - chapter 1 boundary preserves words, spacing, cycle and inventory through save/restore
+  ---
+  duration_ms: 5.546413
+  type: 'test'
+  ...
+# Subtest: chapter 5 boundary preserves words, spacing, cycle and inventory through save/restore
+ok 204 - chapter 5 boundary preserves words, spacing, cycle and inventory through save/restore
+  ---
+  duration_ms: 2.291384
+  type: 'test'
+  ...
+# Subtest: chapter 6 boundary preserves words, spacing, cycle and inventory through save/restore
+ok 205 - chapter 6 boundary preserves words, spacing, cycle and inventory through save/restore
+  ---
+  duration_ms: 2.264524
+  type: 'test'
+  ...
+# Subtest: chapter 11 boundary preserves words, spacing, cycle and inventory through save/restore
+ok 206 - chapter 11 boundary preserves words, spacing, cycle and inventory through save/restore
+  ---
+  duration_ms: 1.805951
+  type: 'test'
+  ...
+# Subtest: chapter 12 boundary preserves words, spacing, cycle and inventory through save/restore
+ok 207 - chapter 12 boundary preserves words, spacing, cycle and inventory through save/restore
+  ---
+  duration_ms: 1.91927
+  type: 'test'
+  ...
+# Subtest: chapter 23 boundary preserves words, spacing, cycle and inventory through save/restore
+ok 208 - chapter 23 boundary preserves words, spacing, cycle and inventory through save/restore
+  ---
+  duration_ms: 1.39646
+  type: 'test'
+  ...
+# Subtest: chapter 24 boundary preserves words, spacing, cycle and inventory through save/restore
+ok 209 - chapter 24 boundary preserves words, spacing, cycle and inventory through save/restore
+  ---
+  duration_ms: 1.426205
+  type: 'test'
+  ...
+# Subtest: chapter 35 boundary preserves words, spacing, cycle and inventory through save/restore
+ok 210 - chapter 35 boundary preserves words, spacing, cycle and inventory through save/restore
+  ---
+  duration_ms: 1.321228
+  type: 'test'
+  ...
+# Subtest: chapter 36 boundary preserves words, spacing, cycle and inventory through save/restore
+ok 211 - chapter 36 boundary preserves words, spacing, cycle and inventory through save/restore
+  ---
+  duration_ms: 1.557831
+  type: 'test'
+  ...
+# Subtest: chapter 47 boundary preserves words, spacing, cycle and inventory through save/restore
+ok 212 - chapter 47 boundary preserves words, spacing, cycle and inventory through save/restore
+  ---
+  duration_ms: 1.251765
+  type: 'test'
+  ...
+# Subtest: retry starts the same sparse chapter again, without accumulating failed-attempt books
+ok 213 - retry starts the same sparse chapter again, without accumulating failed-attempt books
+  ---
+  duration_ms: 1.352224
+  type: 'test'
+  ...
+# Subtest: 3.2 save migration caps stock at two, preserves mastery/preferences, and leaves original bytes untouched
+ok 214 - 3.2 save migration caps stock at two, preserves mastery/preferences, and leaves original bytes untouched
+  ---
+  duration_ms: 1.0871
+  type: 'test'
+  ...
+# Subtest: migrated checkpoint keeps the old scoring provenance after new-rules play and re-export
+ok 215 - migrated checkpoint keeps the old scoring provenance after new-rules play and re-export
+  ---
+  duration_ms: 0.89936
+  type: 'test'
+  ...
+# Subtest: fresh current saves cannot import a third charge by claiming the new ruleset
+ok 216 - fresh current saves cannot import a third charge by claiming the new ruleset
+  ---
+  duration_ms: 0.14741
+  type: 'test'
+  ...
+# Subtest: current saves must include a valid schedule; old missing schedules have an explicit fallback
+ok 217 - current saves must include a valid schedule; old missing schedules have an explicit fallback
+  ---
+  duration_ms: 0.264695
+  type: 'test'
+  ...
+# Subtest: invalid schedule values are rejected rather than granting unlimited imminent drops
+ok 218 - invalid schedule values are rejected rather than granting unlimited imminent drops
+  ---
+  duration_ms: 0.233828
+  type: 'test'
+  ...
+# Subtest: restored inventory and schedule are isolated from imported object mutations
+ok 219 - restored inventory and schedule are isolated from imported object mutations
+  ---
+  duration_ms: 0.20835
+  type: 'test'
+  ...
+# Subtest: model restore also clamps legacy charges when called directly by a trusted loader
+ok 220 - model restore also clamps legacy charges when called directly by a trusted loader
+  ---
+  duration_ms: 0.270854
+  type: 'test'
+  ...
+# Subtest: authored non-trial gap endpoints are reachable and trial setup is idempotent
+ok 221 - authored non-trial gap endpoints are reachable and trial setup is idempotent
+  ---
+  duration_ms: 0.206948
+  type: 'test'
+  ...
+# Subtest: Practice and Endless do not receive the campaign introduction again
+ok 222 - Practice and Endless do not receive the campaign introduction again
+  ---
+  duration_ms: 0.100119
+  type: 'test'
+  ...
+# Subtest: UI stock pips derive from the same authoritative capacity as game rules
+ok 223 - UI stock pips derive from the same authoritative capacity as game rules
+  ---
+  duration_ms: 0.548177
+  type: 'test'
+  ...
+# Subtest: relaxed: all 48 chapters stay within smooth speed and interval bounds
+ok 224 - relaxed: all 48 chapters stay within smooth speed and interval bounds
+  ---
+  duration_ms: 1.535338
+  type: 'test'
+  ...
+# Subtest: relaxed: all spawned ordinary and power cards remain fully readable and non-overlapping
+ok 225 - relaxed: all spawned ordinary and power cards remain fully readable and non-overlapping
+  ---
+  duration_ms: 91.303926
+  type: 'test'
+  ...
+# Subtest: classic: all 48 chapters stay within smooth speed and interval bounds
+ok 226 - classic: all 48 chapters stay within smooth speed and interval bounds
+  ---
+  duration_ms: 0.171615
+  type: 'test'
+  ...
+# Subtest: classic: all spawned ordinary and power cards remain fully readable and non-overlapping
+ok 227 - classic: all spawned ordinary and power cards remain fully readable and non-overlapping
+  ---
+  duration_ms: 124.086507
+  type: 'test'
+  ...
+# Subtest: maniac: all 48 chapters stay within smooth speed and interval bounds
+ok 228 - maniac: all 48 chapters stay within smooth speed and interval bounds
+  ---
+  duration_ms: 0.346186
+  type: 'test'
+  ...
+# Subtest: maniac: all spawned ordinary and power cards remain fully readable and non-overlapping
+ok 229 - maniac: all spawned ordinary and power cards remain fully readable and non-overlapping
+  ---
+  duration_ms: 35.071941
+  type: 'test'
+  ...
+# Subtest: vocabulary mixture is normalized at every campaign and endless chapter
+ok 230 - vocabulary mixture is normalized at every campaign and endless chapter
+  ---
+  duration_ms: 0.551431
+  type: 'test'
+  ...
+# Subtest: no abrupt dictionary mix switch remains at 5, 13, 25 or 37
+ok 231 - no abrupt dictionary mix switch remains at 5, 13, 25 or 37
+  ---
+  duration_ms: 0.140449
+  type: 'test'
+  ...
+# Subtest: newly introduced words obey their chapter length cap
+ok 232 - newly introduced words obey their chapter length cap
+  ---
+  duration_ms: 1.858208
+  type: 'test'
+  ...
+# Subtest: a fast clear shortens empty-field downtime without changing falling speed
+ok 233 - a fast clear shortens empty-field downtime without changing falling speed
+  ---
+  duration_ms: 0.510561
+  type: 'test'
+  ...
+# Subtest: empty-field acceleration never interrupts a trial breathing interval
+ok 234 - empty-field acceleration never interrupts a trial breathing interval
+  ---
+  duration_ms: 0.236793
+  type: 'test'
+  ...
+# Subtest: trial spawns follow five-word waves with a visible breathing interval
+ok 235 - trial spawns follow five-word waves with a visible breathing interval
+  ---
+  duration_ms: 0.21474
+  type: 'test'
+  ...
+# Subtest: no surplus cards are spawned when the board already contains the remaining quota
+ok 236 - no surplus cards are spawned when the board already contains the remaining quota
+  ---
+  duration_ms: 0.101071
+  type: 'test'
+  ...
+# Subtest: a final-word completion clears exactly once with no stranded next-stage timers
+ok 237 - a final-word completion clears exactly once with no stranded next-stage timers
+  ---
+  duration_ms: 0.629148
+  type: 'test'
+  ...
+# Subtest: active text duplicates do not occur in authored spawns
+ok 238 - active text duplicates do not occur in authored spawns
+  ---
+  duration_ms: 2.2892
+  type: 'test'
+  ...
+# Subtest: blocked spawn preserves the exact next card rather than rerolling its reward
+ok 239 - blocked spawn preserves the exact next card rather than rerolling its reward
+  ---
+  duration_ms: 0.271544
+  type: 'test'
+  ...
+# Subtest: a shuffled power cycle includes all four spells before repeating
+ok 240 - a shuffled power cycle includes all four spells before repeating
+  ---
+  duration_ms: 0.606434
+  type: 'test'
+  ...
+# Subtest: power selection prefers a not-full shelf inside the remaining bag
+ok 241 - power selection prefers a not-full shelf inside the remaining bag
+  ---
+  duration_ms: 0.216132
+  type: 'test'
+  ...
+# Subtest: full shelves never inflate inventory on collection
+ok 242 - full shelves never inflate inventory on collection
+  ---
+  duration_ms: 0.134811
+  type: 'test'
+  ...
+# Subtest: first chapter introduces one earned ICE opportunity, not four free tutorial powers
+ok 243 - first chapter introduces one earned ICE opportunity, not four free tutorial powers
+  ---
+  duration_ms: 0.637399
+  type: 'test'
+  ...
+# Subtest: empty FIRE and WIND are STORED rather than falsely actionable READY
+ok 244 - empty FIRE and WIND are STORED rather than falsely actionable READY
+  ---
+  duration_ms: 0.169673
+  type: 'test'
+  ...
+# Subtest: readiness reflects per-spell cooldown as well as inventory
+ok 245 - readiness reflects per-spell cooldown as well as inventory
+  ---
+  duration_ms: 0.293758
+  type: 'test'
+  ...
+# Subtest: SLOW cast before ICE retains every unspent second while frozen
+ok 246 - SLOW cast before ICE retains every unspent second while frozen
+  ---
+  duration_ms: 0.503019
+  type: 'test'
+  ...
+# Subtest: SLOW cast during ICE is queued without consuming duration
+ok 247 - SLOW cast during ICE is queued without consuming duration
+  ---
+  duration_ms: 0.278715
+  type: 'test'
+  ...
+# Subtest: a second queued SLOW does not consume a second book
+ok 248 - a second queued SLOW does not consume a second book
+  ---
+  duration_ms: 0.149943
+  type: 'test'
+  ...
+# Subtest: ICE ending within a tick applies only the remaining unfrozen fraction
+ok 249 - ICE ending within a tick applies only the remaining unfrozen fraction
+  ---
+  duration_ms: 0.146499
+  type: 'test'
+  ...
+# Subtest: SLOW expiry integrates slowed and normal motion within the same tick
+ok 250 - SLOW expiry integrates slowed and normal motion within the same tick
+  ---
+  duration_ms: 0.105518
+  type: 'test'
+  ...
+# Subtest: pause freezes queued spells and spell readiness
+ok 251 - pause freezes queued spells and spell readiness
+  ---
+  duration_ms: 0.306857
+  type: 'test'
+  ...
+# Subtest: FIRE guarantees a short recovery instead of an immediate replacement spawn
+ok 252 - FIRE guarantees a short recovery instead of an immediate replacement spawn
+  ---
+  duration_ms: 0.137705
+  type: 'test'
+  ...
+# Subtest: WIND clears only pressure; it never silently removes falling cards
+ok 253 - WIND clears only pressure; it never silently removes falling cards
+  ---
+  duration_ms: 0.157705
+  type: 'test'
+  ...
+# Subtest: a just-landed exact submission has one miss penalty, not miss plus typo
+ok 254 - a just-landed exact submission has one miss penalty, not miss plus typo
+  ---
+  duration_ms: 0.18131
+  type: 'test'
+  ...
+# Subtest: late-submission protection expires after the declared grace window
+ok 255 - late-submission protection expires after the declared grace window
+  ---
+  duration_ms: 0.14088
+  type: 'test'
+  ...
+# Subtest: the same expired word cannot repeatedly trigger late protection
+ok 256 - the same expired word cannot repeatedly trigger late protection
+  ---
+  duration_ms: 0.104306
+  type: 'test'
+  ...
+# Subtest: a still-live duplicate wins over the recently landed copy
+ok 257 - a still-live duplicate wins over the recently landed copy
+  ---
+  duration_ms: 0.112277
+  type: 'test'
+  ...
+# Subtest: a recently FIRE-cleared typed word does not create a phantom typo penalty
+ok 258 - a recently FIRE-cleared typed word does not create a phantom typo penalty
+  ---
+  duration_ms: 0.102533
+  type: 'test'
+  ...
+# Subtest: late protection cannot rescue an already terminal full-pile result
+ok 259 - late protection cannot rescue an already terminal full-pile result
+  ---
+  duration_ms: 0.098286
+  type: 'test'
+  ...
+# Subtest: chapter RNG is independent from how many earlier frames were simulated
+ok 260 - chapter RNG is independent from how many earlier frames were simulated
+  ---
+  duration_ms: 0.078056
+  type: 'test'
+  ...
+# Subtest: uninterrupted next chapter and restored bookmark produce identical cards
+ok 261 - uninterrupted next chapter and restored bookmark produce identical cards
+  ---
+  duration_ms: 1.118957
+  type: 'test'
+  ...
+# Subtest: chapter-boundary bookmark includes the pending power cycle
+ok 262 - chapter-boundary bookmark includes the pending power cycle
+  ---
+  duration_ms: 0.274849
+  type: 'test'
+  ...
+# Subtest: mid-chapter state cannot masquerade as a safe chapter bookmark
+ok 263 - mid-chapter state cannot masquerade as a safe chapter bookmark
+  ---
+  duration_ms: 0.418143
+  type: 'test'
+  ...
+# Subtest: first chapter can be bookmarked before a single word arrives
+ok 264 - first chapter can be bookmarked before a single word arrives
+  ---
+  duration_ms: 0.650439
+  type: 'test'
+  ...
+# Subtest: failed chapter retains its opening score and stock, recording retry count
+ok 265 - failed chapter retains its opening score and stock, recording retry count
+  ---
+  duration_ms: 0.418914
+  type: 'test'
+  ...
+# Subtest: retry increments cannot corrupt another expedition or chapter
+ok 266 - retry increments cannot corrupt another expedition or chapter
+  ---
+  duration_ms: 0.34281
+  type: 'test'
+  ...
+# Subtest: repeating a failed chapter cannot double-award its previous earned score
+ok 267 - repeating a failed chapter cannot double-award its previous earned score
+  ---
+  duration_ms: 0.482099
+  type: 'test'
+  ...
+# Subtest: campaign final clear cannot advance into chapter 49
+ok 268 - campaign final clear cannot advance into chapter 49
+  ---
+  duration_ms: 0.216192
+  type: 'test'
+  ...
+# Subtest: practice completion cannot advance into a multi-chapter practice score
+ok 269 - practice completion cannot advance into a multi-chapter practice score
+  ---
+  duration_ms: 0.231085
+  type: 'test'
+  ...
+# Subtest: endless can progress without receiving a false campaign victory
+ok 270 - endless can progress without receiving a false campaign victory
+  ---
+  duration_ms: 0.231945
+  type: 'test'
+  ...
+# Subtest: campaign victory cannot be declared in the middle of chapter 48
+ok 271 - campaign victory cannot be declared in the middle of chapter 48
+  ---
+  duration_ms: 0.21479
+  type: 'test'
+  ...
+# Subtest: retirement snapshots retain a voluntary finish distinction
+ok 272 - retirement snapshots retain a voluntary finish distinction
+  ---
+  duration_ms: 0.167229
+  type: 'test'
+  ...
+# Subtest: practice mastery on an unlocked chapter saves without unlocking another chapter
+ok 273 - practice mastery on an unlocked chapter saves without unlocking another chapter
+  ---
+  duration_ms: 0.564221
+  type: 'test'
+  ...
+# Subtest: practice cannot generate stars on a locked chapter
+ok 274 - practice cannot generate stars on a locked chapter
+  ---
+  duration_ms: 0.245946
+  type: 'test'
+  ...
+# Subtest: campaign clear after practice can unlock the next chapter
+ok 275 - campaign clear after practice can unlock the next chapter
+  ---
+  duration_ms: 0.209462
+  type: 'test'
+  ...
+# Subtest: practice best score is chapter-specific, not simply the longest chapter
+ok 276 - practice best score is chapter-specific, not simply the longest chapter
+  ---
+  duration_ms: 0.619393
+  type: 'test'
+  ...
+# Subtest: old rulesets remain in Legacy and cannot become a current personal best
+ok 277 - old rulesets remain in Legacy and cannot become a current personal best
+  ---
+  duration_ms: 0.159207
+  type: 'test'
+  ...
+# Subtest: a migrated in-progress expedition keeps its original scoring provenance
+ok 278 - a migrated in-progress expedition keeps its original scoring provenance
+  ---
+  duration_ms: 0.408699
+  type: 'test'
+  ...
+# Subtest: v3 migration does not overwrite or delete the original saved bytes
+ok 279 - v3 migration does not overwrite or delete the original saved bytes
+  ---
+  duration_ms: 0.214951
+  type: 'test'
+  ...
+# Subtest: corrupt power bags and nonfinite checkpoint identifiers are rejected
+ok 280 - corrupt power bags and nonfinite checkpoint identifiers are rejected
+  ---
+  duration_ms: 0.213638
+  type: 'test'
+  ...
+# Subtest: actual completed-stage score replaces only the comparable ruleset best
+ok 281 - actual completed-stage score replaces only the comparable ruleset best
+  ---
+  duration_ms: 0.315891
+  type: 'test'
+  ...
+# Subtest: paused application settings reject invalid volume and difficulty values
+ok 282 - paused application settings reject invalid volume and difficulty values
+  ---
+  duration_ms: 0.178015
+  type: 'test'
+  ...
+# Subtest: nonfinite and zero deltas cannot poison the game clock
+ok 283 - nonfinite and zero deltas cannot poison the game clock
+  ---
+  duration_ms: 0.155742
+  type: 'test'
+  ...
+# Subtest: long-session replay memory is bounded and truncation is explicit
+ok 284 - long-session replay memory is bounded and truncation is explicit
+  ---
+  duration_ms: 30.196417
+  type: 'test'
+  ...
+# Subtest: renderer frame rate cannot change a fixed-tick authored run
+ok 285 - renderer frame rate cannot change a fixed-tick authored run
+  ---
+  duration_ms: 12.170171
+  type: 'test'
+  ...
+# Subtest: 250 seeded adversarial sessions retain finite state, terminal uniqueness and stock bounds
+ok 286 - 250 seeded adversarial sessions retain finite state, terminal uniqueness and stock bounds
+  ---
+  duration_ms: 248.857573
+  type: 'test'
+  ...
+# Subtest: merging new-rule practice medals cannot revoke an old-rule campaign clear
+ok 287 - merging new-rule practice medals cannot revoke an old-rule campaign clear
+  ---
+  duration_ms: 0.366506
+  type: 'test'
+  ...
+# Subtest: corrupt current save is quarantined and a valid untouched v3 save is recovered
+ok 288 - corrupt current save is quarantined and a valid untouched v3 save is recovered
+  ---
+  duration_ms: 0.222371
+  type: 'test'
+  ...
+# Subtest: normalization accepts English letters, uppercases and bounds the buffer
+ok 289 - normalization accepts English letters, uppercases and bounds the buffer
+  ---
+  duration_ms: 1.004647
+  type: 'test'
+  ...
+# Subtest: dictionary is substantial, uppercase, unique within tiers, and all words fit the buffer
+ok 290 - dictionary is substantial, uppercase, unique within tiers, and all words fit the buffer
+  ---
+  duration_ms: 1.031997
+  type: 'test'
+  ...
+# Subtest: seeded random generator repeats exactly
+ok 291 - seeded random generator repeats exactly
+  ---
+  duration_ms: 0.644961
+  type: 'test'
+  ...
+# Subtest: fresh game is in menu, with no starting power stock
+ok 292 - fresh game is in menu, with no starting power stock
+  ---
+  duration_ms: 0.409199
+  type: 'test'
+  ...
+# Subtest: start resets all run state
+ok 293 - start resets all run state
+  ---
+  duration_ms: 0.340878
+  type: 'test'
+  ...
+# Subtest: complete exact word once, update points/progress/characters
+ok 294 - complete exact word once, update points/progress/characters
+  ---
+  duration_ms: 0.515348
+  type: 'test'
+  ...
+# Subtest: partial input never auto-clears or penalizes
+ok 295 - partial input never auto-clears or penalizes
+  ---
+  duration_ms: 0.240228
+  type: 'test'
+  ...
+# Subtest: empty Enter is a true no-op
+ok 296 - empty Enter is a true no-op
+  ---
+  duration_ms: 0.222372
+  type: 'test'
+  ...
+# Subtest: invalid submission penalizes once and clears the buffer
+ok 297 - invalid submission penalizes once and clears the buffer
+  ---
+  duration_ms: 0.454337
+  type: 'test'
+  ...
+# Subtest: editing a prefix is non-destructive
+ok 298 - editing a prefix is non-destructive
+  ---
+  duration_ms: 0.380387
+  type: 'test'
+  ...
+# Subtest: duplicate words resolve the lowest exact match
+ok 299 - duplicate words resolve the lowest exact match
+  ---
+  duration_ms: 0.322801
+  type: 'test'
+  ...
+# Subtest: ties are stable by ID
+ok 300 - ties are stable by ID
+  ---
+  duration_ms: 0.146959
+  type: 'test'
+  ...
+# Subtest: shared prefix does not lock onto a target
+ok 301 - shared prefix does not lock onto a target
+  ---
+  duration_ms: 0.175682
+  type: 'test'
+  ...
+# Subtest: falling FIRE word takes priority over available command
+ok 302 - falling FIRE word takes priority over available command
+  ---
+  duration_ms: 0.12769
+  type: 'test'
+  ...
+# Subtest: power collection is immediate and capped at two
+ok 303 - power collection is immediate and capped at two
+  ---
+  duration_ms: 0.164705
+  type: 'test'
+  ...
+# Subtest: all four power-card families grant the corresponding book
+ok 304 - all four power-card families grant the corresponding book
+  ---
+  duration_ms: 0.175521
+  type: 'test'
+  ...
+# Subtest: unavailable spell costs no points or danger and grants no stock
+ok 305 - unavailable spell costs no points or danger and grants no stock
+  ---
+  duration_ms: 0.242992
+  type: 'test'
+  ...
+# Subtest: FIRE clears active cards without scoring, progress, or harvesting books
+ok 306 - FIRE clears active cards without scoring, progress, or harvesting books
+  ---
+  duration_ms: 0.346135
+  type: 'test'
+  ...
+# Subtest: FIRE consumes exactly one charge per nonempty cast
+ok 307 - FIRE consumes exactly one charge per nonempty cast
+  ---
+  duration_ms: 0.196583
+  type: 'test'
+  ...
+# Subtest: ICE stops words and spawn timer for its duration
+ok 308 - ICE stops words and spawn timer for its duration
+  ---
+  duration_ms: 0.827943
+  type: 'test'
+  ...
+# Subtest: ICE active recast is rejected and preserves the next book
+ok 309 - ICE active recast is rejected and preserves the next book
+  ---
+  duration_ms: 0.223583
+  type: 'test'
+  ...
+# Subtest: SLOW scales motion by exactly 0.42
+ok 310 - SLOW scales motion by exactly 0.42
+  ---
+  duration_ms: 0.191345
+  type: 'test'
+  ...
+# Subtest: ICE and SLOW coexist; SLOW time is banked until ICE ends
+ok 311 - ICE and SLOW coexist; SLOW time is banked until ICE ends
+  ---
+  duration_ms: 0.206318
+  type: 'test'
+  ...
+# Subtest: WIND fully clears danger and paper without clearing active words
+ok 312 - WIND fully clears danger and paper without clearing active words
+  ---
+  duration_ms: 0.182622
+  type: 'test'
+  ...
+# Subtest: pause freezes timers, positions, game time, and spawn countdown
+ok 313 - pause freezes timers, positions, game time, and spawn countdown
+  ---
+  duration_ms: 0.481447
+  type: 'test'
+  ...
+# Subtest: paused input cannot change buffer or score
+ok 314 - paused input cannot change buffer or score
+  ---
+  duration_ms: 0.10091
+  type: 'test'
+  ...
+# Subtest: miss adds the configured danger once and clears streak
+ok 315 - miss adds the configured danger once and clears streak
+  ---
+  duration_ms: 0.187289
+  type: 'test'
+  ...
+# Subtest: dark miss penalty is larger; dark completion earns double
+ok 316 - dark miss penalty is larger; dark completion earns double
+  ---
+  duration_ms: 0.240969
+  type: 'test'
+  ...
+# Subtest: game over is terminal and emits only once
+ok 317 - game over is terminal and emits only once
+  ---
+  duration_ms: 0.211555
+  type: 'test'
+  ...
+# Subtest: an invalid submission can end a run at the limit
+ok 318 - an invalid submission can end a run at the limit
+  ---
+  duration_ms: 0.11437
+  type: 'test'
+  ...
+# Subtest: word submitted just before impact cannot subsequently land
+ok 319 - word submitted just before impact cannot subsequently land
+  ---
+  duration_ms: 0.150525
+  type: 'test'
+  ...
+# Subtest: perfect chapter awards 100 x level plus 250, then clears field
+ok 320 - perfect chapter awards 100 x level plus 250, then clears field
+  ---
+  duration_ms: 0.311785
+  type: 'test'
+  ...
+# Subtest: imperfect chapter excludes perfect bonus
+ok 321 - imperfect chapter excludes perfect bonus
+  ---
+  duration_ms: 0.171856
+  type: 'test'
+  ...
+# Subtest: next chapter resets quota and timed effects but retains danger and stock
+ok 322 - next chapter resets quota and timed effects but retains danger and stock
+  ---
+  duration_ms: 0.217304
+  type: 'test'
+  ...
+# Subtest: streak multiplier grows at eight and caps at three
+ok 323 - streak multiplier grows at eight and caps at three
+  ---
+  duration_ms: 0.068211
+  type: 'test'
+  ...
+# Subtest: word accuracy is submission accuracy, not a keystroke claim
+ok 324 - word accuracy is submission accuracy, not a keystroke claim
+  ---
+  duration_ms: 0.190164
+  type: 'test'
+  ...
+# Subtest: WPM uses correctly completed characters and active time
+ok 325 - WPM uses correctly completed characters and active time
+  ---
+  duration_ms: 0.251966
+  type: 'test'
+  ...
+# Subtest: same seed and input sequence yield the same simulation
+ok 326 - same seed and input sequence yield the same simulation
+  ---
+  duration_ms: 7.032106
+  type: 'test'
+  ...
+# Subtest: spawn bounds keep whole cards on the playfield
+ok 327 - spawn bounds keep whole cards on the playfield
+  ---
+  duration_ms: 4.87988
+  type: 'test'
+  ...
+# Subtest: spawn is bounded at 12 simultaneous cards
+ok 328 - spawn is bounded at 12 simultaneous cards
+  ---
+  duration_ms: 0.162983
+  type: 'test'
+  ...
+# Subtest: special cards include explicit glyph padding
+ok 329 - special cards include explicit glyph padding
+  ---
+  duration_ms: 0.20142
+  type: 'test'
+  ...
+# Subtest: level speed and quotas increase but remain bounded
+ok 330 - level speed and quotas increase but remain bounded
+  ---
+  duration_ms: 0.161401
+  type: 'test'
+  ...
+# Subtest: pace choice changes speed without changing correctness rules
+ok 331 - pace choice changes speed without changing correctness rules
+  ---
+  duration_ms: 0.110174
+  type: 'test'
+  ...
+# Subtest: fixed clock creates 60 bounded simulation steps over one second
+ok 332 - fixed clock creates 60 bounded simulation steps over one second
+  ---
+  duration_ms: 0.287748
+  type: 'test'
+  ...
+# Subtest: clock does not simulate a hidden-tab catch-up burst
+ok 333 - clock does not simulate a hidden-tab catch-up burst
+  ---
+  duration_ms: 0.136924
+  type: 'test'
+  ...
+# Subtest: settings and local records round-trip with schema validation
+ok 334 - settings and local records round-trip with schema validation
+  ---
+  duration_ms: 1.780462
+  type: 'test'
+  ...
+# Subtest: malformed local data recovers safely
+ok 335 - malformed local data recovers safely
+  ---
+  duration_ms: 0.297964
+  type: 'test'
+  ...
+# Subtest: unavailable storage is explicitly session-only
+ok 336 - unavailable storage is explicitly session-only
+  ---
+  duration_ms: 0.299786
+  type: 'test'
+  ...
+# Subtest: blocked storage never crashes game state
+ok 337 - blocked storage never crashes game state
+  ---
+  duration_ms: 0.291104
+  type: 'test'
+  ...
+# Subtest: records filter malformed entries and maintain independent pace bests
+ok 338 - records filter malformed entries and maintain independent pace bests
+  ---
+  duration_ms: 0.237083
+  type: 'test'
+  ...
+# Subtest: clearing records retains settings
+ok 339 - clearing records retains settings
+  ---
+  duration_ms: 0.225556
+  type: 'test'
+  ...
+# Subtest: new players get the original score without a separate setup screen
+ok 340 - new players get the original score without a separate setup screen
+  ---
+  duration_ms: 0.818759
+  type: 'test'
+  ...
+# Subtest: music, effects, and master volume have independent bounded defaults
+ok 341 - music, effects, and master volume have independent bounded defaults
+  ---
+  duration_ms: 0.165657
+  type: 'test'
+  ...
+# Subtest: default gameplay HUD is focused, not a metrics dashboard
+ok 342 - default gameplay HUD is focused, not a metrics dashboard
+  ---
+  duration_ms: 0.12122
+  type: 'test'
+  ...
+# Subtest: returning players have a configurable resume safety countdown
+ok 343 - returning players have a configurable resume safety countdown
+  ---
+  duration_ms: 0.079478
+  type: 'test'
+  ...
+# Subtest: v2 settings and records migrate non-destructively into Typekeeper
+ok 344 - v2 settings and records migrate non-destructively into Typekeeper
+  ---
+  duration_ms: 0.969514
+  type: 'test'
+  ...
+# Subtest: current Typekeeper preferences take priority over old defaults
+ok 345 - current Typekeeper preferences take priority over old defaults
+  ---
+  duration_ms: 0.155081
+  type: 'test'
+  ...
+# Subtest: new audio preferences persist through actual serialization
+ok 346 - new audio preferences persist through actual serialization
+  ---
+  duration_ms: 0.315811
+  type: 'test'
+  ...
+# Subtest: invalid imported audio gains do not reach the mixer
+ok 347 - invalid imported audio gains do not reach the mixer
+  ---
+  duration_ms: 0.289871
+  type: 'test'
+  ...
+# Subtest: new presentation toggles serialize without changing active game rules
+ok 348 - new presentation toggles serialize without changing active game rules
+  ---
+  duration_ms: 0.283903
+  type: 'test'
+  ...
+# Subtest: Typekeeper save exports identify the product and preserve schema compatibility
+ok 349 - Typekeeper save exports identify the product and preserve schema compatibility
+  ---
+  duration_ms: 0.608467
+  type: 'test'
+  ...
+# Subtest: migrated saves retain all earned mastery and chapter bookmarks
+ok 350 - migrated saves retain all earned mastery and chapter bookmarks
+  ---
+  duration_ms: 2.745521
+  type: 'test'
+  ...
+# Subtest: pile restoration agrees with the danger meter after a bookmark
+ok 351 - pile restoration agrees with the danger meter after a bookmark
+  ---
+  duration_ms: 1.313207
+  type: 'test'
+  ...
+# Subtest: restored pile does not retain references to imported data
+ok 352 - restored pile does not retain references to imported data
+  ---
+  duration_ms: 0.406395
+  type: 'test'
+  ...
+# Subtest: older checkpoints reconstruct visual papers for existing danger
+ok 353 - older checkpoints reconstruct visual papers for existing danger
+  ---
+  duration_ms: 0.333847
+  type: 'test'
+  ...
+# Subtest: malformed pile objects are rejected before save import
+ok 354 - malformed pile objects are rejected before save import
+  ---
+  duration_ms: 0.176223
+  type: 'test'
+  ...
+# Subtest: oversized or out-of-field imported piles are rejected
+ok 355 - oversized or out-of-field imported piles are rejected
+  ---
+  duration_ms: 0.233758
+  type: 'test'
+  ...
+# Subtest: campaign finale now uses the Typekeeper identity
+ok 356 - campaign finale now uses the Typekeeper identity
+  ---
+  duration_ms: 0.06762
+  type: 'test'
+  ...
+# Subtest: HTML contains no website header, footer, or edition labeling
+ok 357 - HTML contains no website header, footer, or edition labeling
+  ---
+  duration_ms: 0.36919
+  type: 'test'
+  ...
+# Subtest: live menu source removes prototype and defensive copy
+ok 358 - live menu source removes prototype and defensive copy
+  ---
+  duration_ms: 0.247859
+  type: 'test'
+  ...
+# Subtest: original score has two equal-length, original phase-aligned stems
+ok 359 - original score has two equal-length, original phase-aligned stems
+  ---
+  duration_ms: 0.171316
+  type: 'test'
+  ...
+# Subtest: both music exports are included locally and stay under 3 MiB each
+ok 360 - both music exports are included locally and stay under 3 MiB each
+  ---
+  duration_ms: 0.183834
+  type: 'test'
+  ...
+# Subtest: source soundtrack includes editable MIDI and lossless masters
+ok 361 - source soundtrack includes editable MIDI and lossless masters
+  ---
+  duration_ms: 0.130445
+  type: 'test'
+  ...
+# Subtest: old placeholder nocturne is not shipped as a runtime asset
+ok 362 - old placeholder nocturne is not shipped as a runtime asset
+  ---
+  duration_ms: 0.075482
+  type: 'test'
+  ...
+# Subtest: no font binaries or remote font dependencies are required
+ok 363 - no font binaries or remote font dependencies are required
+  ---
+  duration_ms: 0.32867
+  type: 'test'
+  ...
+# Subtest: Application 3.5.1 retains the 3.2.1 gameplay ruleset and resource capacity
+ok 364 - Application 3.5.1 retains the 3.2.1 gameplay ruleset and resource capacity
+  ---
+  duration_ms: 0.822696
+  type: 'test'
+  ...
+# Subtest: Source hashes preserve untouched 3.4 modules; changed rules/model are covered by dual-model parity tests
+ok 365 - Source hashes preserve untouched 3.4 modules; changed rules/model are covered by dual-model parity tests
+  ---
+  duration_ms: 47.430574
+  type: 'test'
+  ...
+# Subtest: Room state 1 follows campaign chapters 1–6
+ok 366 - Room state 1 follows campaign chapters 1–6
+  ---
+  duration_ms: 0.35634
+  type: 'test'
+  ...
+# Subtest: Room state 2 follows campaign chapters 7–12
+ok 367 - Room state 2 follows campaign chapters 7–12
+  ---
+  duration_ms: 0.088882
+  type: 'test'
+  ...
+# Subtest: Room state 3 follows campaign chapters 13–18
+ok 368 - Room state 3 follows campaign chapters 13–18
+  ---
+  duration_ms: 0.132398
+  type: 'test'
+  ...
+# Subtest: Room state 4 follows campaign chapters 19–24
+ok 369 - Room state 4 follows campaign chapters 19–24
+  ---
+  duration_ms: 0.056354
+  type: 'test'
+  ...
+# Subtest: Room state 5 follows campaign chapters 25–30
+ok 370 - Room state 5 follows campaign chapters 25–30
+  ---
+  duration_ms: 0.103554
+  type: 'test'
+  ...
+# Subtest: Room state 6 follows campaign chapters 31–36
+ok 371 - Room state 6 follows campaign chapters 31–36
+  ---
+  duration_ms: 0.059419
+  type: 'test'
+  ...
+# Subtest: Room state 7 follows campaign chapters 37–42
+ok 372 - Room state 7 follows campaign chapters 37–42
+  ---
+  duration_ms: 0.230293
+  type: 'test'
+  ...
+# Subtest: Room state 8 follows campaign chapters 43–48
+ok 373 - Room state 8 follows campaign chapters 43–48
+  ---
+  duration_ms: 0.332926
+  type: 'test'
+  ...
+# Subtest: Endless reuses the final room rather than generating unbounded stage textures
+ok 374 - Endless reuses the final room rather than generating unbounded stage textures
+  ---
+  duration_ms: 0.18135
+  type: 'test'
+  ...
+# Subtest: Visual prefix target is the same lowest-y, lowest-ID candidate as the model
+ok 375 - Visual prefix target is the same lowest-y, lowest-ID candidate as the model
+  ---
+  duration_ms: 0.197834
+  type: 'test'
+  ...
+# Subtest: Target selection never reorders the live model array
+ok 376 - Target selection never reorders the live model array
+  ---
+  duration_ms: 0.693383
+  type: 'test'
+  ...
+# Subtest: Words stay readable at presentation scale 0.72
+ok 377 - Words stay readable at presentation scale 0.72
+  ---
+  duration_ms: 0.589038
+  type: 'test'
+  ...
+# Subtest: Words stay readable at presentation scale 0.8355555556
+ok 378 - Words stay readable at presentation scale 0.8355555556
+  ---
+  duration_ms: 0.205637
+  type: 'test'
+  ...
+# Subtest: Words stay readable at presentation scale 1.18
+ok 379 - Words stay readable at presentation scale 1.18
+  ---
+  duration_ms: 0.066319
+  type: 'test'
+  ...
+# Subtest: EXTRAORDINARY remains one complete string and never splits into rows
+ok 380 - EXTRAORDINARY remains one complete string and never splits into rows
+  ---
+  duration_ms: 0.092407
+  type: 'test'
+  ...
+# Subtest: Physical-text material layouts leave room for all four element icons
+ok 381 - Physical-text material layouts leave room for all four element icons
+  ---
+  duration_ms: 0.09362
+  type: 'test'
+  ...
+# Subtest: Display-only collision resolution never changes y, speed, text or source coordinates
+ok 382 - Display-only collision resolution never changes y, speed, text or source coordinates
+  ---
+  duration_ms: 0.28874
+  type: 'test'
+  ...
+# Subtest: Display separation clamps complete card edges inside the playfield
+ok 383 - Display separation clamps complete card edges inside the playfield
+  ---
+  duration_ms: 0.234429
+  type: 'test'
+  ...
+# Subtest: Defeat ceremony lasts 1.2 presentation seconds and completes exactly once
+ok 384 - Defeat ceremony lasts 1.2 presentation seconds and completes exactly once
+  ---
+  duration_ms: 0.197304
+  type: 'test'
+  ...
+# Subtest: Chapter closure lasts less than a second and is independently skippable
+ok 385 - Chapter closure lasts less than a second and is independently skippable
+  ---
+  duration_ms: 0.075983
+  type: 'test'
+  ...
+# Subtest: Hidden-page time does not consume the ceremony
+ok 386 - Hidden-page time does not consume the ceremony
+  ---
+  duration_ms: 0.099849
+  type: 'test'
+  ...
+# Subtest: Canceling a ceremony prevents stale UI callbacks after retry or menu
+ok 387 - Canceling a ceremony prevents stale UI callbacks after retry or menu
+  ---
+  duration_ms: 0.06056
+  type: 'test'
+  ...
+# Subtest: Reduced-motion ceremonies complete immediately without simulated game time
+ok 388 - Reduced-motion ceremonies complete immediately without simulated game time
+  ---
+  duration_ms: 0.057606
+  type: 'test'
+  ...
+# Subtest: Long frame gaps cannot create a giant catch-up through the outcome presentation
+ok 389 - Long frame gaps cannot create a giant catch-up through the outcome presentation
+  ---
+  duration_ms: 0.052899
+  type: 'test'
+  ...
+# Subtest: Ceremony payload and progress never award a second model score
+ok 390 - Ceremony payload and progress never award a second model score
+  ---
+  duration_ms: 1.164104
+  type: 'test'
+  ...
+# Subtest: Presentation layout and effects do not change the authored 48-stage pace curve
+ok 391 - Presentation layout and effects do not change the authored 48-stage pace curve
+  ---
+  duration_ms: 0.416791
+  type: 'test'
+  ...
+# Subtest: chapter 1: the earlier pressure curve is pinned
+ok 392 - chapter 1: the earlier pressure curve is pinned
+  ---
+  duration_ms: 1.216082
+  type: 'test'
+  ...
+# Subtest: chapter 3: the earlier pressure curve is pinned
+ok 393 - chapter 3: the earlier pressure curve is pinned
+  ---
+  duration_ms: 0.103534
+  type: 'test'
+  ...
+# Subtest: chapter 6: the earlier pressure curve is pinned
+ok 394 - chapter 6: the earlier pressure curve is pinned
+  ---
+  duration_ms: 0.104706
+  type: 'test'
+  ...
+# Subtest: chapter 12: the earlier pressure curve is pinned
+ok 395 - chapter 12: the earlier pressure curve is pinned
+  ---
+  duration_ms: 0.079108
+  type: 'test'
+  ...
+# Subtest: chapter 24: the earlier pressure curve is pinned
+ok 396 - chapter 24: the earlier pressure curve is pinned
+  ---
+  duration_ms: 0.200138
+  type: 'test'
+  ...
+# Subtest: chapter 36: the earlier pressure curve is pinned
+ok 397 - chapter 36: the earlier pressure curve is pinned
+  ---
+  duration_ms: 0.123985
+  type: 'test'
+  ...
+# Subtest: chapter 48: the earlier pressure curve is pinned
+ok 398 - chapter 48: the earlier pressure curve is pinned
+  ---
+  duration_ms: 0.069383
+  type: 'test'
+  ...
+# Subtest: second chapter introduces medium words; the first chapter keeps its short onboarding words
+ok 399 - second chapter introduces medium words; the first chapter keeps its short onboarding words
+  ---
+  duration_ms: 0.348058
+  type: 'test'
+  ...
+# Subtest: all 48 vocabulary distributions are positive, normalized, and length-bounded
+ok 400 - all 48 vocabulary distributions are positive, normalized, and length-bounded
+  ---
+  duration_ms: 5.424491
+  type: 'test'
+  ...
+# Subtest: early speed changes are explicit between chapters; no within-card rubber banding
+ok 401 - early speed changes are explicit between chapters; no within-card rubber banding
+  ---
+  duration_ms: 1.265546
+  type: 'test'
+  ...
+# Subtest: chapter 48 into Endless does not reset difficulty downward
+ok 402 - chapter 48 into Endless does not reset difficulty downward
+  ---
+  duration_ms: 0.286526
+  type: 'test'
+  ...
+# Subtest: music adds no tension in calm play and builds continuously through danger
+ok 403 - music adds no tension in calm play and builds continuously through danger
+  ---
+  duration_ms: 0.555778
+  type: 'test'
+  ...
+# Subtest: adaptive layers can be disabled without changing the baseline scene groove
+ok 404 - adaptive layers can be disabled without changing the baseline scene groove
+  ---
+  duration_ms: 1.072798
+  type: 'test'
+  ...
+# Subtest: menu: high pile never leaves critical layers playing over a modal
+ok 405 - menu: high pile never leaves critical layers playing over a modal
+  ---
+  duration_ms: 0.088192
+  type: 'test'
+  ...
+# Subtest: pause: high pile never leaves critical layers playing over a modal
+ok 406 - pause: high pile never leaves critical layers playing over a modal
+  ---
+  duration_ms: 0.04017
+  type: 'test'
+  ...
+# Subtest: clear: high pile never leaves critical layers playing over a modal
+ok 407 - clear: high pile never leaves critical layers playing over a modal
+  ---
+  duration_ms: 0.128482
+  type: 'test'
+  ...
+# Subtest: over: high pile never leaves critical layers playing over a modal
+ok 408 - over: high pile never leaves critical layers playing over a modal
+  ---
+  duration_ms: 0.047641
+  type: 'test'
+  ...
+# Subtest: music rejects invalid pressure and clamps out-of-range numbers
+ok 409 - music rejects invalid pressure and clamps out-of-range numbers
+  ---
+  duration_ms: 0.137425
+  type: 'test'
+  ...
+# Subtest: all four stems use one exact original music-cycle duration
+ok 410 - all four stems use one exact original music-cycle duration
+  ---
+  duration_ms: 0.065748
+  type: 'test'
+  ...
+# Subtest: near-boundary pressure changes cannot cause abrupt target jumps
+ok 411 - near-boundary pressure changes cannot cause abrupt target jumps
+  ---
+  duration_ms: 0.237554
+  type: 'test'
+  ...
+# Subtest: input sparkle targets the lowest eligible prefix without auto-submitting
+ok 412 - input sparkle targets the lowest eligible prefix without auto-submitting
+  ---
+  duration_ms: 0.455379
+  type: 'test'
+  ...
+# Subtest: full-word ready cue is feedback only until Enter
+ok 413 - full-word ready cue is feedback only until Enter
+  ---
+  duration_ms: 0.57072
+  type: 'test'
+  ...
+# Subtest: wrong prefixes get no match sparkle and no extra penalty
+ok 414 - wrong prefixes get no match sparkle and no extra penalty
+  ---
+  duration_ms: 0.202542
+  type: 'test'
+  ...
+# Subtest: same-length replacement emits a new key event; unchanged input does not
+ok 415 - same-length replacement emits a new key event; unchanged input does not
+  ---
+  duration_ms: 0.238085
+  type: 'test'
+  ...
+# Subtest: backspace does not trigger a new typing-ready sound
+ok 416 - backspace does not trigger a new typing-ready sound
+  ---
+  duration_ms: 0.338164
+  type: 'test'
+  ...
+# Subtest: ICE and queued SLOW each emit exactly one natural ending
+ok 417 - ICE and queued SLOW each emit exactly one natural ending
+  ---
+  duration_ms: 0.392264
+  type: 'test'
+  ...
+# Subtest: pause suspends effect-end events and spell lifetime
+ok 418 - pause suspends effect-end events and spell lifetime
+  ---
+  duration_ms: 0.15415
+  type: 'test'
+  ...
+# Subtest: clearing a chapter cancels effects without false expiration cues
+ok 419 - clearing a chapter cancels effects without false expiration cues
+  ---
+  duration_ms: 0.226066
+  type: 'test'
+  ...
+# Subtest: score tally is monotone, bounded, and finishes at the authoritative total
+ok 420 - score tally is monotone, bounded, and finishes at the authoritative total
+  ---
+  duration_ms: 0.345184
+  type: 'test'
+  ...
+# Subtest: large totals finish in the same time rather than counting each point
+ok 421 - large totals finish in the same time rather than counting each point
+  ---
+  duration_ms: 0.111997
+  type: 'test'
+  ...
+# Subtest: slow-frame tally never schedules a backlog of ticks
+ok 422 - slow-frame tally never schedules a backlog of ticks
+  ---
+  duration_ms: 0.172938
+  type: 'test'
+  ...
+# Subtest: tally skip completes once; a canceled tally cannot leak a completion
+ok 423 - tally skip completes once; a canceled tally cannot leak a completion
+  ---
+  duration_ms: 0.112027
+  type: 'test'
+  ...
+# Subtest: reduced motion displays the final score immediately
+ok 424 - reduced motion displays the final score immediately
+  ---
+  duration_ms: 0.070455
+  type: 'test'
+  ...
+# Subtest: score presentation cannot mutate game totals or earn duplicate points
+ok 425 - score presentation cannot mutate game totals or earn duplicate points
+  ---
+  duration_ms: 0.248019
+  type: 'test'
+  ...
+# Subtest: v3.1 storage migrates into v3.2.1 without rewriting the old key
+ok 426 - v3.1 storage migrates into v3.2.1 without rewriting the old key
+  ---
+  duration_ms: 1.073109
+  type: 'test'
+  ...
+# Subtest: adaptive music and shimmer preferences persist without changing score rules
+ok 427 - adaptive music and shimmer preferences persist without changing score rules
+  ---
+  duration_ms: 0.206778
+  type: 'test'
+  ...
+# Subtest: Current SCORE keeps running total; campaign key identifies current chapter and starting chapter
+ok 428 - Current SCORE keeps running total; campaign key identifies current chapter and starting chapter
+  ---
+  duration_ms: 2.085427
+  type: 'test'
+  ...
+# Subtest: Independent scope: classic campaign
+ok 429 - Independent scope: classic campaign
+  ---
+  duration_ms: 0.663168
+  type: 'test'
+  ...
+# Subtest: Independent scope: classic practice
+ok 430 - Independent scope: classic practice
+  ---
+  duration_ms: 0.828174
+  type: 'test'
+  ...
+# Subtest: Independent scope: classic endless
+ok 431 - Independent scope: classic endless
+  ---
+  duration_ms: 0.137134
+  type: 'test'
+  ...
+# Subtest: Independent scope: relaxed campaign
+ok 432 - Independent scope: relaxed campaign
+  ---
+  duration_ms: 0.116384
+  type: 'test'
+  ...
+# Subtest: Independent scope: relaxed practice
+ok 433 - Independent scope: relaxed practice
+  ---
+  duration_ms: 0.152347
+  type: 'test'
+  ...
+# Subtest: Independent scope: relaxed endless
+ok 434 - Independent scope: relaxed endless
+  ---
+  duration_ms: 0.094121
+  type: 'test'
+  ...
+# Subtest: Independent scope: maniac campaign
+ok 435 - Independent scope: maniac campaign
+  ---
+  duration_ms: 0.179027
+  type: 'test'
+  ...
+# Subtest: Independent scope: maniac practice
+ok 436 - Independent scope: maniac practice
+  ---
+  duration_ms: 0.262291
+  type: 'test'
+  ...
+# Subtest: Independent scope: maniac endless
+ok 437 - Independent scope: maniac endless
+  ---
+  duration_ms: 0.418724
+  type: 'test'
+  ...
+# Subtest: Different campaign chapters and starting chapters never share a target
+ok 438 - Different campaign chapters and starting chapters never share a target
+  ---
+  duration_ms: 0.283001
+  type: 'test'
+  ...
+# Subtest: Invalid scope, pace, chapter, start point or mode is rejected
+ok 439 - Invalid scope, pace, chapter, start point or mode is rejected
+  ---
+  duration_ms: 0.151526
+  type: 'test'
+  ...
+# Subtest: Bad scores, wrong metric and foreign rulesets cannot enter new persistent records
+ok 440 - Bad scores, wrong metric and foreign rulesets cannot enter new persistent records
+  ---
+  duration_ms: 0.129533
+  type: 'test'
+  ...
+# Subtest: A valid zero is a real record, not FIRST RUN; first-run never celebrates a fictitious zero PB
+ok 441 - A valid zero is a real record, not FIRST RUN; first-run never celebrates a fictitious zero PB
+  ---
+  duration_ms: 0.156423
+  type: 'test'
+  ...
+# Subtest: PB target is a primitive snapshot, not a live record reference
+ok 442 - PB target is a primitive snapshot, not a live record reference
+  ---
+  duration_ms: 0.12723
+  type: 'test'
+  ...
+# Subtest: Mismatched target scope is rejected even if caller passes a numeric score
+ok 443 - Mismatched target scope is rejected even if caller passes a numeric score
+  ---
+  duration_ms: 0.085838
+  type: 'test'
+  ...
+# Subtest: 90 percent softly enters near state; a tie is never a new record
+ok 444 - 90 percent softly enters near state; a tie is never a new record
+  ---
+  duration_ms: 0.078096
+  type: 'test'
+  ...
+# Subtest: Crossing fires once and delta grows against frozen pre-attempt score
+ok 445 - Crossing fires once and delta grows against frozen pre-attempt score
+  ---
+  duration_ms: 0.121361
+  type: 'test'
+  ...
+# Subtest: Synchronized/restored beaten state never replays congratulations
+ok 446 - Synchronized/restored beaten state never replays congratulations
+  ---
+  duration_ms: 0.131756
+  type: 'test'
+  ...
+# Subtest: Retry/new chapter begins a new target snapshot without moving an existing chase
+ok 447 - Retry/new chapter begins a new target snapshot without moving an existing chase
+  ---
+  duration_ms: 0.170814
+  type: 'test'
+  ...
+# Subtest: Invalid observations cannot poison display state
+ok 448 - Invalid observations cannot poison display state
+  ---
+  duration_ms: 0.10093
+  type: 'test'
+  ...
+# Subtest: Earlier-rule checkpoint remains visibly unranked
+ok 449 - Earlier-rule checkpoint remains visibly unranked
+  ---
+  duration_ms: 0.086148
+  type: 'test'
+  ...
+# Subtest: A new Endless wave never changes the persistent scope
+ok 450 - A new Endless wave never changes the persistent scope
+  ---
+  duration_ms: 0.077064
+  type: 'test'
+  ...
+# Subtest: One complete, contiguous checkpoint recovers real running totals
+ok 451 - One complete, contiguous checkpoint recovers real running totals
+  ---
+  duration_ms: 0.719593
+  type: 'test'
+  ...
+# Subtest: Per-chapter maxima from different plays are never summed into campaign totals
+ok 452 - Per-chapter maxima from different plays are never summed into campaign totals
+  ---
+  duration_ms: 0.682838
+  type: 'test'
+  ...
+# Subtest: Existing practice chapter PB is usable immediately; campaign row cannot substitute
+ok 453 - Existing practice chapter PB is usable immediately; campaign row cannot substitute
+  ---
+  duration_ms: 0.160139
+  type: 'test'
+  ...
+# Subtest: Game-over / retired / completed records contribute scoped real running totals
+ok 454 - Game-over / retired / completed records contribute scoped real running totals
+  ---
+  duration_ms: 0.417522
+  type: 'test'
+  ...
+# Subtest: Lower scores and ties do not replace a saved best
+ok 455 - Lower scores and ties do not replace a saved best
+  ---
+  duration_ms: 0.124786
+  type: 'test'
+  ...
+# Subtest: Local best survives 100-row global leaderboard trimming
+ok 456 - Local best survives 100-row global leaderboard trimming
+  ---
+  duration_ms: 8.484881
+  type: 'test'
+  ...
+# Subtest: Save export/import and a fresh LocalStore retain targets without touching progression
+ok 457 - Save export/import and a fresh LocalStore retain targets without touching progression
+  ---
+  duration_ms: 1.117034
+  type: 'test'
+  ...
+# Subtest: Import merges higher PB, rejects key mismatch/foreign ruleset and is idempotent
+ok 458 - Import merges higher PB, rejects key mismatch/foreign ruleset and is idempotent
+  ---
+  duration_ms: 0.352135
+  type: 'test'
+  ...
+# Subtest: Malformed old aggregate progress does not invent a comparable target
+ok 459 - Malformed old aggregate progress does not invent a comparable target
+  ---
+  duration_ms: 0.177565
+  type: 'test'
+  ...
+# Subtest: Clearing scores clears chase and chapter PBs but keeps unlocks, stars and settings
+ok 460 - Clearing scores clears chase and chapter PBs but keeps unlocks, stars and settings
+  ---
+  duration_ms: 0.20796
+  type: 'test'
+  ...
+# Subtest: Cleared scores are not resurrected from checkpoint on subsequent import/reload
+ok 461 - Cleared scores are not resurrected from checkpoint on subsequent import/reload
+  ---
+  duration_ms: 0.800102
+  type: 'test'
+  ...
+# Subtest: Missing/denied storage leaves Score Chase functional in memory
+ok 462 - Missing/denied storage leaves Score Chase functional in memory
+  ---
+  duration_ms: 0.323772
+  type: 'test'
+  ...
+# Subtest: Chase collection stays bounded under malformed or oversized imports
+ok 463 - Chase collection stays bounded under malformed or oversized imports
+  ---
+  duration_ms: 10.764878
+  type: 'test'
+  ...
+# Subtest: Scope descriptions explain cumulative campaign, practice and continuous Endless semantics
+ok 464 - Scope descriptions explain cumulative campaign, practice and continuous Endless semantics
+  ---
+  duration_ms: 0.219117
+  type: 'test'
+  ...
+# Subtest: Presentation identity change is the only changed byte in the original presentation contract
+ok 465 - Presentation identity change is the only changed byte in the original presentation contract
+  ---
+  duration_ms: 0.828725
+  type: 'test'
+  ...
+# Subtest: No network, leaderboard, UI state or timing affects the immutable game model
+ok 466 - No network, leaderboard, UI state or timing affects the immutable game model
+  ---
+  duration_ms: 3.890386
+  type: 'test'
+  ...
+# Subtest: v3.5.1 gameplay, UI geometry, every original artwork/audio asset and out-of-scope source are byte-identical
+ok 467 - v3.5.1 gameplay, UI geometry, every original artwork/audio asset and out-of-scope source are byte-identical
+  ---
+  duration_ms: 45.738271
+  type: 'test'
+  ...
+# Subtest: normal: the ink, emblem and drawn hardware have separate safe regions for every authored word
+ok 468 - normal: the ink, emblem and drawn hardware have separate safe regions for every authored word
+  ---
+  duration_ms: 25.604927
+  type: 'test'
+  ...
+# Subtest: fire: the ink, emblem and drawn hardware have separate safe regions for every authored word
+ok 469 - fire: the ink, emblem and drawn hardware have separate safe regions for every authored word
+  ---
+  duration_ms: 11.890194
+  type: 'test'
+  ...
+# Subtest: ice: the ink, emblem and drawn hardware have separate safe regions for every authored word
+ok 470 - ice: the ink, emblem and drawn hardware have separate safe regions for every authored word
+  ---
+  duration_ms: 13.439473
+  type: 'test'
+  ...
+# Subtest: slow: the ink, emblem and drawn hardware have separate safe regions for every authored word
+ok 471 - slow: the ink, emblem and drawn hardware have separate safe regions for every authored word
+  ---
+  duration_ms: 6.724428
+  type: 'test'
+  ...
+# Subtest: wind: the ink, emblem and drawn hardware have separate safe regions for every authored word
+ok 472 - wind: the ink, emblem and drawn hardware have separate safe regions for every authored word
+  ---
+  duration_ms: 1.72557
+  type: 'test'
+  ...
+# Subtest: bonus: the ink, emblem and drawn hardware have separate safe regions for every authored word
+ok 473 - bonus: the ink, emblem and drawn hardware have separate safe regions for every authored word
+  ---
+  duration_ms: 1.479244
+  type: 'test'
+  ...
+# Subtest: INK: short and long scrolls fit their actual content, not the old model width
+ok 474 - INK: short and long scrolls fit their actual content, not the old model width
+  ---
+  duration_ms: 0.866902
+  type: 'test'
+  ...
+# Subtest: I: short and long scrolls fit their actual content, not the old model width
+ok 475 - I: short and long scrolls fit their actual content, not the old model width
+  ---
+  duration_ms: 0.125467
+  type: 'test'
+  ...
+# Subtest: WONDER: short and long scrolls fit their actual content, not the old model width
+ok 476 - WONDER: short and long scrolls fit their actual content, not the old model width
+  ---
+  duration_ms: 0.293968
+  type: 'test'
+  ...
+# Subtest: STORY: short and long scrolls fit their actual content, not the old model width
+ok 477 - STORY: short and long scrolls fit their actual content, not the old model width
+  ---
+  duration_ms: 0.291023
+  type: 'test'
+  ...
+# Subtest: IMAGINE: short and long scrolls fit their actual content, not the old model width
+ok 478 - IMAGINE: short and long scrolls fit their actual content, not the old model width
+  ---
+  duration_ms: 0.175772
+  type: 'test'
+  ...
+# Subtest: BIOLUMINESCENT: short and long scrolls fit their actual content, not the old model width
+ok 479 - BIOLUMINESCENT: short and long scrolls fit their actual content, not the old model width
+  ---
+  duration_ms: 0.061131
+  type: 'test'
+  ...
+# Subtest: Extreme 24-W custom cards remain single-line with a protected crest and both rollers
+ok 480 - Extreme 24-W custom cards remain single-line with a protected crest and both rollers
+  ---
+  duration_ms: 0.175672
+  type: 'test'
+  ...
+# Subtest: Ink overhangs are accounted for rather than relying only on advance width
+ok 481 - Ink overhangs are accounted for rather than relying only on advance width
+  ---
+  duration_ms: 0.184185
+  type: 'test'
+  ...
+# Subtest: Geometry remains frozen and defaults invalid dimensions safely
+ok 482 - Geometry remains frozen and defaults invalid dimensions safely
+  ---
+  duration_ms: 0.110895
+  type: 'test'
+  ...
+# Subtest: The ornament and tassels fit inside the pre-existing texture padding
+ok 483 - The ornament and tassels fit inside the pre-existing texture padding
+  ---
+  duration_ms: 0.056223
+  type: 'test'
+  ...
+# Subtest: Native WIND paths use all six cubic coordinates while FIRE/ICE/SLOW also draw without invalid parameters
+ok 484 - Native WIND paths use all six cubic coordinates while FIRE/ICE/SLOW also draw without invalid parameters
+  ---
+  duration_ms: 1.296912
+  type: 'test'
+  ...
+# Subtest: Reduced-motion casting emits no animated drawing calls
+ok 485 - Reduced-motion casting emits no animated drawing calls
+  ---
+  duration_ms: 0.118146
+  type: 'test'
+  ...
+# Subtest: Sizing repeated scrolls does not mutate game state or advance either random stream
+ok 486 - Sizing repeated scrolls does not mutate game state or advance either random stream
+  ---
+  duration_ms: 6.297261
+  type: 'test'
+  ...
+# Subtest: Standalone compiler includes scroll dependency before its consumers and checks the assembled script
+ok 487 - Standalone compiler includes scroll dependency before its consumers and checks the assembled script
+  ---
+  duration_ms: 0.327899
+  type: 'test'
+  ...
+# Subtest: Build rejects inconsistent HTML/application/package identity before exporting
+ok 488 - Build rejects inconsistent HTML/application/package identity before exporting
+  ---
+  duration_ms: 0.110174
+  type: 'test'
+  ...
+# Subtest: All 746 authored words × 6 materials remain complete single rows at scale 0.5
+ok 489 - All 746 authored words × 6 materials remain complete single rows at scale 0.5
+  ---
+  duration_ms: 11.418982
+  type: 'test'
+  ...
+# Subtest: All 746 authored words × 6 materials remain complete single rows at scale 0.65
+ok 490 - All 746 authored words × 6 materials remain complete single rows at scale 0.65
+  ---
+  duration_ms: 3.527115
+  type: 'test'
+  ...
+# Subtest: All 746 authored words × 6 materials remain complete single rows at scale 0.72
+ok 491 - All 746 authored words × 6 materials remain complete single rows at scale 0.72
+  ---
+  duration_ms: 11.876263
+  type: 'test'
+  ...
+# Subtest: All 746 authored words × 6 materials remain complete single rows at scale 0.8355555556
+ok 492 - All 746 authored words × 6 materials remain complete single rows at scale 0.8355555556
+  ---
+  duration_ms: 3.171936
+  type: 'test'
+  ...
+# Subtest: All 746 authored words × 6 materials remain complete single rows at scale 1
+ok 493 - All 746 authored words × 6 materials remain complete single rows at scale 1
+  ---
+  duration_ms: 1.658401
+  type: 'test'
+  ...
+# Subtest: All 746 authored words × 6 materials remain complete single rows at scale 1.18
+ok 494 - All 746 authored words × 6 materials remain complete single rows at scale 1.18
+  ---
+  duration_ms: 1.753984
+  type: 'test'
+  ...
+# Subtest: All 746 authored words × 6 materials remain complete single rows at scale 1.5
+ok 495 - All 746 authored words × 6 materials remain complete single rows at scale 1.5
+  ---
+  duration_ms: 1.737829
+  type: 'test'
+  ...
+# Subtest: All 746 authored words × 6 materials remain complete single rows at scale 2
+ok 496 - All 746 authored words × 6 materials remain complete single rows at scale 2
+  ---
+  duration_ms: 1.622888
+  type: 'test'
+  ...
+# Subtest: 24 widest glyphs fit card bounds instead of wrapping or clipping
+ok 497 - 24 widest glyphs fit card bounds instead of wrapping or clipping
+  ---
+  duration_ms: 0.405865
+  type: 'test'
+  ...
+# Subtest: Renderer ignores an obsolete two-line layout and paints only the complete canonical word
+ok 498 - Renderer ignores an obsolete two-line layout and paints only the complete canonical word
+  ---
+  duration_ms: 0.615017
+  type: 'test'
+  ...
+# Subtest: New runs use non-repeating consecutive entropy seeds, including same-tick fallback
+ok 499 - New runs use non-repeating consecutive entropy seeds, including same-tick fallback
+  ---
+  duration_ms: 3.282801
+  type: 'test'
+  ...
+# Subtest: 100 default new runs do not reuse one seed or the INK/TALE/BOOK/PAGE opening
+ok 500 - 100 default new runs do not reuse one seed or the INK/TALE/BOOK/PAGE opening
+  ---
+  duration_ms: 31.887582
+  type: 'test'
+  ...
+# Subtest: 200 explicit run seeds produce 200 different twelve-word openings
+ok 501 - 200 explicit run seeds produce 200 different twelve-word openings
+  ---
+  duration_ms: 110.12781
+  type: 'test'
+  ...
+# Subtest: Chapter 1: random words use authored pools, no active duplicate or recent repeat
+ok 502 - Chapter 1: random words use authored pools, no active duplicate or recent repeat
+  ---
+  duration_ms: 6.502868
+  type: 'test'
+  ...
+# Subtest: Chapter 2: random words use authored pools, no active duplicate or recent repeat
+ok 503 - Chapter 2: random words use authored pools, no active duplicate or recent repeat
+  ---
+  duration_ms: 5.275439
+  type: 'test'
+  ...
+# Subtest: Chapter 6: random words use authored pools, no active duplicate or recent repeat
+ok 504 - Chapter 6: random words use authored pools, no active duplicate or recent repeat
+  ---
+  duration_ms: 4.53816
+  type: 'test'
+  ...
+# Subtest: Chapter 12: random words use authored pools, no active duplicate or recent repeat
+ok 505 - Chapter 12: random words use authored pools, no active duplicate or recent repeat
+  ---
+  duration_ms: 3.761894
+  type: 'test'
+  ...
+# Subtest: Chapter 24: random words use authored pools, no active duplicate or recent repeat
+ok 506 - Chapter 24: random words use authored pools, no active duplicate or recent repeat
+  ---
+  duration_ms: 3.103223
+  type: 'test'
+  ...
+# Subtest: Chapter 36: random words use authored pools, no active duplicate or recent repeat
+ok 507 - Chapter 36: random words use authored pools, no active duplicate or recent repeat
+  ---
+  duration_ms: 3.887893
+  type: 'test'
+  ...
+# Subtest: Chapter 48: random words use authored pools, no active duplicate or recent repeat
+ok 508 - Chapter 48: random words use authored pools, no active duplicate or recent repeat
+  ---
+  duration_ms: 4.74556
+  type: 'test'
+  ...
+# Subtest: Chapter 49: random words use authored pools, no active duplicate or recent repeat
+ok 509 - Chapter 49: random words use authored pools, no active duplicate or recent repeat
+  ---
+  duration_ms: 4.895293
+  type: 'test'
+  ...
+# Subtest: Chapter 200: random words use authored pools, no active duplicate or recent repeat
+ok 510 - Chapter 200: random words use authored pools, no active duplicate or recent repeat
+  ---
+  duration_ms: 4.530529
+  type: 'test'
+  ...
+# Subtest: Fixed seed plus word seed still reproduces the complete word and item sequence
+ok 511 - Fixed seed plus word seed still reproduces the complete word and item sequence
+  ---
+  duration_ms: 4.306746
+  type: 'test'
+  ...
+# Subtest: relaxed: retry draws new words but restores score, danger, books, pacing and item schedule
+ok 512 - relaxed: retry draws new words but restores score, danger, books, pacing and item schedule
+  ---
+  duration_ms: 1.818419
+  type: 'test'
+  ...
+# Subtest: classic: retry draws new words but restores score, danger, books, pacing and item schedule
+ok 513 - classic: retry draws new words but restores score, danger, books, pacing and item schedule
+  ---
+  duration_ms: 0.802866
+  type: 'test'
+  ...
+# Subtest: maniac: retry draws new words but restores score, danger, books, pacing and item schedule
+ok 514 - maniac: retry draws new words but restores score, danger, books, pacing and item schedule
+  ---
+  duration_ms: 0.940051
+  type: 'test'
+  ...
+# Subtest: Repeated retries cannot accumulate failed-attempt earnings
+ok 515 - Repeated retries cannot accumulate failed-attempt earnings
+  ---
+  duration_ms: 1.505422
+  type: 'test'
+  ...
+# Subtest: Continue restores the same vocabulary attempt, including a saved retry
+ok 516 - Continue restores the same vocabulary attempt, including a saved retry
+  ---
+  duration_ms: 1.864047
+  type: 'test'
+  ...
+# Subtest: Export/import preserves randomized vocabulary provenance without changing balance version
+ok 517 - Export/import preserves randomized vocabulary provenance without changing balance version
+  ---
+  duration_ms: 1.009034
+  type: 'test'
+  ...
+# Subtest: Older bookmarks without vocabulary metadata retain legacy opener on Continue, but Retry randomizes
+ok 518 - Older bookmarks without vocabulary metadata retain legacy opener on Continue, but Retry randomizes
+  ---
+  duration_ms: 1.892189
+  type: 'test'
+  ...
+# Subtest: Malformed vocabulary bookmark metadata is rejected
+ok 519 - Malformed vocabulary bookmark metadata is rejected
+  ---
+  duration_ms: 0.232116
+  type: 'test'
+  ...
+# Subtest: Renderer/readability calculations never advance the word RNG or change the model
+ok 520 - Renderer/readability calculations never advance the word RNG or change the model
+  ---
+  duration_ms: 6.406965
+  type: 'test'
+  ...
+# Subtest: Word randomness cannot inject stock, shorten spell durations, or alter the sparse tutorial
+ok 521 - Word randomness cannot inject stock, shorten spell durations, or alter the sparse tutorial
+  ---
+  duration_ms: 35.895267
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/FOLIO_MATERIALS.md
+ok 522 - v3.5.2 preserves v3.5.0 bytes: asset-source/FOLIO_MATERIALS.md
+  ---
+  duration_ms: 2.515808
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/README.md
+ok 523 - v3.5.2 preserves v3.5.0 bytes: asset-source/README.md
+  ---
+  duration_ms: 0.144125
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/audio/SFX_Preview_Cue_Sheet.json
+ok 524 - v3.5.2 preserves v3.5.0 bytes: asset-source/audio/SFX_Preview_Cue_Sheet.json
+  ---
+  duration_ms: 0.163644
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/audio/Typekeeper_SFX_Preview.flac
+ok 525 - v3.5.2 preserves v3.5.0 bytes: asset-source/audio/Typekeeper_SFX_Preview.flac
+  ---
+  duration_ms: 0.5036
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/audio/Typekeeper_SFX_Preview.mp3
+ok 526 - v3.5.2 preserves v3.5.0 bytes: asset-source/audio/Typekeeper_SFX_Preview.mp3
+  ---
+  duration_ms: 0.486044
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/book-fire.svg
+ok 527 - v3.5.2 preserves v3.5.0 bytes: asset-source/book-fire.svg
+  ---
+  duration_ms: 0.094
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/book-ice.svg
+ok 528 - v3.5.2 preserves v3.5.0 bytes: asset-source/book-ice.svg
+  ---
+  duration_ms: 0.148912
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/book-slow.svg
+ok 529 - v3.5.2 preserves v3.5.0 bytes: asset-source/book-slow.svg
+  ---
+  duration_ms: 0.200909
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/book-wind.svg
+ok 530 - v3.5.2 preserves v3.5.0 bytes: asset-source/book-wind.svg
+  ---
+  duration_ms: 0.329801
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/alarmed.png
+ok 531 - v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/alarmed.png
+  ---
+  duration_ms: 0.56364
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/calm.png
+ok 532 - v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/calm.png
+  ---
+  duration_ms: 0.488327
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/celebrate.png
+ok 533 - v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/celebrate.png
+  ---
+  duration_ms: 0.408569
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/critical.png
+ok 534 - v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/critical.png
+  ---
+  duration_ms: 0.253558
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/defeated.png
+ok 535 - v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/defeated.png
+  ---
+  duration_ms: 0.450532
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/expression-contact-sheet.jpg
+ok 536 - v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/expression-contact-sheet.jpg
+  ---
+  duration_ms: 0.40279
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/focused.png
+ok 537 - v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/focused.png
+  ---
+  duration_ms: 0.332785
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/rig.json
+ok 538 - v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/rig.json
+  ---
+  duration_ms: 0.066048
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/worried.png
+ok 539 - v3.5.2 preserves v3.5.0 bytes: asset-source/expressions/worried.png
+  ---
+  duration_ms: 0.354237
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/favicon.svg
+ok 540 - v3.5.2 preserves v3.5.0 bytes: asset-source/favicon.svg
+  ---
+  duration_ms: 0.070105
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/library-master.png
+ok 541 - v3.5.2 preserves v3.5.0 bytes: asset-source/library-master.png
+  ---
+  duration_ms: 1.955684
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/arrangement.json
+ok 542 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/arrangement.json
+  ---
+  duration_ms: 0.186798
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-and-letters.flac
+ok 543 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-and-letters.flac
+  ---
+  duration_ms: 5.518152
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-and-letters.mid
+ok 544 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-and-letters.mid
+  ---
+  duration_ms: 0.145727
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-and-letters.mp3
+ok 545 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-and-letters.mp3
+  ---
+  duration_ms: 2.220598
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-hearth.flac
+ok 546 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-hearth.flac
+  ---
+  duration_ms: 3.039398
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-motion.flac
+ok 547 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-motion.flac
+  ---
+  duration_ms: 4.138566
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-pressure.flac
+ok 548 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-pressure.flac
+  ---
+  duration_ms: 1.209512
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-urgency.flac
+ok 549 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/lanterns-urgency.flac
+  ---
+  duration_ms: 2.580574
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/pressure-and-relief-preview.flac
+ok 550 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/pressure-and-relief-preview.flac
+  ---
+  duration_ms: 2.223393
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/pressure-and-relief-preview.mp3
+ok 551 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/pressure-and-relief-preview.mp3
+  ---
+  duration_ms: 1.189472
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/pressure-arrangement.json
+ok 552 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/pressure-arrangement.json
+  ---
+  duration_ms: 0.420537
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/pressure-arrangement.mid
+ok 553 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/pressure-arrangement.mid
+  ---
+  duration_ms: 0.096724
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/pressure-score.json
+ok 554 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/pressure-score.json
+  ---
+  duration_ms: 0.072398
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/music/score.json
+ok 555 - v3.5.2 preserves v3.5.0 bytes: asset-source/music/score.json
+  ---
+  duration_ms: 0.061912
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: asset-source/typist-master.png
+ok 556 - v3.5.2 preserves v3.5.0 bytes: asset-source/typist-master.png
+  ---
+  duration_ms: 0.440957
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/book-fire.svg
+ok 557 - v3.5.2 preserves v3.5.0 bytes: public/assets/book-fire.svg
+  ---
+  duration_ms: 0.173158
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/book-ice.svg
+ok 558 - v3.5.2 preserves v3.5.0 bytes: public/assets/book-ice.svg
+  ---
+  duration_ms: 0.081191
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/book-slow.svg
+ok 559 - v3.5.2 preserves v3.5.0 bytes: public/assets/book-slow.svg
+  ---
+  duration_ms: 0.059368
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/book-wind.svg
+ok 560 - v3.5.2 preserves v3.5.0 bytes: public/assets/book-wind.svg
+  ---
+  duration_ms: 0.064626
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/favicon.svg
+ok 561 - v3.5.2 preserves v3.5.0 bytes: public/assets/favicon.svg
+  ---
+  duration_ms: 0.05382
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/icon-fire.svg
+ok 562 - v3.5.2 preserves v3.5.0 bytes: public/assets/icon-fire.svg
+  ---
+  duration_ms: 0.052699
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/icon-ice.svg
+ok 563 - v3.5.2 preserves v3.5.0 bytes: public/assets/icon-ice.svg
+  ---
+  duration_ms: 0.049644
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/icon-slow.svg
+ok 564 - v3.5.2 preserves v3.5.0 bytes: public/assets/icon-slow.svg
+  ---
+  duration_ms: 0.051537
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/icon-wind.svg
+ok 565 - v3.5.2 preserves v3.5.0 bytes: public/assets/icon-wind.svg
+  ---
+  duration_ms: 0.06034
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/lanterns-hearth.mp3
+ok 566 - v3.5.2 preserves v3.5.0 bytes: public/assets/lanterns-hearth.mp3
+  ---
+  duration_ms: 1.963415
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/lanterns-motion.mp3
+ok 567 - v3.5.2 preserves v3.5.0 bytes: public/assets/lanterns-motion.mp3
+  ---
+  duration_ms: 1.892008
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/lanterns-pressure.mp3
+ok 568 - v3.5.2 preserves v3.5.0 bytes: public/assets/lanterns-pressure.mp3
+  ---
+  duration_ms: 1.254599
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/lanterns-urgency.mp3
+ok 569 - v3.5.2 preserves v3.5.0 bytes: public/assets/lanterns-urgency.mp3
+  ---
+  duration_ms: 1.267859
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/library.webp
+ok 570 - v3.5.2 preserves v3.5.0 bytes: public/assets/library.webp
+  ---
+  duration_ms: 1.311374
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/manifest.json
+ok 571 - v3.5.2 preserves v3.5.0 bytes: public/assets/manifest.json
+  ---
+  duration_ms: 0.113248
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/paper.webp
+ok 572 - v3.5.2 preserves v3.5.0 bytes: public/assets/paper.webp
+  ---
+  duration_ms: 0.064366
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/typist-alarmed.webp
+ok 573 - v3.5.2 preserves v3.5.0 bytes: public/assets/typist-alarmed.webp
+  ---
+  duration_ms: 0.218005
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/typist-calm.webp
+ok 574 - v3.5.2 preserves v3.5.0 bytes: public/assets/typist-calm.webp
+  ---
+  duration_ms: 0.205106
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/typist-celebrate.webp
+ok 575 - v3.5.2 preserves v3.5.0 bytes: public/assets/typist-celebrate.webp
+  ---
+  duration_ms: 0.210854
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/typist-critical.webp
+ok 576 - v3.5.2 preserves v3.5.0 bytes: public/assets/typist-critical.webp
+  ---
+  duration_ms: 0.190694
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/typist-defeated.webp
+ok 577 - v3.5.2 preserves v3.5.0 bytes: public/assets/typist-defeated.webp
+  ---
+  duration_ms: 0.284494
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/typist-focused.webp
+ok 578 - v3.5.2 preserves v3.5.0 bytes: public/assets/typist-focused.webp
+  ---
+  duration_ms: 0.197604
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/typist-worried.webp
+ok 579 - v3.5.2 preserves v3.5.0 bytes: public/assets/typist-worried.webp
+  ---
+  duration_ms: 0.178686
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: public/assets/typist.webp
+ok 580 - v3.5.2 preserves v3.5.0 bytes: public/assets/typist.webp
+  ---
+  duration_ms: 0.178415
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/audio/audio.js
+ok 581 - v3.5.2 preserves v3.5.0 bytes: src/audio/audio.js
+  ---
+  duration_ms: 0.105757
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/audio/mix.js
+ok 582 - v3.5.2 preserves v3.5.0 bytes: src/audio/mix.js
+  ---
+  duration_ms: 0.059539
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/data/campaign.js
+ok 583 - v3.5.2 preserves v3.5.0 bytes: src/data/campaign.js
+  ---
+  duration_ms: 0.055082
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/data/words.js
+ok 584 - v3.5.2 preserves v3.5.0 bytes: src/data/words.js
+  ---
+  duration_ms: 0.051607
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/game/assets.js
+ok 585 - v3.5.2 preserves v3.5.0 bytes: src/game/assets.js
+  ---
+  duration_ms: 0.059659
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/game/chapter-records.js
+ok 586 - v3.5.2 preserves v3.5.0 bytes: src/game/chapter-records.js
+  ---
+  duration_ms: 0.048543
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/game/clock.js
+ok 587 - v3.5.2 preserves v3.5.0 bytes: src/game/clock.js
+  ---
+  duration_ms: 0.056724
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/game/controls.js
+ok 588 - v3.5.2 preserves v3.5.0 bytes: src/game/controls.js
+  ---
+  duration_ms: 0.047591
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/game/economy.js
+ok 589 - v3.5.2 preserves v3.5.0 bytes: src/game/economy.js
+  ---
+  duration_ms: 0.04713
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/game/model.js
+ok 590 - v3.5.2 preserves v3.5.0 bytes: src/game/model.js
+  ---
+  duration_ms: 0.06002
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/game/pressure.js
+ok 591 - v3.5.2 preserves v3.5.0 bytes: src/game/pressure.js
+  ---
+  duration_ms: 0.048863
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/game/random.js
+ok 592 - v3.5.2 preserves v3.5.0 bytes: src/game/random.js
+  ---
+  duration_ms: 0.045178
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/game/rules.js
+ok 593 - v3.5.2 preserves v3.5.0 bytes: src/game/rules.js
+  ---
+  duration_ms: 0.048262
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/render/book-leaf.js
+ok 594 - v3.5.2 preserves v3.5.0 bytes: src/render/book-leaf.js
+  ---
+  duration_ms: 0.066098
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/render/chapter-art.js
+ok 595 - v3.5.2 preserves v3.5.0 bytes: src/render/chapter-art.js
+  ---
+  duration_ms: 0.071277
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/render/classic-renderer.js
+ok 596 - v3.5.2 preserves v3.5.0 bytes: src/render/classic-renderer.js
+  ---
+  duration_ms: 0.062393
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/render/elemental-art.js
+ok 597 - v3.5.2 preserves v3.5.0 bytes: src/render/elemental-art.js
+  ---
+  duration_ms: 0.053129
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/render/imperial-scroll.js
+ok 598 - v3.5.2 preserves v3.5.0 bytes: src/render/imperial-scroll.js
+  ---
+  duration_ms: 0.051357
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/render/renderer.js
+ok 599 - v3.5.2 preserves v3.5.0 bytes: src/render/renderer.js
+  ---
+  duration_ms: 0.099258
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/ui/contextual-guidance.js
+ok 600 - v3.5.2 preserves v3.5.0 bytes: src/ui/contextual-guidance.js
+  ---
+  duration_ms: 0.057045
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/ui/icons.js
+ok 601 - v3.5.2 preserves v3.5.0 bytes: src/ui/icons.js
+  ---
+  duration_ms: 0.053971
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/ui/journey.js
+ok 602 - v3.5.2 preserves v3.5.0 bytes: src/ui/journey.js
+  ---
+  duration_ms: 0.118396
+  type: 'test'
+  ...
+# Subtest: v3.5.2 preserves v3.5.0 bytes: src/ui/score-rollup.js
+ok 603 - v3.5.2 preserves v3.5.0 bytes: src/ui/score-rollup.js
+  ---
+  duration_ms: 0.06066
+  type: 'test'
+  ...
+# Subtest: HUD geometry is immutable and simulation-independent
+ok 604 - HUD geometry is immutable and simulation-independent
+  ---
+  duration_ms: 0.212597
+  type: 'test'
+  ...
+# Subtest: Key tabs never share the readiness row at the largest label size
+ok 605 - Key tabs never share the readiness row at the largest label size
+  ---
+  duration_ms: 0.616789
+  type: 'test'
+  ...
+# Subtest: Readable interface sizing stays finite, capped, physically useful at scale 0.25
+ok 606 - Readable interface sizing stays finite, capped, physically useful at scale 0.25
+  ---
+  duration_ms: 0.16119
+  type: 'test'
+  ...
+# Subtest: Readable interface sizing stays finite, capped, physically useful at scale 0.4
+ok 607 - Readable interface sizing stays finite, capped, physically useful at scale 0.4
+  ---
+  duration_ms: 0.058658
+  type: 'test'
+  ...
+# Subtest: Readable interface sizing stays finite, capped, physically useful at scale 0.515555556
+ok 608 - Readable interface sizing stays finite, capped, physically useful at scale 0.515555556
+  ---
+  duration_ms: 0.042003
+  type: 'test'
+  ...
+# Subtest: Readable interface sizing stays finite, capped, physically useful at scale 0.648888889
+ok 609 - Readable interface sizing stays finite, capped, physically useful at scale 0.648888889
+  ---
+  duration_ms: 0.056254
+  type: 'test'
+  ...
+# Subtest: Readable interface sizing stays finite, capped, physically useful at scale 0.782222222
+ok 610 - Readable interface sizing stays finite, capped, physically useful at scale 0.782222222
+  ---
+  duration_ms: 0.046519
+  type: 'test'
+  ...
+# Subtest: Readable interface sizing stays finite, capped, physically useful at scale 0.835555556
+ok 611 - Readable interface sizing stays finite, capped, physically useful at scale 0.835555556
+  ---
+  duration_ms: 0.038087
+  type: 'test'
+  ...
+# Subtest: Readable interface sizing stays finite, capped, physically useful at scale 1
+ok 612 - Readable interface sizing stays finite, capped, physically useful at scale 1
+  ---
+  duration_ms: 0.084375
+  type: 'test'
+  ...
+# Subtest: Readable interface sizing stays finite, capped, physically useful at scale 1.2
+ok 613 - Readable interface sizing stays finite, capped, physically useful at scale 1.2
+  ---
+  duration_ms: 0.059058
+  type: 'test'
+  ...
+# Subtest: Invalid scale NaN gets a safe finite fallback
+ok 614 - Invalid scale NaN gets a safe finite fallback
+  ---
+  duration_ms: 0.218505
+  type: 'test'
+  ...
+# Subtest: Invalid scale Infinity gets a safe finite fallback
+ok 615 - Invalid scale Infinity gets a safe finite fallback
+  ---
+  duration_ms: 0.051387
+  type: 'test'
+  ...
+# Subtest: Invalid scale -1 gets a safe finite fallback
+ok 616 - Invalid scale -1 gets a safe finite fallback
+  ---
+  duration_ms: 0.04024
+  type: 'test'
+  ...
+# Subtest: Invalid scale 0 gets a safe finite fallback
+ok 617 - Invalid scale 0 gets a safe finite fallback
+  ---
+  duration_ms: 0.067881
+  type: 'test'
+  ...
+# Subtest: Invalid scale undefined gets a safe finite fallback
+ok 618 - Invalid scale undefined gets a safe finite fallback
+  ---
+  duration_ms: 0.037936
+  type: 'test'
+  ...
+# Subtest: Short context descriptions state the shipping effects without inventing rewards
+ok 619 - Short context descriptions state the shipping effects without inventing rewards
+  ---
+  duration_ms: 0.194931
+  type: 'test'
+  ...
+# Subtest: One integrated rescue element and accessible meter; no old free-floating clone
+ok 620 - One integrated rescue element and accessible meter; no old free-floating clone
+  ---
+  duration_ms: 0.22836
+  type: 'test'
+  ...
+# Subtest: Context help and transient messages share the defined well; keyboard precedence is explicit
+ok 621 - Context help and transient messages share the defined well; keyboard precedence is explicit
+  ---
+  duration_ms: 0.209422
+  type: 'test'
+  ...
+# Subtest: campaign has 48 unique named stages across eight six-stage wings
+ok 622 - campaign has 48 unique named stages across eight six-stage wings
+  ---
+  duration_ms: 1.022132
+  type: 'test'
+  ...
+# Subtest: eight trials occur at the end of each wing
+ok 623 - eight trials occur at the end of each wing
+  ---
+  duration_ms: 0.671631
+  type: 'test'
+  ...
+# Subtest: all 48 stages have smooth rising speed and falling arrival interval
+ok 624 - all 48 stages have smooth rising speed and falling arrival interval
+  ---
+  duration_ms: 0.635427
+  type: 'test'
+  ...
+# Subtest: endless mode is named and has bounded speed and spawn intervals
+ok 625 - endless mode is named and has bounded speed and spawn intervals
+  ---
+  duration_ms: 0.137635
+  type: 'test'
+  ...
+# Subtest: every numbered hotkey and numpad key maps to its spell
+ok 626 - every numbered hotkey and numpad key maps to its spell
+  ---
+  duration_ms: 0.192667
+  type: 'test'
+  ...
+# Subtest: hotkeys ignore modifiers, key repeat, IME and ordinary typing
+ok 627 - hotkeys ignore modifiers, key repeat, IME and ordinary typing
+  ---
+  duration_ms: 0.121551
+  type: 'test'
+  ...
+# Subtest: quick cast preserves the typed buffer and records input provenance
+ok 628 - quick cast preserves the typed buffer and records input provenance
+  ---
+  duration_ms: 0.942504
+  type: 'test'
+  ...
+# Subtest: quick FIRE is unambiguous even with a falling FIRE word
+ok 629 - quick FIRE is unambiguous even with a falling FIRE word
+  ---
+  duration_ms: 0.299416
+  type: 'test'
+  ...
+# Subtest: empty FIRE does not waste inventory
+ok 630 - empty FIRE does not waste inventory
+  ---
+  duration_ms: 0.352365
+  type: 'test'
+  ...
+# Subtest: empty WIND does not waste inventory
+ok 631 - empty WIND does not waste inventory
+  ---
+  duration_ms: 0.723638
+  type: 'test'
+  ...
+# Subtest: active SLOW cannot waste a second book
+ok 632 - active SLOW cannot waste a second book
+  ---
+  duration_ms: 1.035463
+  type: 'test'
+  ...
+# Subtest: SLOW creates breathing room in spawn countdown as well as motion
+ok 633 - SLOW creates breathing room in spawn countdown as well as motion
+  ---
+  duration_ms: 0.233338
+  type: 'test'
+  ...
+# Subtest: casting after ICE expires consumes the next book once
+ok 634 - casting after ICE expires consumes the next book once
+  ---
+  duration_ms: 0.373086
+  type: 'test'
+  ...
+# Subtest: anti-doublecast cooldown applies per power without blocking combinations
+ok 635 - anti-doublecast cooldown applies per power without blocking combinations
+  ---
+  duration_ms: 0.277123
+  type: 'test'
+  ...
+# Subtest: pressure state thresholds include every exact boundary
+ok 636 - pressure state thresholds include every exact boundary
+  ---
+  duration_ms: 0.091897
+  type: 'test'
+  ...
+# Subtest: defeat and celebration override the normal pressure expression
+ok 637 - defeat and celebration override the normal pressure expression
+  ---
+  duration_ms: 0.055974
+  type: 'test'
+  ...
+# Subtest: WIND immediately restores the calm gameplay state
+ok 638 - WIND immediately restores the calm gameplay state
+  ---
+  duration_ms: 0.108892
+  type: 'test'
+  ...
+# Subtest: pressure events fire on transitions rather than every frame
+ok 639 - pressure events fire on transitions rather than every frame
+  ---
+  duration_ms: 0.639022
+  type: 'test'
+  ...
+# Subtest: mastery stars use documented gold, silver and bronze thresholds
+ok 640 - mastery stars use documented gold, silver and bronze thresholds
+  ---
+  duration_ms: 0.101841
+  type: 'test'
+  ...
+# Subtest: stage summaries use stage-local WPM and accuracy
+ok 641 - stage summaries use stage-local WPM and accuracy
+  ---
+  duration_ms: 0.74486
+  type: 'test'
+  ...
+# Subtest: a full campaign advances through all 48 stages without stale phase or progress
+ok 642 - a full campaign advances through all 48 stages without stale phase or progress
+  ---
+  duration_ms: 6.468046
+  type: 'test'
+  ...
+# Subtest: checkpoint restores score, books, danger and completed stages at the next boundary
+ok 643 - checkpoint restores score, books, danger and completed stages at the next boundary
+  ---
+  duration_ms: 0.62438
+  type: 'test'
+  ...
+# Subtest: checkpoint is validated before being saved
+ok 644 - checkpoint is validated before being saved
+  ---
+  duration_ms: 0.648686
+  type: 'test'
+  ...
+# Subtest: checkpoint survives actual store serialization and clear is persistent
+ok 645 - checkpoint survives actual store serialization and clear is persistent
+  ---
+  duration_ms: 0.826612
+  type: 'test'
+  ...
+# Subtest: mastery keeps the best grade and paces stay independent
+ok 646 - mastery keeps the best grade and paces stay independent
+  ---
+  duration_ms: 0.252506
+  type: 'test'
+  ...
+# Subtest: practice can improve an earned grade but cannot create expedition progress
+ok 647 - practice can improve an earned grade but cannot create expedition progress
+  ---
+  duration_ms: 0.151747
+  type: 'test'
+  ...
+# Subtest: save export/import merges rather than duplicates records
+ok 648 - save export/import merges rather than duplicates records
+  ---
+  duration_ms: 1.112397
+  type: 'test'
+  ...
+# Subtest: current, practice and legacy records are not mixed in best score
+ok 649 - current, practice and legacy records are not mixed in best score
+  ---
+  duration_ms: 0.322851
+  type: 'test'
+  ...
+# Subtest: record time windows use date cutoffs and actual records
+ok 650 - record time windows use date cutoffs and actual records
+  ---
+  duration_ms: 0.159508
+  type: 'test'
+  ...
+# Subtest: legacy migration tolerates null and malformed rows and tags valid V1 scores
+ok 651 - legacy migration tolerates null and malformed rows and tags valid V1 scores
+  ---
+  duration_ms: 0.92627
+  type: 'test'
+  ...
+# Subtest: wide words allocate glyph-aware card widths
+ok 652 - wide words allocate glyph-aware card widths
+  ---
+  duration_ms: 0.125367
+  type: 'test'
+  ...
+# Subtest: spawned long cards remain wholly within the game field
+ok 653 - spawned long cards remain wholly within the game field
+  ---
+  duration_ms: 3.640213
+  type: 'test'
+  ...
+# Subtest: pause freezes cooldowns and resume does not erase partial input
+ok 654 - pause freezes cooldowns and resume does not erase partial input
+  ---
+  duration_ms: 0.21497
+  type: 'test'
+  ...
+# Subtest: checkpoint cannot be imported into a different pace slot
+ok 655 - checkpoint cannot be imported into a different pace slot
+  ---
+  duration_ms: 0.273698
+  type: 'test'
+  ...
+1..655
+# tests 655
+# suites 0
+# pass 655
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1309.748945

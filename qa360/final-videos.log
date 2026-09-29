@@ -1,0 +1,4 @@
+START live-journey-final
+DONE {'name': 'live-journey-final', 'exit': 0, 'seconds': 117.57, 'video': {'format': {'duration': '116.920000', 'size': '14554422'}}, 'probeErrors': '', 'decodeExit': 0, 'decodeErrors': ''}
+START natural-pressure-final
+DONE {'name': 'natural-pressure-final', 'exit': 0, 'seconds': 38.9, 'video': {'format': {'duration': '38.280000', 'size': '4539624'}}, 'probeErrors': '', 'decodeExit': 0, 'decodeErrors': ''}

@@ -1,0 +1,11 @@
+{
+  "name": "single_row_release-standalone",
+  "command": [
+    "python",
+    "e2e/single_row_release.py",
+    "--mode",
+    "standalone"
+  ],
+  "exit": 124,
+  "seconds": 170.01
+}

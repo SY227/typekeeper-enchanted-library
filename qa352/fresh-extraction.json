@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "candidateZIP": "Typekeeper_v352_candidate.zip",
+  "candidateZIP_SHA256": "7ccc1155d0b547ab9ee214ce62e4cb127068aadc9f54384d7179b44f3d28a357",
+  "version": "3.5.2",
+  "zipCRC": "PASS",
+  "perFileManifest": "PASS",
+  "runtimeOutputs": 58,
+  "allRuntimeOutputsByteIdentical": true,
+  "shippingSHA256": "ed3fd19385c13d069c35b644d542028dd6046b7d28bbb8aef8831863e6f7b044",
+  "commands": [
+    {
+      "name": "npm-ci",
+      "command": [
+        "npm",
+        "ci",
+        "--offline"
+      ],
+      "returncode": 0,
+      "seconds": 0.315
+    },
+    {
+      "name": "node",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "returncode": 0,
+      "seconds": 1.607
+    },
+    {
+      "name": "syntax",
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "returncode": 0,
+      "seconds": 1.018
+    },
+    {
+      "name": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "returncode": 0,
+      "seconds": 0.415
+    },
+    {
+      "name": "score-chase-standalone",
+      "command": [
+        "python3",
+        "e2e/score_chase_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 0,
+      "seconds": 11.621
+    },
+    {
+      "name": "ui-standalone",
+      "command": [
+        "python3",
+        "e2e/ui_spacing_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 0,
+      "seconds": 78.712
+    },
+    {
+      "name": "score-chase-modules",
+      "command": [
+        "python3",
+        "e2e/score_chase_tests.py",
+        "--mode",
+        "modules"
+      ],
+      "returncode": 0,
+      "seconds": 11.319
+    },
+    {
+      "name": "ui-modules",
+      "command": [
+        "python3",
+        "e2e/ui_spacing_tests.py",
+        "--mode",
+        "modules"
+      ],
+      "returncode": 0,
+      "seconds": 78.197
+    },
+    {
+      "name": "launcher",
+      "command": [
+        "python3",
+        "scripts/release-audit.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.279
+    },
+    {
+      "name": "updater",
+      "command": [
+        "python3",
+        "scripts/test-update.py"
+      ],
+      "returncode": 0,
+      "seconds": 4.898
+    }
+  ],
+  "browserRepeated": {
+    "score-chase-standalone": 38,
+    "score-chase-modules": 38,
+    "ui-spacing-standalone": 62,
+    "ui-spacing-modules": 62
+  },
+  "browserRepeatedTotal": 200,
+  "nodePassed": 655,
+  "launcher": 7,
+  "updater": 6,
+  "scope": "Fresh extraction of the full candidate ZIP; clean offline install, build and actual new feature/UI repeats. These repeats are NOT added to the main named browser total."
+}

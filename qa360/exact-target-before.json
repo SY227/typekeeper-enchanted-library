@@ -1,0 +1,7 @@
+{
+  "scope": "Reproduced inherited presentation mismatch before final fix; GameModel remains unchanged.",
+  "buffer": "BOOK",
+  "selected": "BOOKCASE",
+  "readyBefore": false,
+  "actualEnterTarget": "BOOK"
+}

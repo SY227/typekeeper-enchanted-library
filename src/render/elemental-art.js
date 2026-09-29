@@ -91,17 +91,22 @@ export class ElementalArt {
  }
  drawFireCast(c,spell){
   const env=elementalEnvelope(spell.t,spell.life),p=env.progress;if(p<=0||p>=1)return;
-  const sweep=1-(1-p)**1.8,y=687-sweep*533;
-  c.save();c.beginPath();c.rect(207,145,790,555);c.clip();
-  // A real flame front with curling tongues and a trailing heat pool, not a neon line.
-  const haze=c.createLinearGradient(0,y-55,0,y+68);haze.addColorStop(0,'#df541b00');haze.addColorStop(.46,eaColor('#e97128',env.body*.19));haze.addColorStop(1,'#d65e1b00');c.fillStyle=haze;c.fillRect(217,y-55,771,123);
-  for(let i=0;i<18;i++){
-   const x=237+i*42.5,h=59+Math.sin(i*2.31+p*12)*18+(i%4)*7,w=49+(i%3)*11;
-   c.save();c.globalAlpha=env.body*(.78+(i%3)*.07);c.translate(x,y+Math.sin(i*1.73+p*7)*4);c.scale(i%3===1?-1:1,1);c.drawImage(this.flameTexture(i),-w/2,-h,w,h+16);c.restore();
+  const targets=Array.isArray(spell.targets)?spell.targets.slice(0,12):[];
+  c.save();
+  // A short, warm ignition at the FIRE book, not a wall swept over the board.
+  const source={x:146,y:740};eaGlow(c,source.x,source.y,51,'#ffb367',env.body*.24);
+  for(let i=0;i<targets.length;i++){
+   const t=targets[i];if(!Number.isFinite(t.x)||!Number.isFinite(t.y))continue;
+   const reach=eaSmooth(p/.28),x=source.x+(t.x-source.x)*reach,y=source.y+(t.y-source.y)*reach-Math.sin(reach*Math.PI)*42;
+   // Fine ember filaments connect caster and object. They fade before arrivals resume.
+   c.globalAlpha=env.body*(1-eaSmooth((p-.24)/.39))*.34;c.strokeStyle='#dda365';c.lineWidth=1.05;
+   c.beginPath();c.moveTo(source.x,source.y);c.quadraticCurveTo(source.x+(x-source.x)*.36,y+62,x,y);c.stroke();
+   eaGlow(c,t.x,t.y+18,Math.min(90,Math.max(45,(t.width||130)*.28)),'#ed9138',env.body*.12);
+   for(let j=0;j<3;j++){
+    const q=eaClamp(reach-j*.06),xx=source.x+(t.x-source.x)*q,yy=source.y+(t.y-source.y)*q-Math.sin(q*Math.PI)*42;
+    c.globalAlpha=env.body*(1-p)*(.65-j*.14);c.fillStyle=j?'#eda864':'#ffe5b3';c.beginPath();c.ellipse(xx,yy,1.1,2.4,-.45,0,Math.PI*2);c.fill();
+   }
   }
-  c.globalAlpha=env.body*.62;c.strokeStyle='#ffe7a2';c.lineWidth=1.4;c.beginPath();for(let x=224;x<979;x+=12){const yy=y+Math.sin(x*.073+p*15)*3;x===224?c.moveTo(x,yy):c.lineTo(x,yy);}c.stroke();
-  // Deterministic single-cast embers. No per-frame emitter or growing array.
-  for(let i=0;i<25;i++){const age=(p+i*.073)%1,x=239+((i*97)%722)+Math.sin(age*9+i)*13,ey=y-age*73+Math.sin(i)*12;c.globalAlpha=env.body*(1-age)*.82;c.fillStyle=i%3?'#ffd184':'#fb8c32';c.beginPath();c.ellipse(x,ey,1.1+(i%2)*.6,2.3,-.3,0,Math.PI*2);c.fill();}
   c.restore();
  }
  drawIceCast(c,spell){
@@ -120,13 +125,18 @@ export class ElementalArt {
   const y=h/2+13-p*(h+37),points=[];
   // Irregular advancing char line consumes the page from the bottom up.
   for(let i=0;i<=30;i++){const x=-w/2-16+(w+32)*i/30;points.push([x,y+Math.sin(i*2.83+d.seed)*3+Math.sin(i*.53)*4]);}
-  c.save();c.globalAlpha=Math.min(1,(1-p)*3);
+  c.save();
+  eaGlow(c,0,y,Math.min(84,w*.35),'#eea24c',Math.sin(p*Math.PI)*.13);
+  c.globalAlpha=Math.min(1,(1-p)*3);
   c.save();c.beginPath();c.moveTo(-w/2-16,-h/2-16);c.lineTo(w/2+16,-h/2-16);for(let i=points.length-1;i>=0;i--)c.lineTo(...points[i]);c.closePath();c.clip();draw();c.restore();
   if(p>.06&&p<.92){
-   c.save();c.beginPath();c.rect(-w/2-15,-h/2-9,w+30,h+18);c.clip();c.strokeStyle='#402218';c.lineWidth=5;c.beginPath();points.forEach(([x,yy],i)=>i?c.lineTo(x,yy):c.moveTo(x,yy));c.stroke();c.strokeStyle='#f19230';c.lineWidth=1.6;c.stroke();c.restore();
+   c.save();c.beginPath();c.rect(-w/2-15,-h/2-9,w+30,h+18);c.clip();c.strokeStyle='#2d2019';c.lineWidth=6;c.beginPath();points.forEach(([x,yy],i)=>i?c.lineTo(x,yy):c.moveTo(x,yy));c.stroke();c.strokeStyle='#a35e2d';c.lineWidth=3;c.stroke();
+   c.strokeStyle='#ffd497';c.lineWidth=1.05;c.stroke();
+   // Curl highlights cling to the ragged boundary, rather than to the whole card.
+   c.strokeStyle='#ead0a39c';c.lineWidth=.65;for(let i=2;i<points.length-2;i+=4){const [xx,yy]=points[i];c.beginPath();c.moveTo(xx-3,yy-2);c.quadraticCurveTo(xx,yy-6,xx+6,yy-3);c.stroke();}c.restore();
   }
-  const flames=Math.max(3,Math.min(9,Math.ceil(w/43)));
-  for(let i=0;i<flames;i++){const x=-w*.42+(w*.84)*i/(flames-1),fh=29+Math.sin(p*14+i*2)*9;c.globalAlpha=Math.sin(p*Math.PI)*.90;c.drawImage(this.flameTexture(i),x-14,y-fh,28,fh+13);}
+  const flames=Math.max(3,Math.min(7,Math.ceil(w/51)));
+  for(let i=0;i<flames;i++){const x=-w*.42+(w*.84)*i/(flames-1),fh=16+Math.sin(p*14+i*2)*6;c.globalAlpha=Math.sin(p*Math.PI)*.58;c.drawImage(this.flameTexture(i),x-9,y-fh,18,fh+8);}
   for(let i=0;i<12;i++){const a=i*2.39,drift=p*p;c.globalAlpha=(1-p)*.67;c.fillStyle=i%3===0?'#ffd27c':i%2?'#3d3129':'#ad7342';c.save();c.translate(Math.cos(a)*w*.4-drift*37,y-p*28+Math.sin(a)*9);c.rotate(a+p*.8);c.fillRect(-1.5,-1,3+(i%2),1.7);c.restore();}c.restore();
  }
  drawShatter(c,d,im,l){

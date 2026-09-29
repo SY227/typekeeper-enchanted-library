@@ -1,3 +1,10 @@
+# v3.5.0 note
+
+All 48 profiles below are preserved. The right shelf now holds a stronger shared
+wing landmark (folio / botanical glasshouse / clock / crystal / ember brazier /
+armillary / vault key / eternal book), with contact shadow, local light and grain.
+The left title-specific still-life remains. No obstacles, quotas or mechanics changed.
+
 # Chapter art specification — v3.4.0
 
 48 authored, cosmetic-only variations aligned to the existing campaign. The game layout, spawn positions, words, speed and spell economy do not change.

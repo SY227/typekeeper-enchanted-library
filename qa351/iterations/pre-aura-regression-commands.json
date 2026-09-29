@@ -1,0 +1,78 @@
+[
+  {
+    "name": "clarity-standalone",
+    "command": [
+      "python3",
+      "-u",
+      "e2e/clarity_mastery_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 39.074
+  },
+  {
+    "name": "art-standalone",
+    "command": [
+      "python3",
+      "-u",
+      "e2e/chapter_art_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 42.041
+  },
+  {
+    "name": "scroll-standalone",
+    "command": [
+      "python3",
+      "-u",
+      "e2e/scroll_repair_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 14.295
+  },
+  {
+    "name": "leaf-standalone",
+    "command": [
+      "python3",
+      "-u",
+      "e2e/book_leaf_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 1,
+    "seconds": 13.355
+  },
+  {
+    "name": "single-row-standalone",
+    "command": [
+      "python3",
+      "-u",
+      "e2e/single_row_release.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 48.998
+  },
+  {
+    "name": "flow-standalone",
+    "command": [
+      "python3",
+      "-u",
+      "e2e/flow_tests.py",
+      "--mode",
+      "standalone",
+      "--root",
+      ".",
+      "--out",
+      "qa351"
+    ],
+    "exit": 0,
+    "seconds": 68.074
+  }
+]

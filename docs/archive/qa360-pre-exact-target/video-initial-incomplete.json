@@ -1,0 +1,20 @@
+[
+  {
+    "name": "normal-clock-journey.webm",
+    "bytes": 13893632,
+    "sha256": "2aa655f6ac30512c673dee2ac2ef722273551fedca752396fc709f07e23bc88e",
+    "finding": "VP8 recording decodes but ends prematurely and lacks final duration/index; superseded, not shipped as execution video."
+  },
+  {
+    "name": "natural-pressure-journey.webm",
+    "bytes": 4194304,
+    "sha256": "8348db7e0f8518be798e983ceea3eb0b52690a451fb2175f7d670f28aa4085fd",
+    "finding": "VP8 recording decodes but ends prematurely and lacks final duration/index; superseded, not shipped as execution video."
+  },
+  {
+    "name": "natural-medium-pressure-journey.webm",
+    "bytes": 3407872,
+    "sha256": "22ca2889b592dfc6c298435a99c905aa9d42faf8c7bd1851ea01414bc7b877a7",
+    "finding": "VP8 recording decodes but ends prematurely and lacks final duration/index; superseded, not shipped as execution video."
+  }
+]

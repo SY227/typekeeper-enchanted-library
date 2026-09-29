@@ -1,0 +1,1 @@
+Pre-final v3.6.0 candidate (PLAY hash 671fb301...) was superseded before delivery: exact shorter word must take presentation priority over a lower longer prefix, matching Enter. Its first fresh gate was interrupted. None of these results are counted as final-runtime passes.

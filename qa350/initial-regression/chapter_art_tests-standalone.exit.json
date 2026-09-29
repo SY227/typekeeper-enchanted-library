@@ -1,0 +1,11 @@
+{
+  "name": "chapter_art_tests-standalone",
+  "command": [
+    "python",
+    "e2e/chapter_art_tests.py",
+    "--mode",
+    "standalone"
+  ],
+  "exit": 0,
+  "seconds": 34.71
+}

@@ -1,0 +1,19 @@
+{"name": "Both shipping identity and initialized renderer are v3.5.1", "status": "PASS", "seconds": 0.012}
+{"name": "The actual title painter keeps WONDER / STORY / IMAGINE inside both rollers", "status": "PASS", "seconds": 0.337}
+{"name": "Rasterized letter pixels avoid rods / medallions, full words at 1366\u00d7768", "status": "PASS", "seconds": 0.369}
+{"name": "Rasterized letter pixels avoid rods / medallions, full words at 1920\u00d71080", "status": "PASS", "seconds": 0.242}
+{"name": "Rasterized letter pixels avoid rods / medallions, full words at 1280\u00d7720", "status": "PASS", "seconds": 0.313}
+{"name": "Rasterized letter pixels avoid rods / medallions, full words at 1024\u00d7768", "status": "PASS", "seconds": 0.243}
+{"name": "Inset seal is centred on the parchment, with no stray medallion above its edge", "status": "PASS", "seconds": 0.019}
+{"name": "Actual gameplay and all six material variants captured at laptop and 1080p sizes", "status": "PASS", "seconds": 1.315}
+{"name": "Complete one-row word entry, selection edits, and Enter behavior remain intact", "status": "PASS", "seconds": 0.132}
+{"name": "FIRE with motion enabled: native animation, stock and preserved input", "status": "PASS", "seconds": 0.944}
+{"name": "ICE with motion enabled: native animation, stock and preserved input", "status": "PASS", "seconds": 0.944}
+{"name": "SLOW with motion enabled: native animation, stock and preserved input", "status": "PASS", "seconds": 0.956}
+{"name": "WIND with motion enabled: native animation, stock and preserved input", "status": "PASS", "seconds": 0.944}
+{"name": "All four native Canvas spell drawing paths render 28 onset/mid/end states", "status": "PASS", "seconds": 0.012}
+{"name": "Queued SLOW, pause inertness and selection-safe resume survive the visual repair", "status": "PASS", "seconds": 0.217}
+{"name": "High contrast, high pressure and reduced motion retain legible one-row content", "status": "PASS", "seconds": 0.112}
+{"name": "Scroll material churn remains bounded and does not change model or vocabulary state", "status": "PASS", "seconds": 0.063}
+{"name": "Exact production startup succeeds without the diagnostic seam", "status": "PASS", "seconds": 1.175}
+{"name": "No unhandled JavaScript exceptions in the completed repair suite", "status": "PASS", "seconds": 0.0}

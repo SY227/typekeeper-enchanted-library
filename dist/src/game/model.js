@@ -1,9 +1,9 @@
-import { freshRunSeed } from './random.js?v=3.4.0-cbb049170ccf1a33';
-import { FIELD, POWERS, RULES, RULESET_VERSION, levelRules, mulberry32, chapterSeed, normalizeInput, scoreForWord, wordCardWidth, PACES } from './rules.js?v=3.4.0-cbb049170ccf1a33';
-import { CAMPAIGN_LENGTH, stageInfo, medalForStage } from '../data/campaign.js?v=3.4.0-cbb049170ccf1a33';
-import { pressureState } from './pressure.js?v=3.4.0-cbb049170ccf1a33';
-import { dictionaryForLevel } from '../data/words.js?v=3.4.0-cbb049170ccf1a33';
-import { createEconomy, prepareEconomy, restoreEconomy, nextSpellGap } from './economy.js?v=3.4.0-cbb049170ccf1a33';
+import { freshRunSeed } from './random.js?v=3.6.2-04b297ea546ad828';
+import { FIELD, POWERS, RULES, RULESET_VERSION, levelRules, mulberry32, chapterSeed, normalizeInput, scoreForWord, streakMultiplier, wordCardWidth, PACES } from './rules.js?v=3.6.2-04b297ea546ad828';
+import { CAMPAIGN_LENGTH, stageInfo, medalForStage } from '../data/campaign.js?v=3.6.2-04b297ea546ad828';
+import { pressureState } from './pressure.js?v=3.6.2-04b297ea546ad828';
+import { dictionaryForLevel } from '../data/words.js?v=3.6.2-04b297ea546ad828';
+import { createEconomy, prepareEconomy, restoreEconomy, nextSpellGap } from './economy.js?v=3.6.2-04b297ea546ad828';
 
 /** Deterministic game simulation. No artwork, sound or UI callback owns game state.
  * Every word has exactly one outcome. All timers use active simulation seconds.
@@ -50,7 +50,7 @@ export class GameModel {
  }
  get accuracy(){return this.correct+this.wrong?Math.round(100*this.correct/(this.correct+this.wrong)):100;}
  get wpm(){return this.time>1?Math.round(this.correctCharacters/5/(this.time/60)):0;}
- get multiplier(){return Math.min(3,1+Math.floor(this.streak/8)*.25);}
+ get multiplier(){return streakMultiplier(this.streak);}
  emit(type,data={}){this.events.push({type,tick:this.tick,...data});}
  drainEvents(){const events=this.events;this.events=[];return events;}
  record(type,value){
@@ -87,13 +87,16 @@ export class GameModel {
  complete(word){
   if(this.phase!=='playing'||!this.words.some(w=>w.id===word.id))return;
   this.words=this.words.filter(w=>w.id!==word.id);
+  const previousMultiplier=this.multiplier;
   this.correct++;this.stageCorrect++;this.progress++;this.streak++;
   this.bestStreak=Math.max(this.streak,this.bestStreak);
   this.correctCharacters+=word.text.length;this.stageCharacters+=word.text.length;
   const points=scoreForWord(word.text,word.kind,this.streak);this.score+=points;
   let collected=false;
   if(POWERS.includes(word.kind)&&this.inventory[word.kind]<RULES.inventoryCapacity){this.inventory[word.kind]++;collected=true;}
-  this.emit('correct',{word:{...word},points,collected,overflow:POWERS.includes(word.kind)&&!collected,streak:this.streak});
+  this.emit('correct',{word:{...word},points,collected,overflow:POWERS.includes(word.kind)&&!collected,streak:this.streak,multiplier:this.multiplier});
+  // Presentation consumers share this event. Restore/reset never emits it.
+  if(this.multiplier>previousMultiplier)this.emit('multiplier-up',{streak:this.streak,previous:previousMultiplier,multiplier:this.multiplier});
   if(this.progress>=this.config.quota)this.clearLevel();
   else if(!this.words.length&&!this.trialRest)this.spawnClock=Math.min(this.spawnClock,RULES.emptyFieldDelay);
  }

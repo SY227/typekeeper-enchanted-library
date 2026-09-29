@@ -1,121 +1,118 @@
-# Typekeeper: Enchanted Library — v3.4.0
+# Typekeeper: Enchanted Library — v3.6.2
+## A Fresh Journey
 
-A complete browser game built from the accepted v3.3.6 release. This update adds
-48 title-specific chapter treatments and new FIRE / ICE presentation. It retains
-the corrected imperial scroll cards, single-line words, randomized new games and
-retries, the v3.2.1 difficulty/economy, existing music, scores, and save compatibility.
+A complete, offline-playable game with an explicit **Start from Chapter 1**
+choice for returning players. It starts a new campaign attempt, not a new save
+profile. All earned chapter unlocks, mastery stars and recorded best scores stay.
+The original Impact Pass, Score Chase, spell economy, 48-chapter campaign, art,
+audio and controls are retained.
 
-## Play on Mac
+## Continue, begin again, or revisit a chapter
 
-Extract the whole ZIP and run its actual launcher:
+| Choice | What happens |
+|---|---|
+| **Continue** | Resume the saved start of the current campaign chapter, as before. |
+| **Start from Chapter 1** | After confirmation, begin with a fresh score, empty spell books and no paper pressure. Only this difficulty's Continue point is replaced. |
+| **Chapters** | Play any previously unlocked chapter in the existing Practice mode. Practice does not replace your campaign Continue point. |
+
+The restart choice sits directly below Continue in the familiar main-menu panel.
+The confirmation identifies the saved chapter being replaced and explicitly
+states what is kept. **Keep current journey** is the safe default keyboard focus;
+Escape or Close cancels without writing a save. Returning players who completed
+the campaign can also start again; all 48 chapters and The Infinite Archive remain
+available. Brand-new players still get one-click **Play** without an extra dialog.
+
+Example: you have unlocked Chapter 12. Start again and Continue becomes Chapter 1.
+You may still select Chapter 12 from Chapters; returning to Continue takes you
+back to the new campaign. Replaying a chapter with fewer stars never downgrades
+its existing best mastery. Other difficulties' Continue points are untouched.
+
+**This is not Reset progress.** There is no new account, profile, erasure button,
+new currency, gameplay mechanic, score rule or difficulty change.
+
+## Play
+
+Extract the **entire ZIP**. Open **PLAY.html** for the self-contained offline game.
+All assets are embedded; playing that edition needs no install, account or API key.
+For a locally served Mac session:
 
 ```bash
-cd "$HOME/Downloads" &&
-unzip -o "Typekeeper_Enchanted_Library_v3.4.0_Full_App.zip" &&
-cd "$HOME/Downloads/Typekeeper_Enchanted_Library_v3_4_0" &&
+cd "$HOME/Downloads"
+unzip -o "Typekeeper_Enchanted_Library_v3.6.2_Full_App.zip"
+cd "Typekeeper_Enchanted_Library_v3_6_2"
 bash START_MAC.command
 ```
 
-The tab must read **Typekeeper: Enchanted Library — v3.4.0**. The launcher verifies
-prebuilt file hashes, prints the served folder and build identity, and opens the
-correct address. It uses port 4355 or the next available port, never kills another
-process, and needs either installed Python 3 or Node 20+.
+Check that the browser title and launcher say **v3.6.2**. Windows and Linux launchers
+are included. The server launcher needs Python 3 or Node 20+, serves the prebuilt
+files and uses port 4355 or the next free port. It does not stop your previous
+server. Do not open the modular index.html directly; serve it or use PLAY.html.
 
-Stop your previous local server with Control+C first to reuse the same address and
-browser saves. Records → Export/Import save carries progress to a different
-browser, host name, or port. No account or API key is required.
+**Protect your save:** before changing a URL, port, browser or local-file location,
+use **Records → Export save**. Stop an old server with Control+C to reuse its
+address. Import the exported file when necessary. The save key and ruleset are
+unchanged, but browser storage belongs to its origin; a new origin cannot magically
+read the old one's progress. If saving is unavailable, the game warns you and
+Records → Export save still provides a backup.
 
-For an embedded no-server edition, open **PLAY.html**. Do not double-click the
-modular **index.html**: it is intended for the included server or a web host.
-Windows and Linux launchers are also supplied; their OS-specific user experience
-is not represented as tested on Windows or macOS hardware.
+## Everything kept in the game
 
-## What changes
+Type a falling word and press **Enter**; **1 / 2 / 3 / 4** cast FIRE / ICE / SLOW /
+WIND. **Escape** pauses. Restart still begins with zero inventory; the sixth-card
+ICE opportunity, random New Game/Retry and deterministic Continue remain.
+FIRE does not award score, books or chapter progress. The existing 48 chapters,
+three paces, original word bank, pressure formula, timing, spell durations,
+mastery rules, character feedback, paper landings and finale are unchanged.
 
-Every campaign chapter has a title-linked shelf still-life, an auxiliary bound-volume
-inlay and restrained architectural light/ambient variation. Examples include Rain
-on Glass, a clock at eleven for The Eleventh Hour, a warm brazier for Kindling,
-constellations, and one candle for One Last Candle. Same library layout and HUD;
-no extra gameplay obstacles. The complete 48-title mapping is in
-`docs/CHAPTER_ART_SPEC.md`. Endless reuses the final chapter's appearance.
+The current running SCORE stays cumulative. BEST remains scoped to the comparable
+mode/pace/ruleset and locks for each chapter/run. Starting again retains previous
+proven bests; **FIRST RUN** means no comparable score is recorded, not necessarily
+that you have never played that chapter. Practice and Endless retain separate
+record scopes. See docs/SCORE_CHASE_SPEC.md.
 
-FIRE now has a layered rising flame front, curling tongues, hot-paper edges, char
-and fine ash. ICE grows faceted crystals on the room margins, shades and scroll
-ends, holds while the existing six-second freeze is active, then thaws in layers.
-The lettering corridor is kept free of frost. Reduced motion retains static visual
-identity and readable status without decorative animation.
+The previously requested READY/COLLECT/ACTIVE captions sit above the spell books
+with a small gap, not across their cover art. Original book positions, input area,
+Score Chase panel and paper meter are unchanged.
 
-The supplied YouTube reference could not be viewed in this environment. These are
-original visual designs, not claimed copies of its unseen frames or audio. See
-`docs/REFERENCE_ACCESS_340.md` for the actual access attempts.
+## Source and baseline
 
-## What is deliberately unchanged
+The accessible full source is the supplied **v3.6.0 Full App** ZIP. The subsequently
+approved v3.6.1 above-book-caption preview was available, but no v3.6.1 full source
+ZIP was available in this session. This build preserves the v3.6.0 game and
+reapplies that small caption treatment before adding the fresh-journey option.
+It does not claim a byte-for-byte v3.6.1 baseline. The newly supplied
+Typekeeper_v3.6.0_Review_Evidence(1).zip is review evidence, not an application.
 
-- Same Enter-to-submit input, caret/editing and selection-preserving keys 1–4.
-- Same 48 titles, chapter quotas, three paces, speed curve, trial rests and scoring.
-- Same zero-stock campaign opening, two-charge capacity, scarcity and spell duration.
-- Same randomized New game / Retry; Continue resumes the saved attempt.
-- Same imperial scroll geometry, letter-safe regions and inset magic crests.
-- Same original illustration assets, character, soundtrack and sound implementation.
-- Same current save key / balance ruleset `typekeeper-3.2.1`; no score reset.
-- WIND still clears only missed paper. FIRE still grants no points or chapter progress.
-
-## Source, build and deployment
-
-`src/` contains editable ES-module code. `public/assets/` holds runtime illustrations
-and audio; `asset-source/` keeps the original editable masters. `dist/` is the
-prebuilt modular website. PLAY.html embeds all runtime code/assets/music. There is
-no network dependency in ordinary gameplay and no build-time package dependency.
+## Development
 
 ```bash
-npm ci --offline --ignore-scripts --no-audit --no-fund
+npm ci --offline
 npm test
 npm run check
 npm run build
 ```
 
-Build checks reject mixed HTML/package/JS versions and fingerprint every relative
-JS import. The included Vercel configuration builds with `npm run build` and serves
-`dist/`. The ZIP does not link to or modify any hosting account.
+No runtime npm dependency is required. Both prebuilt editions, source, original
+art/audio assets and editable masters, static-hosting configuration, launchers,
+backup-first updater and tests are included. This handoff does not deploy or
+modify any live Vercel site or Git repository.
 
-The backup-first updater can copy into an **existing** Typekeeper project while
-preserving `.git`, `.vercel`, environment files and an existing vercel.json:
+`src/ui/campaign-entry.js` decides the menu choices without mutating data.
+`src/main.js` handles confirmation/cancellation and replaces a validated checkpoint
+in one full save write. The existing game model, storage schema and PB rules are
+not redesigned. `docs/FRESH_JOURNEY_SPEC.md` maps the behavior and review criteria.
 
-```bash
-bash scripts/apply-update.sh "/absolute/path/to/your/existing/typekeeper-project"
-```
+## QA and limits
 
-Use the exact folder that exists on your computer; the updater refuses a missing
-or unrelated project. Source and target must be separate. No remote push/deploy is
-performed by this helper.
+**docs/QA_REPORT.md** and **qa362/** describe tests executed on this build, including
+failed/superseded attempts. Older qa350/qa351/qa352/qa360 results are historical.
+No count of inherited logs is presented as a new test run. Browser automation
+requires Python Playwright and Chromium only for development.
 
-## Reproduce QA
-
-Tests need Python Playwright and an installed Chromium executable. These are QA
-dependencies, not requirements for players.
-
-```bash
-npm test
-python3 e2e/chapter_art_tests.py --executable /usr/bin/chromium
-python3 e2e/chapter_art_tests.py --mode modules --executable /usr/bin/chromium
-python3 e2e/scroll_repair_tests.py --executable /usr/bin/chromium
-python3 e2e/scroll_repair_tests.py --mode modules --executable /usr/bin/chromium
-python3 e2e/single_row_release.py --executable /usr/bin/chromium
-python3 e2e/single_row_release.py --mode modules --executable /usr/bin/chromium
-python3 e2e/book_leaf_tests.py --executable /usr/bin/chromium
-python3 e2e/book_leaf_tests.py --mode modules --executable /usr/bin/chromium
-node qa340/flow_audit.mjs --root . --out qa340/flow-model-repeat.json
-python3 qa340/browser_flow.py --root . --mode standalone --out qa340 --executable /usr/bin/chromium
-python3 qa340/browser_flow.py --root . --mode modules --out qa340 --executable /usr/bin/chromium
-python3 scripts/release-audit.py
-python3 scripts/test-update.py
-```
-
-Use the appropriate installed browser path on your OS. Browser loading in this QA
-environment is documented in the report; these are actual Canvas/DOM/input/audio
-implementations, not a mock game. Current run evidence is under `qa340/`. Baseline
-reports retained under `docs/archive/` are historical, not current pass counts.
-
-See **docs/QA_REPORT.md** for completed gates, exact build hashes, initial harness
-failures, device limitations and fresh-ZIP verification. This is a testable browser
-release candidate, not an independently certified AAA or Valve-approved release.
+The environment is Linux/headless Chromium. Native HTTP/file browser navigation
+is blocked here; browser suites run the shipping offline document in memory or
+shipping ES modules through Blob transport. New persistence scenarios use an
+explicit, fault-injectable in-memory storage adapter and actual LocalStore code;
+they do not certify localStorage on a real hosted origin. Real Mac/Windows/Safari,
+human first-time-player studies and subjective audio testing remain external.
+Internal production-review lenses are not actual AAA studio, IGN or Valve approval.

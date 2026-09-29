@@ -1,0 +1,19 @@
+{"name": "Source/HTML/runtime identity and exact non-diagnostic startup both succeed", "status": "PASS", "seconds": 1.619}
+{"name": "All 48 actual chapter titles have distinct rasterized scenery; scene cache stays bounded", "status": "PASS", "seconds": 0.99}
+{"name": "Real chapter-5 completion, Next and saved Continue select the right chapter artwork", "status": "PASS", "seconds": 0.365}
+{"name": "Revisiting chapters restores their deterministic cosmetics without stale wing layers", "status": "PASS", "seconds": 0.525}
+{"name": "FIRE actual keyboard cast preserves input/selection and authoritative rules", "status": "PASS", "seconds": 0.996}
+{"name": "ICE actual keyboard cast preserves input/selection and authoritative rules", "status": "PASS", "seconds": 0.87}
+{"name": "SLOW actual keyboard cast preserves input/selection and authoritative rules", "status": "PASS", "seconds": 0.862}
+{"name": "WIND actual keyboard cast preserves input/selection and authoritative rules", "status": "PASS", "seconds": 0.887}
+{"name": "ICE freezes drift as well as words; queued SLOW waits, thaw clears and movement resumes", "status": "PASS", "seconds": 1.275}
+{"name": "180 native raster masks prove frozen-card decoration never covers the word lettering", "status": "PASS", "seconds": 0.246}
+{"name": "260 native spell animation samples and all six destruction paths render and finish", "status": "PASS", "seconds": 0.854}
+{"name": "Pause freezes new FIRE/ICE timelines and resumes them without consuming game time", "status": "PASS", "seconds": 0.669}
+{"name": "Reduced motion/high contrast keep chapter identity and word ink without particle or drift animation", "status": "PASS", "seconds": 0.487}
+{"name": "Menu, New game and Retry clear transient frost/flames rather than carrying them into another run", "status": "PASS", "seconds": 0.75}
+{"name": "190 varying freeze-card surfaces stay within the 12 MiB/48-entry effect cache budget", "status": "PASS", "seconds": 0.187}
+{"name": "Actual chapter comparison and FIRE/ICE captures at laptop and 1080p sizes", "status": "PASS", "seconds": 15.665}
+{"name": "Full long-word entry, selected-letter correction and Enter work inside the new ICE visuals", "status": "PASS", "seconds": 0.178}
+{"name": "Real RAF still generates and accepts level 5\u2019s final word after WIND; chapter 6 opens", "status": "PASS", "seconds": 0.945}
+{"name": "Completed suite has no unhandled JavaScript exceptions", "status": "PASS", "seconds": 0.0}

@@ -1,0 +1,16 @@
+{
+  "shippingSHA256": "ddf649a7407c478d842e0225a2501cce8fa67899b07676ddbedecf577aeb4686",
+  "commands": [
+    {
+      "label": "clarity_mastery_tests-standalone",
+      "command": [
+        "python3",
+        "e2e/clarity_mastery_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "returncode": 1,
+      "seconds": 30.001
+    }
+  ]
+}

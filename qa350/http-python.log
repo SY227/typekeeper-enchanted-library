@@ -1,0 +1,10 @@
+
+Typekeeper: Enchanted Library v3.5.0
+Build: 3.5.0-f894a49bc7800157
+Folder: /mnt/data/typekeeper_work/Typekeeper_Enchanted_Library_v3_5_0/dist
+http://127.0.0.1:4492/?build=3.5.0-f894a49bc7800157
+No installation, login, or API key is needed.
+Press Ctrl+C to stop.
+
+127.0.0.1 - - [27/Sep/2026 17:35:49] code 404, message File not found
+127.0.0.1 - - [27/Sep/2026 17:35:49] "GET /definitely-missing.js HTTP/1.1" 404 -
