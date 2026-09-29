@@ -11,7 +11,7 @@ from inline_fixture import inline_fixture
 from module_fixture import module_fixture
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('--mode',choices=['standalone','modules'],default='standalone');args=p.parse_args()
-OUT=ROOT/'qa362';SHOTS=OUT/'restart-screenshots';SHOTS.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'qa364';SHOTS=OUT/'restart-screenshots';SHOTS.mkdir(parents=True,exist_ok=True)
 rows=[];errors=[];evidence={};KEY='typekeeper-enchanted-library-v3.2.1'
 def fixture(seed=None):
  html=inline_fixture(ROOT) if args.mode=='standalone' else module_fixture(ROOT)
@@ -170,5 +170,5 @@ with sync_playwright() as p:
   bounds=page.evaluate('''()=>['fire','ice','slow','wind'].map(p=>{const key=p==='wind'?'rescue-hint':'ready-'+p,l=document.getElementById(key).getBoundingClientRect(),b=document.querySelector('#spell-'+p+' .spell-book').getBoundingClientRect();return {power:p,labelBottom:l.bottom,bookTop:b.top,gap:b.top-l.bottom};})''');assert all(v['gap']>0 for v in bounds),bounds;evidence['aboveBookLabels']=bounds;shot('above-book-labels-retained')
  check('Last requested READY/RESCUE placement remains above, not on top of, the book art',labels)
  b.close()
-report={'version':'3.6.2','scope':__doc__,'mode':args.mode,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(x['status']=='PASS'for x in rows),'failed':sum(x['status']=='FAIL'for x in rows),'pageerrors':errors,'evidence':evidence}
+report={'version':'3.6.4','scope':__doc__,'mode':args.mode,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(x['status']=='PASS'for x in rows),'failed':sum(x['status']=='FAIL'for x in rows),'pageerrors':errors,'evidence':evidence}
 (OUT/f'restart-{args.mode}.json').write_text(json.dumps(report,indent=2));print(json.dumps({'passed':report['passed'],'failed':report['failed'],'pageerrors':errors}));raise SystemExit(1 if report['failed'] or errors else 0)

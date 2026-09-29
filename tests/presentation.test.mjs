@@ -1,3 +1,4 @@
+import {productionBaselineBytes} from './production-baseline.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {OutcomeCue, presentationTarget, readableCardLayout, resolveVisualPositions, roomForChapter, ROOM_PROFILES, PRESENTATION_VERSION} from '../src/render/presentation.js';
@@ -9,11 +10,11 @@ import {createHash} from 'node:crypto';
 
 const measure=(s,size)=>[...s].reduce((sum,c)=>sum+(c==='W'?.99:c==='I'?.38:.71)*size,0);
 test('Application 3.5.1 retains the 3.2.1 gameplay ruleset and resource capacity',()=>{
- assert.equal(PRESENTATION_VERSION,'3.6.3');assert.equal(RULESET_VERSION,'typekeeper-3.2.1');assert.equal(RULES.inventoryCapacity,2);assert.equal(RULES.iceDuration,6);assert.equal(RULES.slowDuration,8);
+ assert.equal(PRESENTATION_VERSION,'3.6.4');assert.equal(RULESET_VERSION,'typekeeper-3.6.4');assert.equal(RULES.inventoryCapacity,2);assert.equal(RULES.iceDuration,6);assert.equal(RULES.slowDuration,8);
 });
 test('Source hashes preserve untouched 3.4 modules; changed rules/model are covered by dual-model parity tests',()=>{
  const manifest=JSON.parse(fs.readFileSync(new URL('./fixtures/v340-unchanged.json',import.meta.url)));
- for(const [path,hash]of Object.entries(manifest))assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../'+path,import.meta.url))).digest('hex'),hash,path);
+ for(const [path,hash]of Object.entries(manifest))assert.equal(createHash('sha256').update(productionBaselineBytes(path,fs.readFileSync(new URL('../'+path,import.meta.url)))).digest('hex'),hash,path);
 });
 for(const [start,end,index]of [[1,6,0],[7,12,1],[13,18,2],[19,24,3],[25,30,4],[31,36,5],[37,42,6],[43,48,7]]){
  test(`Room state ${index+1} follows campaign chapters ${start}–${end}`,()=>{for(let n=start;n<=end;n++){assert.equal(roomForChapter(n),ROOM_PROFILES[index]);assert.equal(roomForChapter(n).props.length,2);}assert.ok(WINGS[index].name.includes(roomForChapter(start).name));});

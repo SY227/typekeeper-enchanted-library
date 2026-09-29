@@ -1,0 +1,617 @@
+{
+  "version": "3.6.4",
+  "mode": "standalone",
+  "scope": "Current 3.6.4 chapter/elemental presentation integration in shipping code.\nIn-memory transport enables only the existing diagnostic seam. It is not an actual\nMac, human-playability, HTTP-browser or independently certified studio test.\n",
+  "browser": "144.0.7559.96",
+  "shippingSHA256": "d663219de5939ec662f0a41d9bf45de3db377b97ac8a94a016f852d127253039",
+  "tests": [
+    {
+      "name": "Source/HTML/runtime identity and exact non-diagnostic startup both succeed",
+      "status": "PASS",
+      "seconds": 7.066
+    },
+    {
+      "name": "All 48 actual chapter titles have distinct rasterized scenery; scene cache stays bounded",
+      "status": "PASS",
+      "seconds": 2.965
+    },
+    {
+      "name": "Real chapter-5 completion, Next and saved Continue select the right chapter artwork",
+      "status": "PASS",
+      "seconds": 1.43
+    },
+    {
+      "name": "Revisiting chapters restores their deterministic cosmetics without stale wing layers",
+      "status": "PASS",
+      "seconds": 1.282
+    },
+    {
+      "name": "FIRE actual keyboard cast preserves input/selection and authoritative rules",
+      "status": "PASS",
+      "seconds": 1.167
+    },
+    {
+      "name": "ICE actual keyboard cast preserves input/selection and authoritative rules",
+      "status": "PASS",
+      "seconds": 1.113
+    },
+    {
+      "name": "SLOW actual keyboard cast preserves input/selection and authoritative rules",
+      "status": "PASS",
+      "seconds": 1.179
+    },
+    {
+      "name": "WIND actual keyboard cast preserves input/selection and authoritative rules",
+      "status": "PASS",
+      "seconds": 1.156
+    },
+    {
+      "name": "ICE freezes drift as well as words; queued SLOW waits, thaw clears and movement resumes",
+      "status": "PASS",
+      "seconds": 1.42
+    },
+    {
+      "name": "180 native raster masks prove frozen-card decoration never covers the word lettering",
+      "status": "PASS",
+      "seconds": 0.704
+    },
+    {
+      "name": "260 native spell animation samples and all six destruction paths render and finish",
+      "status": "PASS",
+      "seconds": 0.928
+    },
+    {
+      "name": "Pause freezes new FIRE/ICE timelines and resumes them without consuming game time",
+      "status": "PASS",
+      "seconds": 0.914
+    },
+    {
+      "name": "Reduced motion/high contrast keep chapter identity and word ink without particle or drift animation",
+      "status": "PASS",
+      "seconds": 0.693
+    },
+    {
+      "name": "Menu, New game and Retry clear transient frost/flames rather than carrying them into another run",
+      "status": "PASS",
+      "seconds": 1.796
+    },
+    {
+      "name": "190 varying freeze-card surfaces stay within the 12 MiB/48-entry effect cache budget",
+      "status": "PASS",
+      "seconds": 0.588
+    },
+    {
+      "name": "Actual chapter comparison and FIRE/ICE captures at laptop and 1080p sizes",
+      "status": "PASS",
+      "seconds": 26.97
+    },
+    {
+      "name": "Full long-word entry, selected-letter correction and Enter work inside the new ICE visuals",
+      "status": "PASS",
+      "seconds": 0.644
+    },
+    {
+      "name": "Real RAF still generates and accepts level 5\u2019s final word after WIND; chapter 6 opens",
+      "status": "PASS",
+      "seconds": 1.413
+    },
+    {
+      "name": "Completed suite has no unhandled JavaScript exceptions",
+      "status": "PASS",
+      "seconds": 0.0
+    }
+  ],
+  "passed": 19,
+  "failed": 0,
+  "errors": [],
+  "evidence": {
+    "chapters": [
+      {
+        "level": 1,
+        "title": "First Light",
+        "art": "dawn",
+        "artTitle": "First Light",
+        "hash": "6cc0cfb3",
+        "unchanged": true,
+        "cache": 1
+      },
+      {
+        "level": 2,
+        "title": "Ink & Paper",
+        "art": "scribe",
+        "artTitle": "Ink & Paper",
+        "hash": "c11280e8",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 3,
+        "title": "A Quiet Rhythm",
+        "art": "metronome",
+        "artTitle": "A Quiet Rhythm",
+        "hash": "13906d2b",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 4,
+        "title": "The First Spark",
+        "art": "spark",
+        "artTitle": "The First Spark",
+        "hash": "477299e8",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 5,
+        "title": "Between the Lines",
+        "art": "ruled",
+        "artTitle": "Between the Lines",
+        "hash": "90765fe8",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 6,
+        "title": "The Opening Bell",
+        "art": "bell",
+        "artTitle": "The Opening Bell",
+        "hash": "e14acc8f",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 7,
+        "title": "Emerald Leaves",
+        "art": "leaves",
+        "artTitle": "Emerald Leaves",
+        "hash": "9112d4e2",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 8,
+        "title": "A Growing Tale",
+        "art": "shoot",
+        "artTitle": "A Growing Tale",
+        "hash": "eec965f9",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 9,
+        "title": "Branches of Thought",
+        "art": "branches",
+        "artTitle": "Branches of Thought",
+        "hash": "25603647",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 10,
+        "title": "Rain on Glass",
+        "art": "rain",
+        "artTitle": "Rain on Glass",
+        "hash": "6e14aba",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 11,
+        "title": "Hidden Blossoms",
+        "art": "blossom",
+        "artTitle": "Hidden Blossoms",
+        "hash": "741ad017",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 12,
+        "title": "The Garden Gate",
+        "art": "gate",
+        "artTitle": "The Garden Gate",
+        "hash": "d17c7b1e",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 13,
+        "title": "Golden Gears",
+        "art": "gears",
+        "artTitle": "Golden Gears",
+        "hash": "59835c10",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 14,
+        "title": "A Measured Beat",
+        "art": "beat",
+        "artTitle": "A Measured Beat",
+        "hash": "5520129e",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 15,
+        "title": "Pendulum Pages",
+        "art": "pendulum",
+        "artTitle": "Pendulum Pages",
+        "hash": "36deb4fb",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 16,
+        "title": "Stolen Seconds",
+        "art": "hourglass",
+        "artTitle": "Stolen Seconds",
+        "hash": "f6d71eaf",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 17,
+        "title": "The Eleventh Hour",
+        "art": "eleven",
+        "artTitle": "The Eleventh Hour",
+        "hash": "f9f86f2d",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 18,
+        "title": "The Clock Strikes",
+        "art": "strikes",
+        "artTitle": "The Clock Strikes",
+        "hash": "f19b637b",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 19,
+        "title": "Silver Breath",
+        "art": "breath",
+        "artTitle": "Silver Breath",
+        "hash": "8155ce7d",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 20,
+        "title": "Crystal Margins",
+        "art": "crystal",
+        "artTitle": "Crystal Margins",
+        "hash": "3c9a8881",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 21,
+        "title": "The Still Page",
+        "art": "still",
+        "artTitle": "The Still Page",
+        "hash": "cecf2d61",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 22,
+        "title": "Winter Whispers",
+        "art": "whisper",
+        "artTitle": "Winter Whispers",
+        "hash": "e3795969",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 23,
+        "title": "Cold Precision",
+        "art": "precision",
+        "artTitle": "Cold Precision",
+        "hash": "f60c530",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 24,
+        "title": "The Frozen Seal",
+        "art": "frozenseal",
+        "artTitle": "The Frozen Seal",
+        "hash": "99045990",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 25,
+        "title": "Kindling",
+        "art": "kindling",
+        "artTitle": "Kindling",
+        "hash": "e8781037",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 26,
+        "title": "Letters of Flame",
+        "art": "flame",
+        "artTitle": "Letters of Flame",
+        "hash": "3600f3ab",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 27,
+        "title": "The Warmest Ink",
+        "art": "warmink",
+        "artTitle": "The Warmest Ink",
+        "hash": "e944d0f3",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 28,
+        "title": "Firelight Fables",
+        "art": "fables",
+        "artTitle": "Firelight Fables",
+        "hash": "937f813e",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 29,
+        "title": "Under Pressure",
+        "art": "pressure",
+        "artTitle": "Under Pressure",
+        "hash": "c918cb21",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 30,
+        "title": "The Burning Chapter",
+        "art": "burning",
+        "artTitle": "The Burning Chapter",
+        "hash": "6278af7",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 31,
+        "title": "Starlit Script",
+        "art": "starlit",
+        "artTitle": "Starlit Script",
+        "hash": "7234e88",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 32,
+        "title": "The Long View",
+        "art": "telescope",
+        "artTitle": "The Long View",
+        "hash": "4839295e",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 33,
+        "title": "Celestial Signs",
+        "art": "celestial",
+        "artTitle": "Celestial Signs",
+        "hash": "a0b6f931",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 34,
+        "title": "Orbiting Ideas",
+        "art": "orbit",
+        "artTitle": "Orbiting Ideas",
+        "hash": "8a82e1a7",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 35,
+        "title": "Constellations",
+        "art": "constellations",
+        "artTitle": "Constellations",
+        "hash": "adbdc87b",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 36,
+        "title": "The Starfall Trial",
+        "art": "starfall",
+        "artTitle": "The Starfall Trial",
+        "hash": "9d5cc85e",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 37,
+        "title": "After Hours",
+        "art": "afterhours",
+        "artTitle": "After Hours",
+        "hash": "2ee8a295",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 38,
+        "title": "Secret Passages",
+        "art": "passage",
+        "artTitle": "Secret Passages",
+        "hash": "15ea6189",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 39,
+        "title": "Velvet Shadows",
+        "art": "velvet",
+        "artTitle": "Velvet Shadows",
+        "hash": "daec0017",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 40,
+        "title": "The Lost Manuscript",
+        "art": "lost",
+        "artTitle": "The Lost Manuscript",
+        "hash": "b481f1e7",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 41,
+        "title": "One Last Candle",
+        "art": "lastcandle",
+        "artTitle": "One Last Candle",
+        "hash": "4ca97b53",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 42,
+        "title": "The Midnight Key",
+        "art": "midnightkey",
+        "artTitle": "The Midnight Key",
+        "hash": "c9fd3878",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 43,
+        "title": "The Final Volume",
+        "art": "finalvolume",
+        "artTitle": "The Final Volume",
+        "hash": "3f45e3c4",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 44,
+        "title": "Pages Without End",
+        "art": "infinity",
+        "artTitle": "Pages Without End",
+        "hash": "5618daac",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 45,
+        "title": "A Thousand Voices",
+        "art": "voices",
+        "artTitle": "A Thousand Voices",
+        "hash": "fdbd13b",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 46,
+        "title": "The Master Scribe",
+        "art": "masterscribe",
+        "artTitle": "The Master Scribe",
+        "hash": "b188ceea",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 47,
+        "title": "The Last Word",
+        "art": "lastword",
+        "artTitle": "The Last Word",
+        "hash": "c5e3eb78",
+        "unchanged": true,
+        "cache": 2
+      },
+      {
+        "level": 48,
+        "title": "The Typekeeper",
+        "art": "typekeeper",
+        "artTitle": "The Typekeeper",
+        "hash": "c238b0b",
+        "unchanged": true,
+        "cache": 2
+      }
+    ],
+    "revisit": [
+      {
+        "level": 1,
+        "id": "dawn",
+        "hash": "sID1w1xqb9QMmIGHDLjFDJgBM2AGzIAZMANmwAyYATNgBl4CAxawXsJV+p7X6LWZATNgBsyAGTADZsAMmAEzYAbMgBkwA6+fgW+8QwtY3/gCeHozYAbMgBkwA2bADJgBM2AGzIAZ+DEY8C7NgBn4dAYsYH06dx5pBsyAGTADZsAMmAEzYAbMwNdlwLOZATNgBszAD8qABawf9MJ722bADJgBM2AGzMCPyoD3bQbMgBkwA2bADJiBl8eABayXd828YjNgBsyAGfjWDHh+M2AGzIAZMANmwAyYATNgBr4qAxawvirdnswMmIFgwNYMmAEzYAbMgBkwA2bADJgBM2AGzMClDFjAupSp78/PKzIDZsAMmAEzYAbMgBkwA2bADJgBM2AGXj8D3qEYsIAlEvzPDJgBM2AGzIAZMANmwAyYATNgBl4zA96bGTADL52B/w0AAP//N0yBRQAAAAZJREFUAwCdwpbs5cST9gAAAABJRU5ErkJggg==",
+        "cache": 2
+      },
+      {
+        "level": 10,
+        "id": "rain",
+        "hash": "AAFOSURBVM7/GrlCCUhAAhKQgAQkIIFzJ+D6JCABCUhAAhJ4UQIaWC+K18klIAEJSEACEjiWgHkSkIAEJCABCUhAAhLYRUADaxcZ2yUgAQm8PQKuWAISkIAEJCABCUhAAhKQwEUS0MC6yMvqST2egCMlIAEJSEACEpCABCQgAQlIQAISODcCz29gndsZuh4JSEACEpCABCQgAQlIQAISkIAEnp+AM0rgJxLQwPqJsD2UBCQgAQlIQAISkIAEJCCBloBlCUhAAhI4joAG1nGczJKABCQgAQlIQAISOE8CrkoCEpCABCQggXdAQAPrHVxkT1ECEpCABCSwn4C9EpCABCQgAQlIQAISOG8CGljnfX1cnQQk8FYIuE4JSEACEpCABCQgAQlIQAISeDECGlgvhtaJTyVgvgQkIAEJSEACEpCABCQgAQlIQAKXT+AxZ/j/AQAA///9JcNKAAAABklEQVQDAETMUa/faBlMAAAAAElFTkSuQmCC",
+        "cache": 2
+      },
+      {
+        "level": 17,
+        "id": "eleven",
+        "hash": "yxHwzCZgAiZgAiZgAiZgAh+OgA2sD3fKfcAmYAImsFiYgQmYgAmYgAmYgAmYgAmYgAm8JQI2sN7S2fJaXxMBr8UETMAETMAETMAETMAETMAETMAETOAHEXhBA+sHHaGnMQETMAETMAETMAETMAETMAETMAETeEECntoEHk/ABtbjGXoEEzABEzABEzABEzABEzABE3heAh7dBEzABD44ARtYH/wC8OGbgAmYgAmYgAmYwEch4OM0ARMwARMwARN4uwRsYL3dc+eVm4AJmIAJmMCPJuD5TMAETMAETMAETMAETOBFCNjAehHsntQETODjEvCRm4AJmIAJmIAJmIAJmIAJmIAJ3JeADaz7EnP8yxPwCkzABEzABEzABEzABEzABEzABEzABN4/geYIbWA1MJw1ARMwARMwARMwARMwARMwARMwgfdEwMdiAu+FwP8HAAD//1ZOVy4AAAAGSURBVAMA71suR7soJk4AAAAASUVORK5CYII=",
+        "cache": 2
+      },
+      {
+        "level": 24,
+        "id": "frozenseal",
+        "hash": "T32HFrCe+hV0/GbADJgBM2AGzIAZMANmwAyYATPwLRjwGmbADHxHBixgfUfyvbQZMANmwAyYATNgBsyAGXhZDHi3ZsAMmAEzYAY+jQELWJ/Gm2eZATNgBsyAGTADZuD7MOBVzYAZMANmwAyYATPwAhmwgPUCL7q3bAbMgBl46Qx4/2bADJgBM2AGzIAZMANmwAw8LQYsYD2t6+VozcCPwoDjMANmwAyYATNgBsyAGTADZsAMmAEz8M0YsID1zaheLuS2GTADZsAMmAEzYAbMgBkwA2bADJgBM/D8GfAOvwQDFrC+BIv2YQbMgBkwA2bADJgBM2AGzIAZMANfjwF7NgNm4MUzYAHrxd8CJsAMmAEzYAbMgBkwA2bgJTDgPZoBM2AGzIAZeMoMWMB6ylfPsZsBM2AGzIAZMAPfkgGvZQbMgBkwA2bADJgBM/CdGPj/AQAA//9RML+WAAAABklEQVQDADCRNCekuAeUAAAAAElFTkSuQmCC",
+        "cache": 2
+      },
+      {
+        "level": 28,
+        "id": "fables",
+        "hash": "CZiACZiACZiACZiACbx9Am/+Cm1gvflb7As0ARMwARMwARMwARMwARMwARO4n4AjTMAEXjIBG1gv+e54bSZgAiZgAiZgAiZgAibwmgh4rSZgAiZgAibwgwjYwPpBYD2sCZiACZiACZiACTyGgPuYgAmYgAmYgAmYgAncJmAD6zYT15iACZiACbxuAl69CZiACZiACZiACZiACZjAGyNgA+uN3VBfjgk8DQGPYgImYAImYAImYAImYAImYAImYAIvh4ANrB91LzyuCZiACZiACZiACZiACZiACZiACZjA2yfgK/wpBGxg/RTMnsQETMAETMAETMAETMAETMAETOAUAdebgAmYwH0EbGDdR8jtJmACJmACJmACJmACJvDyCXiFJmACJmACJvCmCdjAetO31xdnAiZgAiZgAiZwPgFHmoAJmIAJmIAJmIAJvFQC/wsAAP//EvpYXwAAAAZJREFUAwBD3zlk/U3GSwAAAABJRU5ErkJggg==",
+        "cache": 2
+      },
+      {
+        "level": 35,
+        "id": "constellations",
+        "hash": "gGcJECBA4FVAgfXq4R0BAgQIECBAgECGgBQECBAgQIBAkIACK2iZohAgQIAAgVoB0wgQIECAAAECBAj0EFBg9diDWxAgkCogFwECBAgQIECAAAECBAhcFlBgXSY0YLSA+QQIECBAgAABAgQIECBAgEC+wKeECqxPOj4jQIAAAQIECBAgQIAAAQL7CLgpgVgBBVbsagUjQIAAAQIECBAgQOB3AU8QIECAQEcBBVbHrbgTAQIECBAgQGBnAXcnQIAAAQIECBQLKLCKQY0jQIAAAQIVAmYQIECAAAECBAgQIPAUUGA9LbwiQCBLQBoCBAgQIECAAAECBAgQCBFQYIUsckwMUwkQIECAAAECBAgQIECAAIF8gf4JFVj9d+SGBAgQIECAAAECBAgQINBdwP0IEBgqoMAayms4AQIECBAgQIAAAQLfCvgeAQIECBB4J3ADAAD//yjwtloAAAAGSURBVAMAWRNQoQVt+EUAAAAASUVORK5CYII=",
+        "cache": 2
+      },
+      {
+        "level": 41,
+        "id": "lastcandle",
+        "hash": "BixgvajL5cWaATNgBsyAGTADz4cBr8QMmAEzYAbMgBkwA2bgz2LAAtafxbTnMQNmwAyYgbsM2GIGzIAZMANmwAyYATNgBsyAGXgEAxawHkGSXczAc2bAazMDZsAMmAEzYAbMgBkwA2bADJgBM/DaGbCAtVq99mvs/ZkBM2AGzIAZMANmwAyYATNgBsyAGTADq5U5eMEMWMB6wRfPSzcDZsAMmAEzYAbMgBkwA2bADPy5DHg2M2AGzMC3YcAC1rfh3bOaATNgBsyAGTADZsAMfK8MeN9mwAyYATNgBszAkxmwgPVkyjzADJgBM2AGzIAZ+NYMeH4zYAbMgBkwA2bADJiB74sBC1jf1/X2bs2AGTADwYBLM2AGzIAZMANmwAyYATNgBszAi2HAAtaLuVRe6PNjwCsyA2bADJgBM2AGzIAZMANmwAyYATNgBv4MBv4XAAAA//9tTkbFAAAABklEQVQDAIm7yUXztlo2AAAAAElFTkSuQmCC",
+        "cache": 2
+      },
+      {
+        "level": 48,
+        "id": "typekeeper",
+        "hash": "YH17zj2jGTADPzoD3r8ZMANmwAyYATNgBsyAGTADZsAMPIoBC1iPosvOz4UBr8MMmAEzYAbMgBkwA2bADJgBM2AGzIAZeP0MxA4tYAUTLs2AGTADZsAMmAEzYAbMgBkwA2bADLw+BrwjM/AqGLCA9SouozdhBsyAGTADZsAMmAEzYAbMwNdjwJHNgBkwA2bgezNgAet7XwHPbwbMgBkwA2bADJiBH4EB79EMmAEzYAbMgBkwA1/AgAWsLyDPQ82AGTADZsAMfEsGPJcZMANmwAyYATNgBsyAGfhRGbCA9aNeee/bDPyYDHjXZsAMmAEzYAbMgBkwA2bADJgBM/ACGbCA9QIv2vddsmc3A2bADJgBM2AGzIAZMANmwAyYATNgBl4/A89rhxawntf18GrMgBkwA2bADJgBM2AGzIAZMANm4LUw4H2YATPwZAz8/wAAAP//v7D3BQAAAAZJREFUAwAFOW1zs1lwLwAAAABJRU5ErkJggg==",
+        "cache": 2
+      },
+      {
+        "level": 1,
+        "id": "dawn",
+        "hash": "sID1w1xqb9QMmIGHDLjFDJgBM2AGzIAZMANmwAyYATNgBl4CAxawXsJV+p7X6LWZATNgBsyAGTADZsAMmAEzYAbMgBkwA6+fgW+8QwtY3/gCeHozYAbMgBkwA2bADJgBM2AGzIAZ+DEY8C7NgBn4dAYsYH06dx5pBsyAGTADZsAMmAEzYAbMwNdlwLOZATNgBszAD8qABawf9MJ722bADJgBM2AGzMCPyoD3bQbMgBkwA2bADJiBl8eABayXd828YjNgBsyAGfjWDHh+M2AGzIAZMANmwAyYATNgBr4qAxawvirdnswMmIFgwNYMmAEzYAbMgBkwA2bADJgBM2AGzMClDFjAupSp78/PKzIDZsAMmAEzYAbMgBkwA2bADJgBM2AGXj8D3qEYsIAlEvzPDJgBM2AGzIAZMANmwAyYATNgBl4zA96bGTADL52B/w0AAP//N0yBRQAAAAZJREFUAwCdwpbs5cST9gAAAABJRU5ErkJggg==",
+        "cache": 2
+      }
+    ],
+    "iceInk": {
+      "count": 180,
+      "fail": []
+    },
+    "spellSampling": {
+      "count": 260,
+      "cache": {
+        "entries": 25,
+        "bytes": 12513472,
+        "limit": 12582912
+      }
+    },
+    "elementalCache": {
+      "entries": 18,
+      "bytes": 12142528,
+      "limit": 12582912,
+      "same": true
+    }
+  }
+}

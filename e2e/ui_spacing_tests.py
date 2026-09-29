@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""v3.6.2 Breathing Room: rendered UI geometry and real input regression.
+"""v3.6.4 Breathing Room: rendered UI geometry and real input regression.
 Shipping standalone/Blob modules; no substitute UI, model, audio or DOM handlers.
 Controlled test stock and end-of-chapter fixtures are not human play sessions.
 The in-memory transport has no persistent browser origin; actual save import /
@@ -12,7 +12,7 @@ from inline_fixture import inline_fixture
 from module_fixture import module_fixture
 ROOT=Path(__file__).resolve().parents[1]
 a=argparse.ArgumentParser();a.add_argument('--mode',choices=['standalone','modules'],default='standalone');a.add_argument('--executable',default='/usr/bin/chromium');args=a.parse_args()
-OUT=ROOT/'qa362';OUT.mkdir(exist_ok=True);SHOTS=OUT/'ui-screenshots';SHOTS.mkdir(exist_ok=True)
+OUT=ROOT/'qa364';OUT.mkdir(exist_ok=True);SHOTS=OUT/'ui-screenshots';SHOTS.mkdir(exist_ok=True)
 rows=[];errors=[];evidence={'hud':[],'dialogs':[]}
 rect_js='''(sel)=>{let e=document.querySelector(sel);if(!e)return null;let s=getComputedStyle(e),r=e.getBoundingClientRect();if(!e.getClientRects().length||e.hidden||s.display==='none'||s.visibility==='hidden'||+s.opacity===0)return null;return {x:r.x,y:r.y,right:r.right,bottom:r.bottom,w:r.width,h:r.height,sw:e.scrollWidth,cw:e.clientWidth,sh:e.scrollHeight,ch:e.clientHeight,text:e.textContent.trim(),font:parseFloat(s.fontSize)};}'''
 with sync_playwright() as p:
@@ -41,9 +41,9 @@ with sync_playwright() as p:
    except:pass
   rows.append(row);print(json.dumps(row),flush=True)
  def identity():
-  assert api('return t.info.version;')=='3.6.2';assert 'v3.6.2' in page.title()
+  assert api('return t.info.version;')=='3.6.4';assert 'v3.6.4' in page.title()
   assert api('return m.config===undefined||m.info!==undefined;')
- check('Shipping version and initialized diagnostics identify v3.6.2',identity)
+ check('Shipping version and initialized diagnostics identify v3.6.4',identity)
  def first_ice_zone():
   clear_pointer();api('t.setSettings({motion:false,muted:true,hints:true,resumeCountdown:false});t.start(385170);t.freeze(true);t.flush();')
   for _ in range(6):
@@ -157,7 +157,7 @@ with sync_playwright() as p:
   n=rect('#dialog-notice');a=rect('.modal-actions');assert n['bottom']+3<=a['y'],(n,a)
   assert page.locator('#dialog-notice').get_attribute('role')=='status';shot('import-error-inline')
   with page.expect_download() as d:page.locator('[data-action=export-save]').click()
-  file=Path(d.value.path());saved=json.loads(file.read_text());assert saved['appVersion']=='3.6.2'
+  file=Path(d.value.path());saved=json.loads(file.read_text());assert saved['appVersion']=='3.6.4'
   assert 'Save exported.' in page.locator('#dialog-notice').inner_text()
   page.locator('#save-file').set_input_files({'name':'valid.json','mimeType':'application/json','buffer':file.read_bytes()});page.wait_for_function('document.querySelector("#dialog-notice").textContent==="Save imported."')
  check('Context notices never stack over help or dialog actions; real invalid/valid save import and export',notice)
@@ -200,7 +200,7 @@ with sync_playwright() as p:
   dialog_metrics('records-long-chapter-filter');shot('records-practice-600p')
  check('Records filters keep focus and long chapter titles have a full-width native selector',filters)
  def populated_records():
-  api('for(let i=0;i<10;i++)t.store.add({ruleset:"typekeeper-3.2.1",score:987654321-i*108,level:48,words:2100,wpm:115,accuracy:99.8,pace:"classic",mode:"campaign",startLevel:1,date:Date.now()-i*1000,seed:i+1,streak:76,retries:0});')
+  api('for(let i=0;i<10;i++)t.store.add({ruleset:"typekeeper-3.6.4",score:987654321-i*108,level:48,words:2100,wpm:115,accuracy:99.8,pace:"classic",mode:"campaign",startLevel:1,date:Date.now()-i*1000,seed:i+1,streak:76,retries:0});')
   open_menu('records');page.locator('#records-pace').select_option('classic');page.locator('#records-mode').select_option('campaign');page.locator('[data-period=all]').click()
   assert page.locator('.record-table tbody tr').count()==10
   dialog_metrics('records-ten-large-scores');shot('records-populated')
@@ -208,7 +208,7 @@ with sync_playwright() as p:
  check('Ten populated large-score records stay within table cells; cancelling clear preserves records',populated_records)
  def wings():
   resize(1366,768)
-  api('for(let i=1;i<=48;i++)t.store.data.progress.classic.stages[i]={medal:i%3+1,score:4200,wpm:78,accuracy:95,ruleset:"typekeeper-3.2.1",campaignClear:true};t.store.data.progress.classic.unlocked=48;t.setSettings({pace:"classic"});')
+  api('for(let i=1;i<=48;i++)t.store.data.progress.classic.stages[i]={medal:i%3+1,score:4200,wpm:78,accuracy:95,ruleset:"typekeeper-3.6.4",campaignClear:true};t.store.data.progress.classic.unlocked=48;t.setSettings({pace:"classic"});')
   open_menu('map')
   for wing in range(8):
    page.locator('button[data-wing="'+str(wing)+'"]').click();page.wait_for_timeout(80)
@@ -277,6 +277,6 @@ with sync_playwright() as p:
   cover=q.evaluate(rect_js,'#spell-wind .spell-book');assert ready['bottom']<cover['y'],(ready,cover)
   q.screenshot(path=str(SHOTS/f'retina-dpr2-{args.mode}.png'));q.close()
  check('DPR 2 rendering retains measured CSS gaps; browser emulation is not a Retina hardware certification',dpr)
- report={'version':'3.6.2','mode':args.mode,'scope':__doc__,'browser':browser.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'passed':sum(x['status']=='PASS'for x in rows),'failed':sum(x['status']=='FAIL'for x in rows),'tests':rows,'evidence':evidence,'unhandledErrors':errors}
+ report={'version':'3.6.4','mode':args.mode,'scope':__doc__,'browser':browser.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'passed':sum(x['status']=='PASS'for x in rows),'failed':sum(x['status']=='FAIL'for x in rows),'tests':rows,'evidence':evidence,'unhandledErrors':errors}
  (OUT/f'ui-spacing-{args.mode}.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:v for k,v in report.items()if k not in ['tests','evidence']},indent=2));browser.close()
  if report['failed'] or errors:raise SystemExit(1)

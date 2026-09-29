@@ -11,7 +11,7 @@ import argparse,json,hashlib,time,sys
 from playwright.sync_api import sync_playwright
 from inline_fixture import inline_fixture
 from module_fixture import module_fixture
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa362';OUT.mkdir(exist_ok=True)
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa364';OUT.mkdir(exist_ok=True)
 SHOTS=OUT/'screenshots';SHOTS.mkdir(exist_ok=True)
 a=argparse.ArgumentParser();a.add_argument('--mode',choices=['standalone','modules'],default='standalone');a.add_argument('--executable',default='/usr/bin/chromium');args=a.parse_args()
 rows=[];errors=[];evidence={}
@@ -38,8 +38,8 @@ with sync_playwright() as p:
    except Exception:pass
   rows.append(row);print(json.dumps(row),flush=True)
  def identity():
-  assert api('return t.info.version;')=='3.6.2';assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
-  assert api('return t.info.buildTag;')=='fresh-journey-362'
+  assert api('return t.info.version;')=='3.6.4';assert api('return t.info.ruleset;')=='typekeeper-3.6.4'
+  assert api('return t.info.buildTag;')=='bound-and-balanced-364'
   assert page.locator('#enter-save-hint').is_hidden();assert page.locator('#first-ice-hint').is_hidden()
  check('3.5 identity and clean first-load contextual prompts',identity)
  def first_enter():
@@ -175,11 +175,11 @@ with sync_playwright() as p:
   start(24);api('m.words=[];m.inventory.ice=1;t.word("BIOLUMINESCENT","ice",620,345);t.flush();');page.keyboard.press('2');page.wait_for_timeout(270);shot('ice-readable');print('  elemental fixture: type frozen word',flush=True);typeword('BIOLUMINESCENT');assert api('return m.correct;')==1
  check('Object-bound FIRE preserves input and replacement rules; frozen long words remain typable',fire_ice)
  def save_export():
-  j=api('return JSON.parse(t.store.exportData());');assert j['appVersion']=='3.6.2';assert j['version']==3
-  assert any(x.get('wordSeed')is not None for x in j['chapterBests'].values());assert all(k.startswith('typekeeper-3.2.1|')for k in j['chapterBests'])
+  j=api('return JSON.parse(t.store.exportData());');assert j['appVersion']=='3.6.4';assert j['version']==3
+  assert any(x.get('wordSeed')is not None for x in j['chapterBests'].values());assert all(k.startswith('typekeeper-3.6.4|')for k in j['chapterBests'])
   assert api('return t.store.progress("classic").stages[48].campaignClear;')is True
   evidence['saveScopes']=sorted(j['chapterBests'])
  check('Actual export contains compatible save schema, correctly scoped PBs and genuine word seeds',save_export)
- report={'version':'3.6.2','mode':args.mode,'scope':__doc__,'browser':browser.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(x['status']=='PASS'for x in rows),'failed':sum(x['status']=='FAIL'for x in rows),'unhandledErrors':errors,'evidence':evidence}
+ report={'version':'3.6.4','mode':args.mode,'scope':__doc__,'browser':browser.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(x['status']=='PASS'for x in rows),'failed':sum(x['status']=='FAIL'for x in rows),'unhandledErrors':errors,'evidence':evidence}
  (OUT/f'clarity-mastery-{args.mode}.json').write_text(json.dumps(report,indent=2));print(json.dumps({k:v for k,v in report.items()if k not in ['tests','evidence']},indent=2));browser.close()
  if report['failed']or errors:raise SystemExit(1)

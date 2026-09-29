@@ -37,7 +37,7 @@ def main():
     except Exception:pass
    rows.append(row);print(row['status'],name,row.get('error',''),flush=True)
 
-  def version():assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
+  def version():assert api('return t.info.ruleset;')=='typekeeper-3.6.4'
   check('The shipped HTML contains the new economy module and correct ruleset',version)
   def empty():
    run();assert list(snap()['inventory'].values())==[0,0,0,0]
@@ -154,12 +154,12 @@ def main():
   def export_new():
    api('t.show("records");')
    with page.expect_download() as dl:btn('export-save').click()
-   data=json.loads(Path(dl.value.path()).read_text());assert data['appVersion']=='3.6.2'
+   data=json.loads(Path(dl.value.path()).read_text());assert data['appVersion']=='3.6.4'
    assert 'economy' in data['checkpoints']['classic'];assert data['checkpoints']['classic']['inventory']['ice']==2
   check('Real save export includes the sparse schedule and correct build version',export_new)
   def fresh():
    api('t.show("menu");t.show("new-confirm");');btn('fresh-start').click();api('t.freeze(true);')
-   assert list(snap()['inventory'].values())==[0,0,0,0];assert api('return t.model.scoreRuleset;')=='typekeeper-3.2.1';assert snap()['economy']['untilNext']==6
+   assert list(snap()['inventory'].values())==[0,0,0,0];assert api('return t.model.scoreRuleset;')=='typekeeper-3.6.4';assert snap()['economy']['untilNext']==6
   check('New game after migration starts empty under current scoring rules',fresh)
   def empty_glow():
    run();api("t.word('SNOW','ice');t.flush();");enter('SNOW');assert 'just-ready' in page.locator('#spell-ice').get_attribute('class')

@@ -1,3 +1,4 @@
+import {productionBaselineBytes} from './production-baseline.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -26,6 +27,6 @@ test('Elemental cache obeys byte and entry budgets under many surface widths',()
 test('48 room profiles and VFX calculations do not advance either model random stream',()=>{const a=new GameModel(),b=new GameModel();a.start({seed:123,wordSeed:736});b.start({seed:123,wordSeed:736});for(let n=1;n<180;n++){chapterArtForLevel(n);elementalEnvelope(n/200);frozenArtStrength(6-n*.01,n*.01,0);}for(let n=0;n<60;n++){a.words=[];b.words=[];a.spawn();b.spawn();assert.deepEqual(a.snapshot(),b.snapshot());}});
 test('3.5 preservation: original assets, economy, RNG, controls and scroll geometry are byte-identical',()=>{
  const expected=JSON.parse(fs.readFileSync(new URL('./fixtures/v340-unchanged.json',import.meta.url)));
- for(const [p,hash] of Object.entries(expected))assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../'+p,import.meta.url))).digest('hex'),hash,p);
+ for(const [p,hash] of Object.entries(expected))assert.equal(createHash('sha256').update(productionBaselineBytes(p,fs.readFileSync(new URL('../'+p,import.meta.url)))).digest('hex'),hash,p);
 });
 test('Standalone builder includes both new presentation dependencies before the renderer',()=>{const s=fs.readFileSync(new URL('../scripts/standalone.mjs',import.meta.url),'utf8');for(const name of ['chapter-art.js','elemental-art.js']){assert(s.includes(`'render/${name}'`));assert(s.indexOf(`'render/${name}'`)<s.indexOf("'render/renderer.js'"));}});

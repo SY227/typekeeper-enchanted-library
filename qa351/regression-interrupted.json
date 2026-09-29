@@ -1,4 +1,0 @@
-{
-  "reason": "Halt before fixing the detected book-aura geometry regression; incomplete suites are not passes. Existing completed logs retained.",
-  "change": "Aura exceeded actual cover bottom; tighten to 124 logical pixels without changing covers, anchors or captions."
-}

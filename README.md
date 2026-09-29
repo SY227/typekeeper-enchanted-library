@@ -1,69 +1,58 @@
-# Typekeeper: Enchanted Library — v3.6.3
-## Open Atrium
+# Typekeeper: Enchanted Library · v3.6.4
+## Bound & Balanced
 
-A focused visual refinement of the supplied **v3.6.2 — A Fresh Journey** game.
-The translucent, ruled green manuscript behind falling words is gone. The original
-painted library now provides the depth: receding shelves, a curved upper gallery,
-soft neutral air and restrained lantern bounce. No new gameplay mechanic or HUD.
+A little focus. A little magic. Save falling words with a magical typewriter.
 
 ## Play
+Extract the entire ZIP. Run `bash START_MAC.command` on macOS, `START_WINDOWS.bat`
+on Windows, or `bash START_LINUX.sh` on Linux. The launcher serves the supplied
+production `dist/` and opens the game. Alternatively open `PLAY.html` directly for
+an offline, self-contained edition. Do not double-click the modular `index.html`.
 
-Extract the **entire** ZIP. Open `PLAY.html` for the self-contained offline game,
-or run `bash START_MAC.command` on macOS / `START_WINDOWS.bat` on Windows.
-The browser title and the launcher's version must read **3.6.3**.
+Node 20+ users can run `npm ci` and `npm start`. The Python launcher uses Python 3.9+.
 
-For development (Node 20 or later):
+## This release
+- Chapter 3 and Chapter 4 now require **14 words**, not 13. Other quotas, fall speeds,
+  spell economics, manual Enter, star criteria and the 48-chapter structure remain.
+- The first wing's open book now rests on a wooden lectern with shaped pages,
+  layered edges, leather binding, a cloth marker and localized warm shadows.
+  Shelf-bound volumes use restrained leather grain and curved spines.
+- Existing progress, stars and recorded best-score history survive. Fresh attempts
+  use scoring profile `typekeeper-3.6.4`; previous `typekeeper-3.2.1` results remain
+  historical and cannot masquerade as comparable new-profile bests. An older
+  continued attempt is marked **EARLIER RULES**, not silently relabeled.
+- Import deduplication now distinguishes difficulty: same date, score and seed in
+  different paces are not mistaken for one record.
+- Background, HUD, Score Chase layout, above-book captions, typewriter feedback,
+  input position and Paper Pile/Wind spacing are retained.
 
+## Progress protection
+Use **Records → Export save** in the old version before changing the folder,
+browser or hosting origin. Import it in this version as needed. The save key is
+unchanged, but browsers isolate storage by origin. Starting from Chapter 1 replaces
+only that pace's Continue checkpoint; previously unlocked chapters remain available
+through Chapters/Practice. Earlier scores remain in the historical collections.
+
+## Development and deployment
 ```sh
 npm ci
 npm test
 npm run check
 npm run build
-npm start
 ```
+`vercel.json` builds with `npm run build` and publishes `dist/`. `.vercelignore`
+keeps the editable masters, offline bundle and QA evidence out of the upload;
+it does not remove them from this full source release. Never stage a parent/home
+repository by accident. Verify the repository root and origin before committing.
 
-`dist/` is the prebuilt static website. `PLAY.html` embeds the same application,
-art and audio without external network dependencies. Build configuration for the
-existing Vercel/Netlify workflows is retained. This is not a native Steam executable.
+Browser suites require Python Playwright and Chromium. Run `npm run test:production`
+and `npm run test:production:modules` for the new release gates; `npm run test:e2e`
+runs the retained browser suites. See `docs/QA_REPORT.md` for executed evidence,
+transport limitations and platform checks still outstanding. Automated testing and
+internal visual review are not independent AAA staff or human playtesting.
 
-## What changed
-
-Only the central environment treatment: remove the manuscript sheet, its border,
-ruled lines, binding marks and ring; replace it with a feathered color treatment
-of the original painted chamber. Actual background structure stays visible.
-No rectangular replacement, extra furniture, busy particle fog or new panel.
-
-The normal and high-contrast treatments are cached during loading, not calculated
-on every key or frame. The word cards, lettering, prefix ink, spells, score panel,
-book status labels, input paper and all their positions remain unchanged.
-The title/menu retains its original background treatment.
-
-## Your game and progress remain intact
-
-The 48 chapters, difficulty, resource scarcity, manual Enter, spells, scoring,
-stars, Score Chase scopes, Endless and the final homecoming are unchanged.
-Returning players still have **Continue**, **Start from Chapter 1**, and
-**Chapters**. Restarting the current journey does not erase unlocked chapters,
-stars or personal bests.
-
-The save key remains `typekeeper-enchanted-library-v3.2.1`.
-Before changing your browser, site address, port or local-file location, use
-**Records → Export save**. Import that backup from Records at the new location.
-A new browser storage origin cannot automatically read the previous origin's save.
-
-## Evidence and editable implementation
-
-- `docs/OPEN_ATRIUM_SPEC.md`: art direction, exact scope, implementation and design review.
-- `docs/QA_REPORT.md`: executed current-release checks and explicit limitations.
-- `qa363/`: current logs, numeric evidence, captures and fresh-extraction results.
-- `src/render/atrium.js`: editable feather/color/cache implementation.
-- `tests/atrium.test.mjs` and `e2e/atrium_tests.py`: focused regression coverage.
-- All original public game art/audio and editable masters are retained.
-
-Browser tests use Playwright + Chromium. `npm run test:atrium` tests the offline
-build; `npm run test:atrium:modules` tests the modular build via documented
-in-memory transport. This environment's native HTTP/file browser navigation is
-restricted; native desktop browsers and human playtest results are not claimed.
-
-Historical reports/captures remain clearly identified by their older version.
-QA screenshot previews can be WebP-compressed; runtime game artwork is unchanged.
+## Package
+All game source, original editable art/audio, production assets, launchers, full
+campaign, tests and current evidence are included. Redundant historical screenshot
+and video collections are omitted; see `docs/PACKAGE_CONTENTS.md`. No fonts or
+additional graphics engine are required.

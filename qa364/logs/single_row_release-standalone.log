@@ -1,0 +1,19 @@
+{'name': 'Shipping document, running engine and browser title identify v3.6.4', 'status': 'PASS', 'seconds': 0.064}
+{'name': 'Actual Canvas calls: every 746 word × 6 skins at 1366×768', 'status': 'PASS', 'seconds': 8.672}
+{'name': 'Actual Canvas calls: every 746 word × 6 skins at 1920×1080', 'status': 'PASS', 'seconds': 10.278}
+{'name': 'Actual Canvas calls: every 746 word × 6 skins at 1280×720', 'status': 'PASS', 'seconds': 10.667}
+{'name': 'Actual Canvas calls: every 746 word × 6 skins at 1024×768', 'status': 'PASS', 'seconds': 17.495}
+{'name': 'Renderer rejects multi-row output even with an obsolete two-row cached layout', 'status': 'PASS', 'seconds': 0.165}
+{'name': '24 widest custom glyphs never split, truncate, or overflow the card', 'status': 'PASS', 'seconds': 0.12}
+{'name': 'Native keyboard completes the entire long word before Enter resolves it once', 'status': 'PASS', 'seconds': 0.73}
+{'name': 'Long-word editing, selection and quick magic preserve the single-line input', 'status': 'PASS', 'seconds': 0.966}
+{'name': '20 actual New game button journeys produce distinct randomized openings', 'status': 'PASS', 'seconds': 7.684}
+{'name': 'Actual defeat → Retry changes words without keeping failed score or free spells', 'status': 'PASS', 'seconds': 1.33}
+{'name': 'Continue reproduces the current attempt; only a deliberate Retry rerolls vocabulary', 'status': 'PASS', 'seconds': 0.543}
+{'name': 'Single-row words survive pressure, ICE, high contrast and reduced-motion settings', 'status': 'PASS', 'seconds': 9.315}
+{'name': 'Chapter completion and next chapter do not restore an older wrapping renderer', 'status': 'PASS', 'seconds': 1.493}
+{'name': 'Captured actual game frames show complete long words at 1366 and 1920 widths', 'status': 'PASS', 'seconds': 6.253}
+{'name': 'Normal production export exposes no test seam', 'status': 'PASS', 'seconds': 9.469}
+{'name': 'DPR 2 Retina-style scaling retains one row for full long words', 'status': 'PASS', 'seconds': 14.531}
+{'name': 'Fault injection: mixed HTML/JS release identity stops launch with an explicit error', 'status': 'PASS', 'seconds': 4.373}
+{'name': 'No unhandled browser errors occurred', 'status': 'PASS', 'seconds': 0.0}

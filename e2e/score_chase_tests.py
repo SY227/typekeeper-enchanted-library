@@ -10,7 +10,7 @@ from inline_fixture import inline_fixture
 from module_fixture import module_fixture
 ROOT=Path(__file__).resolve().parents[1]
 ap=argparse.ArgumentParser();ap.add_argument('--mode',choices=['standalone','modules'],default='standalone');args=ap.parse_args()
-OUT=ROOT/'qa362';OUT.mkdir(exist_ok=True);SHOTS=OUT/'score-chase-screenshots';SHOTS.mkdir(exist_ok=True)
+OUT=ROOT/'qa364';OUT.mkdir(exist_ok=True);SHOTS=OUT/'score-chase-screenshots';SHOTS.mkdir(exist_ok=True)
 rows=[];errors=[];evidence={'geometry':[]}
 with sync_playwright() as p:
  browser=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--autoplay-policy=no-user-gesture-required'])
@@ -36,7 +36,7 @@ with sync_playwright() as p:
  def screenshot(name):page.screenshot(path=str(SHOTS/f'{name}-{args.mode}.png'))
  def set_score(n):api(f'm.score={n};t.flush();')
  def identity():
-  assert 'v3.6.2' in page.title();assert_eq(api('return t.info.version;'),'3.6.2');setup();assert_eq(page.locator('#score-panel').count(),1);assert page.locator('#score-chase-line').is_visible();assert_eq(page.locator('#score-value').inner_text(),'0')
+  assert 'v3.6.4' in page.title();assert_eq(api('return t.info.version;'),'3.6.4');setup();assert_eq(page.locator('#score-panel').count(),1);assert page.locator('#score-chase-line').is_visible();assert_eq(page.locator('#score-value').inner_text(),'0')
  check('Current runtime: one integrated score panel, visible even in focused HUD',identity)
  def first():
   setup();type_word();assert_eq(state()['state'],'first');assert_eq(page.locator('#best-label').inner_text(),'FIRST RUN');assert page.locator('#best-value').is_hidden();assert not api('return document.querySelector("#score-panel").classList.contains("record-pulse");');assert_eq(api('return Object.keys(t.store.data.scoreChaseBests).length;'),0)
@@ -135,7 +135,7 @@ with sync_playwright() as p:
  def exact_details():
   page.set_viewport_size({'width':1366,'height':768});setup(1580);set_score(1700);assert 'Previous best 1,580 points.' in page.locator('#score-scope').inner_text();assert_eq(page.locator('#best-value').inner_text(),'+120');assert_eq(page.locator('#score-value').inner_text(),'1,700');assert page.locator('#typing-input').is_enabled();screenshot('score-chase-final')
  check('Final beat state retains original target in accessible scope and does not block input',exact_details)
- report={'version':'3.6.2','mode':args.mode,'scope':__doc__,'browser':browser.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'passed':sum(r['status']=='PASS' for r in rows),'failed':sum(r['status']=='FAIL' for r in rows),'tests':rows,'evidence':evidence,'unhandledErrors':errors}
+ report={'version':'3.6.4','mode':args.mode,'scope':__doc__,'browser':browser.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'passed':sum(r['status']=='PASS' for r in rows),'failed':sum(r['status']=='FAIL' for r in rows),'tests':rows,'evidence':evidence,'unhandledErrors':errors}
  (OUT/f'score-chase-{args.mode}.json').write_text(json.dumps(report,indent=2));browser.close()
  print(f"SCORE CHASE {args.mode}: {report['passed']} passed, {report['failed']} failed",flush=True)
  sys.exit(1 if report['failed'] or errors else 0)

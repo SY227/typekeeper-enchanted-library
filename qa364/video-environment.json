@@ -1,0 +1,1 @@
+{"recorder":"system /usr/bin/ffmpeg 7.1.5 through Playwright expected executable location","reason":"Bundled ffmpeg unavailable and download DNS denied; system encoder available","scope":"Video encoding only, no game code modifications"}

@@ -1,0 +1,72 @@
+{"name": "Shipping version and initialized diagnostics identify v3.6.4", "status": "PASS", "seconds": 0.046}
+{"name": "First genuinely earned ICE waits for notifications and teaches in the clear desk, never over live words", "status": "PASS", "seconds": 5.62}
+{"name": "HUD 1920\u00d71080, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.687}
+{"name": "HUD 1920\u00d71080, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.764}
+{"name": "HUD 1440\u00d7900, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.506}
+{"name": "HUD 1440\u00d7900, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.484}
+{"name": "HUD 1366\u00d7768, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 1.104}
+{"name": "HUD 1366\u00d7768, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.936}
+{"name": "HUD 1280\u00d7720, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.9}
+{"name": "HUD 1280\u00d7720, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.867}
+{"name": "HUD 1024\u00d7768, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.407}
+{"name": "HUD 1024\u00d7768, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.431}
+{"name": "HUD 1024\u00d7600, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.381}
+{"name": "HUD 1024\u00d7600, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.371}
+{"name": "HUD 800\u00d7600, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.674}
+{"name": "HUD 800\u00d7600, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.693}
+{"name": "HUD 960\u00d7540, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.444}
+{"name": "HUD 960\u00d7540, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.385}
+{"name": "HUD 640\u00d7480, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.433}
+{"name": "HUD 640\u00d7480, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.338}
+{"name": "HUD 2560\u00d71080, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.483}
+{"name": "HUD 2560\u00d71080, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.482}
+{"name": "HUD 768\u00d71024, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.333}
+{"name": "HUD 768\u00d71024, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.38}
+{"name": "HUD 360\u00d7640, pile 0%, stock 0: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.305}
+{"name": "HUD 360\u00d7640, pile 95%, stock 2: separated status, key, caption and safe field", "status": "PASS", "seconds": 0.363}
+{"name": "High-contrast 720p HUD preserves spacing and equivalent rescue information", "status": "PASS", "seconds": 0.87}
+{"name": "Rescue has one home and never requests unavailable, cooling-down or empty WIND", "status": "PASS", "seconds": 0.391}
+{"name": "ICE active / SLOW queued labels fit at 600p and pause/resume preserves the typed buffer", "status": "PASS", "seconds": 1.058}
+{"name": "Last live ICE/SLOW lettering remains clear of the above-cover book status tabs", "status": "PASS", "seconds": 0.753}
+{"name": "All four hover descriptions use the clear center desk; keyboard focus wins over pointer", "status": "PASS", "seconds": 4.618}
+{"name": "Context notices never stack over help or dialog actions; real invalid/valid save import and export", "status": "PASS", "seconds": 1.127}
+{"name": "settings dialog 1366\u00d7768: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 2.818}
+{"name": "how dialog 1366\u00d7768: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 1.361}
+{"name": "about dialog 1366\u00d7768: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 1.226}
+{"name": "records dialog 1366\u00d7768: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 2.268}
+{"name": "map dialog 1366\u00d7768: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 3.439}
+{"name": "settings dialog 1024\u00d7600: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 1.959}
+{"name": "how dialog 1024\u00d7600: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 1.228}
+{"name": "about dialog 1024\u00d7600: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 1.076}
+{"name": "records dialog 1024\u00d7600: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 1.58}
+{"name": "map dialog 1024\u00d7600: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 1.95}
+{"name": "settings dialog 640\u00d7480: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 1.557}
+{"name": "how dialog 640\u00d7480: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 0.93}
+{"name": "about dialog 640\u00d7480: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 0.986}
+{"name": "records dialog 640\u00d7480: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 1.467}
+{"name": "map dialog 640\u00d7480: readable flow, scrollable actions and no control clipping", "status": "PASS", "seconds": 1.824}
+{"name": "Settings tabs preserve focus, all three layouts fit, and toggles remain actual controls", "status": "PASS", "seconds": 5.776}
+{"name": "Records filters keep focus and long chapter titles have a full-width native selector", "status": "PASS", "seconds": 2.349}
+{"name": "Ten populated large-score records stay within table cells; cancelling clear preserves records", "status": "PASS", "seconds": 2.625}
+{"name": "All eight restored wing tabs preserve focus and all 48 mastery tiles fit without duplicate locked text", "status": "PASS", "seconds": 20.35}
+{"name": "Expanded How-to remains scrollable; native summary, Tab / Shift-Tab and Escape respect the modal", "status": "PASS", "seconds": 1.88}
+{"name": "Pause / quit / cancel / fresh-start confirmation have reachable actions and preserve input", "status": "PASS", "seconds": 3.329}
+{"name": "One-star explanation and eight-seal finale at 1366\u00d7768: no text clipping, all actions reachable", "status": "PASS", "seconds": 3.006}
+{"name": "One-star explanation and eight-seal finale at 1280\u00d7720: no text clipping, all actions reachable", "status": "PASS", "seconds": 2.922}
+{"name": "One-star explanation and eight-seal finale at 1024\u00d7600: no text clipping, all actions reachable", "status": "PASS", "seconds": 2.266}
+{"name": "One-star explanation and eight-seal finale at 640\u00d7480: no text clipping, all actions reachable", "status": "PASS", "seconds": 2.029}
+{"name": "Animated finale can be skipped at 720p; practice 48 retains ordinary results", "status": "PASS", "seconds": 2.352}
+{"name": "Long-score game-over and retry at 600p remain operable and restart the same chapter", "status": "PASS", "seconds": 1.55}
+{"name": "Live resize / orientation changes alter only layout, never rules, word positions or typed progress", "status": "PASS", "seconds": 0.657}
+{"name": "All 48 chapter titles, practice prefixes and readable quotas fit; a trillion-scale score stays separate", "status": "PASS", "seconds": 8.548}
+{"name": "DPR 2 rendering retains measured CSS gaps; browser emulation is not a Retina hardware certification", "status": "PASS", "seconds": 8.302}
+{
+  "version": "3.6.4",
+  "mode": "standalone",
+  "scope": "v3.6.4 Breathing Room: rendered UI geometry and real input regression.\nShipping standalone/Blob modules; no substitute UI, model, audio or DOM handlers.\nControlled test stock and end-of-chapter fixtures are not human play sessions.\nThe in-memory transport has no persistent browser origin; actual save import /\nexport is exercised, native storage and OS/browser certification are not claimed.\n",
+  "browser": "144.0.7559.96",
+  "shippingSHA256": "d663219de5939ec662f0a41d9bf45de3db377b97ac8a94a016f852d127253039",
+  "passed": 62,
+  "failed": 0,
+  "unhandledErrors": []
+}

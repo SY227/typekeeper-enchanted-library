@@ -7,7 +7,7 @@ from pathlib import Path
 import json,time,hashlib
 from playwright.sync_api import sync_playwright
 from inline_fixture import inline_fixture
-R=Path(__file__).resolve().parents[1];O=R/'qa360';O.mkdir(exist_ok=True)
+R=Path(__file__).resolve().parents[1];O=R/'qa364';O.mkdir(exist_ok=True)
 rows=[];errs=[];shots=[]
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--autoplay-policy=no-user-gesture-required'])
@@ -25,6 +25,6 @@ with sync_playwright() as p:
    w=max(m['words'],key=lambda w:w['y']);page.locator('#typing-input').focus();page.keyboard.type(w['text'],delay=45);page.keyboard.press('Enter');words+=1
   page.wait_for_timeout(65)
  final=page.evaluate('()=>__TM_TEST__.snapshot()');page.screenshot(path=str(O/'natural-recovery.png'));shots.append('natural-recovery.png')
- report={'version':'3.6.2','scope':__doc__,'shippingSHA256':hashlib.sha256((R/'PLAY.html').read_bytes()).hexdigest(),'browser':b.version,'seconds':round(time.monotonic()-start,2),'initial':initial,'peakDanger':peak,'keyboardSubmissions':words,'last':final,'observations':rows,'screenshots':shots,'pageErrors':errs,'passed':peak>=75 and final['missed']>0 and final['correct']>0 and not errs}
+ report={'version':'3.6.4','scope':__doc__,'shippingSHA256':hashlib.sha256((R/'PLAY.html').read_bytes()).hexdigest(),'browser':b.version,'seconds':round(time.monotonic()-start,2),'initial':initial,'peakDanger':peak,'keyboardSubmissions':words,'last':final,'observations':rows,'screenshots':shots,'pageErrors':errs,'passed':peak>=75 and final['missed']>0 and final['correct']>0 and not errs}
  (O/'natural-pressure-journey.json').write_text(json.dumps(report,indent=2));video=page.video;page.context.close();video.save_as(str(O/'natural-pressure-journey.webm'));video.delete();b.close()
  print(json.dumps({k:v for k,v in report.items() if k!='observations'}),flush=True);assert report['passed'],report

@@ -38,7 +38,7 @@ def main():
     try:page.screenshot(path=str(OUT/f'mechanics-failure-{len(rows)+1}.png'),timeout=5000)
     except Exception:pass
    rows.append(r);print(r['status'],name,r.get('error',''),flush=True)
-  def ruleset():assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
+  def ruleset():assert api('return t.info.ruleset;')=='typekeeper-3.6.4'
   check('Built browser contains the new versioned mechanics, not the v3 bundle',ruleset)
   def stored():
    run();api('t.model.inventory.fire=2;t.model.inventory.wind=1;t.flush();')

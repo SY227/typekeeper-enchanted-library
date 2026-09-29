@@ -10,7 +10,7 @@ from inline_fixture import inline_fixture
 from module_fixture import module_fixture
 ROOT=Path(__file__).resolve().parents[1]
 a=argparse.ArgumentParser();a.add_argument('--mode',choices=['standalone','modules'],default='standalone');args=a.parse_args()
-OUT=ROOT/'qa363';SHOTS=OUT/'atrium-screenshots';SHOTS.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'qa364';SHOTS=OUT/'atrium-screenshots';SHOTS.mkdir(parents=True,exist_ok=True)
 rows=[];errors=[];evidence={}
 VP=[(1920,1080),(1440,900),(1366,768),(1280,720),(1024,768),(1024,600),(800,600),(960,540),(640,480),(2560,1080),(768,1024),(360,640)]
 with sync_playwright() as p:
@@ -33,10 +33,10 @@ with sync_playwright() as p:
    except:pass
   rows.append(row);print(json.dumps(row),flush=True)
  def identity():
-  assert page.title().endswith('v3.6.3');assert api('return t.info.version;')=='3.6.3';assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
+  assert page.title().endswith('v3.6.4');assert api('return t.info.version;')=='3.6.4';assert api('return t.info.ruleset;')=='typekeeper-3.6.4'
   q=b.new_page();qe=[];q.on('pageerror',lambda e:qe.append(str(e)))
   q.set_content(inline_fixture(ROOT,False) if args.mode=='standalone' else module_fixture(ROOT,False));q.wait_for_selector('[data-action="start"]');assert q.evaluate('typeof __TM_TEST__')=='undefined';assert not qe;q.close()
- check('Matching 3.6.3 identity and exact non-diagnostic startup',identity)
+ check('Matching 3.6.4 identity and exact non-diagnostic startup',identity)
  def prewarmed():
   d=api('return r.atrium.snapshot();');assert d['entries']==2 and d['builds']==2 and d['status']=='ready';assert d['bytes']==7584000;evidence['prewarmed']=d
  check('Both bounded atmosphere surfaces are built under loading, before the first key',prewarmed)
@@ -120,6 +120,6 @@ with sync_playwright() as p:
    start(lev);api("t.word('WONDER','normal',444,307);t.word('CRYSTAL','ice',786,431);t.flush();");page.locator('#typing-input').fill('WON');page.wait_for_timeout(70);shot(f'chapter-{lev:02d}')
  check('Actual rendered chapter and gameplay previews use the shipping painter',showcase)
  check('Completed Open Atrium suite has zero unhandled page exceptions',lambda:None)
- report={'version':'3.6.3','mode':args.mode,'scope':__doc__,'browser':b.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(x['status']=='PASS' for x in rows),'failed':sum(x['status']=='FAIL' for x in rows),'errors':errors,'evidence':evidence}
+ report={'version':'3.6.4','mode':args.mode,'scope':__doc__,'browser':b.version,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'tests':rows,'passed':sum(x['status']=='PASS' for x in rows),'failed':sum(x['status']=='FAIL' for x in rows),'errors':errors,'evidence':evidence}
  (OUT/f'atrium-{args.mode}.json').write_text(json.dumps(report,indent=2)+'\n');b.close()
  raise SystemExit(bool(report['failed']))

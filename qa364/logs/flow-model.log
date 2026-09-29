@@ -1,0 +1,208 @@
+{
+  "scope": "Shipping v3.6.4 model with explicit 13-to-14 quota revision; controlled end-of-chapter fixtures plus full deterministic campaign liveness.",
+  "boundaryChecks": 23040,
+  "passed": 23040,
+  "failed": 0,
+  "scenarios": 20,
+  "seeds": 8,
+  "paces": 3,
+  "chapters": 48,
+  "maxLastWordWait": 15.05,
+  "campaigns": [
+    {
+      "pace": "relaxed",
+      "seed": 9,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 82333,
+      "maxEmptyGap": 4.367,
+      "casts": {
+        "fire": 37,
+        "ice": 38,
+        "slow": 37,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "relaxed",
+      "seed": 377,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 81133,
+      "maxEmptyGap": 5.267,
+      "casts": {
+        "fire": 37,
+        "ice": 37,
+        "slow": 38,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "relaxed",
+      "seed": 9991,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 81769,
+      "maxEmptyGap": 4.9,
+      "casts": {
+        "fire": 38,
+        "ice": 36,
+        "slow": 38,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "relaxed",
+      "seed": 775533,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 81085,
+      "maxEmptyGap": 5.467,
+      "casts": {
+        "fire": 37,
+        "ice": 35,
+        "slow": 38,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "classic",
+      "seed": 9,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 77797,
+      "maxEmptyGap": 2.8,
+      "casts": {
+        "fire": 37,
+        "ice": 38,
+        "slow": 37,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "classic",
+      "seed": 377,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 76681,
+      "maxEmptyGap": 3.267,
+      "casts": {
+        "fire": 37,
+        "ice": 37,
+        "slow": 38,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "classic",
+      "seed": 9991,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 77245,
+      "maxEmptyGap": 3.033,
+      "casts": {
+        "fire": 38,
+        "ice": 36,
+        "slow": 38,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "classic",
+      "seed": 775533,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 76537,
+      "maxEmptyGap": 3.783,
+      "casts": {
+        "fire": 37,
+        "ice": 35,
+        "slow": 38,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "maniac",
+      "seed": 9,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 74977,
+      "maxEmptyGap": 2.167,
+      "casts": {
+        "fire": 37,
+        "ice": 38,
+        "slow": 37,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "maniac",
+      "seed": 377,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 73741,
+      "maxEmptyGap": 2.533,
+      "casts": {
+        "fire": 37,
+        "ice": 37,
+        "slow": 38,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "maniac",
+      "seed": 9991,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 74317,
+      "maxEmptyGap": 2.333,
+      "casts": {
+        "fire": 38,
+        "ice": 36,
+        "slow": 38,
+        "wind": 0
+      }
+    },
+    {
+      "pace": "maniac",
+      "seed": 775533,
+      "completed": true,
+      "chapters": 48,
+      "phase": "level-clear",
+      "level": 48,
+      "steps": 73585,
+      "maxEmptyGap": 2.933,
+      "casts": {
+        "fire": 37,
+        "ice": 35,
+        "slow": 38,
+        "wind": 0
+      }
+    }
+  ],
+  "ticks": 8914012,
+  "simulatedSeconds": 148567,
+  "wallSeconds": 24.375
+}

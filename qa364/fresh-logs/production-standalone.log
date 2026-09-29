@@ -1,0 +1,32 @@
+{"name": "Shipped document, running model and build tag all identify the new quota release", "status": "PASS", "seconds": 0.01}
+{"name": "All 48 chapter HUD denominators agree with the model in all three paces; none is 13", "status": "PASS", "seconds": 1.136}
+{"name": "classic chapter 3: real Enter at word 13 keeps playing; word 14 clears exactly once", "status": "PASS", "seconds": 1.237}
+{"name": "classic chapter 4: real Enter at word 13 keeps playing; word 14 clears exactly once", "status": "PASS", "seconds": 1.115}
+{"name": "relaxed chapter 3: real Enter at word 13 keeps playing; word 14 clears exactly once", "status": "PASS", "seconds": 0.821}
+{"name": "relaxed chapter 4: real Enter at word 13 keeps playing; word 14 clears exactly once", "status": "PASS", "seconds": 0.681}
+{"name": "maniac chapter 3: real Enter at word 13 keeps playing; word 14 clears exactly once", "status": "PASS", "seconds": 0.551}
+{"name": "maniac chapter 4: real Enter at word 13 keeps playing; word 14 clears exactly once", "status": "PASS", "seconds": 0.567}
+{"name": "Real room-layer pixels change only in the shelf art; live-word corridor remains byte-identical", "status": "PASS", "seconds": 0.726}
+{"name": "Regenerating aged paper/leather produces identical pixels without moving either model RNG", "status": "PASS", "seconds": 0.224}
+{"name": "Repeated traversal of every wing keeps the existing two-layer cache bounded", "status": "PASS", "seconds": 2.293}
+{"name": "1920x1080: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 1.125}
+{"name": "1440x900: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.238}
+{"name": "1366x768: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.651}
+{"name": "1280x720: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.221}
+{"name": "1024x768: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.18}
+{"name": "1024x600: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.494}
+{"name": "800x600: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.427}
+{"name": "960x540: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.183}
+{"name": "640x480: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.179}
+{"name": "2560x1080: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.235}
+{"name": "768x1024: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.201}
+{"name": "360x640: fourteen-word HUD, targeting, paper input and score retain their layout under pressure", "status": "PASS", "seconds": 0.194}
+{"name": "High contrast and reduced motion retain the physical book without new background animation", "status": "PASS", "seconds": 0.571}
+{"name": "Actual file import retains old PBs and displays the continued old run as EARLIER RULES", "status": "PASS", "seconds": 1.346}
+{"name": "After migration, Fresh Journey preserves all unlocks/PBs and later chapter Practice does not overwrite Continue", "status": "PASS", "seconds": 2.393}
+{"name": "Actual download/export preserves historical score collections and earned chapter access", "status": "PASS", "seconds": 0.513}
+{"name": "FIRE keeps its original action/resource behavior beside the new shelf artwork", "status": "PASS", "seconds": 0.9}
+{"name": "ICE keeps its original action/resource behavior beside the new shelf artwork", "status": "PASS", "seconds": 0.76}
+{"name": "SLOW keeps its original action/resource behavior beside the new shelf artwork", "status": "PASS", "seconds": 0.588}
+{"name": "WIND keeps its original action/resource behavior beside the new shelf artwork", "status": "PASS", "seconds": 0.627}
+{"name": "Unmodified production document starts without exposing the diagnostic API", "status": "PASS", "seconds": 3.489}

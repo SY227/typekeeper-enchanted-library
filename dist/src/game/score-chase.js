@@ -1,4 +1,4 @@
-import { RULESET_VERSION } from './rules.js?v=3.6.3-447ce8d517d13011';
+import { RULESET_VERSION, PREVIOUS_RULESET_VERSION } from './rules.js?v=3.6.4-8959ae504cb14f7f';
 
 /** Score Chase always compares the number shown in SCORE: the running total.
  * Campaign totals are indexed by reached chapter AND starting chapter. They must
@@ -19,8 +19,10 @@ export function scoreChaseKey(scope={}) {
  if(mode==='endless'?chapter!==0||startLevel<49:!chaseInteger(chapter,1,48)||startLevel>chapter||mode==='practice'&&startLevel!==chapter)return null;
  return `running-v1|${ruleset}|${pace}|${mode}|${startLevel}|${chapter}`;
 }
-export function sanitizeScoreChaseRecord(input) {
- if(!input||input.metric!=='running-total'||!scoreChaseKey(input)||input.ruleset!==RULESET_VERSION||!chaseInteger(input.score))return null;
+export function sanitizeScoreChaseRecord(input,{allowPrevious=false}={}) {
+ // Historical scores may be kept on import, never promoted into current targets.
+ const allowed=input?.ruleset===RULESET_VERSION||(allowPrevious&&input?.ruleset===PREVIOUS_RULESET_VERSION);
+ if(!input||input.metric!=='running-total'||!scoreChaseKey(input)||!allowed||!chaseInteger(input.score))return null;
  return {...scoreChaseScope(input),metric:'running-total',score:input.score};
 }
 export function scoreChaseDescription(scope) {

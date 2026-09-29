@@ -1,0 +1,20 @@
+[
+  {
+    "name": "live-journey",
+    "command": [
+      "python3",
+      "e2e/live_journey.py"
+    ],
+    "exit": 0,
+    "seconds": 137.08
+  },
+  {
+    "name": "pressure-journey",
+    "command": [
+      "python3",
+      "e2e/impact_pressure_journey.py"
+    ],
+    "exit": 0,
+    "seconds": 46.61
+  }
+]

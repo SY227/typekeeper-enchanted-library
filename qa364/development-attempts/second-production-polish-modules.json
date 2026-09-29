@@ -1,0 +1,1122 @@
+{
+  "version": "3.6.4",
+  "mode": "modules",
+  "scope": "v3.6.4 shipping-code integration: authored quotas, bindery, and historical saves.\nUses the documented in-memory transport and an explicit storage adapter because\nnative browser-origin navigation is blocked here. Not real-device/human QA.\n",
+  "browser": "144.0.7559.96",
+  "shippingSHA256": "d663219de5939ec662f0a41d9bf45de3db377b97ac8a94a016f852d127253039",
+  "passed": 31,
+  "failed": 1,
+  "tests": [
+    {
+      "name": "Shipped document, running model and build tag all identify the new quota release",
+      "status": "PASS",
+      "seconds": 0.114
+    },
+    {
+      "name": "All 48 chapter HUD denominators agree with the model in all three paces; none is 13",
+      "status": "PASS",
+      "seconds": 2.485
+    },
+    {
+      "name": "classic chapter 3: real Enter at word 13 keeps playing; word 14 clears exactly once",
+      "status": "PASS",
+      "seconds": 3.271
+    },
+    {
+      "name": "classic chapter 4: real Enter at word 13 keeps playing; word 14 clears exactly once",
+      "status": "PASS",
+      "seconds": 3.037
+    },
+    {
+      "name": "relaxed chapter 3: real Enter at word 13 keeps playing; word 14 clears exactly once",
+      "status": "PASS",
+      "seconds": 1.531
+    },
+    {
+      "name": "relaxed chapter 4: real Enter at word 13 keeps playing; word 14 clears exactly once",
+      "status": "PASS",
+      "seconds": 2.073
+    },
+    {
+      "name": "maniac chapter 3: real Enter at word 13 keeps playing; word 14 clears exactly once",
+      "status": "PASS",
+      "seconds": 1.862
+    },
+    {
+      "name": "maniac chapter 4: real Enter at word 13 keeps playing; word 14 clears exactly once",
+      "status": "PASS",
+      "seconds": 2.015
+    },
+    {
+      "name": "Real room-layer pixels change only in the shelf art; live-word corridor remains byte-identical",
+      "status": "PASS",
+      "seconds": 1.83
+    },
+    {
+      "name": "Regenerating aged paper/leather produces identical pixels without moving either model RNG",
+      "status": "PASS",
+      "seconds": 0.474
+    },
+    {
+      "name": "Repeated traversal of every wing keeps the existing two-layer cache bounded",
+      "status": "PASS",
+      "seconds": 3.942
+    },
+    {
+      "name": "1920x1080: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 4.106
+    },
+    {
+      "name": "1440x900: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 0.544
+    },
+    {
+      "name": "1366x768: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 2.046
+    },
+    {
+      "name": "1280x720: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 0.702
+    },
+    {
+      "name": "1024x768: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 0.551
+    },
+    {
+      "name": "1024x600: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 1.916
+    },
+    {
+      "name": "800x600: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 1.433
+    },
+    {
+      "name": "960x540: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 0.56
+    },
+    {
+      "name": "640x480: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 0.527
+    },
+    {
+      "name": "2560x1080: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 0.774
+    },
+    {
+      "name": "768x1024: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 0.774
+    },
+    {
+      "name": "360x640: fourteen-word HUD, targeting, paper input and score retain their layout under pressure",
+      "status": "PASS",
+      "seconds": 0.441
+    },
+    {
+      "name": "High contrast and reduced motion retain the physical book without new background animation",
+      "status": "PASS",
+      "seconds": 2.134
+    },
+    {
+      "name": "Actual file import retains old PBs and displays the continued old run as EARLIER RULES",
+      "status": "PASS",
+      "seconds": 3.578
+    },
+    {
+      "name": "After migration, Fresh Journey preserves all unlocks/PBs and later chapter Practice does not overwrite Continue",
+      "status": "FAIL",
+      "seconds": 6.766,
+      "error": "Locator.click: Error: strict mode violation: locator(\"[data-wing=\\\"1\\\"]\") resolved to 2 elements:\n    1) <div id=\"stage\" tabindex=\"-1\" data-wing=\"1\" data-view=\"map\" data-pressure=\"calm\" class=\"focused-hud high-contrast chapter-enter dialog-open\">\u2026</div> aka locator(\"#stage\")\n    2) <button class=\"\" data-wing=\"1\" aria-pressed=\"false\" aria-label=\"The Glasshouse\">\u2026</button> aka get_by_role(\"button\", name=\"The Glasshouse\")\n\nCall log:\n  - waiting for locator(\"[data-wing=\\\"1\\\"]\")\n",
+      "trace": "Traceback (most recent call last):\n  File \"/mnt/data/polish364/work/Typekeeper_Enchanted_Library_v3_6_4/e2e/production_polish_tests.py\", line 33, in check\n    try:fn();assert not errors,errors;row={'name':name,'status':'PASS','seconds':round(time.monotonic()-start,3)}\n        ~~^^\n  File \"/mnt/data/polish364/work/Typekeeper_Enchanted_Library_v3_6_4/e2e/production_polish_tests.py\", line 102, in restart_preserves\n    cp=api('return s.checkpoint();');api('t.show(\"menu\");t.show(\"map\");');page.locator('[data-wing=\"1\"]').click();page.locator('[data-stage=\"12\"]').click();assert api('return m.level;')==12;assert api('return s.checkpoint();')==cp\n                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/sync_api/_generated.py\", line 15637, in click\n    self._sync(\n    ~~~~~~~~~~^\n        self._impl_obj.click(\n        ^^^^^^^^^^^^^^^^^^^^^\n    ...<10 lines>...\n        )\n        ^\n    )\n    ^\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_locator.py\", line 162, in click\n    return await self._frame._click(self._selector, strict=True, **params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_frame.py\", line 566, in _click\n    await self._channel.send(\"click\", self._timeout, locals_to_params(locals()))\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    )\n    ^\n  File \"/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.Error: Locator.click: Error: strict mode violation: locator(\"[data-wing=\\\"1\\\"]\") resolved to 2 elements:\n    1) <div id=\"stage\" tabindex=\"-1\" data-wing=\"1\" data-view=\"map\" data-pressure=\"calm\" class=\"focused-hud high-contrast chapter-enter dialog-open\">\u2026</div> aka locator(\"#stage\")\n    2) <button class=\"\" data-wing=\"1\" aria-pressed=\"false\" aria-label=\"The Glasshouse\">\u2026</button> aka get_by_role(\"button\", name=\"The Glasshouse\")\n\nCall log:\n  - waiting for locator(\"[data-wing=\\\"1\\\"]\")\n\n"
+    },
+    {
+      "name": "Actual download/export preserves historical score collections and earned chapter access",
+      "status": "PASS",
+      "seconds": 0.795
+    },
+    {
+      "name": "FIRE keeps its original action/resource behavior beside the new shelf artwork",
+      "status": "PASS",
+      "seconds": 2.677
+    },
+    {
+      "name": "ICE keeps its original action/resource behavior beside the new shelf artwork",
+      "status": "PASS",
+      "seconds": 1.336
+    },
+    {
+      "name": "SLOW keeps its original action/resource behavior beside the new shelf artwork",
+      "status": "PASS",
+      "seconds": 1.422
+    },
+    {
+      "name": "WIND keeps its original action/resource behavior beside the new shelf artwork",
+      "status": "PASS",
+      "seconds": 1.457
+    },
+    {
+      "name": "Unmodified production document starts without exposing the diagnostic API",
+      "status": "PASS",
+      "seconds": 9.025
+    }
+  ],
+  "pageerrors": [],
+  "evidence": {
+    "quotaMatrix": [
+      {
+        "pace": "classic",
+        "level": 1,
+        "quota": 12,
+        "text": "0 / 12"
+      },
+      {
+        "pace": "classic",
+        "level": 2,
+        "quota": 12,
+        "text": "0 / 12"
+      },
+      {
+        "pace": "classic",
+        "level": 3,
+        "quota": 14,
+        "text": "0 / 14"
+      },
+      {
+        "pace": "classic",
+        "level": 4,
+        "quota": 14,
+        "text": "0 / 14"
+      },
+      {
+        "pace": "classic",
+        "level": 5,
+        "quota": 14,
+        "text": "0 / 14"
+      },
+      {
+        "pace": "classic",
+        "level": 6,
+        "quota": 18,
+        "text": "0 / 18"
+      },
+      {
+        "pace": "classic",
+        "level": 7,
+        "quota": 15,
+        "text": "0 / 15"
+      },
+      {
+        "pace": "classic",
+        "level": 8,
+        "quota": 15,
+        "text": "0 / 15"
+      },
+      {
+        "pace": "classic",
+        "level": 9,
+        "quota": 16,
+        "text": "0 / 16"
+      },
+      {
+        "pace": "classic",
+        "level": 10,
+        "quota": 16,
+        "text": "0 / 16"
+      },
+      {
+        "pace": "classic",
+        "level": 11,
+        "quota": 17,
+        "text": "0 / 17"
+      },
+      {
+        "pace": "classic",
+        "level": 12,
+        "quota": 21,
+        "text": "0 / 21"
+      },
+      {
+        "pace": "classic",
+        "level": 13,
+        "quota": 18,
+        "text": "0 / 18"
+      },
+      {
+        "pace": "classic",
+        "level": 14,
+        "quota": 18,
+        "text": "0 / 18"
+      },
+      {
+        "pace": "classic",
+        "level": 15,
+        "quota": 19,
+        "text": "0 / 19"
+      },
+      {
+        "pace": "classic",
+        "level": 16,
+        "quota": 19,
+        "text": "0 / 19"
+      },
+      {
+        "pace": "classic",
+        "level": 17,
+        "quota": 20,
+        "text": "0 / 20"
+      },
+      {
+        "pace": "classic",
+        "level": 18,
+        "quota": 24,
+        "text": "0 / 24"
+      },
+      {
+        "pace": "classic",
+        "level": 19,
+        "quota": 21,
+        "text": "0 / 21"
+      },
+      {
+        "pace": "classic",
+        "level": 20,
+        "quota": 21,
+        "text": "0 / 21"
+      },
+      {
+        "pace": "classic",
+        "level": 21,
+        "quota": 22,
+        "text": "0 / 22"
+      },
+      {
+        "pace": "classic",
+        "level": 22,
+        "quota": 22,
+        "text": "0 / 22"
+      },
+      {
+        "pace": "classic",
+        "level": 23,
+        "quota": 23,
+        "text": "0 / 23"
+      },
+      {
+        "pace": "classic",
+        "level": 24,
+        "quota": 27,
+        "text": "0 / 27"
+      },
+      {
+        "pace": "classic",
+        "level": 25,
+        "quota": 24,
+        "text": "0 / 24"
+      },
+      {
+        "pace": "classic",
+        "level": 26,
+        "quota": 24,
+        "text": "0 / 24"
+      },
+      {
+        "pace": "classic",
+        "level": 27,
+        "quota": 25,
+        "text": "0 / 25"
+      },
+      {
+        "pace": "classic",
+        "level": 28,
+        "quota": 25,
+        "text": "0 / 25"
+      },
+      {
+        "pace": "classic",
+        "level": 29,
+        "quota": 26,
+        "text": "0 / 26"
+      },
+      {
+        "pace": "classic",
+        "level": 30,
+        "quota": 30,
+        "text": "0 / 30"
+      },
+      {
+        "pace": "classic",
+        "level": 31,
+        "quota": 27,
+        "text": "0 / 27"
+      },
+      {
+        "pace": "classic",
+        "level": 32,
+        "quota": 27,
+        "text": "0 / 27"
+      },
+      {
+        "pace": "classic",
+        "level": 33,
+        "quota": 28,
+        "text": "0 / 28"
+      },
+      {
+        "pace": "classic",
+        "level": 34,
+        "quota": 28,
+        "text": "0 / 28"
+      },
+      {
+        "pace": "classic",
+        "level": 35,
+        "quota": 29,
+        "text": "0 / 29"
+      },
+      {
+        "pace": "classic",
+        "level": 36,
+        "quota": 33,
+        "text": "0 / 33"
+      },
+      {
+        "pace": "classic",
+        "level": 37,
+        "quota": 30,
+        "text": "0 / 30"
+      },
+      {
+        "pace": "classic",
+        "level": 38,
+        "quota": 30,
+        "text": "0 / 30"
+      },
+      {
+        "pace": "classic",
+        "level": 39,
+        "quota": 31,
+        "text": "0 / 31"
+      },
+      {
+        "pace": "classic",
+        "level": 40,
+        "quota": 31,
+        "text": "0 / 31"
+      },
+      {
+        "pace": "classic",
+        "level": 41,
+        "quota": 32,
+        "text": "0 / 32"
+      },
+      {
+        "pace": "classic",
+        "level": 42,
+        "quota": 36,
+        "text": "0 / 36"
+      },
+      {
+        "pace": "classic",
+        "level": 43,
+        "quota": 33,
+        "text": "0 / 33"
+      },
+      {
+        "pace": "classic",
+        "level": 44,
+        "quota": 33,
+        "text": "0 / 33"
+      },
+      {
+        "pace": "classic",
+        "level": 45,
+        "quota": 34,
+        "text": "0 / 34"
+      },
+      {
+        "pace": "classic",
+        "level": 46,
+        "quota": 34,
+        "text": "0 / 34"
+      },
+      {
+        "pace": "classic",
+        "level": 47,
+        "quota": 35,
+        "text": "0 / 35"
+      },
+      {
+        "pace": "classic",
+        "level": 48,
+        "quota": 39,
+        "text": "0 / 39"
+      },
+      {
+        "pace": "relaxed",
+        "level": 1,
+        "quota": 12,
+        "text": "0 / 12"
+      },
+      {
+        "pace": "relaxed",
+        "level": 2,
+        "quota": 12,
+        "text": "0 / 12"
+      },
+      {
+        "pace": "relaxed",
+        "level": 3,
+        "quota": 14,
+        "text": "0 / 14"
+      },
+      {
+        "pace": "relaxed",
+        "level": 4,
+        "quota": 14,
+        "text": "0 / 14"
+      },
+      {
+        "pace": "relaxed",
+        "level": 5,
+        "quota": 14,
+        "text": "0 / 14"
+      },
+      {
+        "pace": "relaxed",
+        "level": 6,
+        "quota": 18,
+        "text": "0 / 18"
+      },
+      {
+        "pace": "relaxed",
+        "level": 7,
+        "quota": 15,
+        "text": "0 / 15"
+      },
+      {
+        "pace": "relaxed",
+        "level": 8,
+        "quota": 15,
+        "text": "0 / 15"
+      },
+      {
+        "pace": "relaxed",
+        "level": 9,
+        "quota": 16,
+        "text": "0 / 16"
+      },
+      {
+        "pace": "relaxed",
+        "level": 10,
+        "quota": 16,
+        "text": "0 / 16"
+      },
+      {
+        "pace": "relaxed",
+        "level": 11,
+        "quota": 17,
+        "text": "0 / 17"
+      },
+      {
+        "pace": "relaxed",
+        "level": 12,
+        "quota": 21,
+        "text": "0 / 21"
+      },
+      {
+        "pace": "relaxed",
+        "level": 13,
+        "quota": 18,
+        "text": "0 / 18"
+      },
+      {
+        "pace": "relaxed",
+        "level": 14,
+        "quota": 18,
+        "text": "0 / 18"
+      },
+      {
+        "pace": "relaxed",
+        "level": 15,
+        "quota": 19,
+        "text": "0 / 19"
+      },
+      {
+        "pace": "relaxed",
+        "level": 16,
+        "quota": 19,
+        "text": "0 / 19"
+      },
+      {
+        "pace": "relaxed",
+        "level": 17,
+        "quota": 20,
+        "text": "0 / 20"
+      },
+      {
+        "pace": "relaxed",
+        "level": 18,
+        "quota": 24,
+        "text": "0 / 24"
+      },
+      {
+        "pace": "relaxed",
+        "level": 19,
+        "quota": 21,
+        "text": "0 / 21"
+      },
+      {
+        "pace": "relaxed",
+        "level": 20,
+        "quota": 21,
+        "text": "0 / 21"
+      },
+      {
+        "pace": "relaxed",
+        "level": 21,
+        "quota": 22,
+        "text": "0 / 22"
+      },
+      {
+        "pace": "relaxed",
+        "level": 22,
+        "quota": 22,
+        "text": "0 / 22"
+      },
+      {
+        "pace": "relaxed",
+        "level": 23,
+        "quota": 23,
+        "text": "0 / 23"
+      },
+      {
+        "pace": "relaxed",
+        "level": 24,
+        "quota": 27,
+        "text": "0 / 27"
+      },
+      {
+        "pace": "relaxed",
+        "level": 25,
+        "quota": 24,
+        "text": "0 / 24"
+      },
+      {
+        "pace": "relaxed",
+        "level": 26,
+        "quota": 24,
+        "text": "0 / 24"
+      },
+      {
+        "pace": "relaxed",
+        "level": 27,
+        "quota": 25,
+        "text": "0 / 25"
+      },
+      {
+        "pace": "relaxed",
+        "level": 28,
+        "quota": 25,
+        "text": "0 / 25"
+      },
+      {
+        "pace": "relaxed",
+        "level": 29,
+        "quota": 26,
+        "text": "0 / 26"
+      },
+      {
+        "pace": "relaxed",
+        "level": 30,
+        "quota": 30,
+        "text": "0 / 30"
+      },
+      {
+        "pace": "relaxed",
+        "level": 31,
+        "quota": 27,
+        "text": "0 / 27"
+      },
+      {
+        "pace": "relaxed",
+        "level": 32,
+        "quota": 27,
+        "text": "0 / 27"
+      },
+      {
+        "pace": "relaxed",
+        "level": 33,
+        "quota": 28,
+        "text": "0 / 28"
+      },
+      {
+        "pace": "relaxed",
+        "level": 34,
+        "quota": 28,
+        "text": "0 / 28"
+      },
+      {
+        "pace": "relaxed",
+        "level": 35,
+        "quota": 29,
+        "text": "0 / 29"
+      },
+      {
+        "pace": "relaxed",
+        "level": 36,
+        "quota": 33,
+        "text": "0 / 33"
+      },
+      {
+        "pace": "relaxed",
+        "level": 37,
+        "quota": 30,
+        "text": "0 / 30"
+      },
+      {
+        "pace": "relaxed",
+        "level": 38,
+        "quota": 30,
+        "text": "0 / 30"
+      },
+      {
+        "pace": "relaxed",
+        "level": 39,
+        "quota": 31,
+        "text": "0 / 31"
+      },
+      {
+        "pace": "relaxed",
+        "level": 40,
+        "quota": 31,
+        "text": "0 / 31"
+      },
+      {
+        "pace": "relaxed",
+        "level": 41,
+        "quota": 32,
+        "text": "0 / 32"
+      },
+      {
+        "pace": "relaxed",
+        "level": 42,
+        "quota": 36,
+        "text": "0 / 36"
+      },
+      {
+        "pace": "relaxed",
+        "level": 43,
+        "quota": 33,
+        "text": "0 / 33"
+      },
+      {
+        "pace": "relaxed",
+        "level": 44,
+        "quota": 33,
+        "text": "0 / 33"
+      },
+      {
+        "pace": "relaxed",
+        "level": 45,
+        "quota": 34,
+        "text": "0 / 34"
+      },
+      {
+        "pace": "relaxed",
+        "level": 46,
+        "quota": 34,
+        "text": "0 / 34"
+      },
+      {
+        "pace": "relaxed",
+        "level": 47,
+        "quota": 35,
+        "text": "0 / 35"
+      },
+      {
+        "pace": "relaxed",
+        "level": 48,
+        "quota": 39,
+        "text": "0 / 39"
+      },
+      {
+        "pace": "maniac",
+        "level": 1,
+        "quota": 12,
+        "text": "0 / 12"
+      },
+      {
+        "pace": "maniac",
+        "level": 2,
+        "quota": 12,
+        "text": "0 / 12"
+      },
+      {
+        "pace": "maniac",
+        "level": 3,
+        "quota": 14,
+        "text": "0 / 14"
+      },
+      {
+        "pace": "maniac",
+        "level": 4,
+        "quota": 14,
+        "text": "0 / 14"
+      },
+      {
+        "pace": "maniac",
+        "level": 5,
+        "quota": 14,
+        "text": "0 / 14"
+      },
+      {
+        "pace": "maniac",
+        "level": 6,
+        "quota": 18,
+        "text": "0 / 18"
+      },
+      {
+        "pace": "maniac",
+        "level": 7,
+        "quota": 15,
+        "text": "0 / 15"
+      },
+      {
+        "pace": "maniac",
+        "level": 8,
+        "quota": 15,
+        "text": "0 / 15"
+      },
+      {
+        "pace": "maniac",
+        "level": 9,
+        "quota": 16,
+        "text": "0 / 16"
+      },
+      {
+        "pace": "maniac",
+        "level": 10,
+        "quota": 16,
+        "text": "0 / 16"
+      },
+      {
+        "pace": "maniac",
+        "level": 11,
+        "quota": 17,
+        "text": "0 / 17"
+      },
+      {
+        "pace": "maniac",
+        "level": 12,
+        "quota": 21,
+        "text": "0 / 21"
+      },
+      {
+        "pace": "maniac",
+        "level": 13,
+        "quota": 18,
+        "text": "0 / 18"
+      },
+      {
+        "pace": "maniac",
+        "level": 14,
+        "quota": 18,
+        "text": "0 / 18"
+      },
+      {
+        "pace": "maniac",
+        "level": 15,
+        "quota": 19,
+        "text": "0 / 19"
+      },
+      {
+        "pace": "maniac",
+        "level": 16,
+        "quota": 19,
+        "text": "0 / 19"
+      },
+      {
+        "pace": "maniac",
+        "level": 17,
+        "quota": 20,
+        "text": "0 / 20"
+      },
+      {
+        "pace": "maniac",
+        "level": 18,
+        "quota": 24,
+        "text": "0 / 24"
+      },
+      {
+        "pace": "maniac",
+        "level": 19,
+        "quota": 21,
+        "text": "0 / 21"
+      },
+      {
+        "pace": "maniac",
+        "level": 20,
+        "quota": 21,
+        "text": "0 / 21"
+      },
+      {
+        "pace": "maniac",
+        "level": 21,
+        "quota": 22,
+        "text": "0 / 22"
+      },
+      {
+        "pace": "maniac",
+        "level": 22,
+        "quota": 22,
+        "text": "0 / 22"
+      },
+      {
+        "pace": "maniac",
+        "level": 23,
+        "quota": 23,
+        "text": "0 / 23"
+      },
+      {
+        "pace": "maniac",
+        "level": 24,
+        "quota": 27,
+        "text": "0 / 27"
+      },
+      {
+        "pace": "maniac",
+        "level": 25,
+        "quota": 24,
+        "text": "0 / 24"
+      },
+      {
+        "pace": "maniac",
+        "level": 26,
+        "quota": 24,
+        "text": "0 / 24"
+      },
+      {
+        "pace": "maniac",
+        "level": 27,
+        "quota": 25,
+        "text": "0 / 25"
+      },
+      {
+        "pace": "maniac",
+        "level": 28,
+        "quota": 25,
+        "text": "0 / 25"
+      },
+      {
+        "pace": "maniac",
+        "level": 29,
+        "quota": 26,
+        "text": "0 / 26"
+      },
+      {
+        "pace": "maniac",
+        "level": 30,
+        "quota": 30,
+        "text": "0 / 30"
+      },
+      {
+        "pace": "maniac",
+        "level": 31,
+        "quota": 27,
+        "text": "0 / 27"
+      },
+      {
+        "pace": "maniac",
+        "level": 32,
+        "quota": 27,
+        "text": "0 / 27"
+      },
+      {
+        "pace": "maniac",
+        "level": 33,
+        "quota": 28,
+        "text": "0 / 28"
+      },
+      {
+        "pace": "maniac",
+        "level": 34,
+        "quota": 28,
+        "text": "0 / 28"
+      },
+      {
+        "pace": "maniac",
+        "level": 35,
+        "quota": 29,
+        "text": "0 / 29"
+      },
+      {
+        "pace": "maniac",
+        "level": 36,
+        "quota": 33,
+        "text": "0 / 33"
+      },
+      {
+        "pace": "maniac",
+        "level": 37,
+        "quota": 30,
+        "text": "0 / 30"
+      },
+      {
+        "pace": "maniac",
+        "level": 38,
+        "quota": 30,
+        "text": "0 / 30"
+      },
+      {
+        "pace": "maniac",
+        "level": 39,
+        "quota": 31,
+        "text": "0 / 31"
+      },
+      {
+        "pace": "maniac",
+        "level": 40,
+        "quota": 31,
+        "text": "0 / 31"
+      },
+      {
+        "pace": "maniac",
+        "level": 41,
+        "quota": 32,
+        "text": "0 / 32"
+      },
+      {
+        "pace": "maniac",
+        "level": 42,
+        "quota": 36,
+        "text": "0 / 36"
+      },
+      {
+        "pace": "maniac",
+        "level": 43,
+        "quota": 33,
+        "text": "0 / 33"
+      },
+      {
+        "pace": "maniac",
+        "level": 44,
+        "quota": 33,
+        "text": "0 / 33"
+      },
+      {
+        "pace": "maniac",
+        "level": 45,
+        "quota": 34,
+        "text": "0 / 34"
+      },
+      {
+        "pace": "maniac",
+        "level": 46,
+        "quota": 34,
+        "text": "0 / 34"
+      },
+      {
+        "pace": "maniac",
+        "level": 47,
+        "quota": 35,
+        "text": "0 / 35"
+      },
+      {
+        "pace": "maniac",
+        "level": 48,
+        "quota": 39,
+        "text": "0 / 39"
+      }
+    ],
+    "rasterScope": {
+      "changedPixels": 20660,
+      "outsideApprovedShelfAreas": 0,
+      "insideLiveWordCorridor": 0,
+      "changedRightBookPixels": 12339
+    },
+    "sceneCache": {
+      "samples": 96,
+      "maxEntries": 2,
+      "medianBuildMs": 12.2,
+      "maxBuildMs": 73.5
+    },
+    "viewports": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "cards": 6
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "cards": 6
+      },
+      {
+        "width": 1366,
+        "height": 768,
+        "cards": 6
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "cards": 6
+      },
+      {
+        "width": 1024,
+        "height": 768,
+        "cards": 6
+      },
+      {
+        "width": 1024,
+        "height": 600,
+        "cards": 6
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "cards": 6
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "cards": 6
+      },
+      {
+        "width": 640,
+        "height": 480,
+        "cards": 6
+      },
+      {
+        "width": 2560,
+        "height": 1080,
+        "cards": 0
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "cards": 6
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "cards": 6
+      }
+    ],
+    "oldSaveExport": {
+      "appVersion": "3.6.4",
+      "historicalChapterBests": 72,
+      "historicalRunningBests": 36,
+      "keptRecords": 3
+    }
+  }
+}

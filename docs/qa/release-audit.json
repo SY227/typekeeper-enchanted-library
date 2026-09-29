@@ -1,7 +1,7 @@
 {
   "scope": "Release payload, cache graph and launcher checks on Linux. Not a macOS GUI test.",
-  "version": "3.6.3",
-  "buildId": "3.6.3-447ce8d517d13011",
+  "version": "3.6.4",
+  "buildId": "3.6.4-8959ae504cb14f7f",
   "tests": [
     {
       "name": "Every static JS dependency and CSS entry carries the current content fingerprint",
@@ -16,7 +16,7 @@
       "status": "PASS"
     },
     {
-      "name": "Actual START_MAC.command from an unrelated working directory serves v3.6.3 on its new port",
+      "name": "Actual START_MAC.command from an unrelated working directory serves v3.6.4 on its new port",
       "status": "PASS"
     },
     {

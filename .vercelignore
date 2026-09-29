@@ -1,0 +1,14 @@
+node_modules/
+.git/
+.env
+.env.*
+asset-source/
+docs/
+e2e/
+qa*/
+tests/
+__pycache__/
+*.pyc
+PLAY.html
+SHA256SUMS.txt
+*.zip

@@ -1,0 +1,5554 @@
+{
+  "version": "3.6.4",
+  "scope": "Normal-clock overload/recovery observation. The initial fixture enters Practice\nchapter 12; subsequent words, pressure, points and resources are model-earned.\nKeyboard agent deliberately waits for misses, then types; not a human playtest.\n",
+  "shippingSHA256": "d663219de5939ec662f0a41d9bf45de3db377b97ac8a94a016f852d127253039",
+  "browser": "144.0.7559.96",
+  "seconds": 37.68,
+  "initial": {
+    "seed": 16112,
+    "wordSeed": 2805752281,
+    "sequenceVersion": 2,
+    "phase": "playing",
+    "level": 12,
+    "score": 0,
+    "progress": 0,
+    "quota": 21,
+    "danger": 0,
+    "buffer": "",
+    "time": 0,
+    "tick": 0,
+    "pace": "classic",
+    "mode": "practice",
+    "pressure": "calm",
+    "info": {
+      "level": 12,
+      "wing": 2,
+      "wingName": "The Glasshouse",
+      "wingStage": 6,
+      "title": "The Garden Gate",
+      "subtitle": "Let your focus grow",
+      "color": "#9ed4ba",
+      "seal": "II",
+      "story": "Past the window, a thousand stories are beginning to bloom.",
+      "trial": true,
+      "endless": false
+    },
+    "streak": 0,
+    "bestStreak": 0,
+    "correct": 0,
+    "wrong": 0,
+    "missed": 0,
+    "burned": 0,
+    "retries": 0,
+    "wpm": 0,
+    "accuracy": 100,
+    "inventory": {
+      "fire": 1,
+      "ice": 1,
+      "slow": 1,
+      "wind": 1
+    },
+    "economy": {
+      "version": 1,
+      "untilNext": 4,
+      "opportunities": 0,
+      "tutorialDone": true
+    },
+    "effects": {
+      "ice": 0,
+      "slow": 0
+    },
+    "trialRest": false,
+    "words": []
+  },
+  "peakDanger": 90.8,
+  "keyboardSubmissions": 22,
+  "last": {
+    "seed": 16112,
+    "wordSeed": 2805752281,
+    "sequenceVersion": 2,
+    "phase": "level-clear",
+    "level": 12,
+    "score": 2917,
+    "progress": 21,
+    "quota": 21,
+    "danger": 90.8,
+    "buffer": "",
+    "time": 36.216666666665894,
+    "tick": 2173,
+    "pace": "classic",
+    "mode": "practice",
+    "pressure": "celebrate",
+    "info": {
+      "level": 12,
+      "wing": 2,
+      "wingName": "The Glasshouse",
+      "wingStage": 6,
+      "title": "The Garden Gate",
+      "subtitle": "Let your focus grow",
+      "color": "#9ed4ba",
+      "seal": "II",
+      "story": "Past the window, a thousand stories are beginning to bloom.",
+      "trial": true,
+      "endless": false
+    },
+    "streak": 21,
+    "bestStreak": 21,
+    "correct": 21,
+    "wrong": 1,
+    "missed": 7,
+    "burned": 0,
+    "retries": 0,
+    "wpm": 44,
+    "accuracy": 95,
+    "inventory": {
+      "fire": 2,
+      "ice": 1,
+      "slow": 2,
+      "wind": 2
+    },
+    "economy": {
+      "version": 1,
+      "untilNext": 8,
+      "opportunities": 4,
+      "tutorialDone": true
+    },
+    "effects": {
+      "ice": 0,
+      "slow": 0
+    },
+    "trialRest": false,
+    "words": []
+  },
+  "observations": [
+    {
+      "wall": 0.02,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 0,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 0.356,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 0,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 0.444,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 0,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 0.565,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 0,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 0.732,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 0,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 0.82,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 0,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 0.932,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 0,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.056,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.13,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.216,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.289,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.374,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.448,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.524,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.597,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.694,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.777,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.853,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 1.924,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 1,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.008,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.096,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.171,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.25,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.332,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.41,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.502,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.576,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.647,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.739,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.835,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.911,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 2.986,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 2,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.075,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.163,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.246,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.329,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.407,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.549,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.626,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.726,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.812,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.887,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 3.967,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.055,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 3,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.133,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.213,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.385,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.461,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.54,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.623,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.704,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.786,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.872,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 4.944,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.025,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.099,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.186,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.283,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.371,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.498,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.578,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.677,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.763,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.843,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 5.92,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.005,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.088,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.171,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.245,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.323,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.4,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.475,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.556,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.638,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.714,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.799,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.878,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 6.957,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 7.03,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 7.106,
+      "phase": "playing",
+      "danger": 0,
+      "score": 0,
+      "correct": 0,
+      "missed": 0,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 7.192,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 7.266,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 7.356,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 7.437,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 811,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 7.51,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 800.3156003592148,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 7.583,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 798.1260546419421,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 7.654,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 797.7789165515559,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 7.729,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 797.5927430463412,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 7.844,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 797.5667260672654,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 7.923,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 797.561004098992,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 8.004,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 797.560283282857,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 8.077,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 797.5600797698723,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 8.157,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 797.560030850282,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 8.238,
+      "phase": "playing",
+      "danger": 12,
+      "score": 0,
+      "correct": 0,
+      "missed": 1,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 797.5600087036797,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 8.46,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 797.56000336607,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 8.573,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 797.56000336607,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 8.675,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 797.5600006914572,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 8.763,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 797.560000103617,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 8.86,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 797.5600000212446,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 8.957,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 786.1302022455297,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 9.063,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 784.5329351734621,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 9.155,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 784.2048250258706,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 9.256,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 784.132663079273,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 9.329,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 784.121893999282,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 9.406,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 784.1203890647937,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 9.482,
+      "phase": "playing",
+      "danger": 24,
+      "score": 0,
+      "correct": 0,
+      "missed": 2,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 784.1201095571022,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 9.564,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 784.1200225051888,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 9.643,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 784.1200046230094,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 9.726,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 784.1200009478547,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 9.808,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 784.1200002669073,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 9.884,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 772.7288970968627,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 9.993,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 770.2253018700379,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 10.068,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 769.8501304399078,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 10.143,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 769.8026217295428,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 10.23,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 769.7892437094272,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 10.309,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 769.7847842943786,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 10.383,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 769.7841611095282,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 10.455,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 769.7840453669758,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 10.548,
+      "phase": "playing",
+      "danger": 36.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 3,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 769.7840093192713,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 10.626,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 769.7840013938705,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 10.703,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 769.7840003925013,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 10.786,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 769.7840000806275,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 10.879,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 769.7840000227471,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 10.964,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 763.0771303164203,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 11.063,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 757.0121989762221,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 11.142,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 755.681955081063,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 11.221,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 755.496058986202,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 11.297,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 755.4578535237829,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 11.383,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 755.4500241080526,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 11.459,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 755.4487842943644,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 11.534,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 755.4482208501495,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 11.62,
+      "phase": "playing",
+      "danger": 49.599999999999994,
+      "score": 0,
+      "correct": 0,
+      "missed": 4,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 755.4480854118128,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 11.767,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 755.448012774927,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 11.848,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 755.4480019143621,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 11.93,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 755.4480002863285,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 12.028,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 751.5502178290899,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.108,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 743.256215737235,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.186,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.5516280993868,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.273,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.2023082791211,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.358,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1305511010083,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.439,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1158107618921,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.52,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1127813197053,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.596,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1122204309337,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.672,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120451949078,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.758,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120127506776,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.834,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120019071012,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.909,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120005370224,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 12.982,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120001512206,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.073,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120000226609,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.158,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120000046461,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.236,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120000009544,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.311,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120000002687,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.397,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120000000552,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.484,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120000000113,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.569,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120000000017,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.642,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120000000003,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.712,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120000000002,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.783,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.1120000000001,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.857,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.112,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 13.938,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.112,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 14.016,
+      "phase": "playing",
+      "danger": 62.39999999999999,
+      "score": 0,
+      "correct": 0,
+      "missed": 5,
+      "words": 5,
+      "stack": {
+        "x": 828,
+        "y": 741.112,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 14.174,
+      "phase": "playing",
+      "danger": 76,
+      "score": 0,
+      "correct": 0,
+      "missed": 6,
+      "words": 4,
+      "stack": {
+        "x": 828,
+        "y": 741.112,
+        "width": 58,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 1
+    },
+    {
+      "wall": 15.89,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 0,
+      "correct": 0,
+      "missed": 7,
+      "words": 5,
+      "stack": {
+        "x": 814.9039164755118,
+        "y": 710.5385553006824,
+        "width": 84.19216704897633,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 16.425,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 60,
+      "correct": 1,
+      "missed": 7,
+      "words": 4,
+      "stack": {
+        "x": 813.978026905731,
+        "y": 709.3040358743079,
+        "width": 86.04394618853809,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 16.953,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 120,
+      "correct": 2,
+      "missed": 7,
+      "words": 4,
+      "stack": {
+        "x": 813.9780000010697,
+        "y": 709.3040000014263,
+        "width": 86.04399999786057,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 17.526,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 190,
+      "correct": 3,
+      "missed": 7,
+      "words": 3,
+      "stack": {
+        "x": 813.9780000000001,
+        "y": 709.3040000000001,
+        "width": 86.04399999999987,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 18.061,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 260,
+      "correct": 4,
+      "missed": 7,
+      "words": 3,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 18.502,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 310,
+      "correct": 5,
+      "missed": 7,
+      "words": 2,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 19.178,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 450,
+      "correct": 6,
+      "missed": 7,
+      "words": 2,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 19.659,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 510,
+      "correct": 7,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 20.25,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 20.33,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 20.409,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 20.494,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 20.568,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 20.644,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 20.724,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 20.806,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 20.878,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 20.949,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 21.027,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 21.101,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 21.185,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 21.262,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 21.349,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 21.52,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 21.698,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 598,
+      "correct": 8,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 22.266,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 673,
+      "correct": 9,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 22.352,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 673,
+      "correct": 9,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 22.436,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 673,
+      "correct": 9,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 22.505,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 673,
+      "correct": 9,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 22.588,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 673,
+      "correct": 9,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 22.664,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 673,
+      "correct": 9,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 23.07,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 736,
+      "correct": 10,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 23.141,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 736,
+      "correct": 10,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 23.222,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 736,
+      "correct": 10,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 23.3,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 736,
+      "correct": 10,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 23.403,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 736,
+      "correct": 10,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 23.479,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 736,
+      "correct": 10,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 23.552,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 736,
+      "correct": 10,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 23.622,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 736,
+      "correct": 10,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 23.697,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 736,
+      "correct": 10,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 24.128,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 811,
+      "correct": 11,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 24.205,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 811,
+      "correct": 11,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 24.274,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 811,
+      "correct": 11,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 24.35,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 811,
+      "correct": 11,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 24.428,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 811,
+      "correct": 11,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 24.508,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 811,
+      "correct": 11,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 24.595,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 811,
+      "correct": 11,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 24.669,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 811,
+      "correct": 11,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 24.757,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 811,
+      "correct": 11,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 25.145,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 874,
+      "correct": 12,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 25.23,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 874,
+      "correct": 12,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 25.312,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 874,
+      "correct": 12,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 25.431,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 874,
+      "correct": 12,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 25.511,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 874,
+      "correct": 12,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 25.593,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 874,
+      "correct": 12,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 25.669,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 874,
+      "correct": 12,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 25.739,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 874,
+      "correct": 12,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.176,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.25,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.331,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.404,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.485,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.56,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.629,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.699,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.77,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.841,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.91,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 26.986,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.064,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.141,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.211,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.284,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.356,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.433,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.509,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.586,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.663,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.738,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.821,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.895,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 27.967,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 28.042,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 28.119,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 949,
+      "correct": 13,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 28.505,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1012,
+      "correct": 14,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 28.581,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1012,
+      "correct": 14,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 28.663,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1012,
+      "correct": 14,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 28.741,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1012,
+      "correct": 14,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 28.811,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1012,
+      "correct": 14,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 28.892,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1012,
+      "correct": 14,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 28.972,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1012,
+      "correct": 14,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 29.043,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1012,
+      "correct": 14,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 29.128,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1012,
+      "correct": 14,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 29.625,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1087,
+      "correct": 15,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 29.717,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1087,
+      "correct": 15,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 29.789,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1087,
+      "correct": 15,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 29.865,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1087,
+      "correct": 15,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 29.936,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1087,
+      "correct": 15,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 30.016,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1087,
+      "correct": 15,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 30.089,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1087,
+      "correct": 15,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 30.169,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1087,
+      "correct": 15,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 30.918,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1252,
+      "correct": 16,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 30.991,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1252,
+      "correct": 16,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 31.082,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1252,
+      "correct": 16,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 31.162,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1252,
+      "correct": 16,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 31.236,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1252,
+      "correct": 16,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 31.312,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1252,
+      "correct": 16,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 31.758,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1342,
+      "correct": 17,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 31.834,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1342,
+      "correct": 17,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 31.908,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1342,
+      "correct": 17,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 31.983,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1342,
+      "correct": 17,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 32.066,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1342,
+      "correct": 17,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 32.135,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1342,
+      "correct": 17,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 32.226,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1342,
+      "correct": 17,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 32.298,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1342,
+      "correct": 17,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 32.374,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1342,
+      "correct": 17,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 32.823,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 32.899,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 32.968,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.037,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.111,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.184,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.263,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.347,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.419,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.489,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.563,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.635,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.704,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.775,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.846,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.916,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 33.989,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 34.063,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 34.14,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 34.221,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 34.291,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 34.363,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 34.437,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 34.524,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 34.596,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 34.678,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1402,
+      "correct": 18,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 35.036,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1477,
+      "correct": 19,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 35.108,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1477,
+      "correct": 19,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 35.184,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1477,
+      "correct": 19,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 35.261,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1477,
+      "correct": 19,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 35.339,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1477,
+      "correct": 19,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 35.424,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1477,
+      "correct": 19,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 35.503,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1477,
+      "correct": 19,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 35.583,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1477,
+      "correct": 19,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 35.654,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1477,
+      "correct": 19,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 36.416,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1642,
+      "correct": 20,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 36.497,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1642,
+      "correct": 20,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 36.578,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1642,
+      "correct": 20,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 36.668,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1642,
+      "correct": 20,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 36.74,
+      "phase": "playing",
+      "danger": 90.8,
+      "score": 1642,
+      "correct": 20,
+      "missed": 7,
+      "words": 1,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    },
+    {
+      "wall": 37.176,
+      "phase": "level-clear",
+      "danger": 90.8,
+      "score": 2917,
+      "correct": 21,
+      "missed": 7,
+      "words": 0,
+      "stack": {
+        "x": 813.978,
+        "y": 709.304,
+        "width": 86.04400000000004,
+        "height": 20,
+        "angle": 0.0108450179280873
+      },
+      "arrivals": 0
+    }
+  ],
+  "screenshots": [
+    "natural-pressure.png",
+    "natural-recovery.png"
+  ],
+  "pageErrors": [],
+  "passed": true
+}

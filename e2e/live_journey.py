@@ -3,7 +3,7 @@
 from pathlib import Path
 import sys,json,time,hashlib
 from playwright.sync_api import sync_playwright
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa362';OUT.mkdir(exist_ok=True)
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa364';OUT.mkdir(exist_ok=True)
 sys.path.insert(0,str(ROOT/'e2e'));from inline_fixture import inline_fixture
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--autoplay-policy=no-user-gesture-required'])
@@ -33,7 +33,7 @@ with sync_playwright() as p:
     page.locator('#typing-input').focus();page.keyboard.type(word['text'],delay=25);page.keyboard.press('Enter');actions+=1
   page.wait_for_timeout(45)
  final=page.evaluate('()=>__TM_TEST__.snapshot()')
- report={'version':'3.6.2','scope':__doc__,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'browser':b.version,'seconds':round(time.monotonic()-started,2),'wordsTyped':actions,'passed5_13':seen13,'last':final,'levels':history,'pageerrors':errors}
+ report={'version':'3.6.4','scope':__doc__,'shippingSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'browser':b.version,'seconds':round(time.monotonic()-started,2),'wordsTyped':actions,'passed5_13':seen13,'last':final,'levels':history,'pageerrors':errors}
  (OUT/'live-journey.json').write_text(json.dumps(report,indent=2));page.screenshot(path=str(OUT/'live-end.png'));print(json.dumps({k:v for k,v in report.items() if k!='levels'}),flush=True)
  assert seen13 and final['level']>=7 and not errors, report
  video=page.video;page.context.close();video.save_as(str(OUT/'normal-clock-journey.webm'));video.delete();b.close()

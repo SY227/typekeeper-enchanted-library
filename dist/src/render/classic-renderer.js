@@ -1,6 +1,6 @@
-import { asset } from '../game/assets.js?v=3.6.3-447ce8d517d13011';
-import { pressureState } from '../game/pressure.js?v=3.6.3-447ce8d517d13011';
-import { WIDTH, HEIGHT, FIELD, POWER_META, POWERS, RULES, mulberry32 } from '../game/rules.js?v=3.6.3-447ce8d517d13011';
+import { asset } from '../game/assets.js?v=3.6.4-8959ae504cb14f7f';
+import { pressureState } from '../game/pressure.js?v=3.6.4-8959ae504cb14f7f';
+import { WIDTH, HEIGHT, FIELD, POWER_META, POWERS, RULES, mulberry32 } from '../game/rules.js?v=3.6.4-8959ae504cb14f7f';
 
 const GOLD='#d4aa5d';
 const targets={fire:{x:146,y:768},ice:{x:278,y:768},slow:{x:922,y:768},wind:{x:1054,y:768}};

@@ -8,7 +8,7 @@ from inline_fixture import inline_fixture
 from module_fixture import module_fixture
 ROOT=Path(__file__).resolve().parents[1]
 ap=argparse.ArgumentParser();ap.add_argument('--mode',choices=['standalone','modules'],default='standalone');args=ap.parse_args()
-OUT=ROOT/'qa362';OUT.mkdir(exist_ok=True);SHOTS=OUT/'impact-screenshots';SHOTS.mkdir(exist_ok=True)
+OUT=ROOT/'qa364';OUT.mkdir(exist_ok=True);SHOTS=OUT/'impact-screenshots';SHOTS.mkdir(exist_ok=True)
 rows=[];errors=[];evidence={}
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--autoplay-policy=no-user-gesture-required'])
@@ -31,9 +31,9 @@ with sync_playwright() as p:
    except:pass
   rows.append(row);print(json.dumps(row),flush=True)
  def identity():
-  assert api('return t.info.version;')=='3.6.2';assert page.title().endswith('v3.6.2');assert api('return t.info.ruleset;')=='typekeeper-3.2.1'
+  assert api('return t.info.version;')=='3.6.4';assert page.title().endswith('v3.6.4');assert api('return t.info.ruleset;')=='typekeeper-3.6.4'
   assert api('return Object.values(m.inventory).every(n=>n===0);')
- check('Current 3.6.2 identity, retained ruleset and zero-stock campaign start',identity)
+ check('Current 3.6.4 identity, retained ruleset and zero-stock campaign start',identity)
  def target():
   setup();words();fill('CLO');page.wait_for_timeout(30);v=api('return r.readability;');sel=[w for w in v if w['selected']];assert len(sel)==1 and sel[0]['text']=='CLOCKWORK';assert len([w for w in v if w['matching']])==2;assert api('return m.score;')==0;shot('matching-prefix')
  check('Common prefix inks both candidates but brackets only the model-priority target',target)
@@ -139,7 +139,7 @@ with sync_playwright() as p:
    api('m.words=[];m.spawn();t.flush();');kinds.append(api('return m.words[0].kind;'));enter(api('return m.words[0].text;'))
   assert kinds[:5]==['normal']*5 and kinds[5]=='ice';assert api('return m.inventory.ice;')==1
  check('Normally earned sixth opening card is still ICE; feedback does not manufacture resources',firstice)
- report={'version':'3.6.2','mode':args.mode,'runtimeSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'passed':sum(x['status']=='PASS' for x in rows),'failed':sum(x['status']=='FAIL' for x in rows),'checks':rows,'errors':errors,'evidence':evidence,'limits':'Controlled browser fixtures, native keyboard and Canvas. No human/device certification.'}
+ report={'version':'3.6.4','mode':args.mode,'runtimeSHA256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'passed':sum(x['status']=='PASS' for x in rows),'failed':sum(x['status']=='FAIL' for x in rows),'checks':rows,'errors':errors,'evidence':evidence,'limits':'Controlled browser fixtures, native keyboard and Canvas. No human/device certification.'}
  (OUT/f'impact-{args.mode}.json').write_text(json.dumps(report,indent=2))
  b.close()
 print(json.dumps({'passed':report['passed'],'failed':report['failed']}),flush=True)

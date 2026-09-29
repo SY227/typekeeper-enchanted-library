@@ -1,25 +1,15 @@
-TYPEKEEPER: ENCHANTED LIBRARY — v3.6.3
-OPEN ATRIUM
+TYPEKEEPER: ENCHANTED LIBRARY · v3.6.4 — BOUND & BALANCED
 
-Extract this entire folder first.
-Open PLAY.html to play the self-contained offline game.
-Mac local-server option: bash START_MAC.command
-Windows local-server option: START_WINDOWS.bat
-The launcher/browser title should show v3.6.3.
+1. Extract the entire ZIP into a new folder.
+2. Mac: bash START_MAC.command
+   Windows: START_WINDOWS.bat
+   Linux: bash START_LINUX.sh
+   Offline alternative: open PLAY.html.
+3. Check the title shows v3.6.4.
 
-The green ruled screen is removed. Words now occupy the original library space,
-with softly graded depth and lantern light rather than a replacement UI panel.
-Gameplay, UI positions, audio and saved-progress rules remain unchanged.
+Before moving to a new URL/browser, use Records > Export save in the old version.
+Import that backup in this version. Starting again does NOT lock earned chapters.
+Old best scores remain historical; new attempts use the 14-word scoring profile.
+Only chapters 3 and 4 change from 13 to 14. All other chapter quotas stay unchanged.
 
-Continue, Start from Chapter 1, and unlocked Chapters are retained.
-Restarting your journey does NOT erase your chapter unlocks, stars or best scores.
-
-Before switching a file location, browser, website address or port:
-Records -> Export save. At the new location use Records -> Import save.
-Stop the old local server with Control+C before starting the new server.
-
-Source: src/
-Runtime artwork/audio: public/assets/
-Editable original artwork/audio: asset-source/
-Prebuilt website: dist/
-Current QA and limitations: docs/QA_REPORT.md and qa363/
+Technical report: docs/QA_REPORT.md

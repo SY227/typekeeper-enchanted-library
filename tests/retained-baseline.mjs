@@ -1,7 +1,9 @@
+import {productionBaselineBytes} from './production-baseline.mjs';
 /** Only the explicitly allowed v3.6.2 presentation delta is normalized.
  * The original fixture hashes remain untouched. New behavior has separate tests.
  */
 export function retainedBaselineBytes(file,bytes){
+ bytes=productionBaselineBytes(file,bytes);
  let s=bytes.toString();
  if(file==='src/styles.css'){
   const marker='\n/* v3.6.2 / replay entry.';

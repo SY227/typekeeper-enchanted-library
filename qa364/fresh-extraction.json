@@ -1,0 +1,96 @@
+{
+  "version": "3.6.4",
+  "candidateSHA256": "a9f7dbcb9cfa257831a436cda5408e7213d536232544e3360e9a541a0169655f",
+  "candidateBytes": 94429867,
+  "crcPassed": true,
+  "perFileChecksumsPassed": true,
+  "commands": [
+    {
+      "name": "install",
+      "command": [
+        "npm",
+        "ci",
+        "--offline",
+        "--ignore-scripts"
+      ],
+      "exit": 0,
+      "seconds": 0.32
+    },
+    {
+      "name": "node",
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit": 0,
+      "seconds": 3.46
+    },
+    {
+      "name": "check",
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exit": 0,
+      "seconds": 1.52
+    },
+    {
+      "name": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "seconds": 0.62
+    },
+    {
+      "name": "production-standalone",
+      "command": [
+        "python3",
+        "e2e/production_polish_tests.py",
+        "--mode",
+        "standalone"
+      ],
+      "exit": 0,
+      "seconds": 31.23
+    },
+    {
+      "name": "production-modules",
+      "command": [
+        "python3",
+        "e2e/production_polish_tests.py",
+        "--mode",
+        "modules"
+      ],
+      "exit": 0,
+      "seconds": 28.84
+    },
+    {
+      "name": "launcher",
+      "command": [
+        "python3",
+        "scripts/release-audit.py"
+      ],
+      "exit": 0,
+      "seconds": 3.69
+    },
+    {
+      "name": "updater",
+      "command": [
+        "python3",
+        "scripts/test-update.py"
+      ],
+      "exit": 0,
+      "seconds": 7.69
+    }
+  ],
+  "allCommandsPassed": true,
+  "nodePassed": 854,
+  "nodeFailed": 0,
+  "repeatedBrowserChecks": 64,
+  "sameRuntimeOutputsAfterRebuild": 62,
+  "runtimeBytesUnchangedAfterAllTests": true,
+  "scope": "Freshly extracted complete ZIP, offline dependency installation, actual tests/rebuild. Browser transport limitations as in QA report."
+}

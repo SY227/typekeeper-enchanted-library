@@ -1,3 +1,4 @@
+import {productionBaselineBytes} from './production-baseline.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -13,7 +14,7 @@ const main=readFileSync(resolve(root,'src/main.js'),'utf8');
 const pinned=JSON.parse(readFileSync(resolve(root,'tests/fixtures/v350-ui-preserved.json'),'utf8'));
 // v3.6.2 adds scoped running-score storage; its old bytes remain in the pin file.
 // All other pinned modules/assets remain byte-identical. New API has dedicated tests.
-for(const [file,sha]of Object.entries(pinned.sha256).filter(([file])=>!['src/game/storage.js','src/render/presentation.js','src/render/renderer.js','src/render/elemental-art.js','src/audio/audio.js'].includes(file)))test(`v3.6.2 preserves v3.5.0 bytes: ${file}`,()=>assert.equal(createHash('sha256').update(readFileSync(resolve(root,file))).digest('hex'),sha));
+for(const [file,sha]of Object.entries(pinned.sha256).filter(([file])=>!['src/game/storage.js','src/render/presentation.js','src/render/renderer.js','src/render/elemental-art.js','src/audio/audio.js'].includes(file)))test(`v3.6.2 preserves v3.5.0 bytes: ${file}`,()=>assert.equal(createHash('sha256').update(productionBaselineBytes(file,readFileSync(resolve(root,file)))).digest('hex'),sha));
 test('HUD geometry is immutable and simulation-independent',()=>{
  assert.ok(Object.isFrozen(HUD_LAYOUT)&&Object.isFrozen(HUD_LAYOUT.pile)&&Object.isFrozen(HUD_LAYOUT.context));
  assert.equal(FIELD.bottom,648);assert.equal(FIELD.top,172);

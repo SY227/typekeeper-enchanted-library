@@ -1,61 +1,105 @@
-# Typekeeper: Enchanted Library — v3.6.3
-## Open Atrium · Implemented revision and executed QA
+# Typekeeper v3.6.4 — Bound & Balanced
+## Production polish, compatibility, and executed QA
 
-A focused central-environment update to the supplied v3.6.2 full game. This report
-records implemented work, automated testing and internal visual inspection. It is
-not an independent AAA/IGN review, a human playtest, native-platform approval or a
-claim that no bugs exist.
+29 September 2026. This report records actual implementation, internal visual/code
+review and automated execution. It is not an independent AAA/IGN review, a human
+study, platform certification, a guarantee of perfection or a promise of Steam success.
 
-## 1. What changed
+## 1. Exact source and change boundary
 
-The large translucent green manuscript behind the words is removed, including its
-outline, horizontal ruling, binding dots, margin and ring. It is not simply made
-more transparent, and is not replaced with another visible panel.
+The sole app baseline is the user's attached
+`Typekeeper_Enchanted_Library_v3.6.3_Full_App_RELEASE_FIXED(1).zip`.
+SHA-256: `3072350734dac0defce2d7d9b5fc79ca8379a36058b0096a7a038e14476d0758`.
+It passed archive CRC and the baseline's actual **806 Node tests** before editing.
+This is not a reconstruction from another conflicting v3.6.3 variant.
 
-The original painted receding shelves and curved upper gallery now supply the
-room's depth. A softly feathered, desaturated charcoal-teal grade with restrained
-warm lantern bounce harmonizes the reading space with the surrounding wood/brass.
-Scrolls remain high-contrast parchment objects floating in the room. No new central
-furniture, moving haze, screen shake, HUD or gameplay system is added.
+The app is now **3.6.4 / bound-and-balanced-364**. It retains the original storage
+key, all 48 chapters, spells, audio, vocabulary, main UI, typewriter animation,
+Open Atrium background, above-book captions and Paper Pile/Wind geometry.
 
-Normal and high-contrast backdrop surfaces are prepared during loading and reused.
-The title/menu keeps its original art treatment. Word cards, lettering, impact
-feedback, character, spell effects, audio, input geometry and HUD positions remain.
+Six existing application source files change, plus one new material module.
+**86 source/art/audio files are byte-identical** in the src/public/asset-source
+preservation scan. See `qa364/source-preservation.json` and
+`qa364/application-diff.patch`. No engine replacement or new runtime dependency.
 
-Implementation and internal design-review decisions: `docs/OPEN_ATRIUM_SPEC.md`.
-Tools actually used: JavaScript/Canvas 2D, Python, Playwright and Chromium. No Unreal
-or Blender conversion, generated 3D scene or outside studio endorsement is claimed.
+## 2. Stage quotas: no thirteen-word requirement
 
-## 2. Preservation
+Only Chapters **3 and 4** change: **13 → 14 correct words**, in every pace and in
+both Campaign and Practice. All other stage quotas stay as authored. First-wing
+completion is now **84 words**, rather than 82. Stage number 13 and interim
+progress 13/14 are deliberately not removed.
 
-**88 original source/art/audio files are byte-identical** to v3.6.2,
-including main UI handlers, CSS, layout, gameplay/data/storage/scoring, public game
-assets and editable original masters. Additional exact-delta tests verify that the
-renderer changes only its atmosphere import, instance, loading preparation and
-roomLayer background block. Original baseline hashes are retained.
+All 48 chapter HUD denominators were checked in all three paces. Unit coverage
+checks levels 1–10,000. Actual keyboard cases confirm the thirteenth submission
+keeps the changed chapter running, and the fourteenth clears it once. FIRE still
+cannot score, collect burned books or advance the chapter. Stage selection and
+HUD share the authoritative model quota; there is no cosmetic denominator hack.
 
-The 48 chapters, difficulty, resources, manual Enter, spell durations, star rules,
-Score Chase scopes, Endless, finale, and Start from Chapter 1 with retained unlocks
-are unchanged. Ruleset is `typekeeper-3.2.1`; save key is
-`typekeeper-enchanted-library-v3.2.1`. Export a save before changing browser/origin/
-port/file URL and import it at the new location as necessary.
+## 3. Art and UX revision
 
-## 3. Current-build completed gates
+The first wing's right-hand open book now has a supported wooden lectern, slightly
+asymmetric perspective, curved pages, layered page edges, a shadowed gutter, warm
+aged paper, manuscript marks, a restrained cloth bookmark and darker leather.
+The feet visibly meet the shelf. Related volumes use curved spines, quiet leather
+grain and worn bands instead of flat bright blocks. Other bound folios inherit the
+material treatment within their original shelf footprints.
+
+The texture noise is locally seeded, deterministic and independent of gameplay
+randomness. Material detail is painted into the existing room cache, not rebuilt
+on each keystroke. Ninety-six chapter traversals retained at most two cached scene
+layers. The background itself is unchanged.
+
+A same-scene room-layer pixel comparison measured **20,660 changed pixels** in
+approved shelf areas; **zero changed pixels in the live-word corridor** and zero
+outside the declared art masks. This is one controlled comparison, not a claim
+that every possible animation frame is pixel-identical.
+
+Internal visual review inspected the first-wing before/after detail, full scene,
+eight wing representative captures, pressure/spell states and legibility. The
+principal improvement is physical support and material coherence, not more VFX.
+No screen shake, extra UI panels or new moving background effects were added.
+
+## 4. Scores and saves
+
+Quota changes create different scoring opportunities. New attempts use ruleset
+`typekeeper-3.6.4`; prior `typekeeper-3.2.1` profiles remain historical.
+
+Existing unlocks, best stars and scoped score history survive load, export and
+import. Historical chapter PBs and running-total PBs remain stored under their
+original keys. New Score Chase comparisons cannot silently mix those profiles.
+Older continued checkpoints retain original score provenance and display
+**EARLIER RULES**. A Fresh Journey uses the current profile and may show FIRST RUN
+where no comparable new-profile record exists; that is not data loss.
+
+The migration fixture was produced by the actual supplied baseline code. It covers
+all three paces, 72 historical chapter PB entries, 36 running-total PB entries,
+previously earned access and three deliberately identical-date/score/seed records.
+The last case exposed a genuine import defect: record identity omitted difficulty.
+Difficulty is now part of the deduplication key. Tests verify that all three records
+survive and repeated imports do not create duplicates.
+
+Storage failure, wrong/future profiles, invalid records, collection limits, repeated
+migration, old legacy-score retention, safe restart and Practice not overwriting
+Continue are covered. There is no account/cloud migration or multi-device claim.
+
+## 5. Executed current-build gates
 
 | Gate | Result |
 |---|---:|
-| Node logic / preservation / storage / rendering contracts | **909 passed / 0 failed** |
-| Named browser checks across both shipping formats | **656 passed / 0 failed** |
-| New Open Atrium named checks, included above | **74 passed** |
-| Unhandled page exceptions in completed suites | **0** |
-| Final-word / spell / trial boundary matrix | **23,040 passed** |
+| Node logic, preservation, migration and rendering tests | **854 passed / 0 failed** |
+| Browser checks, both formats | **720 passed / 0 failed** |
+| New production-polish browser checks, included above | **64 passed** |
+| Last-word / spell / Trial boundary matrix | **23,040 passed / 0 failed** |
 | Complete model campaigns through Chapter 48 | **12 completed** |
-| Full rendered campaign flows through real input/result handlers | **2 completed** |
-| Native launcher / payload / version / corruption cases | **7 passed** |
+| Complete rendered campaigns through Chapter 48 | **2 completed** |
+| Native launcher/cache/payload/corruption checks | **7 passed** |
 | Backup-first updater cases | **6 passed** |
+| Filtered deployment-input build | **Pass; 62 identical runtime outputs** |
 
-| Browser suite | Standalone | Modules |
+| Browser suite | Offline | Modules |
 |---|---:|---:|
+| production-polish | 32 | 32 |
+| atrium | 37 | 37 |
 | restart | 51 | 51 |
 | ui-spacing | 62 | 62 |
 | score-chase | 38 | 38 |
@@ -66,140 +110,95 @@ port/file URL and import it at the new location as necessary.
 | book-leaf | 26 | 26 |
 | single-row | 19 | 19 |
 | flow-browser | 12 | 12 |
-| atrium | 37 | 37 |
 
-The boundary matrix is 48 chapters × 3 paces × 8 seeds × 20 controlled scenarios.
-Rendered full campaigns use accelerated model stepping and sampled native drawing.
-They are not human play sessions. State combinations/raster masks within a named
-check are coverage, not inflated additional tester or case counts.
+The 854 tests retain all 806 baseline tests plus 48 new cases. The immutable old
+reference sources/hashes remain. Exact reverse-delta guards account only for the
+explicit quota/migration/art changes; unrelated edits still fail the old pins.
+No failed test is hidden by skipping it or replacing the original oracle hash.
 
-Raw commands, exit codes and durations: `qa363/regression-commands.json`,
-`additional-commands.json`, and `logs/`. Older evidence is not added to these counts.
+The 720 browser checks use real shipped game/DOM/input/rendering code. The 23,040
+boundary cases are 48 chapters × 3 paces × 8 seeds × 20 scenarios, not 23,040 humans.
+Full campaign stress agents advance the model clock and sample rendering; they
+are separate from the normal-clock real-keyboard recording below.
 
-## 4. Focused environment and UX evidence
+Viewports: 1920×1080, 1440×900, 1366×768, 1280×720, 1024×768, 1024×600,
+800×600, 960×540, 640×480, 2560×1080, 768×1024 and 360×640. Portrait/small
+checks prove containment and accessible actions, not touch-gameplay suitability.
+Retained stress cases include 12 simultaneous cards and 95% pressure; new bindery
+layout cases also cover six-card pressure scenes, four spells, High Contrast and
+Reduced Motion. Headless timing under concurrent automation is not an end-user FPS
+benchmark. Static cache rebuilds happen at scene changes, not per-key/per-frame.
 
-The new suite checks the actual compiled standalone and modular application:
+## 6. Real-time keyboard observations
 
-- All 48 chapters with normal/high contrast, unchanged simulation snapshots and
-  bounded chapter/atmosphere caches. Existing chapter identities remain distinct.
-- Actual atlas raster containment and smooth alpha falloff, including the old
-  manuscript's top and bottom coordinates; no hard replacement edge.
-- Original artwork's local luminance variation preserved while central chroma is
-  reduced. In the sampled central region, before/after chroma averages were
-  **27.75 / 5.83**
-  channel units; luminance correlation was **0.9983**.
-  These are implementation measurements, not human readability-study results.
-- **60 live rendered frames with zero per-frame pixel readbacks** after loading.
-- **120 contrast toggles** without atlas growth or game-state changes. Two retained
-  surfaces total **7,584,000 bitmap bytes (about 7.23 MiB)**; this is the new atlas,
-  not a claim about total application memory. Existing scene caches stay bounded.
-- 12 viewport sizes: 1920×1080, 1440×900, 1366×768, 1280×720, 1024×768,
-  1024×600, 800×600, 960×540, 640×480, 2560×1080, 768×1024, 360×640.
-  Tiny/portrait checks establish containment only, not comfortable touch play.
-- Twelve live cards at 95% paper pressure; six scroll materials; prefix input,
-  Backspace, exact-word Enter priority; all four spells through keyboard handlers;
-  ICE expiry/queued SLOW; preserved input selection; pause/resume and reduced motion.
-- The first key and Chapter 5→6 transition do not trigger atmosphere construction.
-- Non-diagnostic startup, missing-source safe behavior and actual rendered previews.
+A new normal-clock, real-keyboard-events run typed **84 words**, naturally cleared
+both changed chapters and the first wing, passed the Chapter 5 13/14 boundary and
+entered Chapter 7 with no page errors. It used no injected score, fabricated word
+spawns, direct clear call or accelerated game clock. It remains an automated agent.
+Video is silent and cannot validate perceived audio quality.
 
-The focused cold-build sample took **96.5 ms**
-for both atmosphere surfaces in headless Chromium. The live game performs this
-under its existing loading screen. This is one environment sample, not a hardware
-loading-time guarantee.
+Current results, recordings and command exits are in `qa364/live-journey.json`,
+`qa364/normal-clock-journey.webm` and `qa364/live-commands.json`. A separate normal-clock Chapter 12 run naturally accumulated **7 misses and
+90.8% pressure**, then completed the chapter with **21 correct words** through
+22 keyboard submissions, without page errors. Its actual observations are in
+`qa364/natural-pressure-journey.json`.
 
-## 5. Moving gameplay evidence
+## 7. Corrections found during production
 
-The normal-clock automated keyboard journey typed **82 words in
-114.18 seconds**, naturally passing Chapter 5's 13/14→14/14 boundary,
-completing the Chapter 6 trial and reaching Chapter 7. No forced
-word spawns, awarded progress or accelerated clock were used in that journey.
+Early test attempts retained old version/rules/whole-file identity assumptions;
+these were corrected only for the explicit revision. A new test initially used a
+wrong inactive-submit expectation (`ignored` instead of null); it was fixed. New
+save coverage found the cross-pace record deduplication defect, which was fixed in
+the app. A chapter-map harness initially targeted chapter 12 without switching to
+its wing, then used an ambiguous wing selector; it now clicks the actual wing
+button. These were harness issues, not bypassed game failures.
 
-A separate Chapter 12 Practice agent let words naturally fall, reached
-**76% pressure**, then used **21 keyboard
-submissions** to recover. It recorded **6 misses** and finished in
-phase **level-clear**. Initial chapter selection is explicit; subsequent
-pressure and scores are model-earned. Both journeys recorded zero page exceptions.
+Initial live recording could not launch because Playwright's bundled encoder was
+missing. Its download was blocked by DNS. The installed system FFmpeg 7.1.5 was
+used for video encoding; the successful later run is recorded. Only the encoder
+path changed, not gameplay. Initial failure logs remain in development-attempts.
 
-Videos: `qa363/normal-clock-journey.webm` and
-`qa363/natural-pressure-journey.webm`. Playwright recordings are silent captures,
-not subjective listening tests. Controlled demonstration screenshots are separately
-identified; they are not represented as human-earned runs or marketing test data.
+## 8. Deployment/package hygiene
 
-## 6. Performance sample
+`.vercelignore` excludes tests/QA, editable masters and the offline bundle from a
+CLI upload. A local build using only deployment inputs was executed and produced
+all **62 identical** dist/PLAY outputs. This is not a live Vercel deployment.
+The full ZIP still includes all game source, masters and tests. Old duplicate QA
+images/videos are omitted; current screenshot previews are WebP with original
+hashes mapped in `qa364/screenshot-index.json`. Runtime art is not recompressed.
 
-The same inherited harness ran serially against unmodified v3.6.2 runtime and this
-candidate: 12 cards, 95% pressure, four music layers, real typing feedback and
-600 frame intervals in Linux headless Chromium.
+## 9. Scope limitations
 
-| Sample | Average FPS | p95 frame interval | Median CPU Canvas draw |
-|---|---:|---:|---:|
-| v3.6.2 baseline | 55.90 | 33.30 ms | 1.30 ms |
-| v3.6.3 candidate | 55.47 | 33.30 ms | 1.30 ms |
+Node 22.16.0, npm 10.9.2, Python 3.13.5, Chromium 144.0.7559.96, Linux.
+Native Chromium navigation to the local origin returned ERR_BLOCKED_BY_ADMINISTRATOR.
+Browser suites therefore use the documented in-memory PLAY.html/Blob-module
+transport. Save UI tests use an explicit localStorage-shaped in-memory adapter.
+They exercise serialization/import/export logic, not durable storage on a real
+hosted origin or across actual browser profiles. Native server responses and
+launcher behavior are checked outside browser navigation.
 
-Raw intervals are retained in `performance-baseline.json` and
-`performance-candidate.json`. These single-run samples do not establish native GPU
-performance, input-to-photon latency, worst-case combined-spell frame rate, or a
-performance gain. Warm rendering still reuses one cached chapter layer per frame.
+The Mac shell launcher is exercised under Linux Bash, not Finder. Windows/macOS,
+Safari/Firefox/Edge, actual keyboard/audio devices, human comfort/readability,
+long-session listening, live hosting and Steam installation remain external checks.
+No independent AAA staff, IGN critics or human test panel participated.
 
-## 7. Visual review and limits
+## 10. Fresh complete-archive gate
 
-Before/after comparison scenes use the same original art and word arrangements.
-Internal visual inspection checks coherent room perspective, absence of the ruled
-screen, readable scroll materials, no extra focal distraction, all spell states,
-and preserved HUD/book/pressure spacing at desktop and small-laptop sizes.
+See `qa364/fresh-extraction.json` and the accompanying final archive verification
+for the executed clean-extraction checks. Runtime files are frozen before this
+gate; only evidence/documentation/checksums may be added afterward.
 
-Native browser HTTP/file navigation was attempted and returned
-`ERR_BLOCKED_BY_ADMINISTRATOR`; those attempts are **unverified**, not passing
-native-navigation tests. Suites load the actual shipping `PLAY.html` in memory or
-actual dist modules through Blob transport. Only transport/asset URLs and the
-existing diagnostic guard are adapted. Game/UI/renderer/audio are not replaced.
-Some save tests use a declared fault-injectable in-memory storage adapter; they do
-not certify native localStorage on a live site. Node/Python payload, launchers and
-build hashes are tested separately.
 
-Environment: Node 22.16.0, Python 3.13.5, Chromium 144.0.7559.96, Linux.
-No macOS/Windows/Safari/Firefox/Edge physical-device, prolonged subjective audio,
-real-user preference/retention, Steam installation or live Vercel validation is
-claimed. The existing human/device QA plan remains unexecuted.
+### Final clean-extraction result — PASS
 
-## 8. Failed attempts and evidence integrity
+The completed candidate full ZIP passed CRC and every per-file checksum, was
+extracted to a new empty directory, and ran offline npm ci, **854 Node tests**,
+syntax validation and a full production rebuild successfully. All **62 runtime
+outputs were byte-identical** afterward. Both new production browser suites passed
+again (**64 repeat checks**, not added to 720), followed by the seven launcher and
+six updater checks. Exact commands and exits are in fresh-extraction.json.
 
-The initial Node run failed one stale title-version regular expression. That
-expectation was updated from v3.6.2 to v3.6.3; the original failure log is retained.
-The first two video attempts could not start because Playwright's FFmpeg binary was absent. The installed system FFmpeg was linked at the expected tool-cache path, and both entire normal-clock journeys were rerun successfully. Original failed logs and followup command results are retained. No game code changed for that tool repair. The updater's receipt now reads the version from package.json rather than recording an old literal; its six cases were rerun.
-
-No gameplay/asset baseline hash was rewritten to conceal a mismatch. Any additional
-initial harness failures are retained with their correction notes in this folder;
-only completed current-build final suites count as passes.
-
-## 9. Exact runtime
-
-- Application: **3.6.3 — Open Atrium**
-- Build ID: **3.6.3-447ce8d517d13011**
-- Shipping PLAY.html SHA-256: `9734786aba6ddd133fff64a54df6310d6234dd02df07c394f6b95e6388997266`
-- Runtime files: **61** (dist tree plus PLAY.html)
-- Supplied baseline ZIP SHA-256: `690409379f3649f1541684718cdd81e7e03826b7ccc5003e40b7ed6f4ce7e3ee`
-- Runtime hashes: `qa363/runtime-freeze.json`
-
-All original runtime art/audio and editable masters are retained. QA-only screenshot
-previews may be compressed to WebP with original-path/hash indexes; that does not
-change the runtime. Documentation and packaging checksums are refreshed separately.
-
-## 10. Fresh extraction gate
-
-The complete candidate ZIP was CRC-checked, verified against its per-file SHA-256
-manifest, then extracted to a new empty directory. Offline `npm ci`, all **909
-Node tests**, syntax validation and a production rebuild passed. **61 runtime
-outputs were byte-identical** before/after rebuilding and after every fresh check.
-
-Fresh extraction browser repeats: Open Atrium, Fresh Journey, UI spacing and Score
-Chase in both formats — **376 passing repeated checks**. These repeats are not
-added to the 656 named browser checks above. The 7 launcher and 6 updater cases
-also passed again. Full commands and logs: `qa363/fresh-extraction.json` and
-`qa363/fresh-logs/`. Candidate ZIP SHA-256: `e813fce1705696b9b5801ebf4d3d836ed6e30500356f2b87d1530155aa0904e8`.
-
-Only QA evidence, documentation and packaging checksums are added after this gate;
-no runtime changes follow it. Final ZIP CRC, per-file checksums and all runtime
-hashes are verified again. The final ZIP's own hash is supplied externally to
-avoid a self-referential archive checksum.
-
+Only final QA/documentation and checksums were added after this gate. The final
+user-facing archive was then tested again for CRC, every per-file checksum and all
+62 frozen runtime hashes. Its SHA-256 is supplied in the separate archive
+verification JSON to avoid a self-referential archive hash.

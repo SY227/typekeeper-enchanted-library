@@ -1,0 +1,12 @@
+{
+  "scope": "Local build with only deployment inputs; not a live Vercel deployment",
+  "passed": true,
+  "sameRuntimeOutputs": 62,
+  "ignored": [
+    "historical QA media",
+    "editable art masters",
+    "offline PLAY.html",
+    "test sources",
+    "docs"
+  ]
+}

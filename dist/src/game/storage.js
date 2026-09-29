@@ -1,15 +1,15 @@
-import { SCORE_CHASE_LIMIT, scoreChaseScope, scoreChaseKey, sanitizeScoreChaseRecord, checkpointScoreChaseRecords } from './score-chase.js?v=3.6.3-447ce8d517d13011';
-import { APP_VERSION } from '../build-info.js?v=3.6.3-447ce8d517d13011';
-import { chapterRecordKey, sanitizeChapterRecord } from './chapter-records.js?v=3.6.3-447ce8d517d13011';
-import { RULESET_VERSION, POWERS, RULES } from './rules.js?v=3.6.3-447ce8d517d13011';
-import { validEconomy, restoreEconomy } from './economy.js?v=3.6.3-447ce8d517d13011';
+import { SCORE_CHASE_LIMIT, scoreChaseScope, scoreChaseKey, sanitizeScoreChaseRecord, checkpointScoreChaseRecords } from './score-chase.js?v=3.6.4-8959ae504cb14f7f';
+import { APP_VERSION } from '../build-info.js?v=3.6.4-8959ae504cb14f7f';
+import { chapterRecordKey, sanitizeChapterRecord } from './chapter-records.js?v=3.6.4-8959ae504cb14f7f';
+import { RULESET_VERSION, PREVIOUS_RULESET_VERSION, POWERS, RULES } from './rules.js?v=3.6.4-8959ae504cb14f7f';
+import { validEconomy, restoreEconomy } from './economy.js?v=3.6.4-8959ae504cb14f7f';
 const KEY='typekeeper-enchanted-library-v3.2.1';
 const OLD_KEYS=['typekeeper-enchanted-library-v3.2','typekeeper-enchanted-library-v3.1','typekeeper-enchanted-library-v3','typing-maniac-library-v2','typing-maniac-library-v1'];
 const PACE_NAMES=['classic','relaxed','maniac'];
 export const DEFAULT_SETTINGS=Object.freeze({sfx:true,music:true,adaptiveMusic:true,typingShimmer:true,muted:false,motion:true,spellPulse:true,contrast:false,detailedHUD:false,hints:true,resumeCountdown:true,pace:'classic',volume:.8,musicVolume:.5,sfxVolume:.65});
 const saneNumber=(n,min=0,max=1e12)=>Number.isFinite(n)&&n>=min&&n<=max;
 function emptyProgress(){return Object.fromEntries(PACE_NAMES.map(p=>[p,{unlocked:1,stages:{}}]));}
-function sameRecord(r){return `${r.date}/${r.score}/${r.seed}/${r.ruleset}/${r.mode}/${r.startLevel}`;}
+function sameRecord(r){return `${r.date}/${r.pace}/${r.score}/${r.seed}/${r.ruleset}/${r.mode}/${r.startLevel}`;}
 /** Local-only saves. Original v3/v2 keys are never deleted or overwritten by migration. */
 export class LocalStore {
  constructor(storage){
@@ -52,6 +52,7 @@ export class LocalStore {
     const level=Number(key);if(!Number.isInteger(level)||level<1||level>48||!row||!saneNumber(row.medal,1,3))continue;
     const previous=this.data.progress[pace].stages[level];
     const sanitized={campaignClear:row.campaignClear!==false,medal:Math.floor(row.medal),score:saneNumber(row.score)?row.score:0,wpm:saneNumber(row.wpm,0,1000)?row.wpm:0,accuracy:saneNumber(row.accuracy,0,100)?row.accuracy:0,ruleset:typeof row.ruleset==='string'?row.ruleset.slice(0,64):'library-edition-2.0.0'};
+    if(saneNumber(row.legacyScore))sanitized.legacyScore=row.legacyScore;
     if(!previous)this.data.progress[pace].stages[level]=sanitized;
     else if(previous.ruleset===sanitized.ruleset){
      for(const field of ['medal','score','wpm','accuracy'])previous[field]=Math.max(previous[field]||0,sanitized[field]);previous.campaignClear=previous.campaignClear||sanitized.campaignClear;
@@ -70,14 +71,14 @@ export class LocalStore {
   // Old progress.score/wpm/accuracy aggregates are deliberately not migrated.
   if(parsed.chapterBests&&typeof parsed.chapterBests==='object'&&!Array.isArray(parsed.chapterBests)){
    for(const [key,input]of Object.entries(parsed.chapterBests).slice(0,1152)){
-    const row=sanitizeChapterRecord(input);if(!row||chapterRecordKey(row)!==key||row.ruleset!==RULESET_VERSION)continue;
+    const row=sanitizeChapterRecord(input);if(!row||chapterRecordKey(row)!==key||![RULESET_VERSION,PREVIOUS_RULESET_VERSION].includes(row.ruleset))continue;
     const old=this.data.chapterBests[key];if(!old||row.score>old.score)this.data.chapterBests[key]=row;
    }
   }
   // New running-total records are separate from single-chapter result PBs.
   if(parsed.scoreChaseBests&&typeof parsed.scoreChaseBests==='object'&&!Array.isArray(parsed.scoreChaseBests)){
-   for(const [key,input]of Object.entries(parsed.scoreChaseBests).slice(0,SCORE_CHASE_LIMIT)){
-    const row=sanitizeScoreChaseRecord(input);if(row&&scoreChaseKey(row)===key)this.mergeScoreChase(row);
+   for(const [key,input]of Object.entries(parsed.scoreChaseBests).slice(0,SCORE_CHASE_LIMIT*2)){
+    const row=sanitizeScoreChaseRecord(input,{allowPrevious:true});if(row&&scoreChaseKey(row)===key)this.mergeScoreChase(row,{preservePrevious:true});
    }
   }
   // Import only totals we can prove belonged to one attempt. Never sum chapter PBs.
@@ -147,7 +148,7 @@ export class LocalStore {
   const accessible=stage.level<=data.unlocked;
   if(!unlock&&!old&&!accessible)return;
   const ruleset=stage.ruleset||RULESET_VERSION,same=old?.ruleset===ruleset;
-  data.stages[stage.level]={campaignClear:unlock||(old?old.campaignClear!==false:false),medal:Math.max(old?.medal||0,stage.medal),score:Math.max(same?old.score:0,stage.stageScore),wpm:Math.max(same?old.wpm:0,stage.wpm),accuracy:Math.max(same?old.accuracy:0,stage.accuracy),ruleset,...(!same&&old?{legacyScore:old.score}:{})};
+  data.stages[stage.level]={campaignClear:unlock||(old?old.campaignClear!==false:false),medal:Math.max(old?.medal||0,stage.medal),score:Math.max(same?old.score:0,stage.stageScore),wpm:Math.max(same?old.wpm:0,stage.wpm),accuracy:Math.max(same?old.accuracy:0,stage.accuracy),ruleset,...(!same&&old?{legacyScore:old.score}:saneNumber(old?.legacyScore)?{legacyScore:old.legacyScore}:{})};
   if(unlock)data.unlocked=Math.max(data.unlocked,Math.min(48,stage.level+1));
   this.save();
  }
@@ -165,11 +166,11 @@ export class LocalStore {
   if(status!=='unchanged'){this.data.chapterBests[key]=row;this.save();}
   return {status,delta:previous?row.score-previous.score:0,previous,current:structuredClone(row)};
  }
- mergeScoreChase(input){
-  const row=sanitizeScoreChaseRecord(input);if(!row)return false;
+ mergeScoreChase(input,{preservePrevious=false}={}){
+  const row=sanitizeScoreChaseRecord(input,{allowPrevious:preservePrevious});if(!row)return false;
   const key=scoreChaseKey(row),old=this.data.scoreChaseBests[key];
   if(old&&old.score>=row.score)return false;
-  if(!old&&Object.keys(this.data.scoreChaseBests).length>=SCORE_CHASE_LIMIT)return false;
+  if(!old&&Object.values(this.data.scoreChaseBests).filter(r=>r.ruleset===row.ruleset).length>=SCORE_CHASE_LIMIT)return false;
   this.data.scoreChaseBests[key]=row;return true;
  }
  recordScoreChase(run){

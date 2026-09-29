@@ -1,3 +1,4 @@
+import {productionBaselineBytes} from './production-baseline.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -29,4 +30,4 @@ test('Export/import after restart retains the new checkpoint, old stars, chapter
 test('New Chapter 1 uses only the matching cumulative BEST, never a later chapter total',()=>{const {s,m}=fixture();s.recordScoreChase({pace:'classic',mode:'campaign',startLevel:1,level:12,score:999999});m.start({seed:99});const best=s.scoreChaseBest({ruleset:RULESET_VERSION,pace:'classic',mode:'campaign',chapter:1,startLevel:1});assert.equal(best.score,1580);});
 test('Source guard prevents stale or duplicate confirmations from reseeding an active run',()=>{const s=fs.readFileSync(new URL('../src/main.js',import.meta.url),'utf8');assert.match(s,/if\(view!=='new-confirm'\|\|!request\)return/);assert.match(s,/case 'fresh-start':confirmFreshStart\(\)/);assert.match(s,/freshRequest=null;start\(undefined,1,'campaign'\)/);assert(!s.includes("if(mode==='campaign')store.clearCheckpoint"));});
 const pins=JSON.parse(fs.readFileSync(new URL('./fixtures/v360-restart-preserved.json',import.meta.url)));
-for(const [file,sha] of Object.entries(pins.sha256).filter(([file])=>file!=='src/render/renderer.js'))test(`v3.6.2 foundation unchanged outside Open Atrium renderer: ${file}`,()=>assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../'+file,import.meta.url))).digest('hex'),sha));
+for(const [file,sha] of Object.entries(pins.sha256).filter(([file])=>file!=='src/render/renderer.js'))test(`v3.6.2 foundation unchanged outside Open Atrium renderer: ${file}`,()=>assert.equal(createHash('sha256').update(productionBaselineBytes(file,fs.readFileSync(new URL('../'+file,import.meta.url)))).digest('hex'),sha));

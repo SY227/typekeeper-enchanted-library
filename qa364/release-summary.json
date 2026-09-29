@@ -1,0 +1,98 @@
+{
+  "version": "3.6.4",
+  "baseline": "User-attached 3.6.3 RELEASE_FIXED(1).zip",
+  "baselineSHA256": "3072350734dac0defce2d7d9b5fc79ca8379a36058b0096a7a038e14476d0758",
+  "node": {
+    "passed": 854,
+    "failed": 0,
+    "baselineTestsRetained": 806,
+    "newTests": 48
+  },
+  "browser": {
+    "passed": 720,
+    "failed": 0,
+    "suites": [
+      {
+        "suite": "production-polish",
+        "standalone": 32,
+        "modules": 32
+      },
+      {
+        "suite": "atrium",
+        "standalone": 37,
+        "modules": 37
+      },
+      {
+        "suite": "restart",
+        "standalone": 51,
+        "modules": 51
+      },
+      {
+        "suite": "ui-spacing",
+        "standalone": 62,
+        "modules": 62
+      },
+      {
+        "suite": "score-chase",
+        "standalone": 38,
+        "modules": 38
+      },
+      {
+        "suite": "impact",
+        "standalone": 26,
+        "modules": 26
+      },
+      {
+        "suite": "clarity-mastery",
+        "standalone": 19,
+        "modules": 19
+      },
+      {
+        "suite": "chapter-art",
+        "standalone": 19,
+        "modules": 19
+      },
+      {
+        "suite": "scroll-repair",
+        "standalone": 19,
+        "modules": 19
+      },
+      {
+        "suite": "book-leaf",
+        "standalone": 26,
+        "modules": 26
+      },
+      {
+        "suite": "single-row",
+        "standalone": 19,
+        "modules": 19
+      },
+      {
+        "suite": "flow-browser",
+        "standalone": 12,
+        "modules": 12
+      }
+    ]
+  },
+  "boundaries": {
+    "passed": 23040,
+    "failed": 0
+  },
+  "completeModelCampaigns": 12,
+  "completeRenderedCampaigns": 2,
+  "launcher": {
+    "passed": 7,
+    "failed": 0
+  },
+  "updater": {
+    "passed": 6,
+    "failed": 0
+  },
+  "scope": "Actual local automatic tests plus internal visual review, not human/AAA/Steam certification",
+  "freshExtraction": {
+    "passed": true,
+    "node": 854,
+    "repeatedBrowserChecks": 64,
+    "byteIdenticalRuntimeOutputs": 62
+  }
+}

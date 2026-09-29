@@ -1,7 +1,0 @@
-
-> typekeeper-enchanted-library@3.5.1 build
-> node scripts/build.mjs
-
-Manifest verified: 23 local assets.
-Built 55 local files; 8.14 MiB. Build 3.5.1-86fc357b52ef56b0
-Standalone PLAY.html: 11.04 MiB. All art, music and code embedded.

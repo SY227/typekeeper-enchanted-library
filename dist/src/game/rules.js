@@ -1,6 +1,7 @@
 /** Versioned, authored rules. No claim of exact numerical parity with the reference videos. */
-import { stageInfo } from '../data/campaign.js?v=3.6.3-447ce8d517d13011';
-export const RULESET_VERSION = 'typekeeper-3.2.1';
+import { stageInfo } from '../data/campaign.js?v=3.6.4-8959ae504cb14f7f';
+export const RULESET_VERSION = 'typekeeper-3.6.4';
+export const PREVIOUS_RULESET_VERSION = 'typekeeper-3.2.1';
 export const WIDTH=1200, HEIGHT=900;
 export const FIELD=Object.freeze({left:226,right:978,top:172,bottom:648});
 export const POWERS=Object.freeze(['fire','ice','slow','wind']);
@@ -32,7 +33,9 @@ export function levelRules(level,pace='classic') {
   baseSpeed=a[1]+(b[1]-a[1])*t;interval=a[2]+(b[2]-a[2])*t;break;
  }
  if(n>48){baseSpeed=Math.min(170,finalSpeed+(n-48)*.65);interval=Math.max(.78,.96-(n-48)*.003);}
- return {quota:Math.min(42,12+Math.floor((n-1)/2)+(info.trial?4:0)),speed:baseSpeed*p.speed,interval:interval*p.interval,specialChance:.2,darkChance:n>=7?Math.min(.14,(n-6)*.0033):0,trial:info.trial};
+ // Only the two previously 13-word chapters change. Keep the authored curve.
+ const authoredQuota=Math.min(42,12+Math.floor((n-1)/2)+(info.trial?4:0));
+ return {quota:authoredQuota===13?14:authoredQuota,speed:baseSpeed*p.speed,interval:interval*p.interval,specialChance:.2,darkChance:n>=7?Math.min(.14,(n-6)*.0033):0,trial:info.trial};
 }
 export function normalizeInput(value){return String(value).toUpperCase().replace(/[^A-Z]/g,'').slice(0,RULES.bufferLimit);}
 export function mulberry32(seed){let state=seed>>>0;return()=>{state+=0x6D2B79F5;let t=state;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;};}

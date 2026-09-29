@@ -1,6 +1,0 @@
-{
-  "cgroupMemoryLimitBytes": 4294967296,
-  "memoryEvents": "low 0\nhigh 0\nmax 45260\noom 25\noom_kill 8\noom_group_kill 0\n",
-  "finding": "Four simultaneous browser/test processes plus resident environment services exceeded the container limit. Chromium pages were killed. These incomplete runs are not passes.",
-  "resolution": "Run browser gates serially; do not alter the shipping game or weaken assertions to hide resource failures."
-}

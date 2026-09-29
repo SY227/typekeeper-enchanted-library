@@ -1,8 +1,8 @@
 {
   "name": "typekeeper-enchanted-library",
-  "version": "3.6.3",
+  "version": "3.6.4",
   "private": true,
-  "description": "Typekeeper: Enchanted Library \u2014 Open Atrium. A panel-free, naturally lit reading space within the original painted library. Gameplay and saves preserved.",
+  "description": "Typekeeper: Enchanted Library \u2014 Bound & Balanced. Crafted reading-room bindings, 14-word early challenges, safe historical scores.",
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -40,10 +40,10 @@
     "test:scroll:modules": "python3 e2e/scroll_repair_tests.py --mode modules",
     "test:chapter-art": "python3 e2e/chapter_art_tests.py",
     "test:chapter-art:modules": "python3 e2e/chapter_art_tests.py --mode modules",
-    "test:flow": "node scripts/flow-audit.mjs --root . --out qa363/flow-model.json",
+    "test:flow": "node scripts/flow-audit.mjs --root . --out qa364/flow-model.json",
     "test:clarity": "python3 e2e/clarity_mastery_tests.py",
     "test:clarity:modules": "python3 e2e/clarity_mastery_tests.py --mode modules",
-    "test:flow:browser": "python3 e2e/flow_tests.py --root . --out qa363",
+    "test:flow:browser": "python3 e2e/flow_tests.py --root . --out qa364",
     "test:ui": "python3 e2e/ui_spacing_tests.py",
     "test:ui:modules": "python3 e2e/ui_spacing_tests.py --mode modules",
     "test:score-chase": "python3 e2e/score_chase_tests.py",
@@ -53,7 +53,9 @@
     "test:restart": "python3 e2e/restart_journey_tests.py",
     "test:restart:modules": "python3 e2e/restart_journey_tests.py --mode modules",
     "test:atrium": "python3 e2e/atrium_tests.py",
-    "test:atrium:modules": "python3 e2e/atrium_tests.py --mode modules"
+    "test:atrium:modules": "python3 e2e/atrium_tests.py --mode modules",
+    "test:production": "python3 e2e/production_polish_tests.py",
+    "test:production:modules": "python3 e2e/production_polish_tests.py --mode modules"
   },
   "license": "UNLICENSED"
 }

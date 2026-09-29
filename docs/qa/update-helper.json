@@ -6,7 +6,7 @@
     {
       "case": "backup-first update of an existing project including a space in its path",
       "passed": true,
-      "filesCopied": 2058,
+      "filesCopied": 2165,
       "preserved": [
         ".git",
         ".vercel",

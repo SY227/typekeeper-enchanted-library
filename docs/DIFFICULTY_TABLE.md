@@ -1,13 +1,13 @@
-# v3.2.1 difficulty table
+# v3.6.4 difficulty table
 
-Generated from `levelRules` and the retained vocabulary distribution. Speeds are logical pixels/second; intervals are active seconds before trial multipliers. Normal arrival intervals, quotas and vocabulary are unchanged from v3.2. Exact spell-gap policy: ECONOMY.md.
+Generated from `levelRules` and the retained vocabulary distribution. Speeds are logical pixels/second; intervals are active seconds before trial multipliers. Normal arrival intervals and vocabulary are retained. Quotas for chapters 3 and 4 change from 13 to 14; all other quotas are unchanged. Exact spell-gap policy: ECONOMY.md.
 
 | Chapter | Trial | Quota | Classic speed | Classic interval | Fall time | Relaxed speed / interval | Maniac speed / interval | Ordinary book gap |
 |---:|:---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | — | 12 | 30.60 | 1.900 | 15.56s | 20.81 / 3.040 | 37.33 / 1.482 | 8–11 |
 | 2 | — | 12 | 35.55 | 1.800 | 13.39s | 24.17 / 2.880 | 43.37 / 1.404 | 8–11 |
-| 3 | — | 13 | 40.50 | 1.700 | 11.75s | 27.54 / 2.720 | 49.41 / 1.326 | 8–11 |
-| 4 | — | 13 | 45.37 | 1.633 | 10.49s | 30.85 / 2.613 | 55.35 / 1.274 | 8–11 |
+| 3 | — | 14 | 40.50 | 1.700 | 11.75s | 27.54 / 2.720 | 49.41 / 1.326 | 8–11 |
+| 4 | — | 14 | 45.37 | 1.633 | 10.49s | 30.85 / 2.613 | 55.35 / 1.274 | 8–11 |
 | 5 | — | 14 | 50.23 | 1.567 | 9.48s | 34.16 / 2.507 | 61.28 / 1.222 | 8–11 |
 | 6 | Yes | 18 | 55.10 | 1.500 | 8.64s | 37.47 / 2.400 | 67.22 / 1.170 | 8–11 |
 | 7 | — | 15 | 58.58 | 1.467 | 8.13s | 39.84 / 2.347 | 71.47 / 1.144 | 8–10 |

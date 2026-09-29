@@ -36,8 +36,8 @@ with sync_playwright() as p:
    row={'name':name,'status':'FAIL','error':repr(e),'seconds':round(time.monotonic()-start,3)}
    page.screenshot(path=str(OUT/f'flow-failure-{args.mode}-{len(rows)+1}.png'))
   rows.append(row);print(json.dumps(row),flush=True)
- def identity():assert api('return t.info.version;')=='3.6.2';assert 'v3.6.2' in page.title()
- check('Exact shipping v3.6.2 starts, with matching runtime identity',identity)
+ def identity():assert api('return t.info.version;')=='3.6.4';assert 'v3.6.4' in page.title()
+ check('Exact shipping v3.6.4 starts, with matching runtime identity',identity)
  def wind_empty():
   boundary();before=api('return m.tick;');api('t.freeze(false);');key('4')
   page.wait_for_function('__TM_TEST__.model.words.length===1',timeout=4000)
@@ -128,5 +128,5 @@ with sync_playwright() as p:
   boundary();api('t.freeze(false);');first=api('return m.tick;');page.wait_for_timeout(1500);later=api('return m.tick;');assert later>first+20;assert api('return m.words.length;')>0
  check('Normal RAF and real-time generator remain alive after all chapter stress cases',real_heartbeat_after_stress)
  b.close()
-report={'version':'3.6.2','mode':args.mode,'play_sha256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'scope':__doc__,'tests':rows,'passed':sum(r['status']=='PASS' for r in rows),'failed':sum(r['status']=='FAIL' for r in rows),'unhandledErrors':errors,'evidence':evidence}
+report={'version':'3.6.4','mode':args.mode,'play_sha256':hashlib.sha256((ROOT/'PLAY.html').read_bytes()).hexdigest(),'scope':__doc__,'tests':rows,'passed':sum(r['status']=='PASS' for r in rows),'failed':sum(r['status']=='FAIL' for r in rows),'unhandledErrors':errors,'evidence':evidence}
 (OUT/f'flow-browser-{args.mode}.json').write_text(json.dumps(report,indent=2));assert report['failed']==0 and not errors

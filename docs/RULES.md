@@ -1,12 +1,9 @@
-> **v3.3.2 superseding note:** all letters of one word now stay on one row.
-> Any older wrapping description below is historical. New game and Retry use fresh
-> vocabulary; Continue preserves the current saved attempt. App metadata is 3.3.2;
-> balance constants remain the v3.2.1 ruleset. See RELEASE_NOTES.md and QA_REPORT.md
-> for current behavior and newly executed evidence.
+# Typekeeper v3.6.4 — implemented rules
 
-# Typekeeper 3.2.1 — implemented rules
-Ruleset `typekeeper-3.2.1`. These are authored rules for this adaptation, not recovered
-constants from an inaccessible historical gameplay video.
+Ruleset `typekeeper-3.6.4`; based on the retained 3.2.1 gameplay with only
+the chapter 3/4 quota revision. Historical records retain their original profile.
+Words remain on one row. New Game and Retry randomize vocabulary; Continue restores
+the saved attempt.
 
 ## Input
 English A–Z, uppercase normalization, 24-character input limit. Native selection/caret
@@ -52,7 +49,8 @@ At chapter completion, active effects expire but unused books and pile carry for
 
 ## Spawn and difficulty
 The authored course has 48 chapters, with a trial every sixth chapter. Quota is
-min(42, 12 + floor((chapter−1)/2) + (trial ? 4 : 0)). Trial intervals follow four
+the authored value min(42, 12 + floor((chapter−1)/2) + (trial ? 4 : 0)),
+with a value of 13 promoted to 14. Only chapters 3 and 4 are affected. Trial intervals follow four
 0.83× intervals then a 1.8× rest; the rest is visible as BREATHE. There is no random
 interval jitter in this ruleset.
 

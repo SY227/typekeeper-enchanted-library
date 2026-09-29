@@ -1,2 +1,0 @@
-{'sample': 'baseline-v351', 'version': '3.5.1', 'averageFPS': 59.21, 'p95FrameMs': 16.799999999999272, 'medianCanvasDrawMs': 1.0999999998603016, 'maxFrameMs': 33.5, 'shippingSHA256': '5d2eaee3614277d65e83e35724948bae767c004c31ad9c568c984f14c877acda'}
-{'sample': 'candidate-v352', 'version': '3.5.2', 'averageFPS': 58.83, 'p95FrameMs': 16.799999999999272, 'medianCanvasDrawMs': 1.0999999998603016, 'maxFrameMs': 33.400000000000546, 'shippingSHA256': 'ed3fd19385c13d069c35b644d542028dd6046b7d28bbb8aef8831863e6f7b044'}

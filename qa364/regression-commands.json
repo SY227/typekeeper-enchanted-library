@@ -1,0 +1,274 @@
+[
+  {
+    "name": "atrium_tests-standalone",
+    "command": [
+      "python3",
+      "e2e/atrium_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 43.84,
+    "log": "qa364/logs/atrium_tests-standalone.log"
+  },
+  {
+    "name": "atrium_tests-modules",
+    "command": [
+      "python3",
+      "e2e/atrium_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 45.36,
+    "log": "qa364/logs/atrium_tests-modules.log"
+  },
+  {
+    "name": "restart_journey_tests-standalone",
+    "command": [
+      "python3",
+      "e2e/restart_journey_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 51.55,
+    "log": "qa364/logs/restart_journey_tests-standalone.log"
+  },
+  {
+    "name": "restart_journey_tests-modules",
+    "command": [
+      "python3",
+      "e2e/restart_journey_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 53.68,
+    "log": "qa364/logs/restart_journey_tests-modules.log"
+  },
+  {
+    "name": "ui_spacing_tests-standalone",
+    "command": [
+      "python3",
+      "e2e/ui_spacing_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 126.79,
+    "log": "qa364/logs/ui_spacing_tests-standalone.log"
+  },
+  {
+    "name": "ui_spacing_tests-modules",
+    "command": [
+      "python3",
+      "e2e/ui_spacing_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 126.93,
+    "log": "qa364/logs/ui_spacing_tests-modules.log"
+  },
+  {
+    "name": "score_chase_tests-standalone",
+    "command": [
+      "python3",
+      "e2e/score_chase_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 25.96,
+    "log": "qa364/logs/score_chase_tests-standalone.log"
+  },
+  {
+    "name": "score_chase_tests-modules",
+    "command": [
+      "python3",
+      "e2e/score_chase_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 26.61,
+    "log": "qa364/logs/score_chase_tests-modules.log"
+  },
+  {
+    "name": "impact_tests-standalone",
+    "command": [
+      "python3",
+      "e2e/impact_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 36.21,
+    "log": "qa364/logs/impact_tests-standalone.log"
+  },
+  {
+    "name": "impact_tests-modules",
+    "command": [
+      "python3",
+      "e2e/impact_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 35.87,
+    "log": "qa364/logs/impact_tests-modules.log"
+  },
+  {
+    "name": "clarity_mastery_tests-standalone",
+    "command": [
+      "python3",
+      "e2e/clarity_mastery_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 55.0,
+    "log": "qa364/logs/clarity_mastery_tests-standalone.log"
+  },
+  {
+    "name": "clarity_mastery_tests-modules",
+    "command": [
+      "python3",
+      "e2e/clarity_mastery_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 52.71,
+    "log": "qa364/logs/clarity_mastery_tests-modules.log"
+  },
+  {
+    "name": "chapter_art_tests-standalone",
+    "command": [
+      "python3",
+      "e2e/chapter_art_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 60.07,
+    "log": "qa364/logs/chapter_art_tests-standalone.log"
+  },
+  {
+    "name": "chapter_art_tests-modules",
+    "command": [
+      "python3",
+      "e2e/chapter_art_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 58.38,
+    "log": "qa364/logs/chapter_art_tests-modules.log"
+  },
+  {
+    "name": "scroll_repair_tests-standalone",
+    "command": [
+      "python3",
+      "e2e/scroll_repair_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 20.14,
+    "log": "qa364/logs/scroll_repair_tests-standalone.log"
+  },
+  {
+    "name": "scroll_repair_tests-modules",
+    "command": [
+      "python3",
+      "e2e/scroll_repair_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 22.26,
+    "log": "qa364/logs/scroll_repair_tests-modules.log"
+  },
+  {
+    "name": "book_leaf_tests-standalone",
+    "command": [
+      "python3",
+      "e2e/book_leaf_tests.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 15.71,
+    "log": "qa364/logs/book_leaf_tests-standalone.log"
+  },
+  {
+    "name": "book_leaf_tests-modules",
+    "command": [
+      "python3",
+      "e2e/book_leaf_tests.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 15.31,
+    "log": "qa364/logs/book_leaf_tests-modules.log"
+  },
+  {
+    "name": "single_row_release-standalone",
+    "command": [
+      "python3",
+      "e2e/single_row_release.py",
+      "--mode",
+      "standalone"
+    ],
+    "exit": 0,
+    "seconds": 110.0,
+    "log": "qa364/logs/single_row_release-standalone.log"
+  },
+  {
+    "name": "single_row_release-modules",
+    "command": [
+      "python3",
+      "e2e/single_row_release.py",
+      "--mode",
+      "modules"
+    ],
+    "exit": 0,
+    "seconds": 111.8,
+    "log": "qa364/logs/single_row_release-modules.log"
+  },
+  {
+    "name": "flow_tests-standalone",
+    "command": [
+      "python3",
+      "e2e/flow_tests.py",
+      "--mode",
+      "standalone",
+      "--root",
+      "/mnt/data/polish364/work/Typekeeper_Enchanted_Library_v3_6_4",
+      "--out",
+      "/mnt/data/polish364/work/Typekeeper_Enchanted_Library_v3_6_4/qa364"
+    ],
+    "exit": 0,
+    "seconds": 140.86,
+    "log": "qa364/logs/flow_tests-standalone.log"
+  },
+  {
+    "name": "flow_tests-modules",
+    "command": [
+      "python3",
+      "e2e/flow_tests.py",
+      "--mode",
+      "modules",
+      "--root",
+      "/mnt/data/polish364/work/Typekeeper_Enchanted_Library_v3_6_4",
+      "--out",
+      "/mnt/data/polish364/work/Typekeeper_Enchanted_Library_v3_6_4/qa364"
+    ],
+    "exit": 0,
+    "seconds": 143.73,
+    "log": "qa364/logs/flow_tests-modules.log"
+  }
+]

@@ -1,0 +1,469 @@
+{
+  "version": "3.6.4",
+  "scope": "Fresh Journey: actual shipping UI/input/renderer in both build formats.\nControlled saved-game fixtures and a fault-injectable in-memory storage adapter.\nThe adapter exercises save/reload code paths, not a real hosted localStorage origin.\nNo human playtest, native-device or external studio certification is implied.\n",
+  "mode": "modules",
+  "shippingSHA256": "d663219de5939ec662f0a41d9bf45de3db377b97ac8a94a016f852d127253039",
+  "tests": [
+    {
+      "name": "New player retains one-click Play; no unsolicited popup or duplicate restart",
+      "status": "PASS",
+      "seconds": 0.493
+    },
+    {
+      "name": "Returning player sees Continue first and an explicit Chapter 1 option in the main actions",
+      "status": "PASS",
+      "seconds": 0.708
+    },
+    {
+      "name": "Confirmation names the replaced checkpoint, explains what stays, and defaults to cancel",
+      "status": "PASS",
+      "seconds": 0.839
+    },
+    {
+      "name": "Cancel by button keeps every save byte and restores focus to the entry choice",
+      "status": "PASS",
+      "seconds": 0.487
+    },
+    {
+      "name": "Cancel by escape keeps every save byte and restores focus to the entry choice",
+      "status": "PASS",
+      "seconds": 0.333
+    },
+    {
+      "name": "Cancel by close keeps every save byte and restores focus to the entry choice",
+      "status": "PASS",
+      "seconds": 0.461
+    },
+    {
+      "name": "Cancel by enter keeps every save byte and restores focus to the entry choice",
+      "status": "PASS",
+      "seconds": 0.667
+    },
+    {
+      "name": "Confirmation traps keyboard focus and never defaults Enter to the destructive action",
+      "status": "PASS",
+      "seconds": 0.209
+    },
+    {
+      "name": "classic: actual confirm starts Chapter 1, resets only the attempt and retains all collections/BEST",
+      "status": "PASS",
+      "seconds": 0.578
+    },
+    {
+      "name": "relaxed: actual confirm starts Chapter 1, resets only the attempt and retains all collections/BEST",
+      "status": "PASS",
+      "seconds": 0.402
+    },
+    {
+      "name": "maniac: actual confirm starts Chapter 1, resets only the attempt and retains all collections/BEST",
+      "status": "PASS",
+      "seconds": 0.545
+    },
+    {
+      "name": "Actual confirmation makes one complete checkpoint write with no deletion window",
+      "status": "PASS",
+      "seconds": 0.368
+    },
+    {
+      "name": "Duplicate or stale fresh-start events cannot restart an already-running campaign",
+      "status": "PASS",
+      "seconds": 0.458
+    },
+    {
+      "name": "A stale confirmation after cancellation is inert",
+      "status": "PASS",
+      "seconds": 0.23
+    },
+    {
+      "name": "Continue still resumes the exact old chapter/score/seed without starting over",
+      "status": "PASS",
+      "seconds": 0.332
+    },
+    {
+      "name": "After starting again, main-menu Continue clearly points to Chapter 1",
+      "status": "PASS",
+      "seconds": 0.604
+    },
+    {
+      "name": "Restart \u2192 Chapters \u2192 Chapter 12 practice \u2192 Continue returns to the fresh campaign, with no relock",
+      "status": "PASS",
+      "seconds": 1.558
+    },
+    {
+      "name": "Starting again preserves existing unlocks but does not unlock unearned chapters",
+      "status": "PASS",
+      "seconds": 1.307
+    },
+    {
+      "name": "Replaying Chapter 1 with worse mastery advances the new checkpoint without downgrading old stars",
+      "status": "PASS",
+      "seconds": 0.714
+    },
+    {
+      "name": "Late-chapter practice clear/retry never replaces the restarted campaign checkpoint",
+      "status": "PASS",
+      "seconds": 0.959
+    },
+    {
+      "name": "Completed campaign without a checkpoint can restart while all 48 chapters and Endless stay unlocked",
+      "status": "PASS",
+      "seconds": 0.847
+    },
+    {
+      "name": "A saved Chapter 48 run is replaced only after explicit confirmation, never its unlocks",
+      "status": "PASS",
+      "seconds": 0.502
+    },
+    {
+      "name": "Restarting Classic leaves Relaxed and Maniac checkpoints untouched",
+      "status": "PASS",
+      "seconds": 0.509
+    },
+    {
+      "name": "Entry choices follow the selected difficulty without affecting another difficulty\u2019s progress",
+      "status": "PASS",
+      "seconds": 0.782
+    },
+    {
+      "name": "An obsolete confirmation cannot silently restart a different difficulty",
+      "status": "PASS",
+      "seconds": 0.402
+    },
+    {
+      "name": "Cancel from game-over returns to that result, retaining Retry and avoiding duplicate records",
+      "status": "PASS",
+      "seconds": 0.669
+    },
+    {
+      "name": "Cancel from Records restores the originating screen and live paused input, not the menu",
+      "status": "PASS",
+      "seconds": 0.829
+    },
+    {
+      "name": "Five fresh journeys retain lifetime data and produce distinct randomized attempts",
+      "status": "PASS",
+      "seconds": 1.874
+    },
+    {
+      "name": "Real export/import and full app relaunch from a serialized adapter preserve new checkpoint and old mastery",
+      "status": "PASS",
+      "seconds": 5.109
+    },
+    {
+      "name": "Older compatible saves without the newer PB collections still expose safe restart",
+      "status": "PASS",
+      "seconds": 0.96
+    },
+    {
+      "name": "Invalid save import neither resets existing progress nor changes Continue",
+      "status": "PASS",
+      "seconds": 0.402
+    },
+    {
+      "name": "Save denial is disclosed; old persisted bytes survive and current-session unlocks remain usable",
+      "status": "PASS",
+      "seconds": 0.499
+    },
+    {
+      "name": "No clock, score or spell state moves while the restart question is open",
+      "status": "PASS",
+      "seconds": 0.51
+    },
+    {
+      "name": "Modified Escape does not accidentally accept or cancel the question",
+      "status": "PASS",
+      "seconds": 0.265
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1920\u00d71080",
+      "status": "PASS",
+      "seconds": 1.663
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1440\u00d7900",
+      "status": "PASS",
+      "seconds": 1.181
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1366\u00d7768",
+      "status": "PASS",
+      "seconds": 1.543
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1280\u00d7720",
+      "status": "PASS",
+      "seconds": 0.924
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1024\u00d7768",
+      "status": "PASS",
+      "seconds": 1.11
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 1024\u00d7600",
+      "status": "PASS",
+      "seconds": 1.025
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 800\u00d7600",
+      "status": "PASS",
+      "seconds": 1.466
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 960\u00d7540",
+      "status": "PASS",
+      "seconds": 1.096
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 640\u00d7480",
+      "status": "PASS",
+      "seconds": 0.86
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 2560\u00d71080",
+      "status": "PASS",
+      "seconds": 2.199
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 768\u00d71024",
+      "status": "PASS",
+      "seconds": 1.01
+    },
+    {
+      "name": "Returning menu and confirmation fit and hit-test at 360\u00d7640",
+      "status": "PASS",
+      "seconds": 1.133
+    },
+    {
+      "name": "Completed campaign menu retains every action at 1366\u00d7768",
+      "status": "PASS",
+      "seconds": 1.801
+    },
+    {
+      "name": "Completed campaign menu retains every action at 1024\u00d7600",
+      "status": "PASS",
+      "seconds": 1.219
+    },
+    {
+      "name": "Completed campaign menu retains every action at 800\u00d7600",
+      "status": "PASS",
+      "seconds": 1.128
+    },
+    {
+      "name": "High contrast and reduced motion retain the same readable and safe restart path",
+      "status": "PASS",
+      "seconds": 1.308
+    },
+    {
+      "name": "Last requested READY/RESCUE placement remains above, not on top of, the book art",
+      "status": "PASS",
+      "seconds": 1.074
+    }
+  ],
+  "passed": 51,
+  "failed": 0,
+  "pageerrors": [],
+  "evidence": {
+    "atomicCheckpointWrites": 1,
+    "restartSeeds": [
+      1851682458,
+      1359758244,
+      2050728784,
+      3897905387,
+      4195330752
+    ],
+    "viewports": [
+      {
+        "width": 1920,
+        "height": 1080,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1366,
+        "height": 768,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1280,
+        "height": 720,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1024,
+        "height": 768,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1024,
+        "height": 600,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 960,
+        "height": 540,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 640,
+        "height": 480,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 2560,
+        "height": 1080,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "completedCampaign": false,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 385,
+          "sh": 385
+        }
+      },
+      {
+        "width": 1366,
+        "height": 768,
+        "completedCampaign": true,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 437,
+          "sh": 437
+        }
+      },
+      {
+        "width": 1024,
+        "height": 600,
+        "completedCampaign": true,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 437,
+          "sh": 437
+        }
+      },
+      {
+        "width": 800,
+        "height": 600,
+        "completedCampaign": true,
+        "menu": {
+          "w": 336,
+          "sw": 336,
+          "h": 437,
+          "sh": 437
+        }
+      }
+    ],
+    "aboveBookLabels": [
+      {
+        "power": "fire",
+        "labelBottom": 574.5066528320312,
+        "bookTop": 576.0408935546875,
+        "gap": 1.53424072265625
+      },
+      {
+        "power": "ice",
+        "labelBottom": 574.5066528320312,
+        "bookTop": 578.8693237304688,
+        "gap": 4.3626708984375
+      },
+      {
+        "power": "slow",
+        "labelBottom": 574.5066528320312,
+        "bookTop": 576.0408935546875,
+        "gap": 1.53424072265625
+      },
+      {
+        "power": "wind",
+        "labelBottom": 574.5066528320312,
+        "bookTop": 578.8693237304688,
+        "gap": 4.3626708984375
+      }
+    ]
+  }
+}

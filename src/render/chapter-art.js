@@ -1,3 +1,4 @@
+import { paintBoundFolio, paintLeatherSpine } from './library-bindery.js';
 import { CAMPAIGN } from '../data/campaign.js';
 import { roomForChapter } from './presentation.js';
 
@@ -71,9 +72,8 @@ function caStar(c,x,y,size,color){c.save();c.strokeStyle=color;c.lineWidth=.9;ca
 function caMetal(c,x,w,a){const g=c.createLinearGradient(x,0,x+w,0);g.addColorStop(0,'#51402e');g.addColorStop(.3,a);g.addColorStop(.48,'#efdbad');g.addColorStop(.66,a);g.addColorStop(1,'#665037');return g;}
 function caGlow(c,x,y,r,color,alpha){const g=c.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,caRGBA(color,alpha));g.addColorStop(1,caRGBA(color,0));c.fillStyle=g;c.fillRect(x-r,y-r,r*2,r*2);}
 function caBook(c,x,y,w,h,color,angle=0){
- c.save();c.translate(x,y);c.rotate(angle);c.fillStyle='#151a15';caRR(c,-w/2,-h,w,h,3);c.fill();
- const g=c.createLinearGradient(-w/2,0,w/2,0);g.addColorStop(0,'#18241d');g.addColorStop(.2,color);g.addColorStop(.65,color);g.addColorStop(1,'#243429');c.fillStyle=g;c.fill();c.strokeStyle='#ac93624d';c.lineWidth=.8;c.stroke();
- c.fillStyle='#d2ba89';c.globalAlpha=.65;c.fillRect(-w/2+3,-h+8,w-6,1);c.fillRect(-w/2+3,-9,w-6,1);c.restore();
+ const colors=['#55452f','#344239','#584035'];
+ paintLeatherSpine(c,x,y,w,h,colors[Math.abs(Math.round(x/32))%colors.length],angle);
 }
 function caLeaf(c,x,y,size,angle,color){c.save();c.translate(x,y);c.rotate(angle);c.fillStyle=color;c.beginPath();c.moveTo(-size,0);c.quadraticCurveTo(0,-size*.85,size,0);c.quadraticCurveTo(0,size*.6,-size,0);c.fill();c.strokeStyle='#d3e6bb55';c.lineWidth=.6;caLine(c,-size*.75,0,size*.8,0);c.restore();}
 function caCrystal(c,x,y,w,h,accent){
@@ -89,14 +89,10 @@ function caCandle(c,x,y,h,accent,unlit=false){
  if(!unlit){caGlow(c,x,y-h-12,38,accent,.2);c.fillStyle='#ebc984';c.beginPath();c.moveTo(x,y-h-24);c.bezierCurveTo(x+3,y-h-12,x+9,y-h-3,x,y-h-5);c.bezierCurveTo(x-7,y-h-7,x-3,y-h-14,x,y-h-24);c.fill();c.fillStyle='#fff0ba';c.beginPath();c.ellipse(x,y-h-10,2.1,4.4,0,0,Math.PI*2);c.fill();}
 }
 function caFolio(c,accent,variant,closed=false){
- c.save();c.rotate(-.08);c.fillStyle='#243c30';caRR(c,-46,-23,92,83,3);c.fill();c.strokeStyle=accent;c.lineWidth=.9;c.stroke();
- if(closed){c.strokeRect(-40,-17,80,71);caStar(c,0,17,14,accent);}
- else{
-  const g=c.createLinearGradient(-41,0,41,0);g.addColorStop(0,'#b7a787');g.addColorStop(.45,'#dfd0a9');g.addColorStop(.5,'#7e7256');g.addColorStop(.56,'#e0d3b4');g.addColorStop(1,'#bbab83');c.fillStyle=g;c.beginPath();c.moveTo(-41,-19);c.quadraticCurveTo(-20,-24,0,-12);c.quadraticCurveTo(21,-24,41,-19);c.lineTo(41,54);c.quadraticCurveTo(19,49,0,60);c.quadraticCurveTo(-19,49,-41,54);c.closePath();c.fill();
-  c.strokeStyle='#6f674c77';c.lineWidth=.8;for(let y=-5;y<49;y+=7){caLine(c,-34,y,-6,y+4);caLine(c,6,y+4,32-(Math.abs(y)%3)*3,y);}
-  if(variant==='burning'||variant==='flame'){c.strokeStyle='#623924';c.lineWidth=3;caLine(c,-41,-18,-41,54);caLine(c,40,-19,40,54);caGlow(c,-27,50,28,'#e19548',.23);}
+ paintBoundFolio(c,{closed,stand:variant==='reading-folio'});
+ if(!closed&&(variant==='burning'||variant==='flame')){
+  c.save();c.strokeStyle='#583020';c.lineWidth=2;caLine(c,-46,-28,-43,43);caGlow(c,-30,46,23,'#de9553',.15);c.restore();
  }
- c.restore();
 }
 function caSymbol(c,type,a,v=0){
  c.strokeStyle=a;c.lineWidth=1.2;
@@ -238,7 +234,7 @@ export function paintWingLandmark(c,profile){
  const recess=c.createRadialGradient(1071,313,18,1071,313,105);recess.addColorStop(0,'#0b201dcc');recess.addColorStop(1,'#0b201d00');c.fillStyle=recess;c.fillRect(998,217,150,174);
  c.fillStyle='#100e0d75';c.beginPath();c.ellipse(1070,382,51,6,-.025,0,Math.PI*2);c.fill();
  const wash=c.createRadialGradient(1023,250,0,1023,250,147);wash.addColorStop(0,caRGBA(room.lamp,.11));wash.addColorStop(1,caRGBA(room.lamp,0));c.fillStyle=wash;c.fillRect(998,217,150,174);
- c.save();c.translate(1070,307);c.globalAlpha=.94;c.shadowColor='#030d0ca0';c.shadowBlur=4;c.shadowOffsetX=3;c.shadowOffsetY=3;
+ c.save();c.translate(1070,307);c.globalAlpha=.94;c.shadowColor='#030d0c80';c.shadowBlur=3;c.shadowOffsetX=2;c.shadowOffsetY=2;
  caProp(c,{...profile,prop:landmark.prop,id:landmark.id,accent:a});c.shadowBlur=0;c.shadowOffsetX=0;c.shadowOffsetY=0;
  // Distinct secondary silhouettes are physically related, not floating HUD glyphs.
  if(landmark.prop==='plant'){c.strokeStyle=caRGBA('#e3e5cd',.18);c.lineWidth=1;c.beginPath();c.moveTo(-49,72);c.lineTo(-49,-20);c.arc(0,-20,49,Math.PI,0);c.lineTo(49,72);c.stroke();}

@@ -1,0 +1,37 @@
+{"name": "Matching 3.6.4 identity and exact non-diagnostic startup", "status": "PASS", "seconds": 3.964}
+{"name": "Both bounded atmosphere surfaces are built under loading, before the first key", "status": "PASS", "seconds": 0.004}
+{"name": "Actual raster leaves near shelves, columns, desk and all four stage edges untouched", "status": "PASS", "seconds": 0.283}
+{"name": "Feather is continuous in actual pixels; the old sheet top/bottom no longer forms an alpha edge", "status": "PASS", "seconds": 0.02}
+{"name": "Original painted depth survives while central green saturation is reduced, without a bright haze", "status": "PASS", "seconds": 0.036}
+{"name": "High contrast darkens background pixels without altering the feather boundary", "status": "PASS", "seconds": 0.011}
+{"name": "All 48 chapters and both contrast settings share a calm center without changing simulation or growing caches", "status": "PASS", "seconds": 4.447}
+{"name": "No extra DOM screen, extra input field or duplicate UI canvas is introduced", "status": "PASS", "seconds": 0.055}
+{"name": "60 live rendered frames perform zero pixel readbacks after loading", "status": "PASS", "seconds": 1.221}
+{"name": "120 accessibility toggles reuse the same two surfaces and preserve the current run", "status": "PASS", "seconds": 0.298}
+{"name": "1920x1080: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 1.943}
+{"name": "1440x900: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.371}
+{"name": "1366x768: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.839}
+{"name": "1280x720: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.312}
+{"name": "1024x768: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.264}
+{"name": "1024x600: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.283}
+{"name": "800x600: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.565}
+{"name": "960x540: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.272}
+{"name": "640x480: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.262}
+{"name": "2560x1080: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.351}
+{"name": "768x1024: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.306}
+{"name": "360x640: high-pressure words and existing HUD fit without a new panel or overlap", "status": "PASS", "seconds": 0.328}
+{"name": "Real input, Backspace and exact-word priority still work over the open chamber", "status": "PASS", "seconds": 0.35}
+{"name": "FIRE: actual keyboard cast, input selection, score and resources are unchanged", "status": "PASS", "seconds": 1.992}
+{"name": "ICE: actual keyboard cast, input selection, score and resources are unchanged", "status": "PASS", "seconds": 1.604}
+{"name": "SLOW: actual keyboard cast, input selection, score and resources are unchanged", "status": "PASS", "seconds": 1.721}
+{"name": "WIND: actual keyboard cast, input selection, score and resources are unchanged", "status": "PASS", "seconds": 1.983}
+{"name": "ICE expiry and queued SLOW keep their original timing against the new background", "status": "PASS", "seconds": 0.186}
+{"name": "Pause and resume preserve simulation, partial effects and static atmosphere", "status": "PASS", "seconds": 0.677}
+{"name": "Reduced motion retains a static readable environment, with no moving mist or light sweep", "status": "PASS", "seconds": 1.123}
+{"name": "Twelve live cards at 95 percent paper pressure remain single-row and readable", "status": "PASS", "seconds": 1.018}
+{"name": "The first keystroke does not rebuild or synchronously process backdrop pixels", "status": "PASS", "seconds": 0.163}
+{"name": "A fresh atmosphere instance builds exactly two bounded surfaces; cold cost is recorded", "status": "PASS", "seconds": 0.21}
+{"name": "Unavailable original art cannot create a substitute rectangle or throw from the atmosphere", "status": "PASS", "seconds": 0.014}
+{"name": "The final word clears Chapter 5 and opens Chapter 6 without an atmosphere rebuild", "status": "PASS", "seconds": 0.503}
+{"name": "Actual rendered chapter and gameplay previews use the shipping painter", "status": "PASS", "seconds": 6.64}
+{"name": "Completed Open Atrium suite has zero unhandled page exceptions", "status": "PASS", "seconds": 0.0}

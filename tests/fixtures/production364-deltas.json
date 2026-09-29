@@ -1,0 +1,86 @@
+{
+  "src/game/rules.js": {
+    "beforeSHA256": "80d4cbf63110d575b6de1f8420c0e38c8897016548aee95a6195bc4ac93fa510",
+    "afterSHA256": "fedf2aafacf7db548faa2ccae50855242eace64ea9b45e091cd530ded9553e08",
+    "changes": [
+      {
+        "before": "/** Versioned, authored rules. No claim of exact numerical parity with the reference videos. */\nimport { stageInfo } from '../data/campaign.js';\nexport const RULESET_VERSION = 'typekeeper-3.2.1';\nexport const WIDTH=1200, HEIGHT=900;\nexport const FIELD=Object.freeze({left:226,right:978,top:172,bottom:648});\n",
+        "after": "/** Versioned, authored rules. No claim of exact numerical parity with the reference videos. */\nimport { stageInfo } from '../data/campaign.js';\nexport const RULESET_VERSION = 'typekeeper-3.6.4';\nexport const PREVIOUS_RULESET_VERSION = 'typekeeper-3.2.1';\nexport const WIDTH=1200, HEIGHT=900;\nexport const FIELD=Object.freeze({left:226,right:978,top:172,bottom:648});\n"
+      },
+      {
+        "before": " }\n if(n>48){baseSpeed=Math.min(170,finalSpeed+(n-48)*.65);interval=Math.max(.78,.96-(n-48)*.003);}\n return {quota:Math.min(42,12+Math.floor((n-1)/2)+(info.trial?4:0)),speed:baseSpeed*p.speed,interval:interval*p.interval,specialChance:.2,darkChance:n>=7?Math.min(.14,(n-6)*.0033):0,trial:info.trial};\n}\nexport function normalizeInput(value){return String(value).toUpperCase().replace(/[^A-Z]/g,'').slice(0,RULES.bufferLimit);}\n",
+        "after": " }\n if(n>48){baseSpeed=Math.min(170,finalSpeed+(n-48)*.65);interval=Math.max(.78,.96-(n-48)*.003);}\n // Only the two previously 13-word chapters change. Keep the authored curve.\n const authoredQuota=Math.min(42,12+Math.floor((n-1)/2)+(info.trial?4:0));\n return {quota:authoredQuota===13?14:authoredQuota,speed:baseSpeed*p.speed,interval:interval*p.interval,specialChance:.2,darkChance:n>=7?Math.min(.14,(n-6)*.0033):0,trial:info.trial};\n}\nexport function normalizeInput(value){return String(value).toUpperCase().replace(/[^A-Z]/g,'').slice(0,RULES.bufferLimit);}\n"
+      }
+    ]
+  },
+  "src/game/storage.js": {
+    "beforeSHA256": "dbac6eb70ece07946ce2bccc721acf5b6b2575c8aae1b5c5087160130bba02e8",
+    "afterSHA256": "b46877bbf1e0d913a0b8bf9ab593cf15045540ba6e809f1d1b560dcc8562f705",
+    "changes": [
+      {
+        "before": "import { APP_VERSION } from '../build-info.js';\nimport { chapterRecordKey, sanitizeChapterRecord } from './chapter-records.js';\nimport { RULESET_VERSION, POWERS, RULES } from './rules.js';\nimport { validEconomy, restoreEconomy } from './economy.js';\nconst KEY='typekeeper-enchanted-library-v3.2.1';\n",
+        "after": "import { APP_VERSION } from '../build-info.js';\nimport { chapterRecordKey, sanitizeChapterRecord } from './chapter-records.js';\nimport { RULESET_VERSION, PREVIOUS_RULESET_VERSION, POWERS, RULES } from './rules.js';\nimport { validEconomy, restoreEconomy } from './economy.js';\nconst KEY='typekeeper-enchanted-library-v3.2.1';\n"
+      },
+      {
+        "before": "const saneNumber=(n,min=0,max=1e12)=>Number.isFinite(n)&&n>=min&&n<=max;\nfunction emptyProgress(){return Object.fromEntries(PACE_NAMES.map(p=>[p,{unlocked:1,stages:{}}]));}\nfunction sameRecord(r){return `${r.date}/${r.score}/${r.seed}/${r.ruleset}/${r.mode}/${r.startLevel}`;}\n/** Local-only saves. Original v3/v2 keys are never deleted or overwritten by migration. */\nexport class LocalStore {\n",
+        "after": "const saneNumber=(n,min=0,max=1e12)=>Number.isFinite(n)&&n>=min&&n<=max;\nfunction emptyProgress(){return Object.fromEntries(PACE_NAMES.map(p=>[p,{unlocked:1,stages:{}}]));}\nfunction sameRecord(r){return `${r.date}/${r.pace}/${r.score}/${r.seed}/${r.ruleset}/${r.mode}/${r.startLevel}`;}\n/** Local-only saves. Original v3/v2 keys are never deleted or overwritten by migration. */\nexport class LocalStore {\n"
+      },
+      {
+        "before": "    const previous=this.data.progress[pace].stages[level];\n    const sanitized={campaignClear:row.campaignClear!==false,medal:Math.floor(row.medal),score:saneNumber(row.score)?row.score:0,wpm:saneNumber(row.wpm,0,1000)?row.wpm:0,accuracy:saneNumber(row.accuracy,0,100)?row.accuracy:0,ruleset:typeof row.ruleset==='string'?row.ruleset.slice(0,64):'library-edition-2.0.0'};\n    if(!previous)this.data.progress[pace].stages[level]=sanitized;\n    else if(previous.ruleset===sanitized.ruleset){\n",
+        "after": "    const previous=this.data.progress[pace].stages[level];\n    const sanitized={campaignClear:row.campaignClear!==false,medal:Math.floor(row.medal),score:saneNumber(row.score)?row.score:0,wpm:saneNumber(row.wpm,0,1000)?row.wpm:0,accuracy:saneNumber(row.accuracy,0,100)?row.accuracy:0,ruleset:typeof row.ruleset==='string'?row.ruleset.slice(0,64):'library-edition-2.0.0'};\n    if(saneNumber(row.legacyScore))sanitized.legacyScore=row.legacyScore;\n    if(!previous)this.data.progress[pace].stages[level]=sanitized;\n    else if(previous.ruleset===sanitized.ruleset){\n"
+      },
+      {
+        "before": "  if(parsed.chapterBests&&typeof parsed.chapterBests==='object'&&!Array.isArray(parsed.chapterBests)){\n   for(const [key,input]of Object.entries(parsed.chapterBests).slice(0,1152)){\n    const row=sanitizeChapterRecord(input);if(!row||chapterRecordKey(row)!==key||row.ruleset!==RULESET_VERSION)continue;\n    const old=this.data.chapterBests[key];if(!old||row.score>old.score)this.data.chapterBests[key]=row;\n   }\n",
+        "after": "  if(parsed.chapterBests&&typeof parsed.chapterBests==='object'&&!Array.isArray(parsed.chapterBests)){\n   for(const [key,input]of Object.entries(parsed.chapterBests).slice(0,1152)){\n    const row=sanitizeChapterRecord(input);if(!row||chapterRecordKey(row)!==key||![RULESET_VERSION,PREVIOUS_RULESET_VERSION].includes(row.ruleset))continue;\n    const old=this.data.chapterBests[key];if(!old||row.score>old.score)this.data.chapterBests[key]=row;\n   }\n"
+      },
+      {
+        "before": "  // New running-total records are separate from single-chapter result PBs.\n  if(parsed.scoreChaseBests&&typeof parsed.scoreChaseBests==='object'&&!Array.isArray(parsed.scoreChaseBests)){\n   for(const [key,input]of Object.entries(parsed.scoreChaseBests).slice(0,SCORE_CHASE_LIMIT)){\n    const row=sanitizeScoreChaseRecord(input);if(row&&scoreChaseKey(row)===key)this.mergeScoreChase(row);\n   }\n  }\n",
+        "after": "  // New running-total records are separate from single-chapter result PBs.\n  if(parsed.scoreChaseBests&&typeof parsed.scoreChaseBests==='object'&&!Array.isArray(parsed.scoreChaseBests)){\n   for(const [key,input]of Object.entries(parsed.scoreChaseBests).slice(0,SCORE_CHASE_LIMIT*2)){\n    const row=sanitizeScoreChaseRecord(input,{allowPrevious:true});if(row&&scoreChaseKey(row)===key)this.mergeScoreChase(row,{preservePrevious:true});\n   }\n  }\n"
+      },
+      {
+        "before": "  if(!unlock&&!old&&!accessible)return;\n  const ruleset=stage.ruleset||RULESET_VERSION,same=old?.ruleset===ruleset;\n  data.stages[stage.level]={campaignClear:unlock||(old?old.campaignClear!==false:false),medal:Math.max(old?.medal||0,stage.medal),score:Math.max(same?old.score:0,stage.stageScore),wpm:Math.max(same?old.wpm:0,stage.wpm),accuracy:Math.max(same?old.accuracy:0,stage.accuracy),ruleset,...(!same&&old?{legacyScore:old.score}:{})};\n  if(unlock)data.unlocked=Math.max(data.unlocked,Math.min(48,stage.level+1));\n  this.save();\n",
+        "after": "  if(!unlock&&!old&&!accessible)return;\n  const ruleset=stage.ruleset||RULESET_VERSION,same=old?.ruleset===ruleset;\n  data.stages[stage.level]={campaignClear:unlock||(old?old.campaignClear!==false:false),medal:Math.max(old?.medal||0,stage.medal),score:Math.max(same?old.score:0,stage.stageScore),wpm:Math.max(same?old.wpm:0,stage.wpm),accuracy:Math.max(same?old.accuracy:0,stage.accuracy),ruleset,...(!same&&old?{legacyScore:old.score}:saneNumber(old?.legacyScore)?{legacyScore:old.legacyScore}:{})};\n  if(unlock)data.unlocked=Math.max(data.unlocked,Math.min(48,stage.level+1));\n  this.save();\n"
+      },
+      {
+        "before": "  return {status,delta:previous?row.score-previous.score:0,previous,current:structuredClone(row)};\n }\n mergeScoreChase(input){\n  const row=sanitizeScoreChaseRecord(input);if(!row)return false;\n  const key=scoreChaseKey(row),old=this.data.scoreChaseBests[key];\n  if(old&&old.score>=row.score)return false;\n  if(!old&&Object.keys(this.data.scoreChaseBests).length>=SCORE_CHASE_LIMIT)return false;\n  this.data.scoreChaseBests[key]=row;return true;\n }\n",
+        "after": "  return {status,delta:previous?row.score-previous.score:0,previous,current:structuredClone(row)};\n }\n mergeScoreChase(input,{preservePrevious=false}={}){\n  const row=sanitizeScoreChaseRecord(input,{allowPrevious:preservePrevious});if(!row)return false;\n  const key=scoreChaseKey(row),old=this.data.scoreChaseBests[key];\n  if(old&&old.score>=row.score)return false;\n  if(!old&&Object.values(this.data.scoreChaseBests).filter(r=>r.ruleset===row.ruleset).length>=SCORE_CHASE_LIMIT)return false;\n  this.data.scoreChaseBests[key]=row;return true;\n }\n"
+      }
+    ]
+  },
+  "src/game/score-chase.js": {
+    "beforeSHA256": "4199f97323c8e8a6a345a7afdb8177584533cd373fba5a2b591f9cd884264e20",
+    "afterSHA256": "59a4cd31bc0b240b7a1a50a8f1fecb10b86f7f90644f6a96de90cc6c5ce6ece7",
+    "changes": [
+      {
+        "before": "import { RULESET_VERSION } from './rules.js';\n\n/** Score Chase always compares the number shown in SCORE: the running total.\n",
+        "after": "import { RULESET_VERSION, PREVIOUS_RULESET_VERSION } from './rules.js';\n\n/** Score Chase always compares the number shown in SCORE: the running total.\n"
+      },
+      {
+        "before": " return `running-v1|${ruleset}|${pace}|${mode}|${startLevel}|${chapter}`;\n}\nexport function sanitizeScoreChaseRecord(input) {\n if(!input||input.metric!=='running-total'||!scoreChaseKey(input)||input.ruleset!==RULESET_VERSION||!chaseInteger(input.score))return null;\n return {...scoreChaseScope(input),metric:'running-total',score:input.score};\n}\n",
+        "after": " return `running-v1|${ruleset}|${pace}|${mode}|${startLevel}|${chapter}`;\n}\nexport function sanitizeScoreChaseRecord(input,{allowPrevious=false}={}) {\n // Historical scores may be kept on import, never promoted into current targets.\n const allowed=input?.ruleset===RULESET_VERSION||(allowPrevious&&input?.ruleset===PREVIOUS_RULESET_VERSION);\n if(!input||input.metric!=='running-total'||!scoreChaseKey(input)||!allowed||!chaseInteger(input.score))return null;\n return {...scoreChaseScope(input),metric:'running-total',score:input.score};\n}\n"
+      }
+    ]
+  },
+  "src/render/chapter-art.js": {
+    "beforeSHA256": "cc580800fe2554c53dbb27065b5c3f3b8652c68db8e3533c6e69c92241e9cc23",
+    "afterSHA256": "fdede9963dc2a99311809548263e9bbf977e3b87d973ac0f97b1e6a71c909215",
+    "changes": [
+      {
+        "before": "import { CAMPAIGN } from '../data/campaign.js';\nimport { roomForChapter } from './presentation.js';\n",
+        "after": "import { paintBoundFolio, paintLeatherSpine } from './library-bindery.js';\nimport { CAMPAIGN } from '../data/campaign.js';\nimport { roomForChapter } from './presentation.js';\n"
+      },
+      {
+        "before": "function caGlow(c,x,y,r,color,alpha){const g=c.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,caRGBA(color,alpha));g.addColorStop(1,caRGBA(color,0));c.fillStyle=g;c.fillRect(x-r,y-r,r*2,r*2);}\nfunction caBook(c,x,y,w,h,color,angle=0){\n c.save();c.translate(x,y);c.rotate(angle);c.fillStyle='#151a15';caRR(c,-w/2,-h,w,h,3);c.fill();\n const g=c.createLinearGradient(-w/2,0,w/2,0);g.addColorStop(0,'#18241d');g.addColorStop(.2,color);g.addColorStop(.65,color);g.addColorStop(1,'#243429');c.fillStyle=g;c.fill();c.strokeStyle='#ac93624d';c.lineWidth=.8;c.stroke();\n c.fillStyle='#d2ba89';c.globalAlpha=.65;c.fillRect(-w/2+3,-h+8,w-6,1);c.fillRect(-w/2+3,-9,w-6,1);c.restore();\n}\nfunction caLeaf(c,x,y,size,angle,color){c.save();c.translate(x,y);c.rotate(angle);c.fillStyle=color;c.beginPath();c.moveTo(-size,0);c.quadraticCurveTo(0,-size*.85,size,0);c.quadraticCurveTo(0,size*.6,-size,0);c.fill();c.strokeStyle='#d3e6bb55';c.lineWidth=.6;caLine(c,-size*.75,0,size*.8,0);c.restore();}\n",
+        "after": "function caGlow(c,x,y,r,color,alpha){const g=c.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,caRGBA(color,alpha));g.addColorStop(1,caRGBA(color,0));c.fillStyle=g;c.fillRect(x-r,y-r,r*2,r*2);}\nfunction caBook(c,x,y,w,h,color,angle=0){\n const colors=['#55452f','#344239','#584035'];\n paintLeatherSpine(c,x,y,w,h,colors[Math.abs(Math.round(x/32))%colors.length],angle);\n}\nfunction caLeaf(c,x,y,size,angle,color){c.save();c.translate(x,y);c.rotate(angle);c.fillStyle=color;c.beginPath();c.moveTo(-size,0);c.quadraticCurveTo(0,-size*.85,size,0);c.quadraticCurveTo(0,size*.6,-size,0);c.fill();c.strokeStyle='#d3e6bb55';c.lineWidth=.6;caLine(c,-size*.75,0,size*.8,0);c.restore();}\n"
+      },
+      {
+        "before": "}\nfunction caFolio(c,accent,variant,closed=false){\n c.save();c.rotate(-.08);c.fillStyle='#243c30';caRR(c,-46,-23,92,83,3);c.fill();c.strokeStyle=accent;c.lineWidth=.9;c.stroke();\n if(closed){c.strokeRect(-40,-17,80,71);caStar(c,0,17,14,accent);}\n else{\n  const g=c.createLinearGradient(-41,0,41,0);g.addColorStop(0,'#b7a787');g.addColorStop(.45,'#dfd0a9');g.addColorStop(.5,'#7e7256');g.addColorStop(.56,'#e0d3b4');g.addColorStop(1,'#bbab83');c.fillStyle=g;c.beginPath();c.moveTo(-41,-19);c.quadraticCurveTo(-20,-24,0,-12);c.quadraticCurveTo(21,-24,41,-19);c.lineTo(41,54);c.quadraticCurveTo(19,49,0,60);c.quadraticCurveTo(-19,49,-41,54);c.closePath();c.fill();\n  c.strokeStyle='#6f674c77';c.lineWidth=.8;for(let y=-5;y<49;y+=7){caLine(c,-34,y,-6,y+4);caLine(c,6,y+4,32-(Math.abs(y)%3)*3,y);}\n  if(variant==='burning'||variant==='flame'){c.strokeStyle='#623924';c.lineWidth=3;caLine(c,-41,-18,-41,54);caLine(c,40,-19,40,54);caGlow(c,-27,50,28,'#e19548',.23);}\n }\n c.restore();\n}\nfunction caSymbol(c,type,a,v=0){\n",
+        "after": "}\nfunction caFolio(c,accent,variant,closed=false){\n paintBoundFolio(c,{closed,stand:variant==='reading-folio'});\n if(!closed&&(variant==='burning'||variant==='flame')){\n  c.save();c.strokeStyle='#583020';c.lineWidth=2;caLine(c,-46,-28,-43,43);caGlow(c,-30,46,23,'#de9553',.15);c.restore();\n }\n}\nfunction caSymbol(c,type,a,v=0){\n"
+      },
+      {
+        "before": " c.fillStyle='#100e0d75';c.beginPath();c.ellipse(1070,382,51,6,-.025,0,Math.PI*2);c.fill();\n const wash=c.createRadialGradient(1023,250,0,1023,250,147);wash.addColorStop(0,caRGBA(room.lamp,.11));wash.addColorStop(1,caRGBA(room.lamp,0));c.fillStyle=wash;c.fillRect(998,217,150,174);\n c.save();c.translate(1070,307);c.globalAlpha=.94;c.shadowColor='#030d0ca0';c.shadowBlur=4;c.shadowOffsetX=3;c.shadowOffsetY=3;\n caProp(c,{...profile,prop:landmark.prop,id:landmark.id,accent:a});c.shadowBlur=0;c.shadowOffsetX=0;c.shadowOffsetY=0;\n // Distinct secondary silhouettes are physically related, not floating HUD glyphs.\n",
+        "after": " c.fillStyle='#100e0d75';c.beginPath();c.ellipse(1070,382,51,6,-.025,0,Math.PI*2);c.fill();\n const wash=c.createRadialGradient(1023,250,0,1023,250,147);wash.addColorStop(0,caRGBA(room.lamp,.11));wash.addColorStop(1,caRGBA(room.lamp,0));c.fillStyle=wash;c.fillRect(998,217,150,174);\n c.save();c.translate(1070,307);c.globalAlpha=.94;c.shadowColor='#030d0c80';c.shadowBlur=3;c.shadowOffsetX=2;c.shadowOffsetY=2;\n caProp(c,{...profile,prop:landmark.prop,id:landmark.id,accent:a});c.shadowBlur=0;c.shadowOffsetX=0;c.shadowOffsetY=0;\n // Distinct secondary silhouettes are physically related, not floating HUD glyphs.\n"
+      }
+    ]
+  }
+}

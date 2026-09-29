@@ -1,13 +1,13 @@
-import { AtriumBackdrop } from './atrium.js?v=3.6.3-447ce8d517d13011';
-import { IMPACT, MachineResponse, pileLeaf, targetTreatment, impactSource, pendingPaperPressure, impactTarget } from './impact.js?v=3.6.3-447ce8d517d13011';
-import { chapterArtForLevel, paintChapterDecoration, paintChapterMotion } from './chapter-art.js?v=3.6.3-447ce8d517d13011';
-import { ElementalArt } from './elemental-art.js?v=3.6.3-447ce8d517d13011';
-import { SCROLL, scrollGeometry, scrollInsets, paintScrollMaterial } from './imperial-scroll.js?v=3.6.3-447ce8d517d13011';
-import { ClassicRenderer } from './classic-renderer.js?v=3.6.3-447ce8d517d13011';
-import { pressureState } from '../game/pressure.js?v=3.6.3-447ce8d517d13011';
-import { POWER_META, POWERS, RULES, FIELD, mulberry32 } from '../game/rules.js?v=3.6.3-447ce8d517d13011';
-import { musicDirection, smoothBand } from '../audio/mix.js?v=3.6.3-447ce8d517d13011';
-import { BOOK_ANCHORS, PAPER_ANCHOR, roomForChapter, readableCardLayout, resolveVisualPositions, visualClamp, visualEase } from './presentation.js?v=3.6.3-447ce8d517d13011';
+import { AtriumBackdrop } from './atrium.js?v=3.6.4-8959ae504cb14f7f';
+import { IMPACT, MachineResponse, pileLeaf, targetTreatment, impactSource, pendingPaperPressure, impactTarget } from './impact.js?v=3.6.4-8959ae504cb14f7f';
+import { chapterArtForLevel, paintChapterDecoration, paintChapterMotion } from './chapter-art.js?v=3.6.4-8959ae504cb14f7f';
+import { ElementalArt } from './elemental-art.js?v=3.6.4-8959ae504cb14f7f';
+import { SCROLL, scrollGeometry, scrollInsets, paintScrollMaterial } from './imperial-scroll.js?v=3.6.4-8959ae504cb14f7f';
+import { ClassicRenderer } from './classic-renderer.js?v=3.6.4-8959ae504cb14f7f';
+import { pressureState } from '../game/pressure.js?v=3.6.4-8959ae504cb14f7f';
+import { POWER_META, POWERS, RULES, FIELD, mulberry32 } from '../game/rules.js?v=3.6.4-8959ae504cb14f7f';
+import { musicDirection, smoothBand } from '../audio/mix.js?v=3.6.4-8959ae504cb14f7f';
+import { BOOK_ANCHORS, PAPER_ANCHOR, roomForChapter, readableCardLayout, resolveVisualPositions, visualClamp, visualEase } from './presentation.js?v=3.6.4-8959ae504cb14f7f';
 
 function visRR(c,x,y,w,h,r=3){c.beginPath();c.roundRect(x,y,w,h,r);}
 function visOff(w,h){const a=document.createElement('canvas');a.width=Math.ceil(w);a.height=Math.ceil(h);return a;}
