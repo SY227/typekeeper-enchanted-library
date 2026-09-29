@@ -1,17 +1,17 @@
-# v3.6.2 — A Fresh Journey
+# v3.6.3 — Open Atrium
 
-Returning players can choose **Start from Chapter 1** directly below Continue.
-This starts a new campaign attempt without clearing unlocked chapters, mastery
-stars or personal bests. Chapters remains available for later unlocked Practice.
+Direct update of the supplied v3.6.2 full game.
 
-- Explicit confirmation names the Continue chapter that will be replaced.
-- Cancel/Close/Escape preserve the current save and return to the originating view.
-- Safe keyboard default; repeat/stale confirmations cannot restart active play.
-- A single checkpoint replacement instead of deletion then re-save.
-- New/returning/completed game states and difficulty-specific saves handled.
-- Previous above-book READY/COLLECT placement retained through a small reapplication
-  from the supplied v3.6.1 preview to the available v3.6.0 complete source.
-- All core rules, gameplay, original assets and audio retained.
+- Removed the large translucent green manuscript, outline, horizontal rules,
+  binding marks and ring behind the words.
+- Revealed the original painted chamber with a feathered desaturated depth grade
+  and restrained warm lantern bounce. No replacement panel or new central object.
+- Prepared normal/high-contrast variants during loading; bounded caching, no
+  per-frame image processing or added ambient animation.
+- Preserved all gameplay, word/character/spell rendering, controls, HUD positions,
+  Score Chase, restart-with-unlocks flow, original artwork/audio and save rules.
+- Added focused environmental pixel, cache, accessibility and interaction checks;
+  reran existing suites on the new build. See QA_REPORT.md for actual outcomes.
 
-See QA_REPORT.md for actual executed gates and FRESH_JOURNEY_SPEC.md for scope.
-Older release reports in archive/ are historical, not new runs.
+Ruleset and save key remain typekeeper-3.2.1 / typekeeper-enchanted-library-v3.2.1.
+Older version documentation is archived separately.

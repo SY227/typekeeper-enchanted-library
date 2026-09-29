@@ -1,3 +1,4 @@
+import { AtriumBackdrop } from './atrium.js';
 import { IMPACT, MachineResponse, pileLeaf, targetTreatment, impactSource, pendingPaperPressure, impactTarget } from './impact.js';
 import { chapterArtForLevel, paintChapterDecoration, paintChapterMotion } from './chapter-art.js';
 import { ElementalArt } from './elemental-art.js';
@@ -21,7 +22,7 @@ function visStar(c,x,y,r,color,alpha=1){
 export class GameRenderer extends ClassicRenderer {
  constructor(canvas,model,settings){
   super(canvas,model,settings);
-  this.cssScale=1;this.sceneCache=new Map();this.cardLayouts=new Map();this.poses=new Map();
+  this.cssScale=1;this.atrium=new AtriumBackdrop();this.sceneCache=new Map();this.cardLayouts=new Map();this.poses=new Map();
   this.spawns=new Map();this.arrivals=[];this.deaths=[];this.bookFlashes=[];this.inkMarks=[];
   this.motionTime=0;this.worldTime=0;this.poseTime=0;this.strike=0;this.recoil=0;this.erase=0;this.hand=0;this.streakBeat=0;
   this.milestone=0;this.glance=null;this.glanceTime=0;this.warmEcho=0;this.frostEcho=0;this.windEcho=0;
@@ -29,6 +30,16 @@ export class GameRenderer extends ClassicRenderer {
   this.guide={word:false,ice:false,targetId:null};this.randomFX=mulberry32(891331);
   this.particleCap=180;this.readability=[];this.outcomeProgress=0;
   this.elemental=new ElementalArt();this.iceAge=1;this.machine=new MachineResponse();this.pileImpulse=0;this.presentationCues=[];this.lastPileText='';this.lastImpact=null;
+ }
+ async load(){
+  await super.load();
+  const original=document.getElementById('library-background');
+  if(original){
+   await original.decode();
+   // Prepare both static grades under the existing loading screen. No pixel
+   // processing on the first key, chapter transition or contrast toggle.
+   this.atrium.layerFor(original,false);this.atrium.layerFor(original,true);
+  }
  }
  setViewport(scale){if(Math.abs(scale-this.cssScale)>.0001){this.cssScale=scale;this.cardLayouts.clear();}}
  setSettings(s){
@@ -66,19 +77,10 @@ export class GameRenderer extends ClassicRenderer {
  roomLayer(){
   const info=roomForChapter(this.model.level),chapter=chapterArtForLevel(this.model.level),key=`${chapter.id}/${this.settings.contrast}`;
   if(this.sceneCache.has(key))return this.sceneCache.get(key);
-  const im=visOff(1200,790),c=im.getContext('2d'),r=mulberry32(713);
-  // An unbound manuscript; translucent dark-green paper keeps the room and the
-  // bright live slips separate in value. No opaque ivory rectangle or UI card.
-  c.save();c.beginPath();c.moveTo(233,136);c.bezierCurveTo(446,121,745,134,968,135);c.lineTo(968,675);c.quadraticCurveTo(601,687,233,674);c.closePath();
-  const g=c.createLinearGradient(228,135,980,688);g.addColorStop(0,visRGBA(info.paper,.53));g.addColorStop(.46,visRGBA(info.paper,.39));g.addColorStop(1,'#142b296f');c.fillStyle=g;c.shadowColor='#0008';c.shadowBlur=15;c.fill();c.shadowBlur=0;
-  c.strokeStyle=visRGBA(chapter.accent,.22);c.lineWidth=1;c.stroke();c.clip();
-  c.strokeStyle=visRGBA(chapter.accent,.075);c.lineWidth=.7;
-  for(let y=161;y<680;y+=24){c.beginPath();c.moveTo(255,y);c.bezierCurveTo(465,y+3,756,y-1,950,y+1);c.stroke();}
-  c.strokeStyle=visRGBA(info.wash,.14);c.beginPath();c.moveTo(268,140);c.lineTo(268,673);c.stroke();
-  for(let i=0;i<740;i++){const x=235+r()*728,y=141+r()*536;c.fillStyle=visRGBA(r()>.5?'#ead6a3':'#051613',.04+r()*.035);c.fillRect(x,y,1+r()*5,.5);}
-  c.strokeStyle=visRGBA('#bbaa71',.055);c.lineWidth=4;c.beginPath();c.ellipse(836,535,44,40,.3,0,Math.PI*1.8);c.stroke();
-  for(let i=0;i<5;i++){c.fillStyle='#081d1b90';c.beginPath();c.arc(246,178+i*109,1.4,0,Math.PI*2);c.fill();}
-  c.restore();
+  const im=visOff(1200,790),c=im.getContext('2d');
+  // Open architecture, not an overlaid sheet. The original painted room supplies
+  // all depth; the bounded matte only grades the distant chamber, behind words.
+  this.atrium.paint(c,document.getElementById('library-background'),this.settings.contrast);
   // Small shelves and props are confined to the sides, outside text space.
   for(const side of [0,1]){
    const x=side?1003:52;c.fillStyle='#221b18';c.fillRect(x,389,143,9);c.fillRect(x,606,143,10);c.fillStyle='#94703d';c.fillRect(x,389,143,1);c.fillRect(x,606,143,1);

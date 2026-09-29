@@ -1,17 +1,17 @@
 {
   "scope": "Controlled 12-card browser profile with four-layer music and real typing\nfeedback. Diagnostic fixtures hold positions and replenish cards; scores/Enter,\nrenderer, DOM and synthesis are shipping code. Not a human run or device benchmark.\n",
-  "shippingSHA256": "e67d83bdfe00337a92746cbe858c4e73c0f04002aa3dde4d28c10aedcc6d7287",
+  "shippingSHA256": "9734786aba6ddd133fff64a54df6310d6234dd02df07c394f6b95e6388997266",
   "browser": "144.0.7559.96",
   "viewport": {
     "width": 1440,
     "height": 1040
   },
   "frameIntervals": 600,
-  "averageFPS": 58.35,
+  "averageFPS": 55.47,
   "medianFrameMs": 16.69999999999891,
-  "p95FrameMs": 16.799999999999272,
-  "maxFrameMs": 33.399999999999636,
-  "medianCanvasDrawMs": 1.2000000001862645,
+  "p95FrameMs": 33.29999999999927,
+  "maxFrameMs": 50,
+  "medianCanvasDrawMs": 1.2999999998137355,
   "pressure": 95,
   "audioSources": 4,
   "peakParticles": 13,
@@ -26,340 +26,781 @@
   "samples": [
     {
       "dt": 16.699999999999818,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.2999999998137355,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.800000000000182,
+      "draw": 1,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999999454,
+      "draw": 1,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 0.8999999999068677,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
       "draw": 1.8999999999068677,
       "words": 12,
       "particles": 0,
       "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
       "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 0,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 6.400000000139698,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
       "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.6999999997206032,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.7000000001862645,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
     },
     {
       "dt": 33.399999999999636,
-      "draw": 1.099999999627471,
+      "draw": 1.6999999999534339,
       "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
       "noise": 0
     },
     {
       "dt": 16.699999999999818,
-      "draw": 1.1999999997206032,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 0.8999999999068677,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 0.8999999999068677,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
+      "particles": 4,
+      "gleams": 1,
       "voices": 4,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 3,
       "noise": 0
     },
     {
-      "dt": 16.699999999999818,
-      "draw": 1.1000000000931323,
+      "dt": 50,
+      "draw": 1.8999999999068677,
       "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 3,
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
+      "dt": 50,
       "draw": 3.2000000001862645,
       "words": 12,
       "particles": 4,
       "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 33.30000000000018,
+      "draw": 2,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 1
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 2,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 4.100000000093132,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999999454,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.7999999998137355,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.7000000001862645,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.699999999999818,
+      "draw": 4.300000000046566,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
       "voices": 5,
       "noise": 1
     },
     {
-      "dt": 33.30000000000018,
-      "draw": 1.5,
+      "dt": 16.599999999999454,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.800000000000182,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 4,
       "gleams": 1,
@@ -367,8 +808,8 @@
       "noise": 0
     },
     {
-      "dt": 16.699999999999818,
-      "draw": 1.3999999999068677,
+      "dt": 16.600000000000364,
+      "draw": 1.2999999998137355,
       "words": 12,
       "particles": 4,
       "gleams": 1,
@@ -385,8 +826,8 @@
       "noise": 0
     },
     {
-      "dt": 16.699999999999818,
-      "draw": 1.099999999627471,
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 4,
       "gleams": 1,
@@ -394,8 +835,503 @@
       "noise": 0
     },
     {
+      "dt": 16.799999999999272,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
       "dt": 16.5,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
       "draw": 1.2999999998137355,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.2999999998137355,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 3.8999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.7000000001862645,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 1,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 3.5,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3999999999068677,
       "words": 12,
       "particles": 4,
       "gleams": 1,
@@ -408,84 +1344,12 @@
       "words": 12,
       "particles": 4,
       "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
       "voices": 3,
       "noise": 0
     },
     {
-      "dt": 16.699999999999818,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2999999998137355,
+      "dt": 16.69999999999891,
+      "draw": 1,
       "words": 12,
       "particles": 4,
       "gleams": 1,
@@ -493,12 +1357,48 @@
       "noise": 0
     },
     {
-      "dt": 16.799999999999272,
-      "draw": 1.1999999997206032,
+      "dt": 16.600000000000364,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.2000000001862645,
       "words": 12,
       "particles": 4,
       "gleams": 0,
       "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
       "noise": 0
     },
     {
@@ -511,39 +1411,21 @@
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
+      "dt": 33.399999999999636,
+      "draw": 1.5,
       "words": 12,
       "particles": 4,
       "gleams": 0,
-      "voices": 3,
-      "noise": 1
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
+      "voices": 0,
       "noise": 0
     },
     {
-      "dt": 16.599999999999454,
-      "draw": 1.6999999997206032,
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
       "words": 12,
       "particles": 4,
       "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.800000000000182,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
+      "voices": 0,
       "noise": 0
     },
     {
@@ -552,30 +1434,21 @@
       "words": 12,
       "particles": 4,
       "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
       "voices": 2,
       "noise": 1
     },
     {
-      "dt": 16.799999999999272,
-      "draw": 1.2000000001862645,
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -584,7 +1457,34 @@
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -592,17 +1492,80 @@
       "noise": 0
     },
     {
-      "dt": 16.699999999999818,
+      "dt": 16.700000000000728,
+      "draw": 0.8999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 0.8999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
       "draw": 1.1000000000931323,
       "words": 12,
       "particles": 4,
       "gleams": 0,
-      "voices": 1,
+      "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.0999999998603016,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -610,611 +1573,521 @@
       "noise": 0
     },
     {
-      "dt": 16.699999999999818,
-      "draw": 1,
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 3,
+      "particles": 4,
       "gleams": 0,
       "voices": 0,
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
+      "dt": 16.700000000000728,
+      "draw": 1,
       "words": 12,
-      "particles": 3,
+      "particles": 4,
       "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
+      "voices": 0,
       "noise": 0
     },
     {
-      "dt": 16.599999999999454,
-      "draw": 1.2000000001862645,
+      "dt": 16.799999999999272,
+      "draw": 0.8999999999068677,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 0.8999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1,
+      "words": 12,
+      "particles": 3,
       "gleams": 0,
       "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.2999999998137355,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 2,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.7000000001862645,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 3.699999999953434,
+      "words": 12,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 7,
+      "noise": 1
+    },
+    {
+      "dt": 33.399999999999636,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 7,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 33.29999999999927,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 6,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 6,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 6,
+      "gleams": 1,
+      "voices": 7,
+      "noise": 1
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.9000000001396984,
+      "words": 12,
+      "particles": 6,
+      "gleams": 1,
+      "voices": 7,
+      "noise": 0
+    },
+    {
+      "dt": 33.399999999999636,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 6,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 6,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 33.399999999999636,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.8999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 4,
       "gleams": 0,
       "voices": 1,
       "noise": 0
     },
     {
-      "dt": 16.699999999999818,
-      "draw": 1.2000000001862645,
+      "dt": 33.29999999999927,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
       "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.599999999999454,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999999454,
-      "draw": 1,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 0,
+      "voices": 1,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
       "draw": 3.1000000000931323,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
       "gleams": 0,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 4,
+      "voices": 1,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
+      "draw": 1.5,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
       "gleams": 0,
-      "voices": 3,
-      "noise": 0
+      "voices": 2,
+      "noise": 1
     },
     {
-      "dt": 16.699999999999818,
-      "draw": 1.2999999998137355,
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
       "gleams": 0,
       "voices": 2,
       "noise": 0
     },
     {
-      "dt": 16.599999999999454,
-      "draw": 1.2999999998137355,
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
       "gleams": 0,
       "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.7999999998137355,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.599999999999454,
       "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
       "noise": 0
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
+      "dt": 16.69999999999891,
       "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 3,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
+      "draw": 1.0999999998603016,
       "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 33.399999999999636,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
       "noise": 1
     },
     {
-      "dt": 16.699999999999818,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
       "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.699999999999818,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
+      "particles": 4,
+      "gleams": 0,
       "voices": 2,
       "noise": 0
     },
     {
-      "dt": 16.599999999999454,
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.80000000000109,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.2999999998137355,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
       "draw": 2,
       "words": 12,
-      "particles": 6,
+      "particles": 7,
       "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.6999999997206032,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.7000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.7000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.80000000000109,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.5,
-      "draw": 4.2000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 33.399999999999636,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 2.2999999998137355,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
+      "voices": 5,
       "noise": 1
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 2.5,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 7,
       "gleams": 1,
@@ -1223,106 +2096,529 @@
     },
     {
       "dt": 33.29999999999927,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 6,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 33.30000000000109,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.9000000001396984,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 33.400000000001455,
+      "draw": 1.8000000000465661,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 33.30000000000109,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
       "draw": 1.2999999998137355,
       "words": 12,
-      "particles": 7,
+      "particles": 4,
       "gleams": 1,
-      "voices": 5,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.5,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 3,
       "noise": 1
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.6000000000931323,
+      "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 5,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.799999999999272,
-      "draw": 1.099999999627471,
+      "draw": 1.0999999998603016,
       "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 4,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
       "draw": 1.3999999999068677,
       "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 3,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
+      "dt": 16.599999999998545,
+      "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 3,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.80000000000109,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
+      "draw": 1.5,
       "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.80000000000109,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
       "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.80000000000109,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
     },
     {
       "dt": 16.700000000000728,
       "draw": 1.6000000000931323,
       "words": 12,
-      "particles": 6,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 2,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 33.29999999999927,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 3.199999999953434,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 33.20000000000073,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 5,
       "gleams": 1,
       "voices": 5,
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.8999999999068677,
+      "dt": 16.69999999999891,
+      "draw": 1.5,
       "words": 12,
-      "particles": 6,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 33.400000000001455,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.8000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.7000000001862645,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 33.399999999999636,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
       "gleams": 1,
       "voices": 4,
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.599999999627471,
+      "dt": 16.600000000000364,
+      "draw": 1.5,
       "words": 12,
-      "particles": 5,
+      "particles": 4,
       "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 33.399999999999636,
-      "draw": 1.6999999997206032,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 2,
+      "voices": 3,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.6000000000931323,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 5,
+      "particles": 4,
       "gleams": 1,
       "voices": 2,
       "noise": 0
     },
     {
+      "dt": 16.69999999999891,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
       "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 4,
       "gleams": 1,
@@ -1330,16 +2626,7 @@
       "noise": 1
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
+      "dt": 16.799999999999272,
       "draw": 1.1000000000931323,
       "words": 12,
       "particles": 4,
@@ -1348,7 +2635,52 @@
       "noise": 0
     },
     {
+      "dt": 16.5,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
       "dt": 16.700000000000728,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.69999999999891,
       "draw": 0.8999999999068677,
       "words": 12,
       "particles": 4,
@@ -1357,17 +2689,17 @@
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
+      "dt": 16.600000000000364,
+      "draw": 1.0999999998603016,
       "words": 12,
       "particles": 4,
       "gleams": 0,
-      "voices": 1,
+      "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -1375,34 +2707,7 @@
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.5,
+      "dt": 16.599999999998545,
       "draw": 1.1000000000931323,
       "words": 12,
       "particles": 4,
@@ -1412,70 +2717,7 @@
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
+      "draw": 0.8999999999068677,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -1492,359 +2734,350 @@
       "noise": 1
     },
     {
+      "dt": 16.599999999998545,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 2.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 33.29999999999927,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 33.29999999999927,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 2,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 33.29999999999927,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
       "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.599999999998545,
       "draw": 1.5,
       "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 1,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 5,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
+      "draw": 1.4000000001396984,
       "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 0,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 5,
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
+      "dt": 16.700000000000728,
       "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 3,
       "noise": 0
     },
     {
       "dt": 16.69999999999891,
-      "draw": 1.2999999998137355,
+      "draw": 1.0999999998603016,
       "words": 12,
-      "particles": 2,
-      "gleams": 0,
+      "particles": 8,
+      "gleams": 1,
       "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
+      "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 2,
-      "gleams": 0,
+      "particles": 8,
+      "gleams": 1,
       "voices": 1,
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
       "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
       "draw": 1.2999999998137355,
       "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 4,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 3,
       "noise": 1
     },
     {
       "dt": 16.69999999999891,
-      "draw": 1.2999999998137355,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 4,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 3,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 2,
-      "gleams": 0,
+      "particles": 7,
+      "gleams": 1,
       "voices": 3,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.2999999998137355,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 2,
-      "gleams": 0,
+      "particles": 7,
+      "gleams": 1,
       "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
+      "draw": 1.3999999999068677,
       "words": 12,
-      "particles": 2,
+      "particles": 7,
       "gleams": 0,
-      "voices": 2,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 1,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 2.2999999998137355,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 6,
-      "gleams": 1,
-      "voices": 7,
+      "gleams": 0,
+      "voices": 3,
       "noise": 1
     },
     {
-      "dt": 16.799999999999272,
-      "draw": 1.2000000001862645,
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
       "words": 12,
       "particles": 6,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 1
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 6,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 6,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
+      "gleams": 0,
       "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 5,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 5,
+      "gleams": 0,
+      "voices": 1,
       "noise": 0
     },
     {
       "dt": 16.599999999998545,
-      "draw": 1.3999999999068677,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 2,
+      "particles": 5,
+      "gleams": 0,
+      "voices": 0,
       "noise": 0
     },
     {
-      "dt": 16.80000000000109,
-      "draw": 1.1999999997206032,
+      "dt": 16.700000000000728,
+      "draw": 1.2000000001862645,
       "words": 12,
-      "particles": 4,
+      "particles": 5,
       "gleams": 0,
-      "voices": 4,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 5,
+      "gleams": 0,
+      "voices": 2,
       "noise": 1
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
       "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
+      "draw": 1.0999999998603016,
       "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 4,
+      "particles": 5,
       "gleams": 0,
       "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -1853,7 +3086,16 @@
     },
     {
       "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -1861,449 +3103,35 @@
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
+      "dt": 16.700000000000728,
+      "draw": 1.4000000001396984,
       "words": 12,
       "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 1,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 1,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 1,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 1,
       "gleams": 0,
       "voices": 4,
       "noise": 1
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
+      "dt": 16.69999999999891,
+      "draw": 1.0999999998603016,
       "words": 12,
-      "particles": 1,
+      "particles": 4,
       "gleams": 0,
       "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 1,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 1,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 1,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 1,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.8999999999068677,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 3,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
       "draw": 1.7999999998137355,
       "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.7000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
+      "particles": 4,
+      "gleams": 0,
       "voices": 4,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.599999999627471,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 33.29999999999927,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 33.29999999999927,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 33.30000000000109,
-      "draw": 1.6000000000931323,
+      "draw": 1.8000000000465661,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -2312,52 +3140,7 @@
     },
     {
       "dt": 33.399999999999636,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.1000000000931323,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -2366,1051 +3149,592 @@
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.400000000372529,
+      "draw": 1.6999999999534339,
       "words": 12,
       "particles": 4,
       "gleams": 0,
       "voices": 2,
       "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 0.900000000372529,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.7000000001862645,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 1
     },
     {
       "dt": 33.399999999999636,
-      "draw": 1.6999999997206032,
+      "draw": 10.100000000093132,
       "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 33.30000000000109,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 1,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.7999999998137355,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 0.8999999999068677,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.5,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.5,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.80000000000109,
-      "draw": 1,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 0.8999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 4.399999999906868,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.80000000000109,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 3.400000000372529,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 33.30000000000109,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.400000000372529,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.7000000001862645,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 33.29999999999927,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 5.699999999720603,
-      "words": 12,
-      "particles": 7,
+      "particles": 8,
       "gleams": 1,
       "voices": 13,
       "noise": 1
     },
     {
+      "dt": 33.29999999999927,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 12,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 11,
+      "noise": 0
+    },
+    {
+      "dt": 16.80000000000109,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 11,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 11,
+      "noise": 0
+    },
+    {
+      "dt": 33.400000000001455,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 11,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 13,
+      "noise": 1
+    },
+    {
+      "dt": 33.30000000000109,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 12,
+      "noise": 0
+    },
+    {
+      "dt": 33.29999999999927,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 8,
+      "noise": 0
+    },
+    {
       "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 8,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 7,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 7,
+      "noise": 0
+    },
+    {
+      "dt": 33.30000000000109,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 8,
+      "gleams": 0,
+      "voices": 9,
+      "noise": 1
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 8,
+      "gleams": 0,
+      "voices": 8,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 8,
+      "gleams": 0,
+      "voices": 7,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 3.7000000001862645,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 33.20000000000073,
+      "draw": 1.2999999998137355,
+      "words": 12,
+      "particles": 5,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 3.199999999953434,
+      "words": 12,
+      "particles": 5,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 33.30000000000109,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 33.29999999999927,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 33.30000000000109,
+      "draw": 1.7000000001862645,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 5.100000000093132,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 33.20000000000073,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 3,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 33.29999999999927,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.8999999999068677,
+      "words": 12,
+      "particles": 2,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 33.399999999999636,
+      "draw": 2.3999999999068677,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 5,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.8000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.4000000001396984,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 2.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 4,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
       "draw": 2.1000000000931323,
       "words": 12,
-      "particles": 7,
+      "particles": 4,
       "gleams": 1,
-      "voices": 13,
+      "voices": 3,
       "noise": 1
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 13,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 12,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 11,
-      "noise": 0
-    },
-    {
       "dt": 16.700000000000728,
-      "draw": 1,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 7,
+      "particles": 4,
       "gleams": 1,
-      "voices": 11,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 13,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.8999999999068677,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 13,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 13,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 11,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 6,
-      "gleams": 1,
-      "voices": 10,
+      "voices": 3,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.400000000372529,
+      "draw": 1.4000000001396984,
       "words": 12,
-      "particles": 6,
+      "particles": 4,
       "gleams": 1,
-      "voices": 10,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 12,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 11,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 0.8999999999068677,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 10,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 5,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 8,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 8,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.7000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
       "voices": 3,
       "noise": 0
     },
     {
       "dt": 16.69999999999891,
-      "draw": 1.099999999627471,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
+      "gleams": 1,
       "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -3419,7 +3743,7 @@
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
+      "draw": 1.0999999998603016,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -3427,8 +3751,8 @@
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.2999999998137355,
+      "dt": 16.69999999999891,
+      "draw": 1.0999999998603016,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -3436,332 +3760,8 @@
       "noise": 1
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 3,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
       "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 1,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 0.8999999999068677,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 0.8999999999068677,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 2.7000000001862645,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 0,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 2,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.599999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 0.8999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 4.100000000093132,
-      "words": 12,
-      "particles": 4,
-      "gleams": 1,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -3770,51 +3770,6 @@
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
       "draw": 1.1000000000931323,
       "words": 12,
       "particles": 4,
@@ -3823,62 +3778,8 @@
       "noise": 0
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 0.900000000372529,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
       "dt": 16.69999999999891,
       "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.5,
       "words": 12,
       "particles": 4,
       "gleams": 0,
@@ -3886,251 +3787,350 @@
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
+      "dt": 16.700000000000728,
+      "draw": 1,
       "words": 12,
-      "particles": 3,
+      "particles": 4,
       "gleams": 0,
       "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.599999999998545,
-      "draw": 1.1999999997206032,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 4,
       "gleams": 0,
       "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
       "gleams": 0,
       "voices": 0,
       "noise": 0
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
       "gleams": 0,
-      "voices": 4,
+      "voices": 2,
       "noise": 1
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
       "dt": 16.700000000000728,
-      "draw": 1,
+      "draw": 1.5,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
       "gleams": 0,
-      "voices": 4,
+      "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
       "gleams": 0,
       "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.69999999999891,
-      "draw": 1,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 2,
+      "particles": 4,
       "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 2,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1.6999999997206032,
-      "words": 12,
-      "particles": 9,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 9,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 9,
-      "gleams": 1,
-      "voices": 5,
+      "voices": 1,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
       "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 2.699999999953434,
+      "words": 12,
+      "particles": 11,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 11,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 33.29999999999927,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 11,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 33.400000000001455,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.9000000001396984,
+      "words": 12,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 33.30000000000109,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 33.30000000000109,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 33.399999999999636,
+      "draw": 1.5,
       "words": 12,
       "particles": 8,
       "gleams": 1,
-      "voices": 4,
+      "voices": 1,
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
+      "dt": 16.600000000000364,
       "draw": 1.5,
       "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.7999999998137355,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 33.399999999999636,
-      "draw": 1.7000000001862645,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.7999999998137355,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 33.399999999999636,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
+      "particles": 8,
+      "gleams": 0,
       "voices": 3,
       "noise": 1
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
+      "dt": 16.69999999999891,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 8,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 7,
-      "gleams": 1,
+      "gleams": 0,
       "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 1,
       "noise": 0
     },
     {
       "dt": 16.599999999998545,
-      "draw": 1.1000000000931323,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 7,
-      "gleams": 1,
-      "voices": 3,
+      "gleams": 0,
+      "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.3999999999068677,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 7,
       "gleams": 0,
-      "voices": 2,
+      "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 0.900000000372529,
+      "draw": 1.0999999998603016,
       "words": 12,
       "particles": 7,
       "gleams": 0,
@@ -4138,7 +4138,7 @@
       "noise": 1
     },
     {
-      "dt": 16.600000000000364,
+      "dt": 16.69999999999891,
       "draw": 1.1000000000931323,
       "words": 12,
       "particles": 7,
@@ -4147,71 +4147,26 @@
       "noise": 0
     },
     {
-      "dt": 16.599999999998545,
+      "dt": 16.600000000000364,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
       "draw": 1.1000000000931323,
       "words": 12,
       "particles": 7,
       "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.8000000002793968,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
       "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.7000000001862645,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.6000000000931323,
+      "draw": 1.0999999998603016,
       "words": 12,
       "particles": 6,
       "gleams": 0,
@@ -4220,7 +4175,43 @@
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.3999999999068677,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1,
       "words": 12,
       "particles": 6,
       "gleams": 0,
@@ -4230,6 +4221,15 @@
     {
       "dt": 16.69999999999891,
       "draw": 1,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.2000000001862645,
       "words": 12,
       "particles": 6,
       "gleams": 0,
@@ -4246,39 +4246,84 @@
       "noise": 1
     },
     {
+      "dt": 16.69999999999891,
+      "draw": 1,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
       "dt": 16.600000000000364,
-      "draw": 1.7000000001862645,
+      "draw": 1.0999999998603016,
       "words": 12,
-      "particles": 5,
+      "particles": 6,
       "gleams": 0,
-      "voices": 2,
+      "voices": 0,
       "noise": 0
     },
     {
-      "dt": 16.599999999998545,
-      "draw": 1.5,
+      "dt": 16.69999999999891,
+      "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 5,
+      "particles": 6,
       "gleams": 0,
-      "voices": 2,
+      "voices": 0,
       "noise": 0
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 1.5,
+      "dt": 16.600000000000364,
+      "draw": 0.8999999999068677,
       "words": 12,
-      "particles": 5,
+      "particles": 6,
       "gleams": 0,
       "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.2999999998137355,
+      "draw": 1.2000000001862645,
       "words": 12,
-      "particles": 4,
+      "particles": 6,
       "gleams": 0,
-      "voices": 0,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 2,
       "noise": 0
     },
     {
@@ -4287,93 +4332,48 @@
       "words": 12,
       "particles": 4,
       "gleams": 0,
-      "voices": 0,
+      "voices": 2,
       "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.7000000001862645,
+      "words": 12,
+      "particles": 4,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 3.199999999953434,
+      "words": 12,
+      "particles": 11,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 11,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 1
     },
     {
       "dt": 16.700000000000728,
       "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.80000000000109,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 3,
+      "particles": 11,
+      "gleams": 1,
+      "voices": 5,
       "noise": 0
     },
     {
       "dt": 16.5,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.799999999999272,
-      "draw": 1,
-      "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 2,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.8000000002793968,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 5,
-      "noise": 0
-    },
-    {
-      "dt": 16.80000000000109,
-      "draw": 1.5,
+      "draw": 1.1000000000931323,
       "words": 12,
       "particles": 11,
       "gleams": 1,
@@ -4381,7 +4381,16 @@
       "noise": 0
     },
     {
-      "dt": 33.19999999999891,
+      "dt": 16.799999999999272,
+      "draw": 1,
+      "words": 12,
+      "particles": 11,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
       "draw": 1.6000000000931323,
       "words": 12,
       "particles": 11,
@@ -4391,169 +4400,214 @@
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.5,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 11,
+      "particles": 10,
       "gleams": 1,
       "voices": 5,
       "noise": 1
     },
     {
-      "dt": 16.599999999998545,
+      "dt": 16.69999999999891,
       "draw": 1.3999999999068677,
       "words": 12,
-      "particles": 11,
+      "particles": 10,
       "gleams": 1,
       "voices": 5,
       "noise": 0
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 11,
+      "particles": 10,
       "gleams": 1,
       "voices": 5,
       "noise": 0
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
+      "dt": 16.600000000000364,
+      "draw": 1.5,
       "words": 12,
-      "particles": 11,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 9,
       "gleams": 1,
       "voices": 2,
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
+      "dt": 16.700000000000728,
+      "draw": 1,
       "words": 12,
-      "particles": 11,
+      "particles": 9,
       "gleams": 1,
       "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 11,
+      "particles": 9,
       "gleams": 1,
       "voices": 4,
       "noise": 1
     },
     {
-      "dt": 16.599999999998545,
-      "draw": 1.2999999998137355,
+      "dt": 16.69999999999891,
+      "draw": 1.0999999998603016,
       "words": 12,
-      "particles": 11,
+      "particles": 9,
       "gleams": 1,
-      "voices": 3,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 3,
+      "voices": 4,
       "noise": 0
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 10,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 10,
-      "gleams": 1,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.80000000000109,
+      "dt": 16.600000000000364,
       "draw": 1,
       "words": 12,
-      "particles": 10,
+      "particles": 8,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.6000000000931323,
+      "words": 12,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 7,
       "gleams": 0,
       "voices": 1,
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 8,
+      "particles": 7,
       "gleams": 0,
-      "voices": 2,
+      "voices": 3,
       "noise": 1
     },
     {
-      "dt": 16.599999999998545,
-      "draw": 1.1000000000931323,
+      "dt": 16.69999999999891,
+      "draw": 1.5,
       "words": 12,
-      "particles": 8,
+      "particles": 7,
       "gleams": 0,
       "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 33.30000000000109,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
       "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 8,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 7,
       "gleams": 0,
       "voices": 2,
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
+      "dt": 16.700000000000728,
       "draw": 1.2000000001862645,
       "words": 12,
-      "particles": 8,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 33.30000000000109,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 7,
       "gleams": 0,
       "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.799999999999272,
-      "draw": 1,
-      "words": 12,
-      "particles": 8,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3000000002793968,
+      "draw": 1.4000000001396984,
       "words": 12,
       "particles": 7,
       "gleams": 0,
@@ -4561,8 +4615,8 @@
       "noise": 0
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 0.8999999999068677,
+      "dt": 16.600000000000364,
+      "draw": 1.6999999999534339,
       "words": 12,
       "particles": 7,
       "gleams": 0,
@@ -4570,143 +4624,80 @@
       "noise": 1
     },
     {
-      "dt": 16.599999999998545,
-      "draw": 1.1000000000931323,
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 7,
       "gleams": 0,
       "voices": 2,
       "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 0.8999999999068677,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.400000000372529,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
     },
     {
       "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 6,
+      "particles": 7,
       "gleams": 0,
       "voices": 2,
       "noise": 0
     },
     {
+      "dt": 16.600000000000364,
+      "draw": 1,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
       "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
       "draw": 1.2000000001862645,
       "words": 12,
       "particles": 6,
       "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3000000002793968,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 0.7999999998137355,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
       "voices": 4,
       "noise": 1
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
+      "dt": 16.600000000000364,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 6,
+      "gleams": 0,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 5,
       "gleams": 0,
       "voices": 4,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 6,
-      "gleams": 0,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
+      "draw": 1.4000000001396984,
       "words": 12,
       "particles": 5,
       "gleams": 0,
@@ -4715,7 +4706,16 @@
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
+      "draw": 1,
+      "words": 12,
+      "particles": 5,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 5,
       "gleams": 0,
@@ -4724,7 +4724,7 @@
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.6999999997206032,
+      "draw": 1.9000000001396984,
       "words": 12,
       "particles": 12,
       "gleams": 1,
@@ -4732,44 +4732,26 @@
       "noise": 1
     },
     {
-      "dt": 16.799999999999272,
-      "draw": 1.1000000000931323,
+      "dt": 16.80000000000109,
+      "draw": 1.4000000001396984,
       "words": 12,
       "particles": 12,
       "gleams": 1,
       "voices": 7,
       "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 12,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 12,
-      "gleams": 1,
-      "voices": 6,
-      "noise": 0
     },
     {
       "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
+      "draw": 1.8000000000465661,
       "words": 12,
       "particles": 12,
       "gleams": 1,
-      "voices": 5,
+      "voices": 7,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.5,
+      "draw": 1.4000000001396984,
       "words": 12,
       "particles": 12,
       "gleams": 1,
@@ -4778,34 +4760,7 @@
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 7,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.6000000000931323,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 11,
       "gleams": 1,
@@ -4814,34 +4769,7 @@
     },
     {
       "dt": 16.599999999998545,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 6,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
+      "draw": 1.3999999999068677,
       "words": 12,
       "particles": 10,
       "gleams": 1,
@@ -4850,28 +4778,109 @@
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.3999999999068677,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 10,
+      "gleams": 1,
+      "voices": 7,
+      "noise": 1
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.5999999998603016,
+      "words": 12,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 7,
+      "noise": 0
+    },
+    {
+      "dt": 33.399999999999636,
+      "draw": 1.5,
       "words": 12,
       "particles": 8,
+      "gleams": 1,
+      "voices": 7,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.6999999999534339,
+      "words": 12,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 7,
       "gleams": 1,
       "voices": 4,
       "noise": 0
     },
     {
       "dt": 16.600000000000364,
-      "draw": 1.599999999627471,
+      "draw": 1.3999999999068677,
       "words": 12,
-      "particles": 8,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.69999999999891,
+      "draw": 1.2999999998137355,
+      "words": 12,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 7,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.9000000001396984,
+      "words": 12,
+      "particles": 7,
       "gleams": 1,
       "voices": 2,
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.3999999999068677,
+      "dt": 16.799999999999272,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 8,
-      "gleams": 1,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000000364,
+      "draw": 1.2999999998137355,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
       "voices": 2,
       "noise": 0
     },
@@ -4879,95 +4888,41 @@
       "dt": 16.600000000000364,
       "draw": 1.2000000001862645,
       "words": 12,
-      "particles": 8,
-      "gleams": 1,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 8,
+      "particles": 7,
       "gleams": 0,
-      "voices": 4,
+      "voices": 3,
       "noise": 1
     },
     {
       "dt": 16.69999999999891,
-      "draw": 1.1000000000931323,
+      "draw": 1.7000000001862645,
       "words": 12,
-      "particles": 8,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 3,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.5,
+      "words": 12,
+      "particles": 7,
       "gleams": 0,
       "voices": 3,
       "noise": 0
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 8,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 8,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1,
+      "dt": 33.29999999999927,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 7,
       "gleams": 0,
       "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.80000000000109,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 1
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
+      "draw": 2.800000000046566,
       "words": 12,
       "particles": 7,
       "gleams": 0,
@@ -4975,8 +4930,8 @@
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
+      "dt": 33.29999999999927,
+      "draw": 1.3000000000465661,
       "words": 12,
       "particles": 7,
       "gleams": 0,
@@ -4984,16 +4939,7 @@
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
+      "dt": 16.700000000000728,
       "draw": 1.5,
       "words": 12,
       "particles": 7,
@@ -5002,8 +4948,8 @@
       "noise": 1
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.2000000001862645,
+      "dt": 16.599999999998545,
+      "draw": 1.5,
       "words": 12,
       "particles": 7,
       "gleams": 0,
@@ -5012,7 +4958,7 @@
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
+      "draw": 1.6000000000931323,
       "words": 12,
       "particles": 7,
       "gleams": 0,
@@ -5020,19 +4966,73 @@
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
+      "dt": 16.600000000002183,
+      "draw": 1.5,
       "words": 12,
-      "particles": 7,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999709,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 6,
       "gleams": 0,
       "voices": 0,
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.3000000002793968,
+      "dt": 16.700000000000728,
+      "draw": 1,
       "words": 12,
-      "particles": 7,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000002183,
+      "draw": 1,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 1
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 6,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1,
+      "words": 12,
+      "particles": 6,
       "gleams": 0,
       "voices": 0,
       "noise": 0
@@ -5041,50 +5041,50 @@
       "dt": 16.700000000000728,
       "draw": 0.8999999999068677,
       "words": 12,
-      "particles": 7,
+      "particles": 6,
       "gleams": 0,
       "voices": 0,
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 7,
+      "particles": 6,
       "gleams": 0,
       "voices": 4,
       "noise": 1
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1,
+      "dt": 16.599999999998545,
+      "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 7,
+      "particles": 6,
       "gleams": 0,
       "voices": 4,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1,
+      "draw": 1.1000000000931323,
       "words": 12,
-      "particles": 7,
+      "particles": 6,
       "gleams": 0,
       "voices": 4,
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
+      "dt": 16.700000000000728,
+      "draw": 0.9000000001396984,
       "words": 12,
-      "particles": 7,
+      "particles": 6,
       "gleams": 0,
-      "voices": 2,
+      "voices": 3,
       "noise": 0
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.2999999998137355,
+      "dt": 16.599999999998545,
+      "draw": 1.0999999998603016,
       "words": 12,
       "particles": 6,
       "gleams": 0,
@@ -5093,7 +5093,7 @@
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.099999999627471,
+      "draw": 0.8999999999068677,
       "words": 12,
       "particles": 6,
       "gleams": 0,
@@ -5101,8 +5101,8 @@
       "noise": 0
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 2.2999999998137355,
+      "dt": 16.700000000000728,
+      "draw": 2.199999999953434,
       "words": 12,
       "particles": 13,
       "gleams": 1,
@@ -5110,147 +5110,210 @@
       "noise": 1
     },
     {
-      "dt": 16.69999999999891,
-      "draw": 1.1999999997206032,
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
       "words": 12,
       "particles": 12,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.5,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 12,
+      "gleams": 1,
+      "voices": 5,
+      "noise": 0
+    },
+    {
+      "dt": 16.799999999999272,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 11,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 0
+    },
+    {
+      "dt": 16.599999999998545,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 11,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 11,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000002183,
+      "draw": 2.4000000001396984,
+      "words": 12,
+      "particles": 11,
       "gleams": 1,
       "voices": 5,
       "noise": 1
     },
     {
-      "dt": 16.600000000000364,
-      "draw": 1.5,
+      "dt": 33.39999999999782,
+      "draw": 1.3999999999068677,
       "words": 12,
-      "particles": 12,
+      "particles": 10,
       "gleams": 1,
       "voices": 5,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 2.1000000000931323,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 11,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.8000000002793968,
+      "draw": 1.5,
       "words": 12,
       "particles": 9,
       "gleams": 1,
-      "voices": 5,
-      "noise": 1
-    },
-    {
-      "dt": 16.600000000000364,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 8,
-      "gleams": 1,
-      "voices": 5,
+      "voices": 3,
       "noise": 0
     },
     {
-      "dt": 33.399999999999636,
-      "draw": 1.3999999999068677,
+      "dt": 16.599999999998545,
+      "draw": 1.0999999998603016,
       "words": 12,
-      "particles": 8,
-      "gleams": 1,
-      "voices": 4,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999891,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 8,
+      "particles": 9,
       "gleams": 1,
       "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.1999999997206032,
+      "draw": 1.1999999999534339,
       "words": 12,
-      "particles": 8,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 9,
       "gleams": 1,
       "voices": 2,
       "noise": 0
     },
     {
       "dt": 16.599999999998545,
-      "draw": 1.2000000001862645,
+      "draw": 1.5999999998603016,
       "words": 12,
-      "particles": 8,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 4,
+      "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3999999999068677,
+      "words": 12,
+      "particles": 9,
+      "gleams": 1,
+      "voices": 3,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000002183,
+      "draw": 1.0999999998603016,
+      "words": 12,
+      "particles": 9,
       "gleams": 1,
       "voices": 2,
       "noise": 0
     },
     {
-      "dt": 16.700000000000728,
-      "draw": 1.2999999998137355,
+      "dt": 16.69999999999709,
+      "draw": 1.3000000000465661,
       "words": 12,
-      "particles": 7,
+      "particles": 9,
       "gleams": 1,
-      "voices": 4,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 9,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000002183,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 9,
+      "gleams": 0,
+      "voices": 1,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999709,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 8,
+      "gleams": 0,
+      "voices": 2,
       "noise": 1
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.3000000000465661,
+      "words": 12,
+      "particles": 8,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
     },
     {
       "dt": 16.700000000000728,
       "draw": 1.1000000000931323,
       "words": 12,
       "particles": 7,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.2999999998137355,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
-      "voices": 3,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1999999997206032,
-      "words": 12,
-      "particles": 7,
-      "gleams": 1,
+      "gleams": 0,
       "voices": 2,
       "noise": 0
     },
     {
-      "dt": 16.600000000002183,
-      "draw": 1.1999999997206032,
+      "dt": 16.599999999998545,
+      "draw": 0.8999999999068677,
       "words": 12,
       "particles": 7,
-      "gleams": 1,
-      "voices": 1,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.700000000000728,
+      "draw": 1.2000000001862645,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.600000000002183,
+      "draw": 1,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 0,
       "noise": 0
     },
     {
@@ -5259,75 +5322,21 @@
       "words": 12,
       "particles": 7,
       "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.1000000000931323,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 3,
-      "noise": 1
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.6000000000931323,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 1,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000002183,
-      "draw": 1.3999999999068677,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999709,
-      "draw": 1.099999999627471,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.700000000000728,
-      "draw": 1,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
       "voices": 2,
       "noise": 1
     },
     {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
       "dt": 16.600000000002183,
-      "draw": 1.1000000000931323,
+      "draw": 0.9000000001396984,
       "words": 12,
       "particles": 7,
       "gleams": 0,
@@ -5336,25 +5345,16 @@
     },
     {
       "dt": 16.69999999999709,
-      "draw": 1.2000000001862645,
+      "draw": 0.8000000000465661,
       "words": 12,
       "particles": 7,
       "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.600000000002183,
-      "draw": 1.5,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 1,
+      "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.700000000000728,
-      "draw": 1.3999999999068677,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 7,
       "gleams": 0,
@@ -5362,17 +5362,17 @@
       "noise": 0
     },
     {
-      "dt": 16.799999999999272,
-      "draw": 1.2000000001862645,
-      "words": 12,
-      "particles": 7,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
+      "dt": 16.600000000002183,
       "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 0,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999709,
+      "draw": 1.1999999999534339,
       "words": 12,
       "particles": 7,
       "gleams": 0,
@@ -5380,46 +5380,46 @@
       "noise": 1
     },
     {
+      "dt": 16.700000000000728,
+      "draw": 1.1999999999534339,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
       "dt": 16.600000000002183,
-      "draw": 1.5,
+      "draw": 1.1000000000931323,
+      "words": 12,
+      "particles": 7,
+      "gleams": 0,
+      "voices": 2,
+      "noise": 0
+    },
+    {
+      "dt": 16.69999999999709,
+      "draw": 1.0999999998603016,
       "words": 12,
       "particles": 6,
       "gleams": 0,
-      "voices": 2,
-      "noise": 0
-    },
-    {
-      "dt": 16.69999999999709,
-      "draw": 1.8999999999068677,
-      "words": 12,
-      "particles": 5,
-      "gleams": 0,
-      "voices": 2,
+      "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.600000000002183,
-      "draw": 1.7000000001862645,
+      "draw": 1.2999999998137355,
       "words": 12,
-      "particles": 5,
+      "particles": 6,
       "gleams": 0,
       "voices": 0,
       "noise": 0
     },
     {
       "dt": 16.799999999999272,
-      "draw": 1.7000000001862645,
+      "draw": 1,
       "words": 12,
-      "particles": 4,
-      "gleams": 0,
-      "voices": 0,
-      "noise": 0
-    },
-    {
-      "dt": 16.599999999998545,
-      "draw": 1.7999999998137355,
-      "words": 12,
-      "particles": 3,
+      "particles": 6,
       "gleams": 0,
       "voices": 0,
       "noise": 0

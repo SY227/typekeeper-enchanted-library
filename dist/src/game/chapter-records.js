@@ -1,4 +1,4 @@
-import { RULESET_VERSION } from './rules.js?v=3.6.2-04b297ea546ad828';
+import { RULESET_VERSION } from './rules.js?v=3.6.3-447ce8d517d13011';
 const chapterPaces=['classic','relaxed','maniac'];
 const chapterModes=['campaign','practice'];
 const chapterFinite=(n,max=1e12)=>Number.isFinite(n)&&n>=0&&n<=max;

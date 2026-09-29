@@ -9,7 +9,7 @@ import {createHash} from 'node:crypto';
 
 const measure=(s,size)=>[...s].reduce((sum,c)=>sum+(c==='W'?.99:c==='I'?.38:.71)*size,0);
 test('Application 3.5.1 retains the 3.2.1 gameplay ruleset and resource capacity',()=>{
- assert.equal(PRESENTATION_VERSION,'3.6.2');assert.equal(RULESET_VERSION,'typekeeper-3.2.1');assert.equal(RULES.inventoryCapacity,2);assert.equal(RULES.iceDuration,6);assert.equal(RULES.slowDuration,8);
+ assert.equal(PRESENTATION_VERSION,'3.6.3');assert.equal(RULESET_VERSION,'typekeeper-3.2.1');assert.equal(RULES.inventoryCapacity,2);assert.equal(RULES.iceDuration,6);assert.equal(RULES.slowDuration,8);
 });
 test('Source hashes preserve untouched 3.4 modules; changed rules/model are covered by dual-model parity tests',()=>{
  const manifest=JSON.parse(fs.readFileSync(new URL('./fixtures/v340-unchanged.json',import.meta.url)));

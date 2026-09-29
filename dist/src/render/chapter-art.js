@@ -1,5 +1,5 @@
-import { CAMPAIGN } from '../data/campaign.js?v=3.6.2-04b297ea546ad828';
-import { roomForChapter } from './presentation.js?v=3.6.2-04b297ea546ad828';
+import { CAMPAIGN } from '../data/campaign.js?v=3.6.3-447ce8d517d13011';
+import { roomForChapter } from './presentation.js?v=3.6.3-447ce8d517d13011';
 
 /** Authored, cosmetic-only still lifes, keyed to the actual campaign title.
  * These do not touch the word RNG, word list, field, difficulty, or game clock.

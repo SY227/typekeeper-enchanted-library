@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { Script } from 'node:vm';
-const modules=['build-info.js','game/random.js','game/assets.js','data/campaign.js','game/pressure.js','game/controls.js','game/rules.js','data/words.js','game/economy.js','game/model.js','game/clock.js','game/chapter-records.js','game/score-chase.js','game/storage.js','audio/mix.js','audio/audio.js','ui/icons.js','ui/score-rollup.js','ui/contextual-guidance.js','ui/layout.js','ui/campaign-entry.js','ui/journey.js','render/book-leaf.js','render/imperial-scroll.js','render/presentation.js','render/chapter-art.js','render/elemental-art.js','render/classic-renderer.js','render/impact.js','render/renderer.js','main.js'];
+const modules=['build-info.js','game/random.js','game/assets.js','data/campaign.js','game/pressure.js','game/controls.js','game/rules.js','data/words.js','game/economy.js','game/model.js','game/clock.js','game/chapter-records.js','game/score-chase.js','game/storage.js','audio/mix.js','audio/audio.js','ui/icons.js','ui/score-rollup.js','ui/contextual-guidance.js','ui/layout.js','ui/campaign-entry.js','ui/journey.js','render/book-leaf.js','render/imperial-scroll.js','render/presentation.js','render/chapter-art.js','render/elemental-art.js','render/classic-renderer.js','render/impact.js','render/atrium.js','render/renderer.js','main.js'];
 const mime={'.webp':'image/webp','.svg':'image/svg+xml','.wav':'audio/wav','.mp3':'audio/mpeg','.json':'application/json'};
 /** Creates a genuine, no-fetch, non-module, single-file playable build. No prototype shims. */
 export async function standalone(root){

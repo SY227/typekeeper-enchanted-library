@@ -59,7 +59,7 @@ test('Continue restores the same vocabulary attempt, including a saved retry',()
  const before=draw(m,30),next=new GameModel();next.restoreCheckpoint(store.checkpoint());assert.deepEqual(draw(next,30),before);
 });
 test('Export/import preserves randomized vocabulary provenance without changing balance version',()=>{
- const a=new LocalStore(memory()),m=new GameModel();m.start({seed:22,wordSeed:8822});a.setCheckpoint(m.checkpoint());const payload=JSON.parse(a.exportData());assert.equal(payload.appVersion,'3.6.2');assert.equal(payload.checkpoints.classic.sequenceVersion,2);const b=new LocalStore(memory());b.importData(payload);assert.equal(b.checkpoint().wordSeed,8822);
+ const a=new LocalStore(memory()),m=new GameModel();m.start({seed:22,wordSeed:8822});a.setCheckpoint(m.checkpoint());const payload=JSON.parse(a.exportData());assert.equal(payload.appVersion,'3.6.3');assert.equal(payload.checkpoints.classic.sequenceVersion,2);const b=new LocalStore(memory());b.importData(payload);assert.equal(b.checkpoint().wordSeed,8822);
 });
 test('Older bookmarks without vocabulary metadata retain legacy opener on Continue, but Retry randomizes',()=>{
  const m=new GameModel();m.start({seed:73,sequenceVersion:1});const cp=m.checkpoint();delete cp.wordSeed;delete cp.sequenceVersion;

@@ -1,6 +1,6 @@
-import { SCROLL, scrollInsets } from './imperial-scroll.js?v=3.6.2-04b297ea546ad828';
+import { SCROLL, scrollInsets } from './imperial-scroll.js?v=3.6.3-447ce8d517d13011';
 /** Presentation-only contracts. Nothing here writes to the gameplay model. */
-export const PRESENTATION_VERSION='3.6.2';
+export const PRESENTATION_VERSION='3.6.3';
 export const BOOK_ANCHORS=Object.freeze({fire:{x:146,y:757},ice:{x:278,y:757},slow:{x:922,y:757},wind:{x:1054,y:757}});
 export const PAPER_ANCHOR=Object.freeze({x:411,y:746,width:378,height:53});
 export const ROOM_PROFILES=Object.freeze([

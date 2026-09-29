@@ -1,8 +1,8 @@
-import { SCORE_CHASE_LIMIT, scoreChaseScope, scoreChaseKey, sanitizeScoreChaseRecord, checkpointScoreChaseRecords } from './score-chase.js?v=3.6.2-04b297ea546ad828';
-import { APP_VERSION } from '../build-info.js?v=3.6.2-04b297ea546ad828';
-import { chapterRecordKey, sanitizeChapterRecord } from './chapter-records.js?v=3.6.2-04b297ea546ad828';
-import { RULESET_VERSION, POWERS, RULES } from './rules.js?v=3.6.2-04b297ea546ad828';
-import { validEconomy, restoreEconomy } from './economy.js?v=3.6.2-04b297ea546ad828';
+import { SCORE_CHASE_LIMIT, scoreChaseScope, scoreChaseKey, sanitizeScoreChaseRecord, checkpointScoreChaseRecords } from './score-chase.js?v=3.6.3-447ce8d517d13011';
+import { APP_VERSION } from '../build-info.js?v=3.6.3-447ce8d517d13011';
+import { chapterRecordKey, sanitizeChapterRecord } from './chapter-records.js?v=3.6.3-447ce8d517d13011';
+import { RULESET_VERSION, POWERS, RULES } from './rules.js?v=3.6.3-447ce8d517d13011';
+import { validEconomy, restoreEconomy } from './economy.js?v=3.6.3-447ce8d517d13011';
 const KEY='typekeeper-enchanted-library-v3.2.1';
 const OLD_KEYS=['typekeeper-enchanted-library-v3.2','typekeeper-enchanted-library-v3.1','typekeeper-enchanted-library-v3','typing-maniac-library-v2','typing-maniac-library-v1'];
 const PACE_NAMES=['classic','relaxed','maniac'];

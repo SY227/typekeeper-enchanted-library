@@ -1,5 +1,5 @@
 /** Versioned, authored rules. No claim of exact numerical parity with the reference videos. */
-import { stageInfo } from '../data/campaign.js?v=3.6.2-04b297ea546ad828';
+import { stageInfo } from '../data/campaign.js?v=3.6.3-447ce8d517d13011';
 export const RULESET_VERSION = 'typekeeper-3.2.1';
 export const WIDTH=1200, HEIGHT=900;
 export const FIELD=Object.freeze({left:226,right:978,top:172,bottom:648});

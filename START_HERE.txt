@@ -1,28 +1,25 @@
-TYPEKEEPER: ENCHANTED LIBRARY — v3.6.2
-A Fresh Journey
+TYPEKEEPER: ENCHANTED LIBRARY — v3.6.3
+OPEN ATRIUM
 
-Extract the ENTIRE ZIP. Open PLAY.html for the self-contained offline game.
-Mac local server: bash START_MAC.command
-The launcher and title should show v3.6.2.
+Extract this entire folder first.
+Open PLAY.html to play the self-contained offline game.
+Mac local-server option: bash START_MAC.command
+Windows local-server option: START_WINDOWS.bat
+The launcher/browser title should show v3.6.3.
 
-Returning players have three clear choices:
-  Continue: resume your saved campaign chapter.
-  Start from Chapter 1: confirm a fresh attempt, keeping all lifetime progress.
-  Chapters: practice any unlocked chapter without replacing campaign Continue.
+The green ruled screen is removed. Words now occupy the original library space,
+with softly graded depth and lantern light rather than a replacement UI panel.
+Gameplay, UI positions, audio and saved-progress rules remain unchanged.
 
-Starting again replaces ONLY the selected difficulty's campaign Continue point.
-Unlocked chapters, mastery stars, recorded best scores and other difficulties stay.
-Escape / Close / Keep current journey cancels without changing the save.
+Continue, Start from Chapter 1, and unlocked Chapters are retained.
+Restarting your journey does NOT erase your chapter unlocks, stars or best scores.
 
-Before changing browser, URL, port or local-file location: Records -> Export save.
-Stop an old local server with Control+C to reuse its address; import when needed.
+Before switching a file location, browser, website address or port:
+Records -> Export save. At the new location use Records -> Import save.
+Stop the old local server with Control+C before starting the new server.
 
-完整解壓後可直接開啟 PLAY.html；Mac 本機伺服器：bash START_MAC.command。
-確認版本 v3.6.2。新增 Start from Chapter 1，確認後由第一章重新開局。
-只替換目前難度嘅 Continue 位置；已解鎖章節、星級及最高分全部保留。
-之後仍可用 Chapters 選擇已解鎖章節練習；練習唔會取代新旅程嘅 Continue。
-更換網址、連接埠、瀏覽器或本機檔案位置之前，請先 Export save 備份。
-
-README.md: play, saves and source provenance.
-docs/FRESH_JOURNEY_SPEC.md: new entry and safety contracts.
-docs/QA_REPORT.md: actual QA, raw evidence and limitations.
+Source: src/
+Runtime artwork/audio: public/assets/
+Editable original artwork/audio: asset-source/
+Prebuilt website: dist/
+Current QA and limitations: docs/QA_REPORT.md and qa363/

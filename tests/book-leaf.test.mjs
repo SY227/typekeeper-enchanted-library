@@ -8,8 +8,8 @@ import {PRESENTATION_VERSION,readableCardLayout} from '../src/render/presentatio
 import {RULESET_VERSION} from '../src/game/rules.js';
 
 test('3.5.1 identifies the folio/caption build while retaining 3.2.1 balance',()=>{
- assert.equal(APP_VERSION,'3.6.2');assert.equal(PRESENTATION_VERSION,APP_VERSION);
- assert.equal(BUILD_TAG,'fresh-journey-362');assert.equal(RULESET_VERSION,'typekeeper-3.2.1');
+ assert.equal(APP_VERSION,'3.6.3');assert.equal(PRESENTATION_VERSION,APP_VERSION);
+ assert.equal(BUILD_TAG,'open-atrium-363');assert.equal(RULESET_VERSION,'typekeeper-3.2.1');
 });
 for(const kind of ['normal','fire','ice','slow','wind','bonus'])test(`${kind}: immutable local folio material contains complete valid color roles`,()=>{
  const p=folioPalette(kind);assert.equal(p,FOLIO_PALETTES[kind]);assert(Object.isFrozen(p));

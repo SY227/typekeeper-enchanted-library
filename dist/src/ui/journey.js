@@ -1,4 +1,4 @@
-import { WINGS } from '../data/campaign.js?v=3.6.2-04b297ea546ad828';
+import { WINGS } from '../data/campaign.js?v=3.6.3-447ce8d517d13011';
 export const WING_MARKS=Object.freeze([
  {id:'folio',name:'Reading Room',path:'M5 9Q12 6 20 10Q28 6 35 9V30Q28 27 20 31Q12 27 5 30ZM20 10V31M9 14L16 14M24 14L31 14M9 19L16 19M24 19L31 19'},
  {id:'leaf',name:'Glasshouse',path:'M10 31Q11 13 31 7Q32 28 10 31ZM10 31L27 12M18 23L16 17M22 19L27 21'},
